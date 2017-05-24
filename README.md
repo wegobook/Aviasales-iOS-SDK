@@ -4,9 +4,9 @@ Aviasales/Jetradar iOS SDK
 [![CocoaPods](https://img.shields.io/cocoapods/p/AviasalesSDK.svg)](https://cocoapods.org/pods/AviasalesSDK)
 [![Travis](https://img.shields.io/travis/KosyanMedia/Aviasales-iOS-SDK/master.svg)](https://travis-ci.org/KosyanMedia/Aviasales-iOS-SDK)
   
-####README in [English](https://github.com/KosyanMedia/Aviasales-iOS-SDK/blob/master/README_EN.md)  
+#### README in [English](https://github.com/KosyanMedia/Aviasales-iOS-SDK/blob/master/README_EN.md)  
   
-##Описание
+## Описание
 
 
 [Aviasales](https://www.aviasales.ru)/[Jetradar](https://www.jetradar.com) iOS SDK — framework, позволяющий добавить поиск полетов в ваше приложение. Когда пользователь покупает билет, вы получаете выплаты. Framework использует поисковые системы Aviasales и Jetradar. Он используется при разработки официальных приложений.
@@ -20,7 +20,7 @@ Framework включает в себя:
 
 Узнайте подробнее о доходах в [Travelpayouts FAQ](https://support.travelpayouts.com/hc/ru/articles/203955613-Комиссия-и-выплаты).
 
-##<a name="usage"></a>Использование шаблонного проекта
+## <a name="usage"></a>Использование шаблонного проекта
 ### 📲 Установка
 1. Скачайте себе последний release (не beta) шаблонного проекта отсюда: [https://github.com/KosyanMedia/Aviasales-iOS-SDK/releases](https://github.com/KosyanMedia/Aviasales-iOS-SDK/releases).
 2. Скачайте зависимости, выполнив команду ```pod install``` в каталоге с шаблонным проектом.  
@@ -28,7 +28,7 @@ Framework включает в себя:
 3. Подставьте правильные значения партнерского токена и маркера в файле ```JRAppDelegate.m``` в константы ```kJRAPIToken``` и ```kJRPartnerMarker```.
 4. Если у вас еще нет партнерского маркера и токена, получите их в [Travelpayouts](https://travelpayouts.com/).
 
-###🔧🌻 Настройка цветов
+### 🔧🌻 Настройка цветов
 Для настройки цветовой схемы приложения используются файлы JRColorScheme.h и JRColorScheme.m. В них прописаны все, которые отображаются в шаблонном проекте. Вот список с пояснениями:
 
 #### Фон
