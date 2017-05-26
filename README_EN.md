@@ -14,7 +14,7 @@ The framework includes:
 * a static library to integrate with flight search engine server;
 * UI template project.
  
-You may create your own flight search apps based on our template. To track statistics and payments please visit our partner network — [Travelpayouts.com](https://www.travelpayouts.com/).
+You may create your own flight search apps based on our template. To get your API key, track statistics and payments please visit our partner network — [Travelpayouts.com Travel Affiliate Network](https://www.travelpayouts.com/?utm_source=github&utm_medium=ios_sdk).
 To learn more about the Travelpayouts referral system please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
 
 
