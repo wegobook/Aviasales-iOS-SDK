@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTContainerSearchFormViewController">
+            <connections>
+                <outlet property="containerView" destination="Egt-lc-B4J" id="A5x-ed-l3h"/>
+                <outlet property="searchButton" destination="f1b-3P-zi7" id="ghN-7L-e2O"/>
+                <outlet property="searchButtonBottomLayoutConstraint" destination="iix-gM-Z9s" id="dUu-3V-3bl"/>
+                <outlet property="searchFormTypeSegmentedControl" destination="QGU-al-v97" id="zaa-cO-Q3Z"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fd-3F-RdI">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="QGU-al-v97">
+                            <rect key="frame" x="15" y="8" width="345" height="29"/>
+                            <segments>
+                                <segment title="Simple"/>
+                                <segment title="Complex"/>
+                            </segments>
+                            <connections>
+                                <action selector="searchFormTypeSegmentChanged:" destination="-1" eventType="valueChanged" id="pYj-xT-Dsb"/>
+                            </connections>
+                        </segmentedControl>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="QGU-al-v97" firstAttribute="top" secondItem="3fd-3F-RdI" secondAttribute="top" constant="8" id="1wg-IQ-Sid"/>
+                        <constraint firstAttribute="bottom" secondItem="QGU-al-v97" secondAttribute="bottom" constant="8" id="72f-8T-0bc"/>
+                        <constraint firstAttribute="height" constant="44" id="OQ1-r5-6Hy"/>
+                        <constraint firstItem="QGU-al-v97" firstAttribute="leading" secondItem="3fd-3F-RdI" secondAttribute="leading" constant="15" id="RoD-8f-xOY"/>
+                        <constraint firstAttribute="trailing" secondItem="QGU-al-v97" secondAttribute="trailing" constant="15" id="vEA-d9-4eA"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="searchFormBackgroundColor"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Egt-lc-B4J">
+                    <rect key="frame" x="0.0" y="44" width="375" height="553"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="searchFormBackgroundColor"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cqV-0M-8QT">
+                    <rect key="frame" x="0.0" y="597" width="375" height="70"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1b-3P-zi7">
+                            <rect key="frame" x="20" y="15" width="335" height="40"/>
+                            <state key="normal" title="Search"/>
+                            <connections>
+                                <action selector="searchButtonTapped:" destination="-1" eventType="touchUpInside" id="J86-9i-q6A"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="f1b-3P-zi7" firstAttribute="top" secondItem="cqV-0M-8QT" secondAttribute="top" constant="15" id="0c6-2K-gfg"/>
+                        <constraint firstAttribute="bottom" secondItem="f1b-3P-zi7" secondAttribute="bottom" constant="15" id="l1R-2N-ZL8"/>
+                        <constraint firstItem="f1b-3P-zi7" firstAttribute="leading" secondItem="cqV-0M-8QT" secondAttribute="leading" constant="20" id="n3V-86-34E"/>
+                        <constraint firstAttribute="height" constant="70" id="rEj-64-FyU"/>
+                        <constraint firstAttribute="trailing" secondItem="f1b-3P-zi7" secondAttribute="trailing" constant="20" id="yjz-Pl-9GK"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="searchFormBackgroundColor"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Egt-lc-B4J" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="0Xl-lT-pug"/>
+                <constraint firstItem="cqV-0M-8QT" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gsz-tN-ILu"/>
+                <constraint firstItem="cqV-0M-8QT" firstAttribute="top" secondItem="Egt-lc-B4J" secondAttribute="bottom" id="JGv-t9-bXQ"/>
+                <constraint firstItem="Egt-lc-B4J" firstAttribute="top" secondItem="3fd-3F-RdI" secondAttribute="bottom" id="JTs-D1-T5J"/>
+                <constraint firstAttribute="trailing" secondItem="3fd-3F-RdI" secondAttribute="trailing" id="JjK-OY-lgp"/>
+                <constraint firstAttribute="trailing" secondItem="cqV-0M-8QT" secondAttribute="trailing" id="SKP-r1-UTh"/>
+                <constraint firstAttribute="trailing" secondItem="Egt-lc-B4J" secondAttribute="trailing" id="gZZ-I6-WgI"/>
+                <constraint firstAttribute="bottom" secondItem="cqV-0M-8QT" secondAttribute="bottom" id="iix-gM-Z9s"/>
+                <constraint firstItem="3fd-3F-RdI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="rd7-LQ-MH9"/>
+                <constraint firstItem="3fd-3F-RdI" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="tu9-jP-uaZ"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

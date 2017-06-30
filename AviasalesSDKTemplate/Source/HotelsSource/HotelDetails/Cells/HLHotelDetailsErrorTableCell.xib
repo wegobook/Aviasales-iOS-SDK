@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="HLHotelDetailsErrorTableCell" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sorry" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Okc-nT-Rgh">
+                        <rect key="frame" x="149" y="4" width="37" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27843137254901962" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelDetailsErrorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="fc4-M3-yjV">
+                        <rect key="frame" x="135" y="8.5" width="9" height="9"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oJR-hb-TUX">
+                        <rect key="frame" x="23" y="35" width="274" height="44"/>
+                        <color key="backgroundColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="43.5" id="iSk-TQ-XTr"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                        <state key="normal" title="ИЗМЕНИТЬ ПАРАМЕТРЫ ПОИСКА">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="JRCornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="onButton:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="mk2-B6-9jb"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="fc4-M3-yjV" firstAttribute="centerY" secondItem="Okc-nT-Rgh" secondAttribute="centerY" id="0m1-kG-IiQ"/>
+                    <constraint firstItem="Okc-nT-Rgh" firstAttribute="leading" secondItem="fc4-M3-yjV" secondAttribute="trailing" constant="5" id="4P8-DP-ddG"/>
+                    <constraint firstItem="fc4-M3-yjV" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="8CI-hI-11H"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Okc-nT-Rgh" secondAttribute="trailing" constant="10" id="G01-pF-8Z6"/>
+                    <constraint firstAttribute="centerX" secondItem="Okc-nT-Rgh" secondAttribute="centerX" constant="-7" id="V89-P9-b0Q"/>
+                    <constraint firstItem="oJR-hb-TUX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="15" id="Wzq-BO-nFL"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="oJR-hb-TUX" secondAttribute="trailing" constant="15" id="kiP-ay-eCy"/>
+                    <constraint firstItem="oJR-hb-TUX" firstAttribute="top" secondItem="Okc-nT-Rgh" secondAttribute="bottom" constant="13" id="ofL-as-gsp"/>
+                    <constraint firstItem="Okc-nT-Rgh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="4" id="xZk-z5-Lct"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <connections>
+                <outlet property="button" destination="oJR-hb-TUX" id="7qZ-Ih-s5V"/>
+                <outlet property="icon" destination="fc4-M3-yjV" id="IBq-7o-ELe"/>
+                <outlet property="titleLabel" destination="Okc-nT-Rgh" id="je3-fj-N2o"/>
+            </connections>
+            <point key="canvasLocation" x="218" y="337"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotelDetailsErrorIcon" width="9" height="9"/>
+    </resources>
+</document>

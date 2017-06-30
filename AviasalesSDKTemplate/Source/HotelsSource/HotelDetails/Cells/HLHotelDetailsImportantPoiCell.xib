@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="30" id="ax3-yK-XjB" customClass="HLHotelDetailsImportantPoiCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="55"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ax3-yK-XjB" id="ZZo-Ut-dXH">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="54"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="roomsCount" translatesAutoresizingMaskIntoConstraints="NO" id="DPa-pO-T6g">
+                        <rect key="frame" x="15" y="17.5" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="XQE-VS-jTH"/>
+                            <constraint firstAttribute="height" constant="15" id="rQY-ID-S8y"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="248" verticalHuggingPriority="248" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="752" text="Александрийская колонна Зимнего дворца" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eME-bG-t8y">
+                        <rect key="frame" x="45" y="16" width="269.5" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="DDV-5M-h2P"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.21199023723602295" green="0.21522575616836548" blue="0.21864497661590576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="DDV-5M-h2P"/>
+                            </mask>
+                        </variation>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.7 км" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZT6-o2-66C">
+                        <rect key="frame" x="324.5" y="18" width="36.5" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.42287790775299072" green="0.43083241581916809" blue="0.4306672215461731" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="eME-bG-t8y" firstAttribute="centerY" secondItem="DPa-pO-T6g" secondAttribute="centerY" id="3K1-6W-0u4"/>
+                    <constraint firstItem="DPa-pO-T6g" firstAttribute="leading" secondItem="ZZo-Ut-dXH" secondAttribute="leadingMargin" constant="7" id="8UD-ZB-9rI"/>
+                    <constraint firstItem="eME-bG-t8y" firstAttribute="top" secondItem="ZZo-Ut-dXH" secondAttribute="top" constant="16" id="KXu-Io-sCI"/>
+                    <constraint firstItem="ZT6-o2-66C" firstAttribute="centerY" secondItem="eME-bG-t8y" secondAttribute="centerY" id="Px5-T2-9Aq"/>
+                    <constraint firstItem="eME-bG-t8y" firstAttribute="leading" secondItem="DPa-pO-T6g" secondAttribute="trailing" constant="15" id="UYy-2x-vRE"/>
+                    <constraint firstItem="ZT6-o2-66C" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="eME-bG-t8y" secondAttribute="trailing" constant="10" id="WfF-Kn-JhW"/>
+                    <constraint firstAttribute="trailing" secondItem="ZT6-o2-66C" secondAttribute="trailing" constant="15" id="cLb-PR-8yA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="distanceLabel" destination="ZT6-o2-66C" id="ZOc-iW-H8J"/>
+                <outlet property="iconView" destination="DPa-pO-T6g" id="g5W-hz-vzc"/>
+                <outlet property="titleLabel" destination="eME-bG-t8y" id="Wi9-BL-edY"/>
+                <outlet property="topConstraint" destination="KXu-Io-sCI" id="YE6-Rk-6PI"/>
+            </connections>
+            <point key="canvasLocation" x="282.5" y="419"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="roomsCount" width="15" height="15"/>
+    </resources>
+</document>

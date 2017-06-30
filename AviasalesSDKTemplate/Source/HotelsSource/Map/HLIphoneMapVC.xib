@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLIphoneMapVC">
+            <connections>
+                <outlet property="filterButtonWidth" destination="dLJ-df-JDn" id="tDu-Py-wOy"/>
+                <outlet property="filtersButton" destination="zS0-nV-aZi" id="cQx-8E-6RF"/>
+                <outlet property="locateMeMapView" destination="kmk-9X-1wv" id="3Ra-Ly-DTd"/>
+                <outlet property="mapView" destination="Fsb-QZ-IW4" id="YLz-07-O4g"/>
+                <outlet property="priceFilterView" destination="ZAj-R0-QRf" id="xgG-I4-3SZ"/>
+                <outlet property="priceFilterViewContainer" destination="tx6-H3-Vh4" id="4M3-mN-vke"/>
+                <outlet property="view" destination="1" id="3"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="1">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fsb-QZ-IW4" customClass="HLMapView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="f5a-7y-URp"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tx6-H3-Vh4">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="76"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZAj-R0-QRf" userLabel="PriceSliderView" customClass="PriceFilterView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="4" width="375" height="67"/>
+                            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="76" id="2vy-e9-UVM"/>
+                        <constraint firstAttribute="trailing" secondItem="ZAj-R0-QRf" secondAttribute="trailing" id="NTL-8c-Ezj"/>
+                        <constraint firstAttribute="bottom" secondItem="ZAj-R0-QRf" secondAttribute="bottom" constant="5" id="RIj-HB-0fh"/>
+                        <constraint firstItem="ZAj-R0-QRf" firstAttribute="leading" secondItem="tx6-H3-Vh4" secondAttribute="leading" id="r4S-QP-8dk"/>
+                        <constraint firstItem="ZAj-R0-QRf" firstAttribute="top" secondItem="tx6-H3-Vh4" secondAttribute="top" constant="4" id="rz1-ez-Ann"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS0-nV-aZi" userLabel="Filter Button">
+                    <rect key="frame" x="105" y="563" width="166" height="40"/>
+                    <color key="backgroundColor" red="1" green="0.70588235294117641" blue="0.20000000000000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" label="Filters"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="166" id="dLJ-df-JDn"/>
+                        <constraint firstAttribute="height" constant="40" id="mbv-zd-p7l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="10" maxY="0.0"/>
+                    <state key="normal" title="Фильтры">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="JRCornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="showFullFilters" destination="-1" eventType="touchUpInside" id="QQu-Wo-WpS"/>
+                    </connections>
+                </button>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmk-9X-1wv" customClass="HLLocateMeMapView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+                    <rect key="frame" x="315" y="558" width="50" height="50"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="3Zf-B6-kDI"/>
+                        <constraint firstAttribute="height" constant="50" id="hX1-QH-hbQ"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="shouldDetectLocation" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Fsb-QZ-IW4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="1aB-50-fh2"/>
+                <constraint firstAttribute="trailing" secondItem="kmk-9X-1wv" secondAttribute="trailing" constant="10" id="4C7-nA-vdg"/>
+                <constraint firstItem="zS0-nV-aZi" firstAttribute="centerY" secondItem="kmk-9X-1wv" secondAttribute="centerY" id="6Vw-AT-IDv"/>
+                <constraint firstAttribute="trailing" secondItem="tx6-H3-Vh4" secondAttribute="trailing" id="AKV-dS-OJG"/>
+                <constraint firstItem="zS0-nV-aZi" firstAttribute="centerX" secondItem="1" secondAttribute="centerX" id="DA6-09-eX1"/>
+                <constraint firstAttribute="bottom" secondItem="Fsb-QZ-IW4" secondAttribute="bottom" id="H0K-WC-TtQ"/>
+                <constraint firstAttribute="trailing" secondItem="Fsb-QZ-IW4" secondAttribute="trailing" id="JYd-dV-sGx"/>
+                <constraint firstItem="tx6-H3-Vh4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="L7c-Yc-CNp"/>
+                <constraint firstAttribute="bottom" secondItem="kmk-9X-1wv" secondAttribute="bottom" constant="59" id="UqG-d6-zGR"/>
+                <constraint firstItem="tx6-H3-Vh4" firstAttribute="top" secondItem="1" secondAttribute="top" id="fxI-53-LsK"/>
+                <constraint firstItem="Fsb-QZ-IW4" firstAttribute="top" secondItem="1" secondAttribute="top" id="goH-LT-cf8"/>
+            </constraints>
+            <point key="canvasLocation" x="224.5" y="267.5"/>
+        </view>
+    </objects>
+</document>

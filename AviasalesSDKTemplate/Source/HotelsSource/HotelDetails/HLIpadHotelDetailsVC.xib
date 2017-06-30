@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLIpadHotelDetailsVC" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomHotelInfoConstraint" destination="XyD-Iy-RvZ" id="kN1-Lr-C3E"/>
+                <outlet property="contentContainerView" destination="nQz-fo-sDq" id="SYa-Dt-YdZ"/>
+                <outlet property="contentTableView" destination="lia-SQ-tFv" id="60s-nN-Qn6"/>
+                <outlet property="hotelView" destination="TFt-fR-0lP" id="xc6-3q-9EX"/>
+                <outlet property="leftCollectionConstraint" destination="y0N-kK-lik" id="6aN-a8-GeO"/>
+                <outlet property="leftTableViewConstraint" destination="wTY-fQ-N6u" id="K2h-2Q-h7e"/>
+                <outlet property="photosContainer" destination="X86-4o-dEE" id="N1R-Ri-hbc"/>
+                <outlet property="rightCollectionConstraint" destination="E4U-r6-rih" id="5Ro-jC-mz4"/>
+                <outlet property="rightPhotoConstraint" destination="y0H-Vj-jYt" id="yqL-h0-Tdp"/>
+                <outlet property="rightTableViewConstraint" destination="6JJ-aB-c2q" id="VNj-s2-ptl"/>
+                <outlet property="verticalSeparatorView" destination="F3F-K7-wAL" id="a7k-Js-Tss"/>
+                <outlet property="verticalSeparatorViewWidth" destination="i2h-N5-SRV" id="Mu4-NU-XQV"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X86-4o-dEE" userLabel="PhotosContainer">
+                    <rect key="frame" x="0.0" y="568" width="644" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nQz-fo-sDq" userLabel="ContentContainerView">
+                    <rect key="frame" x="649" y="0.0" width="375" height="768"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="lia-SQ-tFv">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="768"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="d5K-Cx-7IM"/>
+                                <outlet property="delegate" destination="-1" id="xUS-l4-aGe"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="lia-SQ-tFv" firstAttribute="top" secondItem="nQz-fo-sDq" secondAttribute="top" id="4JL-yw-b1e"/>
+                        <constraint firstAttribute="trailing" secondItem="lia-SQ-tFv" secondAttribute="trailing" id="6JJ-aB-c2q"/>
+                        <constraint firstAttribute="bottom" secondItem="lia-SQ-tFv" secondAttribute="bottom" id="eCj-nP-B0P"/>
+                        <constraint firstItem="lia-SQ-tFv" firstAttribute="leading" secondItem="nQz-fo-sDq" secondAttribute="leading" id="wTY-fQ-N6u"/>
+                    </constraints>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="TFt-fR-0lP" userLabel="HotelCardView" customClass="HLHotelCardView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="644" height="568"/>
+                    <color key="backgroundColor" red="0.9120478630065918" green="0.92166769504547119" blue="0.92147368192672729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BaD-db-wET">
+                    <rect key="frame" x="0.0" y="0.0" width="20" height="768"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="20" id="JyN-Vz-E8w"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F3F-K7-wAL" userLabel="VerticalSeparatorView">
+                    <rect key="frame" x="648" y="0.0" width="1" height="768"/>
+                    <color key="backgroundColor" red="0.80784313725490198" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="i2h-N5-SRV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.9120478630065918" green="0.92166769504547119" blue="0.92147368192672729" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="nQz-fo-sDq" firstAttribute="leading" secondItem="F3F-K7-wAL" secondAttribute="trailing" id="5q1-T8-iSH"/>
+                <constraint firstItem="X86-4o-dEE" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="6cs-Dt-Osh"/>
+                <constraint firstAttribute="trailing" secondItem="nQz-fo-sDq" secondAttribute="trailing" id="E4U-r6-rih"/>
+                <constraint firstItem="F3F-K7-wAL" firstAttribute="bottom" secondItem="nQz-fo-sDq" secondAttribute="bottom" id="IK7-Aq-aMN"/>
+                <constraint firstItem="BaD-db-wET" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Llu-2n-oEH"/>
+                <constraint firstItem="F3F-K7-wAL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="QWy-BW-Zc7"/>
+                <constraint firstAttribute="bottom" secondItem="BaD-db-wET" secondAttribute="bottom" id="Rna-5p-RVa"/>
+                <constraint firstAttribute="bottom" secondItem="nQz-fo-sDq" secondAttribute="bottom" id="Skb-ah-dDN"/>
+                <constraint firstAttribute="bottom" secondItem="TFt-fR-0lP" secondAttribute="bottom" constant="200" id="XyD-Iy-RvZ"/>
+                <constraint firstItem="X86-4o-dEE" firstAttribute="trailing" secondItem="TFt-fR-0lP" secondAttribute="trailing" id="hCM-nG-G8V"/>
+                <constraint firstItem="TFt-fR-0lP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="o6P-17-vTm"/>
+                <constraint firstItem="nQz-fo-sDq" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pma-Sb-9Xf"/>
+                <constraint firstAttribute="bottom" secondItem="X86-4o-dEE" secondAttribute="bottom" id="rdU-mw-jJy"/>
+                <constraint firstItem="X86-4o-dEE" firstAttribute="top" secondItem="TFt-fR-0lP" secondAttribute="bottom" id="tqK-se-7hs"/>
+                <constraint firstItem="TFt-fR-0lP" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="uGV-aX-HQj"/>
+                <constraint firstAttribute="trailing" secondItem="TFt-fR-0lP" secondAttribute="trailing" constant="380" id="y0H-Vj-jYt"/>
+                <constraint firstItem="nQz-fo-sDq" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="649" id="y0N-kK-lik"/>
+                <constraint firstItem="BaD-db-wET" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="zdl-W3-0NC"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>

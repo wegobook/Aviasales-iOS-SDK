@@ -6,13 +6,13 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "UIKit/UIKit.h"
+#import "JRDefines.h"
 
 @interface JRAppLauncher : NSObject
 
 + (void)startServicesWithAPIToken:(NSString *)APIToken
                     partnerMarker:(NSString *)partnerMarker
                    appodealAPIKey:(NSString *)appodealAPIKey;
-+ (UIViewController *)rootViewController;
-+ (UIViewController *)rootViewControllerWithIpadWideLayout;
 
 @end

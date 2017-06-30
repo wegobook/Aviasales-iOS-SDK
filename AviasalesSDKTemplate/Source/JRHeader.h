@@ -12,5 +12,8 @@
 #import <Foundation/Foundation.h>
 #import <AviasalesSDK/AviasalesSDK.h>
 #import "JRDefines.h"
+#import "NotificationDefines.h"
+
+#import <libextobjc/EXTScope.h>
 
 #endif /* JRHeader_h */

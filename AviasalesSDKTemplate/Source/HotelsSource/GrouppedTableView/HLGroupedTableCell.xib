@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="Cbd-mI-Kew" userLabel="HLGroupedTableCell" customClass="HLGroupedTableCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cbd-mI-Kew" id="lHe-5F-GwT">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Замок" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ubb-Fn-g6H">
+                        <rect key="frame" x="15" y="16" width="48" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27843137254901962" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Урюпинск" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NXq-Bw-ylv">
+                        <rect key="frame" x="15" y="36" width="60" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.47450980392156861" green="0.47843137254901957" blue="0.48627450980392156" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hotelDetailsMapPinIcon" translatesAutoresizingMaskIntoConstraints="NO" id="N4S-f2-5kQ">
+                        <rect key="frame" x="295" y="19" width="10" height="15"/>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NXq-Bw-ylv" secondAttribute="trailing" constant="20" id="Dhl-WS-VTw"/>
+                    <constraint firstItem="N4S-f2-5kQ" firstAttribute="centerY" secondItem="lHe-5F-GwT" secondAttribute="centerY" id="Dm2-yJ-j0X"/>
+                    <constraint firstItem="NXq-Bw-ylv" firstAttribute="top" secondItem="ubb-Fn-g6H" secondAttribute="bottom" id="MjR-QB-Bnm"/>
+                    <constraint firstItem="ubb-Fn-g6H" firstAttribute="leading" secondItem="lHe-5F-GwT" secondAttribute="leading" constant="15" id="Tog-bH-vpS"/>
+                    <constraint firstItem="NXq-Bw-ylv" firstAttribute="leading" secondItem="ubb-Fn-g6H" secondAttribute="leading" id="ZXZ-K2-5KT"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="ubb-Fn-g6H" secondAttribute="trailing" constant="15" id="lpe-P6-x1c"/>
+                    <constraint firstAttribute="trailing" secondItem="N4S-f2-5kQ" secondAttribute="trailing" constant="15" id="rB1-KQ-Lhf"/>
+                    <constraint firstAttribute="centerY" secondItem="ubb-Fn-g6H" secondAttribute="centerY" id="tWB-Nq-iFU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailsLabel" destination="NXq-Bw-ylv" id="7sW-He-qqn"/>
+                <outlet property="icon" destination="N4S-f2-5kQ" id="9ku-M0-Vzo"/>
+                <outlet property="titleLabel" destination="ubb-Fn-g6H" id="B9K-I2-Dx1"/>
+                <outlet property="verticalCenterConstraint" destination="tWB-Nq-iFU" id="kqB-hd-6eQ"/>
+            </connections>
+            <point key="canvasLocation" x="277" y="332.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hotelDetailsMapPinIcon" width="10" height="15"/>
+    </resources>
+</document>

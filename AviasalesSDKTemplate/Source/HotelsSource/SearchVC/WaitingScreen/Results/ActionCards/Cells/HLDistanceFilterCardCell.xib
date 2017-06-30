@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HLDistanceFilterCardCell">
+            <rect key="frame" x="0.0" y="0.0" width="386" height="129"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="386" height="129"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Egc-VG-9PY">
+                        <rect key="frame" x="340" y="0.0" width="46" height="52"/>
+                        <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                        <state key="normal" image="closeActionCardIcon"/>
+                        <state key="highlighted" image="closeActionCardIconSelected"/>
+                        <connections>
+                            <action selector="close" destination="gTV-IL-0wX" eventType="touchUpInside" id="c4n-Na-Pcr"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hH6-Yd-jBX">
+                        <rect key="frame" x="290" y="94" width="81" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title="Применить"/>
+                        <connections>
+                            <action selector="apply" destination="gTV-IL-0wX" eventType="touchUpInside" id="iXv-0b-w00"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="Ищете отели рядом с подъемниками?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="8" translatesAutoresizingMaskIntoConstraints="NO" id="bcd-su-YsP">
+                        <rect key="frame" x="15" y="15" width="273" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="up to 9 km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ULp-XT-VTE">
+                        <rect key="frame" x="306" y="54" width="65" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jhK-ht-qo6" customClass="HLExtendedAreaSlider">
+                        <rect key="frame" x="13" y="47" width="285" height="31"/>
+                        <color key="minimumTrackTintColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="maximumTrackTintColor" red="0.27818378806114197" green="0.28164440393447876" blue="0.28530064225196838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </slider>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Egc-VG-9PY" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="61T-ia-w1Y"/>
+                <constraint firstAttribute="trailing" secondItem="hH6-Yd-jBX" secondAttribute="trailing" constant="15" id="Fco-HY-CUH"/>
+                <constraint firstAttribute="trailing" secondItem="Egc-VG-9PY" secondAttribute="trailing" id="QbS-q3-FgF"/>
+                <constraint firstAttribute="bottom" secondItem="hH6-Yd-jBX" secondAttribute="bottom" constant="5" id="YA7-Xb-2BV"/>
+                <constraint firstItem="ULp-XT-VTE" firstAttribute="leading" secondItem="jhK-ht-qo6" secondAttribute="trailing" priority="999" constant="10" id="ZtE-qK-kcQ"/>
+                <constraint firstItem="bcd-su-YsP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="aBz-yF-SmZ"/>
+                <constraint firstItem="bcd-su-YsP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="15" id="feL-VQ-rOc"/>
+                <constraint firstItem="Egc-VG-9PY" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="bcd-su-YsP" secondAttribute="trailing" constant="-10" id="hNv-OW-9uR"/>
+                <constraint firstItem="ULp-XT-VTE" firstAttribute="centerY" secondItem="jhK-ht-qo6" secondAttribute="centerY" id="n78-gw-7kR"/>
+                <constraint firstItem="jhK-ht-qo6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="15" id="oK3-AR-vhJ"/>
+                <constraint firstItem="jhK-ht-qo6" firstAttribute="top" secondItem="bcd-su-YsP" secondAttribute="bottom" constant="14" id="ouH-Di-QZD"/>
+                <constraint firstAttribute="trailing" secondItem="ULp-XT-VTE" secondAttribute="trailing" constant="15" id="tBZ-dx-KbU"/>
+            </constraints>
+            <size key="customSize" width="386" height="129"/>
+            <connections>
+                <outlet property="applyButton" destination="hH6-Yd-jBX" id="E8X-MD-9AU"/>
+                <outlet property="closeButton" destination="Egc-VG-9PY" id="XCZ-eJ-TTD"/>
+                <outlet property="descriptionLabel" destination="bcd-su-YsP" id="p4W-2b-HN7"/>
+                <outlet property="labelToSuperviewTrailingConstraint" destination="tBZ-dx-KbU" id="Bsz-vM-P1f"/>
+                <outlet property="slider" destination="jhK-ht-qo6" id="EUo-zM-Mxd"/>
+                <outlet property="sliderToLabelConstraint" destination="ZtE-qK-kcQ" id="2cy-Dn-6mr"/>
+                <outlet property="valueLabel" destination="ULp-XT-VTE" id="DA3-Pn-5OW"/>
+            </connections>
+            <point key="canvasLocation" x="394" y="403.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="closeActionCardIcon" width="16" height="16"/>
+        <image name="closeActionCardIconSelected" width="16" height="16"/>
+    </resources>
+</document>

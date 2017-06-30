@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTComplexSearchFormHeaderView">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="uSL-zh-0wv"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="28"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="origin" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e1V-w7-0q8">
+                    <rect key="frame" x="0.0" y="6.5" width="125" height="15"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="X5q-Z4-moO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="searchFormTextColor"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="JR_SEARCH_FORM_COMPLEX_ORIGIN"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="destination" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljM-f3-C3V">
+                    <rect key="frame" x="125" y="6.5" width="125" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="searchFormTextColor"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="JR_SEARCH_FORM_COMPLEX_DESTINATION"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" text="departure" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P9m-uA-rYP">
+                    <rect key="frame" x="250" y="6.5" width="125" height="15"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="searchFormTextColor"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="JR_SEARCH_FORM_COMPLEX_DATE"/>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="e1V-w7-0q8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="BGF-aF-HTX"/>
+                <constraint firstItem="e1V-w7-0q8" firstAttribute="height" secondItem="ljM-f3-C3V" secondAttribute="height" id="GlC-c9-HzK"/>
+                <constraint firstItem="P9m-uA-rYP" firstAttribute="width" secondItem="ljM-f3-C3V" secondAttribute="width" id="JnR-Qq-7sT"/>
+                <constraint firstItem="e1V-w7-0q8" firstAttribute="width" secondItem="ljM-f3-C3V" secondAttribute="width" id="O7N-O5-5Ub"/>
+                <constraint firstItem="e1V-w7-0q8" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="XlO-Tx-fir"/>
+                <constraint firstItem="ljM-f3-C3V" firstAttribute="leading" secondItem="e1V-w7-0q8" secondAttribute="trailing" id="Xx9-0P-daD"/>
+                <constraint firstAttribute="trailing" secondItem="P9m-uA-rYP" secondAttribute="trailing" id="YVf-NL-YaD"/>
+                <constraint firstItem="P9m-uA-rYP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="gEt-GW-ewZ"/>
+                <constraint firstItem="P9m-uA-rYP" firstAttribute="leading" secondItem="ljM-f3-C3V" secondAttribute="trailing" id="jkz-kL-bmy"/>
+                <constraint firstItem="P9m-uA-rYP" firstAttribute="height" secondItem="ljM-f3-C3V" secondAttribute="height" id="nI5-MQ-uw4"/>
+                <constraint firstItem="ljM-f3-C3V" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wFF-HG-LUH"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="searchFormBackgroundColor"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="34.5" y="54"/>
+        </view>
+    </objects>
+</document>

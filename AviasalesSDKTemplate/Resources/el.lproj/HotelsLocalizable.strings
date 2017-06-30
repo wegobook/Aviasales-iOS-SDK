@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "από";
+
+"HL_LOC_GUEST##{one}" = "άτομο";
+"HL_LOC_GUEST##{few}" = "άτομα";
+"HL_LOC_GUEST##{many}" = "άτομο";
+"HL_LOC_GUEST##{other}" = "άτομα";
+
+"HL_LOC_GUEST_ADULT##{one}" = "ενήλικας";
+"HL_LOC_GUEST_ADULT##{few}" = "ενήλικας";
+"HL_LOC_GUEST_ADULT##{many}" = "ενήλικες";
+"HL_LOC_GUEST_ADULT##{other}" = "ενήλικες";
+
+"HL_LOC_GUEST_KID##{one}" = "παιδί";
+"HL_LOC_GUEST_KID##{few}" = "παιδί";
+"HL_LOC_GUEST_KID##{many}" = "παιδιά";
+"HL_LOC_GUEST_KID##{other}" = "παιδιά";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "Ξενοδοχεία";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "Πόλη ή ξενοδοχείο";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "Παιδια";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Ενήλικες";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "Ημερομηνίες";
+
+"HL_LOC_YEAR##{one}" = "έτος";
+"HL_LOC_YEAR##{few}" = "έτη";
+"HL_LOC_YEAR##{many}" = "έτη";
+"HL_LOC_YEAR##{other}" = "έτη";
+
+"HL_LOC_NIGHT##{one}" = "νύχτα";
+"HL_LOC_NIGHT##{few}" = "νύχτες";
+"HL_LOC_NIGHT##{many}" = "νύχτες";
+"HL_LOC_NIGHT##{other}" = "νύχτες";
+
+"HL_LOC_FOR_NIGHT##{one}" = "για \U00A0%d\U00A0νύχτα";
+"HL_LOC_FOR_NIGHT##{few}" = "για\U00A0%d\U00A0νύχτες";
+"HL_LOC_FOR_NIGHT##{many}" = "για\U00A0%d\U00A0νύχτες";
+"HL_LOC_FOR_NIGHT##{other}" = "για\U00A0%d\U00A0νύχτες";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Σφάλμα";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Θα πρέπει να επιλέξεις αριθμό ατόμων";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Θα πρέπει να επιλέξεις προορισμό";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Αναζήτηση στα αποτελέσματα";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "Βρες ξενοδοχεία";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Λάβε τιμές";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "Επιλέξτε ημερομηνία";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Λυπούμαστε, αλλά η μέγιστη διαμονή σε ξενοδοχείο περιορίζεται στις 30 ημέρες.";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "Παιδια";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Βρεφη";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Ηλικία";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "ΕΦΑΡΜΟΓΗ";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Ακυρωση";
+
+"HL_CLEAN_BUTTON_TITLE" = "Εκκαθάριση";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "Πρόσφατη αναζήτηση";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Πόλεις";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Ξενοδοχεία";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Αεροδρομια";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "Κοντά σου";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "Πόλεις και ξενοδοχεία";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "Δε βρέθηκε τίποτα";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "Φίλτρα";
+"HL_LOC_FILTER_DROP_BUTTON" = "Επαναφορά";
+"HL_LOC_FILTER_APPLY_BUTTON" = "Τέλος";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Τιμή";
+"HL_LOC_FILTER_RANGE" = "από %@ σε %@";
+"HL_LOC_FILTER_FROM_STRING" = "από";
+"HL_LOC_FILTER_TO_STRING" = "έως";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Απόσταση προς:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Κέντρο";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Γεύματα και πληρωμή";
+"HL_LOC_FILTER_STARS_SECTION" = "Stars";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Είδος Διαμονής";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Κρύψε αποτελέσματα";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "Περιοχές";
+"HL_LOC_FILTER_GATES_SECTION" = "Υπηρεσίες κράτησης";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "Υπηρεσίες κράτησης";
+"HL_LOC_FILTER_SELECT_GATES" = "Επιλογή πρακτορείων";
+"HL_LOC_FILTER_ALL_GATES" = "Πρακτορεια ολα";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Περιοχές";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "Επιλογή περιοχών";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "Όλες οι περιοχές";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Απόσταση προς";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Πρωινό";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "All inclusive";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "Δωρεάν ακύρωση";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "Πληρωμή τώρα";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "Ολόκληρες οικίες";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "Δωμάτια";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "Κρύψε hostels & guesthouses";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "Κρύψε διαμερίσματα";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "Κρύψε κοιτώνες";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Πριβέ μπάνιο";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "Δε βρέθηκαν αποτελέσματα";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "Υπέροχη θέα";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "Εστιατόριο";
+"HL_LOC_FILTER_AMENITY_PARKING" = "Parking";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "Επιτρέπεται το κάπνισμα";
+"HL_LOC_FILTER_AMENITY_PETS" = "Κατοικίδια ναι";
+"HL_LOC_FILTER_AMENITY_TV" = "TV";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "Πλυντήριο";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "A/C";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "Internet";
+"HL_LOC_FILTER_AMENITY_POOL" = "Με πισίνα";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "Fitness";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "Πιστολάκι μαλλιών";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Babysitting";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Πριβέ μπάνιο";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Χ/κιβώτιο";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "ΑΝΑΖΗΤΗΣΗ";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "POI";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Παραλίες";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "Κάθε παραλία";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Ski lifts";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Κάθε ski lift";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Κάθε στάση μετρό";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Αεροδρομια";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Σταθμοί τρένων";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "Σημείο στον χάρτη";
+"HL_LOC_SEARCH_POINT_TEXT" = "Σημείο αναζήτησης";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ και κοντά";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "Τέλος";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "Σημείο στον χάρτη";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "Τρέχουσα τοποθεσία";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "Κέντρο";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "Τρέχουσα τοποθεσία";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "Αναζήτηση στα αποτελέσματα";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Ενεργοποίηση πρακτορείων με Αγγλική διεπιφάνεια";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Ανέσεις δωματίου";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Ανέσεις ξενοδοχείου";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Όνομα ξενοδοχείου";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Πληρωμή στο ξενοδοχείο";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Κρύψε πλήρεις διαμονές";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ ξενοδοχεία από %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ ξενοδοχείο από %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ ξενοδοχεία από %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ ξενοδοχεία από %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ ξενοδοχεία από %@";
+"HL_LOC_FILTER_RATING_CRITERIA" = "Αξιολόγηση";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "Φιλτράρισμα: όνομα ξενοδοχείου";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "Κοντινά ξενοδοχεία";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "Φιλτράρισμα: όνομα ξενοδοχείου";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "Ιστοσελίδες ξενοδοχείων";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "Χάρτης";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Φίλτρα";
+"HL_SORT_BUTTON_TITLE_LABEL" = "Ταξινόμηση";
+
+"HL_DISCOUNT" = "έκπτωση";
+"HL_SPECIAL_PRICE_TITLE" = "ειδική προσφορά";
+
+"HL_LOC_ADULT##{one}" = "ενήλικας";
+"HL_LOC_ADULT##{few}" = "ενήλικες";
+"HL_LOC_ADULT##{many}" = "ενήλικες";
+"HL_LOC_ADULT##{other}" = "ενήλικες";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "χλμ";
+"HL_LOC_METERS_ABBREVIATION" = "λ.";
+"HL_LOC_MILES_ABBREVIATION" = "μι.";
+
+"HL_NEW_SEARCH_BUTTON" = "Νέα αναζήτηση";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "Επαναφορα φιλτρων";
+
+"HL_LOC_NO_ROOMS" = "Κανένα δωμάτιο";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "για αυτές τις ημερομηνίες";
+"HL_LOC_ROOMS_OUTDATED" = "Εκπρόθεσμο";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "Επανεκκίνηση αναζήτησης";
+"HL_LOC_ROOMS_SOLD" = "100% πληρότητα";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "για αυτές τις ημερομηνίες";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "Υπάρχουν περισσότερα από ένα ξενοδοχείο σ΄αυτή την περιοχή, γι΄αυτό τα συγκεντρώσαμε όλα μαζί.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "Υπάρχουν περισσότερα από ένα ξενοδοχείο σ΄αυτή την περιοχή.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "Ταξινόμηση κατά:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "Δημοφιλία";
+"HL_LOC_SORT_TYPE_RATING" = "Αξιολόγηση";
+"HL_LOC_SORT_TYPE_PRICE" = "Τιμή";
+"HL_LOC_SORT_TYPE_DISTANCE" = "Απόσταση προς:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "Έκπτωση";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "Ρυθμίσεις";
+
+"HL_LOC_ABOUT_CURRENCY" = "Νόμισμα";
+
+"LOC_RATE_APP_TITLE" = "Αξιολόγηση εφαρμογής";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "Επικοινωνήστε μαζί μας";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "Πες μας τι ήταν λάθος:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "Έκδοση";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "ΑΝΑΖΗΤΗΣΗ";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "Λεπτομερής αξιολόγηση ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Προβολή ακόμα %@";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "Απόκρυψη";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Όλα τα δωμάτια";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Αξιολόγηση";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Gallery";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Τοποθεσία";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Λεπτομέρειες διαμονής";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Χρήσιμες πληροφορίες";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Ανέσεις δωματίου";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Λεπτομέρειες διαμονής";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Ανέσεις ξενοδοχείου";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "Επισκεπτες";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "Check-in";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "Check-out";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Χρέωση καθαρισμού";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Εγγυητική προκαταβολή";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Απαραίτητα";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "ζευγάρια";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "οικογένειες";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "solo";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "business";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "Το προσωπικό ομιλεί: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "Το προσωπικό ομιλεί: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "Το προσωπικό ομιλεί: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "Το προσωπικό ομιλεί: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Δωρεάν parking";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Ξενοδοχεία";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Διαμερίσματα";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Hostels";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Ξενοδοχείο";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Apart-hotel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Bed & Breakfast";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Διαμερίσματα";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Μοτέλ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Ξενώνας";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Hostel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "Resort";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "Φάρμα";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Εξοχικό";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Lodge";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Βίλα";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Πριβέ δωμάτιο";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "Χτισμένο σε %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "Ανακαίνιση το %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ δωμάτιο";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ δωμάτια";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ δωμάτια";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ δωμάτια";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "Προβολή φώτο";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Άνοιξε χάρτη";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Κράτηση τώρα για ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Κράτηση τώρα";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Περισσότερα deals ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Gallery";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "Ενημέρωση τιμών...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Καλύτερο deal για 1 νύχτα";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Καλύτερο deal για ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Ξαναδοκιμασε";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Αλλαγη παραμετρων αναζητησης";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Επανεκκίνηση αναζήτησης";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "100% πληρότητα";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "Δυστυχώς, δεν λάβαμε αναλυτικές πληροφορίες";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "Οι τιμες εχουν ληξει";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "Δεν υπάρχουν διαθέσιμα δωμάτια για αυτές τις ημερομηνίες";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "Θα πρέπει να επιλέξεις ημερομηνίες και άτομα";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ αξιολογήσεις";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ αξιολόγηση";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ αξιολογήσεις";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ αξιολογήσεις";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ αξιολογήσεις";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i πάνω";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "Περίληψη αξιολόγησης";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "Αξιολόγηση λεπτομέρειες";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "Αξιολογήσεις επισκεπτών";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "Συχνοί επισκέπτες";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "Αξιολόγηση highlights";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Παρουσιάστηκε Σφάλμα";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Περισσότερες αξιολογήσεις";
+"HL_ALL_REVIEWS_TITLE" = "Αξιολογήσεις";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Πρακτορεια ολα";
+"HL_REVIEWS_FILTER" = "Φιλτράρισμα:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "100% επιβεβαιωμένες αξιολογήσεις";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "Πραγματικοί επισκέπτες. Πραγματικές διαμονές. Πραγματικές γνώμες.";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d αξιολογήσεις πελατών";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d αξιολόγηση πελάτη";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d αξιολογήσεις πελατών";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d αξιολογήσεις πελατών";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d αξιολογήσεις πελατών";
+
+"HL_NO_HOTEL_REVIEWS" = "Χωρίς αξιολογήσεις";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "Αναζήτηση για δωμάτια...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "Αλλαγή";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "Ημερομηνίες και άτομα";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "Συμπ. πρωινό";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "Δε συμπ. πρωινό";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "All inclusive";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "Δωρεάν ακύρωση";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "Επιτρέπεται το κάπνισμα";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "Φτηνότερο";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "Έκπτωση";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Ιστοσελίδα Ξενοδοχείου";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Πληρωμή τώρα";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Πληρωμή αργότερα";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Δεν απαιτείται πιστωτική κάρτα";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Ειδική προσφορά";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Πριβέ μπάνιο";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Κοινόχρηστο μπάνιο";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Wi-Fi στο δωμάτιο";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "έμειναν %li δωμάτια!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "έμεινε %li δωμάτιο!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "έμειναν %li δωμάτια!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "έμειναν %li δωμάτια!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "έμειναν %li δωμάτια!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Οι κανονικές χρεώσεις γι' αυτό το ξενοδοχείο ξεκινούν από \U00A0%@ για\U00A0%d\U00A0 νύχτες";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Οι κανονικές χρεώσεις γι' αυτό το ξενοδοχείο ξεκινούν από \U00A0%@ για\U00A0%d\U00A0 νύχτα";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Οι κανονικές χρεώσεις γι' αυτό το ξενοδοχείο ξεκινούν από \U00A0%@ για\U00A0%d\U00A0 νύχτες";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Οι κανονικές χρεώσεις γι' αυτό το ξενοδοχείο ξεκινούν από \U00A0%@ για\U00A0%d\U00A0 νύχτες";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Οι κανονικές χρεώσεις γι' αυτό το ξενοδοχείο ξεκινούν από \U00A0%@ για\U00A0%d\U00A0 νύχτες";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li προσφορές";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li προσφορά";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li προσφορές";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li προσφορές";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li προσφορές";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "%@ έκπτωση από την αρχική χρέωση";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "Άλλα δωμάτια";
+
+"HL_LOC_CHECKIN_AFTER" = "μετά";
+"HL_LOC_CHECKOUT_BEFORE" = "πριν";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li προσφορές";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li προσφορά";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li προσφορές";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li προσφορές";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li προσφορές";
+
+"HOTEL_RATING_EXCEPTIONAL" = "άριστο";
+"HOTEL_RATING_WONDERFUL" = "εξαιρετικό";
+"HOTEL_RATING_EXCELLENT" = "θαυμάσιο";
+"HOTEL_RATING_VERY_GOOD" = "πολύ καλό";
+"HOTEL_RATING_GOOD" = "καλό";
+"HOTEL_RATING_FAIR" = "βαθμολογία σχολίων";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "Δε βρέθηκαν ξενοδοχεία";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "Δε βρέθηκαν αποτελέσματα με βάση τα κριτήρια";
+"HL_NO_FILTER_RESULTS_BUTTON" = "Επαναφορα φιλτρων";
+
+"HL_NO_RESULTS_TITLE" = "Δε βρέθηκαν ξενοδοχεία";
+"HL_NO_RESULTS_DESCRIPTION" = "Δεν βρέθηκαν ξενοδοχεία\nστην επιλεγμένη πόλη.";
+"HL_NEW_SEARCH_BUTTON" = "Νέα αναζήτηση";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "ΕΦΑΡΜΟΓΗ";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Απόσταση προς τη τρέχουσα τοποθεσία:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Απόσταση από ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Απόσταση από το σημείο αναζήτησης:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Απόσταση από το σημείο στον χάρτη:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "Απόσταση από %@ :";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Τιμή";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Απόσταση για τα ski lifts:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Απόσταση για την παραλία:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "Απόσταση για το κέντρο:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "Δε βρήκες αυτό που ψάχνεις;\nΤσέκαρε περισσότερα deals σε κοντινή απόσταση!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "Δε βρέθηκε κάτι. Κάνε αναζήτηση σε κοντινές πόλεις.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "Προβολή ξενοδοχείων κοντά";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "Τέλεια! Πως μπορώ να φθάσω εκεί;";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "Αναζήτηση εισιτηρίων";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "Επιλεγμένο νόμισμα";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "Το νόμισμα θα αλλάξει μόλις ξεκινήσεις νέα αναζήτηση";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "Χωρίς διαδικτυακή σύνδεση";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "Θα πρέπει να ελέγξεις τη διαδικτυακή σου σύνδεση";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "Σφάλμα server!";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "Παρουσιάστηκε σφάλμα server. Θα πρέπει να κάνεις αναζήτηση, ξανά.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "Τα αποτελέσματα δεν είναι ενημερωμένα";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "Για λήψη ενημερωμένων τιμών, θα πρέπει να ξανακάνεις αναζήτηση.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "Δεν εντοπίσαμε τη τοποθεσία σου";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "Θα πρέπει να εγκρίνεις πρόσβασή μας στη τοποθεσία σου για βελτιστοποίηση της ξενοδοχειακής σου αναζήτησης.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Πήγαινε Ρυθμίσεις";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "Αργότερα";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Κλείσιμο";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback από iOS app";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Σφάλμα";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Θα πρέπει να ορίσεις email client στη συσκευή σου.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "Πληροφορίες υπηρεσίας που θα μας βοηθήσουν να επιλύσουμε το πρόβλημά σου";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "Κράτηση δωματίου";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "Άλλα πρακτορεία";
+"HL_WAITING_LONG_SEARCH_TITLE" = "Αναζήτηση καλύτερων deals";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Μπορεί να πάρει έως 1 λεπτό.\nΠαρακαλώ, περίμενε.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Βρήκες το deal σου!\nΤώρα, πρέπει να ολοκληρώσεις την κράτηση.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "Μόσχα";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "Νέα Υόρκη";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "Σίδνεϊ";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "Λονδίνο";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "Οτάβα";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "Λισαβόνα";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "Μπανγκόκ";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "Πεκίνο";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "Παρίσι";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "Το βερολίνο";
+"HL_LOC_DEFAULT_CITIES_ROME" = "Ρώμη";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "Μαδρίτη";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "Κίεβο";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "Astana";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "Μινσκ";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "Τόκιο";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "Σεούλ";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "Μπραζίλια";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "Taipei City";
+"HL_LOC_DEFAULT_CITIES_HK" = "Χονγκ Κονγκ";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "Ντουμπάι";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "Ρωσία";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "Ηνωμένες Πολιτείες";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "Αυστραλία";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "Ηνωμένο Βασίλειο";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "Καναδάς";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "Πορτογαλία";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "Ταϊλάνδη";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "Κίνα";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "Γαλλία";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "Γερμανία";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "Ιταλία";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "Ισπανία";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "Ουκρανία";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "Καζακστάν";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "Λευκορωσία";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "Ηνωμένα Αραβικά Εμιράτα";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "Ιαπωνία";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "Νότια Κορέα";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Βραζιλία";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Ταϊβάν";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "Χονγκ Κονγκ";

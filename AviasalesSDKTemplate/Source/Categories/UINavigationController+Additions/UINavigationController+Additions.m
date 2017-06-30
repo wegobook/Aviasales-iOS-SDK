@@ -13,7 +13,7 @@
     NSMutableArray *const viewControllers = [self.viewControllers mutableCopy];
     [viewControllers removeLastObject];
     [viewControllers addObject:viewController];
-    self.viewControllers = viewControllers;
+    [self setViewControllers:viewControllers animated:YES];
 }
 
 @end

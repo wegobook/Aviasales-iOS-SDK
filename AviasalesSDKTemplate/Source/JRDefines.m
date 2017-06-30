@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "SLLocalization.h"
 
+NSString * const kHotelsStringsTable = @"HotelsLocalizable";
+
 //------------------------
 // DEFINES
 //------------------------
@@ -103,6 +105,33 @@ CGFloat iPhoneSizeValue(CGFloat defaultValue, CGFloat iPhone6Value, CGFloat iPho
     }
 }
 
+CGFloat deviceSizeTypeValue(CGFloat deviceSizeTypeIPhone35Inch, CGFloat deviceSizeTypeIPhone4Inch, CGFloat deviceSizeTypeIPhone47Inch, CGFloat deviceSizeTypeIPhone55Inch, CGFloat deviceSizeTypeIPad) {
+    switch (CurrentDeviceSizeType()) {
+        case DeviceSizeTypeIPhone35Inch:
+            return deviceSizeTypeIPhone35Inch;
+        case DeviceSizeTypeIPhone4Inch:
+            return deviceSizeTypeIPhone4Inch;
+        case DeviceSizeTypeIPhone47Inch:
+            return deviceSizeTypeIPhone47Inch;
+        case DeviceSizeTypeIPhone55Inch:
+            return deviceSizeTypeIPhone55Inch;
+        case DeviceSizeTypeIPad:
+            return deviceSizeTypeIPad;
+    }
+}
+
+CGFloat minScreenDimension(void)
+{
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    return MIN(screenSize.width, screenSize.height);
+}
+
+CGFloat maxScreenDimension(void)
+{
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    return MAX(screenSize.width, screenSize.height);
+}
+
 BOOL Debug() {
 #if DEBUG
     return YES;
@@ -111,14 +140,99 @@ BOOL Debug() {
 #endif
 }
 
+BOOL AppStore() {
+#if APPSTORE
+    return YES;
+#else
+    return NO;
+#endif
+}
+
+BOOL ticketsEnabled() {
+#if TICKETS_ENABLED
+    return YES;
+#else
+    return NO;
+#endif
+}
+
+BOOL hotelsEnabled() {
+#if HOTELS_ENABLED
+    return YES;
+#else
+    return NO;
+#endif
+}
+
+UIView *loadViewFromNibNamed(NSString *nibNamed)
+{
+    return [[[NSBundle mainBundle] loadNibNamed:nibNamed owner:nil options:nil] objectAtIndex:0];
+}
+
+UIView *loadViewFromNib(NSString *nibNamed, id owner)
+{
+    return [[[NSBundle mainBundle] loadNibNamed:nibNamed owner:owner options:nil] objectAtIndex:0];
+}
+
+NSString *platformName()
+{
+    return iPhone() ? @"iphone" : @"ipad";
+}
+
 //------------------------
 // LOCALIZATION
 //------------------------
 
 NSString *NSLS(NSString *key) {
-    return [AVIASALES_BUNDLE localizedStringForKey:key value:@"" table:@"AviasalesTemplateLocalizable"];
+
+    NSString *result = [AVIASALES_BUNDLE localizedStringForKey:key value:@"" table:@"AviasalesTemplateLocalizable"];
+    if (![result isEqualToString:key]) {
+        return result;
+    } else {
+        return NSLocalizedStringFromTable(key, kHotelsStringsTable, @"");
+    }
 }
 
 NSString *NSLSP(NSString *key, float pluralValue) {
-    return [AVIASALES_BUNDLE pluralizedStringWithKey:key defaultValue:@"" table:@"AviasalesTemplateLocalizable" pluralValue:SL_FLOATVALUE(pluralValue)];
+    NSString *result = [AVIASALES_BUNDLE pluralizedStringWithKey:key defaultValue:@"" table:@"AviasalesTemplateLocalizable" pluralValue:SL_FLOATVALUE(pluralValue)];
+    if (![result isEqualToString:key]) {
+        return result;
+    } else {
+        return [[NSBundle mainBundle] pluralizedStringWithKey:key defaultValue:@"" table:kHotelsStringsTable pluralValue:SL_FLOATVALUE(pluralValue)];
+    }
+
+}
+
+//------------------------
+// DISPATCH
+//------------------------
+
+void hl_dispatch_main_sync_safe(dispatch_block_t block)
+{
+    if ([NSThread isMainThread]) {
+        block();
+    } else {
+        dispatch_sync(dispatch_get_main_queue(), block);
+    }
+}
+
+void hl_dispatch_main_async_safe(dispatch_block_t block)
+{
+    if ([NSThread isMainThread]) {
+        block();
+    } else {
+        dispatch_async(dispatch_get_main_queue(), block);
+    }
+}
+
+//------------------------
+// CONFIG
+//------------------------
+
+BOOL ShowAppodealAds() {
+    return kShowAppodealAds;
+}
+
+BOOL ShowAviasalesAds() {
+    return kShowAviasalesAds;
 }

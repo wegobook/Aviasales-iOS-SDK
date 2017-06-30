@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="R3A-fL-MaW" customClass="HLPriceTableHeaderView" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="83"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some header" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPk-cC-f8C">
+                    <rect key="frame" x="15" y="28" width="112" height="21"/>
+                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="17"/>
+                    <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Zg-yE-GKU" userLabel="Offers label">
+                    <rect key="frame" x="15" y="52" width="33" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.47450980392156861" green="0.47843137254901957" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3Zg-yE-GKU" secondAttribute="bottom" constant="15" id="52e-c5-0vm"/>
+                <constraint firstItem="FPk-cC-f8C" firstAttribute="leading" secondItem="R3A-fL-MaW" secondAttribute="leading" constant="15" id="5ac-Fe-3KM"/>
+                <constraint firstItem="3Zg-yE-GKU" firstAttribute="top" secondItem="FPk-cC-f8C" secondAttribute="bottom" constant="3" id="AQB-8G-KFa"/>
+                <constraint firstItem="3Zg-yE-GKU" firstAttribute="leading" secondItem="R3A-fL-MaW" secondAttribute="leading" constant="15" id="DB2-Cq-xxK"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="FPk-cC-f8C" secondAttribute="trailing" constant="10" id="fCT-bj-c7k"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="offersLabel" destination="3Zg-yE-GKU" id="Lf2-CR-qx0"/>
+                <outlet property="titleLabel" destination="FPk-cC-f8C" id="D9D-ew-mUg"/>
+            </connections>
+            <point key="canvasLocation" x="-90" y="118.5"/>
+        </view>
+    </objects>
+</document>

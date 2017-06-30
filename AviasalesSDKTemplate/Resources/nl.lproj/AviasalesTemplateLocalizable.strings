@@ -1,0 +1,242 @@
+"LANGUAGE" = "nl";
+
+"SHORT_TIME_FORMAT" = "%@u %@m";
+"LONG_TIME_FORMAT" = "%@ u %@ min";
+
+"JR_ERROR_TITLE" = "FOUT";
+
+"JR_BACK_TITLE" = "Terug";
+
+"JR_TRY_AGAIN_TITLE" = "Probeer opnieuw";
+
+"JR_CANCEL_TITLE" = "Annuleer";
+
+"CURRENCY" = "Valuta";
+
+"JR_ANY_AIRPORT" = "Alle luchthavens";
+
+"JR_OK_BUTTON" = "OK";
+
+"JR_DONE_BUTTON" = "KLAAR";
+
+"JR_NEW_SEARCH_TITLE" = "Nieuwe zoekopdracht";
+
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Vertrekdatum";
+"JR_DATE_PICKER_RETURN_DATE_TITLE" = "Retourdatum";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Vluchtdata";
+"JR_DATE_PICKER_TODAY_DATE_TITLE" = "Vandaag";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Zoek tickets";
+"JR_SEARCHINFO_BUSINESS" = "Business";
+"JR_SEARCHINFO_ECONOMY" = "Economy";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
+"JR_SEARCHINFO_FIRST" = "Eerste Klasse";
+"JR_SEARCHINFO_PASSENGERS##{one}" = "%d reiziger";
+"JR_SEARCHINFO_PASSENGERS##{few}" = "%d reizigers";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "%d reizigers";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "%d reizigers";
+"JR_SEARCH_FORM_PASSENGERS" = "Reizigers";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Klasse";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Aankomststad";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Vertrekstad";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Datum";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Naar";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Vanaf";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Multi-city";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Vertrek";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Retour";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "retour";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Basis";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Uitgaand";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Retour";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "One-way";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Retour";
+"JR_SEARCH_FORM_TITLE" = "Vluchten";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "ZOEK TICKETS";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Het aantal zuigelingen zonder stoel mag niet meer zijn dan het aantal meereizende volwassenen.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Voer luchthaven van vertrek in";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Voer luchthaven van aankomst in";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR" = "Luchthaven van vertrek en aankomst moet verschillend zijn.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE" = "Voer vertrekdatum in";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "Kies";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "TOEVOEGEN";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "VERWIJDEREN";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Reizigers en klasse";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Volwassenen";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "Ouder dan 16 jr.";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Kinderen";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15 jr.";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Zuigelingen";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "0-2 jr.";
+
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Verminder het aantal reizigers %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Verhoog het aantal reizigers %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC" = "%@ reizigers %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12" = "12+";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS" = "ONDER 12";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS" = "ONDER 2";
+
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{one}" = "volwassene";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{few}" = "volwassenen";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "volwassenen";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "volwassenen";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "kind";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "kinderen";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "kinderen";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "kinderen";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "zuigeling";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "zuigelingen";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "zuigelingen";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "zuigelingen";
+
+"JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "Bestemming";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "Dichtsbijzijnde luchthavens";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "Geolokatie service is tijdelijk niet beschikbaar";
+
+"JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Origine";
+"JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "Geen luchthavens bij jou in de buurt";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Voer stad of luchthaven in";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Zoeken";
+"JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Interesses";
+"JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Routes op interesses";
+"JR_AIRPORT_PICKER_BACK_BUTTON" = "Terug";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Vorige zoekopdrachten:";
+"JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Geen resultaten gevonden";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Zoeken...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Zoeken naar de dichtstbijzijnde luchthavens...";
+
+"JR_FILTER_BUTTON" = "Filters";
+
+"JR_FILTER_RESET_ALL" = "Wis alle";
+"JR_FILTER_RESET" = "Verwijder";
+"JR_FILTER_TICKETS_NOT_FOUND" = "Geen resultaten gevonden";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Geen tickets gevonden";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Verander je filterinstellingen.";
+
+"JR_FILTER_STOPOVER_OVERNIGHT" = "Nachtelijke tussenstop";
+"JR_FILTER_PRICE_FILTER" = "Prijs";
+"JR_FILTER_TOTAL_DURATION" = "Reisduur";
+"JR_FILTER_DELAY_DURATION" = "Duur tussenlanding";
+"JR_FILTER_TOTAL_TIME_FROM" = "vanaf";
+"JR_FILTER_TOTAL_DURATION_FROM" = "vanaf";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "naar";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "tot";
+
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d vlucht vanaf %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d vluchten vanaf %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d vluchten vanaf %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d vluchten vanaf %@";
+
+"JR_FILTER_RETURN_DEPARTURE_TIME" = "Aankomsttijd terugvlucht";
+"JR_FILTER_DEPARTURE_TIME" = "Vertrektijd heenvlucht";
+"JR_FILTER_ARRIVAL_TIME" = "Aankomsttijd heenvlucht";
+"JR_FILTER_RETURN_ARRIVAL_TIME" = "Aankomsttijd terugvlucht";
+
+"JR_FILTER_AIRPORTS_ORIGIN" = "Vanaf";
+"JR_FILTER_AIRPORTS_STOPOVER" = "Tussenlandingen";
+"JR_FILTER_AIRPORTS_DESTINATION" = "Naar";
+
+"JR_FILTER_DAY_TIME_MORNING" = "ochtend";
+"JR_FILTER_DAY_TIME_DAY" = "middag";
+"JR_FILTER_DAY_TIME_EVENING" = "avond";
+
+"JR_FILTER_GATES" = "Reisbureaus";
+"JR_FILTER_GATES_ALL" = "Alle reisbureaus";
+
+"JR_FILTER_PAYMENT_METHODS" = "Betaalmethoden";
+"JR_FILTER_PAYMENT_METHODS_ALL" = "Alle betaalmethoden";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Koeriersdienst";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Contant";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Creditcard";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Betalingsterminal";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Bankoverschrijving";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Contact ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Krijg een lening";
+
+"JR_FILTER_AIRLINES" = "Luchtvaartmaatschappijen";
+"JR_FILTER_AIRLINES_ALL" = "Alle luchtvaartmaatschappijen";
+
+"JR_FILTER_ALLIANCES" = "Allianties";
+"JR_FILTER_OTHER_ALLIANCES" = "Zonder allianties";
+"JR_FILTER_ALLIANCES_ALL" = "Alle allianties";
+
+"JR_FILTER_AIRPORTS" = "Luchthavens";
+"JR_FILTER_AIRPORTS_ALL" = "Alle luchthavens";
+
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Direct";
+"JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d stop";
+"JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d stops";
+"JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d stops";
+"JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d stops";
+
+"JR_BROWSER_TITLE" = "Koop";
+
+"JR_BROWSER_BACK_BTN_TITLE" = "Terug";
+"JR_BROWSER_FORWARD_BTN_TITLE" = "Vooruit";
+"JR_BROWSER_ERROR_ALERT_TITLE" = "Fout";
+
+"BROWSER_CHECK_CONNECTION" = "Controleer je internetverbinding.";
+"BROWSER_OVERLAY_DEFAULT_TEXT" = "Laden...";
+"JR_CLOSE_BUTTON_TITLE" = "Sluiten";
+
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Sorry, we konden geen vluchten vinden tussen de geselecteerde luchthavens voor de route %@. We kunnen je wel andere vluchten tussen deze steden laten zien.";
+
+"JR_SEARCH_RESULTS_TICKET_IN_THE" = "op";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Hotel nodig?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Terwijl u kijkt naar vliegtuigtickets, helpen wij het beste hotel voor u te kiezen.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Vind hotels";
+
+"JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Koop";
+"JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Algemene Voorwaarden";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{few}" = "betalingen";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{one}" = "betaling";
+"JR_TICKET_CREDIT_ALERT_CANCEL_BUTTON" = "Annuleer";
+"JR_TICKET_CREDIT_ALERT_DAYS##{one}" = "dag";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{other}" = "betalingen";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{many}" = "betalingen";
+"JR_TICKET_CREDIT_ALERT_DAYS##{few}" = "dagen";
+"JR_TICKET_CREDIT_ALERT_MONTH" = "maand";
+"JR_TICKET_CREDIT_ALERT_DAYS##{other}" = "dagen";
+"JR_TICKET_CREDIT_ALERT_TILL" = "tot";
+"JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "dagen";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "Overbetaling";
+"JR_TICKET_CREDIT_ALERT_DURATION" = "Leningsvoorwaarden";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "van de prijs";
+"JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "Wachtperiode";
+"JR_TICKET_CREDIT_MONTH_2" = "februari";
+"JR_TICKET_CREDIT_MONTH_1" = "januari";
+"JR_TICKET_CREDIT_MONTH_3" = "maart";
+"JR_TICKET_CREDIT_MONTH_6" = "juni";
+"JR_TICKET_CREDIT_MONTH_4" = "april";
+"JR_TICKET_CREDIT_MONTH_7" = "juli";
+"JR_TICKET_CREDIT_MONTH_5" = "mei";
+"JR_TICKET_CREDIT_MONTH_8" = "augustus";
+"JR_TICKET_CREDIT_MONTH_9" = "september";
+"JR_TICKET_CREDIT_MONTH_10" = "oktober";
+"JR_TICKET_CREDIT_MONTH_11" = "november";
+"JR_TICKET_CREDIT_MONTH_12" = "december";
+
+"JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Koop bij";
+"JR_TICKET_BUY_BUTTON" = "Koop ticket";
+"JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Krijg een lening";
+"JR_TICKET_FLIGHT" = "Vlucht";
+"JR_TICKET_TRANSFER" = "Tussenlanding";
+"JR_TICKET_OTHER_BUTTON" = "Meer deals";
+"JR_TICKET_DURATION" = "Vluchtduur";
+
+"JR_TICKET_EXPIRED" = "Zoekresultaten verouderd";
+
+"JR_WAITING_TITLE" = "Zoeken...";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Geen resultaten. Probeer de zoekparameters aan te passen.";
+"JR_WAITING_ERROR_CONNECTION_ERROR" = "Verbindingsfout";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Sorry, de Jetradar service is tijdelijk niet beschikbaar";

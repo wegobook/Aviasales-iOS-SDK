@@ -14,6 +14,8 @@
 @property (assign, nonatomic) BOOL showsAdDuringSearch;
 @property (assign, nonatomic) BOOL showsAdOnSearchResults;
 
+@property (nonatomic, strong, readonly) UIView *cachedAviasalesAdView;
+
 + (instancetype)sharedInstance;
 
 /**
@@ -22,16 +24,9 @@
  */
 - (void)initializeAppodealWithAPIKey:(NSString *)appodealAPIKey testingEnabled:(BOOL)testingEnabled;
 
-- (void)presentFullScreenAdFromViewControllerIfNeeded:(UIViewController *)viewController;
-
 - (void)presentVideoAdInViewIfNeeded:(UIView *)view
                   rootViewController:(UIViewController *)viewController;
 
-- (void)viewController:(UIViewController *)viewController
-  loadNativeAdWithSize:(CGSize)size
-  ifNeededWithCallback:(void (^)(JRNewsFeedNativeAdView *))callback;
-
-- (void)loadAviasalesAdWithSearchInfo:(id<JRSDKSearchInfo>)searchInfo
-                 ifNeededWithCallback:(void(^)(UIView *))callback;
+- (void)loadAndCacheAviasalesAdViewWithSearchInfo:(JRSDKSearchInfo *)searchInfo;
 
 @end

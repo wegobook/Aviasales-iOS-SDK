@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "van";
+
+"HL_LOC_GUEST##{one}" = "gast";
+"HL_LOC_GUEST##{few}" = "gasten";
+"HL_LOC_GUEST##{many}" = "gasten";
+"HL_LOC_GUEST##{other}" = "gasten";
+
+"HL_LOC_GUEST_ADULT##{one}" = "volwassene";
+"HL_LOC_GUEST_ADULT##{few}" = "volwassene";
+"HL_LOC_GUEST_ADULT##{many}" = "volwassenen";
+"HL_LOC_GUEST_ADULT##{other}" = "volwassenen";
+
+"HL_LOC_GUEST_KID##{one}" = "kind";
+"HL_LOC_GUEST_KID##{few}" = "kind";
+"HL_LOC_GUEST_KID##{many}" = "kinderen";
+"HL_LOC_GUEST_KID##{other}" = "kinderen";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "Hotels";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "Stad of hotel";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "Kinderen";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Volwassenen";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "Data";
+
+"HL_LOC_YEAR##{one}" = "jaar";
+"HL_LOC_YEAR##{few}" = "jaar";
+"HL_LOC_YEAR##{many}" = "jaar";
+"HL_LOC_YEAR##{other}" = "jaar";
+
+"HL_LOC_NIGHT##{one}" = "nacht";
+"HL_LOC_NIGHT##{few}" = "nachten";
+"HL_LOC_NIGHT##{many}" = "nachten";
+"HL_LOC_NIGHT##{other}" = "nachten";
+
+"HL_LOC_FOR_NIGHT##{one}" = "per\U00A0%d\U00A0nacht";
+"HL_LOC_FOR_NIGHT##{few}" = "per\U00A0%d\U00A0nachten";
+"HL_LOC_FOR_NIGHT##{many}" = "per\U00A0%d\U00A0nachten";
+"HL_LOC_FOR_NIGHT##{other}" = "per\U00A0%d\U00A0nachten";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Fout";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Voer het aantal gasten in";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Selecteer je bestemming";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Zoekresultaten";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "Zoek hotels";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Prijzen";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "Selecteer data";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Het spijt ons, maar de maximale verblijfstijd in het hotel is 30 dagen";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "Kinderen";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Zuigelingen";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Leeftijd";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Toepassen";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Annuleer";
+
+"HL_CLEAN_BUTTON_TITLE" = "Wis";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "Recente zoekopdracht";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Steden";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Hotels";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Luchthavens";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "In de buurt";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "Steden en hotels";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "Niets gevonden";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "Filters";
+"HL_LOC_FILTER_DROP_BUTTON" = "Resetten";
+"HL_LOC_FILTER_APPLY_BUTTON" = "Klaar";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Prijs";
+"HL_LOC_FILTER_RANGE" = "van %@ tot %@";
+"HL_LOC_FILTER_FROM_STRING" = "vanaf";
+"HL_LOC_FILTER_TO_STRING" = "tot";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Afstand tot:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Centrum";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Maaltijden en betaling";
+"HL_LOC_FILTER_STARS_SECTION" = "Sterren";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Soort accomodatie";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Verberg resultaten";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "Districten";
+"HL_LOC_FILTER_GATES_SECTION" = "Boekingskantoren";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "Boekingskantoren";
+"HL_LOC_FILTER_SELECT_GATES" = "Selecteer bureaus";
+"HL_LOC_FILTER_ALL_GATES" = "Alle reisbureaus";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Districten";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "Selecteer districten";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "Alle districten";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Afstand tot";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Ontbijt";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "All inclusive";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "Gratis annuleren";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "Betaal nu";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "Hele huizen";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "Kamers";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "Verberg hostels en guesthouses";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "Verberg appartementen";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "Verberg slaapzalen";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Privé badkamer";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "Geen resultaten gevonden";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "Prachtig uitzicht";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "Restaurant";
+"HL_LOC_FILTER_AMENITY_PARKING" = "Parkeren";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "Roken toegestaan";
+"HL_LOC_FILTER_AMENITY_PETS" = "Huisdieren toegestaan";
+"HL_LOC_FILTER_AMENITY_TV" = "TV";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "Was";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "Air conditioning";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "Internet";
+"HL_LOC_FILTER_AMENITY_POOL" = "Zwembad";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "Fitness";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "Föhn";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Kinderoppas";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Privé badkamer";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Kluis";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Zoeken";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "Bezienswaardigheden";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Stranden";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "Elk strand";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Ski-liften";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Elke ski-lift";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Elk metrostation";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Luchthavens";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Treinstations";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "Punt op de kaart";
+"HL_LOC_SEARCH_POINT_TEXT" = "Zoekpunt";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ en in de buurt";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "Klaar";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "Punt op de kaart";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "Huidige locatie";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "Stadscentrum";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "Huidige locatie";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "Zoekresultaten";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Reisbureaus met een Engelse interface toestaan";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Voorzieningen op de kamer";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Hotel voorzieningen";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Naam hotel";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Betalen in het hotel";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Verberg uitverkochte accomodaties";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ hotels van %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ hotel van %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ hotels van %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ hotels van %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ hotels van %@";
+"HL_LOC_FILTER_RATING_CRITERIA" = "Rating";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "Filter op hotelnaam";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "Hotels in de buurt";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "Filter op hotelnaam";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "Hotel websites";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "Kaart";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filters";
+"HL_SORT_BUTTON_TITLE_LABEL" = "Sorteren";
+
+"HL_DISCOUNT" = "korting";
+"HL_SPECIAL_PRICE_TITLE" = "speciale aanbieding";
+
+"HL_LOC_ADULT##{one}" = "volwassene";
+"HL_LOC_ADULT##{few}" = "volwassenen";
+"HL_LOC_ADULT##{many}" = "volwassenen";
+"HL_LOC_ADULT##{other}" = "volwassenen";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "km";
+"HL_LOC_METERS_ABBREVIATION" = "m";
+"HL_LOC_MILES_ABBREVIATION" = "mi";
+
+"HL_NEW_SEARCH_BUTTON" = "Nieuwe zoekopdracht";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "Filters resetten";
+
+"HL_LOC_NO_ROOMS" = "Geen kamers";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "voor deze datums";
+"HL_LOC_ROOMS_OUTDATED" = "Gedateerd";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "Zoek opnieuw";
+"HL_LOC_ROOMS_SOLD" = "Uitverkocht";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "voor deze datums";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "Er zijn meer dan één hotel op deze plek, dus deze hebben we tot een groep samengevoegd.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "Er zijn meer dan één hotel op deze plek.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "Rangschikken volgens:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "Populariteit";
+"HL_LOC_SORT_TYPE_RATING" = "Rating";
+"HL_LOC_SORT_TYPE_PRICE" = "Prijs";
+"HL_LOC_SORT_TYPE_DISTANCE" = "Afstand tot:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "Korting";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "Instellingen";
+
+"HL_LOC_ABOUT_CURRENCY" = "Valuta";
+
+"LOC_RATE_APP_TITLE" = "Beoordeel deze app";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "Neem contact met ons op";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "Vertel ons wat er mis was:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "Versie";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Zoeken";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "Gedetailleerde beoordeling ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Toon %@ meer";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "Verbergen";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Alle kamers";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Rating";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Gallerij";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Locatie";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Accomodatiegegevens";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Nuttige informatie";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Voorzieningen op de kamer";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Accomodatiegegevens";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Hotel voorzieningen";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "Gasten";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "Check-in";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "Check-out";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Schoonmaakkosten";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Borg";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Vereist";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "koppels";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "gezinnen";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "solo";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "zakelijk";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "Personeel spreekt: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "Personeel spreekt: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "Personeel spreekt: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "Personeel spreekt: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Gratis parkeren";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Hotels";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Appartementen";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Hostels";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Hotel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Apart-hotel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Bed & Breakfast";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Appartementen";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Motel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Guesthouse";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Hostel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "Resort";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "Boerderij";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Vakantiehuis";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Loge";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Villa";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Privékamer";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "Ingebouwde %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "Gerenoveerd in %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ kamer";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ kamers";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ kamers";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ kamers";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "Toon foto's";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Open kaart";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Boek nu voor ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Boek nu";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Meer deals ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Gallerij";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "Prijzen bijwerken...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Beste aanbieding voor 1 nacht";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Beste deal voor ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Probeer opnieuw";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Wijzig zoekparameters";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Opnieuw zoeken";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Uitverkocht";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "Sorry, we hebben geen gedetailleerde gegevens ontvangen";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "Prijzen zijn verouderd";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "Er zijn geen kamers beschikbaar voor de geselecteerde datums";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "Selecteer datums en gasten";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ reviews";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ review";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ reviews";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ reviews";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ reviews";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i meer";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "Beoordelingsoverzicht";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "Beoordelingsdetails";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "Gastenreviews";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "Frequente gasten";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "Bekijk highlights";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Fout opgetreden";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Lees meer reviews";
+"HL_ALL_REVIEWS_TITLE" = "Reviews";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Alle reisbureaus";
+"HL_REVIEWS_FILTER" = "Filter op:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "100% geverifieerde reviews";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "Echte gasten. Echte verblijven. Echte meningen.";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d Gastenreviews";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d Gastenreview";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d Gastenreviews";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d Gastenreviews";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d Gastenreviews";
+
+"HL_NO_HOTEL_REVIEWS" = "Geen reviews";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "Zoeken naar kamers...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "Wijzigen";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "Datums en gasten";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "Inclusief ontbijt";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "Ontbijt niet inbegrepen";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "All inclusive";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "Gratis annuleren";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "Roken toegestaan";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "Goedkoopst";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "Korting";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Hotel website";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Betaal nu";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Betaal later";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Geen creditcard vereist";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Speciale aanbieding";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Privé badkamer";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Gedeelde badkamer";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Wi-Fi in kamer";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "%li kamers over!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "%li kamer over!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "%li kamers over!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "%li kamers over!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "%li kamers over!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Normale prijzen voor dit hotel beginnen vanaf\U00A0%@ voor\U00A0%d\U00A0nachten";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Normale prijzen voor dit hotel beginnen vanaf\U00A0%@ voor\U00A0%d\U00A0nacht";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Normale prijzen voor dit hotel beginnen vanaf\U00A0%@ voor\U00A0%d\U00A0nachten";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Normale prijzen voor dit hotel beginnen vanaf\U00A0%@ voor\U00A0%d\U00A0nachten";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Normale prijzen voor dit hotel beginnen vanaf\U00A0%@ voor\U00A0%d\U00A0nachten";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li aanbiedingen";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li aanbieding";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li aanbiedingen";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li aanbiedingen";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li aanbiedingen";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "%@ korting op standaard tarief";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "Andere kamers";
+
+"HL_LOC_CHECKIN_AFTER" = "na";
+"HL_LOC_CHECKOUT_BEFORE" = "voor";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li aanbiedingen";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li aanbieding";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li aanbiedingen";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li aanbiedingen";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li aanbiedingen";
+
+"HOTEL_RATING_EXCEPTIONAL" = "voortreffelijk";
+"HOTEL_RATING_WONDERFUL" = "fantastisch";
+"HOTEL_RATING_EXCELLENT" = "heerlijk";
+"HOTEL_RATING_VERY_GOOD" = "erg goed";
+"HOTEL_RATING_GOOD" = "goed";
+"HOTEL_RATING_FAIR" = "beoordeling";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "Geen hotels gevonden";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "Geen resultaten voldoen aan je specifieke criteria";
+"HL_NO_FILTER_RESULTS_BUTTON" = "Filters resetten";
+
+"HL_NO_RESULTS_TITLE" = "Geen hotels gevonden";
+"HL_NO_RESULTS_DESCRIPTION" = "Geen hotels gevonden\nin de geselecteerde stad.";
+"HL_NEW_SEARCH_BUTTON" = "Nieuwe zoekopdracht";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Toepassen";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Afstand tot huidige locatie:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Afstand vanaf ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Afstand vanaf het zoekpunt:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Afstand vanaf het punt op de kaart:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "Afstand vanaf %@:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Prijs";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Afstand tot de ski-liften:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Afstand tot het strand:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "Afstand tot het stadscentrum:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "Niet gevonden wat je zocht?\nBekijk meer aanbiedingen in de buurt!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "Niets gevonden. Probeer te zoeken op steden in de buurt.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "Toon hotels in de buurt";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "Cool! Hoe kan ik daar komen?";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "Vind tickets";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "Geselecteerde valuta";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "De valuta wordt gewijzigd bij je volgende zoekopdracht";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "Geen internetverbinding";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "Controleer je internetverbinding";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "Server fout";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "Er is een serverfout opgetreden. Probeer opnieuw te zoeken.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "De resultaten zijn verouderd";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "Zoek opnieuw voor bijgewerkte prijzen.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "We konden je locatie niet krijgen";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "Sta locatievoorzieningen toe zodat je makkelijker een hotel kunt zoeken.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Ga naar Instellingen";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "Later";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Sluiten";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback van iOS app";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Fout";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Configureer de e-mail client op je apparaat.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "Service-informatie die ons helpt om jouw probleem op te lossen";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "Boek een kamer";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "Andere bureaus";
+"HL_WAITING_LONG_SEARCH_TITLE" = "Zoeken naar de bestel aanbiedingen";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Het kan tot een minuut duren.\nEven geduld.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Je hebt je aanbieding gevonden!\nVoltooi nu de boeking.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moskou";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "New York";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "Sydney";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "Londen";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "Ottawa";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "Lissabon";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "Bangkok";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "Beijing";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "Parijs";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "Berlijn";
+"HL_LOC_DEFAULT_CITIES_ROME" = "Rome";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "Madrid";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "Kiev";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "Astana";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "Minsk";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "Tokio";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "Seoul";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "Brasilia";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "Taipei City";
+"HL_LOC_DEFAULT_CITIES_HK" = "Hong Kong";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "Dubai";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "Rusland";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "Verenigde Staten";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "Australië";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "Verenigd Koninkrijk";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "Canada";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "Portugal";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "Thailand";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "China";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "Frankrijk";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "Duitsland";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "Italië";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "Spanje";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "Oekraïne";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "Kazachstan";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "Wit-rusland";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "Verenigde Arabische Emiraten";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "Japan";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "Zuid-Korea";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brazilië";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Taiwan";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";

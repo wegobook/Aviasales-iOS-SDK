@@ -1,0 +1,242 @@
+"LANGUAGE" = "sv";
+
+"SHORT_TIME_FORMAT" = "%@h %@m";
+"LONG_TIME_FORMAT" = "%@ h %@ min";
+
+"JR_ERROR_TITLE" = "FEL";
+
+"JR_BACK_TITLE" = "Tillbaka";
+
+"JR_TRY_AGAIN_TITLE" = "Försök igen";
+
+"JR_CANCEL_TITLE" = "Avbryt";
+
+"CURRENCY" = "Valuta";
+
+"JR_ANY_AIRPORT" = "Alla flygplatser";
+
+"JR_OK_BUTTON" = "OK";
+
+"JR_DONE_BUTTON" = "FÄRDIG";
+
+"JR_NEW_SEARCH_TITLE" = "Ny sökning";
+
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Avresedatum";
+"JR_DATE_PICKER_RETURN_DATE_TITLE" = "Returdatum";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Flygdatum";
+"JR_DATE_PICKER_TODAY_DATE_TITLE" = "Idag";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Sök efter biljetter";
+"JR_SEARCHINFO_BUSINESS" = "Business";
+"JR_SEARCHINFO_ECONOMY" = "Ekonomi";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
+"JR_SEARCHINFO_FIRST" = "Första Klass";
+"JR_SEARCHINFO_PASSENGERS##{one}" = "%d passagerare";
+"JR_SEARCHINFO_PASSENGERS##{few}" = "%d passagerare";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "%d passagerare";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "%d passagerare";
+"JR_SEARCH_FORM_PASSENGERS" = "Passagerare";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Klass";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Ankomststad";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Avresestad";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Datum";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Till";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Från";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Flera städer";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Avgång";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Retur";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "retur";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Grunläggande";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Avresa";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Retur";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Enkel";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Tur och retur";
+"JR_SEARCH_FORM_TITLE" = "Flyg";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "SÖK BILJETTER";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Antalet barn som reser utan säten får inte övertiga antalet medföljande vuxna.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Vänligen ange en flygplats att flyga ifrån";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Vänligen ange en flygplats att anlända till";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR" = "Avgång- och ankomstflygplats måste vara olika.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE" = "Ange ett avresedatum";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "Välj";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "LÄGG TILL";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "RADERA";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Passagerare och klass";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Vuxna";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "Över 16 år";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Barn";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15 år";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Spädbarn";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "0-2 år";
+
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Minska antalet passagerare %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Öka antalet passagerare %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC" = "%@ passagerare %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12" = "12+";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS" = "UNDER 12";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS" = "UNDER 2";
+
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{one}" = "vuxen";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{few}" = "vuxna";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "vuxna";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "vuxna";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "barn";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "barn";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "barn";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "barn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "spädbarn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "spädbarn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "spädbarn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "spädbarn";
+
+"JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "Destination";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "Närliggande flygplatser";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "Geolocation är för inte tillgängligt för tillfället";
+
+"JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Ursprung";
+"JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "Inga flygplatser i närheten av dig";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Ange stad eller flygplats";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Sök";
+"JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Intressen";
+"JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Rutter efter intressen";
+"JR_AIRPORT_PICKER_BACK_BUTTON" = "Tillbaka";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Tidigare sökningar:";
+"JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Inga resultat hittades";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Söker...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Söker efter närliggande flygplatser...";
+
+"JR_FILTER_BUTTON" = "Filter";
+
+"JR_FILTER_RESET_ALL" = "Rensa alla";
+"JR_FILTER_RESET" = "Klar";
+"JR_FILTER_TICKETS_NOT_FOUND" = "Inga resultat hittades";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Inga biljetter hittades";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Vi ber dig att ändra din filtrering.";
+
+"JR_FILTER_STOPOVER_OVERNIGHT" = "Nattliga mellanlandningar";
+"JR_FILTER_PRICE_FILTER" = "Pris";
+"JR_FILTER_TOTAL_DURATION" = "Resetid";
+"JR_FILTER_DELAY_DURATION" = "Mellanlandning längd";
+"JR_FILTER_TOTAL_TIME_FROM" = "från";
+"JR_FILTER_TOTAL_DURATION_FROM" = "från";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "till";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "upp till";
+
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d flyg börjar från %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d flyg börjar från %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d flyg börjar från %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d flyg börjar från %@";
+
+"JR_FILTER_RETURN_DEPARTURE_TIME" = "Avgångstid returresa";
+"JR_FILTER_DEPARTURE_TIME" = "Avgångstid utresa";
+"JR_FILTER_ARRIVAL_TIME" = "Ankomsttid avresa";
+"JR_FILTER_RETURN_ARRIVAL_TIME" = "Ankomsttid returresa";
+
+"JR_FILTER_AIRPORTS_ORIGIN" = "Från";
+"JR_FILTER_AIRPORTS_STOPOVER" = "Mellanlandningar";
+"JR_FILTER_AIRPORTS_DESTINATION" = "Till";
+
+"JR_FILTER_DAY_TIME_MORNING" = "morgon";
+"JR_FILTER_DAY_TIME_DAY" = "dag";
+"JR_FILTER_DAY_TIME_EVENING" = "kväll";
+
+"JR_FILTER_GATES" = "Agenturer";
+"JR_FILTER_GATES_ALL" = "Alla agenturer";
+
+"JR_FILTER_PAYMENT_METHODS" = "Betalningsmetoder";
+"JR_FILTER_PAYMENT_METHODS_ALL" = "Alla betalningsmetoder";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Budtjänst";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Kontant";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Kreditkort";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Betalningsterminal";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Banköverföring";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Kontakta ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Ta ett lån";
+
+"JR_FILTER_AIRLINES" = "Flygbolag";
+"JR_FILTER_AIRLINES_ALL" = "Alla flygbolag";
+
+"JR_FILTER_ALLIANCES" = "Allianser";
+"JR_FILTER_OTHER_ALLIANCES" = "Flygbolag utan allianser";
+"JR_FILTER_ALLIANCES_ALL" = "Alla allianser";
+
+"JR_FILTER_AIRPORTS" = "Flygplatser";
+"JR_FILTER_AIRPORTS_ALL" = "Alla flygplatser";
+
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Dirket";
+"JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d stop";
+"JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d stops";
+"JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d stops";
+"JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d stops";
+
+"JR_BROWSER_TITLE" = "Köp";
+
+"JR_BROWSER_BACK_BTN_TITLE" = "Tillbaka";
+"JR_BROWSER_FORWARD_BTN_TITLE" = "Framåt";
+"JR_BROWSER_ERROR_ALERT_TITLE" = "Fel";
+
+"BROWSER_CHECK_CONNECTION" = "Kontrollera din Internetanslutning.";
+"BROWSER_OVERLAY_DEFAULT_TEXT" = "Laddar...";
+"JR_CLOSE_BUTTON_TITLE" = "Stäng";
+
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Ursäkta, vi kunde hittade inga flyg mellan de valda flygplatserna och rutten %@. Istället kan vi visa dig andra flyg mellan städerna.";
+
+"JR_SEARCH_RESULTS_TICKET_IN_THE" = "på";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Behöver du ett hotell?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "När du letar efter flygbiljetter, så hjälper vid dig att välja ett hotell som är rätt för dig.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Hitta hotell";
+
+"JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Köp";
+"JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Användarvillkor";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{few}" = "betalningar";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{one}" = "betalningar";
+"JR_TICKET_CREDIT_ALERT_CANCEL_BUTTON" = "Avbryt";
+"JR_TICKET_CREDIT_ALERT_DAYS##{one}" = "dag";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{other}" = "betalningar";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{many}" = "betalningar";
+"JR_TICKET_CREDIT_ALERT_DAYS##{few}" = "dagar";
+"JR_TICKET_CREDIT_ALERT_MONTH" = "månad";
+"JR_TICKET_CREDIT_ALERT_DAYS##{other}" = "dagar";
+"JR_TICKET_CREDIT_ALERT_TILL" = "tills";
+"JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "dagar";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "Överbetalning";
+"JR_TICKET_CREDIT_ALERT_DURATION" = "Lånvillkor";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "för priset";
+"JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "Nådefrist";
+"JR_TICKET_CREDIT_MONTH_2" = "februari";
+"JR_TICKET_CREDIT_MONTH_1" = "januari";
+"JR_TICKET_CREDIT_MONTH_3" = "mars";
+"JR_TICKET_CREDIT_MONTH_6" = "juni";
+"JR_TICKET_CREDIT_MONTH_4" = "april";
+"JR_TICKET_CREDIT_MONTH_7" = "juli";
+"JR_TICKET_CREDIT_MONTH_5" = "maj";
+"JR_TICKET_CREDIT_MONTH_8" = "augusti";
+"JR_TICKET_CREDIT_MONTH_9" = "september";
+"JR_TICKET_CREDIT_MONTH_10" = "oktober";
+"JR_TICKET_CREDIT_MONTH_11" = "november";
+"JR_TICKET_CREDIT_MONTH_12" = "december";
+
+"JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Köp på";
+"JR_TICKET_BUY_BUTTON" = "Köp biljett";
+"JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Ta ett lån";
+"JR_TICKET_FLIGHT" = "Flyg";
+"JR_TICKET_TRANSFER" = "Mellanlandning";
+"JR_TICKET_OTHER_BUTTON" = "Mer erbjudanden";
+"JR_TICKET_DURATION" = "Flyglängd";
+
+"JR_TICKET_EXPIRED" = "Sökresultaten är utdaterad";
+
+"JR_WAITING_TITLE" = "Söker...";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Inga resultat. Försök ändra sökningen.";
+"JR_WAITING_ERROR_CONNECTION_ERROR" = "Fel med anslutning";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Ursäkta, Jetradar är inte tillgängligt just nu";

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HotelDetailsMoreTableVC" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="contentTable" destination="ZB9-RY-581" id="IUx-FD-0cj"/>
+                <outlet property="view" destination="JSO-y6-U3m" id="HNb-pE-B1G"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="JSO-y6-U3m">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="ZB9-RY-581">
+                    <rect key="frame" x="0.0" y="0.0" width="360" height="360"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="jd3-01-DzY"/>
+                        <outlet property="delegate" destination="-1" id="Mli-Xs-mLq"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ZB9-RY-581" firstAttribute="top" secondItem="JSO-y6-U3m" secondAttribute="top" id="4FJ-Jj-ptw"/>
+                <constraint firstItem="ZB9-RY-581" firstAttribute="leading" secondItem="JSO-y6-U3m" secondAttribute="leading" id="BZE-7H-how"/>
+                <constraint firstAttribute="bottom" secondItem="ZB9-RY-581" secondAttribute="bottom" id="Nkd-qa-YBM"/>
+                <constraint firstAttribute="trailing" secondItem="ZB9-RY-581" secondAttribute="trailing" id="UdY-bS-chQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-400" y="-771"/>
+        </view>
+    </objects>
+</document>

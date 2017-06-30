@@ -17,6 +17,11 @@
 
 "JR_OK_BUTTON" = "OK";
 
+"JR_DONE_BUTTON" = "HECHO";
+
+"JR_NEW_SEARCH_TITLE" = "Nueva búsqueda";
+
+
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Salida";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Fecha de vuelta";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Fechas del vuelo";
@@ -30,19 +35,23 @@
 "JR_SEARCHINFO_PASSENGERS##{few}" = "%d pasajeros";
 "JR_SEARCHINFO_PASSENGERS##{many}" = "%d pasajeros";
 "JR_SEARCHINFO_PASSENGERS##{other}" = "%d pasajeros";
+"JR_SEARCH_FORM_PASSENGERS" = "Pasajeros";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Clase";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Ciudad de llegada";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Ciudad de salida";
-"JR_SEARCH_FORM_COMPLEX_DATE" = "FECHA";
-"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "a";
-"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "desde";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Fecha";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "A";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Ciudad";
 "JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Multidestino";
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Salida";
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Vuelta";
 "JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "llegada";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Básico";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Salida";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Vuelta";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Ida";
-"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "ida y vuelta";
-"JR_SEARCH_FORM_TITLE" = "Buscar billetes";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Ida y vuelta";
+"JR_SEARCH_FORM_TITLE" = "Vuelos";
 "JR_SEARCH_FORM_SEARCH_BUTTON" = "BUSCAR BILLETES";
 "JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "El número de menores viajando sin asiento no puede ser superior al número de adultos que viajan.";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Indique el aeropuerto de salida";
@@ -53,6 +62,14 @@
 
 "JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "AÑADIR";
 "JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "BORRAR";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Pasajeros y clase";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Adultos";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "Más de 16 años";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Niños";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15 años";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Bebés";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "De 0 a 2 años";
+
 
 "JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Reducir el número de pasajeros %@";
 "JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Aumentar el número de pasajeros %@";
@@ -80,21 +97,24 @@
 
 "JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Origen";
 "JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "No hay ningún aeropuerto cerca";
-"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Buscar";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Indicar ciudad o aeropuerto";
 "JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Buscar";
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Intereses";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Rutas por intereses";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Volver";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Búsquedas recientes";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Búsquedas anteriores:";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "No se han encontrado resultados";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Buscando...";
-"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Buscar aeropuertos cercanos...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Buscando aeropuertos cercanos...";
 
-"JR_FILTER_BUTTON" = "Filtros";
+"JR_FILTER_BUTTON" = "Filtro";
 
 "JR_FILTER_RESET_ALL" = "Limpiar todo";
 "JR_FILTER_RESET" = "Limpiar";
 "JR_FILTER_TICKETS_NOT_FOUND" = "No se han encontrado resultados";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "No se han encontrado billetes";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Por favor, cambie los ajustes de filtro.";
 
 "JR_FILTER_STOPOVER_OVERNIGHT" = "Noche de escala";
 "JR_FILTER_PRICE_FILTER" = "Precio";
@@ -102,7 +122,7 @@
 "JR_FILTER_DELAY_DURATION" = "Duración de la escala";
 "JR_FILTER_TOTAL_TIME_FROM" = "desde";
 "JR_FILTER_TOTAL_DURATION_FROM" = "desde";
-"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "a";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "hasta";
 "JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "hasta";
 
 "JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d vuelo desde %@";
@@ -115,7 +135,7 @@
 "JR_FILTER_ARRIVAL_TIME" = "Hora de llegada de la ida";
 "JR_FILTER_RETURN_ARRIVAL_TIME" = "Hora de llegada de la vuelta";
 
-"JR_FILTER_AIRPORTS_ORIGIN" = "Desde";
+"JR_FILTER_AIRPORTS_ORIGIN" = "Ciudad";
 "JR_FILTER_AIRPORTS_STOPOVER" = "Escalas";
 "JR_FILTER_AIRPORTS_DESTINATION" = "A";
 
@@ -128,6 +148,19 @@
 
 "JR_FILTER_PAYMENT_METHODS" = "Métodos de pago";
 "JR_FILTER_PAYMENT_METHODS_ALL" = "Todos los métodos de pago";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Servicio de courier";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "En efectivo";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Tarjeta de crédito";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Terminal de pago";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Transferencia bancaria";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Contact ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Obtener un préstamo";
 
 "JR_FILTER_AIRLINES" = "Aerolíneas";
 "JR_FILTER_AIRLINES_ALL" = "Todas las aerolíneas";
@@ -145,7 +178,7 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d escalas";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d escalas";
 
-"JR_SEARCH_RESULTS_TICKET_PLACEHOLDER_TEXT" = "Ninguna opción aparece\nal aplicar los filtros";
+"JR_BROWSER_TITLE" = "Comprar";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Volver";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Adelante";
@@ -158,6 +191,10 @@
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Ha buscado un vuelo para la ruta %@. Lo sentimos, no se ha encontrado ningún vuelo entre los dos aeropuertos.";
 
 "JR_SEARCH_RESULTS_TICKET_IN_THE" = "el";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "¿Necesitas un hotel?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Mientras buscas billetes de avión, te ayudaremos a elegir el hotel adecuado.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Encuentra hoteles";
 
 "JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Comprar";
 "JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Términos y Condiciones";
@@ -192,10 +229,12 @@
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Comprar en";
 "JR_TICKET_BUY_BUTTON" = "Comprar";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Obtener un préstamo";
-"JR_TICKET_OTHER_BUTTON"                            = "Otros";
 "JR_TICKET_FLIGHT" = "Vuelo";
 "JR_TICKET_TRANSFER" = "Escala";
-"JR_TICKET_DURATION" = "Tiempo del viaje";
+"JR_TICKET_OTHER_BUTTON" = "Más ofertas";
+"JR_TICKET_DURATION" = "Duración del vuelo";
+
+"JR_TICKET_EXPIRED" = "Resultados de búsqueda desactualizados";
 
 "JR_WAITING_TITLE" = "Buscando...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "No ha habido ningún resultado. Inténtelo de nuevo modificando los parámetros.";

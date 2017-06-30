@@ -1,0 +1,242 @@
+"LANGUAGE" = "da";
+
+"SHORT_TIME_FORMAT" = "%@t %@m";
+"LONG_TIME_FORMAT" = "%@ t %@ min";
+
+"JR_ERROR_TITLE" = "FEJL";
+
+"JR_BACK_TITLE" = "Tilbage";
+
+"JR_TRY_AGAIN_TITLE" = "Prøv igen";
+
+"JR_CANCEL_TITLE" = "Annuler";
+
+"CURRENCY" = "Valuta";
+
+"JR_ANY_AIRPORT" = "Alle lufthavne";
+
+"JR_OK_BUTTON" = "OK";
+
+"JR_DONE_BUTTON" = "FÆRDIG";
+
+"JR_NEW_SEARCH_TITLE" = "Ny søgning";
+
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Afrejsedato";
+"JR_DATE_PICKER_RETURN_DATE_TITLE" = "Dato for hjemrejse";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Flyrejsedatoer";
+"JR_DATE_PICKER_TODAY_DATE_TITLE" = "I dag";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Søg efter billetter";
+"JR_SEARCHINFO_BUSINESS" = "Business";
+"JR_SEARCHINFO_ECONOMY" = "Økonomi";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Økonomi";
+"JR_SEARCHINFO_FIRST" = "Første Klasse";
+"JR_SEARCHINFO_PASSENGERS##{one}" = "%d passager";
+"JR_SEARCHINFO_PASSENGERS##{few}" = "%d passager";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "%d passager";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "%d passager";
+"JR_SEARCH_FORM_PASSENGERS" = "Passagerer";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Klasse";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Ankomstby";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Afgangsby";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Dato";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Til";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Fra";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Multi-city";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Afgang";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Hjemkomst";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "rejse hjem";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Simpel";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Udgående";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Hjemkomst";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Enkelt";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Tur-retur";
+"JR_SEARCH_FORM_TITLE" = "Flyrejser";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "SØG BILLETTER";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Antallet af spædbørn der rejser uden sæde må ikke overstige antallet af ledsagende voksne.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Angiv venligst afgangslufthavn";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Angiv venligst ankomstlufthavn";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR" = "Afgangs og ankomstlufhavne skal være forskellige.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE" = "Angiv venligst afrejsedato";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "Vælg";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "TILFØJ";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "SLET";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Passagerer og klasse";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Voksne";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "Over 16 år gammel";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Børn";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15-år gammel";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Spædbørn";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "0-2 år gammel";
+
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Reducer antallet af passagerer %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Tilføj venligst flere passagerer %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC" = "%@ passagerer %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12" = "12+";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS" = "UNDER 12";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS" = "UNDER 2";
+
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{one}" = "voksen";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{few}" = "voksne";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "voksne";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "voksne";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "barn";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "børn";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "børn";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "børn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "spædbarn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "spædbørn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "spædbørn";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "spædbørn";
+
+"JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "Rejsemål";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "Nærmeste lufthavne";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "Geolocation-funktionen er midlertidigt utilgængelig";
+
+"JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Begyndelsespunkt";
+"JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "Ingen lufthavne i nærheden";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Indtast by eller lufthavn";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Søg";
+"JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Interesser";
+"JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Find ruter ud fra interesser";
+"JR_AIRPORT_PICKER_BACK_BUTTON" = "Tilbage";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Tidligere søgninger:";
+"JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Ingen resultater";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Søger...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Søger efter nærmeste lufthavne...";
+
+"JR_FILTER_BUTTON" = "Søgefiltre";
+
+"JR_FILTER_RESET_ALL" = "Slet alt";
+"JR_FILTER_RESET" = "Nulstil";
+"JR_FILTER_TICKETS_NOT_FOUND" = "Ingen resultater";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Ingen billetter fundet";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Lav venligst om på dine filtreringsindstillinger.";
+
+"JR_FILTER_STOPOVER_OVERNIGHT" = "Natteophold";
+"JR_FILTER_PRICE_FILTER" = "Pris";
+"JR_FILTER_TOTAL_DURATION" = "Rejsetid";
+"JR_FILTER_DELAY_DURATION" = "Opholdsvarighed";
+"JR_FILTER_TOTAL_TIME_FROM" = "fra";
+"JR_FILTER_TOTAL_DURATION_FROM" = "fra";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "til";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "frem til";
+
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d flyrejse fra %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d flyrejser fra %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d flyrejser fra %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d flyrejser fra %@";
+
+"JR_FILTER_RETURN_DEPARTURE_TIME" = "Hjemkommende afrejsetidspunkt";
+"JR_FILTER_DEPARTURE_TIME" = "Udgående afrejsetidspunkt";
+"JR_FILTER_ARRIVAL_TIME" = "Udgående ankomsttidspunkt";
+"JR_FILTER_RETURN_ARRIVAL_TIME" = "Hjemkommende ankomsttidspunkt";
+
+"JR_FILTER_AIRPORTS_ORIGIN" = "Fra";
+"JR_FILTER_AIRPORTS_STOPOVER" = "Mellemlandinger";
+"JR_FILTER_AIRPORTS_DESTINATION" = "Til";
+
+"JR_FILTER_DAY_TIME_MORNING" = "morgen";
+"JR_FILTER_DAY_TIME_DAY" = "dag";
+"JR_FILTER_DAY_TIME_EVENING" = "aften";
+
+"JR_FILTER_GATES" = "Rejsebureauer";
+"JR_FILTER_GATES_ALL" = "Alle Rejsebureauer";
+
+"JR_FILTER_PAYMENT_METHODS" = "Betalingsmetoder";
+"JR_FILTER_PAYMENT_METHODS_ALL" = "Alle betalingsmetoder";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Kurérservice";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Kontant";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Kreditkort";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Betalingsterminal";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Bankoverførsel";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Kontakt ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Få et lån";
+
+"JR_FILTER_AIRLINES" = "Flyselskaber";
+"JR_FILTER_AIRLINES_ALL" = "Alle flyselskaber";
+
+"JR_FILTER_ALLIANCES" = "Alliancer";
+"JR_FILTER_OTHER_ALLIANCES" = "Flyselskaber uden alliancer";
+"JR_FILTER_ALLIANCES_ALL" = "Alle alliancer";
+
+"JR_FILTER_AIRPORTS" = "Lufthavne";
+"JR_FILTER_AIRPORTS_ALL" = "Alle lufthavne";
+
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Direkte";
+"JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d mellemlanding";
+"JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d mellemlandinger";
+"JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d mellemlandinger";
+"JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d mellemlandinger";
+
+"JR_BROWSER_TITLE" = "Køb";
+
+"JR_BROWSER_BACK_BTN_TITLE" = "Tilbage";
+"JR_BROWSER_FORWARD_BTN_TITLE" = "Videre";
+"JR_BROWSER_ERROR_ALERT_TITLE" = "Fejl";
+
+"BROWSER_CHECK_CONNECTION" = "Tjek venligst din internetforbindelse.";
+"BROWSER_OVERLAY_DEFAULT_TEXT" = "Loader...";
+"JR_CLOSE_BUTTON_TITLE" = "Luk";
+
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Vi kunne desværre ikke finde nogen flyrejser mellem rutens valgte lufthavne %@. Vi fandt dog andre flyrejser mellem disse byer.";
+
+"JR_SEARCH_RESULTS_TICKET_IN_THE" = "på";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Brug for et hotel?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Mens du leder efter flybilleter, hjælper vi dig med finde det rigtige hotel.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Find hoteller";
+
+"JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Køb";
+"JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Vilkår og Betingelser";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{few}" = "betaling";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{one}" = "betaling";
+"JR_TICKET_CREDIT_ALERT_CANCEL_BUTTON" = "Annuler";
+"JR_TICKET_CREDIT_ALERT_DAYS##{one}" = "dag";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{other}" = "betaling";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{many}" = "betaling";
+"JR_TICKET_CREDIT_ALERT_DAYS##{few}" = "dage";
+"JR_TICKET_CREDIT_ALERT_MONTH" = "måned";
+"JR_TICKET_CREDIT_ALERT_DAYS##{other}" = "dage";
+"JR_TICKET_CREDIT_ALERT_TILL" = "indtil";
+"JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "dage";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "Overbetaling";
+"JR_TICKET_CREDIT_ALERT_DURATION" = "Lånevilkår";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "af prisen";
+"JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "Henstandsperiode";
+"JR_TICKET_CREDIT_MONTH_2" = "februar";
+"JR_TICKET_CREDIT_MONTH_1" = "januar";
+"JR_TICKET_CREDIT_MONTH_3" = "marts";
+"JR_TICKET_CREDIT_MONTH_6" = "juni";
+"JR_TICKET_CREDIT_MONTH_4" = "april";
+"JR_TICKET_CREDIT_MONTH_7" = "juli";
+"JR_TICKET_CREDIT_MONTH_5" = "maj";
+"JR_TICKET_CREDIT_MONTH_8" = "august";
+"JR_TICKET_CREDIT_MONTH_9" = "september";
+"JR_TICKET_CREDIT_MONTH_10" = "oktober";
+"JR_TICKET_CREDIT_MONTH_11" = "november";
+"JR_TICKET_CREDIT_MONTH_12" = "december";
+
+"JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Køb hos";
+"JR_TICKET_BUY_BUTTON" = "Køb billet";
+"JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Få et lån";
+"JR_TICKET_FLIGHT" = "Flyrejse";
+"JR_TICKET_TRANSFER" = "Ophold";
+"JR_TICKET_OTHER_BUTTON" = "Flere tilbud";
+"JR_TICKET_DURATION" = "Flyrejsens varighed";
+
+"JR_TICKET_EXPIRED" = "Søgeresultaterne er forældede";
+
+"JR_WAITING_TITLE" = "Søger...";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Vi fandt ingen resultater. Prøv at afgrænse din søgning.";
+"JR_WAITING_ERROR_CONNECTION_ERROR" = "Forbindelsesfejl";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Vi beklager, men Jetradar er midlertidigt utilgængelig";

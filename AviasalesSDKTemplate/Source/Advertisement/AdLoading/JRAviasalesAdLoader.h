@@ -9,7 +9,7 @@
 
 @interface JRAviasalesAdLoader : NSObject
 
-- (instancetype)initWithSearchInfo:(id<JRSDKSearchInfo>)searchInfo;
+- (instancetype)initWithSearchInfo:(JRSDKSearchInfo *)searchInfo;
 
 /**
  * callback - returns nil if error occured

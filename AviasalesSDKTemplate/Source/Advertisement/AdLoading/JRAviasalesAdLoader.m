@@ -11,7 +11,7 @@
 
 @interface JRAviasalesAdLoader ()
 
-@property (strong, nonatomic) id<JRSDKSearchInfo> searchInfo;
+@property (strong, nonatomic) JRSDKSearchInfo *searchInfo;
 @property (assign, nonatomic) BOOL loadingAd;
 @property (copy, nonatomic) void (^callback)(UIView *);
 
@@ -19,7 +19,7 @@
 
 @implementation JRAviasalesAdLoader
 
-- (instancetype)initWithSearchInfo:(id<JRSDKSearchInfo>)searchInfo  {
+- (instancetype)initWithSearchInfo:(JRSDKSearchInfo *)searchInfo  {
     if (self = [super init]) {
         _searchInfo = searchInfo;
     }

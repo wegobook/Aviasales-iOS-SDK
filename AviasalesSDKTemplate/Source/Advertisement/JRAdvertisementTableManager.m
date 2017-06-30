@@ -6,26 +6,24 @@
 //
 
 #import "JRAdvertisementTableManager.h"
+#import "JRHotelCardView.h"
 
 static NSString *const kCellReusableId = @"JRAdvertisementTableManagerAdCell";
 static const NSInteger kAdViewTag = 567134;
-static const CGFloat kAppodealAdHeight = 100;
 static const CGFloat kAviasalesAdHeight = 130;
+static const CGFloat kHotelCardHeight = 155;
 
 @implementation JRAdvertisementTableManager
-
-+ (CGFloat)appodealAdHeight {
-    return kAppodealAdHeight;
-}
 
 #pragma mark - <UITableViewDataSource>
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     NSInteger count = 0;
-    if (self.appodealAd != nil) {
+    if (self.aviasalesAd != nil) {
         ++count;
     }
-    if (self.aviasalesAd != nil) {
+
+    if (self.hotelCard != nil) {
         ++count;
     }
     return count;
@@ -40,9 +38,8 @@ static const CGFloat kAviasalesAdHeight = 130;
     if (indexPath.section == 0 && self.aviasalesAd != nil) {
         adView = self.aviasalesAd;
     } else {
-        adView = self.appodealAd;
+        adView = self.hotelCard;
     }
-
     UITableViewCell *res = [tableView dequeueReusableCellWithIdentifier:kCellReusableId];
 
     if (res == nil) {
@@ -64,7 +61,7 @@ static const CGFloat kAviasalesAdHeight = 130;
     if (indexPath.section == 0 && self.aviasalesAd != nil) {
         return kAviasalesAdHeight;
     } else {
-        return kAppodealAdHeight;
+        return kHotelCardHeight;
     }
 }
 

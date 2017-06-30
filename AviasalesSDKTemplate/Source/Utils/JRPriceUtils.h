@@ -9,6 +9,6 @@
 
 @interface JRPriceUtils : NSObject
 
-+ (NSString *)formattedPriceInUserCurrency:(id<JRSDKPrice>)price;
++ (NSString *)formattedPriceInUserCurrency:(JRSDKPrice *)price;
 
 @end

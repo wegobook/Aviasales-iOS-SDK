@@ -10,6 +10,6 @@
 
 @interface JRTicketUtils : NSObject
 
-+ (NSString *)formattedTicketMinPriceInUserCurrency:(id<JRSDKTicket>)ticket;
++ (NSString *)formattedTicketMinPriceInUserCurrency:(JRSDKTicket *)ticket;
 
 @end

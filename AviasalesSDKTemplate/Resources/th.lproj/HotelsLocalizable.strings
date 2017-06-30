@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "จาก";
+
+"HL_LOC_GUEST##{one}" = "แขก";
+"HL_LOC_GUEST##{few}" = "แขก";
+"HL_LOC_GUEST##{many}" = "แขก";
+"HL_LOC_GUEST##{other}" = "แขก";
+
+"HL_LOC_GUEST_ADULT##{one}" = "ผู้ใหญ่";
+"HL_LOC_GUEST_ADULT##{few}" = "ผู้ใหญ่";
+"HL_LOC_GUEST_ADULT##{many}" = "ผู้ใหญ่";
+"HL_LOC_GUEST_ADULT##{other}" = "ผู้ใหญ่";
+
+"HL_LOC_GUEST_KID##{one}" = "เด็ก";
+"HL_LOC_GUEST_KID##{few}" = "เด็ก";
+"HL_LOC_GUEST_KID##{many}" = "เด็ก";
+"HL_LOC_GUEST_KID##{other}" = "เด็ก";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "โรงแรม";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "เมืองและโรงแรม";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "เด็ก";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " ผู้ใหญ่";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "วันที่";
+
+"HL_LOC_YEAR##{one}" = "ปี";
+"HL_LOC_YEAR##{few}" = "ปี";
+"HL_LOC_YEAR##{many}" = "ปี";
+"HL_LOC_YEAR##{other}" = "ปี";
+
+"HL_LOC_NIGHT##{one}" = "คืน";
+"HL_LOC_NIGHT##{few}" = "คืน";
+"HL_LOC_NIGHT##{many}" = "คืน";
+"HL_LOC_NIGHT##{other}" = "คืน";
+
+"HL_LOC_FOR_NIGHT##{one}" = "ต่อ\U00A0%d\U00A0คืน";
+"HL_LOC_FOR_NIGHT##{few}" = "ต่อ\U00A0%d\U00A0คืน";
+"HL_LOC_FOR_NIGHT##{many}" = "ต่อ\U00A0%d\U00A0คืน";
+"HL_LOC_FOR_NIGHT##{other}" = "ต่อ\U00A0%d\U00A0คืน";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "ผิดพลาด";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "กรุณาเลือกจำนวนแขกที่เข้าพัก";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "กรุณาเลือกเมืองปลายทางของคุณ";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "ค้นหาผลลัพธ์";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "ค้นหาโรงแรม";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "รับ ราคา";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "เลือกวันที่";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "ขออภัย จำนวนวันที่เข้าพักในโรงแรมจำกัดอยู่ที่ 30 วัน";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "เด็ก";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "ทารก";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "อายุ";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "ใช้งาน";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "ยกเลิก";
+
+"HL_CLEAN_BUTTON_TITLE" = "ลบ";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "การค้นหาเมื่อเร็ว ๆ นี้";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "เมือง";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "โรงแรม";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "สนามบิน";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "ใกล้คุณ";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "เมืองและโรงแรม";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "ไม่พบผลลัพธ์";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "ตัวกรอง";
+"HL_LOC_FILTER_DROP_BUTTON" = "ตั้งค่าใหม่";
+"HL_LOC_FILTER_APPLY_BUTTON" = "ตกลง";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "ราคา";
+"HL_LOC_FILTER_RANGE" = "จาก %@ ถึง %@";
+"HL_LOC_FILTER_FROM_STRING" = "จาก";
+"HL_LOC_FILTER_TO_STRING" = "ไม่เกิน";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "ระยะทางไปยัง:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "ใจกลางเมือง";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "มื้ออาหารและการชำระเงิน";
+"HL_LOC_FILTER_STARS_SECTION" = "ดาว";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "ชนิดของสถานที่";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "ซ่อนผลลัพธ์";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "เขต";
+"HL_LOC_FILTER_GATES_SECTION" = "เอเจนซีรับจอง";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "เอเจนซีรับจอง";
+"HL_LOC_FILTER_SELECT_GATES" = "เลือกเอเจนซี";
+"HL_LOC_FILTER_ALL_GATES" = "บริษัทตัวแทนทั้งหมด";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "เขต";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "เลือกเขต";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "เขตทั้งหมด";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "ระยะทางไปยัง";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "อาหารเช้า";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "โดยรวมทั้งหมด";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "ยกเลิกฟรี";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "ชำระเงินตอนนี้";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "บ้านทั้งหลัง";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "ห้อง";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "ซ่อนโฮสเทลและเกสต์เฮาส์";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "ซ่อนอพาร์ทเมนต์";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "ซ่อนหอพัก";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "ห้องน้ำส่วนตัว";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "ไม่พบผลลัพธ์";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "วิวสวย";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "ร้านอาหาร";
+"HL_LOC_FILTER_AMENITY_PARKING" = "ที่จอดรถฟรี";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "สูบบุหรี่ได้";
+"HL_LOC_FILTER_AMENITY_PETS" = "อนุญาตนำสัตว์เลี้ยงเข้าได้";
+"HL_LOC_FILTER_AMENITY_TV" = "ทีวี";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "บริการซักรีด";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "เครื่องปรับอากาศ";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "มีอินเตอร์เน็ต";
+"HL_LOC_FILTER_AMENITY_POOL" = "สระว่ายน้ำ";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "ฟิตเนส";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "ไดรเป่าผม";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "การรับเลี้ยงเด็ก";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "ห้องน้ำส่วนตัว";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "ตู้เซฟ";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "ค้นหา";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "จุดสนใจ";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "ชายหาด";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "หาดใดก็ได้";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "ลิฟท์สกี";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "ลิฟท์สกีใดก็ได้";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "สถานีรถใต้ดินใดก็ได้";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "สนามบิน";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "สถานีรถไฟ";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "จุดบนแผนที่";
+"HL_LOC_SEARCH_POINT_TEXT" = "จุดค้นหา";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ และใกล้เคียง";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "ตกลง";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "จุดบนแผนที่";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "ตำแหน่งที่อยู่ของฉัน";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "ใจกลางเมือง";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "ตำแหน่งที่อยู่ของฉัน";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "ค้นหาผลลัพธ์";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "เปิดใช้งานบริษัทตัวแทนหน้าจอแสดงภาษาอังกฤษ";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "สิ่งอำนวยความสะดวกในห้องพัก";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "สิ่งอำนวยความสะดวกในโรงแรม";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "ชื่อโรงแรม";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "ชำระที่โรงแรม";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "ซ่อนที่ขายหมดแล้ว";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ จาก %@ โรงแรม";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ จาก %@ โรงแรม";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ จาก %@ โรงแรม";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ จาก %@ โรงแรม";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ จาก %@ โรงแรม";
+"HL_LOC_FILTER_RATING_CRITERIA" = "คะแนน";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "คัดกรองตามชื่อโรงแรม";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "โรงแรมใกล้เคียง";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "คัดกรองตามชื่อโรงแรม";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "เว็บไซต์โรงแรม";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "แผนที่";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "ตัวกรอง";
+"HL_SORT_BUTTON_TITLE_LABEL" = "เรียง";
+
+"HL_DISCOUNT" = "ส่วนลด";
+"HL_SPECIAL_PRICE_TITLE" = "ข้อเสนอพิเศษ";
+
+"HL_LOC_ADULT##{one}" = "ผู้ใหญ่";
+"HL_LOC_ADULT##{few}" = "ผู้ใหญ่";
+"HL_LOC_ADULT##{many}" = "ผู้ใหญ่";
+"HL_LOC_ADULT##{other}" = "ผู้ใหญ่";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "ก.ม.";
+"HL_LOC_METERS_ABBREVIATION" = "นาที";
+"HL_LOC_MILES_ABBREVIATION" = "ไมล์";
+
+"HL_NEW_SEARCH_BUTTON" = "ค้นหาใหม่";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "ตั้งค่าตัวกรองใหม่";
+
+"HL_LOC_NO_ROOMS" = "ไม่มีห้องพัก";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "สำหรับวันเหล่านี้";
+"HL_LOC_ROOMS_OUTDATED" = "หมดอายุแล้ว";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "กรุณาเริ่มการค้นหา";
+"HL_LOC_ROOMS_SOLD" = "ไม่ว่าง";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "สำหรับวันเหล่านี้";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "มีโรงแรมมากกว่าหนึ่งแห่งในสถานที่นี้ ดังนั้นเราจึงรวมโรงแรมเหล่านี้ไว้ด้วยกัน";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "มีโรงแรมมากกว่าหนึ่งแห่งในสถานที่แห่งนี้";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "จัดเรียงตาม:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "ความนิยม";
+"HL_LOC_SORT_TYPE_RATING" = "คะแนน";
+"HL_LOC_SORT_TYPE_PRICE" = "ราคา";
+"HL_LOC_SORT_TYPE_DISTANCE" = "ระยะทางไปยัง:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "ส่วนลด";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "การตั้งค่า";
+
+"HL_LOC_ABOUT_CURRENCY" = "สกุลเงิน";
+
+"LOC_RATE_APP_TITLE" = "ให้คะแนนแอพฯนี้";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "ติดต่อเรา";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "แจ้งสิ่งที่ผิดพลาด:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "เวอร์ชั่น";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "ค้นหา";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "คะแนนโดยละเอียด ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "แสดง %@ ห้องเพิ่มเติม";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "ซ่อน";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "ห้องพักทั้งหมด";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "คะแนน";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "แกลเลอรี";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "สถานที่";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "รายละเอียดที่พัก";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "ข้อมูลที่เป็นประโยชน์";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "สิ่งอำนวยความสะดวกในห้อง";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "ข้อมูลอสังหาริมทรัพย์";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "สิ่งอำนวยความสะดวกในโรงแรม";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "แขก";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "เช็คอิน";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "เช็คเอาท์";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "ค่าทำความสะอาด";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "เงินมัดจำ";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "จำเป็น";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "คู่";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "ครอบครัว";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "พักเดี่ยว";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "ธุรกิจ";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "พนักงานพูดภาษา: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "พนักงานพูดภาษา: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "พนักงานพูดภาษา: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "พนักงานพูดภาษา: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "ที่จอดรถฟรี";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "โรงแรม";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "อพาร์ทเมนท์";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "โฮสเทล";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "โรงแรม";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "อพาร์ทเมนท์โรงแรม";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "เตียงนอนและอาหารเช้า";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "อพาร์ทเมนท์";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "โมเทล";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "เกสต์เฮาส์";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "โฮสเทล";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "รีสอร์ท";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "ฟาร์ม";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "บ้านพักตากอากาศ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "บ้านพัก";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "วิลล่า";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "ห้องส่วนตัว";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "สร้างเมื่อ %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "ปรับปรุงในปี %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ ห้อง";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ ห้อง";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ ห้อง";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ ห้อง";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "แสดงรูปภาพ";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "เปิดแผนที่";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "จองตอนนี้สำหรับ ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "จองเลย";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "ข้อเสนออื่นๆ ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "แกลเลอรี";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "กำลังอัพเดตราคา...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "ข้อเสนอที่ดีที่สุดสำหรับ 1 คืน";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "ข้อเสนอดีที่สุดสำหรับ ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "ลองอีกครั้ง";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "เปลี่ยนค่าตัวแปรในการค้นหา";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "เริ่มการค้นหาใหม่";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "ไม่ว่าง";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "ขออภัย เราไม่ได้รับข้อมูลรายละเอียดใด ๆ";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "ค่าโดยสารไม่ใช่ราคาในปัจจุบัน";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "ไม่มีห้องพักว่างในวันที่คุณเลือก";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "โปรดเลือกวันที่และจำนวนผู้เข้าพัก";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ รีวิว";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ รีวิว";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ รีวิว";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ รีวิว";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ รีวิว";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "เพิ่มเติม %i";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "สรุปการให้คะแนน";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "รายละเอียดการให้คะแนน";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "รีวิวจากแขก";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "แขกที่พักบ่อย";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "รีวิวเด่น";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "มีข้อผิดพลาดเกิดขึ้น";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "อ่านรีวิวเพิ่มเติม";
+"HL_ALL_REVIEWS_TITLE" = "รีวิว";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "บริษัทตัวแทนทั้งหมด";
+"HL_REVIEWS_FILTER" = "กรองตาม:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "ความคิดเห็นจริง 100%";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "ลูกค้าจริง เข้าพักจริง ความคิดเห็นจริง";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "แขก %d คนรีวิว";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "แขก %d คนรีวิว";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "แขก %d คนรีวิว";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "แขก %d คนรีวิว";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "แขก %d คนรีวิว";
+
+"HL_NO_HOTEL_REVIEWS" = "ไม่มีความคิดเห็น";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "กำลังค้นหาห้องพัก...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "เปลี่ยน";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "วันที่และจำนวนแขก";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "รวมอาหารเช้า";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "ไม่รวมอาหารเช้า";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "โดยรวมทั้งหมด";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "ยกเลิกฟรี";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "สูบบุหรี่ได้";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "ถูกที่สุด";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "ส่วนลด";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "เว็บไซต์ของโรงแรม";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "ชำระเงินตอนนี้";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "ชำระเงินภายหลัง";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "ไม่ต้องใช้บัตรเครดิต";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "ข้อเสนอพิเศษ";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "ห้องน้ำส่วนตัว";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "ห้องน้ำรวม";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Wi-Fi";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "เหลือ %li ห้อง!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "เหลือ %li ห้อง!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "เหลือ %li ห้อง!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "เหลือ %li ห้อง!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "เหลือ %li ห้อง!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "อัตราปกติสำหรับโรงแรมนี้เริ่มที่\U00A0%@ ต่อ\U00A0%d\U00A0คืน";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "อัตราปกติสำหรับโรงแรมนี้เริ่มที่\U00A0%@ ต่อ\U00A0%d\U00A0คืน";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "อัตราปกติสำหรับโรงแรมนี้เริ่มที่\U00A0%@ ต่อ\U00A0%d\U00A0คืน";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "อัตราปกติสำหรับโรงแรมนี้เริ่มที่\U00A0%@ ต่อ\U00A0%d\U00A0คืน";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "อัตราปกติสำหรับโรงแรมนี้เริ่มที่\U00A0%@ ต่อ\U00A0%d\U00A0คืน";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li ข้อเสนอ";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "ลด %@ จากราคาปกติ";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "ห้องอื่น ๆ";
+
+"HL_LOC_CHECKIN_AFTER" = "หลัง";
+"HL_LOC_CHECKOUT_BEFORE" = "ก่อน";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li ข้อเสนอ";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li ข้อเสนอ";
+
+"HOTEL_RATING_EXCEPTIONAL" = "แสนวิเศษ";
+"HOTEL_RATING_WONDERFUL" = "ดีเลิศ";
+"HOTEL_RATING_EXCELLENT" = "ยอดเยี่ยม";
+"HOTEL_RATING_VERY_GOOD" = "ดีมาก";
+"HOTEL_RATING_GOOD" = "ดี";
+"HOTEL_RATING_FAIR" = "คะแนนจากผู้เข้าพัก";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "ไม่พบโรงแรมที่ต้องการ";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "ไม่มีผลการค้นหาที่ตรงกับเกณฑ์ที่ระบุ";
+"HL_NO_FILTER_RESULTS_BUTTON" = "ตั้งค่าตัวกรองใหม่";
+
+"HL_NO_RESULTS_TITLE" = "ไม่พบโรงแรมที่ต้องการ";
+"HL_NO_RESULTS_DESCRIPTION" = "ไม่พบโรงแรมที่ต้องการ\nในเมืองที่คุณเลือก";
+"HL_NEW_SEARCH_BUTTON" = "ค้นหาใหม่";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "ใช้งาน";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "ระยะทางจากตำแหน่งปัจจุบันของคุณ:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "ระยะทางจาก ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "ระยะทางจากจุดค้นหา:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "ระยะทางจากจุดบนแผนที่";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "ระยะทางจาก %@:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "ราคา";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "ระยะทางไปยังลิฟท์สกี:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "ระยะทางไปยังหาด:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "ระยะทางไปยังใจกลางเมือง:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "ไม่พบสิ่งที่คุณกำลังมองหา?\nดูข้อเสนอเพิ่มเติมในบริเวณใกล้เคียง!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "ไม่พบผลการค้นหา กรุณาค้นหาใหม่ในเมืองใกล้เคียง";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "แสดงโรงแรมใกล้เคียง";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "เยี่ยม! ฉันจะไปที่นั่นได้อย่างไร";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "ค้นหาตั๋ว";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "เลือกสกุลเงินแล้ว";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "สกุลเงินจะเปลี่ยนแปลงเมื่อเริ่มค้นหาครั้งใหม่";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "ไม่มีสัญญาณอินเตอร์เน็ต";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "เซิร์ฟเวอร์เกิดข้อผิดพลาด";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "เซิร์ฟเวอร์เกิดข้อผิดพลาด กรุณาค้นหาใหม่อีกครั้ง";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "ผลการค้นหาหมดอายุแล้ว";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "เพื่อรับราคาที่อัพเดท โปรดทำการค้นหาใหม่อีกครั้ง";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "ไม่สามารถเข้าถึงตำแหน่งของคุณได้";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "อนุญาตให้เราระบุตำแหน่งที่อยู่ของคุณ เพื่อการค้นหาโรงแรมที่ง่ายยิ่งขึ้น";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "ไปยังการตั้งค่า";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "ภายหลัง";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "ปิด";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "การตอบรับ จากแอพ";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "ผิดพลาด";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "คุณต้องตั้งค่าอีเมลล์ลูกค้าบนอุปกรณ์ของคุณ";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "ข้อมูลการบริการที่จะช่วยให้เราแก้ปัญหาของคุณ";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "จองห้องพัก";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "บริษัทตัวแทนอื่น ๆ";
+"HL_WAITING_LONG_SEARCH_TITLE" = "กำลังค้นหาข้อเสนอที่ดีที่สุด";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "อาจใช้เวลาถึง 1 นาที\nกรุณารอสักครู่";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "คุณพบดีลของคุณแล้ว!\nทีนี้จองให้เรียบร้อยได้เลย";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "มอสโก";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "นิวยอร์ก";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "ซิดนีย์";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "ลอนดอน";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "ออตตาวา";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "ลิสบอน";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "กรุงเทพฯ";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "ปักกิ่ง";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "ปารีส";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "เบอร์ลิน";
+"HL_LOC_DEFAULT_CITIES_ROME" = "โรม";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "มาดริด";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "เคียฟ";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "อัสตานา";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "มินสก์";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "โตเกียว";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "กรุงโซล";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "บราซีเลีย";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "ไทเป";
+"HL_LOC_DEFAULT_CITIES_HK" = "ฮ่องกง";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "ดูไบ";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "รัสเซีย";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "สหรัฐอเมริกา";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "ออสเตรเลีย";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "สหราชอาณาจักร";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "แคนาดา";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "โปรตุเกส";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "ไทย";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "จีน";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "ฝรั่งเศส";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "เยอรมนี";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "อิตาลี";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "สเปน";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "ยูเครน";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "คาซัคสถาน";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "เบลารุส";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "สหรัฐอาหรับเอมิเรตส์";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "ญี่ปุ่น";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "เกาหลีใต้";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "บราซิล";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "ไต้หวัน";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "ฮ่องกง";

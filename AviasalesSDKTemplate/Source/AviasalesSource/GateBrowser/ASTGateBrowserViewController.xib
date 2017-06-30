@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTGateBrowserViewController" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="loadingView" destination="zV9-ZI-NFi" id="DUe-Zy-ILk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webViewContainer" destination="1iQ-jr-pzd" id="73e-pB-H78"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iQ-jr-pzd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zV9-ZI-NFi">
+                    <rect key="frame" x="127" y="273" width="120" height="120"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="gGs-y8-aHi">
+                            <rect key="frame" x="41" y="41" width="37" height="37"/>
+                            <color key="color" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </activityIndicatorView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wait" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJp-eC-CtZ">
+                            <rect key="frame" x="8" y="91" width="104" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="rfk-IP-GFW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="BROWSER_OVERLAY_DEFAULT_TEXT"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="WJp-eC-CtZ" secondAttribute="trailing" constant="8" id="6qQ-dx-Rlt"/>
+                        <constraint firstAttribute="width" constant="120" id="9MF-zW-sc3"/>
+                        <constraint firstItem="gGs-y8-aHi" firstAttribute="centerX" secondItem="zV9-ZI-NFi" secondAttribute="centerX" id="G4l-4q-2zB"/>
+                        <constraint firstItem="WJp-eC-CtZ" firstAttribute="leading" secondItem="zV9-ZI-NFi" secondAttribute="leading" constant="8" id="Q2f-Jt-TOd"/>
+                        <constraint firstAttribute="height" constant="120" id="ixm-cy-Dbe"/>
+                        <constraint firstItem="gGs-y8-aHi" firstAttribute="centerY" secondItem="zV9-ZI-NFi" secondAttribute="centerY" id="m2O-Jw-akt"/>
+                        <constraint firstAttribute="bottom" secondItem="WJp-eC-CtZ" secondAttribute="bottom" constant="8" id="tWx-dm-5eU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="JRCornerRadius">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="zV9-ZI-NFi" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="H0Q-9h-knQ"/>
+                <constraint firstItem="zV9-ZI-NFi" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Jv0-XM-hDp"/>
+                <constraint firstAttribute="bottom" secondItem="1iQ-jr-pzd" secondAttribute="bottom" id="Pbg-Pk-Iiq"/>
+                <constraint firstItem="1iQ-jr-pzd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Pxd-Qg-Nm9"/>
+                <constraint firstItem="1iQ-jr-pzd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="ZXU-sa-esz"/>
+                <constraint firstAttribute="trailing" secondItem="1iQ-jr-pzd" secondAttribute="trailing" id="vMg-pm-U4n"/>
+            </constraints>
+            <point key="canvasLocation" x="342.5" y="3.5"/>
+        </view>
+    </objects>
+</document>

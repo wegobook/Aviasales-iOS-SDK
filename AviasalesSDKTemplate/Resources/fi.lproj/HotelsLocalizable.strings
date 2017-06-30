@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "/";
+
+"HL_LOC_GUEST##{one}" = "vieras";
+"HL_LOC_GUEST##{few}" = "vierasta";
+"HL_LOC_GUEST##{many}" = "vierasta";
+"HL_LOC_GUEST##{other}" = "vierasta";
+
+"HL_LOC_GUEST_ADULT##{one}" = "aikuinen";
+"HL_LOC_GUEST_ADULT##{few}" = "aikuinen";
+"HL_LOC_GUEST_ADULT##{many}" = "aikuiset";
+"HL_LOC_GUEST_ADULT##{other}" = "aikuiset";
+
+"HL_LOC_GUEST_KID##{one}" = "lapsi";
+"HL_LOC_GUEST_KID##{few}" = "lapsi";
+"HL_LOC_GUEST_KID##{many}" = "lapset";
+"HL_LOC_GUEST_KID##{other}" = "lapset";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "Hotellit";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "Kaupunki tai hotelli";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "Lapsia";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Aikuista";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "Lentopäivät";
+
+"HL_LOC_YEAR##{one}" = "vuosi";
+"HL_LOC_YEAR##{few}" = "vuotta";
+"HL_LOC_YEAR##{many}" = "vuotta";
+"HL_LOC_YEAR##{other}" = "vuotta";
+
+"HL_LOC_NIGHT##{one}" = "yö";
+"HL_LOC_NIGHT##{few}" = "yötä";
+"HL_LOC_NIGHT##{many}" = "yötä";
+"HL_LOC_NIGHT##{other}" = "yötä";
+
+"HL_LOC_FOR_NIGHT##{one}" = "per\U00A0%d\U00A0yö";
+"HL_LOC_FOR_NIGHT##{few}" = "per\U00A0%d\U00A0yötä";
+"HL_LOC_FOR_NIGHT##{many}" = "per\U00A0%d\U00A0yötä";
+"HL_LOC_FOR_NIGHT##{other}" = "per\U00A0%d\U00A0yötä";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Virhe";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Valitse vieraiden lukumäärä";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Valitse kohteesi";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Hakutulokset";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "Löydä hotellit";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Näytä hinnat";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "Valitse päivät";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Pahoittelut, hotellin majoittumisaika on rajattu 30 vuorokauteen";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "Lapsia";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Sylilapsia";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Ikä";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Hyväksy";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Peruuta";
+
+"HL_CLEAN_BUTTON_TITLE" = "Tyhjennä";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "Viimeaikaiset haut";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Kaupungit";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Hotellit";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Lentokentät";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "Lähellä sinua";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "Kaupungit ja hotellit";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "Mitään ei löytynyt";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "Suodattimet";
+"HL_LOC_FILTER_DROP_BUTTON" = "Tyhjennä";
+"HL_LOC_FILTER_APPLY_BUTTON" = "Valmis";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Hinta";
+"HL_LOC_FILTER_RANGE" = "ajalle %@ - %@";
+"HL_LOC_FILTER_FROM_STRING" = "väliltä";
+"HL_LOC_FILTER_TO_STRING" = "enintään";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Etäisyys:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Keskusta";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Ateriat ja maksaminen";
+"HL_LOC_FILTER_STARS_SECTION" = "Tähdet";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Majoituksen tyyppi";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Piilota tulokset";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "Alueet";
+"HL_LOC_FILTER_GATES_SECTION" = "Varaustoimistot";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "Varaustoimistot";
+"HL_LOC_FILTER_SELECT_GATES" = "Valitse toimistot";
+"HL_LOC_FILTER_ALL_GATES" = "Kaikki matkatoimistot";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Alueet";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "Valitse alueet";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "Kaikki alueet";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Etäisyys";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Aamiainen";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "Kaikenkattava";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "Ilmainen peruutus";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "Maksa nyt";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "Kokonaiset kodit";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "Huoneet";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "Piilota hostellit ja majatalot";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "Piilota asunnot";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "Piilota asuntolat";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Yksityinen WC";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "Ei tuloksia";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "Kaunis näköala";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "Ravintola";
+"HL_LOC_FILTER_AMENITY_PARKING" = "Pysäköinti";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "Tupakointi sallittu";
+"HL_LOC_FILTER_AMENITY_PETS" = "Lemmikit sallittu";
+"HL_LOC_FILTER_AMENITY_TV" = "TV";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "Pyykinpesu";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "Ilmastointilaite";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "Internet";
+"HL_LOC_FILTER_AMENITY_POOL" = "Uima-allas";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "Fitness";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "Hiustenkuivaaja";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Lastenvahti";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Yksityinen WC";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Turvaboksi";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Haku";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "Mielenkiintoisia kohteita";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Rannat";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "Mikä tahansa ranta";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Hiihtohissit";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Mikä tahansa hiihtohissi";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Mikä tahansa metroasema";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Lentokentät";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Juna-asemat";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "Sijainti kartalla";
+"HL_LOC_SEARCH_POINT_TEXT" = "Etsi sijaintia";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ ja lähistöllä";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "Valmis";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "Sijainti kartalla";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "Nykyinen sijainti";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "Kaupungin keskusta";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "Nykyinen sijainti";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "Hakutulokset";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Matkatoimistot englanninkielisellä sivustolla";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Huonepalvelut";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Hotellipalvelut";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Hotellin nimi";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Maksa hotellilla";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Piilota loppuunmyydyt";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ / %@ hotellia";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ / %@ hotelli";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ / %@ hotellia";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ / %@ hotellia";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ / %@ hotellia";
+"HL_LOC_FILTER_RATING_CRITERIA" = "Arvosana";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "Suodata hotellin nimen mukaan";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "Hotellit lähistöllä";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "Suodata hotellin nimen mukaan";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "Hotellisivustot";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "Kartta";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Suodattimet";
+"HL_SORT_BUTTON_TITLE_LABEL" = "Lajittele";
+
+"HL_DISCOUNT" = "alennus";
+"HL_SPECIAL_PRICE_TITLE" = "erikoistarjous";
+
+"HL_LOC_ADULT##{one}" = "aikuinen";
+"HL_LOC_ADULT##{few}" = "aikuiset";
+"HL_LOC_ADULT##{many}" = "aikuiset";
+"HL_LOC_ADULT##{other}" = "aikuiset";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "km";
+"HL_LOC_METERS_ABBREVIATION" = "m";
+"HL_LOC_MILES_ABBREVIATION" = "mi";
+
+"HL_NEW_SEARCH_BUTTON" = "Uusi haku";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "Nollaa suodattimet";
+
+"HL_LOC_NO_ROOMS" = "Ei huomeita";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "näille päivämäärille";
+"HL_LOC_ROOMS_OUTDATED" = "Vanhentunut";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "Aloita haku alusta";
+"HL_LOC_ROOMS_SOLD" = "Loppuunmyyty";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "näille päivämäärille";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "Tässä kohteessa on useita hotelleja, joten laitoimme ne yhteen.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "Tässä kohteessa on useita hotelleja.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "Lajitteluperuste:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "Suosutuimmat";
+"HL_LOC_SORT_TYPE_RATING" = "Arvosana";
+"HL_LOC_SORT_TYPE_PRICE" = "Hinta";
+"HL_LOC_SORT_TYPE_DISTANCE" = "Etäisyys kohteeseen:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "Alennus";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "Asetukset";
+
+"HL_LOC_ABOUT_CURRENCY" = "Valuutta";
+
+"LOC_RATE_APP_TITLE" = "Arvostele sovellus";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "Ota yhteyttä";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "Kerro meille, mikä oli pielessä:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "Versio";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Haku";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "Näytä koko arvostelu ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Näytä %@ lisää";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "Piilota";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Kaikki huoneet";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Arvosana";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Kuvagalleria";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Sijainti";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Majoituksen tiedot";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Hyödylliset tiedot";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Huonepalvelut";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Rakennuksen tiedot";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Hotellipalvelut";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "Matkustaja";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "Check-in";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "Check-out";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Siivousmaksu";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Takuutalletus";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Pakollinen";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "parit";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "perheet";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "yksin";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "yritys";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "Henkilökunta puhuu: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "Henkilökunta puhuu: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "Henkilökunta puhuu: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "Henkilökunta puhuu: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Ilmainen pysäköinti";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Hotellit";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Asunnot";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Hostellit";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Hotelli";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Asuntohotelli";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Bed & Breakfast";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Asunnot";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Motelli";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Majatalo";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Hostelli";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "Lomakohde";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "Farmi";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Lomatalo";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Majapaikka";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Huvila";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Yksityishuone";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "Rakennettu v. %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "Peruskorjattu v. %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ huone";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ huonetta";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ huonetta";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ huonetta";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "Näytä kuvat";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Avaa kartta";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Varaa nyt hintaan ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Varaa nyt";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Lisää tarjouksia ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Kuvagalleria";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "Päivitetään hintoja...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Paras tarjous yhdelle yölle";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Paras tarjous: ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Yritä uudelleen";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Muuta hakuehtoja";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Aloita haku alusta";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Loppuunmyyty";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "Pahoittelut, emme ole saaneet tarkempia tietoja";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "Hinnat vanhentuneet";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "Huoneita ei ole saatavilla valituille päivämäärille";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "Valitse päivämäärät ja vieraat";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ arvostelua";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ arvostelu";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ arvostelua";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ arvostelua";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ arvostelua";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i enemmän";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "Yhteenveto";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "Arvostelun tiedot";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "Vieraiden arvostelut";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "Yleisimmät vieraat";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "Korostukset";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Tapahtui virhe";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Näytä lisää arvosteluja";
+"HL_ALL_REVIEWS_TITLE" = "Arvostelut";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Kaikki matkatoimistot";
+"HL_REVIEWS_FILTER" = "Suodata:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "100% varmistetut arvostelut";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "Aidot vieraat. Aidot vierailut. Aidot mielipiteet.";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d vieraiden arvostelua";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d vieraan arvostelu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d vieraiden arvostelua";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d vieraiden arvostelua";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d vieraiden arvostelua";
+
+"HL_NO_HOTEL_REVIEWS" = "Ei arvosteluja";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "Etsitään huoneita...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "Muutos";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "Päivämäärät ja vieraat";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "Sisältää aamupalan";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "Ei sisällä aamupalaa";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "Kaikenkattava";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "Ilmainen peruutus";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "Tupakointi sallittu";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "Edullisin";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "Alennus";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Hotellin verkkosivut";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Maksa nyt";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Maksa myöhemmin";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Ei vaadi luottokorttia";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Erikoistarjous";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Yksityinen WC";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Jaettu WC";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Wi-Fi huoneessa";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "%li huonetta jäljellä!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "%li huone jäljellä!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "%li huonetta jäljellä!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "%li huonetta jäljellä!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "%li huonetta jäljellä!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Normaalihinnat hotellissa alk.\U00A0%@ per\U00A0%d\U00A0yötä";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Normaalihinnat hotellissa alk.\U00A0%@ per\U00A0%d\U00A0yö";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Normaalihinnat hotellissa alk.\U00A0%@ per\U00A0%d\U00A0yötä";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Normaalihinnat hotellissa alk.\U00A0%@ per\U00A0%d\U00A0yötä";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Normaalihinnat hotellissa alk.\U00A0%@ per\U00A0%d\U00A0yötä";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li tarjousta";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li tarjous";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li tarjousta";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li tarjousta";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li tarjousta";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "%@ alennus normaalihinnasta";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "Muut huoneet";
+
+"HL_LOC_CHECKIN_AFTER" = "jälkeen";
+"HL_LOC_CHECKOUT_BEFORE" = "ennen";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li tarjousta";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li tarjous";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li tarjousta";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li tarjousta";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li tarjousta";
+
+"HOTEL_RATING_EXCEPTIONAL" = "ensiluokkainen";
+"HOTEL_RATING_WONDERFUL" = "erinomainen";
+"HOTEL_RATING_EXCELLENT" = "loistava";
+"HOTEL_RATING_VERY_GOOD" = "todella hyvä";
+"HOTEL_RATING_GOOD" = "hyvä";
+"HOTEL_RATING_FAIR" = "pistemäärä";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "Hotelleja ei löytynyt";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "Ei tuloksia valituilla ehdoilla";
+"HL_NO_FILTER_RESULTS_BUTTON" = "Nollaa suodattimet";
+
+"HL_NO_RESULTS_TITLE" = "Hotelleja ei löytynyt";
+"HL_NO_RESULTS_DESCRIPTION" = "Hotelleja ei löytynyt\nvalitun kaupungin.";
+"HL_NEW_SEARCH_BUTTON" = "Uusi haku";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Hyväksy";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Etäisyys nykyiseen sijaintiisi:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Etäisyys kohteesta ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Etäisyys valitsemastasi pisteestä:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Etäisyys kartan pisteestä:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "Etäisyys kohteesta %@:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Hinta";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Etäisyys hiihtohisseille:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Etäisyys rannalle:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "Etäisyys kaupungin keskustaan:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "Etkö löytänyt etsimääsi?\nKatso lisää tarjouksia läheltä!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "Mitään ei löytynyt. Yritä lähellä olevia kaupunkeja.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "Näytä lähellä olevat hotellit";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "Mahtavaa! Miten pääsen sinne?";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "Etsi liput";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "Valittu valuutta";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "Valuutta vaihdetaan, kun aloitat seuraavan hakusi";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "Ei internet-yhteyttä";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "Tarkista internet-yhteytesi";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "Palvelinvirhe";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "Tapahtui palvelinvirhe. Yritä uudelleen.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "Tulokset ovat vanhentuneet";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "Saadaksesi päivitetyt hinnat, yritä hakua uudelleen.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "Emme paikantaneet sijaintiasi";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "Salli meidän paikantaa sijaintisi, jotta voimme tehdä haustasi helpompaa.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Mene asetuksiin";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "Myöhemmin";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Sulje";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Palautetta iOS -sovelluksesta";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Virhe";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Sinun täytyy ensin määrittää laitteen sähköpostiohjelma.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "Palvelutiedot, jotka auttavat meitä ratkaisemaan ongelmasi";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "Varaa huone";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "Muut toimistot";
+"HL_WAITING_LONG_SEARCH_TITLE" = "Etsitään parhaita tarjouksia";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Siinä voi kestää minuutti.\nOdota, ole hyvä.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Olet löytänyt tarjouksesi! Suorita varaus nyt.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moskova";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "New York";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "Sydney";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "Lontoo";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "Ottawa";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "Lissabonin";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "Bangkok";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "Peking";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "Pariisi";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "Berliini";
+"HL_LOC_DEFAULT_CITIES_ROME" = "Rooma";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "Madrid";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "Kiovan";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "Astana";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "Minsk";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "Tokio";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "Soul";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "Brasilia";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "Taipei City";
+"HL_LOC_DEFAULT_CITIES_HK" = "Hong Kong";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "Dubai";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "Venäjä";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "Yhdysvallat";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "Australia";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "Yhdistynyt Kuningaskunta";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "Kanada";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "Portugali";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "Thaimaa";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "Kiina";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "Ranska";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "Saksa";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "Italia";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "Espanja";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "Ukraina";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "Kazakstan";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "Valko-venäjä";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "Yhdistyneet Arabiemiirikunnat";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "Japani";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "Etelä-Korea";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brasilia";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Taiwan";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";

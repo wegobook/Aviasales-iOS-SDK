@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="123" id="mhB-UY-Ng9" customClass="MultiAmenityFilterCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mhB-UY-Ng9" id="qhP-LQ-DAH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="123"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZB3-T8-srx" customClass="CommonAmenityFilterView" customModule="Apartments" customModuleProvider="target">
+                        <rect key="frame" x="15" y="15" width="290" height="92.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ZB3-T8-srx" secondAttribute="trailing" constant="15" id="AhS-1Q-BEj"/>
+                    <constraint firstAttribute="bottom" secondItem="ZB3-T8-srx" secondAttribute="bottom" constant="15" id="djH-T7-JHQ"/>
+                    <constraint firstItem="ZB3-T8-srx" firstAttribute="top" secondItem="qhP-LQ-DAH" secondAttribute="top" constant="15" id="kSk-Im-j24"/>
+                    <constraint firstItem="ZB3-T8-srx" firstAttribute="leading" secondItem="qhP-LQ-DAH" secondAttribute="leading" constant="15" id="zA0-ZQ-yBK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="amenitiesView" destination="ZB3-T8-srx" id="kdM-Tb-9UU"/>
+            </connections>
+            <point key="canvasLocation" x="-171" y="-34.5"/>
+        </tableViewCell>
+    </objects>
+</document>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="57" id="Wva-gb-p7G" customClass="HLDistanceSortCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="407" height="57"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Wva-gb-p7G" id="zOV-vs-HGy">
+                <rect key="frame" x="0.0" y="0.0" width="407" height="56"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Расстояние до:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ro6-vf-MbC" userLabel="Введите название">
+                        <rect key="frame" x="15" y="18" width="123" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.27450980392156865" green="0.27843137254901962" blue="0.28235294117647058" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" verticalCompressionResistancePriority="752" image="sortActiveIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ctC-Xl-Inx">
+                        <rect key="frame" x="372" y="18" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="gD3-Gn-Gei"/>
+                            <constraint firstAttribute="height" constant="20" id="qEV-CE-8Wx"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Nx-y7-Wfa">
+                        <rect key="frame" x="142" y="12.5" width="220" height="33"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <state key="normal" title="Аэроэкспресс аэропорта Шереметьево">
+                            <color key="titleColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="openPointSelectionScreen" destination="Wva-gb-p7G" eventType="touchUpInside" id="iOj-d3-SaF"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="Ro6-vf-MbC" firstAttribute="leading" secondItem="zOV-vs-HGy" secondAttribute="leading" constant="15" id="1c7-Pp-yvR"/>
+                    <constraint firstAttribute="centerY" secondItem="Ro6-vf-MbC" secondAttribute="centerY" id="BVJ-xm-uhm"/>
+                    <constraint firstItem="ctC-Xl-Inx" firstAttribute="centerY" secondItem="zOV-vs-HGy" secondAttribute="centerY" id="MjO-Mj-X6f"/>
+                    <constraint firstItem="4Nx-y7-Wfa" firstAttribute="leading" secondItem="Ro6-vf-MbC" secondAttribute="trailing" constant="4" id="XCD-RF-daU"/>
+                    <constraint firstItem="ctC-Xl-Inx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="4Nx-y7-Wfa" secondAttribute="trailing" constant="10" id="hRy-Zw-UBe"/>
+                    <constraint firstItem="4Nx-y7-Wfa" firstAttribute="baseline" secondItem="Ro6-vf-MbC" secondAttribute="baseline" id="j8T-Hz-k9Z"/>
+                    <constraint firstAttribute="trailing" secondItem="ctC-Xl-Inx" secondAttribute="trailing" constant="15" id="ohc-b1-ewh"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="4Nx-y7-Wfa" secondAttribute="trailing" constant="15" id="pyX-Hb-xV9"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ctC-Xl-Inx" secondAttribute="trailing" constant="15" id="vf9-IS-yFh"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="vf9-IS-yFh"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="customAccessoryView" destination="ctC-Xl-Inx" id="eIV-5Q-r8L"/>
+                <outlet property="pointButton" destination="4Nx-y7-Wfa" id="o9n-cc-5tK"/>
+                <outlet property="titleLabel" destination="Ro6-vf-MbC" id="gzf-e1-cdO"/>
+                <outlet property="titleToAccessoryViewConstraint" destination="hRy-Zw-UBe" id="PCO-4T-kLh"/>
+            </connections>
+            <point key="canvasLocation" x="174.5" y="282.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sortActiveIcon" width="20" height="20"/>
+    </resources>
+</document>

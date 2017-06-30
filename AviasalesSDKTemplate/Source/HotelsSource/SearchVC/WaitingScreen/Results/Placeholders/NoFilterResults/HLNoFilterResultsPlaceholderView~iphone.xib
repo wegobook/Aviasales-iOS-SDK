@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EH9-vS-Fp7" userLabel="No Filter Results View" customClass="HLNoFilterResultsPlaceholderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="noFilterResultsImage" translatesAutoresizingMaskIntoConstraints="NO" id="fee-Ex-TfR">
+                    <rect key="frame" x="115" y="134" width="90" height="82"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Отели не найдены" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Njf-SO-QHa" userLabel="NoFilterResults Label">
+                    <rect key="frame" x="73" y="248" width="174" height="24"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="По заданным параметрам мы не нашли отелей" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="JQZ-zM-7zs" userLabel="NoFilterResults Description">
+                    <rect key="frame" x="24" y="282" width="273" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S6T-eS-kC5">
+                    <rect key="frame" x="83" y="341" width="156" height="33"/>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                    <state key="normal" title="Сбросить фильтры">
+                        <color key="titleColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dropFilters" destination="EH9-vS-Fp7" eventType="touchUpInside" id="Dwy-Yq-fuN"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.95686274510000002" green="0.95686274510000002" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="S6T-eS-kC5" secondAttribute="centerX" constant="-0.5" id="124-Kx-rY1"/>
+                <constraint firstItem="Njf-SO-QHa" firstAttribute="top" secondItem="fee-Ex-TfR" secondAttribute="bottom" constant="32" id="2pS-GW-aDf"/>
+                <constraint firstAttribute="centerX" secondItem="Njf-SO-QHa" secondAttribute="centerX" id="53j-Sh-Xxx"/>
+                <constraint firstItem="S6T-eS-kC5" firstAttribute="top" secondItem="JQZ-zM-7zs" secondAttribute="bottom" constant="25" id="8qx-Pn-JKI"/>
+                <constraint firstItem="JQZ-zM-7zs" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="EH9-vS-Fp7" secondAttribute="leading" constant="20" id="ILn-A3-axk"/>
+                <constraint firstAttribute="centerX" secondItem="JQZ-zM-7zs" secondAttribute="centerX" constant="-0.5" id="P3i-fN-gR8"/>
+                <constraint firstItem="fee-Ex-TfR" firstAttribute="top" secondItem="EH9-vS-Fp7" secondAttribute="top" constant="134" id="Z1Q-ea-B9y"/>
+                <constraint firstAttribute="centerX" secondItem="fee-Ex-TfR" secondAttribute="centerX" id="a1G-EE-kbN"/>
+                <constraint firstItem="JQZ-zM-7zs" firstAttribute="top" secondItem="Njf-SO-QHa" secondAttribute="bottom" constant="10" id="a7f-rq-ehR"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JQZ-zM-7zs" secondAttribute="trailing" constant="20" id="qqu-G0-R5W"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="button" destination="S6T-eS-kC5" id="DXf-yf-wZz"/>
+                <outlet property="descriptionLabel" destination="JQZ-zM-7zs" id="3q4-8n-ydC"/>
+                <outlet property="iconImageView" destination="fee-Ex-TfR" id="HA3-wA-Ba9"/>
+                <outlet property="titleLabel" destination="Njf-SO-QHa" id="jpT-f5-frY"/>
+                <outlet property="topImageConstraint" destination="Z1Q-ea-B9y" id="FdW-ZS-lk7"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="noFilterResultsImage" width="90" height="82"/>
+    </resources>
+</document>

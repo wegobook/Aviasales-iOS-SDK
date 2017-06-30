@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "hết";
+
+"HL_LOC_GUEST##{one}" = "khách";
+"HL_LOC_GUEST##{few}" = "khách";
+"HL_LOC_GUEST##{many}" = "khách";
+"HL_LOC_GUEST##{other}" = "khách";
+
+"HL_LOC_GUEST_ADULT##{one}" = "người lớn";
+"HL_LOC_GUEST_ADULT##{few}" = "người lớn";
+"HL_LOC_GUEST_ADULT##{many}" = "người lớn";
+"HL_LOC_GUEST_ADULT##{other}" = "người lớn";
+
+"HL_LOC_GUEST_KID##{one}" = "trẻ em";
+"HL_LOC_GUEST_KID##{few}" = "trẻ em";
+"HL_LOC_GUEST_KID##{many}" = "trẻ em";
+"HL_LOC_GUEST_KID##{other}" = "trẻ em";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "Khách sạn";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "Thành phố hay khách sạn";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "Trẻ em";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Người lớn";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "Ngày";
+
+"HL_LOC_YEAR##{one}" = "tuổi";
+"HL_LOC_YEAR##{few}" = "tuổi";
+"HL_LOC_YEAR##{many}" = "tuổi";
+"HL_LOC_YEAR##{other}" = "tuổi";
+
+"HL_LOC_NIGHT##{one}" = "đêm";
+"HL_LOC_NIGHT##{few}" = "đêm";
+"HL_LOC_NIGHT##{many}" = "đêm";
+"HL_LOC_NIGHT##{other}" = "đêm";
+
+"HL_LOC_FOR_NIGHT##{one}" = "mỗi\U00A0%d\U00A0đêm";
+"HL_LOC_FOR_NIGHT##{few}" = "mỗi\U00A0%d\U00A0đêm";
+"HL_LOC_FOR_NIGHT##{many}" = "mỗi\U00A0%d\U00A0đêm";
+"HL_LOC_FOR_NIGHT##{other}" = "mỗi\U00A0%d\U00A0đêm";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Lỗi";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Vui lòng chọn số lượng khách";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Vui lòng chọn điểm đến của bạn";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Kết quả tìm kiếm";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "Tìm khách sạn";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Xem giá";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "Chọn ngày";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Chúng tôi rất tiếc, nhưng thời gian tối đa ở lại khách sạn được giới hạn trong vòng 30 ngày";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "Trẻ em";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Trẻ sơ sinh";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Tuổi";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Chọn";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Hủy";
+
+"HL_CLEAN_BUTTON_TITLE" = "Xóa";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "Tìm kiếm gần đây";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Thành phố";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Khách sạn";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Sân bay";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "Gần bạn";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "Thành phố và khách sạn";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "Không tìm thấy gì";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "Lọc";
+"HL_LOC_FILTER_DROP_BUTTON" = "Cài đặt lại";
+"HL_LOC_FILTER_APPLY_BUTTON" = "Xong";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Giá vé";
+"HL_LOC_FILTER_RANGE" = "từ %@ đến %@";
+"HL_LOC_FILTER_FROM_STRING" = "từ";
+"HL_LOC_FILTER_TO_STRING" = "đến";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Khoảng cách đến:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Trung tâm";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Các bữa ăn và thanh toán";
+"HL_LOC_FILTER_STARS_SECTION" = "Sao";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Loại hình lưu trú";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Ẩn các kết quả";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "Các quận";
+"HL_LOC_FILTER_GATES_SECTION" = "Các đại lý đặt vé";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "Các đại lý đặt vé";
+"HL_LOC_FILTER_SELECT_GATES" = "Chọn đại lý";
+"HL_LOC_FILTER_ALL_GATES" = "Tất cả đại lý";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Các quận";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "Chọn quận";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "Tất cả các quận";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Khoảng cách đến";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Điểm tâm sáng";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "Bao gồm tất cả";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "Miễn phí hủy đặt phòng";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "Thanh toán ngay";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "Nhà nguyên căn";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "Phòng";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "Ẩn ký túc xá và nhà nghỉ";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "Ẩn căn hộ";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "Ẩn các khu tập thể";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Phòng tắm riêng";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "Không tìm thấy kết quả";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "Khung cảnh đẹp";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "Nhà hàng";
+"HL_LOC_FILTER_AMENITY_PARKING" = "Bãi đậu xe";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "Cho phép hút thuốc";
+"HL_LOC_FILTER_AMENITY_PETS" = "Cho phép mang thú cưng";
+"HL_LOC_FILTER_AMENITY_TV" = "TV";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "Giặt ủi";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "Điều hòa không khí";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "Internet";
+"HL_LOC_FILTER_AMENITY_POOL" = "Hồ bơi";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "Phòng tập thể hình";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "Máy sấy tóc";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Trông trẻ";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Phòng tắm riêng";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Két sắt";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Tìm kiếm";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "Điểm tham quan hấp dẫn";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Bãi biển";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "Bãi biển";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Thang máy trượt tuyết";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Bất kỳ thang máy trượt tuyết";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Trạm tàu điện ngầm";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Sân bay";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Ga xe lửa";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "Điểm trên bản đồ";
+"HL_LOC_SEARCH_POINT_TEXT" = "Điểm tìm kiếm";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ và lân cận";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "Xong";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "Điểm trên bản đồ";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "Vị trí hiện tại";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "Trung tâm TP";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "Vị trí hiện tại";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "Kết quả tìm kiếm";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Đại lý với giao diện tiếng Anh";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Tiện nghi phòng";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Tiện nghi khách sạn";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Tên khách sạn";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Thanh toán tại khách sạn";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Ẩn loại phòng đã đặt hết";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ trong số %@ khách sạn";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ trong số %@ khách sạn";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ trong số %@ khách sạn";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ trong số %@ khách sạn";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ trong số %@ khách sạn";
+"HL_LOC_FILTER_RATING_CRITERIA" = "Xếp hạng";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "Lọc bằng tên khách sạn";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "Những khách sạn lân cận";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "Lọc bằng tên khách sạn";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "Trang web của khách sạn";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "Bản đồ";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Lọc";
+"HL_SORT_BUTTON_TITLE_LABEL" = "Phân loại";
+
+"HL_DISCOUNT" = "giảm giá";
+"HL_SPECIAL_PRICE_TITLE" = "ưu đãi đặc biệt";
+
+"HL_LOC_ADULT##{one}" = "người lớn";
+"HL_LOC_ADULT##{few}" = "người lớn";
+"HL_LOC_ADULT##{many}" = "người lớn";
+"HL_LOC_ADULT##{other}" = "người lớn";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "km";
+"HL_LOC_METERS_ABBREVIATION" = "phút";
+"HL_LOC_MILES_ABBREVIATION" = "dặm";
+
+"HL_NEW_SEARCH_BUTTON" = "Tìm kiếm mới";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "Cài đặt lại bộ lọc";
+
+"HL_LOC_NO_ROOMS" = "Hết phòng";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "trong những ngày này";
+"HL_LOC_ROOMS_OUTDATED" = "Hết hạn";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "Hãy khởi động lại chuỗi tìm kiếm";
+"HL_LOC_ROOMS_SOLD" = "Hết phòng";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "trong những ngày này";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "Có nhiều hơn một căn hộ ở khu vực này, vì vậy chúng tôi đã nhóm chúng lại với nhau.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "Có nhiều hơn một khách sạn tại khu vực này.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "Phân loại theo:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "Phổ biến";
+"HL_LOC_SORT_TYPE_RATING" = "Xếp hạng";
+"HL_LOC_SORT_TYPE_PRICE" = "Giá vé";
+"HL_LOC_SORT_TYPE_DISTANCE" = "Khoảng cách đến:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "Giảm giá";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "Cài đặt";
+
+"HL_LOC_ABOUT_CURRENCY" = "Tiền tệ";
+
+"LOC_RATE_APP_TITLE" = "Đánh giá ứng dụng";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "Liên hệ với chúng tôi";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "Báo cho chúng tôi lỗi gì đang xảy ra:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "Phiên bản";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Tìm kiếm";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "Chi tiết xếp loại ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Hiển thị thêm %@ nữa";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "Ẩn";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Tất cả phòng";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Xếp hạng";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Thư viện";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Vị trí";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Thông tin chi tiết về nhà nghỉ";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Thông tin hữu ích";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Tiện nghi phòng";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Thông tin chi tiết về bất động sản";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Tiện nghi khách sạn";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "Khách trọ";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "Đăng ký nhận phòng";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "Đăng ký trả phòng";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Phí dọn phòng";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Tiền đặt cọc bảo đảm";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Yêu cầu";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "cặp đôi";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "gia đình";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "cá nhân";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "thương gia";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "Ngôn ngữ sử dụng: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "Ngôn ngữ sử dụng: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "Ngôn ngữ sử dụng: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "Ngôn ngữ sử dụng: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Bãi đậu xe miễn phí";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Khách sạn";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Căn hộ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Nhà trọ";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Khách sạn";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Khách sạn căn hộ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Giường ngủ và Điểm tâm sáng";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Căn hộ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Nhà nghỉ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Nhà nghỉ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Ký túc xá";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "Khu nghỉ dưỡng";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "Nông trại";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Nhà nghỉ mát";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Căn lều";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Biệt thự nghỉ dưỡng";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Phòng riêng";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "Được xây dựng năm %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "Được tôn tạo năm %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ phòng";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ phòng";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ phòng";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ phòng";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "Hiển thị ảnh";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Mở bản đồ";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Đặt phòng ngay để được ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Đặt phòng ngay";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Thêm ưu đãi ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Thư viện";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "Đang cập nhật giá...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Mức giá tốt nhất cho 1 đêm";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Ưu đãi tốt nhất cho ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Thử lại";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Thay đổi thông số tìm kiếm";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Khởi động lại chuỗi tìm kiếm";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Hết phòng";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "Rất tiếc, chúng tôi chưa nhận được bấy kỳ thông tin chi tiết nào";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "Giá đã hết hạn";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "Không còn phòng trống vào những ngày đã chọn";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "Vui lòng chọn ngày và số lượng khách";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ đánh giá";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ đánh giá";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ đánh giá";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ đánh giá";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ đánh giá";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i thêm";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "Đánh giá sơ lược";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "Chi tiết đánh giá";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "Đánh giá của khách";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "Khách hàng thường xuyên";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "Nhận xét nổi bật";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Lỗi đã xảy ra";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Xem thêm đánh giá";
+"HL_ALL_REVIEWS_TITLE" = "Nhận xét";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Tất cả đại lý";
+"HL_REVIEWS_FILTER" = "Lọc theo:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "100% đánh giá xác thực";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "Khách thực. Kỳ nghỉ thực. Ý kiến thực.";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d đánh giá của khách hàng";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d đánh giá của khách hàng";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d đánh giá của khách hàng";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d đánh giá của khách hàng";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d đánh giá của khách hàng";
+
+"HL_NO_HOTEL_REVIEWS" = "Không có đánh giá";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "Đang tìm kiếm phòng...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "Thay đổi";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "Ngày và khách";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "Bao gồm điểm tâm sáng";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "Không bao gồm bữa ăn sáng";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "Bao gồm tất cả";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "Miễn phí hủy đặt phòng";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "Cho phép hút thuốc";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "Rẻ nhất";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "Giảm giá";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Trang web khách sạn";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Thanh toán ngay";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Thanh toán sau";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Không cần thẻ tín dụng";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Ưu đãi đặc biệt";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Phòng tắm riêng";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Phòng tắm sử dụng chung";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Phòng có Wi-Fi";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "Còn %li phòng!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "Còn %li phòng!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "Còn %li phòng!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "Còn %li phòng!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "Còn %li phòng!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Mức phí thông thường của khách sạn này khởi điểm từ\U00A0%@ cho\U00A0%d\U00A0đêm";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Mức phí thông thường của khách sạn này khởi điểm từ\U00A0%@ cho\U00A0%d\U00A0đêm";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Mức phí thông thường của khách sạn này khởi điểm từ\U00A0%@ cho\U00A0%d\U00A0đêm";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Mức phí thông thường của khách sạn này khởi điểm từ\U00A0%@ cho\U00A0%d\U00A0đêm";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Mức phí thông thường của khách sạn này khởi điểm từ\U00A0%@ cho\U00A0%d\U00A0đêm";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li ưu đãi";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "Giảm giá %@ trên mức giá thông thường";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "Phòng khác";
+
+"HL_LOC_CHECKIN_AFTER" = "sau";
+"HL_LOC_CHECKOUT_BEFORE" = "trước";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li ưu đãi";
+
+"HOTEL_RATING_EXCEPTIONAL" = "xuất sắc";
+"HOTEL_RATING_WONDERFUL" = "tuyệt hảo";
+"HOTEL_RATING_EXCELLENT" = "tuyệt vời";
+"HOTEL_RATING_VERY_GOOD" = "rất tốt";
+"HOTEL_RATING_GOOD" = "tốt";
+"HOTEL_RATING_FAIR" = "điểm đánh giá";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "Không tìm thấy khách sạn nào";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "Không tìm thấy kết quả nào phù hợp với tiêu chuẩn chỉ định của bạn";
+"HL_NO_FILTER_RESULTS_BUTTON" = "Cài đặt lại bộ lọc";
+
+"HL_NO_RESULTS_TITLE" = "Không tìm thấy khách sạn nào";
+"HL_NO_RESULTS_DESCRIPTION" = "Không tìm thấy khách sạn nào tại thành phố đã chọn.";
+"HL_NEW_SEARCH_BUTTON" = "Tìm kiếm mới";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Chọn";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Khoảng cách đến vị trí hiện tại của bạn:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Khoảng cách từ ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Khoảng cách từ điểm tìm kiếm:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Khoảng cách từ điểm trên bản đồ:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "Khoảng cách từ %@:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Giá vé";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Khoảng cách đến thang máy trượt tuyết:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Khoảng cách đến bãi biển:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "Khoảng cách đến trung tâm TP:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "Bạn không thể tìm thấy những thứ bạn cần?\nHãy kiểm tra thêm các giao dịch lân cận!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "Không có kết quả. Hãy thử tìm kiếm ở các thành phố lân cận.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "Hiển thị những khách sạn lân cận";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "Tuyệt! Tôi đến đó bằng cách nào?";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "Tìm vé";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "Tiền tệ đã lựa chọn";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "Đơn vị tiền tệ sẽ được thay đổi khi bạn bắt đầu chuỗi tìm kiếm kế tiếp";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "Không có kết nối internet";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "Vui lòng kiểm tra kết nối internet của bạn";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "Lỗi máy chủ";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "Đã xảy ra lỗi máy chủ. Vui lòng thử tìm kiếm lại.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "Kết quả bị hết hạn";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "Để xem giá cập nhật, vui lòng tải lại tìm kiếm của bạn.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "Chúng tôi không tìm được vị trí của bạn";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "Hãy cho phép chúng tôi dò tìm vị trí của bạn để giúp cho việc tìm kiếm khách sạn dễ dàng hơn.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Đi tới Cài đặt";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "Để sau";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Đóng";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Phản hồi từ iOS app";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Lỗi";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Bạn phải cài đặt cấu hình trình duyệt email trên thiết bị của mình.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "Thông tin dịch vụ sẽ giúp chúng ta giải quyết vấn đề của bạn";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "Đặt phòng";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "Đại lý khác";
+"HL_WAITING_LONG_SEARCH_TITLE" = "Tìm kiếm giao dịch tốt nhất";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Có thể mất đến một phút.\nXin vui lòng đợi.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Bạn đã tìm thấy thỏa thuận của mình!\nGiờ thì hãy hoàn tất việc đặt phòng.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moscow";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "New York";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "Sydney";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "Luân Đôn";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "Ottawa";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "Lisbon";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "Bangkok";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "Bắc Kinh";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "Paris";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "Berlin";
+"HL_LOC_DEFAULT_CITIES_ROME" = "Rome";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "Madrid";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "Kiev";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "Astana";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "Minsk";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "Tokyo";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "Seoul";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "Brasilia";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "Thành phố Đài Bắc";
+"HL_LOC_DEFAULT_CITIES_HK" = "Hồng Kông";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "Dubai";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "Nga";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "Hoa Kỳ";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "Úc";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "Vương quốc Anh";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "Canada";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "Bồ Đào Nha";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "Thái Lan";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "Trung Quốc";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "Pháp";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "Đức";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "Ý";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "Tây Ban Nha";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "Ukraine";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "Kazakhstan";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "Belarus";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "Các tiểu vương quốc Ả Rập thống nhất";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "Nhật";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "Hàn Quốc";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brazil";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Đài Loan";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "Hồng Kông";

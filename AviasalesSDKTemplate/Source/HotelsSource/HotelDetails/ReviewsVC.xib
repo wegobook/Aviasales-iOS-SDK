@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ReviewsVC" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="agencyButton" destination="gSh-ls-J2o" id="1pR-vk-Qvw"/>
+                <outlet property="filterContainerView" destination="0BB-eY-xqS" id="m1V-9p-DKc"/>
+                <outlet property="tableView" destination="Li9-Mp-4uH" id="KfP-4u-2JX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0BB-eY-xqS" userLabel="FilterView">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Фильтрация:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="huN-t3-3Xv">
+                            <rect key="frame" x="15" y="13" width="86" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="HL_REVIEWS_FILTER"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSh-ls-J2o" userLabel="AgencyButton">
+                            <rect key="frame" x="101" y="0.0" width="98" height="44"/>
+                            <accessibility key="accessibilityConfiguration" identifier="HL_CITY_PICKER_CHOOSE_CITY_BUTTON_TITLE"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="4" minY="0.0" maxX="5" maxY="0.0"/>
+                            <state key="normal" title="Все агенства">
+                                <color key="titleColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="changeAgencyClicked:" destination="-1" eventType="touchUpInside" id="57M-6c-63L"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="76K-Um-tgz"/>
+                        <constraint firstItem="huN-t3-3Xv" firstAttribute="leading" secondItem="0BB-eY-xqS" secondAttribute="leading" constant="15" id="975-Lw-DYL"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="gSh-ls-J2o" secondAttribute="trailing" constant="10" id="FaY-g8-92B"/>
+                        <constraint firstItem="gSh-ls-J2o" firstAttribute="top" secondItem="0BB-eY-xqS" secondAttribute="top" id="GkF-oo-4oF"/>
+                        <constraint firstItem="gSh-ls-J2o" firstAttribute="leading" secondItem="huN-t3-3Xv" secondAttribute="trailing" id="IRv-JR-aBN"/>
+                        <constraint firstItem="gSh-ls-J2o" firstAttribute="baseline" secondItem="huN-t3-3Xv" secondAttribute="baseline" id="Ie9-rT-kAA"/>
+                        <constraint firstItem="huN-t3-3Xv" firstAttribute="centerY" secondItem="0BB-eY-xqS" secondAttribute="centerY" id="XZo-3I-6JH"/>
+                        <constraint firstAttribute="bottom" secondItem="gSh-ls-J2o" secondAttribute="bottom" id="dJ2-4o-jWQ"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="Li9-Mp-4uH">
+                    <rect key="frame" x="0.0" y="44" width="375" height="623"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="oNp-tg-VSE"/>
+                        <outlet property="delegate" destination="-1" id="wem-cy-hzb"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="0BB-eY-xqS" secondAttribute="trailing" id="KSO-qh-2Xf"/>
+                <constraint firstItem="Li9-Mp-4uH" firstAttribute="top" secondItem="0BB-eY-xqS" secondAttribute="bottom" id="Z59-05-2Kg"/>
+                <constraint firstItem="0BB-eY-xqS" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a1N-sD-IeZ"/>
+                <constraint firstItem="Li9-Mp-4uH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bMY-0a-UtZ"/>
+                <constraint firstAttribute="trailing" secondItem="Li9-Mp-4uH" secondAttribute="trailing" id="lzL-pC-AtH"/>
+                <constraint firstItem="0BB-eY-xqS" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q3e-2Q-xyC"/>
+                <constraint firstAttribute="bottom" secondItem="Li9-Mp-4uH" secondAttribute="bottom" id="vqu-AP-ZmZ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

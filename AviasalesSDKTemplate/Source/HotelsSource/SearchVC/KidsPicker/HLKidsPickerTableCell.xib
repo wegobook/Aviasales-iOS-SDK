@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" id="KGk-i7-Jjw" customClass="HLKidsPickerTableCell" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ecS-6H-YSV">
+                        <rect key="frame" x="80" y="24" width="40" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.21199023723602295" green="0.21522575616836548" blue="0.21864497661590576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cellDisclosureIcon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ffV-EC-aaj">
+                        <rect key="frame" x="285" y="28.5" width="15" height="13"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="searchFormButton" translatesAutoresizingMaskIntoConstraints="NO" id="8wJ-VP-D51">
+                        <rect key="frame" x="20" y="14.5" width="40" height="40"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pCO-vX-iSp">
+                        <rect key="frame" x="320" y="0.0" width="80" height="69"/>
+                        <color key="backgroundColor" red="0.80784313725490198" green="0.10588235294117647" blue="0.12941176470588234" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="B2O-qQ-tpb"/>
+                        </constraints>
+                        <state key="normal" image="deleteButtonIcon.png">
+                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="onDelete:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="lZp-AU-wDp"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wgG-X8-qXz">
+                        <rect key="frame" x="20" y="14.5" width="40" height="40"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.21199023723602295" green="0.21522575616836548" blue="0.21864497661590576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="wgG-X8-qXz" firstAttribute="top" secondItem="8wJ-VP-D51" secondAttribute="top" id="0cX-O8-s4x"/>
+                    <constraint firstItem="pCO-vX-iSp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="64A-U9-StB"/>
+                    <constraint firstAttribute="centerY" secondItem="ffV-EC-aaj" secondAttribute="centerY" id="Fzc-Ze-hVB"/>
+                    <constraint firstItem="ecS-6H-YSV" firstAttribute="leading" secondItem="8wJ-VP-D51" secondAttribute="trailing" constant="20" id="KT2-2y-rgV"/>
+                    <constraint firstAttribute="trailing" secondItem="pCO-vX-iSp" secondAttribute="trailing" constant="-80" id="POB-u7-XKY"/>
+                    <constraint firstItem="pCO-vX-iSp" firstAttribute="leading" secondItem="ffV-EC-aaj" secondAttribute="trailing" constant="20" id="SEi-CO-taZ"/>
+                    <constraint firstItem="wgG-X8-qXz" firstAttribute="leading" secondItem="8wJ-VP-D51" secondAttribute="leading" id="Vkr-Hq-p4E"/>
+                    <constraint firstAttribute="centerY" secondItem="ecS-6H-YSV" secondAttribute="centerY" id="bfL-eZ-fLK"/>
+                    <constraint firstAttribute="bottom" secondItem="pCO-vX-iSp" secondAttribute="bottom" id="bst-0V-8DP"/>
+                    <constraint firstAttribute="centerY" secondItem="8wJ-VP-D51" secondAttribute="centerY" id="gbW-Sg-9XP"/>
+                    <constraint firstItem="wgG-X8-qXz" firstAttribute="bottom" secondItem="8wJ-VP-D51" secondAttribute="bottom" id="ixf-FW-ZbQ"/>
+                    <constraint firstItem="8wJ-VP-D51" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="jmX-6H-TEs"/>
+                    <constraint firstAttribute="bottom" secondItem="pCO-vX-iSp" secondAttribute="bottom" id="kvP-5G-ZSg"/>
+                    <constraint firstItem="ffV-EC-aaj" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="ecS-6H-YSV" secondAttribute="trailing" constant="20" id="oaJ-1T-0Ri"/>
+                    <constraint firstItem="wgG-X8-qXz" firstAttribute="trailing" secondItem="8wJ-VP-D51" secondAttribute="trailing" id="wb0-N7-8gN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <connections>
+                <outlet property="deleteButton" destination="pCO-vX-iSp" id="Egp-o4-lh0"/>
+                <outlet property="disclosureIcon" destination="ffV-EC-aaj" id="bhb-Ep-Te9"/>
+                <outlet property="kidCountIcon" destination="8wJ-VP-D51" id="c9c-fB-ceW"/>
+                <outlet property="kidCountLabel" destination="wgG-X8-qXz" id="Gue-H5-gvH"/>
+                <outlet property="leftKidCountIconConstraint" destination="jmX-6H-TEs" id="9qW-yq-63P"/>
+                <outlet property="rightDeleteButtonConstraint" destination="POB-u7-XKY" id="TKh-Sy-NYE"/>
+                <outlet property="titleLabel" destination="ecS-6H-YSV" id="QIu-en-fOJ"/>
+            </connections>
+            <point key="canvasLocation" x="394" y="302"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cellDisclosureIcon.png" width="15" height="13"/>
+        <image name="deleteButtonIcon.png" width="20" height="20"/>
+        <image name="searchFormButton" width="40" height="40"/>
+    </resources>
+</document>

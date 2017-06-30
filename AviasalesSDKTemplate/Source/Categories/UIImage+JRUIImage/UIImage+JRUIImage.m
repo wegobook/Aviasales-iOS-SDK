@@ -7,7 +7,6 @@
 
 #import "UIImage+JRUIImage.h"
 
-
 @implementation UIImage (JRUIImage)
 
 + (UIImage *)imageWithColor:(UIColor *)color {

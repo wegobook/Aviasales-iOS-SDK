@@ -12,7 +12,7 @@ static NSInteger const kJRSearchedAirportsMaxCount = 20;
 
 @implementation JRSearchedAirportsManager
 
-+ (void)markSearchedAirport:(id<JRSDKAirport>)searchedAirport {
++ (void)markSearchedAirport:(JRSDKAirport *)searchedAirport {
     NSDictionary *airportData = @{
                                   @"iata": [searchedAirport iata],
                                   @"isCity": @([searchedAirport isCity])
@@ -38,11 +38,11 @@ static NSInteger const kJRSearchedAirportsMaxCount = 20;
     [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
-+ (NSArray<id<JRSDKAirport>> *)searchedAirports {
++ (NSArray<JRSDKAirport *> *)searchedAirports {
     NSMutableArray *airports = [NSMutableArray array];
     
     for (NSDictionary *airportData in [JRSearchedAirportsManager rawSearchedAirports]) {
-        id<JRSDKAirport> airport = [[[AviasalesSDK sharedInstance] airportsStorage] findAirportByIATA:airportData[@"iata"] city:[airportData[@"isCity"] boolValue]];
+        JRSDKAirport *airport = [[[AviasalesSDK sharedInstance] airportsStorage] findAirportByIATA:airportData[@"iata"] city:[airportData[@"isCity"] boolValue]];
         if (airport) {
             [airports addObject:airport];
         }

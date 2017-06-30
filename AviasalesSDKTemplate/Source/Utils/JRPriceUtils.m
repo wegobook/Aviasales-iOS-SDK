@@ -9,8 +9,8 @@
 
 @implementation JRPriceUtils
 
-+ (NSString *)formattedPriceInUserCurrency:(id<JRSDKPrice>)price {
-    NSNumber *const minPriceValue = [JRSDKModelUtils priceInUserCurrency:price];
++ (NSString *)formattedPriceInUserCurrency:(JRSDKPrice *)price {
+    NSNumber *const minPriceValue = [price priceInUserCurrency];
     return [AviasalesNumberUtil formatPrice:minPriceValue];
 }
 

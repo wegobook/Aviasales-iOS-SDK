@@ -9,10 +9,10 @@
 
 @interface NSLayoutConstraint (JRConstraintMake)
 
-NSArray *JRConstraintsMakeScaleToFill(id item,
+NSArray <NSLayoutConstraint *> *JRConstraintsMakeScaleToFill(id item,
                                       id toItem);
 
-NSArray *JRConstraintsMakeEqualSize(id item,
+NSArray <NSLayoutConstraint *> *JRConstraintsMakeEqualSize(id item,
                                     id toItem);
 
 NSLayoutConstraint *JRConstraintMake(id item,

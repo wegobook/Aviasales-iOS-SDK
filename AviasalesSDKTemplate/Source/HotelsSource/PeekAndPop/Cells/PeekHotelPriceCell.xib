@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="132" id="vbK-qS-4YG" customClass="PeekHotelPriceCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="128"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="vbK-qS-4YG" id="xGB-mZ-6OQ">
+                <frame key="frameInset" width="351" height="127"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="255" verticalHuggingPriority="251" horizontalCompressionResistancePriority="251" text="Это номер со всей хурмой и не только с ней." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aSG-FX-GSI">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.21199023723602295" green="0.21522575616836548" blue="0.21864497661590576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hk2-WD-Jm2">
+                        <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="IQA-lb-zYC"/>
+                        </constraints>
+                    </view>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" translatesAutoresizingMaskIntoConstraints="NO" id="Fhl-da-Njc">
+                        <constraints>
+                            <constraint firstAttribute="width" constant="120" id="YHl-bu-WNL"/>
+                            <constraint firstAttribute="height" constant="15" id="k4Z-T9-paJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$10 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oEL-bd-xwY">
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" red="0.44313725490196076" green="0.76470588235294112" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="250" text="gate" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cJT-Wg-Dx9">
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.21199023723602295" green="0.21522575616836548" blue="0.21864497661590576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="lightning" translatesAutoresizingMaskIntoConstraints="NO" id="ofb-DW-QPM">
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="4Qm-yC-ZvK"/>
+                            <constraint firstAttribute="width" constant="10" id="kw4-wP-pRU"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="cJT-Wg-Dx9" firstAttribute="top" secondItem="xGB-mZ-6OQ" secondAttribute="top" constant="15" id="2Jk-s8-pMs"/>
+                    <constraint firstItem="ofb-DW-QPM" firstAttribute="centerY" secondItem="oEL-bd-xwY" secondAttribute="centerY" constant="1" id="2nG-LJ-saT"/>
+                    <constraint firstItem="Hk2-WD-Jm2" firstAttribute="top" secondItem="aSG-FX-GSI" secondAttribute="bottom" constant="4" id="4WH-Nn-mj9"/>
+                    <constraint firstItem="Hk2-WD-Jm2" firstAttribute="leading" secondItem="xGB-mZ-6OQ" secondAttribute="leading" constant="15" id="58I-cK-54L"/>
+                    <constraint firstItem="oEL-bd-xwY" firstAttribute="top" secondItem="xGB-mZ-6OQ" secondAttribute="top" constant="15" id="7ou-At-bJl"/>
+                    <constraint firstAttribute="trailing" secondItem="Hk2-WD-Jm2" secondAttribute="trailing" constant="15" id="Amw-PP-0m1"/>
+                    <constraint firstAttribute="trailing" secondItem="aSG-FX-GSI" secondAttribute="trailing" constant="15" id="GKJ-UW-DXV"/>
+                    <constraint firstAttribute="bottom" secondItem="Hk2-WD-Jm2" secondAttribute="bottom" constant="15" id="Sp1-uh-j0M"/>
+                    <constraint firstAttribute="trailing" secondItem="oEL-bd-xwY" secondAttribute="trailing" constant="15" id="aSR-OP-Cpr"/>
+                    <constraint firstItem="Fhl-da-Njc" firstAttribute="leading" secondItem="xGB-mZ-6OQ" secondAttribute="leading" constant="15" id="eks-7n-w9b"/>
+                    <constraint firstItem="Fhl-da-Njc" firstAttribute="top" secondItem="xGB-mZ-6OQ" secondAttribute="top" constant="19" id="esI-yg-CfU"/>
+                    <constraint firstItem="cJT-Wg-Dx9" firstAttribute="leading" secondItem="xGB-mZ-6OQ" secondAttribute="leading" constant="15" id="mER-Y8-3cr"/>
+                    <constraint firstItem="aSG-FX-GSI" firstAttribute="top" secondItem="Fhl-da-Njc" secondAttribute="bottom" constant="10" id="nNU-9g-f6P"/>
+                    <constraint firstItem="oEL-bd-xwY" firstAttribute="leading" secondItem="ofb-DW-QPM" secondAttribute="trailing" constant="6" id="o9w-YK-MUF"/>
+                    <constraint firstItem="aSG-FX-GSI" firstAttribute="leading" secondItem="xGB-mZ-6OQ" secondAttribute="leading" constant="15" id="vA5-SV-v0U"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="betweenDescriptionAndOptionsConstraint" destination="4WH-Nn-mj9" id="MOL-5h-VXi"/>
+                <outlet property="descriptionLabel" destination="aSG-FX-GSI" id="SzK-zq-Kbg"/>
+                <outlet property="gateImageView" destination="Fhl-da-Njc" id="G8w-gq-c7x"/>
+                <outlet property="gateNameLabel" destination="cJT-Wg-Dx9" id="YtP-5U-ZbG"/>
+                <outlet property="lightningImageView" destination="ofb-DW-QPM" id="oeh-iH-x2x"/>
+                <outlet property="optionsContainerHeightConstraint" destination="IQA-lb-zYC" id="GIO-Jf-teL"/>
+                <outlet property="optionsContainerView" destination="Hk2-WD-Jm2" id="rXV-0C-oJN"/>
+                <outlet property="priceLabel" destination="oEL-bd-xwY" id="PPR-2T-Mgc"/>
+            </connections>
+            <point key="canvasLocation" x="303.5" y="374"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="lightning" width="10" height="15"/>
+    </resources>
+</document>

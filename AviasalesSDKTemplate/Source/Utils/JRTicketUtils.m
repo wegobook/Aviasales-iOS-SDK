@@ -9,9 +9,9 @@
 
 @implementation JRTicketUtils
 
-+ (NSString *)formattedTicketMinPriceInUserCurrency:(id<JRSDKTicket>)ticket {
-    id<JRSDKPrice> const minPrice = [JRSDKModelUtils ticketMinPrice:ticket];
-    NSNumber *const minPriceValue = [JRSDKModelUtils priceInUserCurrency:minPrice];
++ (NSString *)formattedTicketMinPriceInUserCurrency:(JRSDKTicket *)ticket {
+    JRSDKProposal *const minProposal = [JRSDKModelUtils ticketMinimalPriceProposal:ticket];
+    NSNumber *const minPriceValue = [minProposal.price priceInUserCurrency];
     return [AviasalesNumberUtil formatPrice:minPriceValue];
 }
 

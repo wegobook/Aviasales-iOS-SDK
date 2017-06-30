@@ -1,116 +1,73 @@
-Aviasales/Jetradar iOS SDK
+Aviasales Travel iOS SDK
 =================
 [![CocoaPods](https://img.shields.io/cocoapods/v/AviasalesSDK.svg)](https://cocoapods.org/pods/AviasalesSDK)
 [![CocoaPods](https://img.shields.io/cocoapods/p/AviasalesSDK.svg)](https://cocoapods.org/pods/AviasalesSDK)
 [![Travis](https://img.shields.io/travis/KosyanMedia/Aviasales-iOS-SDK/master.svg)](https://travis-ci.org/KosyanMedia/Aviasales-iOS-SDK)
 
-##Description
+## Description
 
+[Aviasales](https://www.aviasales.ru) Travel iOS SDK is a framework for flights and hotels search engine integration. When your user books flight or hotel, you get paid. Aviasales, Jetradar and Hotellook official apps are based on this framework.
 
-[Aviasales](https://www.aviasales.ru)/[Jetradar](https://www.jetradar.com) iOS SDK is a framework integrating a flight search engine into your app. When your user books a flight, you get paid. The framework is based on leading flight search engines Aviasales.ru and Jetradar.com. Aviasales and Jetradar official apps are based on this framework.
+This framework includes:
 
-The framework includes:
-
-* a static library to integrate with flight search engine server;
+* two static libraries to integrate with flights and hotels search engine;
 * UI template project.
  
-You may create your own flight search apps based on our template. To get your API key, track statistics and payments please visit our partner network — [Travelpayouts.com Travel Affiliate Network](https://www.travelpayouts.com/?utm_source=github&utm_medium=ios_sdk).
-To learn more about the Travelpayouts referral system please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
+You may create your flights and hotels search apps based on this template. To track statistics and payments, please visit our affiliate network website — [Travelpayouts.com](https://www.travelpayouts.com/).
 
+To learn more about the Travelpayouts affiliate network, please visit [Travelpayouts FAQ](https://support.travelpayouts.com/hc/en-us/articles/203955613-Commission-and-payments).
 
-##<a name="usage"></a>How to build an app using the template project
-### 📲 Installation
-1. Download the latest template project release (not beta) here: [https://github.com/KosyanMedia/Aviasales-iOS-SDK/releases](https://github.com/KosyanMedia/Aviasales-iOS-SDK/releases).
-2. Download dependencies via ```pod install``` command in Terminal. Don't forget to ```cd``` to the template project folder.  
-**Use ```AviasalesSDKTemplate.xcworkspace``` to work with your project afterwards**.
-3. Find ```JRAppDelegate.m``` and assign your API token and partner marker to ```kJRAPIToken``` & ```kJRPartnerMarker```.
-4. If you don't have partner marker and API token, please visit [Travelpayouts](https://travelpayouts.com/) and register.
+## <a name="usage"></a>How to build your own app using the template project
+### 📲 Setup
+1. Download the latest release of template project (not beta) here: [https://github.com/KosyanMedia/Aviasales-iOS-SDK/releases](https://github.com/KosyanMedia/Aviasales-iOS-SDK/releases).
+2. Download dependencies via ```pod install --repo-update``` command in Terminal. Do not forget to ```cd``` to the template project folder.  
+**Use the ```AviasalesSDKTemplate.xcworkspace``` to work with your project**.
+3. Add your partner's token and marker in ```Config.h``` file to constants ```kJRAPIToken``` and ```kJRPartnerMarker```.
+4. If you don't have partner marker and API token, please sign up on [Travelpayouts](https://travelpayouts.com/).
 
-###🔧🍁 Color customization
-For your convenience we've created ```JRColorScheme.h``` and ```JRColorScheme.m``` to make template project color customization a breeze.
+### 📱 iOS versions support
+Framework supports iOS 9.0 and higher
 
-#### Background
-|static function|description|
+### ✈️🏨 Tab selection
+If you want to remove flights or hotels search tab, change values of TICKETS_ENABLED and HOTELS_ENABLED to 0 in "Build Settings" in project settings. Settings tab can't be removed.
+
+### 🇺🇸🇷🇺 Localization
+Text localizations can be added with NSLSKey in "Attributes Inspector" section of xib-files.
+
+### 🔧🌻 Color customization
+You can choose color scheme in ColorSchemeConfigurator.swift file. Just add to currentColorScheme variable one of these values: BlackColorScheme() / BlueColorScheme() / PurpleColorScheme(). Or set CustomColorScheme() value and set up any color scheme you need in CustomColorScheme.swift file.
+You can also customize the appearance and colors of elements in xib files. Check the available for editing fields in the "Attributes Inspector" section. You can use any values from JRColorScheme.h as color keys.
+
+Here is a list of primary fields with explanations:
+
+|Title|Description|
 |--------|--------|
-mainBackgroundColor| main background color
-lightBackgroundColor| light background color — iPad waiting screen
-darkBackgroundColor | dark background color — search screen and filters
-itemsBackgroundColor | item background color — search results
-itemsSelectedBackgroundColor | selected item background color — search results
-iPadSceneShadowColor | iPad shadow color
+tintColor | Color of all buttons and icons in the app
+searchFormTintColor | Color of icons and buttons on the search screens
+navigationBarBackgroundColor | Color of the navigation bar
+navigationBarItemColor | Color of the navigation bar elements
+searchFormBackgroundColor | Background color on the search screens
+searchFormTextColor | Text color on the search screens
+searchFormSeparatorColor | Color of the separator bars on the search screens
+mainButtonBackgroundColor | Background color for "Search" buttons on the search screens
+mainButtonTitleColor | Text color on the "Search" buttons on the search screens
 
-#### Tab Bar
-|static function|description|
-|--------|--------|
-tabBarBackgroundColor | TabBar background color — search and multicity search switcher 
-tabBarSelectedBackgroundColor | TabBar selected element background color — search and multicity search switcher 
-tabBarHighlightedBackgroundColor | TabBar highlighted element background color — search and multicity search switcher 
-
-#### Text
-|static function|description|
-|--------|--------|
-darkTextColor | dark text color
-lightTextColor | light text color
-inactiveLightTextColor | light text color for inactive elements
-labelWithRoundedCornersBackgroundColor | label with rounded corners background color — stopovers amount
-separatorLineColor | separator color
-
-#### Buttons
-|static function|description|
-|--------|--------|
-buttonBackgroundColor | button background color
-buttonSelectedBackgroundColor | button selected state
-buttonHighlightedBackgroundColor | button highlighted state
-buttonShadowColor | button shadow color
-
-#### Popover
-|static function|description|
-|--------|--------|
-popoverTintColor | popover background color — travel class selection
-
-#### ⭐️⭐️⭐️⭐️⭐️
-|static function|description|
-|--------|--------|
-ratingStarDefaultColor | rating star color
-ratingStarSelectedColor | selected state for rating star
-
+If you need more customization (hotel photos loading activity indicator color, filters elements color, etc.), use settings in JRColorScheme.m file.
 
 ### 🤑 Appodeal ads setup
-To make the ad network integration process easier we've added a mediator — [Appodeal](https://www.appodeal.com/).
-Setup:
 
-* assign your Appodeal API key to ```kAppodealApiKey``` parameter
-* to disable ads use ```showsAdDuringSearch``` & ```showsAdOnSearchResults``` parameters of ```JRAdvertisementManager``` object in JRAdvertisementManager
+To get additional profit from advertisements, we've integrated Mobile Ads [Appodeal SDK](https://www.appodeal.com/) in the app. To configure it, specify the **kAppodealApiKey** parameter in the **Config.h** file (get your API key by registering at [Appodeal](https://www.appodeal.com/)).
 
-Defaults:
+By default, ads will appear on the waiting screens for tickets and hotels searching.
 
-* video or interstitial on waiting screen;
-* native ads on search results screen.
+To test ads, turn on the **kAppodealTestingMode** test mode in the **Config.h** file. This test mode will work only in **Debug** configuration.
 
-For testing purposes you can enable test mode here: ```[adManager initializeAppodealWithAPIKey:appodealAPIKey testingEnabled:NO];```. Appodeal will fill all the placements with their own ads in test mode. Don't forget to turn off test mode before you submit the App Store submission.
+If you don't want to show ads to your users, set **NO** for **kShowAppodealAds** and leave **kAppodealApiKey** blank.
 
-#### How to add ad networks
-To add an ad network to your project you need to install Appodeal adapter: [https://github.com/appodeal/appodeal-ios-sdk-mobile-adapters](https://github.com/appodeal/appodeal-ios-sdk-mobile-adapters). Our template project's adapter location is ```Source > Libs > Appodeal > Adapters```. You may add required adapters in this folder (and don't forget to add them in Xcode).
-We have already included a few adapters (less than 20 MB each) in the template project:
+### ⭐️ Feedback
+Set up **kContactUsEmail** and **kAppStoreRateLink** parameters in **Config.h** file to activate "Contact us" and "Rate this app" links.
 
-* APDGoogleAdMobAdapter
-* APDAmazonAdsAdapter
-* APDPubnativeAdapter
-* APDUnityAdapter
-* APDVungleAdapter
-
-Warning: you may experience incorrect behavior with video ads using APDStartAppAdapter.
-
-### 🖇 Deeplinks
-You may use deeplinks for search and tickets with ```JRSDKSearchInfoUrlCoder``` object help.
-Additional information about deeplinks we support can be found in JRAppDelegate.m and ```- (void)performUrlOpening:(NSURL *)url``` method.
-
-
-## SDK setup
-The easiest way to install AviasalesSDK is [CocoaPods](https://cocoapods.org/pods/AviasalesSDK). CocoaPods will automatically download and install all necessary dependencies and 3rd party libs:
-
-```ruby
-pod 'AviasalesSDK', '~> 2.0.0'
-```
-
-If you already have an app and would love to integrate Aviasales template project please visit [the doc](TemplateIntegration.md).
+## 🏭 Use of Fabric/Crashlytics
+**Fabric/Crashlytics** SDK is included in the Template project. It monitors crashes and helps distribute builds to testers. To activate these functions you need to register and get **API Key** и **Build Secret** at https://fabric.io. Further steps:
+1) Fill in corresponding values in **fabric.sh** in the root folder
+2) Fill in **Fabric > APIKey** in **AviasalesSDKTemplate-Info.plist**

@@ -1,0 +1,242 @@
+"LANGUAGE" = "vi";
+
+"SHORT_TIME_FORMAT" = "%@giờ %@phút";
+"LONG_TIME_FORMAT" = "%@giờ %@ phút";
+
+"JR_ERROR_TITLE" = "LỖI";
+
+"JR_BACK_TITLE" = "Quay lại";
+
+"JR_TRY_AGAIN_TITLE" = "Thử lại";
+
+"JR_CANCEL_TITLE" = "Hủy";
+
+"CURRENCY" = "Tiền tệ";
+
+"JR_ANY_AIRPORT" = "Bất kì sân bay nào";
+
+"JR_OK_BUTTON" = "OK";
+
+"JR_DONE_BUTTON" = "XONG";
+
+"JR_NEW_SEARCH_TITLE" = "Tìm kiếm mới";
+
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Ngày khởi hành";
+"JR_DATE_PICKER_RETURN_DATE_TITLE" = "Ngày về";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Ngày bay";
+"JR_DATE_PICKER_TODAY_DATE_TITLE" = "Hôm nay";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Tìm kiếm vé";
+"JR_SEARCHINFO_BUSINESS" = "Thương\ngia";
+"JR_SEARCHINFO_ECONOMY" = "Phổ\nthông";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Hạng phổ thông đặc biệt";
+"JR_SEARCHINFO_FIRST" = "Hạng Nhất";
+"JR_SEARCHINFO_PASSENGERS##{one}" = "%d hành khách";
+"JR_SEARCHINFO_PASSENGERS##{few}" = "%d hành khách";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "%d hành khách";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "%d hành khách";
+"JR_SEARCH_FORM_PASSENGERS" = "Hành khách";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Hạng";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Thành phố đến";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Thành phố khởi hành";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Ngày";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Tới";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Từ";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Nhiều thành phố";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Khởi hành";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Trở về";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "khứ hồi";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Cơ bản";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Nước ngoài";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Trở về";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Một chiều";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Khứ hồi";
+"JR_SEARCH_FORM_TITLE" = "Chuyến bay";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "TÌM KIẾM VÉ MÁY BAY";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Số lượng trẻ em đi không ghế không thể vượt số lượng người lớn đi cùng.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Vui lòng nhập tên sân bay khởi hành";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Vui lòng nhập tên sân bay đến";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR" = "Sân bay đến và khởi hành phải khác nhau.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE" = "Vui lòng nhập ngày khởi hành";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "Chọn";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "THÊM";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "XÓA";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Hành khách và Hạng";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Người lớn";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "Trên 16 tuổi";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Trẻ em";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15 tuổi";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Trẻ sơ sinh";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "0-2 tuổi";
+
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Giảm số lượng hành khách %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Tăng số lượng hành khách %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC" = "%@ hành khách %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12" = "12+ tuổi";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS" = "DƯỚI 12 TUỔI";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS" = "DƯỚI 2 TUỔI";
+
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{one}" = "người lớn";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{few}" = "người lớn";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "người lớn";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "người lớn";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "trẻ em";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "trẻ em";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "trẻ em";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "trẻ em";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "trẻ sơ sinh";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "trẻ sơ sinh";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "trẻ sơ sinh";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "trẻ sơ sinh";
+
+"JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "Điểm đến";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "Sân bay gần nhất";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "Dịch vụ định vị hiện không có sẵn";
+
+"JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Điểm đi";
+"JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "Không có sân bay nào ở gần bạn";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Nhập thành phố hoặc sân bay";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Tìm kiếm";
+"JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Sở thích";
+"JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Đường bay ưa thích";
+"JR_AIRPORT_PICKER_BACK_BUTTON" = "Quay lại";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Các tra cứu trước:";
+"JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Không tìm thấy kết quả";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Đang tìm...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Đang tìm kiếm sân bay gần nhất...";
+
+"JR_FILTER_BUTTON" = "Lọc";
+
+"JR_FILTER_RESET_ALL" = "Xóa tất cả";
+"JR_FILTER_RESET" = "Xóa";
+"JR_FILTER_TICKETS_NOT_FOUND" = "Không tìm thấy kết quả";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Không tìm thấy vé";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Vui lòng thay đổi cài đặt bộ lọc của bạn.";
+
+"JR_FILTER_STOPOVER_OVERNIGHT" = "Dừng qua đêm";
+"JR_FILTER_PRICE_FILTER" = "Giá vé";
+"JR_FILTER_TOTAL_DURATION" = "Thời gian hành trình";
+"JR_FILTER_DELAY_DURATION" = "Khoảng thời gian dừng";
+"JR_FILTER_TOTAL_TIME_FROM" = "từ";
+"JR_FILTER_TOTAL_DURATION_FROM" = "từ";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "tới";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "lên tới";
+
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d chuyến bay bắt đầu từ %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d chuyến bay bắt đầu từ %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d chuyến bay bắt đầu từ %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d chuyến bay bắt đầu từ %@";
+
+"JR_FILTER_RETURN_DEPARTURE_TIME" = "Thời gian khởi hành về";
+"JR_FILTER_DEPARTURE_TIME" = "Thời gian đi nước ngoài";
+"JR_FILTER_ARRIVAL_TIME" = "Thời gian tới đầu nước ngoài";
+"JR_FILTER_RETURN_ARRIVAL_TIME" = "Thời gian về tới";
+
+"JR_FILTER_AIRPORTS_ORIGIN" = "Từ";
+"JR_FILTER_AIRPORTS_STOPOVER" = "Điểm dừng chân";
+"JR_FILTER_AIRPORTS_DESTINATION" = "Tới";
+
+"JR_FILTER_DAY_TIME_MORNING" = "buổi sáng";
+"JR_FILTER_DAY_TIME_DAY" = "buổi chiều";
+"JR_FILTER_DAY_TIME_EVENING" = "buổi tối";
+
+"JR_FILTER_GATES" = "Đại lý";
+"JR_FILTER_GATES_ALL" = "Tất cả đại lý";
+
+"JR_FILTER_PAYMENT_METHODS" = "Các phương thức thanh toán";
+"JR_FILTER_PAYMENT_METHODS_ALL" = "Tất cả phương thức thanh toán";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Dịch vụ chuyển phát nhanh";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Tiền mặt";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Thẻ tín dụng";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Thiết bị thanh toán";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Chuyển khoản ngân hàng";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Liên hệ ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Vay tiền";
+
+"JR_FILTER_AIRLINES" = "Hãng hàng không";
+"JR_FILTER_AIRLINES_ALL" = "Tất cả các hãng hàng không";
+
+"JR_FILTER_ALLIANCES" = "Liên minh";
+"JR_FILTER_OTHER_ALLIANCES" = "Hãng không có liên minh";
+"JR_FILTER_ALLIANCES_ALL" = "Tất cả các liên minh";
+
+"JR_FILTER_AIRPORTS" = "Sân bay";
+"JR_FILTER_AIRPORTS_ALL" = "Tất cả các sân bay";
+
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Thẳng";
+"JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d điểm dừng";
+"JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d điểm dừng";
+"JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d điểm dừng";
+"JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d điểm dừng";
+
+"JR_BROWSER_TITLE" = "Mua";
+
+"JR_BROWSER_BACK_BTN_TITLE" = "Quay lại";
+"JR_BROWSER_FORWARD_BTN_TITLE" = "Chuyển tiếp";
+"JR_BROWSER_ERROR_ALERT_TITLE" = "Lỗi";
+
+"BROWSER_CHECK_CONNECTION" = "Vui lòng kiểm tra kết nối mạng của bạn.";
+"BROWSER_OVERLAY_DEFAULT_TEXT" = "Đang tải...";
+"JR_CLOSE_BUTTON_TITLE" = "Đóng";
+
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Xin lỗi, chúng tôi không thể tìm thấy chuyến bay ở những sân bay đó cho hành trình %@. Tuy nhiên, chúng tôi có thể hiển thị cho bạn những chuyến bay ở những thành phố này.";
+
+"JR_SEARCH_RESULTS_TICKET_IN_THE" = "trên";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Bạn cần khách sạn?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Trong khi bạn đang tìm kiếm vé máy bay, chúng tôi sẽ giúp bạn chọn lựa khách sạn phù hợp với mình.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Tìm khách sạn";
+
+"JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Mua";
+"JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Điều khoản và Điều kiện";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{few}" = "thanh toán";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{one}" = "thanh toán";
+"JR_TICKET_CREDIT_ALERT_CANCEL_BUTTON" = "Hủy";
+"JR_TICKET_CREDIT_ALERT_DAYS##{one}" = "ngày";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{other}" = "thanh toán";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{many}" = "thanh toán";
+"JR_TICKET_CREDIT_ALERT_DAYS##{few}" = "ngày";
+"JR_TICKET_CREDIT_ALERT_MONTH" = "tháng";
+"JR_TICKET_CREDIT_ALERT_DAYS##{other}" = "ngày";
+"JR_TICKET_CREDIT_ALERT_TILL" = "tới tận";
+"JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "ngày";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "Thanh toán lố";
+"JR_TICKET_CREDIT_ALERT_DURATION" = "Điều khoản vay";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "giá";
+"JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "Thời gian đẹp";
+"JR_TICKET_CREDIT_MONTH_2" = "tháng hai";
+"JR_TICKET_CREDIT_MONTH_1" = "tháng một";
+"JR_TICKET_CREDIT_MONTH_3" = "tháng ba";
+"JR_TICKET_CREDIT_MONTH_6" = "tháng sáu";
+"JR_TICKET_CREDIT_MONTH_4" = "tháng tư";
+"JR_TICKET_CREDIT_MONTH_7" = "tháng bảy";
+"JR_TICKET_CREDIT_MONTH_5" = "tháng năm";
+"JR_TICKET_CREDIT_MONTH_8" = "tháng tám";
+"JR_TICKET_CREDIT_MONTH_9" = "tháng chín";
+"JR_TICKET_CREDIT_MONTH_10" = "tháng mười";
+"JR_TICKET_CREDIT_MONTH_11" = "tháng mười một";
+"JR_TICKET_CREDIT_MONTH_12" = "tháng mười hai";
+
+"JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Mua tại";
+"JR_TICKET_BUY_BUTTON" = "Mua vé";
+"JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Vay tiền";
+"JR_TICKET_FLIGHT" = "Chuyến bay";
+"JR_TICKET_TRANSFER" = "Điểm dừng";
+"JR_TICKET_OTHER_BUTTON" = "Thêm ưu đãi";
+"JR_TICKET_DURATION" = "Thời gian bay";
+
+"JR_TICKET_EXPIRED" = "Kết quả tìm kiếm đã hết hạn";
+
+"JR_WAITING_TITLE" = "Đang tìm...";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Không tìm thấy kết quả. Thử điều chỉnh thông số tìm kiếm.";
+"JR_WAITING_ERROR_CONNECTION_ERROR" = "Lỗi kết nối";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Xin lỗi, dịch vụ Jetradar tạm thời không khả dụng";

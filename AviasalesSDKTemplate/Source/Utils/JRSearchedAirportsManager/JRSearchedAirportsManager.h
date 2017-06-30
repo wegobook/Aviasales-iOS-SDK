@@ -9,8 +9,8 @@
 
 @interface JRSearchedAirportsManager : NSObject
 
-+ (void)markSearchedAirport:(id<JRSDKAirport>)searchedAirport;
++ (void)markSearchedAirport:(JRSDKAirport *)searchedAirport;
 
-+ (NSArray<id<JRSDKAirport>> *)searchedAirports;
++ (NSArray<JRSDKAirport *> *)searchedAirports;
 
 @end

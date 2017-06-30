@@ -1,0 +1,18 @@
+excluded:
+  - Pods
+  - AviasalesSDKTemplate/Source/HotelsSource/Sort/Library
+force_cast: warning
+line_length:
+  warning: 200
+  error: 300
+function_body_length:
+  warning: 50
+  error: 100
+colon:
+  apply_to_dictionaries: false
+disabled_rules:
+  - force_cast
+  - file_length
+  - type_body_length
+  - unused_closure_parameter
+  - shorthand_operator

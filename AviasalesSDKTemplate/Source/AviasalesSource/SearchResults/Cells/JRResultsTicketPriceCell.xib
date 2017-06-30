@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="JRResultsTicketPriceCell" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="JRResultsTicketPriceCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="62"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WRX-yi-gfg">
+                        <rect key="frame" x="22" y="10" width="276" height="25"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-na-Eeq">
+                                <rect key="frame" x="0.0" y="0.0" width="183" height="25"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="navigationBarBackgroundColor"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="2Ua-jJ-yei">
+                                <rect key="frame" x="191" y="0.0" width="85" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="85" id="Hwx-d7-5NO"/>
+                                    <constraint firstAttribute="height" constant="25" id="Vt2-wZ-BFe"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="c2d-na-Eeq" firstAttribute="top" secondItem="WRX-yi-gfg" secondAttribute="top" id="98n-wO-egI"/>
+                            <constraint firstItem="2Ua-jJ-yei" firstAttribute="centerY" secondItem="WRX-yi-gfg" secondAttribute="centerY" id="CEA-GB-0gB"/>
+                            <constraint firstItem="2Ua-jJ-yei" firstAttribute="leading" secondItem="c2d-na-Eeq" secondAttribute="trailing" constant="8" id="HuK-SM-8XM"/>
+                            <constraint firstAttribute="height" constant="25" id="K8Z-8w-E1A"/>
+                            <constraint firstItem="c2d-na-Eeq" firstAttribute="leading" secondItem="WRX-yi-gfg" secondAttribute="leading" id="NQH-at-9Oi"/>
+                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="560" id="QXl-FJ-DGb"/>
+                            <constraint firstAttribute="trailing" secondItem="2Ua-jJ-yei" secondAttribute="trailing" id="f04-bT-miD"/>
+                            <constraint firstAttribute="bottom" secondItem="c2d-na-Eeq" secondAttribute="bottom" id="lEb-I0-2bK"/>
+                            <constraint firstItem="c2d-na-Eeq" firstAttribute="leading" secondItem="WRX-yi-gfg" secondAttribute="leading" id="np9-XB-6KD"/>
+                            <constraint firstAttribute="bottom" secondItem="c2d-na-Eeq" secondAttribute="bottom" id="pZC-oT-41h"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="WRX-yi-gfg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9Fj-jE-xf2"/>
+                    <constraint firstAttribute="trailing" secondItem="WRX-yi-gfg" secondAttribute="trailing" priority="750" constant="16" id="B3C-9e-cHo"/>
+                    <constraint firstItem="WRX-yi-gfg" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="Dmd-nQ-xu5"/>
+                    <constraint firstItem="WRX-yi-gfg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" priority="750" constant="22" id="Nbk-jC-ZTI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logoView" destination="2Ua-jJ-yei" id="qbr-Fx-LjR"/>
+                <outlet property="priceLabel" destination="c2d-na-Eeq" id="w7g-Kw-Nwl"/>
+            </connections>
+            <point key="canvasLocation" x="370" y="364"/>
+        </tableViewCell>
+    </objects>
+</document>

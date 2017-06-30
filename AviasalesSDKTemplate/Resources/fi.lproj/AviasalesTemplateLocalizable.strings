@@ -1,0 +1,242 @@
+"LANGUAGE" = "fi";
+
+"SHORT_TIME_FORMAT" = "%@ h %@ m";
+"LONG_TIME_FORMAT" = "%@ h %@ min";
+
+"JR_ERROR_TITLE" = "VIRHE";
+
+"JR_BACK_TITLE" = "Takaisin";
+
+"JR_TRY_AGAIN_TITLE" = "Yritä uudelleen";
+
+"JR_CANCEL_TITLE" = "Peruuta";
+
+"CURRENCY" = "Valuutta";
+
+"JR_ANY_AIRPORT" = "Mikä tahansa lentokenttä";
+
+"JR_OK_BUTTON" = "OK";
+
+"JR_DONE_BUTTON" = "VALMIS";
+
+"JR_NEW_SEARCH_TITLE" = "Uusi haku";
+
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Menopäivä";
+"JR_DATE_PICKER_RETURN_DATE_TITLE" = "Paluu";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Lentopäivät";
+"JR_DATE_PICKER_TODAY_DATE_TITLE" = "Tänään";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Etsi lippuja";
+"JR_SEARCHINFO_BUSINESS" = "Business";
+"JR_SEARCHINFO_ECONOMY" = "Economy";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
+"JR_SEARCHINFO_FIRST" = "First";
+"JR_SEARCHINFO_PASSENGERS##{one}" = "%d matkustaja";
+"JR_SEARCHINFO_PASSENGERS##{few}" = "%d matkustajaa";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "%d matkustajaa";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "%d matkustajaa";
+"JR_SEARCH_FORM_PASSENGERS" = "Matkustajat";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Luokka";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Saapumiskaupunki";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Lähtökaupunki";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Päivämäärä";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Kohde";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Lähtöpaikka";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Useampi kohde";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Meno";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Palaavat";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "paluu";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Perus";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Lähtö";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Palaavat";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Yhdensuuntainen";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Meno-paluu";
+"JR_SEARCH_FORM_TITLE" = "Lennot";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "ETSI LIPPUJA";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Ilman istuinpaikkaa matkustavien sylilasten lukumäärä ei voi ylittää mukana matkustavien aikuisten lukumäärää.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Määritä lähtökenttä";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Määritä kohde";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR" = "Lähtökenttä ei voi olla sama kuin matkan kohde.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE" = "Määritä lähtöpäivä";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "Valitse";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "LISÄÄ";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "POISTA";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Matkustajat ja luokka";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Aikuisia";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "Yli 16v";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Lapsia";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15v";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Sylilapsia";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "0-2v";
+
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Vähennä matkustajien lukumäärää %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Lisää matkustajien lukumäärää %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC" = "%@ matkustajaa %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12" = "12+";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS" = "ALLE 12";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS" = "ALLE 2";
+
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{one}" = "aikuinen";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{few}" = "aikuiset";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "aikuiset";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "aikuiset";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "lapsi";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "lapset";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "lapset";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "lapset";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "sylilapsi";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "sylilapset";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "sylilapset";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "sylilapset";
+
+"JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "Matkakohde";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "Lähimmät lentokentät";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "Paikannuspalvelu on väliaikaisesti pois käytöstä";
+
+"JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Lähtöpaikka";
+"JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "Lähelläsi ei ole lentokenttiä";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Valitse kaupunki tai lentokenttä";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Haku";
+"JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Kiinnostuksen kohteet";
+"JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Reitit kiinnostuksen kohteiden perusteella";
+"JR_AIRPORT_PICKER_BACK_BUTTON" = "Takaisin";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Aikaisemmat haut:";
+"JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Ei tuloksia";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Etsitään...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Etsitään lähimpiä lentokenttiä...";
+
+"JR_FILTER_BUTTON" = "Suodattimet";
+
+"JR_FILTER_RESET_ALL" = "Tyhjennä kaikki";
+"JR_FILTER_RESET" = "Tyhjennä kaikki";
+"JR_FILTER_TICKETS_NOT_FOUND" = "Ei tuloksia";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Lippuja ei löydettävissä";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Vaihda suodatinasetuksiasi.";
+
+"JR_FILTER_STOPOVER_OVERNIGHT" = "Koneen vaihto yön yli";
+"JR_FILTER_PRICE_FILTER" = "Hinta";
+"JR_FILTER_TOTAL_DURATION" = "Matka-aika";
+"JR_FILTER_DELAY_DURATION" = "Välilaskun kesto";
+"JR_FILTER_TOTAL_TIME_FROM" = "väliltä";
+"JR_FILTER_TOTAL_DURATION_FROM" = "väliltä";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "–";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "enintään";
+
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d lento, alk. %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d lentoa, alk. %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d lentoa, alk. %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d lentoa, alk. %@";
+
+"JR_FILTER_RETURN_DEPARTURE_TIME" = "Paluulennon lähtöaika";
+"JR_FILTER_DEPARTURE_TIME" = "Menolennon lähtöaika";
+"JR_FILTER_ARRIVAL_TIME" = "Menolennon saapumisaika";
+"JR_FILTER_RETURN_ARRIVAL_TIME" = "Paluulennon saapumisaika";
+
+"JR_FILTER_AIRPORTS_ORIGIN" = "Lähtöpaikka";
+"JR_FILTER_AIRPORTS_STOPOVER" = "Välilaskut";
+"JR_FILTER_AIRPORTS_DESTINATION" = "Kohde";
+
+"JR_FILTER_DAY_TIME_MORNING" = "aamu";
+"JR_FILTER_DAY_TIME_DAY" = "päivä";
+"JR_FILTER_DAY_TIME_EVENING" = "ilta";
+
+"JR_FILTER_GATES" = "Matkatoimistot";
+"JR_FILTER_GATES_ALL" = "Kaikki matkatoimistot";
+
+"JR_FILTER_PAYMENT_METHODS" = "Maksutavat";
+"JR_FILTER_PAYMENT_METHODS_ALL" = "Kaikki maksutavat";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Kuriiripalvelu";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Käteinen";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Luottokortti";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Maksuterminaali";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Tilisiirto";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Yhteystiedot ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Ota lainaa";
+
+"JR_FILTER_AIRLINES" = "Lentoyhtiöt";
+"JR_FILTER_AIRLINES_ALL" = "Kaikki lentoyhtiöt";
+
+"JR_FILTER_ALLIANCES" = "Allianssit";
+"JR_FILTER_OTHER_ALLIANCES" = "Lentoyhtiöt ilman alliansseja";
+"JR_FILTER_ALLIANCES_ALL" = "Kaikki allianssit";
+
+"JR_FILTER_AIRPORTS" = "Lentokentät";
+"JR_FILTER_AIRPORTS_ALL" = "Kaikki lentokentät";
+
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Suorat";
+"JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d pysähdys";
+"JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d pysähdystä";
+"JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d pysähdystä";
+"JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d pysähdystä";
+
+"JR_BROWSER_TITLE" = "Osta";
+
+"JR_BROWSER_BACK_BTN_TITLE" = "Takaisin";
+"JR_BROWSER_FORWARD_BTN_TITLE" = "Jatka";
+"JR_BROWSER_ERROR_ALERT_TITLE" = "Virhe";
+
+"BROWSER_CHECK_CONNECTION" = "Tarkista internetyhteytesi.";
+"BROWSER_OVERLAY_DEFAULT_TEXT" = "Ladataan...";
+"JR_CLOSE_BUTTON_TITLE" = "Sulje";
+
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Emme löytäneet lentoja valittujen lentokenttien välillä reitille %@. Voimme kuitenkin näyttää muut lennot näiden kaupunkien välillä.";
+
+"JR_SEARCH_RESULTS_TICKET_IN_THE" = " ";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Tarvitsetko hotellin?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Sillä aikaa kun etsit lentolippuja, autamme sinua valitsemaan sinulle oikean hotellin.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Löydä hotelleja";
+
+"JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Osta";
+"JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Käyttöehdot";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{few}" = "maksut";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{one}" = "maksu";
+"JR_TICKET_CREDIT_ALERT_CANCEL_BUTTON" = "Peruuta";
+"JR_TICKET_CREDIT_ALERT_DAYS##{one}" = "päivä";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{other}" = "maksut";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{many}" = "maksut";
+"JR_TICKET_CREDIT_ALERT_DAYS##{few}" = "päivää";
+"JR_TICKET_CREDIT_ALERT_MONTH" = "kuukausi";
+"JR_TICKET_CREDIT_ALERT_DAYS##{other}" = "päivää";
+"JR_TICKET_CREDIT_ALERT_TILL" = "kunnes";
+"JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "päivää";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "Ylimaksu";
+"JR_TICKET_CREDIT_ALERT_DURATION" = "Lainan ehto";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "hinnasta";
+"JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "Armoaika";
+"JR_TICKET_CREDIT_MONTH_2" = "helmikuu";
+"JR_TICKET_CREDIT_MONTH_1" = "tammikuu";
+"JR_TICKET_CREDIT_MONTH_3" = "maaliskuu";
+"JR_TICKET_CREDIT_MONTH_6" = "kesäkuu";
+"JR_TICKET_CREDIT_MONTH_4" = "huhtikuu";
+"JR_TICKET_CREDIT_MONTH_7" = "heinäkuu";
+"JR_TICKET_CREDIT_MONTH_5" = "toukokuu";
+"JR_TICKET_CREDIT_MONTH_8" = "elokuu";
+"JR_TICKET_CREDIT_MONTH_9" = "syyskuu";
+"JR_TICKET_CREDIT_MONTH_10" = "lokakuu";
+"JR_TICKET_CREDIT_MONTH_11" = "marraskuu";
+"JR_TICKET_CREDIT_MONTH_12" = "joulukuu";
+
+"JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Osta";
+"JR_TICKET_BUY_BUTTON" = "Osta lippu";
+"JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Ota lainaa";
+"JR_TICKET_FLIGHT" = "Lento";
+"JR_TICKET_TRANSFER" = "Välilasku";
+"JR_TICKET_OTHER_BUTTON" = "Lisää tarjouksia";
+"JR_TICKET_DURATION" = "Lennon kesto";
+
+"JR_TICKET_EXPIRED" = "Hakutulokset vanhentuneet";
+
+"JR_WAITING_TITLE" = "Etsitään...";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Ei tuloksia. Yritä muuttaa hakuehtoja.";
+"JR_WAITING_ERROR_CONNECTION_ERROR" = "Yhteysvirhe";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Pahoittelut. Jetradar-palvelu ei ole väliaikaisesti käytettävissä";

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLIpadResultsVC" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonsView" destination="MTg-N2-pw1" id="ery-Sj-jae"/>
+                <outlet property="collectionView" destination="ka3-5S-UEl" id="1fW-r0-zja"/>
+                <outlet property="contentContainerWidth" destination="U5M-Nw-o0g" id="1eM-vN-Zfk"/>
+                <outlet property="contentToFiltersHorizontalSpacing" destination="tpp-Bm-G1k" id="5XI-dD-ngR"/>
+                <outlet property="filtersButton" destination="2vL-Au-DPR" id="Gvg-Lp-uLR"/>
+                <outlet property="filtersContainer" destination="eVx-qT-Upd" id="olj-3I-cDK"/>
+                <outlet property="filtersContainerToSuperviewTrailing" destination="FL1-bU-Xe9" id="cAo-cm-wpU"/>
+                <outlet property="filtersContainerWidth" destination="I1e-yM-Sgd" id="lfy-8v-JTQ"/>
+                <outlet property="portraitFiltersShadeView" destination="FtX-QN-G92" id="BU2-GK-l9c"/>
+                <outlet property="sortButton" destination="jFq-dJ-NTm" id="9Ba-CW-RL3"/>
+                <outlet property="sortLabel" destination="0Yf-xz-Cd4" id="1UI-Ip-uko"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Brb-Ak-hcZ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view multipleTouchEnabled="YES" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Si5-6w-UPr" userLabel="ResultsView">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="600"/>
+                    <subviews>
+                        <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="ka3-5S-UEl">
+                            <rect key="frame" x="0.0" y="44" width="448" height="556"/>
+                            <color key="backgroundColor" red="0.91204786299999996" green="0.92166769500000001" blue="0.92147368190000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="cg2-ex-Kmd">
+                                <size key="itemSize" width="50" height="50"/>
+                                <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            </collectionViewFlowLayout>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="48q-3B-5P3"/>
+                                <outlet property="delegate" destination="-1" id="9iv-tD-Xv4"/>
+                            </connections>
+                        </collectionView>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MTg-N2-pw1" userLabel="SortAndFilter">
+                            <rect key="frame" x="0.0" y="0.0" width="448" height="44"/>
+                            <subviews>
+                                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QBw-eV-6Jm" userLabel="SortAndFilterContainer">
+                                    <rect key="frame" x="0.0" y="0.0" width="307" height="44"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сортировка по:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Yf-xz-Cd4">
+                                            <rect key="frame" x="15" y="14" width="105" height="17"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="749" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jFq-dJ-NTm">
+                                            <rect key="frame" x="120" y="0.0" width="187" height="44"/>
+                                            <accessibility key="accessibilityConfiguration" identifier="HL_SORT_BUTTON_TITLE_LABEL"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <inset key="contentEdgeInsets" minX="5" minY="8" maxX="5" maxY="8"/>
+                                            <state key="normal" title="ПОПУЛЯРНОСТИ ОТЕЛЕЙ">
+                                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="showSort" destination="-1" eventType="touchUpInside" id="mrb-hh-wr8"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstItem="jFq-dJ-NTm" firstAttribute="top" secondItem="QBw-eV-6Jm" secondAttribute="top" id="9YN-b8-fRP"/>
+                                        <constraint firstItem="0Yf-xz-Cd4" firstAttribute="leading" secondItem="QBw-eV-6Jm" secondAttribute="leading" constant="15" id="GJo-au-jgE"/>
+                                        <constraint firstAttribute="height" constant="44" id="Lup-Nn-pbo"/>
+                                        <constraint firstItem="0Yf-xz-Cd4" firstAttribute="centerY" secondItem="QBw-eV-6Jm" secondAttribute="centerY" id="ZYR-Kk-WMR"/>
+                                        <constraint firstAttribute="bottom" secondItem="jFq-dJ-NTm" secondAttribute="bottom" id="aTc-a6-0J7"/>
+                                        <constraint firstAttribute="trailing" secondItem="jFq-dJ-NTm" secondAttribute="trailing" id="cOj-B0-tMi"/>
+                                        <constraint firstItem="jFq-dJ-NTm" firstAttribute="leading" secondItem="0Yf-xz-Cd4" secondAttribute="trailing" id="eTm-nx-AKO"/>
+                                    </constraints>
+                                </view>
+                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2vL-Au-DPR">
+                                    <rect key="frame" x="261" y="5" width="172" height="34"/>
+                                    <color key="backgroundColor" red="1" green="0.70588235294117641" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <accessibility key="accessibilityConfiguration" identifier="HL_FILTER_BUTTON_TITLE_LABEL"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="34" id="ECf-ga-A6e"/>
+                                        <constraint firstAttribute="width" constant="172" id="Mqi-2O-B4a"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                    <state key="normal" title="Фильтры"/>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                            <integer key="value" value="6"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
+                                    <connections>
+                                        <action selector="showFilters" destination="-1" eventType="touchUpInside" id="1HJ-7y-gM4"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="7Jj-zT-Hxg"/>
+                                <constraint firstAttribute="trailing" secondItem="2vL-Au-DPR" secondAttribute="trailing" constant="15" id="Rq9-6Y-9SX"/>
+                                <constraint firstItem="QBw-eV-6Jm" firstAttribute="centerY" secondItem="MTg-N2-pw1" secondAttribute="centerY" id="U11-67-bFy"/>
+                                <constraint firstItem="QBw-eV-6Jm" firstAttribute="leading" secondItem="MTg-N2-pw1" secondAttribute="leading" id="o8b-Qx-kT7"/>
+                                <constraint firstItem="2vL-Au-DPR" firstAttribute="centerY" secondItem="MTg-N2-pw1" secondAttribute="centerY" id="rxu-nX-zBX"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="ka3-5S-UEl" firstAttribute="top" secondItem="MTg-N2-pw1" secondAttribute="bottom" id="0TB-OC-uvl"/>
+                        <constraint firstItem="ka3-5S-UEl" firstAttribute="leading" secondItem="Si5-6w-UPr" secondAttribute="leading" id="1sT-Zb-f4v"/>
+                        <constraint firstAttribute="trailing" secondItem="MTg-N2-pw1" secondAttribute="trailing" id="9W5-GO-WxW"/>
+                        <constraint firstAttribute="trailing" secondItem="ka3-5S-UEl" secondAttribute="trailing" id="CnN-Vf-KF6"/>
+                        <constraint firstAttribute="bottom" secondItem="ka3-5S-UEl" secondAttribute="bottom" id="PoR-gd-J9T"/>
+                        <constraint firstAttribute="width" constant="448" id="U5M-Nw-o0g"/>
+                        <constraint firstItem="MTg-N2-pw1" firstAttribute="top" secondItem="Si5-6w-UPr" secondAttribute="top" id="e03-gN-JzW"/>
+                        <constraint firstItem="MTg-N2-pw1" firstAttribute="leading" secondItem="Si5-6w-UPr" secondAttribute="leading" id="hgh-Aw-Bcg"/>
+                    </constraints>
+                </view>
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FtX-QN-G92">
+                    <rect key="frame" x="0.0" y="0.0" width="448" height="600"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
+                    <accessibility key="accessibilityConfiguration" identifier="FILTERS_FULLSCREEN_OVERLAY">
+                        <bool key="isElement" value="YES"/>
+                    </accessibility>
+                </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eVx-qT-Upd">
+                    <rect key="frame" x="448" y="0.0" width="320" height="600"/>
+                    <color key="backgroundColor" red="0.94344413280487061" green="0.58685678243637085" blue="0.11022531241178513" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="I1e-yM-Sgd"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="backgroundColor">
+                            <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Si5-6w-UPr" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="5d3-s3-btH"/>
+                <constraint firstItem="FtX-QN-G92" firstAttribute="leading" secondItem="Si5-6w-UPr" secondAttribute="leading" id="9vk-Nf-DaP"/>
+                <constraint firstItem="FtX-QN-G92" firstAttribute="bottom" secondItem="Si5-6w-UPr" secondAttribute="bottom" id="BxZ-3n-kci"/>
+                <constraint firstAttribute="trailing" secondItem="eVx-qT-Upd" secondAttribute="trailing" id="FL1-bU-Xe9"/>
+                <constraint firstAttribute="bottom" secondItem="eVx-qT-Upd" secondAttribute="bottom" id="IBl-4K-RGs"/>
+                <constraint firstAttribute="bottom" secondItem="Si5-6w-UPr" secondAttribute="bottom" id="IV3-MJ-P5x"/>
+                <constraint firstItem="Si5-6w-UPr" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Ips-RK-XXH"/>
+                <constraint firstItem="eVx-qT-Upd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="K5i-yn-zVp"/>
+                <constraint firstItem="FtX-QN-G92" firstAttribute="top" secondItem="Si5-6w-UPr" secondAttribute="top" id="Vs1-z9-3g5"/>
+                <constraint firstItem="FtX-QN-G92" firstAttribute="trailing" secondItem="Si5-6w-UPr" secondAttribute="trailing" id="mv0-E7-KuF"/>
+                <constraint firstItem="eVx-qT-Upd" firstAttribute="leading" secondItem="Si5-6w-UPr" secondAttribute="trailing" priority="999" id="tpp-Bm-G1k"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="677" y="457"/>
+        </view>
+    </objects>
+</document>

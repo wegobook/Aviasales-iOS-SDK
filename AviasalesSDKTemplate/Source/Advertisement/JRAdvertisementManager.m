@@ -12,6 +12,12 @@
 #import "JRNewsFeedAdLoader.h"
 #import "JRAviasalesAdLoader.h"
 
+@interface JRAdvertisementManager()
+
+@property (nonatomic, strong, readwrite) UIView *cachedAviasalesAdView;
+
+@end
+
 @implementation JRAdvertisementManager {
     NSMutableSet *_adLoaders;
 }
@@ -28,7 +34,7 @@
 - (instancetype)init {
     if (self = [super init]) {
         _showsAdDuringSearch = YES;
-        _showsAdOnSearchResults = YES;
+        _showsAdOnSearchResults = NO;
         _adLoaders = [[NSMutableSet alloc] init];
     }
     return self;
@@ -42,12 +48,8 @@
                              types:AppodealAdTypeInterstitial | AppodealAdTypeNativeAd];
 }
 
-- (void)presentFullScreenAdFromViewControllerIfNeeded:(UIViewController *)viewController {
-    [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:viewController];
-}
-
 - (void)presentVideoAdInViewIfNeeded:(UIView *)view
-                                 rootViewController:(UIViewController *)viewController{
+                  rootViewController:(UIViewController *)viewController{
     if (!self.showsAdDuringSearch) {
         return;
     }
@@ -63,54 +65,32 @@
         [loaders removeObject:videoLoader];
 
         if (adView != nil) {
-            adView.frame = view.bounds;
             [view addSubview:adView];
+            adView.translatesAutoresizingMaskIntoConstraints = NO;
+            [view addConstraints:JRConstraintsMakeScaleToFill(adView, view)];
             [ad attachToView:view viewController:viewController];
         } else {
             UIViewController *const viewController = weakViewController;
-            if (viewController) {
+            if (viewController && [Appodeal isReadyForShowWithStyle:AppodealShowStyleInterstitial]) {
                 [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:viewController];
             }
         }
     }];
 }
 
-- (void)viewController:(UIViewController *)viewController
-  loadNativeAdWithSize:(CGSize)size
-  ifNeededWithCallback:(void (^)(JRNewsFeedNativeAdView *))callback; {
-    if (callback == nil) {
-        return;
-    }
-
-    if (!self.showsAdOnSearchResults) {
-        callback(nil);
-    }
-
-    JRNewsFeedAdLoader *const loader = [[JRNewsFeedAdLoader alloc] init];
-    loader.rootViewController = viewController;
-
-    NSMutableSet *const loaders = _adLoaders;
+- (void)loadAndCacheAviasalesAdViewWithSearchInfo:(JRSDKSearchInfo *)searchInfo {
+    
+    self.cachedAviasalesAdView = nil;
+    
+    JRAviasalesAdLoader *loader = [[JRAviasalesAdLoader alloc] initWithSearchInfo:searchInfo];
+    
+    __weak NSMutableSet *loaders = _adLoaders;
     [loaders addObject:loader];
-
-    [loader loadAdWithSize:size callback:^(JRNewsFeedNativeAdView *adView) {
-        [loaders removeObject:loader];
-        callback(adView);
-    }];
-}
-
-- (void)loadAviasalesAdWithSearchInfo:(id<JRSDKSearchInfo>)searchInfo
-                 ifNeededWithCallback:(void(^)(UIView *))callback {
-    if (callback == nil) {
-        return;
-    }
-    JRAviasalesAdLoader *const loader = [[JRAviasalesAdLoader alloc] initWithSearchInfo:searchInfo];
-
-    NSMutableSet *const loaders = _adLoaders;
-    [loaders addObject:loader];
-
+    
+    __weak typeof(self) weakself = self;
     [loader loadAdWithCallback:^(UIView *adView) {
         [loaders removeObject:loader];
-        callback(adView);
+        weakself.cachedAviasalesAdView = adView;
     }];
 }
 

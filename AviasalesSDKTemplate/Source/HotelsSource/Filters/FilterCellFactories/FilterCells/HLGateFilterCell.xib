@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="mhB-UY-Ng9" customClass="HLSelectionFilterCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="mhB-UY-Ng9" id="qhP-LQ-DAH">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="filterCheckboxOff" translatesAutoresizingMaskIntoConstraints="NO" id="B0u-dk-HCe">
+                        <rect key="frame" x="285" y="15" width="20" height="20"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="249" text="Бесплатный Wi-Fi azazazazazazazazazzazaazazza" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xg4-S7-gwD">
+                        <rect key="frame" x="15" y="16" width="220" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="127" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIo-rx-XWd">
+                        <rect key="frame" x="250" y="18" width="20" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.49803921569999998" green="0.50588235290000005" blue="0.50588235290000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="xg4-S7-gwD" secondAttribute="centerY" id="2VU-mu-Eon"/>
+                    <constraint firstItem="xg4-S7-gwD" firstAttribute="leading" secondItem="B0u-dk-HCe" secondAttribute="trailing" constant="19" id="349-QJ-jf3"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="B0u-dk-HCe" secondAttribute="trailing" constant="15" id="5Da-5q-B1p"/>
+                    <constraint firstItem="xg4-S7-gwD" firstAttribute="leading" secondItem="qhP-LQ-DAH" secondAttribute="leading" constant="15" id="9Jy-K4-SQU"/>
+                    <constraint firstItem="B0u-dk-HCe" firstAttribute="leading" secondItem="SIo-rx-XWd" secondAttribute="trailing" constant="15" id="9ZK-IP-leP"/>
+                    <constraint firstAttribute="centerY" secondItem="B0u-dk-HCe" secondAttribute="centerY" id="CYR-cU-FgV"/>
+                    <constraint firstItem="SIo-rx-XWd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xg4-S7-gwD" secondAttribute="trailing" constant="20" id="FwJ-if-LkE"/>
+                    <constraint firstItem="SIo-rx-XWd" firstAttribute="baseline" secondItem="xg4-S7-gwD" secondAttribute="baseline" id="Slh-q0-tbM"/>
+                    <constraint firstItem="B0u-dk-HCe" firstAttribute="leading" secondItem="qhP-LQ-DAH" secondAttribute="leading" constant="20" id="cRt-ly-3wg"/>
+                    <constraint firstAttribute="trailing" secondItem="B0u-dk-HCe" secondAttribute="trailing" constant="15" id="jSI-hU-uJS"/>
+                    <constraint firstItem="SIo-rx-XWd" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="xg4-S7-gwD" secondAttribute="trailing" constant="15" id="lKL-oN-b8L"/>
+                    <constraint firstAttribute="trailing" secondItem="SIo-rx-XWd" secondAttribute="trailing" constant="20" id="rbv-dp-X9L"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="349-QJ-jf3"/>
+                        <exclude reference="FwJ-if-LkE"/>
+                        <exclude reference="rbv-dp-X9L"/>
+                        <exclude reference="5Da-5q-B1p"/>
+                        <exclude reference="cRt-ly-3wg"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countLabel" destination="SIo-rx-XWd" id="9oP-wb-qYZ"/>
+                <outlet property="customAccessoryView" destination="B0u-dk-HCe" id="9Pa-s0-adu"/>
+                <outlet property="titleLabel" destination="xg4-S7-gwD" id="uBX-cH-Ikh"/>
+            </connections>
+            <point key="canvasLocation" x="188" y="300"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="filterCheckboxOff" width="20" height="20"/>
+    </resources>
+</document>

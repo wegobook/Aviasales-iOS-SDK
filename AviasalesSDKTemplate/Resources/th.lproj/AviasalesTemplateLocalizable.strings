@@ -1,13 +1,13 @@
 "LANGUAGE" = "th";
 
 "SHORT_TIME_FORMAT" = "%@ชม. %@น.";
-"LONG_TIME_FORMAT" = "%@ ชั่วโมง %@ นาที";
+"LONG_TIME_FORMAT" = "%@ ชม. %@ นาที";
 
 "JR_ERROR_TITLE" = "ผิดพลาด";
 
-"JR_BACK_TITLE" = "กลับ";
+"JR_BACK_TITLE" = "ย้อนกลับ";
 
-"JR_TRY_AGAIN_TITLE" = "กรุณาลองใหม่";
+"JR_TRY_AGAIN_TITLE" = "ลองอีกครั้ง";
 
 "JR_CANCEL_TITLE" = "ยกเลิก";
 
@@ -15,21 +15,28 @@
 
 "JR_ANY_AIRPORT" = "สนามบินใดก็ได้";
 
-"JR_OK_BUTTON" = "ตกลง";
+"JR_OK_BUTTON" = "OK";
+
+"JR_DONE_BUTTON" = "เสร็จสิ้น";
+
+"JR_NEW_SEARCH_TITLE" = "ค้นหาใหม่";
+
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "วันที่เดินทาง";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "วันที่กลับ";
-"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "วันที่เดินทาง";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "วันที่เที่ยวบิน";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "วันนี้";
 "JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "ค้นหาตั๋ว";
 "JR_SEARCHINFO_BUSINESS" = "ธุรกิจ";
 "JR_SEARCHINFO_ECONOMY" = "ประหยัด";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "ชั้นประหยัดพรีเมี่ยม";
 "JR_SEARCHINFO_FIRST" = "ชั้นหนึ่ง";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d คน";
+"JR_SEARCHINFO_PASSENGERS##{one}" = "ผู้โดยสาร %d คน";
 "JR_SEARCHINFO_PASSENGERS##{few}" = "ผู้โดยสาร %d คน";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "ผู้โดยสาร %d ราย";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "ผู้โดยสาร %d ราย";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "ผู้โดยสาร %d คน";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "ผู้โดยสาร %d คน";
+"JR_SEARCH_FORM_PASSENGERS" = "ผู้โดยสาร";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "ระดับ";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "เมืองปลายทาง";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "เมืองต้นทาง";
 "JR_SEARCH_FORM_COMPLEX_DATE" = "วันที่";
@@ -39,10 +46,12 @@
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "ออกเดินทาง";
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "กลับ";
 "JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "กลับ";
-"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "พื้นฐาน";
-"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "ขาเดียว";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "เบื้องต้น";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "ต่างประเทศ";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "กลับ";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "เที่ยวเดียว";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "ไป-กลับ";
-"JR_SEARCH_FORM_TITLE" = "ค้นหาตั๋ว";
+"JR_SEARCH_FORM_TITLE" = "เที่ยวบิน";
 "JR_SEARCH_FORM_SEARCH_BUTTON" = "ค้นหาตั๋ว";
 "JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "จำนวนเด็กทารกที่ไม่มีที่นั่งต้องไม่เกินจำนวนผู้ใหญ่ที่เดินทางด้วย";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "กรุณาใส่ชื่อสนามบินต้นทาง";
@@ -53,6 +62,14 @@
 
 "JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "เพิ่ม";
 "JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "ลบ";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "ผู้โดยสารและชั้น";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "ผู้ใหญ่";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "อายุมากกว่า 16 ปี";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "เด็ก";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-5 ปี";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "เด็กทารก";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "อายุ 0-2 ปี";
+
 
 "JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "ลดจำนวนผู้โดยสาร %@";
 "JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "เพิ่มจำนวนผู้โดยสาร %@";
@@ -80,30 +97,33 @@
 
 "JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "ต้นทาง";
 "JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "ไม่มีสนามบินในบริเวณใกล้เคียง";
-"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "ค้นหา";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "ใส่เมืองหรือสนามบิน";
 "JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "ค้นหา";
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "ความสนใจ";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "เส้นทางตามความสนใจ";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "ย้อนกลับ";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "คุณได้ค้นหา";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "การค้นหาก่อนหน้า";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "ไม่พบผลลัพธ์";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "กำลังค้นหา...";
-"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "ค้นหาสนามบินในบริเวณใกล้เคียง...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "กำลังค้นหาสนามบินที่ใกล้ที่สุด...";
 
 "JR_FILTER_BUTTON" = "ตัวกรอง";
 
 "JR_FILTER_RESET_ALL" = "ลบทั้งหมด";
 "JR_FILTER_RESET" = "ลบ";
-"JR_FILTER_TICKETS_NOT_FOUND" = "ไม่พบผลการค้นหา";
+"JR_FILTER_TICKETS_NOT_FOUND" = "ไม่พบผลลัพธ์";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "ไม่พบตั๋วตามที่ต้องการ";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "โปรดเปลี่ยนการตั้งค่าตัวกรองของคุณ";
 
 "JR_FILTER_STOPOVER_OVERNIGHT" = "จุดแวะพักค้างคืน";
 "JR_FILTER_PRICE_FILTER" = "ราคา";
-"JR_FILTER_TOTAL_DURATION" = "ระยะเวลา";
-"JR_FILTER_DELAY_DURATION" = "ระยะเวลาการรอเปลี่ยนเครื่อง";
-"JR_FILTER_TOTAL_TIME_FROM"                         = "ตั้งแต่";
-"JR_FILTER_TOTAL_DURATION_FROM"                     = "ตั้งแต่";
-"JR_FILTER_TOTAL_DURATION_PRIOR_TO"                 = "ถึง";
-"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO"              = "นานสุด";
+"JR_FILTER_TOTAL_DURATION" = "ระยะเวลาการเดินทาง";
+"JR_FILTER_DELAY_DURATION" = "ระยะเวลาแวะพัก";
+"JR_FILTER_TOTAL_TIME_FROM" = "ตั้งแต่";
+"JR_FILTER_TOTAL_DURATION_FROM" = "ตั้งแต่";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "ถึง";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "สูงสุด";
 
 "JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d เที่ยวบินราคาเริ่มต้น %@";
 "JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d เที่ยวบินราคาเริ่มต้น %@";
@@ -111,12 +131,12 @@
 "JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d เที่ยวบินราคาเริ่มต้น %@";
 
 "JR_FILTER_RETURN_DEPARTURE_TIME" = "เวลาเครื่องออกขากลับ";
-"JR_FILTER_DEPARTURE_TIME" = "เวลาออกไฟลท์ต่างประเทศ";
-"JR_FILTER_ARRIVAL_TIME" = "เวลาลงไฟลท์ต่างประเทศ";
+"JR_FILTER_DEPARTURE_TIME" = "เวลาออกเที่ยวบินต่างประเทศ";
+"JR_FILTER_ARRIVAL_TIME" = "เวลาถึงเที่ยวบินต่างประเทศ";
 "JR_FILTER_RETURN_ARRIVAL_TIME" = "เวลาเครื่องลงขากลับ";
 
 "JR_FILTER_AIRPORTS_ORIGIN" = "จาก";
-"JR_FILTER_AIRPORTS_STOPOVER" = "รถรับ-ส่ง";
+"JR_FILTER_AIRPORTS_STOPOVER" = "จุดแวะพัก";
 "JR_FILTER_AIRPORTS_DESTINATION" = "ถึง";
 
 "JR_FILTER_DAY_TIME_MORNING" = "ช่วงเช้า";
@@ -128,6 +148,19 @@
 
 "JR_FILTER_PAYMENT_METHODS" = "วิธีการชำระเงิน";
 "JR_FILTER_PAYMENT_METHODS_ALL" = "วิธีการชำระเงินทั้งหมด";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "บริการจัดส่งพัสดุภัณฑ์";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "เงินสด";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "บัตรเครดิต";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "เครื่องรับชำระเงิน";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "โอนเงินผ่านธนาคาร";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "ติดต่อ ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "ขอสินเชื่อ";
 
 "JR_FILTER_AIRLINES" = "สายการบิน";
 "JR_FILTER_AIRLINES_ALL" = "สายการบินทั้งหมด";
@@ -145,19 +178,23 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "หยุด %d แห่ง";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "หยุด %d แห่ง";
 
-"JR_SEARCH_RESULTS_TICKET_PLACEHOLDER_TEXT" = "ไม่มีผลลัพธ์เหลือหลังทำการกรอง";
+"JR_BROWSER_TITLE" = "ซื้อ";
 
-"JR_BROWSER_BACK_BTN_TITLE" = "กลับ";
+"JR_BROWSER_BACK_BTN_TITLE" = "ย้อนกลับ";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "ไปข้างหน้า";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "ผิดพลาด";
 
-"BROWSER_CHECK_CONNECTION" = "กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ต";
+"BROWSER_CHECK_CONNECTION" = "กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
 "BROWSER_OVERLAY_DEFAULT_TEXT" = "กำลังโหลด...";
 "JR_CLOSE_BUTTON_TITLE" = "ปิด";
 
-"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "คุณได้ค้นหาเส้นทางเที่ยวบิน %@ ขออภัย ไม่สามารถค้นหาเที่ยวบินที่บินระหว่างสนามบินเหล่านี้";
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "ขออภัย เราไม่สามารถค้นหาเที่ยวบินระหว่างสนามบินเหล่านี้สำหรับเส้นทาง %@ อย่างไรก็ตาม เราสามารถแสดงเที่ยวบินระหว่างเมืองเหล่านี้ได้";
 
 "JR_SEARCH_RESULTS_TICKET_IN_THE" = "ใน";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "ต้องการโรงแรม?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "ระหว่างที่คุณกำลังหาตั๋วเครื่องบิน เราจะช่วยเลือกโรงแรมที่ใช่สำหรับคุณ";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "ค้นหาโรงแรม";
 
 "JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "ซื้อ";
 "JR_TICKET_CREDIT_ALERT_CONDITIONS" = "ข้อกำหนดและเงื่อนไข";
@@ -194,10 +231,12 @@
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "ขอสินเชื่อ";
 "JR_TICKET_FLIGHT" = "เที่ยวบิน";
 "JR_TICKET_TRANSFER" = "จุดแวะพัก";
-"JR_TICKET_OTHER_BUTTON"                            = "อื่นๆ";
-"JR_TICKET_DURATION" = "ระยะเวลาการเดินทาง";
+"JR_TICKET_OTHER_BUTTON" = "ข้อเสนอเพิ่มเติม";
+"JR_TICKET_DURATION" = "ข้อมูลเที่ยวบิน";
+
+"JR_TICKET_EXPIRED" = "ผลการค้นหาหมดอายุแล้ว";
 
 "JR_WAITING_TITLE" = "กำลังค้นหา...";
-"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "ไม่พบผลลัพธ์ ลองปรับเปลี่ยนตัวแปรการค้นหา";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "ไม่พบผลลัพธ์ ลองเปลี่ยนตัวแปรการค้นหา";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "การเชื่อมต่อผิดพลาด";
 "JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "ขออภัย JetRadar ไม่สามารถให้บริการได้ชั่วคราว";

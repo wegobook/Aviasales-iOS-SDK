@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="HLHotelDetailsNoPriceCell" rowHeight="119" id="SNN-iP-Pe3" userLabel="HLHotelDetailsNoPriceCell" customClass="HLHotelDetailsNoPriceCell" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="351" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SNN-iP-Pe3" id="n8d-1i-Urp">
+                <rect key="frame" x="0.0" y="0.0" width="351" height="120"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" verticalCompressionResistancePriority="751" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkY-a9-ezU">
+                        <rect key="frame" x="15" y="5" width="321" height="36"/>
+                        <string key="text">Чел, так случилось, что цен на эти даты нет.
+Попробуй поискать на другие, а?</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hc3-OV-RdN">
+                        <rect key="frame" x="15" y="56" width="321" height="43"/>
+                        <color key="backgroundColor" red="0.44313725490196076" green="0.76470588235294112" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <inset key="contentEdgeInsets" minX="15" minY="15" maxX="15" maxY="15"/>
+                        <state key="normal" title="ИЗМЕНИТЬ ПАРАМЕТРЫ ПОИСКА">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="JRCornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="changeButtonPressed:" destination="SNN-iP-Pe3" eventType="touchUpInside" id="53D-aG-z09"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="QkY-a9-ezU" firstAttribute="leading" secondItem="n8d-1i-Urp" secondAttribute="leading" constant="15" id="4h8-38-8SK"/>
+                    <constraint firstItem="hc3-OV-RdN" firstAttribute="leading" secondItem="n8d-1i-Urp" secondAttribute="leading" constant="15" id="5b5-HN-1PW"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="QkY-a9-ezU" secondAttribute="bottom" constant="15" id="7rK-Ka-oZM"/>
+                    <constraint firstAttribute="trailing" secondItem="QkY-a9-ezU" secondAttribute="trailing" constant="15" id="8fz-lj-CRN"/>
+                    <constraint firstItem="hc3-OV-RdN" firstAttribute="top" secondItem="QkY-a9-ezU" secondAttribute="bottom" constant="15" id="NuQ-h2-9Ql"/>
+                    <constraint firstItem="QkY-a9-ezU" firstAttribute="top" secondItem="n8d-1i-Urp" secondAttribute="top" constant="5" id="RQB-bc-bPm"/>
+                    <constraint firstAttribute="bottom" secondItem="hc3-OV-RdN" secondAttribute="bottom" constant="20" id="gRR-yh-SCu"/>
+                    <constraint firstAttribute="trailing" secondItem="hc3-OV-RdN" secondAttribute="trailing" constant="15" id="pK1-a9-odT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="changeButton" destination="hc3-OV-RdN" id="RjG-RY-w4q"/>
+                <outlet property="noPriceLabel" destination="QkY-a9-ezU" id="gkL-09-zo2"/>
+            </connections>
+            <point key="canvasLocation" x="185.5" y="231"/>
+        </tableViewCell>
+    </objects>
+</document>

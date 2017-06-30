@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12121"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTSearchResultsSceneViewController" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="ticketContainerView" destination="Tqb-QY-ksw" id="U0L-2f-OXU"/>
+                <outlet property="ticketsContainerView" destination="0uv-dI-tVi" id="CdF-e4-Yqn"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0uv-dI-tVi">
+                    <rect key="frame" x="0.0" y="0.0" width="384" height="1024"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tqb-QY-ksw">
+                    <rect key="frame" x="384" y="0.0" width="384" height="1024"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="0uv-dI-tVi" secondAttribute="bottom" id="1qD-ei-CID"/>
+                <constraint firstItem="0uv-dI-tVi" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="4ms-hq-72q"/>
+                <constraint firstItem="Tqb-QY-ksw" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="83W-sn-AzG"/>
+                <constraint firstItem="0uv-dI-tVi" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="SyH-w5-97U"/>
+                <constraint firstItem="Tqb-QY-ksw" firstAttribute="leading" secondItem="0uv-dI-tVi" secondAttribute="trailing" id="fcm-2h-e0l"/>
+                <constraint firstAttribute="bottom" secondItem="Tqb-QY-ksw" secondAttribute="bottom" id="isV-m2-NLL"/>
+                <constraint firstAttribute="trailing" secondItem="Tqb-QY-ksw" secondAttribute="trailing" id="mS4-hO-Icz"/>
+                <constraint firstItem="0uv-dI-tVi" firstAttribute="width" secondItem="Tqb-QY-ksw" secondAttribute="width" id="oy0-Yf-ScH"/>
+            </constraints>
+            <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+        </view>
+    </objects>
+</document>

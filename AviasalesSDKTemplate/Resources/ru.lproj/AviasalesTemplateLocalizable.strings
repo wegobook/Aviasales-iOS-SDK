@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@ч %@м";
 "LONG_TIME_FORMAT" = "%@ ч %@ мин";
 
-"JR_ERROR_TITLE" = "ОШИБКА";
+"JR_ERROR_TITLE" = "Ошибка";
 
 "JR_BACK_TITLE" = "Назад";
 
@@ -17,6 +17,11 @@
 
 "JR_OK_BUTTON" = "ОК";
 
+"JR_DONE_BUTTON" = "ГОТОВО";
+
+"JR_NEW_SEARCH_TITLE" = "Новый поиск";
+
+
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Дата отправления";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Дата возвращения";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Даты перелёта";
@@ -24,22 +29,26 @@
 "JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Искать билеты";
 "JR_SEARCHINFO_BUSINESS" = "Бизнес";
 "JR_SEARCHINFO_ECONOMY" = "Эконом";
-"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Премиальный эконом";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Премиум эконом";
 "JR_SEARCHINFO_FIRST" = "Первый";
 "JR_SEARCHINFO_PASSENGERS##{one}" = "%d пассажир";
 "JR_SEARCHINFO_PASSENGERS##{few}" = "%d пассажира";
 "JR_SEARCHINFO_PASSENGERS##{many}" = "%d пассажиров";
 "JR_SEARCHINFO_PASSENGERS##{other}" = "%d пассажиров";
+"JR_SEARCH_FORM_PASSENGERS" = "Пассажиры";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Класс";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Город прибытия";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Город вылета";
-"JR_SEARCH_FORM_COMPLEX_DATE" = "ДАТА";
-"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "КУДА";
-"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "ОТКУДА";
-"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "сложный";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Дата";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Куда";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Откуда";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Сложный";
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Дата вылета";
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Обратно";
 "JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "обратно";
-"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "простой";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Простой";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Туда";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Обратно";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "в одну сторону";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "возвратный";
 "JR_SEARCH_FORM_TITLE" = "Поиск билетов";
@@ -53,6 +62,14 @@
 
 "JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "ДОБАВИТЬ";
 "JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "УДАЛИТЬ";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Пассажиры и класс";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Взрослые";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "16+ лет";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Дети";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15 лет";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Младенцы";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "До 2 лет";
+
 
 "JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Уменьшить количество пассажиров %@";
 "JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Увеличить количество пассажиров %@";
@@ -87,7 +104,7 @@
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Назад";
 "JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Вы уже искали";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Нет рейсов";
-"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Ищем билеты...";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Поиск...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Поиск ближайших аэропортов...";
 
 "JR_FILTER_BUTTON" = "Фильтры";
@@ -95,6 +112,9 @@
 "JR_FILTER_RESET_ALL" = "Сбросить все";
 "JR_FILTER_RESET" = "Сбросить";
 "JR_FILTER_TICKETS_NOT_FOUND" = "Ничего не найдено";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Билетов не осталось";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Пожалуйста, измените настройки фильтрации.";
 
 "JR_FILTER_STOPOVER_OVERNIGHT" = "Ночная пересадка";
 "JR_FILTER_PRICE_FILTER" = "Цене";
@@ -129,6 +149,19 @@
 "JR_FILTER_PAYMENT_METHODS" = "Способы оплаты";
 "JR_FILTER_PAYMENT_METHODS_ALL" = "Все cпособы оплаты";
 
+"JR_FILTER_PAYMENT_METHOD_EXP"                      = "Курьеру";
+"JR_FILTER_PAYMENT_METHOD_EUROSET"                  = "Евросеть";
+"JR_FILTER_PAYMENT_METHOD_CASH"                     = "Наличными";
+"JR_FILTER_PAYMENT_METHOD_CARD"                     = "По карте";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY"             = "Яндекс.Деньги";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY"                 = "WebMoney";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL"                 = "Через терминал";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY"                 = "Связной";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET"                  = "Элекснет";
+"JR_FILTER_PAYMENT_METHOD_BANK"                     = "Банковским переводом";
+"JR_FILTER_PAYMENT_METHOD_CONTACT"                  = "Contact";
+"JR_FILTER_PAYMENT_METHOD_CREDIT"                   = "В кредит";
+
 "JR_FILTER_AIRLINES" = "Авиакомпании";
 "JR_FILTER_AIRLINES_ALL" = "Все aвиакомпании";
 
@@ -145,7 +178,7 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d пересадок";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d пересадок";
 
-"JR_SEARCH_RESULTS_TICKET_PLACEHOLDER_TEXT" = "Не осталось билетов, удовлетворяющих критериям,\nвыбранным в\U00A0фильтрах.";
+"JR_BROWSER_TITLE" = "Покупка билета";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Назад";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Вперед";
@@ -155,9 +188,13 @@
 "BROWSER_OVERLAY_DEFAULT_TEXT" = "Загрузка...";
 "JR_CLOSE_BUTTON_TITLE" = "Закрыть";
 
-"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Вы искали рейс следующий по маршруту %@. К\U00A0сожалению, нам не удалось найти перелётов конкретно между этими аэропортами, поэтому мы показываем все возможные перелеты между этими городами.";
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Вы искали рейс, следующий по маршруту %@. К\U00A0сожалению, нам не удалось найти перелётов конкретно между этими аэропортами, поэтому мы показываем все возможные перелеты между этими городами.";
 
 "JR_SEARCH_RESULTS_TICKET_IN_THE" = "в";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Найти отели?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Пока вы выбираете авиабилет, мы поможем подобрать для вас подходящий отель.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Найти отели";
 
 "JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Купить";
 "JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Условия";
@@ -196,6 +233,8 @@
 "JR_TICKET_TRANSFER" = "Пересадка";
 "JR_TICKET_OTHER_BUTTON" = "Другие";
 "JR_TICKET_DURATION" = "Время в\U00A0пути";
+
+"JR_TICKET_EXPIRED" = "Результаты поиска устарели";
 
 "JR_WAITING_TITLE" = "Ищем билеты...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Ничего не найдено. Попробуйте изменить параметры поиска.";

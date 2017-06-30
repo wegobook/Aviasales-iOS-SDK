@@ -84,4 +84,10 @@ typedef NS_ENUM (NSInteger, JRDateUtilDurationStyle) {
 + (NSString *)shortDatesIntervalStringWithSameMonth:(NSDate *)fromDate toDate:(NSDate *)toDate;
 + (NSString *)stringForSpeakDayMonthYearDayOfWeek:(NSDate *)date;
 
++ (NSDate *)borderDate;
++ (NSInteger)hl_daysBetweenDate:(NSDate *)date andOtherDate:(NSDate *)otherDate;
++ (NSDate *)dateIn30Days:(NSDate *)date;
++ (NSDate *)firstDayOfNextMonthForDate:(NSDate*)date;
++ (NSDate *)setTimeForDate:(NSDate *)date time:(NSDate *)time;
+
 @end

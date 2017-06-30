@@ -11,4 +11,6 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
++ (void)openSettings;
+
 @end

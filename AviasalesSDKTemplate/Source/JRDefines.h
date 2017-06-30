@@ -46,6 +46,10 @@ dispatch_sync(dispatch_get_main_queue(), block); \
 
 #define IS_NON_EMPTY_STRING(object) (object && [object isKindOfClass:[NSString class]] && [object length] > 0)
 
+#define HL_URL_SHORTENER_USERNAME @"sapato"
+#define HL_URL_SHORTENER_PASSWORD @"EPhliOk7"
+
+NS_ASSUME_NONNULL_BEGIN
 
 //------------------------
 // DEFINES
@@ -53,6 +57,8 @@ dispatch_sync(dispatch_get_main_queue(), block); \
 
 NSUserDefaults *JRUserDefaults();
 CGFloat JRPixel();
+
+#define HL_DEFAULTS_SEARCH_INFO_KEY @"hotelsSearchInfoKey"
 
 //------------------------
 // TARGETS & CONFIGURATIONS
@@ -83,8 +89,20 @@ BOOL iOSVersionLessThan(NSString *version);
 BOOL iOSVersionLessThanOrEqualTo(NSString *version);
 
 CGFloat iPhoneSizeValue(CGFloat defaultValue, CGFloat iPhone6Value, CGFloat iPhone6PlusValue);
+CGFloat deviceSizeTypeValue(CGFloat deviceSizeTypeIPhone35Inch, CGFloat deviceSizeTypeIPhone4Inch, CGFloat deviceSizeTypeIPhone47Inch, CGFloat DeviceSizeTypeIPhone55Inch, CGFloat DeviceSizeTypeIPad);
+
+CGFloat minScreenDimension(void);
+CGFloat maxScreenDimension(void);
 
 BOOL Debug();
+BOOL AppStore();
+BOOL ticketsEnabled();
+BOOL hotelsEnabled();
+
+UIView * _Nullable loadViewFromNibNamed(NSString * _Nonnull nibNamed);
+UIView * _Nullable loadViewFromNib(NSString * _Nonnull nibNamed, id _Nullable owner);
+
+NSString * platformName(void);
 
 //------------------------
 // LOCALIZATION
@@ -93,4 +111,29 @@ BOOL Debug();
 NSString *NSLS(NSString *key);
 NSString *NSLSP(NSString *key, float pluralValue);
 
+//------------------------
+// DISPATCH
+//------------------------
+
+void hl_dispatch_main_sync_safe(dispatch_block_t block);
+void hl_dispatch_main_async_safe(dispatch_block_t block);
+
+NS_ASSUME_NONNULL_END
+
+//------------------------
+// Float comparison
+//------------------------
+
+#define FLOAT_COMPARISON_EPSILON 0.00001f
+#define IS_FLOAT_EQUALS_WITH_ACCURACY(A, B, EPSILON) (ABS(A - B) < EPSILON)
+#define IS_FLOAT_EQUALS(A, B) (IS_FLOAT_EQUALS_WITH_ACCURACY(A, B, FLOAT_COMPARISON_EPSILON))
+#define ZERO_HEADER_HEIGHT 0.00001f
+
 #endif
+
+//------------------------
+// CONFIG
+//------------------------
+
+BOOL ShowAppodealAds();
+BOOL ShowAviasalesAds();

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HLKidAgePickerView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LPS-dH-cvj">
+                    <rect key="frame" x="0.0" y="451" width="375" height="216"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="iN0-l3-epB" id="EHN-p4-Sgc"/>
+                        <outlet property="delegate" destination="iN0-l3-epB" id="RXx-M1-4Vh"/>
+                    </connections>
+                </pickerView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qjq-Im-rAa" userLabel="PickerHeaderView">
+                    <rect key="frame" x="0.0" y="399" width="375" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NOO-vi-hIk">
+                            <rect key="frame" x="0.0" y="0.0" width="100" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="irX-02-PGW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="21" minY="0.0" maxX="0.0" maxY="0.0"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" red="0.48627450979999998" green="0.73725490199999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.37281239032745361" green="0.63085633516311646" blue="0.13466188311576843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="JRTextNormalColorKey" value="darkTextColor"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onCancel:" destination="iN0-l3-epB" eventType="touchUpInside" id="hIY-FI-XTY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t4q-si-u7u">
+                            <rect key="frame" x="275" y="0.0" width="100" height="52"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="L9Q-rk-kdD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="21" maxY="0.0"/>
+                            <state key="normal" title="Appy">
+                                <color key="titleColor" red="0.48627450979999998" green="0.73725490199999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <state key="selected">
+                                <color key="titleColor" red="0.37281239032745361" green="0.63085633516311646" blue="0.13466188311576843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="JRTextNormalColorKey" value="darkTextColor"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="onApply:" destination="iN0-l3-epB" eventType="touchUpInside" id="ZWp-oB-2Me"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.955638587474823" green="0.95545238256454468" blue="0.96052432060241699" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="52" id="10R-oH-Wdy"/>
+                        <constraint firstAttribute="trailing" secondItem="t4q-si-u7u" secondAttribute="trailing" id="A4k-KH-ZjS"/>
+                        <constraint firstItem="t4q-si-u7u" firstAttribute="top" secondItem="Qjq-Im-rAa" secondAttribute="top" id="NUQ-AX-hLz"/>
+                        <constraint firstAttribute="bottom" secondItem="NOO-vi-hIk" secondAttribute="bottom" id="Ufs-AA-BbI"/>
+                        <constraint firstAttribute="bottom" secondItem="t4q-si-u7u" secondAttribute="bottom" id="W0z-e6-jtV"/>
+                        <constraint firstItem="NOO-vi-hIk" firstAttribute="leading" secondItem="Qjq-Im-rAa" secondAttribute="leading" id="avp-Op-Tgr"/>
+                        <constraint firstItem="t4q-si-u7u" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="NOO-vi-hIk" secondAttribute="trailing" constant="10" id="qIl-Vu-Pmf"/>
+                        <constraint firstItem="NOO-vi-hIk" firstAttribute="top" secondItem="Qjq-Im-rAa" secondAttribute="top" id="syn-xb-poo"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LPS-dH-cvj" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="1Bn-Md-JjG"/>
+                <constraint firstItem="LPS-dH-cvj" firstAttribute="trailing" secondItem="Qjq-Im-rAa" secondAttribute="trailing" id="Ajn-WY-bXS"/>
+                <constraint firstItem="LPS-dH-cvj" firstAttribute="leading" secondItem="Qjq-Im-rAa" secondAttribute="leading" id="Cfn-2P-hnZ"/>
+                <constraint firstAttribute="bottom" secondItem="LPS-dH-cvj" secondAttribute="bottom" id="Jdc-Ac-eKY"/>
+                <constraint firstAttribute="trailing" secondItem="LPS-dH-cvj" secondAttribute="trailing" id="P1T-VM-9ZL"/>
+                <constraint firstItem="LPS-dH-cvj" firstAttribute="top" secondItem="Qjq-Im-rAa" secondAttribute="bottom" id="jJy-5R-x8A"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <connections>
+                <outlet property="agePickerView" destination="LPS-dH-cvj" id="ftP-xt-uCp"/>
+                <outlet property="applyButton" destination="t4q-si-u7u" id="vTC-wB-5aS"/>
+                <outlet property="cancelButton" destination="NOO-vi-hIk" id="C0l-jP-bPU"/>
+                <outlet property="pickerBottomConstraint" destination="Jdc-Ac-eKY" id="nzQ-qd-OKq"/>
+                <outlet property="pickerHeaderView" destination="Qjq-Im-rAa" id="sGQ-ER-xIg"/>
+            </connections>
+            <point key="canvasLocation" x="253.5" y="301.5"/>
+        </view>
+    </objects>
+</document>

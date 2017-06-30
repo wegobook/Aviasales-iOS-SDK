@@ -26,11 +26,11 @@
 
 
 @interface UIView (JRInspectableAttributes)
-@property (nonatomic, assign) IBInspectable NSString *JRBackgroundColorKey;
+@property (nonatomic, strong) IBInspectable NSString *JRBackgroundColorKey;
 @property (nonatomic, assign) IBInspectable CGFloat JRCornerRadius;
 @property (nonatomic, assign) IBInspectable BOOL JRShouldRasterize;
-@property (nonatomic, assign) IBInspectable UIColor *JRShadowColor;
-@property (nonatomic, assign) IBInspectable NSString *JRShadowColorKey;
+@property (nonatomic, strong) IBInspectable UIColor *JRShadowColor;
+@property (nonatomic, strong) IBInspectable NSString *JRShadowColorKey;
 @property (nonatomic, assign) IBInspectable CGSize JRShadowOffset;
 @property (nonatomic, assign) IBInspectable CGFloat JRShadowOpacity;
 @property (nonatomic, assign) IBInspectable CGFloat JRShadowRadius;

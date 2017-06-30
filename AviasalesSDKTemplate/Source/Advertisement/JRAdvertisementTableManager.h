@@ -7,11 +7,11 @@
 
 #import "JRTableManager.h"
 
+@class JRHotelCardView;
+
 @interface JRAdvertisementTableManager : NSObject <JRTableManager>
 
-@property (strong, nonatomic) UIView *appodealAd;
 @property (strong, nonatomic) UIView *aviasalesAd;
-
-+ (CGFloat)appodealAdHeight;
+@property (strong, nonatomic) JRHotelCardView *hotelCard;
 
 @end

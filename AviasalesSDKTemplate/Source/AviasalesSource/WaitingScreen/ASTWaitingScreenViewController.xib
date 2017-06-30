@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTWaitingScreenViewController" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="appodealAdvertisementView" destination="Z9f-TT-1jX" id="U9F-jn-fSZ"/>
+                <outlet property="aviasalesAdvertisementView" destination="4WT-Bt-cnt" id="gLb-ca-Qfg"/>
+                <outlet property="aviasalesAdvertisementViewHeightConstraint" destination="Hvg-pV-dgW" id="Qhr-z7-0xT"/>
+                <outlet property="infoLabel" destination="zBa-xq-UQb" id="VUG-CR-Iv6"/>
+                <outlet property="planeScene" destination="rE7-nT-pch" id="tSJ-H5-FKT"/>
+                <outlet property="progressView" destination="fn8-XV-tTx" id="84h-j5-bmg"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fn8-XV-tTx" customClass="ASTWaitingScreenProgressView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="3"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="3" id="HUp-eP-MLn"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ldz-tJ-D51">
+                    <rect key="frame" x="0.0" y="3" width="375" height="514"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rE7-nT-pch" customClass="ASTWaitingScreenPlaneSceneView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="117" width="375" height="280"/>
+                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="lessThanOrEqual" constant="280" id="eAq-Hu-voX"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBa-xq-UQb">
+                            <rect key="frame" x="16" y="476.5" width="343" height="21.5"/>
+                            <attributedString key="attributedText">
+                                <fragment content="Info">
+                                    <attributes>
+                                        <font key="NSFont" size="18" name=".AppleSystemUIFont"/>
+                                        <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                    </attributes>
+                                </fragment>
+                            </attributedString>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="zBa-xq-UQb" firstAttribute="leading" secondItem="ldz-tJ-D51" secondAttribute="leading" constant="16" id="2Xd-SZ-RmB"/>
+                        <constraint firstAttribute="bottom" secondItem="rE7-nT-pch" secondAttribute="bottom" priority="750" id="93a-CS-LAy"/>
+                        <constraint firstItem="rE7-nT-pch" firstAttribute="centerY" secondItem="ldz-tJ-D51" secondAttribute="centerY" id="S9K-Yd-jiO"/>
+                        <constraint firstAttribute="trailing" secondItem="rE7-nT-pch" secondAttribute="trailing" id="d1E-7c-46e"/>
+                        <constraint firstItem="rE7-nT-pch" firstAttribute="leading" secondItem="ldz-tJ-D51" secondAttribute="leading" id="o5d-cH-8zg"/>
+                        <constraint firstItem="rE7-nT-pch" firstAttribute="top" secondItem="ldz-tJ-D51" secondAttribute="top" priority="750" id="pDa-Ho-8ul"/>
+                        <constraint firstAttribute="bottom" secondItem="zBa-xq-UQb" secondAttribute="bottom" constant="16" id="vdA-eM-vxR"/>
+                        <constraint firstAttribute="trailing" secondItem="zBa-xq-UQb" secondAttribute="trailing" constant="16" id="wR9-fc-4bH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z9f-TT-1jX">
+                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="150" id="kgd-0S-vN9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4WT-Bt-cnt">
+                    <rect key="frame" x="0.0" y="667" width="375" height="0.0"/>
+                    <constraints>
+                        <constraint firstAttribute="height" id="Hvg-pV-dgW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ldz-tJ-D51" firstAttribute="top" secondItem="fn8-XV-tTx" secondAttribute="bottom" id="2QL-JR-YCK"/>
+                <constraint firstItem="4WT-Bt-cnt" firstAttribute="top" secondItem="Z9f-TT-1jX" secondAttribute="bottom" id="MsG-ZH-Mbt"/>
+                <constraint firstAttribute="trailing" secondItem="Z9f-TT-1jX" secondAttribute="trailing" id="OgH-if-Dgn"/>
+                <constraint firstAttribute="trailing" secondItem="fn8-XV-tTx" secondAttribute="trailing" id="SxG-wr-9Sw"/>
+                <constraint firstItem="fn8-XV-tTx" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TKd-5W-lzH"/>
+                <constraint firstItem="4WT-Bt-cnt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yr1-Rt-6vu"/>
+                <constraint firstItem="Z9f-TT-1jX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="cdP-GM-BBf"/>
+                <constraint firstAttribute="bottom" secondItem="4WT-Bt-cnt" secondAttribute="bottom" id="fFd-2e-eAS"/>
+                <constraint firstAttribute="trailing" secondItem="4WT-Bt-cnt" secondAttribute="trailing" id="n8j-fM-rqh"/>
+                <constraint firstAttribute="trailing" secondItem="ldz-tJ-D51" secondAttribute="trailing" id="rSO-qv-JTf"/>
+                <constraint firstItem="ldz-tJ-D51" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="shc-wq-X5V"/>
+                <constraint firstItem="Z9f-TT-1jX" firstAttribute="top" secondItem="ldz-tJ-D51" secondAttribute="bottom" id="yo0-fd-wvY"/>
+                <constraint firstItem="fn8-XV-tTx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="zjS-WF-8Fs"/>
+            </constraints>
+            <point key="canvasLocation" x="34.5" y="54.5"/>
+        </view>
+    </objects>
+</document>

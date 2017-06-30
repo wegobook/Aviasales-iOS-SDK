@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLMapGroupDetailsVC">
+            <connections>
+                <outlet property="collectionView" destination="M6p-JI-jef" id="xcW-RJ-CSI"/>
+                <outlet property="collectionViewHeightConstraint" destination="kxC-yH-qWE" id="tHC-yp-GXv"/>
+                <outlet property="collectionViewTopConstraint" destination="Jpe-Le-1dA" id="vb2-bA-lVQ"/>
+                <outlet property="countLabel" destination="9AY-0V-eY8" id="E9B-LY-fSX"/>
+                <outlet property="descriptionBottomConstraint" destination="6ix-Nd-2rY" id="jxd-fs-7aD"/>
+                <outlet property="descriptionLabel" destination="zDD-un-RFS" id="Ig8-iT-5gm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="M6p-JI-jef">
+                    <rect key="frame" x="0.0" y="100" width="375" height="200"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="kxC-yH-qWE"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="c6k-BS-4me">
+                        <size key="itemSize" width="319" height="300"/>
+                        <size key="headerReferenceSize" width="50" height="50"/>
+                        <size key="footerReferenceSize" width="50" height="50"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="C5L-DX-S7W"/>
+                        <outlet property="delegate" destination="-1" id="r7A-9m-JVn"/>
+                    </connections>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1 из 15" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9AY-0V-eY8">
+                    <rect key="frame" x="161" y="320" width="53" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="В этой точке находится более одного отеля." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zDD-un-RFS">
+                    <rect key="frame" x="20" y="40" width="335" height="20"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="M6p-JI-jef" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="3MF-H8-fM2"/>
+                <constraint firstItem="M6p-JI-jef" firstAttribute="top" secondItem="zDD-un-RFS" secondAttribute="bottom" constant="40" id="6ix-Nd-2rY"/>
+                <constraint firstItem="9AY-0V-eY8" firstAttribute="top" secondItem="M6p-JI-jef" secondAttribute="bottom" constant="20" id="76X-B8-vZv"/>
+                <constraint firstAttribute="centerX" secondItem="9AY-0V-eY8" secondAttribute="centerX" id="8eK-J2-RxZ"/>
+                <constraint firstItem="zDD-un-RFS" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="Ddi-tf-1Jc"/>
+                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="zDD-un-RFS" secondAttribute="trailing" constant="20" id="Gjg-8S-099"/>
+                <constraint firstItem="M6p-JI-jef" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="100" id="Jpe-Le-1dA"/>
+                <constraint firstAttribute="centerX" secondItem="zDD-un-RFS" secondAttribute="centerX" id="pGA-xK-mQT"/>
+                <constraint firstAttribute="trailing" secondItem="M6p-JI-jef" secondAttribute="trailing" id="wot-mc-Wkr"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

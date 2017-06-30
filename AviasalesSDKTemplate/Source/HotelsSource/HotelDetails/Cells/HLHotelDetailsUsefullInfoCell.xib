@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="46" id="wV7-lz-Ytf" customClass="HLHotelDetailsUsefullInfoCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="46"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="wV7-lz-Ytf" id="MqH-ZV-2Yw">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="trustyouLegendGreenImage" translatesAutoresizingMaskIntoConstraints="NO" id="xie-Is-C91">
+                        <rect key="frame" x="15" y="7" width="15" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="15" id="ZNt-2s-VP6"/>
+                            <constraint firstAttribute="width" constant="15" id="eN7-I8-maW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="TopLeft" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Useful Text" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="T0m-JP-Omn">
+                        <rect key="frame" x="45" y="6" width="260" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.21199023723602295" green="0.21522575616836548" blue="0.21864497661590576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="T0m-JP-Omn" firstAttribute="leading" secondItem="xie-Is-C91" secondAttribute="trailing" constant="15" id="5ie-pU-eVd"/>
+                    <constraint firstItem="T0m-JP-Omn" firstAttribute="top" secondItem="MqH-ZV-2Yw" secondAttribute="top" constant="6" id="6Di-g9-Jrc"/>
+                    <constraint firstItem="xie-Is-C91" firstAttribute="top" secondItem="T0m-JP-Omn" secondAttribute="top" constant="1" id="6Y8-gg-Y8n"/>
+                    <constraint firstItem="xie-Is-C91" firstAttribute="leading" secondItem="MqH-ZV-2Yw" secondAttribute="leading" constant="15" id="76D-I9-7kR"/>
+                    <constraint firstAttribute="trailing" secondItem="T0m-JP-Omn" secondAttribute="trailing" constant="15" id="Br1-BV-tDh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="T0m-JP-Omn" id="bej-d9-Jat"/>
+                <outlet property="legendImageView" destination="xie-Is-C91" id="TTb-F9-h5o"/>
+                <outlet property="rightContentOffset" destination="Br1-BV-tDh" id="Boi-q8-6r2"/>
+                <outlet property="topConstraint" destination="6Di-g9-Jrc" id="xmR-fk-wKE"/>
+            </connections>
+            <point key="canvasLocation" x="252" y="247"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="trustyouLegendGreenImage" width="15" height="15"/>
+    </resources>
+</document>

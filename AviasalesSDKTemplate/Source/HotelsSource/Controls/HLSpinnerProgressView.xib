@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment version="2304" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KEN-fb-b4f" customClass="HLSpinnerProgressView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iN0-l3-epB">
+                    <rect key="frame" x="131.5" y="278" width="112" height="112"/>
+                    <subviews>
+                        <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kPw-FG-2Eu">
+                            <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="8z8-4H-sxf">
+                                <rect key="frame" x="0.0" y="0.0" width="112" height="112"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </view>
+                            <blurEffect style="dark"/>
+                        </visualEffectView>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="PSo-Wz-MdB">
+                            <rect key="frame" x="37.5" y="37.5" width="37" height="37"/>
+                        </activityIndicatorView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="PSo-Wz-MdB" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="84C-Ga-3v0"/>
+                        <constraint firstAttribute="width" constant="112" id="Fms-Id-lHl"/>
+                        <constraint firstAttribute="trailing" secondItem="kPw-FG-2Eu" secondAttribute="trailing" id="SeA-g0-vPJ"/>
+                        <constraint firstAttribute="height" constant="112" id="WfK-pu-arA"/>
+                        <constraint firstItem="kPw-FG-2Eu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="gth-Md-Vur"/>
+                        <constraint firstItem="kPw-FG-2Eu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="hwX-Bq-F6K"/>
+                        <constraint firstAttribute="bottom" secondItem="kPw-FG-2Eu" secondAttribute="bottom" id="lL3-gN-nhs"/>
+                        <constraint firstItem="PSo-Wz-MdB" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qbM-AH-dO5"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="JRCornerRadius">
+                            <real key="value" value="13"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="centerY" secondItem="KEN-fb-b4f" secondAttribute="centerY" id="2Jb-q6-ca3"/>
+                <constraint firstItem="iN0-l3-epB" firstAttribute="centerX" secondItem="KEN-fb-b4f" secondAttribute="centerX" id="gOd-O0-aAV"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="activityIndicatorView" destination="PSo-Wz-MdB" id="5VX-Ax-oS0"/>
+                <outlet property="contentView" destination="iN0-l3-epB" id="EqK-KT-IfL"/>
+            </connections>
+            <point key="canvasLocation" x="326" y="198"/>
+        </view>
+    </objects>
+</document>

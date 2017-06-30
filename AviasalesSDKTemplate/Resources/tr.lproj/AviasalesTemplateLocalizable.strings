@@ -15,9 +15,14 @@
 
 "JR_ANY_AIRPORT" = "Herhangi bir hava alanı";
 
-"JR_OK_BUTTON" = "Tamam";
+"JR_OK_BUTTON" = "OK";
 
-"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Kalkış ";
+"JR_DONE_BUTTON" = "Yapıldı";
+
+"JR_NEW_SEARCH_TITLE" = "Yeni arama";
+
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Kalkış";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Dönüş tarihi";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Uçuş tarihleri";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "Bugün";
@@ -28,21 +33,25 @@
 "JR_SEARCHINFO_FIRST" = "First Class";
 "JR_SEARCHINFO_PASSENGERS##{one}" = "%d yolcu";
 "JR_SEARCHINFO_PASSENGERS##{few}" = "%d yolcu";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d yolcular";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d yolcular";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "%d yolcu";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "%d yolcu";
+"JR_SEARCH_FORM_PASSENGERS" = "Yolcular";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Sınıf";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Varılacak şehir";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Kalkılacak şehir";
-"JR_SEARCH_FORM_COMPLEX_DATE" = "TARİH";
-"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "varış:";
-"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "nereden";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Tarih";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Nereye";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Şehir";
 "JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Çoklu şehir";
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Gidiş";
 "JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Dönüş";
 "JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "dönüş";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Temel";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Giden";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Dönüş";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Tek yön";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Gidiş-Dönüş";
-"JR_SEARCH_FORM_TITLE" = "Bilet ara";
+"JR_SEARCH_FORM_TITLE" = "Uçuşlar";
 "JR_SEARCH_FORM_SEARCH_BUTTON" = "BİLET ARA";
 "JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Koltuksuz seyahat edecek bebek sayısının onlara eşlik eden yetişkin sayısını geçmemesi gerekebilir.";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Lütfen kalkış hava alanını giriniz";
@@ -53,6 +62,14 @@
 
 "JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "EKLE";
 "JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "SİL";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Yolcular ve sınıf";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Yetişkinler";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "16 yaş üzeri";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Çocuklar";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15 arası";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Bebekler";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "0-2 arası";
+
 
 "JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "%@ yolcu sayısını azalt";
 "JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "%@ yolcu sayısını arttır";
@@ -66,56 +83,59 @@
 "JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "yetişkinler";
 "JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "yetişkinler";
 "JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "çocuk";
-"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "çocuklar ";
-"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "çocuklar ";
-"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "çocuklar ";
-"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "bebek ";
-"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "bebekler ";
-"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "bebekler ";
-"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "bebekler ";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "çocuklar";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "çocuklar";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "çocuklar";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "bebek";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "bebekler";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "bebekler";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "bebekler";
 
 "JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "Varış Noktası";
-"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "En yakın hava alanı";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "En Yakın Havaalanları";
 "JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "Konum belirleme servisi geçici olarak kullanım dışı";
 
 "JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Kalkış Noktası";
 "JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "Yakınınızda hava alanı yok";
-"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "ara";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Şehir veya havaalanı seçin";
 "JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Arama";
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "İlgi Alanları";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "İlgi alanlarına göre güzergâhlar";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Geri";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Hâlihazırdaki aramalarınız";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Önceki aramalarınız:";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Hiçbir sonuç bulunmadı";
-"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Arama sürüyor...";
-"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "En yakındaki hava alanlarını arıyor...";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Arıyor...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "En yakındaki havaalanlarını arıyor...";
 
-"JR_FILTER_BUTTON" = "Filtreler";
+"JR_FILTER_BUTTON" = "Filtre";
 
 "JR_FILTER_RESET_ALL" = "Tümünü temizle";
 "JR_FILTER_RESET" = "Temizle";
-"JR_FILTER_TICKETS_NOT_FOUND" = "Sonuç yok";
+"JR_FILTER_TICKETS_NOT_FOUND" = "Hiçbir sonuç bulunmadı";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Bilet bulunamadı";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Lütfen filtre ayarlarınızı değiştirin.";
 
 "JR_FILTER_STOPOVER_OVERNIGHT" = "Muhtemel gece duraklaması";
 "JR_FILTER_PRICE_FILTER" = "Fiyat";
 "JR_FILTER_TOTAL_DURATION" = "Yolculuk süresi";
-"JR_FILTER_DELAY_DURATION" = "Duraklama süresi";
-"JR_FILTER_TOTAL_TIME_FROM" = "şu süreden";
-"JR_FILTER_TOTAL_DURATION_FROM" = "şu zamandan";
-"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "şu saate";
-"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "şu fiyata değin";
+"JR_FILTER_DELAY_DURATION" = "Bekleme süresi";
+"JR_FILTER_TOTAL_TIME_FROM" = "şu fiyattan";
+"JR_FILTER_TOTAL_DURATION_FROM" = "şu fiyattan";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "şu güne";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "şu güne kadar";
 
 "JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d uçuş %@ başlıyor";
 "JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d uçuşlar %@ başlıyor";
-"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d uçuşlar %@ başlıyor ";
-"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d uçuşlar %@ başlıyor  ";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d uçuşlar %@ başlıyor";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d uçuşlar %@ başlıyor";
 
 "JR_FILTER_RETURN_DEPARTURE_TIME" = "Gelen Uçuş Kalkış Zamanı";
 "JR_FILTER_DEPARTURE_TIME" = "Giden Uçuş Kalkış Zamanı";
 "JR_FILTER_ARRIVAL_TIME" = "Giden Uçuş Varış Zamanı";
 "JR_FILTER_RETURN_ARRIVAL_TIME" = "Gelen Uçuş Varış Zamanı";
 
-"JR_FILTER_AIRPORTS_ORIGIN" = "Kalkış";
+"JR_FILTER_AIRPORTS_ORIGIN" = "Şehir";
 "JR_FILTER_AIRPORTS_STOPOVER" = "Aktarmalar";
 "JR_FILTER_AIRPORTS_DESTINATION" = "Nereye";
 
@@ -126,8 +146,21 @@
 "JR_FILTER_GATES" = "Acenteler";
 "JR_FILTER_GATES_ALL" = "Tüm acenteler";
 
-"JR_FILTER_PAYMENT_METHODS" = "Ödeme şekilleri";
+"JR_FILTER_PAYMENT_METHODS" = "Ödeme metotları";
 "JR_FILTER_PAYMENT_METHODS_ALL" = "Tam ödeme şekilleri";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Kurye hizmeti";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Nakit";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Kredi kartı";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Ödeme terminali";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Havale";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Contact ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Borç al";
 
 "JR_FILTER_AIRLINES" = "Hava Yolları";
 "JR_FILTER_AIRLINES_ALL" = "Tüm hava yolları";
@@ -139,25 +172,29 @@
 "JR_FILTER_AIRPORTS" = "Hava Alanları";
 "JR_FILTER_AIRPORTS_ALL" = "Tüm hava alanları";
 
-"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Direkt";
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Aktarmasız";
 "JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d aktarma";
 "JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d aktarma";
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d aktarma";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d aktarma";
 
-"JR_SEARCH_RESULTS_TICKET_PLACEHOLDER_TEXT" = "Filtrelemeden sonra\nseçenek kalmadı";
+"JR_BROWSER_TITLE" = "Satın al";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Geri";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Ileri";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Hata";
 
-"BROWSER_CHECK_CONNECTION" = "Lütfen İnternet bağlantınızı kontrol ediniz. ";
+"BROWSER_CHECK_CONNECTION" = "Lütfen İnternet bağlantınızı kontrol ediniz.";
 "BROWSER_OVERLAY_DEFAULT_TEXT" = "Yükleniyor...";
 "JR_CLOSE_BUTTON_TITLE" = "Kapat";
 
-"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "%@ uçuş güzergahı için arama yaptınız. Üzgünüz, bu hava alanları arasında yapılan uçuşlar bulunamıyor.";
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Üzgünüz, %@ rotasındaki havayolları arasında uçuş bulamadık. Ancak size bu şehirler arasındaki uçuşları gösterebiliriz.";
 
 "JR_SEARCH_RESULTS_TICKET_IN_THE" = "on";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Bir otele mi ihtiyacın var?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Sen uçak bileti ararken senin için doğru oteli seçmene yardımcı oluruz.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Otel bul";
 
 "JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Satın al";
 "JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Şartlar ve Koşullar";
@@ -174,7 +211,7 @@
 "JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "günler";
 "JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "Aşırı ödeme";
 "JR_TICKET_CREDIT_ALERT_DURATION" = "Borç şartı";
-"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "Fiyat üstü";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "fiyat üstü";
 "JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "Mühlet";
 "JR_TICKET_CREDIT_MONTH_2" = "şubat";
 "JR_TICKET_CREDIT_MONTH_1" = "ocak";
@@ -194,10 +231,12 @@
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Borç al";
 "JR_TICKET_FLIGHT" = "Uçuş";
 "JR_TICKET_TRANSFER" = "Duraklama";
-"JR_TICKET_OTHER_BUTTON" = "Diğer";
-"JR_TICKET_DURATION" = "Yolculuk süresi";
+"JR_TICKET_OTHER_BUTTON" = "Daha fazla teklif";
+"JR_TICKET_DURATION" = "Uçuş süresi";
 
-"JR_WAITING_TITLE" = "Arama sürüyor...";
+"JR_TICKET_EXPIRED" = "Arama Sonuçları Eskidi";
+
+"JR_WAITING_TITLE" = "Arıyor...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Sonuç bulunamadı. Arama ölçütlerini değiştirmeyi deneyiniz.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Bağlantı hatası";
 "JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Üzgünüz, JetRadar geçici olarak hizmet dışı";

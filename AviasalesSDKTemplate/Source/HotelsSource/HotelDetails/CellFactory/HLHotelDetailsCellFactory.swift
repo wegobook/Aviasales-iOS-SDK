@@ -1,0 +1,3 @@
+class HLHotelDetailsCellFactory: NSObject {
+
+}

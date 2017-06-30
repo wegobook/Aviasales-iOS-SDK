@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ASTComplexSearchFormFooterView">
+            <connections>
+                <outlet property="addButton" destination="vfC-Pi-92K" id="ghD-zt-g4p"/>
+                <outlet property="removeButton" destination="4z4-hA-jS5" id="XQr-U1-yXj"/>
+                <outlet property="view" destination="iN0-l3-epB" id="sA3-Af-nlA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DtS-bc-0S8">
+                    <rect key="frame" x="60" y="8" width="255" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfC-Pi-92K">
+                            <rect key="frame" x="0.0" y="0.0" width="110" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="TR4-IP-SVd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <state key="normal" title="Add"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="addButtonTapped:" destination="-1" eventType="touchUpInside" id="vXE-KT-AyD"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4z4-hA-jS5">
+                            <rect key="frame" x="145" y="0.0" width="110" height="44"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="110" id="qc7-4W-3r3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                            <state key="normal" title="Remove"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="removeButtonTapped:" destination="-1" eventType="touchUpInside" id="tad-5J-fro"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="4z4-hA-jS5" secondAttribute="trailing" id="2QJ-Gm-rum"/>
+                        <constraint firstItem="vfC-Pi-92K" firstAttribute="leading" secondItem="DtS-bc-0S8" secondAttribute="leading" id="5C1-RR-p4U"/>
+                        <constraint firstItem="vfC-Pi-92K" firstAttribute="top" secondItem="DtS-bc-0S8" secondAttribute="top" id="LmC-YJ-3zo"/>
+                        <constraint firstAttribute="bottom" secondItem="vfC-Pi-92K" secondAttribute="bottom" id="Zuz-zR-Fc6"/>
+                        <constraint firstAttribute="bottom" secondItem="4z4-hA-jS5" secondAttribute="bottom" id="eDV-Bb-r0z"/>
+                        <constraint firstAttribute="width" constant="255" id="iQy-4a-nqV"/>
+                        <constraint firstAttribute="height" constant="44" id="umY-Am-miV"/>
+                        <constraint firstItem="4z4-hA-jS5" firstAttribute="top" secondItem="DtS-bc-0S8" secondAttribute="top" id="wMZ-lH-CR0"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="searchFormBackgroundColor"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="DtS-bc-0S8" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="VaZ-cm-UcC"/>
+                <constraint firstItem="DtS-bc-0S8" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="zio-ar-yku"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="searchFormBackgroundColor"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="19" y="13"/>
+        </view>
+    </objects>
+</document>

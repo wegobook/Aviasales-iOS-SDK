@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "daripada";
+
+"HL_LOC_GUEST##{one}" = "tetamu";
+"HL_LOC_GUEST##{few}" = "tetamu";
+"HL_LOC_GUEST##{many}" = "tetamu";
+"HL_LOC_GUEST##{other}" = "tetamu";
+
+"HL_LOC_GUEST_ADULT##{one}" = "dewasa";
+"HL_LOC_GUEST_ADULT##{few}" = "dewasa";
+"HL_LOC_GUEST_ADULT##{many}" = "dewasa";
+"HL_LOC_GUEST_ADULT##{other}" = "dewasa";
+
+"HL_LOC_GUEST_KID##{one}" = "kanak-kanak";
+"HL_LOC_GUEST_KID##{few}" = "kanak-kanak";
+"HL_LOC_GUEST_KID##{many}" = "kanak-kanak";
+"HL_LOC_GUEST_KID##{other}" = "kanak-kanak";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "Hotel";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "Bandar atau hotel";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "Kanak-kanak";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Dewasa";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "Tarikh";
+
+"HL_LOC_YEAR##{one}" = "tahun";
+"HL_LOC_YEAR##{few}" = "tahun";
+"HL_LOC_YEAR##{many}" = "tahun";
+"HL_LOC_YEAR##{other}" = "tahun";
+
+"HL_LOC_NIGHT##{one}" = "malam";
+"HL_LOC_NIGHT##{few}" = "malam";
+"HL_LOC_NIGHT##{many}" = "malam";
+"HL_LOC_NIGHT##{other}" = "malam";
+
+"HL_LOC_FOR_NIGHT##{one}" = "%d\U00A0malam";
+"HL_LOC_FOR_NIGHT##{few}" = "%d\U00A0malam";
+"HL_LOC_FOR_NIGHT##{many}" = "%d\U00A0malam";
+"HL_LOC_FOR_NIGHT##{other}" = "%d\U00A0malam";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Ralat";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Sila pilih bilangan tetamu";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Sila pilih destinasi anda";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Keputusan carian";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "Cari hotel";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Dapatkan harga";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "Pilih tarikh";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Maaf, tempoh maksimum untuk tinggal di hotel terhad kepada 30 hari";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "Kanak-kanak";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Bayi";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Umur";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Guna";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Batal";
+
+"HL_CLEAN_BUTTON_TITLE" = "Kosongkan";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "Carian terkini";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Bandar";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Hotel";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Lapangan Terbang";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "Berhampiran anda";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "Bandar dan hotel";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "Tiada apa ditemui";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "Penapis";
+"HL_LOC_FILTER_DROP_BUTTON" = "Set semula";
+"HL_LOC_FILTER_APPLY_BUTTON" = "Selesai";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Tambang";
+"HL_LOC_FILTER_RANGE" = "dari %@ ke %@";
+"HL_LOC_FILTER_FROM_STRING" = "dari";
+"HL_LOC_FILTER_TO_STRING" = "hingga";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Jarak ke:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Pusat";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Makanan dan bayaran";
+"HL_LOC_FILTER_STARS_SECTION" = "Bintang";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Jenis hartanah";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Sembunyikan hasil carian";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "Daerah";
+"HL_LOC_FILTER_GATES_SECTION" = "Agensi tempahan";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "Agensi tempahan";
+"HL_LOC_FILTER_SELECT_GATES" = "Pilih agensi";
+"HL_LOC_FILTER_ALL_GATES" = "Semua agensi";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Daerah";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "Pilih daerah";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "Semua daerah";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Jarak ke";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Sarapan";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "Semua termasuk";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "Pembatalan percuma";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "Bayar sekarang";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "Seluruh rumah";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "Bilik";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "Sembunyikan hostel dan rumah tamu";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "Sembunyi pangsapuri";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "Sembunyikan asrama";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Bilik mandi peribadi";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "Tiada hasil ditemui";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "Pemandangan indah";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "Restoran";
+"HL_LOC_FILTER_AMENITY_PARKING" = "Ruang Parkir";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "Merokok dibenarkan";
+"HL_LOC_FILTER_AMENITY_PETS" = "Haiwan dibenarkan";
+"HL_LOC_FILTER_AMENITY_TV" = "TV";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "Dobi";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "Penyaman udara";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "Internet";
+"HL_LOC_FILTER_AMENITY_POOL" = "Kolam";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "Kecergasan";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "Pengering rambut";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Penjagaan budak";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Bilik mandi peribadi";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Peti Besi";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Mencari";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "Tempat menarik";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Pantai";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "Sebarang pantai";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Lif ski";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Sebarang lif ski";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Mana-mana stesen bawah tanah";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Lapangan Terbang";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Stesen kereta api";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "Tempat pada peta";
+"HL_LOC_SEARCH_POINT_TEXT" = "Cari tempat";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ dan berhampiran";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "Selesai";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "Tempat pada peta";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "Lokasi semasa";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "Pusat bandar";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "Lokasi semasa";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "Keputusan carian";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Agensi dengan antara muka Inggeris";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Kemudahan bilik";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Kemudahan hotel";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Nama hotel";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Bayar di hotel";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Sembunyi hartanah yang habis dijual";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ hotel daripada %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ hotel daripada %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ hotel daripada %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ hotel daripada %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ hotel daripada %@";
+"HL_LOC_FILTER_RATING_CRITERIA" = "Penilaian";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "Tapis mengikut nama hotel";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "Hotel berdekatan";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "Tapis mengikut nama hotel";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "Laman web hotel";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "Peta";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Penapis";
+"HL_SORT_BUTTON_TITLE_LABEL" = "Sisih";
+
+"HL_DISCOUNT" = "diskaun";
+"HL_SPECIAL_PRICE_TITLE" = "tawaran istimewa";
+
+"HL_LOC_ADULT##{one}" = "dewasa";
+"HL_LOC_ADULT##{few}" = "dewasa";
+"HL_LOC_ADULT##{many}" = "dewasa";
+"HL_LOC_ADULT##{other}" = "dewasa";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "km";
+"HL_LOC_METERS_ABBREVIATION" = "m";
+"HL_LOC_MILES_ABBREVIATION" = "bt";
+
+"HL_NEW_SEARCH_BUTTON" = "Carian baru";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "Set semula penapis";
+
+"HL_LOC_NO_ROOMS" = "Tiada bilik";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "untuk tarikh ini";
+"HL_LOC_ROOMS_OUTDATED" = "Sudah lama";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "Sila mula semula carian";
+"HL_LOC_ROOMS_SOLD" = "Habis ditempah";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "untuk tarikh ini";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "Terdapat dua atau lebih hotel di tempat ini, jadi kami mengumpulkannya sekali.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "Terdapat lebih daripada satu hotel di tempat ini.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "Susun mengikut:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "Kepopularan";
+"HL_LOC_SORT_TYPE_RATING" = "Penilaian";
+"HL_LOC_SORT_TYPE_PRICE" = "Tambang";
+"HL_LOC_SORT_TYPE_DISTANCE" = "Jarak ke:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "Diskaun";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "Tetapan";
+
+"HL_LOC_ABOUT_CURRENCY" = "Matawang";
+
+"LOC_RATE_APP_TITLE" = "Nilaikan aplikasi ini";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "Hubungi kami";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "Beritahu kami apa masalahnya:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "Versi";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Mencari";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "Penilaian Terperinci ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Tunjukkan %@ lagi";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "Sembunyi";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Semua bilik";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Penilaian";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Galeri";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Lokasi";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Butiran penginapan";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Maklumat berguna";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Kemudahan bilik";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Butiran hartanah";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Kemudahan hotel";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "Tetamu";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "Daftar masuk";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "Daftar keluar";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Bayaran pembersihan";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Deposit keselamatan";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Diperlukan";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "pasangan";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "keluarga";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "sendiri";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "perniagaan";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "Staf bercakap: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "Staf bercakap: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "Staf bercakap: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "Staf bercakap: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Parkir percuma";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Hotel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Pangsapuri";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Hostel";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Hotel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Hotel-Apart";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Katil & Sarapan";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Pangsapuri";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Motel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Rumah tamu";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Hostel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "Resort";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "Ladang";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Rumah percutian";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Rumah Singgah";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Vila";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Bilik peribadi";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "Dibina pada tahun %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "Diubahsuai pada tahun %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ bilik";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ bilik";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ bilik";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ bilik";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "Tunjuk gambar";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Buka peta";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Tempah sekarang untuk ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Tempah sekarang";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Lebih banyak tawaran ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Galeri";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "Kemas kini harga...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Harga terbaik untuk 1 malam";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Tawaran terbaik untuk ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Cuba lagi";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Tukar parameter carian";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Mula semula carian";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Habis ditempah";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "Maaf, kami belum menerima sebarang maklumat terperinci";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "Harga lama";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "Tiada bilik tersedia untuk tarikh yang dipilih";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "Sila pilih tarikh dan tetamu";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ ulasan";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ ulasan";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ ulasan";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ ulasan";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ ulasan";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i lagi";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "Ringkasan rating";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "Butiran rating";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "Ulasan tetamu";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "Tetamu tetap";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "Ulasan utama";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Ralat berlaku";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Lihat lebih banyak ulasan";
+"HL_ALL_REVIEWS_TITLE" = "Ulasan";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Semua agensi";
+"HL_REVIEWS_FILTER" = "Tapis mengikut:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "Reviu yang disahkan 100%";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "Tetamu sebenar. Penginapan sebenar. Pendapat sebenar.";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d ulasan tetamu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d ulasan tetamu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d ulasan tetamu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d ulasan tetamu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d ulasan tetamu";
+
+"HL_NO_HOTEL_REVIEWS" = "Tiada ulasan";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "Mencari bilik...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "Tukar";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "Tarikh dan tetamu";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "Sarapan disertakan";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "Tidak termasuk sarapan";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "Semua termasuk";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "Pembatalan percuma";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "Merokok dibenarkan";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "Termurah";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "Diskaun";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Laman web hotel";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Bayar sekarang";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Bayar kemudian";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Tiada kad kredit diperlukan";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Tawaran istimewa";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Bilik mandi peribadi";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Bilik mandi berkongsi";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Wi-Fi dalam bilik";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "Tinggal %li bilik!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "Tinggal %li bilik!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "Tinggal %li bilik!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "Tinggal %li bilik!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "Tinggal %li bilik!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Kadar biasa untuk hotel ini bermula dari\U00A0%@ untuk\U00A0%d\U00A0malam";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Kadar biasa untuk hotel ini bermula dari\U00A0%@ untuk\U00A0%d\U00A0malam";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Kadar biasa untuk hotel ini bermula dari\U00A0%@ untuk\U00A0%d\U00A0malam";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Kadar biasa untuk hotel ini bermula dari\U00A0%@ untuk\U00A0%d\U00A0malam";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Kadar biasa untuk hotel ini bermula dari\U00A0%@ untuk\U00A0%d\U00A0malam";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "Tawaran %li";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "%@ diskaun daripada kadar biasa";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "Bilik lain";
+
+"HL_LOC_CHECKIN_AFTER" = "selepas";
+"HL_LOC_CHECKOUT_BEFORE" = "sebelum";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "Tawaran %li";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "Tawaran %li";
+
+"HOTEL_RATING_EXCEPTIONAL" = "luar biasa";
+"HOTEL_RATING_WONDERFUL" = "hebat";
+"HOTEL_RATING_EXCELLENT" = "mengagumkan";
+"HOTEL_RATING_VERY_GOOD" = "sangat baik";
+"HOTEL_RATING_GOOD" = "baik";
+"HOTEL_RATING_FAIR" = "skor reviu";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "Tiada hotel ditemui";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "Tiada hasil yang sepadan dengan kriteria yang anda tetapkan";
+"HL_NO_FILTER_RESULTS_BUTTON" = "Set semula penapis";
+
+"HL_NO_RESULTS_TITLE" = "Tiada hotel ditemui";
+"HL_NO_RESULTS_DESCRIPTION" = "Tiada hotel ditemui di bandar terpilih.";
+"HL_NEW_SEARCH_BUTTON" = "Carian baru";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Guna";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Jarak ke lokasi terkini anda:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Jarak dari ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Jarak dari tempat carian:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Jarak dari tempat pada peta:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "Jarak dari %@:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Tambang";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Jarak ke lif ski:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Jarak ke pantai:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "Jarak ke pusat bandar:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "Tidak menemui apa yang anda cari?\nLihat lebih banyak tawaran berhampiran!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "Tiada apa ditemui. Cuba mencari bandar berhampiran.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "Tunjuk hotel berhampiran";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "Hebat! Bagaimana boleh saya ke sana?";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "Cari tiket";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "Mata wang dipilih";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "Mata wang akan ditukar apabila anda mulakan carian seterusnya";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "Tiada sambungan internet";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "Sila periksa sambungan internet anda";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "Ralat pelayan";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "Ralat pelayan telah berlaku. Sila cuba buat carian semula.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "Hasil carian sudah lama";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "Untuk mendapatkan harga yang dikemas kini, sila cuba semula carian anda.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "Kami tidak menerima lokasi anda";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "Benarkan kami untuk mengesan lokasi anda untuk memudahkan carian hotel.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Pergi ke Tetapan";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "Nanti";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Close";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Maklum balas daripada aplikasi iOS";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Ralat";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Anda mesti mengkonfigurasi e-mel klien pada peranti anda.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "Maklumat perkhidmatan yang akan membantu kami menyelesaikan masalah anda";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "Tempah bilik";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "Agensi lain";
+"HL_WAITING_LONG_SEARCH_TITLE" = "Mencari tawaran terbaik";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Ia boleh mengambil masa hingga seminit.\nSila tunggu.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Anda telah menjumpai tawaran anda!\nSekarang lengkapkan tempahan.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moscow";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "New York";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "Sydney";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "London";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "Ottawa";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "Lisbon";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "Bangkok";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "Beijing";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "Paris";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "Berlin";
+"HL_LOC_DEFAULT_CITIES_ROME" = "Rom";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "Madrid";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "Kiev";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "Astana";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "Minsk";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "Tokyo";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "Seoul";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "Brasilia";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "Bandar Taipei";
+"HL_LOC_DEFAULT_CITIES_HK" = "Hong Kong";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "Dubai";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "Rusia";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "Amerika Syarikat";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "Australia";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "United Kingdom";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "Kanada";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "Portugal";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "Thailand";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "China";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "Perancis";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "Jerman";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "Itali";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "Sepanyol";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "Ukraine";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "Kazakhstan";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "Belarus";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "Emiriah Arab Bersatu";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "Jepun";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "Korea Selatan";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brazil";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Taiwan";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";

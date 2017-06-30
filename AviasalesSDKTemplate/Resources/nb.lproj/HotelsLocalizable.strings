@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "av";
+
+"HL_LOC_GUEST##{one}" = "gjest";
+"HL_LOC_GUEST##{few}" = "gjester";
+"HL_LOC_GUEST##{many}" = "gjester";
+"HL_LOC_GUEST##{other}" = "gjester";
+
+"HL_LOC_GUEST_ADULT##{one}" = "voksen";
+"HL_LOC_GUEST_ADULT##{few}" = "voksen";
+"HL_LOC_GUEST_ADULT##{many}" = "voksne";
+"HL_LOC_GUEST_ADULT##{other}" = "voksne";
+
+"HL_LOC_GUEST_KID##{one}" = "barn";
+"HL_LOC_GUEST_KID##{few}" = "barn";
+"HL_LOC_GUEST_KID##{many}" = "barn";
+"HL_LOC_GUEST_KID##{other}" = "barn";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "Hoteller";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "By eller hotell";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "Barn";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Voksne";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "Datoer";
+
+"HL_LOC_YEAR##{one}" = "år";
+"HL_LOC_YEAR##{few}" = "år";
+"HL_LOC_YEAR##{many}" = "år";
+"HL_LOC_YEAR##{other}" = "år";
+
+"HL_LOC_NIGHT##{one}" = "natt";
+"HL_LOC_NIGHT##{few}" = "netter";
+"HL_LOC_NIGHT##{many}" = "netter";
+"HL_LOC_NIGHT##{other}" = "netter";
+
+"HL_LOC_FOR_NIGHT##{one}" = "per\U00A0%d\U00A0natt";
+"HL_LOC_FOR_NIGHT##{few}" = "per\U00A0%d\U00A0netter";
+"HL_LOC_FOR_NIGHT##{many}" = "per\U00A0%d\U00A0netter";
+"HL_LOC_FOR_NIGHT##{other}" = "per\U00A0%d\U00A0netter";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Feil";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Vennligst velg antall gjester";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Vennligst velg destinasjon";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Søkeresultater";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "Finn hotell";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Hent priser";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "Velg datoer";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Beklager, men opphold på hotell er begrenset til maksimalt 30 dager";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "Barn";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Spedbarn";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Alder";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Bruk";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Avbryt";
+
+"HL_CLEAN_BUTTON_TITLE" = "Fjern";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "Nylige søk";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Byer";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Hoteller";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Flyplasser";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "Nær deg";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "Byer og hoteller";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "Ingenting funnet";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "Søkefiltre";
+"HL_LOC_FILTER_DROP_BUTTON" = "Nullstill";
+"HL_LOC_FILTER_APPLY_BUTTON" = "Ferdig";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Pris";
+"HL_LOC_FILTER_RANGE" = "fra %@ til %@";
+"HL_LOC_FILTER_FROM_STRING" = "fra";
+"HL_LOC_FILTER_TO_STRING" = "opptil";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Avstand til:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Sentrum";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Måltider og betaling";
+"HL_LOC_FILTER_STARS_SECTION" = "Stjerner";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Overnattingstype";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Skjul resultater";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "Områder";
+"HL_LOC_FILTER_GATES_SECTION" = "Bookingselskaper";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "Bookingselskaper";
+"HL_LOC_FILTER_SELECT_GATES" = "Velg bookingselskaper";
+"HL_LOC_FILTER_ALL_GATES" = "Alle reisebyråer";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Områder";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "Velg områder";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "Alle områder";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Avstand til";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Frokost";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "All inclusive";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "Gratis avbestilling";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "Betal nå";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "Hele hjem";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "Rom";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "Skjul vertshus og gjestehus";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "Skjul leiligheter";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "Skjul sovesaler";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Privat bad";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "Ingen resultater funnet";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "Flott utsikt";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "Restaurant";
+"HL_LOC_FILTER_AMENITY_PARKING" = "Parkering";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "Røyking tillatt";
+"HL_LOC_FILTER_AMENITY_PETS" = "Kjæledyr tillatt";
+"HL_LOC_FILTER_AMENITY_TV" = "TV";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "Klesvask";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "Klimaanlegg";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "Internett";
+"HL_LOC_FILTER_AMENITY_POOL" = "Svømmebasseng";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "Fitnessenter";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "Hårføner";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Barnevakt";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Privat bad";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Safe";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Søk";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "Severdighet";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Strender";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "Alle strender";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Skiheis";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Alle skiheiser";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Alle undergrunnsstasjoner";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Flyplasser";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Togstasjoner";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "Punkt på kartet";
+"HL_LOC_SEARCH_POINT_TEXT" = "Søkepunkt";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ og i nærheten";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "Ferdig";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "Punkt på kartet";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "Gjeldende plassering";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "Bysentrum";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "Gjeldende plassering";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "Søkeresultater";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Bookingselskaper på engelsk";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Romfasiliteter";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Hotellfasiliteter";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Hotellnavn";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Betal på hotellet";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Skjul utsolgte steder";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ hoteller av %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ hotell av %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ hoteller av %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ hoteller av %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ hoteller av %@";
+"HL_LOC_FILTER_RATING_CRITERIA" = "Vurdering";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "Sorter etter hotellnavn";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "Nærliggende hoteller";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "Sorter etter hotellnavn";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "Hotellnettsider";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "Kart";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Søkefiltre";
+"HL_SORT_BUTTON_TITLE_LABEL" = "Sorter";
+
+"HL_DISCOUNT" = "rabatt";
+"HL_SPECIAL_PRICE_TITLE" = "spesialtilbud";
+
+"HL_LOC_ADULT##{one}" = "voksen";
+"HL_LOC_ADULT##{few}" = "voksne";
+"HL_LOC_ADULT##{many}" = "voksne";
+"HL_LOC_ADULT##{other}" = "voksne";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "km";
+"HL_LOC_METERS_ABBREVIATION" = "m";
+"HL_LOC_MILES_ABBREVIATION" = "mi";
+
+"HL_NEW_SEARCH_BUTTON" = "Nytt søk";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "Tilbakestill filtre";
+
+"HL_LOC_NO_ROOMS" = "Ingen rom";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "på disse datoene";
+"HL_LOC_ROOMS_OUTDATED" = "Utdatert";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "Vennligst start søket på nytt";
+"HL_LOC_ROOMS_SOLD" = "Utsolgt";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "på disse datoene";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "Det finnes flere enn ett hotell her, så vi har gruppert dem.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "Det finnes mer enn ett hotell her.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "Sorter etter:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "Popularitet";
+"HL_LOC_SORT_TYPE_RATING" = "Vurdering";
+"HL_LOC_SORT_TYPE_PRICE" = "Pris";
+"HL_LOC_SORT_TYPE_DISTANCE" = "Avstand til:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "Rabatt";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "Innstillinger";
+
+"HL_LOC_ABOUT_CURRENCY" = "Valuta";
+
+"LOC_RATE_APP_TITLE" = "Vurder denne appen";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "Kontakt oss";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "Fortell oss hva som var galt";
+"HL_LOC_ABOUT_VERSION_TITLE" = "Versjon";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Søk";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "Detaljert vurdering ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Vis %@ mer";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "Skjul";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Alle rom";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Vurdering";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Galleri";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Plassering";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Overnattingsdetaljer";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Nyttig informasjon";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Romfasiliteter";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Eiendomsdetaljer";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Hotellfasiliteter";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "Gjester";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "Innsjekk";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "Utsjekk";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Rengjøringsavgift";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Depositum";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Påkrevd";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "par";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "familier";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "alene";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "forretningsreise";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "Hotellansatte snakker: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "Hotellansatte snakker: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "Hotellansatte snakker: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "Hotellansatte snakker: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Gratis parkering";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Hoteller";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Leiligheter";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Vertshus";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Hotell";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Leilighetshotell";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Bed & breakfast";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Leiligheter";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Motell";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Gjestehus";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Vertshus";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "Resort";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "Gård";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Feriehus";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Hytte";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Villa";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Privat rom";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "Bygd i %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "Renovert i %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ rom";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ rom";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ rom";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ rom";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "Vis bilder";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Åpne kart";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Bestill nå for ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Bestill nå";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Flere kupp ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Galleri";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "Oppdaterer priser...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Beste pris for én natt";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "De beste tilbudene for ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Prøv igjen";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Endre søkeparametre";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Søk på nytt";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Utsolgt";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "Beklager, vi har ikke mottatt detaljert informasjon";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "Prisene er utdaterte";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "Ingen tilgjengelige rom på valgte datoer";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "Vennligst velg datoer og gjester";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ anmeldelser";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ anmeldelse";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ anmeldelser";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ anmeldelser";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ anmeldelser";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i til";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "Vurderingssammendrag";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "Vurderingsdetaljer";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "Gjesteanmeldelser";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "Gjestestatistikk";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "Hovedpunkter";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "En feil har oppstått";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Se flere anmeldelser";
+"HL_ALL_REVIEWS_TITLE" = "Anmeldelser";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Alle reisebyråer";
+"HL_REVIEWS_FILTER" = "Filtrer etter:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "100 % verifiserte omtale";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "Ekte gjester. Ekte opphold. Ekte meninger.";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d gjesteanmeldelser";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d gjesteanmeldelse";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d gjesteanmeldelser";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d gjesteanmeldelser";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d gjesteanmeldelser";
+
+"HL_NO_HOTEL_REVIEWS" = "Ingen anmeldelser";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "Søker etter rom...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "Endre";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "Dato og gjester";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "Frokost inkludert";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "Frokost ikke inkludert";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "All inclusive";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "Gratis avbestilling";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "Røyking tillatt";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "Billigst";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "Rabatt";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Hotellnettside";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Betal nå";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Betal senere";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Ingen kredittkort påkrevd";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Spesialtilbud";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Privat bad";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Delt bad";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "WiFi på rommet";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "%li rom igjen!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "%li rom igjen!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "%li rom igjen!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "%li rom igjen!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "%li rom igjen!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Ordinære priser for dette hotellet fra\U00A0%@ for\U00A0%d\U00A0netter";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Ordinære priser for dette hotellet fra\U00A0%@ for\U00A0%d\U00A0natt";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Ordinære priser for dette hotellet fra\U00A0%@ for\U00A0%d\U00A0netter";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Ordinære priser for dette hotellet fra\U00A0%@ for\U00A0%d\U00A0netter";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Ordinære priser for dette hotellet fra\U00A0%@ for\U00A0%d\U00A0netter";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li kupp";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "%@ rabatt av ordinær pris";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "Andre rom";
+
+"HL_LOC_CHECKIN_AFTER" = "etter";
+"HL_LOC_CHECKOUT_BEFORE" = "før";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li kupp";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li kupp";
+
+"HOTEL_RATING_EXCEPTIONAL" = "over all forventning";
+"HOTEL_RATING_WONDERFUL" = "fantastisk";
+"HOTEL_RATING_EXCELLENT" = "utmerket";
+"HOTEL_RATING_VERY_GOOD" = "meget bra";
+"HOTEL_RATING_GOOD" = "bra";
+"HOTEL_RATING_FAIR" = "poengvurdering";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "Ingen hoteller funnet";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "Ingen resultater passer til søkekriteriene dine";
+"HL_NO_FILTER_RESULTS_BUTTON" = "Tilbakestill filtre";
+
+"HL_NO_RESULTS_TITLE" = "Ingen hoteller funnet";
+"HL_NO_RESULTS_DESCRIPTION" = "Ingen hoteller funnet i valgt by.";
+"HL_NEW_SEARCH_BUTTON" = "Nytt søk";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Bruk";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Avstand til gjeldende plassering:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Avstand fra ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Avstand fra søkepunkt:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Avstand fra punktet på kartet:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "Avstand fra %@:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Pris";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Avstand til skiheis:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Avstand til strand:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "Avstand til bysenter:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "Fant du ikke det du leter etter?\nSe flere tilbud i nærheten!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "Ingenting funnet. Prøv å søke med nærliggende byer.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "Vis hoteller i nærheten";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "Kult! Hvordan kommer jeg dit?";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "Finn billetter";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "Valgt valuta";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "Valutaen endres når du starter neste søk";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "Ingen internettforbindelse";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "Vennligst kontroller internettforbindelsen din";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "Serverfeil";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "Serverfeilen har oppstått. Vennligst prøv å søke igjen.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "Resultatene er utdaterte";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "Søk på nytt for å få oppdaterte priser.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "Vi fant ikke plasseringen din";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "La oss vite plasseringen din for å gjøre det enklere å søke etter hotell.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Gå til Innstillinger";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "Senere";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Lukk";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Tilbakemelding fra iOS-app";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Feil";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Du må konfigurere e-postklienten på enheten din.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "Tjenesteinformasjon som hjelper oss med å løse problemet ditt";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "Bestill et rom";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "Andre bookingselskaper";
+"HL_WAITING_LONG_SEARCH_TITLE" = "Søker etter de beste tilbudene";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Det kan ta inntil ett minutt.\nVennligst vent.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Fullfør bestillingen via reiseselskapets nettside.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moskva";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "New York";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "Sydney";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "London";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "Ottawa";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "Lisboa";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "Bangkok";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "Beijing";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "Paris";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "Berlin";
+"HL_LOC_DEFAULT_CITIES_ROME" = "Roma";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "Madrid";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "Kiev";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "Astana";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "Minsk";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "Tokyo";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "Seoul";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "Brasilia";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "Taipei";
+"HL_LOC_DEFAULT_CITIES_HK" = "Hong Kong";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "Dubai";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "Russland";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "USA";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "Australia";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "Storbritannia";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "Canada";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "Portugal";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "Thailand";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "Kina";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "Frankrike";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "Tyskland";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "Italia";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "Spania";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "Ukraina";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "Kazakhstan";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "Hviterussland";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "De forente arabiske emirater";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "Japan";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "Sør-Korea";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brasil";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Taiwan";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";

@@ -1,0 +1,3 @@
+class FilterSection: BaseSection {
+
+}

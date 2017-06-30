@@ -1,0 +1,242 @@
+"LANGUAGE" = "ms";
+
+"SHORT_TIME_FORMAT" = "%@j %@m";
+"LONG_TIME_FORMAT" = "%@ j %@ min";
+
+"JR_ERROR_TITLE" = "RALAT";
+
+"JR_BACK_TITLE" = "Kembali";
+
+"JR_TRY_AGAIN_TITLE" = "Cuba lagi";
+
+"JR_CANCEL_TITLE" = "Batal";
+
+"CURRENCY" = "Matawang";
+
+"JR_ANY_AIRPORT" = "Sebarang lapangan terbang";
+
+"JR_OK_BUTTON" = "OK";
+
+"JR_DONE_BUTTON" = "SELESAI";
+
+"JR_NEW_SEARCH_TITLE" = "Carian baru";
+
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Tarikh berlepas";
+"JR_DATE_PICKER_RETURN_DATE_TITLE" = "Tarikh kembali";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Tarikh penerbangan";
+"JR_DATE_PICKER_TODAY_DATE_TITLE" = "Hari ini";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Cari tiket";
+"JR_SEARCHINFO_BUSINESS" = "Perniagaan";
+"JR_SEARCHINFO_ECONOMY" = "Ekonomi";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Ekonomi Premium";
+"JR_SEARCHINFO_FIRST" = "Kelas Pertama";
+"JR_SEARCHINFO_PASSENGERS##{one}" = "%d penumpang";
+"JR_SEARCHINFO_PASSENGERS##{few}" = "%d penumpang";
+"JR_SEARCHINFO_PASSENGERS##{many}" = "%d penumpang";
+"JR_SEARCHINFO_PASSENGERS##{other}" = "%d penumpang";
+"JR_SEARCH_FORM_PASSENGERS" = "Penumpang";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "Kelas";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Bandar ketibaan";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "Bandar pelepasan";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "Tarikh";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "Ke";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "Dari";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "Pelbagai bandar";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "Berlepas";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "Kembali";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "kembali";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Asas";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Keluar";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Kembali";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Satu hala";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Pergi-balik";
+"JR_SEARCH_FORM_TITLE" = "Penerbangan";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "CARI TIKET";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Bilangan bayi dalam perjalanan tanpa kerusi tidak boleh melebihi jumlah dewasa yang mengiringi.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Sila masukkan lapangan terbang pelepasan";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Sila masukkan lapangan terbang ketibaan";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR" = "Lapangan terbang pelepasan dan ketibaan mesti berbeza.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE" = "Sila masukkan tarikh berlepas";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "Pilih";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "TAMBAH";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "PADAM";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "Penumpang dan kelas";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "Dewasa";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "16 tahun ke atas";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "Kanak-kanak";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "2-15 tahun";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "Bayi";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "0-2 tahun";
+
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "Kurangkan bilangan penumpang %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "Tambahkan bilangan penumpang %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC" = "%@ penumpang %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12" = "12+";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS" = "BAWAH 12 TAHUN";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS" = "BAWAH 2 TAHUN";
+
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{one}" = "dewasa";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{few}" = "dewasa";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "dewasa";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "dewasa";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "kanak-kanak";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "kanak-kanak";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "kanak-kanak";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "kanak-kanak";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "bayi";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "bayi";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "bayi";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "bayi";
+
+"JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "Destinasi";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "Lapangan terbang terdekat";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "Perkhidmatan geolokasi tidak tersedia buat sementara waktu";
+
+"JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "Asal";
+"JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "Tiada lapangan terbang berdekatan anda";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "Masukkan bandar atau lapangan terbang";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "Mencari";
+"JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Minat";
+"JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Laluan berdasarkan minat";
+"JR_AIRPORT_PICKER_BACK_BUTTON" = "Kembali";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Carian terdahulu:";
+"JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Tiada hasil ditemui";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Sedang mencari...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Mencari lapangan terbang berdekatan...";
+
+"JR_FILTER_BUTTON" = "Penapis";
+
+"JR_FILTER_RESET_ALL" = "Kosongkan semua";
+"JR_FILTER_RESET" = "Kosong";
+"JR_FILTER_TICKETS_NOT_FOUND" = "Tiada hasil ditemui";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "Tiada tiket dijumpai";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "Sila tukar tetapan penapis anda.";
+
+"JR_FILTER_STOPOVER_OVERNIGHT" = "Singgah sebentar bermalam";
+"JR_FILTER_PRICE_FILTER" = "Tambang";
+"JR_FILTER_TOTAL_DURATION" = "Masa perjalanan";
+"JR_FILTER_DELAY_DURATION" = "Tempoh singgah";
+"JR_FILTER_TOTAL_TIME_FROM" = "dari";
+"JR_FILTER_TOTAL_DURATION_FROM" = "dari";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "ke";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "sehingga";
+
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d penerbangan bermula dari %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d penerbangan bermula dari %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d penerbangan bermula dari %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d penerbangan bermula dari %@";
+
+"JR_FILTER_RETURN_DEPARTURE_TIME" = "Masa belepas kembali";
+"JR_FILTER_DEPARTURE_TIME" = "Masa berlepas keluar";
+"JR_FILTER_ARRIVAL_TIME" = "Masa ketibaan keluar";
+"JR_FILTER_RETURN_ARRIVAL_TIME" = "Masa ketibaan kembali";
+
+"JR_FILTER_AIRPORTS_ORIGIN" = "Dari";
+"JR_FILTER_AIRPORTS_STOPOVER" = "Persinggahan";
+"JR_FILTER_AIRPORTS_DESTINATION" = "Ke";
+
+"JR_FILTER_DAY_TIME_MORNING" = "pagi";
+"JR_FILTER_DAY_TIME_DAY" = "tengah hari";
+"JR_FILTER_DAY_TIME_EVENING" = "petang";
+
+"JR_FILTER_GATES" = "Agensi";
+"JR_FILTER_GATES_ALL" = "Semua agensi";
+
+"JR_FILTER_PAYMENT_METHODS" = "Kaedah pembayaran";
+"JR_FILTER_PAYMENT_METHODS_ALL" = "Semua kaedah pembayaran";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Perkhidmatan kurier";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Tunai";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "Kad kredit";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Terminal pembayaran";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Pemindahan bank";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Kenalan ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "Dapatkan pinjaman";
+
+"JR_FILTER_AIRLINES" = "Syarikat Penerbangan";
+"JR_FILTER_AIRLINES_ALL" = "Semua syarikat penerbangan";
+
+"JR_FILTER_ALLIANCES" = "Penggabungan";
+"JR_FILTER_OTHER_ALLIANCES" = "Syarikat tanpa pakatan";
+"JR_FILTER_ALLIANCES_ALL" = "Semua penggabungan";
+
+"JR_FILTER_AIRPORTS" = "Lapangan Terbang";
+"JR_FILTER_AIRPORTS_ALL" = "Semua lapangan terbang";
+
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "Terus";
+"JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d hentian";
+"JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d hentian";
+"JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d hentian";
+"JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d hentian";
+
+"JR_BROWSER_TITLE" = "Pembelian";
+
+"JR_BROWSER_BACK_BTN_TITLE" = "Kembali";
+"JR_BROWSER_FORWARD_BTN_TITLE" = "Ke hadapan";
+"JR_BROWSER_ERROR_ALERT_TITLE" = "Ralat";
+
+"BROWSER_CHECK_CONNECTION" = "Sila periksa sambungan internet anda.";
+"BROWSER_OVERLAY_DEFAULT_TEXT" = "Memuatkan...";
+"JR_CLOSE_BUTTON_TITLE" = "Close";
+
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Maaf, kami tidak dapat mencari penerbangan di antara lapangan terbang bagi laluan %@. Walau bagaimanapun, kami akan menunjukkan anda penerbangan antara bandar-bandar ini.";
+
+"JR_SEARCH_RESULTS_TICKET_IN_THE" = "buka";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "Perlukan hotel?";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "Sementara anda mencari tiket kapal terbang, kami akan bantu anda memilih hotel yang sesuai untuk anda.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "Cari hotel";
+
+"JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "Beli";
+"JR_TICKET_CREDIT_ALERT_CONDITIONS" = "Terma dan Syarat";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{few}" = "pembayaran";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{one}" = "pembayaran";
+"JR_TICKET_CREDIT_ALERT_CANCEL_BUTTON" = "Batal";
+"JR_TICKET_CREDIT_ALERT_DAYS##{one}" = "hari";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{other}" = "pembayaran";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{many}" = "pembayaran";
+"JR_TICKET_CREDIT_ALERT_DAYS##{few}" = "hari";
+"JR_TICKET_CREDIT_ALERT_MONTH" = "bulan";
+"JR_TICKET_CREDIT_ALERT_DAYS##{other}" = "hari";
+"JR_TICKET_CREDIT_ALERT_TILL" = "sehingga";
+"JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "hari";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "Bayaran berlebihan";
+"JR_TICKET_CREDIT_ALERT_DURATION" = "Tempoh pinjaman";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "daripada harga";
+"JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "Tempoh penangguhan";
+"JR_TICKET_CREDIT_MONTH_2" = "februari";
+"JR_TICKET_CREDIT_MONTH_1" = "januari";
+"JR_TICKET_CREDIT_MONTH_3" = "mac";
+"JR_TICKET_CREDIT_MONTH_6" = "jun";
+"JR_TICKET_CREDIT_MONTH_4" = "april";
+"JR_TICKET_CREDIT_MONTH_7" = "julai";
+"JR_TICKET_CREDIT_MONTH_5" = "mei";
+"JR_TICKET_CREDIT_MONTH_8" = "ogos";
+"JR_TICKET_CREDIT_MONTH_9" = "september";
+"JR_TICKET_CREDIT_MONTH_10" = "oktober";
+"JR_TICKET_CREDIT_MONTH_11" = "november";
+"JR_TICKET_CREDIT_MONTH_12" = "disember";
+
+"JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Beli di";
+"JR_TICKET_BUY_BUTTON" = "Beli tiket";
+"JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Dapatkan pinjaman";
+"JR_TICKET_FLIGHT" = "Penerbangan";
+"JR_TICKET_TRANSFER" = "Singgah sebentar";
+"JR_TICKET_OTHER_BUTTON" = "Lebih banyak tawaran";
+"JR_TICKET_DURATION" = "Tempoh penerbangan";
+
+"JR_TICKET_EXPIRED" = "Hasil carian sudah lapuk";
+
+"JR_WAITING_TITLE" = "Sedang mencari...";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Tiada hasil dijumpai. Cuba menyesuaikan parameter carian.";
+"JR_WAITING_ERROR_CONNECTION_ERROR" = "Ralat sambungan";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Maaf, perkhidmatan Jetradar tidak tersedia buat sementara waktu";

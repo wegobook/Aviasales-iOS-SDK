@@ -6,24 +6,7 @@
 //
 
 #import "DateUtil.h"
-
-#if __IPHONE_OS_VERSION_MIN_REQUIRED ==  __IPHONE_8_0 || WATCH
-#define kDateUtilGregorianIdentifier NSCalendarIdentifierGregorian
-#define kDateUtilUnitYear NSCalendarUnitYear
-#define kDateUtilUnitMonth NSCalendarUnitMonth
-#define kDateUtilUnitDay NSCalendarUnitDay
-#define kDateUtilUnitHour NSCalendarUnitHour
-#define kDateUtilUnitMinute NSCalendarUnitMinute
-#define kDateUtilUnitWeekday NSCalendarUnitWeekday
-#else
-#define kDateUtilGregorianIdentifier NSGregorianCalendar
-#define kDateUtilUnitYear NSYearCalendarUnit
-#define kDateUtilUnitMonth NSMonthCalendarUnit
-#define kDateUtilUnitDay NSDayCalendarUnit
-#define kDateUtilUnitHour NSHourCalendarUnit
-#define kDateUtilUnitMinute NSMinuteCalendarUnit
-#define kDateUtilUnitWeekday NSWeekdayCalendarUnit
-#endif
+#import "AviasalesSDKTemplate-Swift.h"
 
 #define kDateFormatterThreadDictionaryKey @"JRDateFomatter"
 
@@ -65,7 +48,7 @@
     if (gregorianCalendar == nil) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
-            gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:kDateUtilGregorianIdentifier];
+            gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
             [gregorianCalendar setLocale:[NSLocale currentLocale]];
             [gregorianCalendar setTimeZone:[self GMTTimeZone]];
         });
@@ -322,7 +305,7 @@ static BOOL user24HourTimeCyclePreference = NO;
         update24HourTimeCyclePreference();
     }
     
-	if (user24HourTimeCyclePreference == YES || [AVIASALES__(@"LANGUAGE", nil) isEqualToString:@"ru"]) {
+	if (user24HourTimeCyclePreference || [AVIASALES__(@"LANGUAGE", nil) isEqualToString:@"ru"]) {
         
         [formatter setDateFormat:@"HH:mm"];
         
@@ -376,7 +359,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSInteger)timeInMinutesOfDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitHour | kDateUtilUnitMinute) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
     
 	NSInteger hours = [components hour];
 	NSInteger minutes = [components minute];
@@ -388,7 +371,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)resetTimeForDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitHour | kDateUtilUnitMinute| kDateUtilUnitDay | kDateUtilUnitMonth | kDateUtilUnitYear) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:date];
 	[components setHour:0];
 	[components setMinute:0];
 	return [gregorian dateFromComponents:components];
@@ -397,13 +380,13 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *) getTimeForDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitHour | kDateUtilUnitMinute) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitHour | NSCalendarUnitMinute) fromDate:date];
 	return [gregorian dateByAddingComponents:components toDate:[NSDate distantPast] options:0];
 }
 
 +(NSDateComponents *)componentsFromDate:(NSDate *)date
 {
-    NSUInteger timeComps = (kDateUtilUnitYear | kDateUtilUnitMonth | kDateUtilUnitDay | kDateUtilUnitHour | kDateUtilUnitMinute | kDateUtilUnitWeekday);
+    NSUInteger timeComps = (NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitWeekday);
     NSDateComponents *components = [[self gregorianCalendar] components:timeComps fromDate:date];
     
     return components;
@@ -423,7 +406,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)resetTimeForDate:(NSDate *)date timeZone:(NSTimeZone *)timeZone
 {
     NSCalendar * gregorian = [DateUtil gregorianCalendar];
-    NSDateComponents *components = [gregorian components:(kDateUtilUnitHour | kDateUtilUnitMinute| kDateUtilUnitDay | kDateUtilUnitMonth | kDateUtilUnitYear) fromDate:timeZone ? [date dateByAddingTimeInterval:[timeZone secondsFromGMT]] : date];
+    NSDateComponents *components = [gregorian components:(NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:timeZone ? [date dateByAddingTimeInterval:[timeZone secondsFromGMT]] : date];
     [components setHour:0];
     [components setMinute:0];
     return [gregorian dateFromComponents:components];
@@ -432,7 +415,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)gmtTimeZoneResetTimeForDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitHour | kDateUtilUnitMinute| kDateUtilUnitDay | kDateUtilUnitMonth | kDateUtilUnitYear) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:date];
 	[components setHour:0];
 	[components setMinute:0];
 	return [gregorian dateFromComponents:components];
@@ -441,7 +424,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)firstDayOfMonth:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitDay | kDateUtilUnitMonth | kDateUtilUnitYear) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:date];
 	[components setDay:1];
 	return [gregorian dateFromComponents:components];
 }
@@ -449,14 +432,14 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSInteger)dayOfMonthNumber:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitDay) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitDay) fromDate:date];
 	return [components day];
 }
 
 +(NSInteger)monthNumber:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitMonth) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitMonth) fromDate:date];
 	return [components month];
 }
 
@@ -466,7 +449,7 @@ static BOOL user24HourTimeCyclePreference = NO;
     
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
     
-	NSDateComponents * components = [gregorian components:kDateUtilUnitYear|kDateUtilUnitMonth|kDateUtilUnitDay fromDate:month_];
+	NSDateComponents * components = [gregorian components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:month_];
 	components.day = [dateNumber_ integerValue];
     
 	//NSDate *dateWithNumber = [firstDateOfMonth dateByAddingTimeInterval:86400*[dateNumber_ intValue]];//-1];
@@ -487,7 +470,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)nextMonthForDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents * components = [gregorian components:kDateUtilUnitYear|kDateUtilUnitMonth fromDate:date];
+	NSDateComponents * components = [gregorian components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:date];
 	components.month++;
 	NSDate * res = [gregorian dateFromComponents:components];
 	return res;
@@ -496,7 +479,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)prevMonthForDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents * components = [gregorian components:kDateUtilUnitYear|kDateUtilUnitMonth fromDate:date];
+	NSDateComponents * components = [gregorian components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:date];
 	components.month--;
 	NSDate * res = [gregorian dateFromComponents:components];
 	return res;
@@ -505,7 +488,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)nextYearDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents * components = [gregorian components:kDateUtilUnitYear| kDateUtilUnitMonth | kDateUtilUnitDay fromDate:date];
+	NSDateComponents * components = [gregorian components:NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay fromDate:date];
 	components.year++;
 	NSDate * res = [gregorian dateFromComponents:components];
 	return res;
@@ -514,7 +497,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *) seasonForDate:(NSDate *)date
 {
 	NSCalendar * calendar = [DateUtil gregorianCalendar];
-	NSDateComponents * comps = [calendar components:kDateUtilUnitMonth|kDateUtilUnitYear fromDate:date];
+	NSDateComponents * comps = [calendar components:NSCalendarUnitMonth|NSCalendarUnitYear fromDate:date];
 	if (comps.month < 3) {
 		comps.year -= 1;
 	}
@@ -530,7 +513,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)systemTimeZoneNextYearDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitHour | kDateUtilUnitMinute| kDateUtilUnitDay | kDateUtilUnitMonth | kDateUtilUnitYear) fromDate:[date dateByAddingTimeInterval:[[NSTimeZone systemTimeZone] secondsFromGMT]]];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:[date dateByAddingTimeInterval:[[NSTimeZone systemTimeZone] secondsFromGMT]]];
 	components.year++;
 	NSDate * res = [gregorian dateFromComponents:components];
 	return res;
@@ -539,7 +522,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)nextDayForDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents * components = [gregorian components:kDateUtilUnitYear | kDateUtilUnitMonth | kDateUtilUnitDay fromDate:date];
+	NSDateComponents * components = [gregorian components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:date];
 	components.day++;
 	NSDate *res = [gregorian dateFromComponents:components];
 	return res;
@@ -548,7 +531,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 +(NSDate *)prevDayForDate:(NSDate *)date
 {
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents * components = [gregorian components:kDateUtilUnitYear|kDateUtilUnitMonth|kDateUtilUnitDay fromDate:date];
+	NSDateComponents * components = [gregorian components:NSCalendarUnitYear|NSCalendarUnitMonth|NSCalendarUnitDay fromDate:date];
 	components.day--;
 	NSDate * res = [gregorian dateFromComponents:components];
 	return res;
@@ -586,7 +569,7 @@ static BOOL user24HourTimeCyclePreference = NO;
     NSDate *today = [DateUtil today];
     NSCalendar *gregorian = [DateUtil gregorianCalendar];
     
-    NSDateComponents *weekdayComponents = [gregorian components:kDateUtilUnitWeekday
+    NSDateComponents *weekdayComponents = [gregorian components:NSCalendarUnitWeekday
                                                        fromDate:today];
     
     NSDateComponents *componentsToSubtract = [[NSDateComponents alloc] init];
@@ -615,7 +598,7 @@ static BOOL user24HourTimeCyclePreference = NO;
         formatter = [NSDateFormatter applicationUIDateFormatter];
     }
 	NSCalendar * gregorian = [DateUtil gregorianCalendar];
-	NSDateComponents *components = [gregorian components:(kDateUtilUnitMonth) fromDate:date];
+	NSDateComponents *components = [gregorian components:(NSCalendarUnitMonth) fromDate:date];
 	NSArray * monthArr = [formatter standaloneMonthSymbols];
 	return monthArr[components.month-1];
 }
@@ -642,12 +625,8 @@ static BOOL user24HourTimeCyclePreference = NO;
 {
     NSCalendarUnit dateComponents;
 
-#if __IPHONE_OS_VERSION_MIN_REQUIRED ==  __IPHONE_8_0 || WATCH
-    dateComponents = (kDateUtilUnitYear| kDateUtilUnitMonth | kDateUtilUnitDay | NSCalendarUnitWeekOfYear |  kDateUtilUnitHour | kDateUtilUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal);
-#else
-    dateComponents = (kDateUtilUnitYear| kDateUtilUnitMonth | kDateUtilUnitDay | NSWeekCalendarUnit |  kDateUtilUnitHour | kDateUtilUnitMinute | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit);
-#endif
-    
+    dateComponents = (NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfYear |  NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal);
+
     NSDateComponents *components1 = [[DateUtil gregorianCalendar] components:dateComponents fromDate:date];
 	NSDateComponents *components2 = [[DateUtil gregorianCalendar] components:dateComponents fromDate:aDate];
 	return ((components1.year == components2.year) &&
@@ -747,7 +726,7 @@ static BOOL user24HourTimeCyclePreference = NO;
 
 + (NSDate *)adjustDateToGMT:(NSDate *)date originalDateTimeZone:(NSTimeZone *)originalDateTimeZone
 {
-    if ([date isKindOfClass:[NSDate class]] == NO) {
+    if (![date isKindOfClass:[NSDate class]]) {
         return nil;
     }
     
@@ -803,6 +782,59 @@ static BOOL user24HourTimeCyclePreference = NO;
     }
     [formatter setDateFormat:@"dd MMMM yyyy, EEEE"];
     return [formatter stringFromDate:date];
+}
+
+#pragma mark - Hotellook stuff
+
++ (NSDate *)borderDate
+{
+    NSDate *localDate = [NSDate date];
+    NSTimeZone *lastAvailableTimeZone = [NSTimeZone timeZoneWithName:@"UTC-14"];
+
+    NSTimeInterval offsetSeconds = [lastAvailableTimeZone secondsFromGMT];
+    NSDate *borderDate = [localDate dateByAddingTimeInterval:offsetSeconds];
+
+    NSCalendar* gregorian = [DateUtil gregorianCalendar];
+    NSDateComponents *components = [gregorian components:(NSCalendarUnitHour | NSCalendarUnitMinute| NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear) fromDate:borderDate];
+    [components setHour:0];
+    [components setMinute:0];
+
+    return [gregorian dateFromComponents:components];
+}
+
++ (NSInteger)hl_daysBetweenDate:(NSDate *)date andOtherDate:(NSDate *)otherDate
+{
+    NSCalendar *cal = [DateUtil gregorianCalendar];
+    NSDate *normDate = [self resetTimeForDate:date];
+    NSDate *normOtherDate = [self resetTimeForDate:otherDate];
+    NSDateComponents * components = [cal components:NSCalendarUnitDay fromDate:normDate toDate:normOtherDate options:0];
+
+    return components.day;
+}
+
++ (NSDate *)dateIn30Days:(NSDate *)date
+{
+    NSCalendar *cal = [DateUtil gregorianCalendar];
+    NSDateComponents * components = [cal components:NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay fromDate:date];
+    components.day += 30;
+
+    return [cal dateFromComponents:components];
+}
+
++ (NSDate *)firstDayOfNextMonthForDate:(NSDate *)date
+{
+    NSCalendar *cal = [DateUtil gregorianCalendar];
+    NSDateComponents * components = [cal components:NSCalendarUnitYear|NSCalendarUnitMonth fromDate:date];
+    components.month++;
+    NSDate *res = [cal dateFromComponents:components];
+
+    return res;
+}
+
++ (NSDate *)setTimeForDate:(NSDate *)date time:(NSDate *)time
+{
+    NSCalendar *calendar = [DateUtil gregorianCalendar];
+    return [calendar dateBySettingHour:time.hour minute:time.minute second:time.second ofDate:date options:0];
 }
 
 @end

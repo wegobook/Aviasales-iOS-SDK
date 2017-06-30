@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="96" id="w1Q-AV-ylE" customClass="HLDistanceFilterCell" customModule="Apartments" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="96"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="w1Q-AV-ylE" id="bX1-OS-Du5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="95"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="Расстояние до" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="TCu-ZS-5aG" userLabel="Расстояние до">
+                        <rect key="frame" x="15" y="15" width="99" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.27450980390000002" green="0.2784313725" blue="0.28235294119999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="от 6,2 балла" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="300" translatesAutoresizingMaskIntoConstraints="NO" id="kVk-Kp-img" userLabel="от 6,2 балла">
+                        <rect key="frame" x="232" y="58" width="73" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.50588235294117645" green="0.50588235294117645" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="4OC-Qr-1yV">
+                        <rect key="frame" x="13" y="50" width="211" height="31"/>
+                        <color key="minimumTrackTintColor" red="0.48627450979999998" green="0.73725490199999999" blue="0.21176470589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="maximumTrackTintColor" red="0.70980392156862748" green="0.70980392156862748" blue="0.70980392156862748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </slider>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="tailTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KeF-Zl-qB6" customClass="RightSideImageButton" customModule="Apartments" customModuleProvider="target">
+                        <rect key="frame" x="118" y="15" width="178" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="tintColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        <state key="normal" title="вашего местоположения" image="toNewScreenArrow">
+                            <color key="titleColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="openPointSelectionScreen" destination="w1Q-AV-ylE" eventType="touchUpInside" id="8ve-5R-uzL"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="4OC-Qr-1yV" secondAttribute="bottom" constant="15" id="1w8-0t-QzN"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="KeF-Zl-qB6" secondAttribute="trailing" constant="15" id="5VZ-ml-yG9"/>
+                    <constraint firstItem="kVk-Kp-img" firstAttribute="centerY" secondItem="4OC-Qr-1yV" secondAttribute="centerY" id="Bx0-sL-oNK"/>
+                    <constraint firstItem="KeF-Zl-qB6" firstAttribute="leading" secondItem="TCu-ZS-5aG" secondAttribute="trailing" constant="4" id="HNO-P8-PVF"/>
+                    <constraint firstItem="4OC-Qr-1yV" firstAttribute="leading" secondItem="bX1-OS-Du5" secondAttribute="leading" constant="15" id="LHc-Hf-GXY"/>
+                    <constraint firstItem="TCu-ZS-5aG" firstAttribute="leading" secondItem="bX1-OS-Du5" secondAttribute="leading" constant="15" id="NKD-2l-onb"/>
+                    <constraint firstItem="kVk-Kp-img" firstAttribute="leading" secondItem="4OC-Qr-1yV" secondAttribute="trailing" priority="999" constant="10" id="Q8z-Pt-WWL"/>
+                    <constraint firstAttribute="trailing" secondItem="kVk-Kp-img" secondAttribute="trailing" constant="15" id="fO1-aN-HzL"/>
+                    <constraint firstItem="KeF-Zl-qB6" firstAttribute="baseline" secondItem="TCu-ZS-5aG" secondAttribute="baseline" id="fT8-sg-uYR"/>
+                    <constraint firstItem="TCu-ZS-5aG" firstAttribute="top" secondItem="bX1-OS-Du5" secondAttribute="top" constant="15" id="wOt-ew-gKj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="labelToSuperviewTrailingConstraint" destination="fO1-aN-HzL" id="3Ji-si-OeK"/>
+                <outlet property="pointButton" destination="KeF-Zl-qB6" id="lVl-gG-Qt9"/>
+                <outlet property="slider" destination="4OC-Qr-1yV" id="yhF-nr-5hy"/>
+                <outlet property="sliderToLabelConstraint" destination="Q8z-Pt-WWL" id="2hP-Tr-hyV"/>
+                <outlet property="titleLabel" destination="TCu-ZS-5aG" id="wHH-LV-HIX"/>
+                <outlet property="valueLabel" destination="kVk-Kp-img" id="MWw-c5-L1E"/>
+            </connections>
+            <point key="canvasLocation" x="401" y="363"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="toNewScreenArrow" width="9" height="12"/>
+    </resources>
+</document>

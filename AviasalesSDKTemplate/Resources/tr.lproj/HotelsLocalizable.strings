@@ -1,0 +1,528 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+// Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "dışında";
+
+"HL_LOC_GUEST##{one}" = "misafir";
+"HL_LOC_GUEST##{few}" = "misafir";
+"HL_LOC_GUEST##{many}" = "misafir";
+"HL_LOC_GUEST##{other}" = "misafir";
+
+"HL_LOC_GUEST_ADULT##{one}" = "yetişkin";
+"HL_LOC_GUEST_ADULT##{few}" = "yetişkin";
+"HL_LOC_GUEST_ADULT##{many}" = "yetişkinler";
+"HL_LOC_GUEST_ADULT##{other}" = "yetişkinler";
+
+"HL_LOC_GUEST_KID##{one}" = "çocuk";
+"HL_LOC_GUEST_KID##{few}" = "çocuk";
+"HL_LOC_GUEST_KID##{many}" = "çocuklar";
+"HL_LOC_GUEST_KID##{other}" = "çocuklar";
+
+// Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "Oteller";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "Şehir veya otel";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "Çocuklar";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Yetişkin";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "Tarihler";
+
+"HL_LOC_YEAR##{one}" = "yıl";
+"HL_LOC_YEAR##{few}" = "yıl";
+"HL_LOC_YEAR##{many}" = "yıl";
+"HL_LOC_YEAR##{other}" = "yıl";
+
+"HL_LOC_NIGHT##{one}" = "gece";
+"HL_LOC_NIGHT##{few}" = "geceler";
+"HL_LOC_NIGHT##{many}" = "geceler";
+"HL_LOC_NIGHT##{other}" = "geceler";
+
+"HL_LOC_FOR_NIGHT##{one}" = "%d\U00A0gece\U00A0için";
+"HL_LOC_FOR_NIGHT##{few}" = "%d\U00A0gece\U00A0için";
+"HL_LOC_FOR_NIGHT##{many}" = "%d\U00A0gece\U00A0için";
+"HL_LOC_FOR_NIGHT##{other}" = "%d\U00A0gece\U00A0için";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Hata";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Lütfen misafir sayısını seçin";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Lütfen gideceğiniz yeri seçin";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Arama sonuçları";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "Otel bul";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Fiyatları gör";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "Tarihleri seçin";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Üzgünüz, ancak\nmaksimum otel konaklama \nsüresi 30 gün ile sınırlıdır.";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "Çocuklar";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Bebekler";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Yaş";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Uygulayın";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "İptal";
+
+"HL_CLEAN_BUTTON_TITLE" = "Temizle";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "Son arama";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Şehirler";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Oteller";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Hava Alanları";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "Yakınınızdakiler";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "Şehirler ve oteller";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "Hiçbir şey bulunamadı";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "Filtre";
+"HL_LOC_FILTER_DROP_BUTTON" = "Sıfırla";
+"HL_LOC_FILTER_APPLY_BUTTON" = "Tamam";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Fiyat";
+"HL_LOC_FILTER_RANGE" = "%@'den %@'e";
+"HL_LOC_FILTER_FROM_STRING" = "şu fiyattan";
+"HL_LOC_FILTER_TO_STRING" = "şu güne kadar";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Şuraya uzaklık:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Merkez";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Öğünler ve ödeme";
+"HL_LOC_FILTER_STARS_SECTION" = "Yıldız";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Konut türü";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Sonuçları gizle";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "Bölgeler";
+"HL_LOC_FILTER_GATES_SECTION" = "Rezervasyon acentaları";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "Rezervasyon acentaları";
+"HL_LOC_FILTER_SELECT_GATES" = "Acentaları seçin";
+"HL_LOC_FILTER_ALL_GATES" = "Tüm acenteler";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Bölgeler";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "Bölgeleri seçin";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "Tüm bölgeler";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Şuraya uzaklık";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Kahvaltı";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "Her şey dahil";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "Ücretsiz iptal";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "Hemen öde";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "Tüm evler";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "Odalar";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "Hostelleri ve pansiyonları gizle";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "Apartmanları gizle";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "Yurtları gizle";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Özel banyo";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "Hiçbir sonuç bulunmadı";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "Hoş manzara";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "Restoran";
+"HL_LOC_FILTER_AMENITY_PARKING" = "Otopark";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "Sigara içilebilir";
+"HL_LOC_FILTER_AMENITY_PETS" = "Evcil hayvanlar girebilir";
+"HL_LOC_FILTER_AMENITY_TV" = "TV";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "Çamaşırhane";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "Klima";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "İnternet";
+"HL_LOC_FILTER_AMENITY_POOL" = "Havuz";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "Fitness";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "Saç kurutma makinesi";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Çocuk bakıcılığı";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Özel banyo";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Kasa";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Arama";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "İlgi alanları";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Plajlar";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "Tüm plajlar";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Kayak teleferiği";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Tüm kayak teleferikleri";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Herhangi bir metro istasyonu";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Hava Alanları";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Tren istasyonları";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "Haritada bir nokta";
+"HL_LOC_SEARCH_POINT_TEXT" = "Arama noktası";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ ve yakını";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "Tamam";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "Haritada bir nokta";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "Şimdiki konum";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "Şehir merkezi";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "Şimdiki konum";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "Arama sonuçları";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "İngilizce arayüzü bulunan acentaları etkinleştir";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Oda imkanları";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Otel imkanları";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Otel adı";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Otelde öde";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Tükenen konutları gizle";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ otel arasından %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ otel arasından %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ otel arasından %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ otel arasından %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ otel arasından %@";
+"HL_LOC_FILTER_RATING_CRITERIA" = "Fiyat Aralığı";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "Otelin adına göre filtrele";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "Yakındaki oteller";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "Otelin adına göre filtrele";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "Otel web siteleri";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "Harita";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtre";
+"HL_SORT_BUTTON_TITLE_LABEL" = "Sırala";
+
+"HL_DISCOUNT" = "indirim";
+"HL_SPECIAL_PRICE_TITLE" = "özel teklif";
+
+"HL_LOC_ADULT##{one}" = "yetişkin";
+"HL_LOC_ADULT##{few}" = "yetişkinler";
+"HL_LOC_ADULT##{many}" = "yetişkinler";
+"HL_LOC_ADULT##{other}" = "yetişkinler";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "km";
+"HL_LOC_METERS_ABBREVIATION" = "d";
+"HL_LOC_MILES_ABBREVIATION" = "mi";
+
+"HL_NEW_SEARCH_BUTTON" = "Yeni arama";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "Filtreleri sıfırlayın";
+
+"HL_LOC_NO_ROOMS" = "Oda yok";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "bu tarihler için";
+"HL_LOC_ROOMS_OUTDATED" = "Güncel değil";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "Lütfen aramayı tekrar başlatın";
+"HL_LOC_ROOMS_SOLD" = "Tükendi";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "bu tarihler için";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "Bu yerde birden fazla otel var, bu yüzden onları bir araya getirdik.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "Burada birden fazla otel var.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "Göre sırala:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "Popülerlik";
+"HL_LOC_SORT_TYPE_RATING" = "Fiyat Aralığı";
+"HL_LOC_SORT_TYPE_PRICE" = "Fiyat";
+"HL_LOC_SORT_TYPE_DISTANCE" = "Şuraya uzaklık:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "İndirim";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "Ayarlar";
+
+"HL_LOC_ABOUT_CURRENCY" = "Kur";
+
+"LOC_RATE_APP_TITLE" = "App derecelendirin";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "Bize ulaşın";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "Bize neyin yanlış olduğunu bildirin:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "Sürüm";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Arama";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "Ayrıntılı değerlendirme ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "%@ daha fazlasını göster";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "Gizle";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Tüm odalar";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Fiyat Aralığı";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Galeri";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Konum";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Konaklama detayları";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Faydalı bilgiler";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Oda imkanları";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Konut bilgileri";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Otel imkanları";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "Misafirler";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "Giriş";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "Çıkış";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Temizleme ücreti";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Depozito";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Gerekli";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "çiftler";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "aileler";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "tek kişi";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "iş";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "Personelin konuştuğu diller: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "Personelin konuştuğu diller: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "Personelin konuştuğu diller: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "Personelin konuştuğu diller: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Ücretsiz otopark";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Oteller";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Apartmanlar";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Hosteller";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Otel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Apart-otel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Yatak & Kahvaltı";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Apartmanlar";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Motel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Pansiyon";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Hostel";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "Tatil Yeri";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "Çiftlik";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Tatil evi";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Kulübe";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Villa";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Özel oda";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "%@ yılında inşa edildi";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "%@ yılında yenilendi";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ oda";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ oda";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ oda";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ oda";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "Fotoğrafları göster";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Haritayı aç";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "için hemen ayırt ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Hemen ayırt";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Daha fazla teklif ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Galeri";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "Fiyat güncelleniyor...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "1 gece için en iyi fırsat";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "için en iyi fırsat ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Yeniden dene";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Değiştir";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Aramayı tekrar başlat";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Tükendi";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "Üzgünüz, hiçbir ayrıntılı bilgi edinemedik";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "Ücretlerin tarihi geçti";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "Seçilen tarihler için uygun bir oda yok";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "Lütfen tarihleri ve misafirleri seçin";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ yorum";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ yorum";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ yorum";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ yorum";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ yorum";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i daha";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "Değerlendirme özeti";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "Değerlendirme ayrıntıları";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "Misafir yorumları";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "Olağan misafirler";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "Öne çıkan yorumlar";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Hata oluştu";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Daha fazla yorum görün";
+"HL_ALL_REVIEWS_TITLE" = "Yorumlar";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Tüm acenteler";
+"HL_REVIEWS_FILTER" = "Şuna göre filtrele:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "%100 doğrulanmış yorumlar";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "Gerçek misafirler. Gerçek konaklamalar. Gerçek görüşler.";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d misafir yorumu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d misafir yorumu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d misafir yorumu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d misafir yorumu";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d misafir yorumu";
+
+"HL_NO_HOTEL_REVIEWS" = "Yorum bulunmuyor";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "Odalar aranıyor...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "Değiştir";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "Tarih ve misarifler";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "Kahvaltı dahil";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "Kahvaltı dahil değil";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "Her şey dahil";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "Ücretsiz iptal";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "Sigara içilebilir";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "En ucuz";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "İndirim";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Otel web sitesi";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Hemen öde";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Sonra öde";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Kredi kartı zorunlu değil";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Özel teklif";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Özel banyo";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Ortak banyo";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Oda içinde Wi-Fi";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "%li oda kaldı!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "%li oda kaldı!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "%li oda kaldı!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "%li oda kaldı!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "%li oda kaldı!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Bu otel için normal fiyatlar\U00A0%d\U00A0gece\U00A0için%@'dan başlıyor";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Bu otel için normal fiyatlar\U00A0%d\U00A0gece\U00A0için%@'dan başlıyor";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Bu otel için normal fiyatlar\U00A0%d\U00A0gece\U00A0için%@'dan başlıyor";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Bu otel için normal fiyatlar\U00A0%d\U00A0gece\U00A0için%@'dan başlıyor";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Bu otel için normal fiyatlar\U00A0%d\U00A0gece\U00A0için%@'dan başlıyor";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li fırsat";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "normal fiyattan %@ indirim";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "Diğer odalar";
+
+"HL_LOC_CHECKIN_AFTER" = "sonra";
+"HL_LOC_CHECKOUT_BEFORE" = "önce";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li kampanya";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li fırsat";
+
+"HOTEL_RATING_EXCEPTIONAL" = "mükemmel";
+"HOTEL_RATING_WONDERFUL" = "olağanüstü";
+"HOTEL_RATING_EXCELLENT" = "harika";
+"HOTEL_RATING_VERY_GOOD" = "çok iyi";
+"HOTEL_RATING_GOOD" = "iyi";
+"HOTEL_RATING_FAIR" = "değerlendirme Puanı";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "Otel bulunamadı";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "Kriterinize göre bir sonuç bulunamadı";
+"HL_NO_FILTER_RESULTS_BUTTON" = "Filtreleri sıfırlayın";
+
+"HL_NO_RESULTS_TITLE" = "Otel bulunamadı";
+"HL_NO_RESULTS_DESCRIPTION" = "Seçilen sehirde\notel bulunamadı.";
+"HL_NEW_SEARCH_BUTTON" = "Yeni arama";
+
+// Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Uygulayın";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Şimdiki konumunuza uzaklık:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Şuradan uzaklık ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Arama noktasından uzaklık:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Haritadaki noktadan uzaklık:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "%@'dan uzaklık:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Fiyat";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Kayak teleferiklerinden uzaklık:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Plaja uzaklık:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "Şehir merkezine uzaklık:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "Aradığınız şeyi bulamadınız mı?\nYakınınızdaki fırsatlara göz atın!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "Hiçbir şey bulunamadı. Yakınınızdaki şehirlerde aramayı deneyin.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "Yakındaki otelleri göster";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "Havalı! Oraya nasıl gidebilirim?";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "Bilet bul";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "Para birimi seçildi";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "Para birimi bir sonraki aramayı başlattığınızda değiştirilecektir";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "İnternet bağlantısı yok";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "Lütfen internet bağlantınızı kontrol ediniz";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "Sunucu yok";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "Sunucu hatası oluştu. Lütfen tekrar aramayı deneyin.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "Sonuçlar güncel değil";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "Güncel fiyatları görmek için lütfen tekrar arayın.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "Konumunuzu alamadık";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "Otel aramanızı kolaylaştırmak için konumunuzu edinmemize izin verin.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Ayarlar'a Git";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "Sonra";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Kapat";
+
+// Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "iOS uygulamasından geri bildirim";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Hata";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Bu cihaza bir e-posta istemcisi kurmalısınız.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "Probleminizi çözmemiz konusunda bize yardım edecek hizmet bilgisi";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "Bir oda ayırt";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "Diğer acenteler";
+"HL_WAITING_LONG_SEARCH_TITLE" = "En iyi fırsatlar aranıyor";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Bir dakika kadar sürebilir.\nLütfen bekleyiniz.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Fırsatınızı buldunuz!\nŞimdi rezervasyonu tamamlayın.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moskova";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "New York";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "Sydney";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "Londra";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "Ottawa";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "Lizbon";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "Bangkok";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "Pekin";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "Paris";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "Berlin";
+"HL_LOC_DEFAULT_CITIES_ROME" = "Roma";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "Madrid";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "Kiev";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "Astana";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "Minsk";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "Tokyo";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "Seul";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "Brasilia";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "Taipei City";
+"HL_LOC_DEFAULT_CITIES_HK" = "Hong Kong";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "Dubai";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "Rusya";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "ABD";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "Avustralya";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "Birleşik Krallık";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "Kanada";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "Portekiz";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "Tayland";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "Çin";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "Fransa";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "Almanya";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "İtalya";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "İspanya";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "Ukrayna";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "Kazakistan";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "Beyaz Rusya";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "Birleşik Arap Emirlikleri";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "Japonya";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "Güney Kore";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brezilya";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Tayvan";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";

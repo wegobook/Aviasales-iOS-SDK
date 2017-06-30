@@ -6,26 +6,28 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JRSearchInfo.h"
 
 @interface JRSearchInfoUtils : NSObject
 
-+ (NSArray *)getDirectionIATAsForSearchInfo:(JRSearchInfo *)searchInfo;
-+ (NSArray *)getMainIATAsForSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSArray *)getDirectionIATAsForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSArray *)getMainIATAsForSearchInfo:(JRSDKSearchInfo *)searchInfo;
 
-+ (NSArray *)datesForSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSArray *)datesForSearchInfo:(JRSDKSearchInfo *)searchInfo;
 
-+ (NSString *)shortDirectionIATAStringForSearchInfo:(JRSearchInfo *)searchInfo;
-+ (NSString *)fullDirectionIATAStringForSearchInfo:(JRSearchInfo *)searchInfo;
-+ (NSString *)fullDirectionCityStringForSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSString *)shortDirectionIATAStringForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)fullDirectionIATAStringForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)fullDirectionCityStringForSearchInfo:(JRSDKSearchInfo *)searchInfo;
 
-+ (NSString *)datesIntervalStringWithSearchInfo:(JRSearchInfo *)searchInfo;
-+ (NSString *)passengersCountStringWithSearchInfo:(JRSearchInfo *)searchInfo;
-+ (NSString *)travelClassStringWithSearchInfo:(JRSearchInfo *)searchInfo;
++ (NSString *)datesIntervalStringWithSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)passengersCountStringWithSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)travelClassStringWithSearchInfo:(JRSDKSearchInfo *)searchInfo;
 + (NSString *)travelClassStringWithTravelClass:(JRSDKTravelClass)travelClass;
 
-+ (NSString *)formattedIatasForSearchInfo:(id<JRSDKSearchInfo>)searchInfo;
-+ (NSString *)formattedDatesForSearchInfo:(id<JRSDKSearchInfo>)searchInfo;
-+ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(id<JRSDKSearchInfo>)searchInfo;
++ (NSString *)formattedIatasForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)formattedDatesForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)formattedDatesExcludeYearComponentForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)formattedIatasAndDatesForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)formattedIatasAndDatesExcludeYearComponentForSearchInfo:(JRSDKSearchInfo *)searchInfo;
++ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(JRSDKSearchInfo *)searchInfo;
 
 @end
