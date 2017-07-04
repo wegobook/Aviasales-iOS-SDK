@@ -28,6 +28,9 @@ To learn more about the Travelpayouts affiliate network, please visit [Travelpay
 ### 📱 iOS versions support
 Framework supports iOS 9.0 and higher
 
+### 🖼 App Icon
+**Don't forget to replace app icons** (by default the template includes simple white icons). To do this you will need to replace images in ```AviasalesSDKTemplate/Resources/App.xcassets/AppIcon.appiconset``` folder (20.png, 29.png, 40.png etc) with your own images with same names.
+
 ### ✈️🏨 Tab selection
 If you want to remove flights or hotels search tab, change values of TICKETS_ENABLED and HOTELS_ENABLED to 0 in "Build Settings" in project settings. Settings tab can't be removed.
 

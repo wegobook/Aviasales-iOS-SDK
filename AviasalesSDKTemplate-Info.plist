@@ -36,7 +36,7 @@
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
-	<string>3.0</string>
+	<string>3.0.1</string>
 	<key>Fabric</key>
 	<dict>
 		<key>APIKey</key>
@@ -57,8 +57,12 @@
 	<string>Some ad content may access bluetooth</string>
 	<key>NSCalendarsUsageDescription</key>
 	<string>Some ad content may access calendar</string>
+	<key>NSCameraUsageDescription</key>
+	<string>Some ad content may access camera</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>when in usage</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Some ad content may access photo library</string>
 	<key>UILaunchStoryboardName</key>
 	<string>AVSLaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
