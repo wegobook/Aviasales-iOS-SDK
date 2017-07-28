@@ -10,6 +10,7 @@
 @interface HLSearchVC () <HLSearchFormDelegate, HLCityPickerDelegate, HLSearchInfoChangeDelegate, HLCustomPointSelectionDelegate, TicketsSearchDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *searchFormContainerView;
+@property (nonatomic, weak) IBOutlet NSLayoutConstraint *searchFormContainerViewHeight;
 @property (nonatomic, strong) HLHotelDetailsSearchDecorator *hotelDetailsDecorator;
 
 @end
@@ -57,6 +58,7 @@
     [self registerForSearchInfoChangesNotifications];
 
     self.searchForm = [[[NSBundle mainBundle] loadNibNamed:@"HLSearchForm" owner:nil options:nil] objectAtIndex:0];
+    self.searchFormContainerViewHeight.constant = deviceSizeTypeValue(360, 420, 420, 420, 420);
     [self.searchFormContainerView addSubview:self.searchForm];
     self.searchForm.delegate = self;
     self.searchForm.searchInfo = self.searchInfo;

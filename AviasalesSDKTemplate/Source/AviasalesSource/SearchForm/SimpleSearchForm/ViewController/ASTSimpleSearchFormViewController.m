@@ -75,10 +75,10 @@ static CGFloat const separatorRightInset = 20.0;
 
 - (void)setupLayoutVariables {
     self.tableViewSectionHeaderHeight = deviceSizeTypeValue(1.0, 5.0, 20.0, 20.0, 20.0);
-    self.tableViewSectionFooterHeight = deviceSizeTypeValue(5.0, 10.0, 20.0, 20.0, 20.0);
-    self.tableViewRowHeight = deviceSizeTypeValue(55.0, 60.0, 65.0, 65.0, 65.0);
+    self.tableViewSectionFooterHeight = deviceSizeTypeValue(1.0, 10.0, 20.0, 20.0, 20.0);
+    self.tableViewRowHeight = deviceSizeTypeValue(51.0, 60.0, 65.0, 65.0, 65.0);
     self.swapButtonTopInsetDelta = deviceSizeTypeValue(14.0, 10.0, 8.0, 8.0, 8.0);
-    self.passengersViewHeightConstraint.constant = deviceSizeTypeValue(45.0, 55.0, 85.0, 95.0, 95.0);
+    self.passengersViewHeightConstraint.constant = deviceSizeTypeValue(32.0, 55.0, 85.0, 95.0, 95.0);
 }
 
 - (void)setupTableView {

@@ -526,3 +526,9 @@
 "HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Βραζιλία";
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Ταϊβάν";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Χονγκ Κονγκ";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "ξενοδοχεία";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "ξενοδοχείο";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "ξενοδοχεία";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "ξενοδοχεία";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "ξενοδοχεία";

@@ -7,7 +7,7 @@ source 'https://github.com/CocoaPods/Specs.git'
 
 target 'AviasalesSDKTemplate' do
 
-    pod 'AviasalesSDK', '~> 3.0.0'
+    pod 'AviasalesSDK', '= 3.0.1'
     pod 'SDWebImage', '~> 3.7'
     pod 'NMRangeSlider'
     pod 'Smartling.i18n', '~> 1.0'

@@ -89,7 +89,7 @@ PODS:
   - Appodeal/ZPlayAdapter (2.0.0):
     - Appodeal/Core
   - AutoCoding (2.2.2)
-  - AviasalesSDK (3.0)
+  - AviasalesSDK (3.0.1)
   - AXRatingView (1.0.6)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
@@ -176,7 +176,7 @@ PODS:
 DEPENDENCIES:
   - Appodeal (~> 2.0)
   - AutoCoding (~> 2.2)
-  - AviasalesSDK (~> 3.0.0)
+  - AviasalesSDK (= 3.0.1)
   - AXRatingView
   - BlocksKit
   - BZipCompression (~> 1.0)
@@ -209,7 +209,7 @@ SPEC CHECKSUMS:
   Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
   Appodeal: 66798d5db8f86996cd540609f801376c2af326d0
   AutoCoding: 56fa46dbfa89d44189a26ce64e6a470ed8ff4661
-  AviasalesSDK: 6e21e08392f7995d80e0c2899f81993d19c23f02
+  AviasalesSDK: 582acc3c2f42e3ea91849d057ab96aac3ae1866b
   AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   BZipCompression: e0f96508e60eb93b5f5d4c7de1eb3dd0ac4f9ae9
@@ -229,6 +229,6 @@ SPEC CHECKSUMS:
   SwiftLint: 3f7543509c931d1291395335f34e245d3919b7f2
   SwiftProtobuf: b631e0ba39ee42cbd5f4897c6883b9839e6d9703
 
-PODFILE CHECKSUM: e3eb366c9f3bec86c212d3068e76346dcfd1efda
+PODFILE CHECKSUM: b9374e03c4b1bf194f115478c5e5a40b54d98db7
 
 COCOAPODS: 1.2.1

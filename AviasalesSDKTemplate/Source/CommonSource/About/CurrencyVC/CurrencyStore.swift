@@ -54,7 +54,8 @@ class CurrencyStore: NSObject {
                 HDKCurrency(code: "PHP", symbol: "₱", text: localizedCurrency("HL_LOC_CURRENCY_PHP")),
                 HDKCurrency(code: "VND", symbol: "₫", text: localizedCurrency("HL_LOC_CURRENCY_VND")),
                 HDKCurrency(code: "ARS", symbol: "AR$", text: localizedCurrency("HL_LOC_CURRENCY_ARS")),
-                HDKCurrency(code: "SAR", symbol: "﷼‎", text: localizedCurrency("HL_LOC_CURRENCY_SAR"))]
+                HDKCurrency(code: "SAR", symbol: "﷼‎", text: localizedCurrency("HL_LOC_CURRENCY_SAR")),
+                HDKCurrency(code: "GEL", symbol: "₾", text: localizedCurrency("HL_LOC_CURRENCY_GEL"))]
     }
 
     fileprivate static func localizedCurrency(_ key: String) -> String {

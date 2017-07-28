@@ -526,3 +526,9 @@
 "HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brazil";
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Đài Loan";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Hồng Kông";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "khách sạn";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "khách sạn";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "khách sạn";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "khách sạn";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "khách sạn";

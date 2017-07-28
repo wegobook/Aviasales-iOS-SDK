@@ -479,7 +479,7 @@
 "HL_WAITING_LONG_SEARCH_SUBTITLE" = "Siinä voi kestää minuutti.\nOdota, ole hyvä.";
 
 // Страница браузера
-"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Olet löytänyt tarjouksesi! Suorita varaus nyt.";
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Olet löytänyt tarjouksesi!\nSuorita varaus nyt.";
 
 // Default Cities
 "HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moskova";
@@ -526,3 +526,9 @@
 "HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brasilia";
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Taiwan";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "hotellit";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "hotelli";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "hotellit";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "hotellia";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "hotellia";

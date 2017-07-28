@@ -35,6 +35,10 @@ import UIKit
     @IBOutlet fileprivate weak var threeAdultsButton: UIButton!
     @IBOutlet fileprivate weak var fourAdultsButton: UIButton!
 
+    @IBOutlet fileprivate weak var cityCellHeightConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var datesCellHeightConstraint: NSLayoutConstraint!
+    @IBOutlet fileprivate weak var guestsCellHeightConstraint: NSLayoutConstraint!
+
     @IBOutlet private weak var originIcon: UIImageView!
     @IBOutlet private weak var datesIcon: UIImageView!
     @IBOutlet private weak var guestsIcon: UIImageView!
@@ -90,6 +94,10 @@ import UIKit
         datesTitleLabel.text = NSLS("HL_LOC_SEARCH_DATES_LABEL")
         adultsTitleLabel.text = NSLS("HL_LOC_SEARCH_ADULTS_TITLE")
         kidsTitleLabel.text = NSLS("HL_LOC_SEARCH_KIDS_TITLE")
+
+        cityCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 98.0, 98.0, 98.0, 98.0)
+        datesCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 98.0, 98.0, 98.0, 98.0)
+        guestsCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 125.0, 125.0, 125.0, 125.0)
     }
 
     private func setupSearchButton() {

@@ -479,7 +479,7 @@
 "HL_WAITING_LONG_SEARCH_SUBTITLE" = "Det kan ta inntil ett minutt.\nVennligst vent.";
 
 // Страница браузера
-"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Fullfør bestillingen via reiseselskapets nettside.";
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Vi har funnet tilbudet ditt!\nFullfør bestillingen.";
 
 // Default Cities
 "HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moskva";
@@ -526,3 +526,9 @@
 "HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brasil";
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Taiwan";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "hoteller";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "hotell";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "hoteller";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "hoteller";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "hoteller";

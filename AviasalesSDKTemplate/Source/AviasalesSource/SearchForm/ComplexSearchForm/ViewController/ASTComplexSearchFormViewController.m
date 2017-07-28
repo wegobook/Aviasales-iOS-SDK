@@ -59,7 +59,7 @@
 }
 
 - (void)setupLayoutVariables {
-    self.passengersViewHeightConstraint.constant = deviceSizeTypeValue(45.0, 55.0, 85.0, 95.0, 95.0);
+    self.passengersViewHeightConstraint.constant = deviceSizeTypeValue(32.0, 55.0, 85.0, 95.0, 95.0);
 }
 
 - (void)registerNibs {

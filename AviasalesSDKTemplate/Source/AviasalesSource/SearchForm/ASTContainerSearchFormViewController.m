@@ -18,6 +18,7 @@ NS_ENUM(NSInteger, ASTContainerSearchFormSearchType) {
 
 @interface ASTContainerSearchFormViewController () <HotelsSearchDelegate>
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *segmentedControlContainerHeight;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *searchFormTypeSegmentedControl;
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
@@ -58,6 +59,7 @@ NS_ENUM(NSInteger, ASTContainerSearchFormSearchType) {
 }
 
 - (void)setupSegmentedControl {
+    self.segmentedControlContainerHeight.constant = deviceSizeTypeValue(38.0, 44.0, 44.0, 44.0, 44.0);
     self.searchFormTypeSegmentedControl.tintColor = [JRColorScheme searchFormTintColor];
     [self.searchFormTypeSegmentedControl setTitle:NSLS(@"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE") forSegmentAtIndex:ASTContainerSearchFormSearchTypeSimple];
     [self.searchFormTypeSegmentedControl setTitle:NSLS(@"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE") forSegmentAtIndex:ASTContainerSearchFormSearchTypeComplex];

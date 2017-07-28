@@ -526,3 +526,9 @@
 "HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Brezilya";
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Tayvan";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "oteller";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "otel";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "oteller";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "oteller";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "oteller";

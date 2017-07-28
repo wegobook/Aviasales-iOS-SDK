@@ -121,10 +121,12 @@ class InteractionManager: NSObject, AviasalesAirportsGeoSearchPerformerDelegate 
     // MARK: - Hotels
 
     func hotelsSearchFinished(_ searchInfo: HLSearchInfo) {
-        if let city = searchInfo.city ?? searchInfo.hotel?.city {
-            self.savedHLSearchInfo = searchInfo
-            geoLoader?.searchAirportsNearLatitude(city.latitude, longitude: city.longitude)
+        guard let city = searchInfo.city ?? searchInfo.hotel?.city,
+            (city.latitude != 0.0 || city.latitude != 0.0) else {
+                return
         }
+        self.savedHLSearchInfo = searchInfo
+        geoLoader?.searchAirportsNearLatitude(city.latitude, longitude: city.longitude)
     }
 
     func applySavedTicketsSearchInfo() {
@@ -139,8 +141,8 @@ class InteractionManager: NSObject, AviasalesAirportsGeoSearchPerformerDelegate 
 
     // MARK: - AviasalesAirportsGeoSearchPerformerDelegate
 
-    func airportsGeoSearchPerformer(_ airportsSearchPerformer: AviasalesAirportsGeoSearchPerformer!, didFound locations: [JRSDKLocation]!) {
-        let location = locations.first(where: { (location) -> Bool in return location is JRSDKAirport })
+    func airportsGeoSearchPerformer(_ airportsSearchPerformer: AviasalesAirportsGeoSearchPerformer!, didFound locations: [JRSDKLocation]?) {
+        let location = locations?.first(where: { (location) -> Bool in return location is JRSDKAirport })
         if let airport = location as? JRSDKAirport {
             savedDestination = airport
         }

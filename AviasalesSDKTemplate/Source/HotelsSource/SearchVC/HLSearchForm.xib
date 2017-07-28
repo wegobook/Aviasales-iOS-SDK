@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -85,11 +85,11 @@
                         <constraint firstItem="QIz-eQ-OBM" firstAttribute="top" secondItem="79I-cx-mXi" secondAttribute="top" id="4TV-wE-Tuh"/>
                         <constraint firstItem="Vc8-6G-ZWD" firstAttribute="centerY" secondItem="79I-cx-mXi" secondAttribute="centerY" id="Iyb-Tp-OVu"/>
                         <constraint firstItem="4xh-Qn-KKW" firstAttribute="centerY" secondItem="Maf-2L-GF8" secondAttribute="centerY" id="M3A-jI-Ryp"/>
-                        <constraint firstAttribute="bottom" secondItem="If2-FO-MmW" secondAttribute="bottom" constant="30" id="NTp-WI-V5p"/>
                         <constraint firstAttribute="trailing" secondItem="QIz-eQ-OBM" secondAttribute="trailing" id="PaG-QI-eIN"/>
-                        <constraint firstItem="If2-FO-MmW" firstAttribute="top" secondItem="79I-cx-mXi" secondAttribute="top" constant="30" id="TPM-5H-P0K"/>
+                        <constraint firstAttribute="height" constant="98" id="SZg-Ee-Hww"/>
                         <constraint firstItem="If2-FO-MmW" firstAttribute="leading" secondItem="79I-cx-mXi" secondAttribute="leading" constant="45" id="Tad-gf-N0P"/>
                         <constraint firstAttribute="trailing" secondItem="If2-FO-MmW" secondAttribute="trailing" id="WFo-p3-Zja"/>
+                        <constraint firstItem="If2-FO-MmW" firstAttribute="centerY" secondItem="79I-cx-mXi" secondAttribute="centerY" id="Z8q-Bv-Q70"/>
                         <constraint firstItem="QIz-eQ-OBM" firstAttribute="leading" secondItem="79I-cx-mXi" secondAttribute="leading" id="ZA3-J0-Sip"/>
                         <constraint firstItem="Vc8-6G-ZWD" firstAttribute="leading" secondItem="79I-cx-mXi" secondAttribute="leading" id="e3E-v1-SzA"/>
                         <constraint firstAttribute="trailing" secondItem="Maf-2L-GF8" secondAttribute="trailing" id="hGu-SW-B6p"/>
@@ -149,14 +149,14 @@
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="bottom" secondItem="U1r-DX-WaH" secondAttribute="bottom" id="4dE-lL-2QN"/>
+                        <constraint firstItem="CZ8-op-2YC" firstAttribute="centerY" secondItem="jmg-Vh-O8c" secondAttribute="centerY" id="AH0-1e-yGm"/>
                         <constraint firstItem="U1r-DX-WaH" firstAttribute="leading" secondItem="jmg-Vh-O8c" secondAttribute="leading" id="Du5-Cw-Mkl"/>
-                        <constraint firstItem="CZ8-op-2YC" firstAttribute="top" secondItem="jmg-Vh-O8c" secondAttribute="top" constant="30" id="E2X-9b-9ET"/>
                         <constraint firstItem="bnX-xV-aZD" firstAttribute="leading" secondItem="jmg-Vh-O8c" secondAttribute="leading" id="Jnm-tQ-93y"/>
                         <constraint firstAttribute="trailing" secondItem="CZ8-op-2YC" secondAttribute="trailing" id="O4o-qT-8Fo"/>
+                        <constraint firstAttribute="height" constant="98" id="TMr-sz-Hv6"/>
                         <constraint firstItem="CZ8-op-2YC" firstAttribute="leading" secondItem="jmg-Vh-O8c" secondAttribute="leading" constant="45" id="atQ-2W-jve"/>
                         <constraint firstItem="bnX-xV-aZD" firstAttribute="centerY" secondItem="jmg-Vh-O8c" secondAttribute="centerY" id="enJ-ai-l8a"/>
                         <constraint firstAttribute="trailing" secondItem="U1r-DX-WaH" secondAttribute="trailing" id="mo6-mg-5oM"/>
-                        <constraint firstAttribute="bottom" secondItem="CZ8-op-2YC" secondAttribute="bottom" constant="30" id="w96-Jp-hxD"/>
                         <constraint firstItem="U1r-DX-WaH" firstAttribute="top" secondItem="jmg-Vh-O8c" secondAttribute="top" id="xoh-dD-KHP"/>
                     </constraints>
                 </view>
@@ -282,16 +282,16 @@
                         <constraint firstItem="cnr-RR-h9D" firstAttribute="top" secondItem="UPJ-cv-Meq" secondAttribute="bottom" constant="10" id="IBR-SV-47d"/>
                         <constraint firstItem="MZ0-jV-3sA" firstAttribute="leading" secondItem="cnr-RR-h9D" secondAttribute="trailing" constant="10" id="IFF-d8-HP5"/>
                         <constraint firstItem="MZ0-jV-3sA" firstAttribute="centerY" secondItem="cnr-RR-h9D" secondAttribute="centerY" id="LLt-0V-ph8"/>
-                        <constraint firstItem="UPJ-cv-Meq" firstAttribute="top" secondItem="8Jh-e6-89V" secondAttribute="top" constant="30" id="M4a-nB-eNT"/>
+                        <constraint firstItem="UPJ-cv-Meq" firstAttribute="centerY" secondItem="8Jh-e6-89V" secondAttribute="centerY" constant="-25" id="NxR-GG-U2x"/>
                         <constraint firstItem="BoV-J8-cIV" firstAttribute="leading" secondItem="8Jh-e6-89V" secondAttribute="leading" id="PDK-IT-EAd"/>
                         <constraint firstItem="yIn-cq-fMu" firstAttribute="leading" secondItem="MZ0-jV-3sA" secondAttribute="trailing" constant="10" id="cnL-FA-kcF"/>
                         <constraint firstItem="BoV-J8-cIV" firstAttribute="centerY" secondItem="8Jh-e6-89V" secondAttribute="centerY" id="dtM-Vp-X8O"/>
                         <constraint firstItem="ObH-fw-ppy" firstAttribute="leading" secondItem="yIn-cq-fMu" secondAttribute="trailing" constant="10" id="gI8-br-eiX"/>
                         <constraint firstItem="JKu-i8-Cuq" firstAttribute="leading" secondItem="0Hi-Ze-Y5h" secondAttribute="leading" priority="999" id="iTe-N7-op4"/>
                         <constraint firstItem="JKu-i8-Cuq" firstAttribute="baseline" secondItem="UPJ-cv-Meq" secondAttribute="baseline" id="ijY-Nm-gOu"/>
-                        <constraint firstAttribute="bottom" secondItem="cnr-RR-h9D" secondAttribute="bottom" constant="30" id="kU6-fp-Vou"/>
                         <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="JKu-i8-Cuq" secondAttribute="trailing" constant="14" id="sYJ-ql-xtr"/>
                         <constraint firstItem="cnr-RR-h9D" firstAttribute="leading" secondItem="UPJ-cv-Meq" secondAttribute="leading" id="sa9-MN-zci"/>
+                        <constraint firstAttribute="height" constant="125" id="uqg-w9-H7o"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e90-2q-sZh" userLabel="searchView">
@@ -378,16 +378,19 @@
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
                 <outlet property="adultsTitleLabel" destination="UPJ-cv-Meq" id="ASA-44-9gd"/>
+                <outlet property="cityCellHeightConstraint" destination="SZg-Ee-Hww" id="1hx-sG-oWU"/>
                 <outlet property="citySelectorButton" destination="QIz-eQ-OBM" id="8i5-Pc-nCl"/>
                 <outlet property="cityTitleLabel" destination="kT8-Lt-3xZ" id="JUA-bV-yCd"/>
                 <outlet property="cityValueLabel" destination="U5q-vy-s6t" id="VNO-uq-u9u"/>
                 <outlet property="currentCityActivityIndicator" destination="4xh-Qn-KKW" id="d96-r2-abT"/>
                 <outlet property="currentCityButton" destination="Maf-2L-GF8" id="njJ-b8-jWs"/>
+                <outlet property="datesCellHeightConstraint" destination="TMr-sz-Hv6" id="emW-wu-jGS"/>
                 <outlet property="datesIcon" destination="bnX-xV-aZD" id="tIM-ou-4cw"/>
                 <outlet property="datesSelectorButton" destination="U1r-DX-WaH" id="ex5-Iz-7Wn"/>
                 <outlet property="datesTitleLabel" destination="tIZ-2z-a2A" id="1ag-GV-XeE"/>
                 <outlet property="datesValueLabel" destination="RpX-By-W9K" id="ndU-Xw-puF"/>
                 <outlet property="fourAdultsButton" destination="ObH-fw-ppy" id="EEL-eA-u3s"/>
+                <outlet property="guestsCellHeightConstraint" destination="uqg-w9-H7o" id="bGk-hC-KkU"/>
                 <outlet property="guestsIcon" destination="BoV-J8-cIV" id="JOo-if-yo1"/>
                 <outlet property="humansSelectorView" destination="8Jh-e6-89V" id="aS6-Mu-66X"/>
                 <outlet property="kidsButton" destination="0Hi-Ze-Y5h" id="Wkg-B4-phS"/>

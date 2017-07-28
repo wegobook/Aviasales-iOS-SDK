@@ -527,3 +527,9 @@
 "HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "Бразилия";
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Тайвань";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Гонконг";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "отелей";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "отель";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "отеля";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "отелей";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "отелей";

@@ -526,3 +526,9 @@
 "HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "巴西";
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "台湾";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "香港";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "家酒店";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "家酒店";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "家酒店";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "家酒店";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "家酒店";
