@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.5.0)
+  - Alamofire (4.5.1)
   - Appodeal (2.0.0):
     - Appodeal/Full (= 2.0.0)
   - Appodeal/AdColonyAdapter (2.0.0):
@@ -113,7 +113,7 @@ PODS:
   - FXBlurView (1.6.4)
   - GCXSteppedSlider (0.1.0)
   - GPUImage (0.1.7)
-  - HotellookSDK (1.0):
+  - HotellookSDK (1.0.1):
     - Alamofire (~> 4.4)
     - KeychainSwift (~> 8.0)
     - SwiftProtobuf
@@ -171,7 +171,7 @@ PODS:
   - SDWebImage/Core (3.8.2)
   - Smartling.i18n (1.0.13)
   - SwiftLint (0.20.0)
-  - SwiftProtobuf (0.9.901)
+  - SwiftProtobuf (0.9.905)
 
 DEPENDENCIES:
   - Appodeal (~> 2.0)
@@ -185,7 +185,7 @@ DEPENDENCIES:
   - FXBlurView (~> 1.6)
   - GCXSteppedSlider
   - GPUImage (~> 0.1)
-  - HotellookSDK (~> 1.0.0)
+  - HotellookSDK (from `https://github.com/KosyanMedia/Hotellook-iOS-SDK-Core.git`, tag `v1.0.2`)
   - libextobjc (~> 0.4)
   - NMRangeSlider
   - PromiseKit (~> 4.0)
@@ -193,20 +193,26 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7)
   - Smartling.i18n (~> 1.0)
   - SwiftLint
-  - SwiftProtobuf (from `https://github.com/apple/swift-protobuf.git`, tag `0.9.901`)
+  - SwiftProtobuf (from `https://github.com/apple/swift-protobuf.git`, tag `0.9.905`)
 
 EXTERNAL SOURCES:
+  HotellookSDK:
+    :git: https://github.com/KosyanMedia/Hotellook-iOS-SDK-Core.git
+    :tag: v1.0.2
   SwiftProtobuf:
     :git: https://github.com/apple/swift-protobuf.git
-    :tag: 0.9.901
+    :tag: 0.9.905
 
 CHECKOUT OPTIONS:
+  HotellookSDK:
+    :git: https://github.com/KosyanMedia/Hotellook-iOS-SDK-Core.git
+    :tag: v1.0.2
   SwiftProtobuf:
     :git: https://github.com/apple/swift-protobuf.git
-    :tag: 0.9.901
+    :tag: 0.9.905
 
 SPEC CHECKSUMS:
-  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
   Appodeal: 66798d5db8f86996cd540609f801376c2af326d0
   AutoCoding: 56fa46dbfa89d44189a26ce64e6a470ed8ff4661
   AviasalesSDK: 582acc3c2f42e3ea91849d057ab96aac3ae1866b
@@ -218,7 +224,7 @@ SPEC CHECKSUMS:
   FXBlurView: db786c2561cb49a09ae98407f52460096ab8a44f
   GCXSteppedSlider: c41ed88eb30e34963738a5ef77c2f8a855eb73c6
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
-  HotellookSDK: e29852b0fe4ab0f12622d0dc398faedaa40fb57f
+  HotellookSDK: db62f3adf5f36dd54a190626768638460a563121
   KeychainSwift: 213db04dfe7244988e61f77c72a2afb2f775954a
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   NMRangeSlider: 317ded652431eb90501c8421d9cddc3930d891e6
@@ -227,8 +233,8 @@ SPEC CHECKSUMS:
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Smartling.i18n: 03ef7a5643965212c6ca9ed7d65385950ca4a989
   SwiftLint: 3f7543509c931d1291395335f34e245d3919b7f2
-  SwiftProtobuf: b631e0ba39ee42cbd5f4897c6883b9839e6d9703
+  SwiftProtobuf: abe947d41e7692c939f8a49a77c709ab78d4100e
 
-PODFILE CHECKSUM: b9374e03c4b1bf194f115478c5e5a40b54d98db7
+PODFILE CHECKSUM: 52ec04e34649a588ca03f6615d497cd04911e04b
 
 COCOAPODS: 1.2.1

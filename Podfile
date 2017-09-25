@@ -4,7 +4,6 @@ use_frameworks!
 
 source 'https://github.com/CocoaPods/Specs.git'
 
-
 target 'AviasalesSDKTemplate' do
 
     pod 'AviasalesSDK', '= 3.0.1'
@@ -14,7 +13,7 @@ target 'AviasalesSDKTemplate' do
     pod 'FXBlurView', '~> 1.6'
     pod 'AutoCoding', '~> 2.2'
     pod 'AXRatingView'
-    pod 'HotellookSDK', '~> 1.0.0'
+    pod 'HotellookSDK', :git => 'https://github.com/KosyanMedia/Hotellook-iOS-SDK-Core.git', :tag => 'v1.0.2'
     pod 'Appodeal', '~> 2.0'
     pod 'PureLayout', '~> 3.0'
     pod 'PromiseKit', '~> 4.0'
@@ -24,7 +23,7 @@ target 'AviasalesSDKTemplate' do
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'SwiftLint'
-    pod 'SwiftProtobuf', :git => 'https://github.com/apple/swift-protobuf.git', :tag => '0.9.901'
+    pod 'SwiftProtobuf', :git => 'https://github.com/apple/swift-protobuf.git', :tag => '0.9.905'
     pod 'GCXSteppedSlider'
     pod 'BZipCompression', '~> 1.0'
     
