@@ -142,7 +142,7 @@ class HLHotelCardView: UIView {
         }
         photoScrollView.backgroundColor = JRColorScheme.hotelBackgroundColor()
         photoScrollView.placeholderImage = UIImage.photoPlaceholder
-        overlayView.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
+        overlayView.backgroundColor = JRColorScheme.actionColor()
     }
 
     fileprivate func updatePhotosContent() {

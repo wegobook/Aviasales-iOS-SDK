@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JRAirportPickerEnums.h"
 
 @class ASTComplexSearchFormViewModel;
 
@@ -15,7 +14,7 @@
 - (void)updateWithViewModel:(ASTComplexSearchFormViewModel *)viewModel;
 - (void)addRowAnimatedAtIndex:(NSInteger)index withViewModel:(ASTComplexSearchFormViewModel *)viewModel;
 - (void)removeRowAnimatedAtIndex:(NSInteger)index withViewModel:(ASTComplexSearchFormViewModel *)viewModel;
-- (void)showAirportPickerWithMode:(JRAirportPickerMode)mode forIndex:(NSInteger)index;
+- (void)showAirportPickerWithType:(ASAirportPickerType)type forIndex:(NSInteger)index;
 - (void)showDatePickerWithBorderDate:(NSDate *)borderDate selectedDate:(NSDate *)selectedDate forIndex:(NSInteger)index;
 - (void)showPassengersPickerWithInfo:(ASTPassengersInfo *)passengersInfo;
 - (void)showErrorWithMessage:(NSString *)message;

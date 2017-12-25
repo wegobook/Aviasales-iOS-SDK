@@ -7,15 +7,10 @@
 //  This code is distributed under the terms and conditions of the MIT license.
 //
 
-#import <Availability.h>
-
 #ifdef __OBJC__
 
     #import "AviasalesSDKTemplate-Swift.h"
-    #import "JRHeader.h"
-    #import <BlocksKit/BlocksKit.h>
-    #import "UIView+Nib.h"
-    #import "JRColorScheme.h"
-    #import "Config.h" 
+    #import <libextobjc/EXTScope.h>
 
 #endif
+

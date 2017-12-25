@@ -157,8 +157,9 @@
     if (self.filterMode == JRFilterTravelSegmentMode) {
         self.title = [NSString stringWithFormat:@"%@ – %@", self.selectedTravelSegment.originAirport.iata, self.selectedTravelSegment.destinationAirport.iata];
     } else {
-        UIBarButtonItem *closeItem = [UINavigationItem barItemWithImageName:@"filtersCrossButton" target:self action:@selector(closeButtonAction:)];
-        self.navigationItem.leftBarButtonItems = @[closeItem];
+        SEL closeSelector = @selector(closeButtonAction:);
+        UIBarButtonItem *closeItem = iPad() ? [[UIBarButtonItem alloc] initWithTitle:NSLS(@"JR_CLOSE_BUTTON_TITLE") style:UIBarButtonItemStylePlain target:self action:closeSelector] : [UINavigationItem barItemWithImageName:@"filtersCrossButton" target:self action:closeSelector];
+        self.navigationItem.leftBarButtonItem = closeItem;
         self.title = NSLS(@"JR_FILTER_BUTTON");
     }
     self.navigationItem.backBarButtonItem = [UIBarButtonItem backBarButtonItem];

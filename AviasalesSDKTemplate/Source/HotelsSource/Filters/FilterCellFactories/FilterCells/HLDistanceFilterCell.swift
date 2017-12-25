@@ -45,8 +45,8 @@ class HLDistanceFilterCell: HLSliderFilterCell {
         slider.setMinimumTrackImage(JRColorScheme.sliderMaxImage(), for: .normal)
         slider.setMaximumTrackImage(JRColorScheme.sliderMinImage(), for: .normal)
 
-        pointButton.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: .normal)
-        pointButton.tintColor = JRColorScheme.mainButtonBackgroundColor()
+        pointButton.setTitleColor(JRColorScheme.actionColor(), for: .normal)
+        pointButton.tintColor = JRColorScheme.actionColor()
     }
 
     override func updateConstraints() {

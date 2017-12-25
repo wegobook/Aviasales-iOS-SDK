@@ -11,45 +11,38 @@ class TabMenuVC: UITabBarController {
     func createItems() {
         var results: [UIViewController] = []
 
-        tabBar.tintColor = JRColorScheme.navigationBarBackgroundColor()
-        if ticketsEnabled() {
-            let ticketsBarItem = UITabBarItem(title: NSLS("JR_SEARCH_FORM_TITLE"), image: #imageLiteral(resourceName: "plane_icon"), tag: 0)
-            let ticketsVC = createTicketsVC()
-            ticketsVC.tabBarItem = ticketsBarItem
-            results.append(ticketsVC)
+        tabBar.tintColor = JRColorScheme.mainColor()
+        if ConfigManager.shared.flightsEnabled {
+            let flightsVC = createFlightsVC()
+            flightsVC.tabBarItem = UITabBarItem(title: NSLS("JR_SEARCH_FORM_TITLE"), image: #imageLiteral(resourceName: "plane_icon"), tag: 0)
+            results.append(flightsVC)
         }
 
-        if hotelsEnabled() {
-            let hotelsBarItem = UITabBarItem(title: NSLS("LOC_SEARCH_FORM_TITLE"), image: #imageLiteral(resourceName: "bed_icon"), tag: 0)
+        if ConfigManager.shared.hotelsEnabled {
             let hotelsVC = createHotelsVC()
-            hotelsVC.tabBarItem = hotelsBarItem
+            hotelsVC.tabBarItem = UITabBarItem(title: NSLS("LOC_SEARCH_FORM_TITLE"), image: #imageLiteral(resourceName: "bed_icon"), tag: 0)
             results.append(hotelsVC)
         }
 
-        let settingsBarItem = UITabBarItem(title: NSLS("LOC_SETTINGS_TITLE"), image: #imageLiteral(resourceName: "gear_icon"), tag: 0)
-        let settingsVC = createSettingsVC()
-        settingsVC.tabBarItem = settingsBarItem
-        results.append(settingsVC)
+        let infoScreenViewController = createInfoScreenViewController()
+        infoScreenViewController.tabBarItem = UITabBarItem(title:  NSLS("LOC_INFO"), image: #imageLiteral(resourceName: "info_icon"), tag: 0)
+        results.append(infoScreenViewController)
 
         viewControllers = results
     }
 
-    private func createTicketsVC() -> UIViewController {
+    private func createFlightsVC() -> UIViewController {
         let rootViewController = iPhone() ? ASTContainerSearchFormViewController() : ASTSearchFormSceneViewController()
         return JRNavigationController(rootViewController: rootViewController)
     }
 
     private func createHotelsVC() -> UIViewController {
         let searchVC = iPad() ? HLIpadSearchVC() : HLSearchVC()
-        let navVC = JRNavigationController(rootViewController: searchVC)
-
-        return navVC
+        return JRNavigationController(rootViewController: searchVC)
     }
 
-    private func createSettingsVC() -> UIViewController {
-        let settingsVC = HLProfileVC()
-        let navVC = JRNavigationController(rootViewController: settingsVC)
-
-        return navVC
+    private func createInfoScreenViewController() -> UIViewController {
+        let infoScreenViewController = InfoScreenViewController()
+        return JRNavigationController(rootViewController: infoScreenViewController)
     }
 }

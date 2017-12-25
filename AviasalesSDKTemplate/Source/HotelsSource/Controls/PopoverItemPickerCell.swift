@@ -45,7 +45,7 @@ class PopoverItemPickerCell: UITableViewCell {
 
     var active: Bool = false {
         didSet {
-            nameLabel.textColor = active ? JRColorScheme.mainButtonBackgroundColor() : JRColorScheme.darkTextColor()
+            nameLabel.textColor = active ? JRColorScheme.actionColor() : JRColorScheme.darkTextColor()
             activeImageView.isHidden = !active
             nameToActiveImageConstraint?.isActive = active
         }

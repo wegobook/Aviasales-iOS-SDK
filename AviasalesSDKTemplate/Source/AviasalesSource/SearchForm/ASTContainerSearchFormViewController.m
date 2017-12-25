@@ -66,8 +66,8 @@ NS_ENUM(NSInteger, ASTContainerSearchFormSearchType) {
 }
 
 - (void)setupSearchButton {
-    self.searchButton.tintColor = [JRColorScheme mainButtonTitleColor];
-    self.searchButton.backgroundColor = [JRColorScheme mainButtonBackgroundColor];
+    self.searchButton.tintColor = [UIColor whiteColor];
+    self.searchButton.backgroundColor = [JRColorScheme actionColor];
     self.searchButton.layer.cornerRadius = 20.0;
     NSAttributedString *attributedString = [[NSAttributedString alloc] initWithString:NSLS(@"JR_SEARCH_FORM_SEARCH_BUTTON") attributes:@{NSFontAttributeName : [UIFont fontWithName:@".SFUIText-Bold" size:16.0]}];
     [self.searchButton setAttributedTitle:attributedString forState:UIControlStateNormal];
@@ -126,7 +126,7 @@ NS_ENUM(NSInteger, ASTContainerSearchFormSearchType) {
 }
 
 - (IBAction)searchButtonTapped:(UIButton *)sender {
-    NSString *currencyCode = [[InteractionManager shared].currency.code lowercaseString];
+    NSString *currencyCode = [[CurrencyManager shared].currency.code lowercaseString];
     if (![currencyCode isEqualToString:[AviasalesSDK sharedInstance].currencyCode]) {
         [[AviasalesSDK sharedInstance] updateCurrencyCode:currencyCode];
     }

@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "/";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "lapset";
 "HL_LOC_GUEST_KID##{other}" = "lapset";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotellit";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Hakutulokset";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Löydä hotellit";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Näytä hinnat";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "LÖYDÄ HOTELLIT";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "NÄYTÄ HINNAT";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Valitse päivät";
@@ -64,7 +65,7 @@
 
 // Выбор возрастов детей
 "HL_KIDS_PICKER_TITLE" = "Lapsia";
-"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Sylilapsia";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Sylivauvoja";
 "HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Ikä";
 "HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Hyväksy";
 "HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Peruuta";
@@ -94,7 +95,7 @@
 "HL_LOC_FILTER_FROM_STRING" = "väliltä";
 "HL_LOC_FILTER_TO_STRING" = "enintään";
 
-"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Etäisyys:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "Etäisyys kohteeseen:";
 "HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Keskusta";
 
 "HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "Ateriat ja maksaminen";
@@ -146,7 +147,7 @@
 "HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Yksityinen WC";
 "HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Turvaboksi";
 
-"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Haku";
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Katso hinnat";
 
 "HL_LOC_FILTERS_POINT_POI_TEXT" = "Mielenkiintoisia kohteita";
 "HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Rannat";
@@ -225,13 +226,17 @@
 // Сортировка
 "HL_LOC_SORT_HEADER_TITLE" = "Lajitteluperuste:";
 "HL_LOC_SORT_TYPE_POPULARITY" = "Suosutuimmat";
-"HL_LOC_SORT_TYPE_RATING" = "Arvosana";
+"HL_LOC_SORT_TYPE_RATING" = "Luokitus";
 "HL_LOC_SORT_TYPE_PRICE" = "Hinta";
 "HL_LOC_SORT_TYPE_DISTANCE" = "Etäisyys kohteeseen:";
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Alennus";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Asetukset";
+"LOC_SETTINGS_TITLE" = "Tietoja";
+
+"LOC_INFO" = "Tietoja";
+
+"LOC_ABOUT" = "Korvaathan tämän tekstin lyhyellä kuvauksella sovelluksestasi";
 
 "HL_LOC_ABOUT_CURRENCY" = "Valuutta";
 
@@ -240,7 +245,7 @@
 
 "HL_LOC_MAIL_BAD_RATE_TEXT" = "Kerro meille, mikä oli pielessä:";
 "HL_LOC_ABOUT_VERSION_TITLE" = "Versio";
-"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Haku";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Katso hinnat";
 
 // Страница с подробной информацией об отеле
 "HL_HOTEL_DETAIL_FULL_RATING" = "Näytä koko arvostelu ";
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Hotelleja ei löytynyt\nvalitun kaupungin.";
 "HL_NEW_SEARCH_BUTTON" = "Uusi haku";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Hyväksy";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Käyttää";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Etäisyys nykyiseen sijaintiisi:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Etäisyys kohteesta ";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Myöhemmin";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Sulje";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Palautetta iOS -sovelluksesta";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Virhe";
@@ -527,8 +532,8 @@
 "HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "Taiwan";
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Hong Kong";
 
-"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "hotellit";
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "hotellia";
 "HL_LOC_SEARCH_FORM_HOTEL##{one}" = "hotelli";
-"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "hotellit";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "hotellia";
 "HL_LOC_SEARCH_FORM_HOTEL##{many}" = "hotellia";
 "HL_LOC_SEARCH_FORM_HOTEL##{other}" = "hotellia";

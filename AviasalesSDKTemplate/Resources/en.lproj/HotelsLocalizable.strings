@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "out of";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "children";
 "HL_LOC_GUEST_KID##{other}" = "children";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotels";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Search results";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Find hotels";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Get prices";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "FIND HOTELS";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "GET PRICES";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Select dates";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Discount";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Settings";
+"LOC_SETTINGS_TITLE" = "Information";
+
+"LOC_INFO" = "Information";
+
+"LOC_ABOUT" = "Please replace this text with the short description of your app";
 
 "HL_LOC_ABOUT_CURRENCY" = "Currency";
 
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "No hotels found\nin the selected city.";
 "HL_NEW_SEARCH_BUTTON" = "New search";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Apply";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Distance to your current location:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Later";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Close";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback from iOS app";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Error";

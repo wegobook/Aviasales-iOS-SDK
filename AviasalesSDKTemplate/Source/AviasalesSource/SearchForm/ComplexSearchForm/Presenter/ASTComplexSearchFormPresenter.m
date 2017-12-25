@@ -5,6 +5,7 @@
 //  This code is distributed under the terms and conditions of the MIT license.
 //
 
+#import <BlocksKit/BlocksKit.h>
 #import "ASTComplexSearchFormPresenter.h"
 #import "ASTComplexSearchFormViewControllerProtocol.h"
 #import "ASTComplexSearchFormViewModel.h"
@@ -38,16 +39,17 @@ static NSInteger const maxTravelSegments = 8;
 - (void)handleViewDidLoad {
     [self restoreSearchInfoBuilder];
     [self createTravelSegmentBuilders];
+    [self updateExpiredDepartureDates];
     [self.viewController updateWithViewModel:[self buildViewModel]];
 }
 
 - (void)handleSelectCellSegmentWithType:(ASTComplexSearchFormCellSegmentType)type atIndex:(NSInteger)index {
     switch (type) {
         case ASTComplexSearchFormCellSegmentTypeOrigin:
-            [self.viewController showAirportPickerWithMode:JRAirportPickerOriginMode forIndex:index];
+            [self.viewController showAirportPickerWithType:ASAirportPickerTypeOrigin forIndex:index];
             break;
         case ASTComplexSearchFormCellSegmentTypeDestination:
-            [self.viewController showAirportPickerWithMode:JRAirportPickerDestinationMode forIndex:index];
+            [self.viewController showAirportPickerWithType:ASAirportPickerTypeDestination forIndex:index];
             break;
         case ASTComplexSearchFormCellSegmentTypeDeparture:
             [self.viewController showDatePickerWithBorderDate:[self borderDateAtIndex:index] selectedDate:[self departureDateAtIndex:index] forIndex:index];
@@ -71,13 +73,13 @@ static NSInteger const maxTravelSegments = 8;
     [self.viewController showPassengersPickerWithInfo:[self buildPassengersInfo]];
 }
 
-- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withMode:(JRAirportPickerMode)mode atIndex:(NSInteger)index {
+- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withType:(ASAirportPickerType)type atIndex:(NSInteger)index {
     if (self.travelSegmentBuilders.count > index) {
-        switch (mode) {
-            case JRAirportPickerOriginMode:
+        switch (type) {
+            case ASAirportPickerTypeOrigin:
                 self.travelSegmentBuilders[index].originAirport = selectedAirport;
                 break;
-            case JRAirportPickerDestinationMode:
+            case ASAirportPickerTypeDestination:
                 self.travelSegmentBuilders[index].destinationAirport = selectedAirport;
                 break;
         }
@@ -215,6 +217,7 @@ static NSInteger const maxTravelSegments = 8;
 - (JRSDKSearchInfoBuilder *)createSearchInfoBuilder {
     JRSDKSearchInfoBuilder *searchInfoBuilder = [JRSDKSearchInfoBuilder new];
     searchInfoBuilder.adults = 1;
+    searchInfoBuilder.travelSegments = [JRSDKSearchInfoBuilder buildTravelSegmentsBasedOnConfig];
     return searchInfoBuilder;
 }
 
@@ -232,6 +235,17 @@ static NSInteger const maxTravelSegments = 8;
 }
 
 #pragma mark - Logic
+
+- (void)updateExpiredDepartureDates {
+
+    NSDate *firstAvalibleForSearchDate = [DateUtil firstAvalibleForSearchDate];
+
+    for (JRSDKTravelSegmentBuilder *travelSegmentBuilder in self.travelSegmentBuilders)  {
+        if ([firstAvalibleForSearchDate compare:travelSegmentBuilder.departureDate] == NSOrderedDescending) {
+            travelSegmentBuilder.departureDate = [DateUtil nextWeekend];
+        }
+    }
+}
 
 - (NSDate *)borderDateAtIndex:(NSInteger)index {
     NSDate *result = nil;

@@ -1,5 +1,4 @@
 #import "HLRatingCardCell.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 @implementation HLRatingCardCell
 

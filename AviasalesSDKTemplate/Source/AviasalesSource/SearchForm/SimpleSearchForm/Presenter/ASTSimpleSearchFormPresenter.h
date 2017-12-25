@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JRAirportPickerEnums.h"
 #import "JRDatePickerEnums.h"
 
 @class ASTSimpleSearchFormCellViewModel;
@@ -21,7 +20,7 @@
 - (void)handleViewDidLoad;
 - (void)handleSelectCellViewModel:(ASTSimpleSearchFormCellViewModel *)cellViewModel;
 - (void)handlePickPassengers;
-- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withMode:(JRAirportPickerMode)mode;
+- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withType:(ASAirportPickerType)type;
 - (void)handleSelectDate:(NSDate *)selectedDate withMode:(JRDatePickerMode)mode;
 - (void)handleSelectPassengersInfo:(ASTPassengersInfo *)selectedPassengersInfo;
 - (void)handleSwapAirports;

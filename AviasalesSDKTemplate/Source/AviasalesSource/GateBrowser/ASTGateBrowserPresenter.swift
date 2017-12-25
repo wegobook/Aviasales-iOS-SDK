@@ -89,7 +89,7 @@ private extension ASTGateBrowserPresenter {
 
 extension ASTGateBrowserPresenter: AviasalesSDKPurchasePerformerDelegate {
 
-    func purchasePerformer(_ performer: AviasalesSDKPurchasePerformer!, didFinishWith URLRequest: URLRequest!) {
+    public func purchasePerformer(_ performer: AviasalesSDKPurchasePerformer!, didFinishWith URLRequest: URLRequest!, clickID: String!) {
         view?.update(request: URLRequest)
     }
 

@@ -11,13 +11,14 @@ class ASTWaitingScreenViewController: UIViewController {
 
     let presenter: ASTWaitingScreenPresenter
 
-    @IBOutlet weak var progressView: ASTWaitingScreenProgressView!
+    @IBOutlet weak var progressView: ProgressView!
     @IBOutlet weak var planeScene: ASTWaitingScreenPlaneSceneView!
     @IBOutlet weak var infoLabel: UILabel!
     @IBOutlet weak var appodealAdvertisementView: UIView!
     @IBOutlet weak var aviasalesAdvertisementView: UIView!
 
     @IBOutlet weak var aviasalesAdvertisementViewHeightConstraint: NSLayoutConstraint!
+    @IBOutlet weak var aviasalesAdvertisementBottomConstraint: NSLayoutConstraint!
 
     init(searchInfo: JRSDKSearchInfo) {
         presenter = ASTWaitingScreenPresenter(searchInfo: searchInfo)
@@ -40,20 +41,24 @@ class ASTWaitingScreenViewController: UIViewController {
         presenter.handleLoad(view: self)
     }
 
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        aviasalesAdvertisementBottomConstraint.constant = bottomLayoutGuide.length
+    }
+
     // MARK: - Setup
 
     func setupViewController() {
-        edgesForExtendedLayout = .top
         view.backgroundColor = JRColorScheme.mainBackgroundColor()
         progressView.backgroundColor = JRColorScheme.mainBackgroundColor()
-        progressView.progressColor = JRColorScheme.mainButtonBackgroundColor()
+        progressView.progressColor = JRColorScheme.actionColor()
     }
 
     // MARK: - Update
 
     func updateInfoLabel(text: String, range: NSRange) {
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttribute(NSForegroundColorAttributeName, value: JRColorScheme.navigationBarBackgroundColor(), range: range)
+        attributedText.addAttribute(NSForegroundColorAttributeName, value: JRColorScheme.mainColor(), range: range)
         infoLabel.attributedText = attributedText
     }
 

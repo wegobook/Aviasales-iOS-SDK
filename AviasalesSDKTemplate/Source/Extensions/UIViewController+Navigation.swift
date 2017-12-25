@@ -14,7 +14,7 @@ extension UIViewController {
             navigationController?.pushViewController(viewController, animated: animated)
         } else {
             let navigationController = JRNavigationController(rootViewController: viewController)
-            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(dismissViewController))
+            viewController.navigationItem.leftBarButtonItem = UIBarButtonItem(title: NSLS("JR_CLOSE_BUTTON_TITLE"), style: .plain, target: self, action:  #selector(dismissViewController))
             navigationController.modalPresentationStyle = .formSheet
             present(navigationController, animated: animated, completion: nil)
         }

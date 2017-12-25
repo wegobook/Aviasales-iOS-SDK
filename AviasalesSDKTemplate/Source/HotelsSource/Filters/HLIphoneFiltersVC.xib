@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLIphoneFiltersVC">
             <connections>
                 <outlet property="applyButton" destination="yaw-Be-3fg" id="cqj-yS-Qf0"/>
+                <outlet property="applyButtonBottomLayoutConstraint" destination="vth-o5-zSh" id="vIu-Yj-cmp"/>
                 <outlet property="tableView" destination="BCV-Kx-yde" id="hAR-Mv-q4v"/>
                 <outlet property="view" destination="anH-6f-Vha" id="jcx-oz-J6U"/>
             </connections>
@@ -29,7 +31,7 @@
                     </connections>
                 </tableView>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yaw-Be-3fg">
-                    <rect key="frame" x="10" y="492" width="580" height="48"/>
+                    <rect key="frame" x="10" y="542" width="580" height="48"/>
                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="48" id="2rO-kb-hlb"/>
@@ -54,7 +56,7 @@
                 <constraint firstAttribute="bottom" secondItem="BCV-Kx-yde" secondAttribute="bottom" id="Cdh-D0-J7b"/>
                 <constraint firstAttribute="trailing" secondItem="yaw-Be-3fg" secondAttribute="trailing" constant="10" id="FLo-qT-VDC"/>
                 <constraint firstItem="BCV-Kx-yde" firstAttribute="top" secondItem="anH-6f-Vha" secondAttribute="top" id="OAR-0a-duz"/>
-                <constraint firstAttribute="bottom" secondItem="yaw-Be-3fg" secondAttribute="bottom" constant="60" id="vth-o5-zSh"/>
+                <constraint firstAttribute="bottom" secondItem="yaw-Be-3fg" secondAttribute="bottom" constant="10" id="vth-o5-zSh"/>
                 <constraint firstItem="BCV-Kx-yde" firstAttribute="leading" secondItem="anH-6f-Vha" secondAttribute="leading" id="vvx-Ij-2hy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

@@ -38,7 +38,7 @@ class HLIpadResultsVC: HLCommonResultsVC {
 
         filtersContainerWidth.constant = HLIpadResultsVC.filtersViewWidth
         setInitialFiltersStateForOrientation(UIApplication.shared.statusBarOrientation)
-        sortButton.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: .normal)
+        sortButton.setTitleColor(JRColorScheme.actionColor(), for: .normal)
     }
 
     override func viewWillAppear(_ animated: Bool) {

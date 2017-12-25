@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Dim on 14.06.17.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 #import "JRHotelCardView.h"
@@ -49,7 +49,7 @@
 
     self.actionButton.layer.borderWidth = 1.0;
     self.actionButton.layer.cornerRadius = 4.0;
-    self.actionButton.layer.borderColor = [JRColorScheme navigationBarBackgroundColor].CGColor;
+    self.actionButton.layer.borderColor = [JRColorScheme mainColor].CGColor;
 
     [self.actionButton setTitle:NSLS(@"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE") forState:UIControlStateNormal];
 }

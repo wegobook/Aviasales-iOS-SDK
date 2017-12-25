@@ -1,5 +1,4 @@
 #import "HLPlaceholderView.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 @implementation HLPlaceholderView
 

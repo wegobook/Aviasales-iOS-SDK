@@ -35,8 +35,6 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
 
 @property (nonatomic, strong) JRInfoPanelView *infoPanelView;
 
-@property (nonatomic, assign) BOOL tableViewInsetsDidSet;
-
 @property (nonatomic, weak) IBOutlet UIView *infoPanelContainerView;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *infoPanelViewHeightConstraint;
 
@@ -74,15 +72,6 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
     [self updateContent];
 }
 
-- (void)viewDidLayoutSubviews {
-    [super viewDidLayoutSubviews];
-    
-    if (!self.tableViewInsetsDidSet) {
-        self.tableViewInsetsDidSet = YES;
-        [self setupTableViewInsets];
-    }
-}
-
 #pragma mark - Properties
 
 - (void)setTicket:(JRSDKTicket *)ticket {
@@ -108,15 +97,6 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
-- (void)setupTableViewInsets {
-
-    UIEdgeInsets tableViewInsets = self.tableView.contentInset;
-    UIEdgeInsets insets = UIEdgeInsetsMake(tableViewInsets.top, tableViewInsets.left, self.bottomLayoutGuide.length, tableViewInsets.right);
-
-    self.tableView.contentInset = insets;
-    self.tableView.scrollIndicatorInsets = insets;
-}
-
 - (void)setupNavigationItems {
     self.title = [JRSearchInfoUtils formattedIatasAndDatesExcludeYearComponentForSearchInfo:_searchInfo];
 }
@@ -133,6 +113,7 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
 - (void)updateContent {
     [self updateInfoPanelView];
     [self.tableView reloadData];
+    [self.tableView setContentOffset:CGPointZero animated:YES];
 }
 
 - (void)updateInfoPanelView {

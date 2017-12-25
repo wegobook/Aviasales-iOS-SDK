@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "中";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "子ども";
 "HL_LOC_GUEST_KID##{other}" = "子ども";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "ホテル";
 
@@ -87,7 +88,7 @@
 
 "HL_LOC_FILTER_TITLE_LABEL" = "フィルター";
 "HL_LOC_FILTER_DROP_BUTTON" = "リセット";
-"HL_LOC_FILTER_APPLY_BUTTON" = "OK";
+"HL_LOC_FILTER_APPLY_BUTTON" = "完了";
 
 "HL_LOC_FILTER_PRICE_CRITERIA" = "価格";
 "HL_LOC_FILTER_RANGE" = "%@ から %@";
@@ -161,7 +162,7 @@
 "HL_LOC_SEARCH_POINT_TEXT" = "検索ピン";
 "HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ とその近辺";
 
-"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "OK";
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "完了";
 "HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "マップ上のポイント";
 
 "HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "現在位置";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "割引";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "設定";
+"LOC_SETTINGS_TITLE" = "情報";
+
+"LOC_INFO" = "情報";
+
+"LOC_ABOUT" = "このテキストを、あなたのアプリの短い説明で置き換えてください。";
 
 "HL_LOC_ABOUT_CURRENCY" = "通貨";
 
@@ -243,7 +248,7 @@
 "LOC_CURRENCY_SEARCH_PLACEHOLDER" = "検索";
 
 // Страница с подробной информацией об отеле
-"HL_HOTEL_DETAIL_FULL_RATING" = "詳細な評価";
+"HL_HOTEL_DETAIL_FULL_RATING" = "詳細な評価 ";
 "HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "さらに%@件表示";
 "HL_HOTEL_DETAIL_HIDE_ROOMS" = "非表示";
 
@@ -402,10 +407,10 @@
 "HL_LOC_CHECKOUT_BEFORE" = "より前";
 
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li の割引";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li の割引";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li の割引";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li の割引";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li の割引";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "割引 %li件";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "割引 %li件";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "割引 %li件";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "割引 %li件";
 
 "HOTEL_RATING_EXCEPTIONAL" = "最高";
 "HOTEL_RATING_WONDERFUL" = "とてもすばらしい";
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "指定された都市内に\nホテルはありません。";
 "HL_NEW_SEARCH_BUTTON" = "新しい検索";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "適用";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "現在地への距離：";
@@ -463,9 +468,9 @@
 "HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "設定に移動する";
 
 "HL_LOC_ALERT_LATER_BUTTON" = "後で";
-"HL_LOC_ALERT_CLOSE_BUTTON" = "Close";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "閉じる";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "iOSアプリからのフィードバック";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "エラー";

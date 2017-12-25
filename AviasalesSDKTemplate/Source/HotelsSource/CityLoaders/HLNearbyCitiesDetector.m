@@ -1,5 +1,4 @@
 #import <HotellookSDK/HotellookSDK.h>
-#import "AviasalesSDKTemplate-Swift.h"
 
 #import "HLNearbyCitiesDetector.h"
 

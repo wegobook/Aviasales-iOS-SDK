@@ -1,5 +1,4 @@
 #import "HLDatePickerVC.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import "HLDatePickerMonthItem.h"
 #import "JRDatePickerDayCell.h"
 #import "JRDatePickerMonthHeaderReusableView.h"
@@ -20,9 +19,7 @@ static NSString *kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonthHeaderR
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
-    
-    [self fixTableViewInsets];
-    
+
     [self.searchInfo updateExpiredDates];
     
 	[self registerNibs];
@@ -49,15 +46,13 @@ static NSString *kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonthHeaderR
     }
 }
 
-#pragma mark - Private methods
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
 
-- (void)fixTableViewInsets
-{
-    // Change insets for fixing double separator (from top section and bottom of nav bar)
-    // After this top section separator will be under bottom nav bar separator
-    UIEdgeInsets insets = self.tableView.contentInset;
-    self.tableView.contentInset = UIEdgeInsetsMake(insets.top - 1, insets.left, insets.bottom, insets.right);
+    [_tableView flashScrollIndicators];
 }
+
+#pragma mark - Private methods
 
 - (void)registerNibs
 {
@@ -74,10 +69,13 @@ static NSString *kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonthHeaderR
 	if (!_stateObject.borderDate) {
         _stateObject.borderDate = [DateUtil borderDate];
 	}
-    
-	NSDate *firstMonth = [DateUtil firstDayOfMonth:[DateUtil resetTimeForDate:[DateUtil today]]];
+
+    NSUInteger counter = [DateUtil isFirstDayOfMonth:_stateObject.lastAvalibleForSearchDate] ? 11 : 12;
+
+    NSDate *firstMonth = [DateUtil firstDayOfMonth:[DateUtil resetTimeForDate:[DateUtil borderDate]]];
+
 	[datesToRepresent addObject:firstMonth];
-	for (NSUInteger i = 1; i <= 12; i++) {
+	for (NSUInteger i = 1; i <= counter; i++) {
 		NSDate *prevMonth = datesToRepresent[i - 1];
 		
 		[datesToRepresent addObject:[DateUtil firstDayOfNextMonthForDate:prevMonth]];

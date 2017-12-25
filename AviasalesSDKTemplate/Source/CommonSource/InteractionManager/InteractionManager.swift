@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 23/03/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 @objc protocol HotelsSearchDelegate: NSObjectProtocol {
@@ -17,6 +17,7 @@
 class InteractionManager: NSObject, AviasalesAirportsGeoSearchPerformerDelegate {
 
     private struct SearchHotelsInfo {
+
         let checkIn: Date
         let checkOut: Date
         let adults: UInt
@@ -29,8 +30,6 @@ class InteractionManager: NSObject, AviasalesAirportsGeoSearchPerformerDelegate 
         }
     }
 
-    private let kSavedCurrencyKey = "kSavedCurrencyKey"
-
     static let shared = InteractionManager()
 
     private var searchHotelsInfo: SearchHotelsInfo?
@@ -42,44 +41,10 @@ class InteractionManager: NSObject, AviasalesAirportsGeoSearchPerformerDelegate 
     private var savedHLSearchInfo: HLSearchInfo?
     private var savedDestination: JRSDKAirport?
 
-    private var geoLoader: AviasalesAirportsGeoSearchPerformer!
+    lazy private var geoLoader: AviasalesAirportsGeoSearchPerformer = AviasalesAirportsGeoSearchPerformer(delegate: self)
 
     weak var ticketsSearchForm: HotelsSearchDelegate?
     weak var hotelsSearchForm: TicketsSearchDelegate?
-
-    private(set) var currency: HDKCurrency = CurrencyManager.shared.defaultCurrency()
-
-    override init() {
-        super.init()
-        if let savedCurrency = self.loadCurrency() {
-            currency = savedCurrency
-        } else {
-            let currencyCode = Locale.current.currencyCode ?? ""
-            currency = CurrencyManager.shared.getCurrency(withCode: currencyCode) ?? CurrencyManager.shared.defaultCurrency()
-            saveCurrency(currency)
-        }
-        geoLoader = AviasalesAirportsGeoSearchPerformer(delegate: self)
-    }
-
-    // MARK: - Common
-
-    func currencySelected(_ newCurrency: HDKCurrency) {
-        currency = newCurrency
-        saveCurrency(currency)
-    }
-
-    func saveCurrency(_ currency: HDKCurrency) {
-        let data = NSKeyedArchiver.archivedData(withRootObject: currency)
-        UserDefaults.standard.set(data, forKey: kSavedCurrencyKey)
-    }
-
-    func loadCurrency() -> HDKCurrency? {
-        if let data = UserDefaults.standard.object(forKey: kSavedCurrencyKey) as? Data {
-            let currency = NSKeyedUnarchiver.unarchiveObject(with: data)
-            return currency as? HDKCurrency
-        }
-        return nil
-    }
 
     // MARK: - Tickets
 
@@ -126,7 +91,7 @@ class InteractionManager: NSObject, AviasalesAirportsGeoSearchPerformerDelegate 
                 return
         }
         self.savedHLSearchInfo = searchInfo
-        geoLoader?.searchAirportsNearLatitude(city.latitude, longitude: city.longitude)
+        geoLoader.searchAirportsNearLatitude(city.latitude, longitude: city.longitude)
     }
 
     func applySavedTicketsSearchInfo() {

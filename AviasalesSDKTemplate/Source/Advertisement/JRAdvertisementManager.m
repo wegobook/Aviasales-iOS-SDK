@@ -64,15 +64,18 @@
     [videoLoader loadVideoAd:^(APDMediaView *adView, APDNativeAd *ad) {
         [loaders removeObject:videoLoader];
 
-        if (adView != nil) {
-            [view addSubview:adView];
-            adView.translatesAutoresizingMaskIntoConstraints = NO;
-            [view addConstraints:JRConstraintsMakeScaleToFill(adView, view)];
-            [ad attachToView:view viewController:viewController];
-        } else {
-            UIViewController *const viewController = weakViewController;
-            if (viewController && [Appodeal isReadyForShowWithStyle:AppodealShowStyleInterstitial]) {
-                [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:viewController];
+        UIViewController *strongViewController = weakViewController;
+
+        if (strongViewController.view.window) { // invoke callback only if viewController is visible
+            if (adView != nil) {
+                [view addSubview:adView];
+                adView.translatesAutoresizingMaskIntoConstraints = NO;
+                [view addConstraints:JRConstraintsMakeScaleToFill(adView, view)];
+                [ad attachToView:view viewController:strongViewController];
+            } else {
+                if (strongViewController && [Appodeal isReadyForShowWithStyle:AppodealShowStyleInterstitial]) {
+                    [Appodeal showAd:AppodealShowStyleInterstitial rootViewController:strongViewController];
+                }
             }
         }
     }];

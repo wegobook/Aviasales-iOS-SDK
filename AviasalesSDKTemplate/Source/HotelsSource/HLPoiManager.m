@@ -1,6 +1,5 @@
 #import "HLPoiManager.h"
 #import <CoreLocation/CoreLocation.h>
-#import "AviasalesSDKTemplate-Swift.h"
 #import <HotellookSDK/HotellookSDK.h>
 #import "NSArray+Functional.h"
 

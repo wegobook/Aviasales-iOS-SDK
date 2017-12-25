@@ -1,5 +1,4 @@
 #import "HLSingleAnnotationView.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import <PureLayout/PureLayout.h>
 #import "StringUtils.h"
 #import "HLResultVariant.h"
@@ -36,6 +35,8 @@ static const CGFloat kAnnotationViewHeight = 24 + kTopShadowHeight + kBottomShad
 @property (nonatomic, strong) NSLayoutConstraint *priceTrailingConstraint;
 @property (nonatomic, strong) NSLayoutConstraint *priceVerticalConstraint;
 
+@property (nonatomic, assign, readwrite) UIEdgeInsets extraInsets;
+
 @end
 
 @implementation HLSingleAnnotationView
@@ -44,6 +45,11 @@ static const CGFloat kAnnotationViewHeight = 24 + kTopShadowHeight + kBottomShad
 
 - (void)initialSetup
 {
+    if (@available(iOS 11.0, *)) {
+        self.extraInsets = UIEdgeInsetsMake(5, 5, 5, 5);
+    } else {
+        self.extraInsets = UIEdgeInsetsZero;
+    }
     self.leftImage = [UIImage imageNamed:@"pinImageLeft.png"];
     self.rightImage = [UIImage imageNamed:@"pinImageRight.png"];
     self.infoViewLogic = [HotelInfoViewLogic new];
@@ -95,7 +101,7 @@ static const CGFloat kAnnotationViewHeight = 24 + kTopShadowHeight + kBottomShad
 
 - (void)setupConstraints
 {
-    [self.backgroundView autoPinEdgesToSuperviewEdges];
+    [self.backgroundView autoPinEdgesToSuperviewEdgesWithInsets:self.extraInsets];
 
     [self.leftImageView autoMatchDimension:ALDimensionWidth toDimension:ALDimensionWidth ofView:self.rightImageView];
 
@@ -132,7 +138,7 @@ static const CGFloat kAnnotationViewHeight = 24 + kTopShadowHeight + kBottomShad
                       withHorizontalFittingPriority:UILayoutPriorityFittingSizeLevel
                             verticalFittingPriority:UILayoutPriorityRequired];
 
-    CGRect frame = CGRectMake(0.0, 0.0, size.width, size.height);
+    CGRect frame = CGRectMake(0.0, 0.0, size.width, size.height + self.extraInsets.top + self.extraInsets.bottom);
     frame = TBCenterRect(frame, self.center);
     self.frame = frame;
 }
@@ -193,8 +199,8 @@ static const CGFloat kAnnotationViewHeight = 24 + kTopShadowHeight + kBottomShad
     self.frame = CGRectMake(0.0, 0.0, size.width, size.height);
     self.centerOffset = CGPointMake(0.0, -size.height / 2.0 + kAnnotationViewHeight / 2.0);
 
-    if (![self.subviews containsObject:self.variantView]) {
-        [self addSubview:self.variantView];
+    if (![self.backgroundView.subviews containsObject:self.variantView]) {
+        [self.backgroundView addSubview:self.variantView];
     }
 
     [self.variantView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(5, 5, 10, 5)];
@@ -291,13 +297,13 @@ static const CGFloat kAnnotationViewHeight = 24 + kTopShadowHeight + kBottomShad
 						options:options
 					 animations:^{ [self hidePinContent]; }
 					 completion:^(BOOL finished) {
-                         [self addSubview:self.variantView];
+                         [self.backgroundView addSubview:self.variantView];
                          [UIView animateWithDuration:duration
                                                delay:0.0
                                              options:options
                                           animations:^{ [self addCalloutContent]; }
                                           completion:^(BOOL finished) {
-                                              if ([self.subviews containsObject:self.variantView]) {
+                                              if ([self.backgroundView.subviews containsObject:self.variantView]) {
                                                   [UIView animateWithDuration:duration
                                                                         delay:0.0
                                                                       options:options

@@ -1,5 +1,4 @@
 #import "HLIpadSearchVC.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import "DateUtil.h"
 #import "HLDatePickerVC.h"
 

@@ -1,5 +1,4 @@
 #import "HLSearchTicketsCardCell.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import <HotellookSDK/HotellookSDK.h>
 
 @interface HLSearchTicketsCardCell ()
@@ -22,7 +21,7 @@
     [super awakeFromNib];
 
     self.searchTicketsButton.titleLabel.font = [UIFont systemFontOfSize:15.0];
-    [self.searchTicketsButton setTitleColor:[JRColorScheme mainButtonBackgroundColor] forState:UIControlStateNormal];
+    [self.searchTicketsButton setTitleColor:[JRColorScheme actionColor] forState:UIControlStateNormal];
     [self.searchTicketsButton setTitle:NSLS(@"HL_TICKETS_SEARCH_CELL_BUTTON") forState:UIControlStateNormal];
 
     self.searchTicketsDescriptionLabel.text = NSLS(@"HL_TICKETS_SEARCH_CELL_TITLE");

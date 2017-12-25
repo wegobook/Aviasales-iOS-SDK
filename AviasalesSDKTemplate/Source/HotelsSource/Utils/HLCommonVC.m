@@ -1,6 +1,5 @@
 #import "HLCommonVC.h"
 #import <objc/runtime.h>
-#import "AviasalesSDKTemplate-Swift.h"
 #import "NSObject+Notifications.h"
 #import "Collections+HLNibLoading.h"
 #import <PureLayout/PureLayout.h>
@@ -51,7 +50,7 @@
 
 - (IBAction)goBack
 {
-    [self.navigationController popViewControllerAnimated:YES];
+    [self popOrDismissBasedOnDeviceTypeWithAnimated:YES];
 }
 
 - (void)disableScrollForInteractivePopGesture:(UIScrollView *)scrollView
@@ -175,7 +174,13 @@
     [self presentPopover:contentVC from:anchorView distance:(CGFloat)distance permittedArrowDirections:permittedArrowDirections contentSize:contentSize backgroundColor:color cornerRadius:5.0f];
 }
 
-- (void)presentPopover:(UIViewController *)contentVC from:(UIView *)anchorView distance:(CGFloat)distance permittedArrowDirections:(UIPopoverArrowDirection)permittedArrowDirections contentSize:(CGSize)contentSize backgroundColor:(UIColor *)color cornerRadius:(CGFloat)cornerRadius
+- (void)presentPopover:(UIViewController *)contentVC
+                  from:(UIView *)anchorView
+              distance:(CGFloat)distance
+permittedArrowDirections:(UIPopoverArrowDirection)permittedArrowDirections
+           contentSize:(CGSize)contentSize
+       backgroundColor:(UIColor *)color
+          cornerRadius:(CGFloat)cornerRadius
 {
     UIEdgeInsets insets = [self popoverEdgeInsets];
 
@@ -202,9 +207,11 @@
 {
     JRNavigationController *navVC = [[JRNavigationController alloc] initWithRootViewController:vc];
     navVC.modalPresentationStyle = UIModalPresentationFormSheet;
-    vc.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
-                                                                                                   target:self
-                                                                                                   action:@selector(dismiss)];
+    vc.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithTitle:NSLS(@"JR_CLOSE_BUTTON_TITLE")
+                                                                            style:UIBarButtonItemStylePlain
+                                                                           target:self
+                                                                           action:@selector(dismiss)];
+    
     [self presentViewController:navVC animated:animated completion:nil];
 }
 

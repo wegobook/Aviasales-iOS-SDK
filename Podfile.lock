@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (4.5.1)
+  - Alamofire (4.6.0)
   - Appodeal (2.1.7):
     - Appodeal/Full (= 2.1.7)
   - Appodeal/AdColonyAdapter (2.1.7):
@@ -81,7 +81,7 @@ PODS:
   - Appodeal/YandexAdapter (2.1.7):
     - Appodeal/Core
   - AutoCoding (2.2.3)
-  - AviasalesSDK (3.0.1)
+  - AviasalesSDK (3.0.4)
   - AXRatingView (1.0.6)
   - BlocksKit (2.2.5):
     - BlocksKit/All (= 2.2.5)
@@ -109,7 +109,7 @@ PODS:
     - Alamofire (~> 4.4)
     - KeychainSwift (~> 8.0)
     - SwiftProtobuf (~> 1.0.1)
-  - KeychainSwift (8.0.2)
+  - KeychainSwift (8.0.3)
   - libextobjc (0.4.1):
     - libextobjc/EXTADT (= 0.4.1)
     - libextobjc/EXTConcreteProtocol (= 0.4.1)
@@ -146,6 +146,7 @@ PODS:
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
   - NMRangeSlider (1.2.1)
+  - ObjectMapper (3.1.0)
   - PromiseKit (4.5.0):
     - PromiseKit/Foundation (= 4.5.0)
     - PromiseKit/QuartzCore (= 4.5.0)
@@ -162,13 +163,13 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - Smartling.i18n (1.0.14)
-  - SwiftLint (0.23.1)
-  - SwiftProtobuf (1.0.1)
+  - SwiftLint (0.24.0)
+  - SwiftProtobuf (1.0.2)
 
 DEPENDENCIES:
   - Appodeal (~> 2.0)
   - AutoCoding (~> 2.2)
-  - AviasalesSDK (= 3.0.1)
+  - AviasalesSDK (~> 3.0.4)
   - AXRatingView
   - BlocksKit
   - BZipCompression (~> 1.0)
@@ -180,6 +181,7 @@ DEPENDENCIES:
   - HotellookSDK (~> 1.0.4)
   - libextobjc (~> 0.4)
   - NMRangeSlider
+  - ObjectMapper
   - PromiseKit (~> 4.0)
   - PureLayout (~> 3.0)
   - SDWebImage (~> 3.7)
@@ -188,10 +190,10 @@ DEPENDENCIES:
   - SwiftProtobuf (~> 1.0.1)
 
 SPEC CHECKSUMS:
-  Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
   Appodeal: a2ff6b690c081388881fa053b23c04630fa8fac5
   AutoCoding: 90ca3cbc0d77a37cfff75167d705b44148c5fc51
-  AviasalesSDK: 582acc3c2f42e3ea91849d057ab96aac3ae1866b
+  AviasalesSDK: 59bb0853dc28855f0344b2d9beeb0afc1225f359
   AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   BZipCompression: e0f96508e60eb93b5f5d4c7de1eb3dd0ac4f9ae9
@@ -201,16 +203,17 @@ SPEC CHECKSUMS:
   GCXSteppedSlider: c41ed88eb30e34963738a5ef77c2f8a855eb73c6
   GPUImage: 733a5f0fab92df9de1c37ba9df520a833ccb406d
   HotellookSDK: 9e2586f84297b4ac5ede4c153f7f3b4303490e35
-  KeychainSwift: 213db04dfe7244988e61f77c72a2afb2f775954a
+  KeychainSwift: be9554c0e5f4b1686c775930dc5c6bd9396992ed
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   NMRangeSlider: 317ded652431eb90501c8421d9cddc3930d891e6
+  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
   PromiseKit: 9c1d9f6d7b65e3951a90bea7f407c56972be5d8e
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Smartling.i18n: 0d508b89a2a12f0e070e6369e4dcdcf46ae2d59f
-  SwiftLint: 1b670ce79284c76520f84060e87d645078fd32fa
-  SwiftProtobuf: 78b2f4f3b282cad8cedf855358ec5c1921aaf633
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+  SwiftProtobuf: e41d205c91eac0fb46823f2561712407fefdaf4e
 
-PODFILE CHECKSUM: 3073324b7b018a42584efbf11a7f0686113adf48
+PODFILE CHECKSUM: 06c8d25ba204e505b510dac8ac51a6a6b9f87490
 
 COCOAPODS: 1.3.1

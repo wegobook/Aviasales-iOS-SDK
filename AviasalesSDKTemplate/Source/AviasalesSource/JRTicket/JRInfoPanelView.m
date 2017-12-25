@@ -45,8 +45,13 @@ static const CGFloat kAgencyInfoLabelMaxCenterConstraint = 15.0;
     
     [self.showOtherAgenciesButton setTitle:AVIASALES_(@"JR_TICKET_OTHER_BUTTON") forState:UIControlStateNormal];
     self.showOtherAgenciesButton.layer.borderWidth = 1.0;
-    self.showOtherAgenciesButton.layer.borderColor = [JRColorScheme navigationBarItemColor].CGColor;
+    self.showOtherAgenciesButton.layer.borderColor = [UIColor whiteColor].CGColor;
     self.showOtherAgenciesButton.layer.cornerRadius = 4.0;
+
+    self.priceLabel.textColor = [UIColor whiteColor];
+    self.agencyInfoLabel.textColor = [UIColor whiteColor];
+
+    [self.showOtherAgenciesButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     [self updateContent];
 }

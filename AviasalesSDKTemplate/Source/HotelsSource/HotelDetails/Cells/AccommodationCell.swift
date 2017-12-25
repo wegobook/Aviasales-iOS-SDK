@@ -92,7 +92,7 @@ class AccommodationCell: HLAutolayoutCell {
     func configure(item: AccommodationItem) {
         titleLabel.text = item.name
         valueLabel.text = item.text
-        valueLabel.textColor = item.shouldHighlightText ? JRColorScheme.mainButtonBackgroundColor() : JRColorScheme.darkTextColor()
+        valueLabel.textColor = item.shouldHighlightText ? JRColorScheme.actionColor() : JRColorScheme.darkTextColor()
         first = item.first
         last = item.last
     }

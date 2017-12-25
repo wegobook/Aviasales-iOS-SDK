@@ -29,7 +29,7 @@
     self.descriptionLabel.text = NSLS(@"HL_NO_FILTER_RESULTS_DESCRIPTION");
     [self.button setTitle:NSLS(@"HL_NO_FILTER_RESULTS_BUTTON") forState:UIControlStateNormal];
 
-    [self.button setTitleColor:[JRColorScheme mainButtonBackgroundColor] forState:UIControlStateNormal];
+    [self.button setTitleColor:[JRColorScheme actionColor] forState:UIControlStateNormal];
 }
 
 @end

@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "su";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "bambini";
 "HL_LOC_GUEST_KID##{other}" = "bambini";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Alberghi";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Risultati di ricerca";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Trova hotel";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Ottieni prezzi";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "TROVA HOTEL";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "OTTIENI PREZZI";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Seleziona date";
@@ -67,7 +68,7 @@
 "HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Neonati";
 "HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Età";
 "HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Applica";
-"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Cancella";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Annulla";
 
 "HL_CLEAN_BUTTON_TITLE" = "Cancella";
 
@@ -172,7 +173,7 @@
 
 "HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Abilita agenzie con interfaccia in inglese";
 
-"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Servizi delle camere";
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Servizi della camera";
 "HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Servizi dell'hotel";
 "HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Nome hotel";
 
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Sconto";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Impostazioni";
+"LOC_SETTINGS_TITLE" = "Informazioni";
+
+"LOC_INFO" = "Informazioni";
+
+"LOC_ABOUT" = "Per favore, sostituisci questo testo con una breve descrizione della tua app";
 
 "HL_LOC_ABOUT_CURRENCY" = "Valuta";
 
@@ -240,7 +245,7 @@
 
 "HL_LOC_MAIL_BAD_RATE_TEXT" = "Dicci che cosa non è andato bene:";
 "HL_LOC_ABOUT_VERSION_TITLE" = "Versione";
-"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Ricerca";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Cerca";
 
 // Страница с подробной информацией об отеле
 "HL_HOTEL_DETAIL_FULL_RATING" = "Tariffe nel dettaglio ";
@@ -248,13 +253,13 @@
 "HL_HOTEL_DETAIL_HIDE_ROOMS" = "Nascondi";
 
 "HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Tutte le camere";
-"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Valutazione";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Categoria";
 "HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Galleria";
 
 "HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Posizione";
 "HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Dettagli struttura";
 "HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Informazioni utili";
-"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Servizi della camera";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Servizi delle camere";
 "HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Dettagli proprietà";
 "HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Servizi dell'hotel";
 
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Nessun hotel trovato\nnella città selezionata.";
 "HL_NEW_SEARCH_BUTTON" = "Nuova ricerca";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Applica";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Applicare";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Distanza dalla posizione attuale:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Distanza da ";
@@ -463,9 +468,9 @@
 "HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Vai su Impostazioni";
 
 "HL_LOC_ALERT_LATER_BUTTON" = "Più tardi";
-"HL_LOC_ALERT_CLOSE_BUTTON" = "Chiudi";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Chiudere";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback dall'app iOS";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Errore";

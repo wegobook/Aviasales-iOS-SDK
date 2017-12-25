@@ -1,6 +1,5 @@
 #import "HLPoiIconSelector.h"
 #import "HLPoiManager.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import <MapKit/MapKit.h>
 
 static NSDictionary * nameAccordingToCategoryMap;

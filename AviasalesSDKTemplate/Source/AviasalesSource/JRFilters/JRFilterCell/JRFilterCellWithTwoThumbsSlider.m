@@ -22,7 +22,7 @@
     
     self.separatorInset = UIEdgeInsetsMake(0.0, 21.0, 0.0, 0.0);
     
-    self.cellSlider.tintColor = [JRColorScheme navigationBarBackgroundColor];
+    self.cellSlider.tintColor = [JRColorScheme mainColor];
 
     self.cellLabel.textColor = [JRColorScheme darkTextColor];
     self.cellAttLabel.textColor = [JRColorScheme darkTextColor];
@@ -30,10 +30,10 @@
     [self setDayTimeButtonWidthMultiplier:1.0f/4.0f];
     
     for (UIButton *dayTimeButton in self.dayTimeButtons) {
-        [dayTimeButton setTitleColor:[JRColorScheme navigationBarBackgroundColor] forState:UIControlStateNormal];
+        [dayTimeButton setTitleColor:[JRColorScheme mainColor] forState:UIControlStateNormal];
         dayTimeButton.titleLabel.adjustsFontSizeToFitWidth = YES;
         dayTimeButton.titleLabel.minimumScaleFactor = 0.5;
-        dayTimeButton.layer.borderColor = [JRColorScheme navigationBarBackgroundColor].CGColor;
+        dayTimeButton.layer.borderColor = [JRColorScheme mainColor].CGColor;
         dayTimeButton.layer.borderWidth = JRPixel();
     }
 }

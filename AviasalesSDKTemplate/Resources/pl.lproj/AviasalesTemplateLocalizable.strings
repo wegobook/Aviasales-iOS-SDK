@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@h %@m";
 "LONG_TIME_FORMAT" = "%@ h %@ min";
 
-"JR_ERROR_TITLE" = "BŁĄD";
+"JR_ERROR_TITLE" = "Błąd";
 
 "JR_BACK_TITLE" = "Wróć";
 
@@ -17,16 +17,15 @@
 
 "JR_OK_BUTTON" = "OK";
 
-"JR_DONE_BUTTON" = "GOTOWE";
+"JR_DONE_BUTTON" = "OK";
 
 "JR_NEW_SEARCH_TITLE" = "Nowe wyszukiwanie";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Wylot";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Data powrotu";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Daty lotów";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "Dzisiaj";
-"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Szukaj biletów";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Wyszukaj bilety";
 "JR_SEARCHINFO_BUSINESS" = "Biznes";
 "JR_SEARCHINFO_ECONOMY" = "EKON.";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "EKON. Premium";
@@ -52,7 +51,7 @@
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "W jedną stronę";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "W obie strony";
 "JR_SEARCH_FORM_TITLE" = "Loty";
-"JR_SEARCH_FORM_SEARCH_BUTTON" = "SZUKAJ BILETÓW";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "ZNAJDŹ BILETY";
 "JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Liczba niemowląt podróżujących bez miejsca siedzącego nie może przekraczać liczby towarzyszących osób dorosłych.";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Proszę podać lotnisko wylotu";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Proszę podać lotnisko przylotu";
@@ -106,10 +105,11 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Brak wyników";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Poszukiwanie trwa...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Poszukiwanie lotnisk w pobliżu...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "Brak wyników";
 
 "JR_FILTER_BUTTON" = "Filtr";
 
-"JR_FILTER_RESET_ALL" = "Usuń wszystko";
+"JR_FILTER_RESET_ALL" = "Usuń";
 "JR_FILTER_RESET" = "Usuń";
 "JR_FILTER_TICKETS_NOT_FOUND" = "Brak wyników";
 
@@ -227,7 +227,7 @@
 "JR_TICKET_CREDIT_MONTH_12" = "grudzień";
 
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Kup od";
-"JR_TICKET_BUY_BUTTON" = "Kup bilet";
+"JR_TICKET_BUY_BUTTON" = "Kup";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Weź kredyt";
 "JR_TICKET_FLIGHT" = "Lot";
 "JR_TICKET_TRANSFER" = "Międzylądowanie";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "Poszukiwanie trwa...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Brak wyników. Spróbuj dostosować parametry wyszukiwania.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Błąd połączenia";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Przepraszamy, JetRadar jest chwilowo niedostępny";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Przepraszamy, serwis jest czasowo niedostępny";

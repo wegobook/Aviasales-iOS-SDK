@@ -21,7 +21,6 @@
 
 "JR_NEW_SEARCH_TITLE" = "ค้นหาใหม่";
 
-
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "วันที่เดินทาง";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "วันที่กลับ";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "วันที่เที่ยวบิน";
@@ -106,11 +105,12 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "ไม่พบผลลัพธ์";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "กำลังค้นหา...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "กำลังค้นหาสนามบินที่ใกล้ที่สุด...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "ไม่พบผลลัพธ์";
 
 "JR_FILTER_BUTTON" = "ตัวกรอง";
 
-"JR_FILTER_RESET_ALL" = "ลบทั้งหมด";
-"JR_FILTER_RESET" = "ลบ";
+"JR_FILTER_RESET_ALL" = "ตั้งค่าใหม่";
+"JR_FILTER_RESET" = "ตั้งค่าใหม่";
 "JR_FILTER_TICKETS_NOT_FOUND" = "ไม่พบผลลัพธ์";
 
 "JR_FILTER_EMPTY_ALERT_TITLE" = "ไม่พบตั๋วตามที่ต้องการ";
@@ -227,7 +227,7 @@
 "JR_TICKET_CREDIT_MONTH_12" = "ธันวาคม";
 
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "ซื้อที่";
-"JR_TICKET_BUY_BUTTON" = "ซื้อตั๋ว";
+"JR_TICKET_BUY_BUTTON" = "ซื้อ";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "ขอสินเชื่อ";
 "JR_TICKET_FLIGHT" = "เที่ยวบิน";
 "JR_TICKET_TRANSFER" = "จุดแวะพัก";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "กำลังค้นหา...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "ไม่พบผลลัพธ์ ลองเปลี่ยนตัวแปรการค้นหา";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "การเชื่อมต่อผิดพลาด";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "ขออภัย JetRadar ไม่สามารถให้บริการได้ชั่วคราว";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "ขออภัย ทางเราปิดให้บริการชั่วคราว";

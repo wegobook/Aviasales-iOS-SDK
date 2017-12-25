@@ -17,16 +17,15 @@
 
 "JR_OK_BUTTON" = "ОК";
 
-"JR_DONE_BUTTON" = "ГОТОВО";
+"JR_DONE_BUTTON" = "Готово";
 
 "JR_NEW_SEARCH_TITLE" = "Новый поиск";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Дата отправления";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Дата возвращения";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Даты перелёта";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "Сегодня";
-"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Искать билеты";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Найти билеты";
 "JR_SEARCHINFO_BUSINESS" = "Бизнес";
 "JR_SEARCHINFO_ECONOMY" = "Эконом";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Премиум эконом";
@@ -49,10 +48,10 @@
 "JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "Простой";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "Туда";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "Обратно";
-"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "в одну сторону";
-"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "возвратный";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "В одну сторону";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Туда и обратно";
 "JR_SEARCH_FORM_TITLE" = "Поиск билетов";
-"JR_SEARCH_FORM_SEARCH_BUTTON" = "Искать билеты";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "НАЙТИ БИЛЕТЫ";
 "JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Число младенцев без места не может превышать число взрослых.";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Пожалуйста, укажите пункт отправления";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Пожалуйста, укажите пункт назначения";
@@ -106,6 +105,7 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Нет рейсов";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Поиск...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Поиск ближайших аэропортов...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "Ничего не найдено";
 
 "JR_FILTER_BUTTON" = "Фильтры";
 
@@ -149,18 +149,18 @@
 "JR_FILTER_PAYMENT_METHODS" = "Способы оплаты";
 "JR_FILTER_PAYMENT_METHODS_ALL" = "Все cпособы оплаты";
 
-"JR_FILTER_PAYMENT_METHOD_EXP"                      = "Курьеру";
-"JR_FILTER_PAYMENT_METHOD_EUROSET"                  = "Евросеть";
-"JR_FILTER_PAYMENT_METHOD_CASH"                     = "Наличными";
-"JR_FILTER_PAYMENT_METHOD_CARD"                     = "По карте";
-"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY"             = "Яндекс.Деньги";
-"JR_FILTER_PAYMENT_METHOD_WEBMONEY"                 = "WebMoney";
-"JR_FILTER_PAYMENT_METHOD_TERMINAL"                 = "Через терминал";
-"JR_FILTER_PAYMENT_METHOD_SVYAZNOY"                 = "Связной";
-"JR_FILTER_PAYMENT_METHOD_ELEXNET"                  = "Элекснет";
-"JR_FILTER_PAYMENT_METHOD_BANK"                     = "Банковским переводом";
-"JR_FILTER_PAYMENT_METHOD_CONTACT"                  = "Contact";
-"JR_FILTER_PAYMENT_METHOD_CREDIT"                   = "В кредит";
+"JR_FILTER_PAYMENT_METHOD_EXP" = "Курьеру";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Евросеть";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "Наличными";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "По карте";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Яндекс.Деньги";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "Через терминал";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Связной";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Элекснет";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "Банковским переводом";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "Contact ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "В кредит";
 
 "JR_FILTER_AIRLINES" = "Авиакомпании";
 "JR_FILTER_AIRLINES_ALL" = "Все aвиакомпании";

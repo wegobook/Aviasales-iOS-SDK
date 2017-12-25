@@ -22,7 +22,7 @@
     self.titleLabel.text = NSLS(@"HL_NO_RESULTS_TITLE");
     self.descriptionLabel.text = NSLS(@"HL_NO_RESULTS_DESCRIPTION");
     [self.button setTitle:NSLS(@"HL_NEW_SEARCH_BUTTON") forState:UIControlStateNormal];
-    [self.button setTitleColor:[JRColorScheme mainButtonBackgroundColor] forState:UIControlStateNormal];
+    [self.button setTitleColor:[JRColorScheme actionColor] forState:UIControlStateNormal];
 }
 
 @end

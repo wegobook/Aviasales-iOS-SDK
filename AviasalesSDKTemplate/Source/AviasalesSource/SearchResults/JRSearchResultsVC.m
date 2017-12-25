@@ -38,6 +38,8 @@ static const NSInteger kHotelCardIndex = 5;
 @property (nonatomic, strong) NSMutableIndexSet *adsIndexSet;
 
 @property (nonatomic, assign) BOOL shouldShowMetropolitanResultsInfoAlert;
+
+@property (nonatomic, assign) BOOL shouldSetTableViewInsets;
 @property (nonatomic, assign) BOOL tableViewInsetsDidSet;
 
 @property (strong, nonatomic) JRSearchResultsFlightSegmentCellLayoutParameters *flightSegmentLayoutParameters;
@@ -105,7 +107,7 @@ static const NSInteger kHotelCardIndex = 5;
 
     JRHotelCardView *hotelCardView = nil;
 
-    if ([InteractionManager shared].isCityReadyForSearchHotels && hotelsEnabled() && [JRSDKModelUtils isSimpleSearch:self.searchInfo]) {
+    if ([InteractionManager shared].isCityReadyForSearchHotels && [ConfigManager shared].hotelsEnabled && [JRSDKModelUtils isSimpleSearch:self.searchInfo]) {
 
         hotelCardView = [JRHotelCardView loadFromNib];
 
@@ -157,7 +159,7 @@ static const NSInteger kHotelCardIndex = 5;
 - (void)viewDidLayoutSubviews {
     [super viewDidLayoutSubviews];
 
-    if (!self.tableViewInsetsDidSet) {
+    if (self.shouldSetTableViewInsets && !self.tableViewInsetsDidSet) {
         self.tableViewInsetsDidSet = YES;
         [self setupTableViewInsets];
     }
@@ -179,8 +181,14 @@ static const NSInteger kHotelCardIndex = 5;
 #pragma mark - Setup 
 
 - (void)setupViewController {
-    
-    self.automaticallyAdjustsScrollViewInsets = NO;
+
+    if (@available(iOS 11.0, *)) {
+        self.shouldSetTableViewInsets = NO;
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.shouldSetTableViewInsets = YES;
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
 
     [self setupNavigationItems];
     [self setupTableView];
@@ -211,10 +219,10 @@ static const NSInteger kHotelCardIndex = 5;
 }
 
 - (void)setupTableViewInsets {
-    
+
     UIEdgeInsets tableViewInsets = self.tableView.contentInset;
     UIEdgeInsets insets = UIEdgeInsetsMake(tableViewInsets.top, tableViewInsets.left, self.bottomLayoutGuide.length, tableViewInsets.right);
-    
+
     self.tableView.contentInset = insets;
     self.tableView.scrollIndicatorInsets = insets;
 }

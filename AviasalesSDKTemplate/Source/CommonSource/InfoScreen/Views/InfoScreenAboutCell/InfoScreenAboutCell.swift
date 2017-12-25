@@ -1,0 +1,50 @@
+//
+//  InfoScreenAboutCell.swift
+//  AviasalesSDKTemplate
+//
+//  Created by Dim on 17.07.17.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+//
+
+import UIKit
+
+protocol InfoScreenAboutCellProtocol {
+    var icon: String { get }
+    var logo: String? { get }
+    var name: String? { get }
+    var description: String? { get }
+    var separator: Bool { get }
+}
+
+class InfoScreenAboutCell: UITableViewCell {
+
+    @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
+
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        selectionStyle = .none
+        setupUI()
+    }
+
+    private func setupUI() {
+        iconImageView.layer.cornerRadius = 14
+        iconImageView.layer.borderWidth = JRPixel()
+        iconImageView.layer.borderColor = UIColor.lightGray.cgColor
+        iconImageView.clipsToBounds = true
+        nameLabel.textColor = JRColorScheme.darkTextColor()
+        descriptionLabel.textColor = JRColorScheme.darkTextColor()
+    }
+
+    func setup(cellModel: InfoScreenAboutCellProtocol) {
+        let appIcon = UIImage(named: cellModel.icon)
+        if let logo = cellModel.logo, let url = URL(string: logo) {
+            iconImageView.sd_setImage(with: url, placeholderImage: appIcon, options: .delayPlaceholder)
+        } else {
+            iconImageView.image = appIcon
+        }
+        nameLabel.text = cellModel.name
+        descriptionLabel.text = cellModel.description
+    }
+}

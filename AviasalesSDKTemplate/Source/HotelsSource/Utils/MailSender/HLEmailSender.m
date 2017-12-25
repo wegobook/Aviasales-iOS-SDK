@@ -40,7 +40,7 @@ NSString * const kReportFileName = @"Technical Report.gz";
                                               workFactor:BZipDefaultWorkFactor
                                                    error:&error];
 
-    [self.mailer setSubject:NSLS(@"HL_LOC_MAIL_FEEDBACK_SUBJECT")];
+    [self.mailer setSubject:@"Travel app feedback"];
     [self.mailer setToRecipients:toRecipients];
     [self.mailer addAttachmentData:techReport mimeType:@"application/zip" fileName:kReportFileName];
 }

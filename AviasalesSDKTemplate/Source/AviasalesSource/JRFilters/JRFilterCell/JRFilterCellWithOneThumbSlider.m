@@ -15,7 +15,7 @@
     
     self.separatorInset = UIEdgeInsetsMake(0.0, 21.0, 0.0, 0.0);
     
-    self.cellSlider.tintColor = [JRColorScheme navigationBarBackgroundColor];
+    self.cellSlider.tintColor = [JRColorScheme mainColor];
     
     self.cellLabel.textColor = [JRColorScheme darkTextColor];
     self.cellAttLabel.textColor = [JRColorScheme darkTextColor];

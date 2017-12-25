@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,6 +14,7 @@
                 <outlet property="filterButtonWidth" destination="dLJ-df-JDn" id="tDu-Py-wOy"/>
                 <outlet property="filtersButton" destination="zS0-nV-aZi" id="cQx-8E-6RF"/>
                 <outlet property="locateMeMapView" destination="kmk-9X-1wv" id="3Ra-Ly-DTd"/>
+                <outlet property="locateMeViewBottomLayoutConstraint" destination="UqG-d6-zGR" id="KLO-ag-hay"/>
                 <outlet property="mapView" destination="Fsb-QZ-IW4" id="YLz-07-O4g"/>
                 <outlet property="priceFilterView" destination="ZAj-R0-QRf" id="xgG-I4-3SZ"/>
                 <outlet property="priceFilterViewContainer" destination="tx6-H3-Vh4" id="4M3-mN-vke"/>
@@ -49,7 +51,7 @@
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zS0-nV-aZi" userLabel="Filter Button">
-                    <rect key="frame" x="105" y="563" width="166" height="40"/>
+                    <rect key="frame" x="105" y="612" width="166" height="40"/>
                     <color key="backgroundColor" red="1" green="0.70588235294117641" blue="0.20000000000000001" alpha="0.94999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                     <accessibility key="accessibilityConfiguration" label="Filters"/>
                     <constraints>
@@ -71,7 +73,7 @@
                     </connections>
                 </button>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kmk-9X-1wv" customClass="HLLocateMeMapView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
-                    <rect key="frame" x="315" y="558" width="50" height="50"/>
+                    <rect key="frame" x="315" y="607" width="50" height="50"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="50" id="3Zf-B6-kDI"/>
@@ -92,7 +94,7 @@
                 <constraint firstAttribute="bottom" secondItem="Fsb-QZ-IW4" secondAttribute="bottom" id="H0K-WC-TtQ"/>
                 <constraint firstAttribute="trailing" secondItem="Fsb-QZ-IW4" secondAttribute="trailing" id="JYd-dV-sGx"/>
                 <constraint firstItem="tx6-H3-Vh4" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="L7c-Yc-CNp"/>
-                <constraint firstAttribute="bottom" secondItem="kmk-9X-1wv" secondAttribute="bottom" constant="59" id="UqG-d6-zGR"/>
+                <constraint firstAttribute="bottom" secondItem="kmk-9X-1wv" secondAttribute="bottom" constant="10" id="UqG-d6-zGR"/>
                 <constraint firstItem="tx6-H3-Vh4" firstAttribute="top" secondItem="1" secondAttribute="top" id="fxI-53-LsK"/>
                 <constraint firstItem="Fsb-QZ-IW4" firstAttribute="top" secondItem="1" secondAttribute="top" id="goH-LT-cf8"/>
             </constraints>

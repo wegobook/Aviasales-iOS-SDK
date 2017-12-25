@@ -25,6 +25,8 @@
     [super awakeFromNib];
     
     self.separatorLineHeightConstraint.constant = 1.0 / [UIScreen mainScreen].scale;
+    self.directionLabel.textColor = [JRColorScheme mainColor];
+    self.durationLabel.textColor = [JRColorScheme mainColor];
     
     [self updateContent];
 }

@@ -2,15 +2,10 @@
 
 #import <QuartzCore/QuartzCore.h>
 #import <WebKit/WebKit.h>
-#import "AviasalesSDKTemplate-Swift.h"
 
 #import "HLRestartableProgressView.h"
 
 static CGFloat kAddressBarExpandedHeight = 64.0;
-static CGFloat kAddressBarCollapsedHeight = 40.0;
-static CGFloat kScrollActionLength = 24.0f;
-static CGFloat kInitialFontSize = 19.0f;
-static CGFloat kFinalFontSize = 12.0f;
 
 @interface HLWebBrowser () <WKNavigationDelegate, WKUIDelegate, UIScrollViewDelegate>
 
@@ -37,16 +32,14 @@ static CGFloat kFinalFontSize = 12.0f;
 
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *textOrigin;
 
-@property (atomic, assign) CGFloat lastScrollViewOffset;
-@property (atomic, assign) CGFloat initialScrollViewOffset;
 @property (atomic, assign) CGFloat hidingProgress;
 @property (atomic, assign) BOOL finishedInitialLoading;
+@property (atomic, assign) BOOL didRetryLoadingAfterNilUrl;
 
 @property (nonatomic, strong) NSLayoutConstraint *webViewToSuperviewTop;
 @property (nonatomic, strong) NSLayoutConstraint *webViewToSuperviewBottom;
 @property (nonatomic, strong) NSLayoutConstraint *webViewToNavViewTop;
 @property (nonatomic, strong) NSLayoutConstraint *webViewToBarViewBottom;
-
 
 @end
 
@@ -58,20 +51,20 @@ static CGFloat kFinalFontSize = 12.0f;
 {
     [super awakeFromNib];
 
+    CGFloat statusBarHeight = [UIApplication sharedApplication].statusBarFrame.size.height;
+
+    self.addressViewHeight.constant = 44.0 + statusBarHeight;
+
     [self addBlurEffectForBars];
     [self setupProgressBar];
     [self toggleBackForwardButtons];
 
     [self layoutIfNeeded];
-
-    UIEdgeInsets webViewInsets = self.webView.scrollView.contentInset;
-    webViewInsets.bottom = self.navigationView.frame.size.height;
-    self.webView.scrollView.contentInset = webViewInsets;
 }
 
 - (void)dealloc
 {
-    self.webView.scrollView.delegate = nil;
+    [self.webView removeObserver:self forKeyPath:@"URL"];
 }
 
 - (void)setPageTitle:(NSString *)pageTitle
@@ -99,6 +92,7 @@ static CGFloat kFinalFontSize = 12.0f;
         @strongify(self);
         self.webView = [self webViewWithConfiguration:configuration];
         self.webView.navigationDelegate = self;
+        [self.webView addObserver:self forKeyPath:@"URL" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:nil];
         self.webView.UIDelegate = self;
         [self insertSubview:self.webView atIndex:0];
         [self.webView loadRequest:self.urlRequest];
@@ -112,34 +106,37 @@ static CGFloat kFinalFontSize = 12.0f;
             self.webViewToBarViewBottom.active = NO;
         }
         self.webViewToNavViewTop.active = NO;
-        self.webView.scrollView.delegate = self;
-        [self updateWebViewScrollBehavour];
+        [self updateInsets:self.webView];
     });
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context
+{
+    if (self.webView.URL == nil) {
+        if (self.didRetryLoadingAfterNilUrl) {
+            [self.delegate navigationFailed:[NSError new]];
+        } else {
+            [self.webView loadRequest:self.urlRequest];
+            self.didRetryLoadingAfterNilUrl = YES;
+        }
+    }
+}
+
+- (void)updateInsets:(WKWebView *)webView
+{
+    UIEdgeInsets webViewInsets = webView.scrollView.contentInset;
+    webViewInsets.top = self.addressView.frame.size.height;
+    webViewInsets.bottom = self.navigationView.frame.size.height;
+    webView.scrollView.contentInset = webViewInsets;
+    webView.scrollView.scrollIndicatorInsets = webViewInsets;
+    if (@available(iOS 11.0, *)) {
+        webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    }
 }
 
 - (void)stopProgress
 {
     [self.progressView stop];
-}
-
-- (void)updateWebViewScrollBehavour
-{
-    BOOL canAnimateScrollView = [self canAnimateScrollView:self.webView.scrollView];
-    self.webViewToSuperviewTop.active = canAnimateScrollView;
-    self.webViewToNavViewTop.active = !canAnimateScrollView;
-    if (iPhone()) {
-        self.webViewToSuperviewBottom.active = canAnimateScrollView;
-        self.webViewToBarViewBottom.active = !canAnimateScrollView;
-    }
-    [self layoutIfNeeded];
-}
-
-- (BOOL)canAnimateScrollView:(UIScrollView *)scrollView
-{
-    BOOL contentSizeIsEqualToBounds = CGSizeEqualToSize(scrollView.contentSize, scrollView.bounds.size);
-    BOOL contentIsEmpty = CGSizeEqualToSize(scrollView.contentSize, CGSizeZero);
-
-    return !(contentIsEmpty || contentSizeIsEqualToBounds);
 }
 
 #pragma mark - IBAction methods
@@ -182,7 +179,7 @@ static CGFloat kFinalFontSize = 12.0f;
 
     [self.addressView addSubview:self.progressView];
     self.progressView.backgroundColor = [UIColor clearColor];
-    self.progressView.progressColor = [JRColorScheme mainButtonBackgroundColor];
+    self.progressView.progressColor = [JRColorScheme actionColor];
     self.progressView.shouldHideOnCompletion = YES;
     [self.progressView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsZero excludingEdge:ALEdgeTop];
     [self.progressView autoSetDimension:ALDimensionHeight toSize:2.0];
@@ -214,92 +211,6 @@ static CGFloat kFinalFontSize = 12.0f;
     }
 }
 
-- (void)expandControls
-{
-    [self animateBarsToHidingProgress:0.0];
-}
-
-- (void)collapseControls
-{
-    [self animateBarsToHidingProgress:1.0];
-}
-
-- (void)animateBarsToHidingProgress:(CGFloat)progress
-{
-    [UIView animateWithDuration:0.3
-                          delay:0.0
-                        options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationCurveEaseInOut
-                     animations:^{
-                         [self setAddressBarHideProgress:progress];
-                         [self setNavBarHideProgress:progress];
-                         [self updateInsets];
-                         [self layoutIfNeeded];
-                     }
-                     completion:nil];
-}
-
-- (void)setAddressBarHideProgress:(CGFloat)progress
-{
-    if (!self.finishedInitialLoading) {
-        return;
-    }
-
-    CGFloat alpha = 1 - progress;
-    self.closeButton.alpha = alpha;
-    self.reloadButton.alpha = alpha;
-    self.textBackground.alpha = alpha;
-    self.backwardButton.alpha = alpha;
-    self.forwardButton.alpha = alpha;
-
-    CGFloat newConstant = (1 - progress) * kAddressBarExpandedHeight + progress * kAddressBarCollapsedHeight;
-
-    self.addressViewHeight.constant = newConstant;
-
-    CGFloat textOriginY = progress * 11;
-    self.textOrigin.constant = textOriginY;
-
-    CGFloat ratio = 1 -  (1 - kFinalFontSize / kInitialFontSize) * progress;
-    CGAffineTransform scale = CGAffineTransformMakeScale(ratio, ratio);
-    self.textAndLockView.transform = scale;
-
-    self.hidingProgress = progress;
-}
-
-- (void)setNavBarHideProgress:(CGFloat)progress
-{
-    CGFloat newConstant = - progress * self.navigationView.frame.size.height;
-    self.navigationViewOrigin.constant = newConstant;
-}
-
-- (void)completeHidingWithScrollView:(UIScrollView *)scrollView
-{
-    CGFloat offset = scrollView.contentOffset.y;
-    if (self.hidingProgress > 0.5 && offset > kScrollActionLength) {
-        [self collapseControls];
-    } else {
-        [self expandControls];
-    }
-}
-
-- (void)updateInsets
-{
-    BOOL canAnimateScrollView = [self canAnimateScrollView:self.webView.scrollView];
-    BOOL previousValue = self.webViewToSuperviewTop.active;
-    if (canAnimateScrollView != previousValue) {
-        [self updateWebViewScrollBehavour];
-    }
-
-    UIEdgeInsets webViewInsets = self.webView.scrollView.contentInset;
-    webViewInsets.top = canAnimateScrollView ? self.addressViewHeight.constant : 0;
-    webViewInsets.bottom = canAnimateScrollView ? (self.navigationView.frame.size.height + self.navigationViewOrigin.constant) : 0;
-    self.webView.scrollView.contentInset = webViewInsets;
-    self.webView.scrollView.scrollIndicatorInsets = webViewInsets;
-
-    if (canAnimateScrollView != previousValue) {
-        self.webView.scrollView.contentOffset = CGPointMake(self.webView.scrollView.contentOffset.x, -webViewInsets.top);
-    }
-}
-
 #pragma mark - HLWebView delegate
 
 - (WKWebView *)webView:(WKWebView *)webView createWebViewWithConfiguration:(WKWebViewConfiguration *)configuration forNavigationAction:(WKNavigationAction *)navigationAction windowFeatures:(WKWindowFeatures *)windowFeatures
@@ -317,7 +228,6 @@ static CGFloat kFinalFontSize = 12.0f;
     [self toggleBackForwardButtons];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;
     self.lockIcon.hidden = !self.webView.hasOnlySecureContent;
-    [self updateWebViewScrollBehavour];
 
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         for (WKUserScript* script in webView.configuration.userContentController.userScripts) {
@@ -339,8 +249,6 @@ static CGFloat kFinalFontSize = 12.0f;
 
 -(void)webView:(WKWebView *)webView didStartProvisionalNavigation:(WKNavigation *)navigation
 {
-    [self expandControls];
-
     [self toggleBackForwardButtons];
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     [self startShowProgress];
@@ -357,46 +265,6 @@ static CGFloat kFinalFontSize = 12.0f;
     webView.scrollView.contentOffset = CGPointMake(0.0, webViewInsets.top);
 
     return webView;
-}
-
-#pragma mark - UIScrollViewDelegate
-
-- (void)scrollViewWillBeginScrolling:(CGFloat)offset
-{
-    self.lastScrollViewOffset = offset;
-    self.initialScrollViewOffset = offset;
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
-    CGFloat offset = scrollView.contentOffset.y;
-    if (offset < (scrollView.contentSize.height - scrollView.bounds.size.height - (self.navigationView.bounds.size.height + self.navigationViewOrigin.constant))) {
-        if (offset > 0) {
-            CGFloat delta = (offset - self.lastScrollViewOffset) / kScrollActionLength;
-            CGFloat progress = self.hidingProgress + delta;
-            progress = MIN(1.0, progress);
-            progress = MAX(progress, 0.0);
-            [self setAddressBarHideProgress:progress];
-            [self setNavBarHideProgress:progress];
-            [self updateInsets];
-
-            self.lastScrollViewOffset = offset;
-        }
-    } else {
-        [self expandControls];
-    }
-}
-
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView
-{
-    [self completeHidingWithScrollView:scrollView];
-}
-
-- (void)scrollViewDidEndDragging:(UIScrollView *)scrollView willDecelerate:(BOOL)decelerate
-{
-    if (!decelerate) {
-        [self completeHidingWithScrollView:scrollView];
-    }
 }
 
 @end

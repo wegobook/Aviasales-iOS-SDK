@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "ud af";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "børn";
 "HL_LOC_GUEST_KID##{other}" = "børn";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hoteller";
 
@@ -39,10 +40,10 @@
 "HL_LOC_YEAR##{many}" = "år";
 "HL_LOC_YEAR##{other}" = "år";
 
-"HL_LOC_NIGHT##{one}" = "night";
-"HL_LOC_NIGHT##{few}" = "nights";
-"HL_LOC_NIGHT##{many}" = "nights";
-"HL_LOC_NIGHT##{other}" = "nights";
+"HL_LOC_NIGHT##{one}" = "nat";
+"HL_LOC_NIGHT##{few}" = "nætter";
+"HL_LOC_NIGHT##{many}" = "nætter";
+"HL_LOC_NIGHT##{other}" = "nætter";
 
 "HL_LOC_FOR_NIGHT##{one}" = "per\U00A0%d\U00A0nat";
 "HL_LOC_FOR_NIGHT##{few}" = "per\U00A0%d\U00A0nætter";
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Søgeresultater";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Find hoteller";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Find priser";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "FIND HOTELLER";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "FIND PRISER";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Vælg dato";
@@ -64,7 +65,7 @@
 
 // Выбор возрастов детей
 "HL_KIDS_PICKER_TITLE" = "Børn";
-"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Spædbørn";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Børn";
 "HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Alder";
 "HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Søg";
 "HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Annuler";
@@ -85,7 +86,7 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Søgefiltre";
+"HL_LOC_FILTER_TITLE_LABEL" = "Filter";
 "HL_LOC_FILTER_DROP_BUTTON" = "Nulstil";
 "HL_LOC_FILTER_APPLY_BUTTON" = "Færdig";
 
@@ -193,7 +194,7 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Kort";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Søgefiltre";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filter";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Sorter";
 
 "HL_DISCOUNT" = "rabat";
@@ -225,13 +226,17 @@
 // Сортировка
 "HL_LOC_SORT_HEADER_TITLE" = "Sorter efter:";
 "HL_LOC_SORT_TYPE_POPULARITY" = "Popularitet";
-"HL_LOC_SORT_TYPE_RATING" = "Bedømmelse";
+"HL_LOC_SORT_TYPE_RATING" = "Rating";
 "HL_LOC_SORT_TYPE_PRICE" = "Pris";
 "HL_LOC_SORT_TYPE_DISTANCE" = "Afstand til:";
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Rabat";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Indstillinger";
+"LOC_SETTINGS_TITLE" = "Information";
+
+"LOC_INFO" = "Information";
+
+"LOC_ABOUT" = "Erstat denne tekst med en kort beskrivelse af din app";
 
 "HL_LOC_ABOUT_CURRENCY" = "Valuta";
 
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Ingen hoteller fundet\ni den valgte by.";
 "HL_NEW_SEARCH_BUTTON" = "Ny søgning";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Søg";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Anvend";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Afstand fra din nuværende placering:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Afstand fra ";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Senere";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Luk";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback fra iOS app";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Fejl";

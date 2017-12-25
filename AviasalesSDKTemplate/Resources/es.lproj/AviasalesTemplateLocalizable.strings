@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@h %@m";
 "LONG_TIME_FORMAT" = "%@ h %@ min";
 
-"JR_ERROR_TITLE" = "ERROR";
+"JR_ERROR_TITLE" = "Error";
 
 "JR_BACK_TITLE" = "Volver";
 
@@ -17,10 +17,9 @@
 
 "JR_OK_BUTTON" = "OK";
 
-"JR_DONE_BUTTON" = "HECHO";
+"JR_DONE_BUTTON" = "OK";
 
 "JR_NEW_SEARCH_TITLE" = "Nueva búsqueda";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Salida";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Fecha de vuelta";
@@ -29,7 +28,7 @@
 "JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Buscar billetes";
 "JR_SEARCHINFO_BUSINESS" = "Business";
 "JR_SEARCHINFO_ECONOMY" = "Clase\necon.";
-"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Económica Premium";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "Econ.\nPrem.";
 "JR_SEARCHINFO_FIRST" = "Primera";
 "JR_SEARCHINFO_PASSENGERS##{one}" = "%d pasajero";
 "JR_SEARCHINFO_PASSENGERS##{few}" = "%d pasajeros";
@@ -106,11 +105,12 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "No se han encontrado resultados";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Buscando...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Buscando aeropuertos cercanos...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "No se han encontrado resultados";
 
 "JR_FILTER_BUTTON" = "Filtro";
 
-"JR_FILTER_RESET_ALL" = "Limpiar todo";
-"JR_FILTER_RESET" = "Limpiar";
+"JR_FILTER_RESET_ALL" = "Restablecer";
+"JR_FILTER_RESET" = "Restablecer";
 "JR_FILTER_TICKETS_NOT_FOUND" = "No se han encontrado resultados";
 
 "JR_FILTER_EMPTY_ALERT_TITLE" = "No se han encontrado billetes";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "Buscando...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "No ha habido ningún resultado. Inténtelo de nuevo modificando los parámetros.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Error de conexión";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Lo sentimos, Jetradar no funciona en este momento";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Lo sentimos, el servicio se ha interrumpido temporalmente";

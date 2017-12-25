@@ -16,6 +16,30 @@
     self.backgroundColor = [UIColor clearColor];
     [self addBackgroundView];
     [self addPriceLabel];
+    [self.layer addObserver:self forKeyPath:@"zPosition" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];  // MKAnnotationView's zPosition seems to work wrong @ iOS 11
+}
+
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
+{
+    if (object == self.layer && [keyPath isEqualToString:@"zPosition"]) {
+        CGFloat zPositionOld = [change[NSKeyValueChangeOldKey] floatValue];
+        CGFloat zPositionNew = [change[NSKeyValueChangeNewKey] floatValue];
+
+        if (zPositionNew != floorf(zPositionNew) || zPositionNew > 1000) {
+            if (zPositionOld == floorf(zPositionOld)) {
+                self.layer.zPosition = zPositionOld;
+            } else {
+                self.layer.zPosition = 100;
+            }
+        }
+    } else {
+        [super observeValueForKeyPath:keyPath ofObject:object change:change context:context];
+    }
+}
+
+-(void)dealloc
+{
+    [self.layer removeObserver:self forKeyPath:@"zPosition"];
 }
 
 - (void)addBackgroundView

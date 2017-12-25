@@ -12,9 +12,6 @@
 #import "DateUtil.h"
 #import "JRColorScheme.h"
 
-
-static const NSInteger kDatePickerCollectionHeaderHeight = 65;
-
 static NSString * const kDayCellIdentifier = @"JRDatePickerDayCell";
 static NSString * const kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonthHeaderReusableView";
 
@@ -91,14 +88,16 @@ static NSString * const kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonth
     
 	NSMutableArray *datesToRepresent = [NSMutableArray new];
     
-	if (!_stateObject.borderDate) {
-		[_stateObject setBorderDate:[DateUtil firstAvalibleForSearchDate]];
-	}
-    
-	NSDate *firstMonth = [DateUtil firstDayOfMonth:[DateUtil resetTimeForDate:[DateUtil today]]];
+    if (!_stateObject.borderDate) {
+        [_stateObject setBorderDate:[DateUtil firstAvalibleForSearchDate]];
+    }
+
+    NSUInteger counter = [DateUtil isFirstDayOfMonth:_stateObject.lastAvalibleForSearchDate] ? 11 : 12;
+
+	NSDate *firstMonth = [DateUtil firstDayOfMonth:[DateUtil resetTimeForDate:[DateUtil firstAvalibleForSearchDate]]];
     
 	[datesToRepresent addObject:firstMonth];
-	for (NSUInteger i = 1; i <= 12; i++) {
+	for (NSUInteger i = 1; i <= counter; i++) {
 		NSDate *prevMonth = datesToRepresent[i - 1];
 		[datesToRepresent addObject:[DateUtil nextMonthForDate:prevMonth]];
 	}
@@ -156,12 +155,24 @@ static NSString * const kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonth
     
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-	return self.view.frame.size.width / 7;
+- (CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
+{
+    return 13.0;
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-	return kDatePickerCollectionHeaderHeight;
+- (UIView *) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
+{
+    return [UIView new];
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 50.0;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+{
+    return 60.0;
 }
 
 @end

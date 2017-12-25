@@ -52,6 +52,9 @@ BOOL iPhone47Inch() {
 BOOL iPhone55Inch() {
     return iPhoneWithHeight(736);
 }
+BOOL iPhone58Inch() {
+    return iPhoneWithHeight(812);
+}
 
 BOOL iPad() {
     return (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad);
@@ -64,6 +67,7 @@ DeviceSizeType __attribute__((const))  CurrentDeviceSizeType() {
         return res;
     } else {
         res = iPad()    ?   DeviceSizeTypeIPad :
+        iPhone58Inch()  ?   DeviceSizeTypeIPhone58Inch:
         iPhone55Inch()  ?   DeviceSizeTypeIPhone55Inch:
         iPhone47Inch()  ?   DeviceSizeTypeIPhone47Inch:
         iPhone4Inch()   ?   DeviceSizeTypeIPhone4Inch:
@@ -117,6 +121,8 @@ CGFloat deviceSizeTypeValue(CGFloat deviceSizeTypeIPhone35Inch, CGFloat deviceSi
             return deviceSizeTypeIPhone55Inch;
         case DeviceSizeTypeIPad:
             return deviceSizeTypeIPad;
+        default:
+            return deviceSizeTypeIPhone47Inch;
     }
 }
 
@@ -142,22 +148,6 @@ BOOL Debug() {
 
 BOOL AppStore() {
 #if APPSTORE
-    return YES;
-#else
-    return NO;
-#endif
-}
-
-BOOL ticketsEnabled() {
-#if TICKETS_ENABLED
-    return YES;
-#else
-    return NO;
-#endif
-}
-
-BOOL hotelsEnabled() {
-#if HOTELS_ENABLED
     return YES;
 #else
     return NO;
@@ -223,16 +213,4 @@ void hl_dispatch_main_async_safe(dispatch_block_t block)
     } else {
         dispatch_async(dispatch_get_main_queue(), block);
     }
-}
-
-//------------------------
-// CONFIG
-//------------------------
-
-BOOL ShowAppodealAds() {
-    return kShowAppodealAds;
-}
-
-BOOL ShowAviasalesAds() {
-    return kShowAviasalesAds;
 }

@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@j %@m";
 "LONG_TIME_FORMAT" = "%@ j %@ mnt";
 
-"JR_ERROR_TITLE" = "KESALAHAN";
+"JR_ERROR_TITLE" = "Kesalahan";
 
 "JR_BACK_TITLE" = "Kembali";
 
@@ -17,16 +17,15 @@
 
 "JR_OK_BUTTON" = "OKE";
 
-"JR_DONE_BUTTON" = "SELESAI";
+"JR_DONE_BUTTON" = "Selesai";
 
 "JR_NEW_SEARCH_TITLE" = "Pencarian baru";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Tanggal keberangkatan";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Tanggal pulang";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Tanggal penerbangan";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "Hari ini";
-"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Cari Tiket";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Cari tiket";
 "JR_SEARCHINFO_BUSINESS" = "Bisnis";
 "JR_SEARCHINFO_ECONOMY" = "Ekonomi";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Ekonomi Premium";
@@ -106,11 +105,12 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Tidak ditemukan hasil";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Mencari...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Sedang mencari bandara terdekat...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "Tidak ditemukan hasil";
 
 "JR_FILTER_BUTTON" = "Filter";
 
-"JR_FILTER_RESET_ALL" = "Hapus semua";
-"JR_FILTER_RESET" = "Hapus";
+"JR_FILTER_RESET_ALL" = "Atur ulang";
+"JR_FILTER_RESET" = "Atur ulang";
 "JR_FILTER_TICKETS_NOT_FOUND" = "Tidak ditemukan hasil";
 
 "JR_FILTER_EMPTY_ALERT_TITLE" = "Tiket tidak ditemukan";
@@ -227,7 +227,7 @@
 "JR_TICKET_CREDIT_MONTH_12" = "desember";
 
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Beli di";
-"JR_TICKET_BUY_BUTTON" = "Membeli tiket";
+"JR_TICKET_BUY_BUTTON" = "Beli";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Mendapatkan pinjaman";
 "JR_TICKET_FLIGHT" = "Penerbangan";
 "JR_TICKET_TRANSFER" = "Menginap";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "Mencari...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Hasil tidak ditemukan. Coba sesuaikan parameter pencarian.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Kesalahan koneksi";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Maaf, layanan Jetradar saat ini tidak tersedia";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Maaf, semntara ini layanan tidak tersedia";

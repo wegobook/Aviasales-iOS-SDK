@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>partner_marker</key>
+	<string>11501</string>
+	<key>api_token</key>
+	<string>31b7acf7452acdb78c6a25aa1cd2ea49</string>
+	<key>appodeal_key</key>
+	<string></string>
+	<key>flights_enabled</key>
+	<true/>
+	<key>hotels_enabled</key>
+	<true/>
+	<key>default_locale</key>
+	<string>en</string>
+	<key>app_description</key>
+	<dict>
+		<key>en</key>
+		<string>App description</string>
+		<key>ru</key>
+		<string>Описание приложения</string>
+	</dict>
+	<key>feedback_email</key>
+	<string></string>
+	<key>itunes_link</key>
+	<string></string>
+	<key>search_params</key>
+	<dict>
+		<key>default_currency</key>
+		<string>USD</string>
+		<key>flights_origin</key>
+		<string>BOS</string>
+		<key>flights_destination</key>
+		<string>NYC</string>
+	</dict>
+	<key>external_links</key>
+	<dict>
+		<key>en</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Aviasales</string>
+				<key>url</key>
+				<string>https://www.aviasales.com</string>
+			</dict>
+		</array>
+		<key>ru</key>
+		<array>
+			<dict>
+				<key>name</key>
+				<string>Aviasales</string>
+				<key>url</key>
+				<string>https://www.aviasales.ru</string>
+			</dict>
+		</array>
+	</dict>
+</dict>
+</plist>

@@ -6,7 +6,6 @@
 //
 
 #import "DateUtil.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 #define kDateFormatterThreadDictionaryKey @"JRDateFomatter"
 
@@ -565,6 +564,18 @@ static BOOL user24HourTimeCyclePreference = NO;
 	return result;
 }
 
++ (NSDate *)nextWeekend {
+
+    NSDate *today = [DateUtil today];
+    NSCalendar *gregorian = [DateUtil gregorianCalendar];
+
+    NSDate *weekend = today;
+
+    [gregorian nextWeekendStartDate:&weekend interval:nil options:0 afterDate:today];
+
+    return weekend;
+}
+
 + (NSDate *)beginningOfWeek {
     NSDate *today = [DateUtil today];
     NSCalendar *gregorian = [DateUtil gregorianCalendar];
@@ -646,6 +657,12 @@ static BOOL user24HourTimeCyclePreference = NO;
 
 + (BOOL)isYesterdayDate:(NSDate *)date {
     return [self date:date isEqualToDateIgnoringTime:[DateUtil prevDayForDate:[DateUtil today]]];
+}
+
++ (BOOL)isFirstDayOfMonth:(NSDate *)date {
+    NSCalendar *calendar = [DateUtil gregorianCalendar];
+    NSDateComponents *components = [calendar components:NSCalendarUnitDay fromDate:date];
+    return components.day == 1;
 }
 
 + (NSString *)datesIntervalStringWithSameMonth:(NSDate *)fromDate toDate:(NSDate *)toDate

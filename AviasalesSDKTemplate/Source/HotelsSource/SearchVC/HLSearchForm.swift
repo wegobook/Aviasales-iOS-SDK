@@ -101,8 +101,8 @@ import UIKit
     }
 
     private func setupSearchButton() {
-        searchButton.tintColor = JRColorScheme.mainButtonTitleColor()
-        searchButton.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
+        searchButton.tintColor = .white
+        searchButton.backgroundColor = JRColorScheme.actionColor()
         searchButton.layer.cornerRadius = 20.0
     }
 
@@ -121,10 +121,10 @@ import UIKit
         let selected = UIImage(named: "searchFormButtonSelected")
         for button in [oneAdultsButton, twoAdultsButton, threeAdultsButton, fourAdultsButton, kidsButton] {
             button?.setBackgroundImage(image, for: .normal)
-            button?.tintColor = JRColorScheme.mainButtonBackgroundColor()
+            button?.tintColor = JRColorScheme.actionColor()
             button?.setBackgroundImage(selected, for: .selected)
             button?.setTitleColor(JRColorScheme.searchFormTextColor(), for: .normal)
-            button?.setTitleColor(JRColorScheme.searchFormTextColor(), for: .selected)
+            button?.setTitleColor(.white, for: .selected)
         }
 
         kidsButton.setBackgroundImage(UIImage(named: "emptyKidsButton"), for: .normal)
@@ -162,7 +162,7 @@ import UIKit
             ? NSLS("HL_LOC_SEARCH_BUTTON_TITLE_PRICES")
             : NSLS("HL_LOC_SEARCH_BUTTON_TITLE")
 
-        return title.uppercased()
+        return title
     }
 
     private func updateAdultsButtons(_ count: Int) {

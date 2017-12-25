@@ -1,5 +1,4 @@
 #import "HLNearbyCitiesSearchCardCell.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import <HotellookSDK/HotellookSDK.h>
 
 @interface HLNearbyCitiesSearchCardCell ()
@@ -21,7 +20,7 @@
     [super awakeFromNib];
 
     self.nearbyCitiesSearchButton.titleLabel.font = [UIFont systemFontOfSize:15.0];
-    [self.nearbyCitiesSearchButton setTitleColor:[JRColorScheme mainButtonBackgroundColor] forState:UIControlStateNormal];
+    [self.nearbyCitiesSearchButton setTitleColor:[JRColorScheme actionColor] forState:UIControlStateNormal];
     [self.nearbyCitiesSearchButton setTitle:NSLS(@"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON") forState:UIControlStateNormal];
 }
 

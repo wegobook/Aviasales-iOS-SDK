@@ -1,5 +1,4 @@
 #import "HLMapView.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import <HotellookSDK/HotellookSDK.h>
 #import "HLResultVariant.h"
 #import "HLMapRegionCalculator.h"

@@ -1,5 +1,4 @@
 #import "HLShowMorePricesCell.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 @interface HLShowMorePricesCell()
 @property (strong, nonatomic) SeparatorView *separatorView;
@@ -12,7 +11,7 @@
     [super awakeFromNib];
 
     self.titleLabel.font = [UIFont systemFontOfSize:17.0];
-    self.titleLabel.textColor = [JRColorScheme mainButtonBackgroundColor];
+    self.titleLabel.textColor = [JRColorScheme actionColor];
     self.separatorView = [SeparatorView new];
     [self.separatorView attachToView:self edge:ALEdgeBottom insets:UIEdgeInsetsMake(0, 15, 0, 15)];
 }

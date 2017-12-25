@@ -1,7 +1,6 @@
 #import "HLMapGroupDetailsVC.h"
 #import "HLMapGroupDetailsCell.h"
 #import "HLVariantsSorter.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 @interface HLMapGroupDetailsVC () <UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout>
 

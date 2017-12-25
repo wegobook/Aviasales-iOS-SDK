@@ -13,12 +13,12 @@ class FiltersNavBarView: HLAutolayoutView {
     private func createSubviews() {
         titleLabel.textAlignment = .center
         addSubview(titleLabel)
-        titleLabel.textColor = JRColorScheme.navigationBarItemColor()
+        titleLabel.textColor = .white
         titleLabel.font = UIFont.systemFont(ofSize: 15.0)
 
         hotelsLeftLabel.textAlignment = .center
         addSubview(hotelsLeftLabel)
-        hotelsLeftLabel.textColor = JRColorScheme.navigationBarItemColor()
+        hotelsLeftLabel.textColor = .white
         hotelsLeftLabel.font = UIFont.systemFont(ofSize: 12.0)
     }
 

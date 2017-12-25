@@ -43,7 +43,7 @@ class FilterItemsWithSelectionFilterCell: HLDividerCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        chooseButton.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: .normal)
+        chooseButton.setTitleColor(JRColorScheme.actionColor(), for: .normal)
     }
 
 }

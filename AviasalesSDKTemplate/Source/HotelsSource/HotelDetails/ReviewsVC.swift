@@ -74,7 +74,7 @@ class ReviewsVC: HLCommonVC, UITableViewDataSource, UITableViewDelegate, ReviewC
         super.viewDidLoad()
         setupTableView()
         sections = createSections()
-        agencyButton.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: .normal)
+        agencyButton.setTitleColor(JRColorScheme.actionColor(), for: .normal)
         agencyButton.setTitle(NSLS("HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE"), for: .normal)
     }
 

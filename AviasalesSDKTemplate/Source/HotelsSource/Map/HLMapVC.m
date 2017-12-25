@@ -1,5 +1,4 @@
 #import "HLMapVC.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 #import "TBClusterAnnotationView.h"
 #import "TBClusterAnnotation.h"
@@ -24,6 +23,8 @@ static NSString *const HLGroupAnnotationViewReuseID = @"groupAnnotationView";
 @property (nonatomic, assign) BOOL didSetInitialRegion;
 @property (nonatomic, strong) NSArray<PoiAnnotation *> *poiAnnotations;
 @property (nonatomic, weak) IBOutlet HLLocateMeMapView *locateMeMapView;
+@property (nonatomic, strong) NSDate *didSelectTime;
+@property (nonatomic, assign) BOOL canCloseSelectedAnnotation;
 
 @end
 
@@ -32,6 +33,7 @@ static NSString *const HLGroupAnnotationViewReuseID = @"groupAnnotationView";
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+    self.canCloseSelectedAnnotation = YES;
 
     [self addSearchInfoView:self.searchInfo];
     
@@ -183,7 +185,7 @@ static NSString *const HLGroupAnnotationViewReuseID = @"groupAnnotationView";
 
 - (BOOL)shouldCloseSelectedAnnotation
 {
-    return [[UIApplication sharedApplication] applicationState] != UIApplicationStateBackground;
+    return self.canCloseSelectedAnnotation && [[UIApplication sharedApplication] applicationState] != UIApplicationStateBackground;
 }
 
 - (BOOL)expandedAnnotationContains:(HLResultVariant *)variant
@@ -391,8 +393,10 @@ static NSString *const HLGroupAnnotationViewReuseID = @"groupAnnotationView";
 
 -(void)mapView:(MKMapView *)mapView didAddAnnotationViews:(NSArray<MKAnnotationView *> *)views
 {
+    self.canCloseSelectedAnnotation = NO;
     [super mapView:mapView didAddAnnotationViews:views];
-    
+    self.canCloseSelectedAnnotation = YES;
+
     for (MKAnnotationView *view in views) {
         if ([view isKindOfClass:[TBClusterAnnotationView class]]) {
             [mapView bringSubviewToFront:view];
@@ -401,10 +405,25 @@ static NSString *const HLGroupAnnotationViewReuseID = @"groupAnnotationView";
             view.enabled = NO;
         }
     }
+
 }
 
 - (void)mapView:(MKMapView *)mapView didSelectAnnotationView:(MKAnnotationView *)view
 {
+    if (view == self.expandedAnnotation) {
+        return;
+    }
+
+    if (self.didSelectTime && self.expandedAnnotation && [[NSDate date] timeIntervalSinceDate:self.didSelectTime] < 0.5 && !CGRectEqualToRect(CGRectIntersection(self.expandedAnnotation.frame, view.frame), CGRectZero) ) {
+        return;
+    }
+
+    self.didSelectTime = [NSDate date];
+
+    if (self.expandedAnnotation != nil) {
+        [self deselectAnnotation];
+    }
+
 	if ([view.annotation isKindOfClass:[TBClusterAnnotation class]]) {
         TBClusterAnnotation *clusterAnnotation = (TBClusterAnnotation *)view.annotation;
         NSArray *variants = clusterAnnotation.variants;
@@ -420,7 +439,10 @@ static NSString *const HLGroupAnnotationViewReuseID = @"groupAnnotationView";
             self.clusteringEnabled = NO;
             HLResultVariant *variant = [variants lastObject];
             HLSingleAnnotationView *annView = (HLSingleAnnotationView *)view;
+
+            self.canCloseSelectedAnnotation = NO;
             [self.mapView centerOnVariant:variant];
+            self.canCloseSelectedAnnotation = YES;
             [self expandSingleAnotationView:annView];
         }
     }

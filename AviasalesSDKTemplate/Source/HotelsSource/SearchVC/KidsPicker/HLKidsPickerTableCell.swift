@@ -43,11 +43,11 @@ class HLKidsPickerTableCell: UITableViewCell {
 
     @IBOutlet weak var deleteButton: UIButton!
 
-    private let disclosureImage = UIImage(named: "cellDisclosureIcon")!.imageTinted(with: JRColorScheme.mainButtonBackgroundColor())
+    private let disclosureImage = UIImage(named: "cellDisclosureIcon")!.imageTinted(with: JRColorScheme.actionColor())
     private let disclosureImageDisabled = UIImage(named: "cellDisclosureIcon")!
 
     private let kidCountImage = UIImage(named: "searchFormButton")!
-    private let kidCountImageSelected = UIImage(named: "searchFormButtonSelected")!.imageTinted(with: JRColorScheme.mainButtonBackgroundColor())
+    private let kidCountImageSelected = UIImage(named: "searchFormButtonSelected")!.imageTinted(with: JRColorScheme.actionColor())
     private let kidCountImageDisabled = UIImage(named: "searchFormButton")!.imageTinted(with: JRColorScheme.lightBackgroundColor())
 
     private let kKidCountIconLeftConstraint: CGFloat = 20.0

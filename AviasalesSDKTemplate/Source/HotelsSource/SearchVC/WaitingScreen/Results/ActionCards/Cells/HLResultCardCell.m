@@ -1,5 +1,4 @@
 #import "HLResultCardCell.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import "HLSliderCalculator.h"
 #import "StringUtils.h"
 

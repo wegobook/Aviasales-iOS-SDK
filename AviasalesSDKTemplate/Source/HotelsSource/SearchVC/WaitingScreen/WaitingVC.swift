@@ -5,6 +5,7 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
     @IBOutlet var waitingActivityIndicator: UIActivityIndicatorView!
     @IBOutlet var progressView: UIProgressView!
     @IBOutlet weak var appodealAdContainerView: UIView!
+    @IBOutlet weak var appodealContainerViewBottomLayoutConstraint: NSLayoutConstraint!
 
     let kAverageSearchDuration: TimeInterval = 10.0
     let kCollectionViewFadeDuration: TimeInterval = 0.5
@@ -42,14 +43,23 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
 
         addSearchInfoView(searchInfo)
 
-        if ShowAppodealAds() {
+        if !ConfigManager.shared.appodealKey.isEmpty {
             JRAdvertisementManager.sharedInstance().presentVideoAd(inViewIfNeeded: appodealAdContainerView, rootViewController: self)
         }
 
         progressView.trackTintColor = UIColor.clear
-        progressView.progressTintColor = JRColorScheme.mainButtonBackgroundColor()
+        progressView.progressTintColor = JRColorScheme.actionColor()
         progressAnimator.delegate = self
         startProgress()
+    }
+
+    override func goBack() {
+        navigationController?.popViewController(animated: true)
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        appodealContainerViewBottomLayoutConstraint.constant = bottomLayoutGuide.length
     }
 
     private func addLongSearchSection() {

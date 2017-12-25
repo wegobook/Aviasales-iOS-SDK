@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 09/03/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 import UIKit
@@ -17,8 +17,13 @@ class HLIphoneResultsVC: HLCommonResultsVC {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        sortButton.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
-        sortButton.setTitleColor(JRColorScheme.mainButtonTitleColor(), for: .normal)
+        sortButton.backgroundColor = JRColorScheme.actionColor()
+        sortButton.setTitleColor(.white, for: .normal)
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        buttonsBottomConstraint.constant = bottomLayoutGuide.length
     }
 
     override func updateContentWithVariants(_ variants: [HLResultVariant], filteredVariants: [HLResultVariant]) {

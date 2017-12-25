@@ -9,7 +9,6 @@
 #import "UIImage+JRUIImage.h"
 #import "JRColorScheme.h"
 
-
 @interface JRViewController ()
 
 @property (weak, nonatomic) UIButton *menuButton;

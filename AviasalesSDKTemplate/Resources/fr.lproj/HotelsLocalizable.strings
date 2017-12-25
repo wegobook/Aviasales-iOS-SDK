@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "sur";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "enfants";
 "HL_LOC_GUEST_KID##{other}" = "enfants";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hôtels";
 
@@ -55,19 +56,19 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Résultats de recherche";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Trouver des hôtels";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Voir les prix";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "TROUVER DES HÔTELS";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "VOIR LES PRIX";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Sélectionner des dates";
 "HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "Nous sommes désolé, mais\nla durée du séjour ne peux\npas dépasser 30 jours";
 
 // Выбор возрастов детей
-"HL_KIDS_PICKER_TITLE" = "Enfants";
+"HL_KIDS_PICKER_TITLE" = "Bébés";
 "HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Bébés";
 "HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Age";
 "HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Appliquer";
-"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Annulation";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Annnuler";
 
 "HL_CLEAN_BUTTON_TITLE" = "Effacer";
 
@@ -85,13 +86,13 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Filtrer";
+"HL_LOC_FILTER_TITLE_LABEL" = "Filtres";
 "HL_LOC_FILTER_DROP_BUTTON" = "Réinitialiser";
 "HL_LOC_FILTER_APPLY_BUTTON" = "OK";
 
 "HL_LOC_FILTER_PRICE_CRITERIA" = "Prix";
 "HL_LOC_FILTER_RANGE" = "de %@ à %@";
-"HL_LOC_FILTER_FROM_STRING" = "de";
+"HL_LOC_FILTER_FROM_STRING" = "à partir de";
 "HL_LOC_FILTER_TO_STRING" = "jusqu'à";
 
 "HL_LOC_FILTER_DISTANCE_CRITERIA" = "Distance de :";
@@ -172,7 +173,7 @@
 
 "HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "Les agences avec interface en anglais";
 
-"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Commodités de la chambre";
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "Aménagements des chambres";
 "HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "Commodités de l'hôtel";
 "HL_LOC_FILTER_HOTEL_NAME_SECTION" = "Nom de l'hôtel";
 
@@ -193,7 +194,7 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Carte";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtrer";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtres";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Trier";
 
 "HL_DISCOUNT" = "remise";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Réduction";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Paramètres";
+"LOC_SETTINGS_TITLE" = "Information";
+
+"LOC_INFO" = "Information";
+
+"LOC_ABOUT" = "Veuillez remplacer ce texte par une courte description de votre application";
 
 "HL_LOC_ABOUT_CURRENCY" = "Devise";
 
@@ -240,7 +245,7 @@
 
 "HL_LOC_MAIL_BAD_RATE_TEXT" = "Dites-nous ce qui ne va pas :";
 "HL_LOC_ABOUT_VERSION_TITLE" = "Version";
-"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Recherche";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Rechercher";
 
 // Страница с подробной информацией об отеле
 "HL_HOTEL_DETAIL_FULL_RATING" = "Évaluation détaillée ";
@@ -254,7 +259,7 @@
 "HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Localisation";
 "HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "Détails sur l'hébergement";
 "HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "Informations utiles";
-"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Aménagements des chambres";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "Commodités de la chambre";
 "HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "Informations sur l'établissement";
 "HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "Commodités de l'hôtel";
 
@@ -266,8 +271,8 @@
 "HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Dépôt de garantie";
 "HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Requis";
 
-"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "Couples";
-"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "Familles";
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "couples";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "familles";
 "HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "solo";
 "HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "affaires";
 
@@ -307,7 +312,7 @@
 "HL_PHOTO_PEEK_BUTTON_TITLE" = "Voir les photos";
 "HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Ouvrir la carte";
 "HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Réservez maintenant à ";
-"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Réserver maintenant";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Réserver";
 "HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Plus d'offres ";
 "HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Galerie";
 "HL_HOTEL_DETAIL_LOADING_TITLE" = "Mise à jour des prix...";
@@ -341,11 +346,11 @@
 "HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Une erreur est survenue";
 
 "HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Voir plus d'avis";
-"HL_ALL_REVIEWS_TITLE" = "Avis";
+"HL_ALL_REVIEWS_TITLE" = "Avis clients";
 "HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Toutes les agences";
 "HL_REVIEWS_FILTER" = "Filtrer par :";
 
-"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "Commentaires 100 % authentiques";
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "Commentaires 100% authentiques";
 "HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "De vrais clients. De vrais séjours. De vrais avis.";
 
 "HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d évaluations de clients";
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Aucun hôtel trouvé\ndans la ville sélectionnée.";
 "HL_NEW_SEARCH_BUTTON" = "Nouvelle recherche";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Appliquer";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Distance à votre emplacement actuel:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Plus tard";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Fermer";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Les commentaires de l'appli iOS";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Erreur";
