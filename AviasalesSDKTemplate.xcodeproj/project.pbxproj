@@ -1674,10 +1674,7 @@
 		329A5A141E76B18D008A7EA2 /* AviasalesSDKTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AviasalesSDKTemplate-Info.plist"; sourceTree = SOURCE_ROOT; };
 		32C9AA771FC452D300CF3B5E /* AviasalesSDKTemplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
 		6DBA878007CDA2EA98FC18F1 /* Pods_AviasalesSDKTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A6B432B079BD34E39077627 /* Pods-AviasalesSDKTemplateTests.release appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.release appstore.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release appstore.xcconfig"; sourceTree = "<group>"; };
 		80DC6BF14CEC2741BBC9B13A /* Pods-AviasalesSDKTemplate.release appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release appstore.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release appstore.xcconfig"; sourceTree = "<group>"; };
-		AD321CDCAEB95A8A9D45CCC5 /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.debug.xcconfig"; sourceTree = "<group>"; };
-		BE710779748E2076D2B21113 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplateTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplateTests/Pods-AviasalesSDKTemplateTests.release.xcconfig"; sourceTree = "<group>"; };
 		C5B711841D0053FB00987E06 /* AviasalesSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AviasalesSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AviasalesSDKTemplate-gstpvqtfsgqkuabbasdpvbuivdie/Build/Products/Debug-iphonesimulator/AviasalesSDK.framework"; sourceTree = "<group>"; };
 		C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviasalesSDKTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60EC83A17E848DA00C5D52E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -1685,7 +1682,6 @@
 		C60EC83E17E848DA00C5D52E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C67CC6FA17F31A55006C659C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
-		D297012B57E83D25C5AD8EF1 /* Pods_AviasalesSDKTemplateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D857DB3BB9A6C7C0254EDC3C /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		D9E35EAEF225DD040D60E1D2 /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -4000,9 +3996,6 @@
 				D9E35EAEF225DD040D60E1D2 /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
 				D857DB3BB9A6C7C0254EDC3C /* Pods-AviasalesSDKTemplate.release.xcconfig */,
 				80DC6BF14CEC2741BBC9B13A /* Pods-AviasalesSDKTemplate.release appstore.xcconfig */,
-				AD321CDCAEB95A8A9D45CCC5 /* Pods-AviasalesSDKTemplateTests.debug.xcconfig */,
-				BE710779748E2076D2B21113 /* Pods-AviasalesSDKTemplateTests.release.xcconfig */,
-				7A6B432B079BD34E39077627 /* Pods-AviasalesSDKTemplateTests.release appstore.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -4043,7 +4036,6 @@
 				C60EC83E17E848DA00C5D52E /* UIKit.framework */,
 				C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */,
 				6DBA878007CDA2EA98FC18F1 /* Pods_AviasalesSDKTemplate.framework */,
-				D297012B57E83D25C5AD8EF1 /* Pods_AviasalesSDKTemplateTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
