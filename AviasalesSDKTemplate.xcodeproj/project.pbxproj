@@ -1675,7 +1675,6 @@
 		32C9AA771FC452D300CF3B5E /* AviasalesSDKTemplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
 		6DBA878007CDA2EA98FC18F1 /* Pods_AviasalesSDKTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DC6BF14CEC2741BBC9B13A /* Pods-AviasalesSDKTemplate.release appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release appstore.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release appstore.xcconfig"; sourceTree = "<group>"; };
-		C5B711841D0053FB00987E06 /* AviasalesSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AviasalesSDK.framework; path = "../../../../Library/Developer/Xcode/DerivedData/AviasalesSDKTemplate-gstpvqtfsgqkuabbasdpvbuivdie/Build/Products/Debug-iphonesimulator/AviasalesSDK.framework"; sourceTree = "<group>"; };
 		C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviasalesSDKTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60EC83A17E848DA00C5D52E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -4029,7 +4028,6 @@
 				072714D51D79804C00545E63 /* EventKit.framework */,
 				072714D31D79801E00545E63 /* CoreTelephony.framework */,
 				07BB679B1D462B7800D31F24 /* CoreMedia.framework */,
-				C5B711841D0053FB00987E06 /* AviasalesSDK.framework */,
 				C67CC6FA17F31A55006C659C /* CoreLocation.framework */,
 				C60EC83A17E848DA00C5D52E /* Foundation.framework */,
 				C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */,
