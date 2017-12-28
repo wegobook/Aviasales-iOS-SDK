@@ -20,7 +20,7 @@ class HotelDetailsNavBarView: UIView {
     private func createSubviews() {
         nameLabel.textAlignment = .center
         addSubview(nameLabel)
-        nameLabel.textColor = JRColorScheme.navigationBarItemColor()
+        nameLabel.textColor = .white
         nameLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)
         nameLabel.text = variant.hotel.name
 

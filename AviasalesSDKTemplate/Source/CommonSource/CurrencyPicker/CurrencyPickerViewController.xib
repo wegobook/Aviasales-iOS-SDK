@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CurrencyPickerViewController" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="searchBar" destination="cw0-jo-jSO" id="4nw-AW-VNP"/>
+                <outlet property="tableView" destination="lCa-Jk-mIz" id="B24-m8-rd1"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="20" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="lCa-Jk-mIz">
+                    <rect key="frame" x="0.0" y="56" width="375" height="611"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <inset key="separatorInset" minX="20" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="cpR-e6-jXx"/>
+                        <outlet property="delegate" destination="-1" id="Voc-zf-6Md"/>
+                    </connections>
+                </tableView>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="cw0-jo-jSO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="44" id="4KX-2I-7ag"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="Gq8-F7-f96"/>
+                    </connections>
+                </searchBar>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="lCa-Jk-mIz" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="9kP-Ys-N0j"/>
+                <constraint firstItem="lCa-Jk-mIz" firstAttribute="top" secondItem="cw0-jo-jSO" secondAttribute="bottom" id="AF1-FC-cbo"/>
+                <constraint firstItem="cw0-jo-jSO" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IXj-ry-i7n"/>
+                <constraint firstAttribute="trailing" secondItem="cw0-jo-jSO" secondAttribute="trailing" id="bxY-Nv-ayI"/>
+                <constraint firstAttribute="trailing" secondItem="lCa-Jk-mIz" secondAttribute="trailing" id="e1V-7M-A73"/>
+                <constraint firstItem="cw0-jo-jSO" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="sTe-hG-s2j"/>
+                <constraint firstAttribute="bottom" secondItem="lCa-Jk-mIz" secondAttribute="bottom" id="vcG-pH-T3Y"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

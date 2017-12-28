@@ -1,6 +1,5 @@
 #import "HDKDefaultsSaver+Hotellook.h"
 #import <HotellookSDK/HotellookSDK.h>
-#import "AviasalesSDKTemplate-Swift.h"
 
 #define HL_MAX_RECENT_CITIES_COUNT 10
 #define HL_MAX_RECENT_GOOGLE_POINTS 10

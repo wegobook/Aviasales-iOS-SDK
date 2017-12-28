@@ -3,12 +3,14 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 10/05/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 import UIKit
 
 class HLIphoneFiltersVC: HLFiltersVC {
+
+    @IBOutlet weak var applyButtonBottomLayoutConstraint: NSLayoutConstraint!
 
     private var dropItem: UIBarButtonItem!
     private let navBarView = FiltersNavBarView()
@@ -19,6 +21,11 @@ class HLIphoneFiltersVC: HLFiltersVC {
         super.viewDidLoad()
 
         addHotelsLeftView()
+    }
+
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        applyButtonBottomLayoutConstraint.constant = bottomLayoutGuide.length + 10;
     }
 
     private func addDropButton() {

@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "av";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "barn";
 "HL_LOC_GUEST_KID##{other}" = "barn";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hoteller";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Søkeresultater";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Finn hotell";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Hent priser";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "FINN HOTELL";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "HENT PRISER";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Velg datoer";
@@ -85,7 +86,7 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Søkefiltre";
+"HL_LOC_FILTER_TITLE_LABEL" = "Filter";
 "HL_LOC_FILTER_DROP_BUTTON" = "Nullstill";
 "HL_LOC_FILTER_APPLY_BUTTON" = "Ferdig";
 
@@ -193,7 +194,7 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Kart";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Søkefiltre";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filter";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Sorter";
 
 "HL_DISCOUNT" = "rabatt";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Rabatt";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Innstillinger";
+"LOC_SETTINGS_TITLE" = "Informasjon";
+
+"LOC_INFO" = "Informasjon";
+
+"LOC_ABOUT" = "Vennligst erstatt denne teksten med en kort beskrivelse av din app";
 
 "HL_LOC_ABOUT_CURRENCY" = "Valuta";
 
@@ -407,7 +412,7 @@
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li kupp";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li kupp";
 
-"HOTEL_RATING_EXCEPTIONAL" = "over all forventning";
+"HOTEL_RATING_EXCEPTIONAL" = "eksepsjonelt";
 "HOTEL_RATING_WONDERFUL" = "fantastisk";
 "HOTEL_RATING_EXCELLENT" = "utmerket";
 "HOTEL_RATING_VERY_GOOD" = "meget bra";
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Ingen hoteller funnet i valgt by.";
 "HL_NEW_SEARCH_BUTTON" = "Nytt søk";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Bruk";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Gjelder";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Avstand til gjeldende plassering:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Avstand fra ";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Senere";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Lukk";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Tilbakemelding fra iOS-app";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Feil";
@@ -476,10 +481,10 @@
 // Экран ожидания результатов поиска
 "HL_WAITING_SCREEN_OTHERWEBSITES" = "Andre bookingselskaper";
 "HL_WAITING_LONG_SEARCH_TITLE" = "Søker etter de beste tilbudene";
-"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Det kan ta inntil ett minutt.\nVennligst vent.";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "Det kan ta inntil ett minutt. Vennligst vent.";
 
 // Страница браузера
-"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Vi har funnet tilbudet ditt!\nFullfør bestillingen.";
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "Fullfør bestillingen via reiseselskapets nettside.";
 
 // Default Cities
 "HL_LOC_DEFAULT_CITIES_MOSCOW" = "Moskva";

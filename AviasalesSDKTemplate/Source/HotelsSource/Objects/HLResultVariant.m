@@ -1,5 +1,4 @@
 #import <HotellookSDK/HotellookSDK.h>
-#import "AviasalesSDKTemplate-Swift.h"
 
 #import "HLResultVariant.h"
 #import "HLVariantsSorter.h"

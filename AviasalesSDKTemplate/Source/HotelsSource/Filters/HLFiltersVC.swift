@@ -29,8 +29,6 @@ class HLFiltersVC: HLCommonVC, HLFilterDelegate, UITableViewDelegate, UITableVie
 		filter.delegate = self
         reloadData()
 
-        updateDropButtonState()
-
         var bottom: CGFloat = 20.0
         if let applyButton = applyButton {
             bottom += applyButton.frame.size.height
@@ -47,6 +45,9 @@ class HLFiltersVC: HLCommonVC, HLFilterDelegate, UITableViewDelegate, UITableVie
 
         filter?.delegate = self
         saveFilterState()
+
+        updateDropButtonState()
+        updateHotelsCountLabel()
     }
 
     // MARK: - Private methods
@@ -76,8 +77,8 @@ class HLFiltersVC: HLCommonVC, HLFilterDelegate, UITableViewDelegate, UITableVie
 
 	private func setupButtons() {
         title = NSLS("HL_LOC_FILTER_TITLE_LABEL")
-        applyButton?.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
-        applyButton?.setTitleColor(JRColorScheme.mainButtonTitleColor(), for: .normal)
+        applyButton?.backgroundColor = JRColorScheme.actionColor()
+        applyButton?.setTitleColor(.white, for: .normal)
         applyButton?.setTitle(NSLS("HL_LOC_FILTER_APPLY_BUTTON"), for: .normal)
 
 		updateHotelsCountLabel()

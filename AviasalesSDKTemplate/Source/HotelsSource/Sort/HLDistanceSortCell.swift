@@ -8,7 +8,7 @@ class HLDistanceSortCell: HLSortCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        pointButton.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: UIControlState())
+        pointButton.setTitleColor(JRColorScheme.actionColor(), for: UIControlState())
         pointButton.titleLabel?.font = UIFont.systemFont(ofSize: 17.0)
     }
 

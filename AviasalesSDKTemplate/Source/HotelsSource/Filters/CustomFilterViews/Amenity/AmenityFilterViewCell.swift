@@ -7,7 +7,7 @@ import UIKit
     var amenityFilterItem: StringFilterItem?
 
     override var selectedBackgroundColor: UIColor {
-        return JRColorScheme.navigationBarBackgroundColor()
+        return JRColorScheme.mainColor()
     }
 
     override var isSelected: Bool {

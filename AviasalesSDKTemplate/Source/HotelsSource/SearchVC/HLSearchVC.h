@@ -15,7 +15,6 @@
 - (void)performSearchWithSearchInfo:(HLSearchInfo *)searchInfo;
 - (void)presentCityPicker:(HLCityPickerVC *)cityPickerVC animated:(BOOL)animated;
 
-- (IBAction)showCityOrMapPicker;
 - (void)showCityPickerWithText:(NSString *)searchText animated:(BOOL)animated;
 - (void)setCityToSearchForm:(HDKCity *)city;
 

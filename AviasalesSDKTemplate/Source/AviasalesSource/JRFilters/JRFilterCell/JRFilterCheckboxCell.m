@@ -31,7 +31,7 @@
     [self.averageRateViewContainer addSubview:self.averageRateView];
     self.averageRateViewContainer.backgroundColor = [UIColor clearColor];
     
-    self.selectedIndicator.tintColor = [JRColorScheme navigationBarBackgroundColor];
+    self.selectedIndicator.tintColor = [JRColorScheme mainColor];
 }
 
 #pragma - mark Public methds

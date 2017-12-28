@@ -12,7 +12,7 @@ class ExpandCell: HLHotelDetailsTableCell {
     func showArrow() {
         let image = UIImage(named: "lightGreenRightArrow")
         button.setImage(image, for: .normal)
-        button.tintColor = JRColorScheme.mainButtonBackgroundColor()
+        button.tintColor = JRColorScheme.actionColor()
     }
 
     func hideArrow() {
@@ -22,7 +22,7 @@ class ExpandCell: HLHotelDetailsTableCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        button.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: .normal)
+        button.setTitleColor(JRColorScheme.actionColor(), for: .normal)
     }
 
     @IBAction func action() {

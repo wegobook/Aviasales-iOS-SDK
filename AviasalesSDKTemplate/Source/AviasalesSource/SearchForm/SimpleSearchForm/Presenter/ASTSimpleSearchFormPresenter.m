@@ -51,16 +51,17 @@ static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoB
 - (void)handleViewDidLoad {
     [self restoreSearchInfoBuilder];
     [self createDirectTravelSegmentBuilder];
+    [self updateExpiredDepartureDate];
     [self.viewController updateWithViewModel:[self buildViewModel]];
 }
 
 - (void)handleSelectCellViewModel:(ASTSimpleSearchFormCellViewModel *)cellViewModel {
     switch (cellViewModel.type) {
         case ASTSimpleSearchFormCellViewModelTypeOrigin:
-            [self.viewController showAirportPickerWithMode:JRAirportPickerOriginMode];
+            [self.viewController showAirportPickerWithType:ASAirportPickerTypeOrigin];
             break;
         case ASTSimpleSearchFormCellViewModelTypeDestination:
-            [self.viewController showAirportPickerWithMode:JRAirportPickerDestinationMode];
+            [self.viewController showAirportPickerWithType:ASAirportPickerTypeDestination];
             break;
         case ASTSimpleSearchFormCellViewModelTypeDeparture:
             [self.viewController showDatePickerWithMode:JRDatePickerModeDeparture borderDate:nil firstDate:self.directTravelSegmentBuilder.departureDate secondDate:self.shouldSetReturnDate ? self.returnDate : nil];
@@ -76,12 +77,12 @@ static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoB
     [self.viewController showPassengersPickerWithInfo:[self buildPassengersInfo]];
 }
 
-- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withMode:(JRAirportPickerMode)mode {
-    switch (mode) {
-        case JRAirportPickerOriginMode:
+- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withType:(ASAirportPickerType)type {
+    switch (type) {
+        case ASAirportPickerTypeOrigin:
             self.directTravelSegmentBuilder.originAirport = selectedAirport;
             break;
-        case JRAirportPickerDestinationMode:
+        case ASAirportPickerTypeDestination:
             self.directTravelSegmentBuilder.destinationAirport = selectedAirport;
             break;
     }
@@ -235,6 +236,7 @@ static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoB
 - (JRSDKSearchInfoBuilder *)createSearchInfoBuilder {
     JRSDKSearchInfoBuilder *searchInfoBuilder = [JRSDKSearchInfoBuilder new];
     searchInfoBuilder.adults = 1;
+    searchInfoBuilder.travelSegments = [JRSDKSearchInfoBuilder buildTravelSegmentsBasedOnConfig];
     return searchInfoBuilder;
 }
 
@@ -262,6 +264,17 @@ static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoB
 }
 
 #pragma mark - Logic
+
+- (void)updateExpiredDepartureDate {
+
+    NSDate *firstAvalibleForSearchDate = [DateUtil firstAvalibleForSearchDate];
+
+    if ([firstAvalibleForSearchDate compare:self.directTravelSegmentBuilder.departureDate] == NSOrderedDescending) {
+        self.directTravelSegmentBuilder.departureDate = [DateUtil nextWeekend];
+        self.returnDate = nil;
+        self.shouldSetReturnDate = NO;
+    }
+}
 
 - (NSString *)validateTravelSegmentBuilder {
     NSString *result = nil;

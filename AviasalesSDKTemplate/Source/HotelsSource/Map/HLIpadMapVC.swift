@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 15/05/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 import UIKit
@@ -19,6 +19,7 @@ class HLIpadMapVC: HLMapVC {
 
     @IBOutlet weak fileprivate var filtersContainer: UIView!
     @IBOutlet weak fileprivate var portraitFiltersShadeView: UIView!
+    @IBOutlet weak private var filtersButtonContainer: UIView!
     @IBOutlet fileprivate var filtersContainerToSuperviewTrailing: NSLayoutConstraint!
     @IBOutlet fileprivate var contentToFiltersHorizontalSpacing: NSLayoutConstraint!
     @IBOutlet fileprivate var filtersContainerWidth: NSLayoutConstraint!
@@ -45,7 +46,9 @@ class HLIpadMapVC: HLMapVC {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
 
-        setInitialFiltersStateForOrientation(UIApplication.shared.statusBarOrientation)
+        let orientation = UIApplication.shared.statusBarOrientation
+        setInitialFiltersStateForOrientation(orientation)
+        filtersButtonContainer.isHidden = (orientation == .landscapeLeft || orientation == .landscapeRight)
     }
 
     @IBAction func showFilters() {
@@ -147,6 +150,8 @@ class HLIpadMapVC: HLMapVC {
 
         let orientation = (size.width < size.height) ? UIInterfaceOrientation.portrait : UIInterfaceOrientation.landscapeLeft
         view.setNeedsUpdateConstraints()
+
+        filtersButtonContainer.isHidden = (orientation == .landscapeLeft || orientation == .landscapeRight)
 
         coordinator.animate(alongsideTransition: { (context) -> Void in
             self.setInitialFiltersStateForOrientation(orientation)

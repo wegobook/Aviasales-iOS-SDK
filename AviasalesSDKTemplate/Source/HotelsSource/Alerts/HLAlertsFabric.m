@@ -1,5 +1,4 @@
 #import "HLAlertsFabric.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 @implementation HLAlertsFabric
 
@@ -41,7 +40,7 @@
     UIAlertAction *settings = [UIAlertAction actionWithTitle:NSLS(@"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON")
                                                        style:UIAlertActionStyleDefault
                                                      handler:^(UIAlertAction * _Nonnull action) {
-                                                         [JRAppDelegate openSettings];
+                                                         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
                                                      }];
     [alertController addAction:settings];
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];

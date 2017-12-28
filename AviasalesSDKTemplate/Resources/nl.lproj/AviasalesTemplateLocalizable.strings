@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@u %@m";
 "LONG_TIME_FORMAT" = "%@ u %@ min";
 
-"JR_ERROR_TITLE" = "FOUT";
+"JR_ERROR_TITLE" = "Feil";
 
 "JR_BACK_TITLE" = "Terug";
 
@@ -17,16 +17,15 @@
 
 "JR_OK_BUTTON" = "OK";
 
-"JR_DONE_BUTTON" = "KLAAR";
+"JR_DONE_BUTTON" = "Klaar";
 
 "JR_NEW_SEARCH_TITLE" = "Nieuwe zoekopdracht";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Vertrekdatum";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Retourdatum";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Vluchtdata";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "Vandaag";
-"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Zoek tickets";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Vind tickets";
 "JR_SEARCHINFO_BUSINESS" = "Business";
 "JR_SEARCHINFO_ECONOMY" = "Economy";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
@@ -106,11 +105,12 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Geen resultaten gevonden";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Zoeken...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Zoeken naar de dichtstbijzijnde luchthavens...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "Ingen resultater funnet";
 
 "JR_FILTER_BUTTON" = "Filters";
 
-"JR_FILTER_RESET_ALL" = "Wis alle";
-"JR_FILTER_RESET" = "Verwijder";
+"JR_FILTER_RESET_ALL" = "Verwijder";
+"JR_FILTER_RESET" = "Resetten";
 "JR_FILTER_TICKETS_NOT_FOUND" = "Geen resultaten gevonden";
 
 "JR_FILTER_EMPTY_ALERT_TITLE" = "Geen tickets gevonden";
@@ -227,7 +227,7 @@
 "JR_TICKET_CREDIT_MONTH_12" = "december";
 
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Koop bij";
-"JR_TICKET_BUY_BUTTON" = "Koop ticket";
+"JR_TICKET_BUY_BUTTON" = "Koop";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Krijg een lening";
 "JR_TICKET_FLIGHT" = "Vlucht";
 "JR_TICKET_TRANSFER" = "Tussenlanding";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "Zoeken...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Geen resultaten. Probeer de zoekparameters aan te passen.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Verbindingsfout";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Sorry, de Jetradar service is tijdelijk niet beschikbaar";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Sorry, de service is tijdelijk niet beschikbaar";

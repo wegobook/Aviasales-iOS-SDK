@@ -24,7 +24,7 @@
 		_disabledDates = [NSMutableSet new];
 		_monthItems = [NSMutableArray new];
         
-        _firstAvalibleForSearchDate = [DateUtil today];
+        _firstAvalibleForSearchDate = [DateUtil borderDate];
         _lastAvalibleForSearchDate = [DateUtil nextYearDate:_firstAvalibleForSearchDate];
 	}
 	return self;

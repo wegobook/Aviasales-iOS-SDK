@@ -1,17 +1,18 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "από";
 
 "HL_LOC_GUEST##{one}" = "άτομο";
-"HL_LOC_GUEST##{few}" = "άτομα";
+"HL_LOC_GUEST##{few}" = "άτομο";
 "HL_LOC_GUEST##{many}" = "άτομο";
-"HL_LOC_GUEST##{other}" = "άτομα";
+"HL_LOC_GUEST##{other}" = "άτομο";
 
 "HL_LOC_GUEST_ADULT##{one}" = "ενήλικας";
 "HL_LOC_GUEST_ADULT##{few}" = "ενήλικας";
@@ -23,14 +24,14 @@
 "HL_LOC_GUEST_KID##{many}" = "παιδιά";
 "HL_LOC_GUEST_KID##{other}" = "παιδιά";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Ξενοδοχεία";
 
 "HL_SEARCH_FORM_CITY_TITLE" = "Πόλη ή ξενοδοχείο";
 
-"HL_LOC_SEARCH_KIDS_TITLE" = "Παιδια";
-"HL_LOC_SEARCH_ADULTS_TITLE" = " Ενήλικες";
+"HL_LOC_SEARCH_KIDS_TITLE" = "Παιδιά";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Ενηλικες";
 
 "HL_LOC_SEARCH_DATES_LABEL" = "Ημερομηνίες";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Αναζήτηση στα αποτελέσματα";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Βρες ξενοδοχεία";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Λάβε τιμές";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "ΒΡΕΣ ΞΕΝΟΔΟΧΕΊΑ";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "ΛΆΒΕ ΤΙΜΈΣ";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Επιλέξτε ημερομηνία";
@@ -66,7 +67,7 @@
 "HL_KIDS_PICKER_TITLE" = "Παιδια";
 "HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Βρεφη";
 "HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Ηλικία";
-"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "ΕΦΑΡΜΟΓΗ";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Εφαρμογή";
 "HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Ακυρωση";
 
 "HL_CLEAN_BUTTON_TITLE" = "Εκκαθάριση";
@@ -146,7 +147,7 @@
 "HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Πριβέ μπάνιο";
 "HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Χ/κιβώτιο";
 
-"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "ΑΝΑΖΗΤΗΣΗ";
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Αναζητηση";
 
 "HL_LOC_FILTERS_POINT_POI_TEXT" = "POI";
 "HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Παραλίες";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Έκπτωση";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Ρυθμίσεις";
+"LOC_SETTINGS_TITLE" = "Πληροφορίες";
+
+"LOC_INFO" = "Πληροφορίες";
+
+"LOC_ABOUT" = "Παρακαλώ αντικαταστήστε αυτό το κείμενο με σύντομη περιγραφή της εφαρμογής σας";
 
 "HL_LOC_ABOUT_CURRENCY" = "Νόμισμα";
 
@@ -240,7 +245,7 @@
 
 "HL_LOC_MAIL_BAD_RATE_TEXT" = "Πες μας τι ήταν λάθος:";
 "HL_LOC_ABOUT_VERSION_TITLE" = "Έκδοση";
-"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "ΑΝΑΖΗΤΗΣΗ";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Αναζητηση";
 
 // Страница с подробной информацией об отеле
 "HL_HOTEL_DETAIL_FULL_RATING" = "Λεπτομερής αξιολόγηση ";
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Δεν βρέθηκαν ξενοδοχεία\nστην επιλεγμένη πόλη.";
 "HL_NEW_SEARCH_BUTTON" = "Νέα αναζήτηση";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "ΕΦΑΡΜΟΓΗ";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Εφαρμογή";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Απόσταση προς τη τρέχουσα τοποθεσία:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Απόσταση από ";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Αργότερα";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Κλείσιμο";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback από iOS app";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Σφάλμα";

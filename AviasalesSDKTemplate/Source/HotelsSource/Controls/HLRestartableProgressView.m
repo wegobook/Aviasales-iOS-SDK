@@ -1,5 +1,4 @@
 #import "HLRestartableProgressView.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 static NSTimeInterval const animationDuration = 0.3;
 

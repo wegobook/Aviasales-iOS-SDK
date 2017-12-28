@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@ω%@λ";
 "LONG_TIME_FORMAT" = "%@ ω %@ λεπ";
 
-"JR_ERROR_TITLE" = "ΣΦΑΛΜΑ";
+"JR_ERROR_TITLE" = "Σφάλμα";
 
 "JR_BACK_TITLE" = "Πίσω";
 
@@ -17,10 +17,9 @@
 
 "JR_OK_BUTTON" = "ΟΚ";
 
-"JR_DONE_BUTTON" = "DONE";
+"JR_DONE_BUTTON" = "Τέλος";
 
 "JR_NEW_SEARCH_TITLE" = "Νέα αναζήτηση";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Ημερομηνία Αναχώρησης";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Ημερομηνία Επιστροφής";
@@ -106,11 +105,12 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Δε βρέθηκαν αποτελέσματα";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Αναζήτηση...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Αναζήτηση για πλησιέστερα αεροδρόμια...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "Δε βρέθηκαν αποτελέσματα";
 
 "JR_FILTER_BUTTON" = "Φίλτρα";
 
-"JR_FILTER_RESET_ALL" = "Εκκαθάριση όλων";
-"JR_FILTER_RESET" = "Διαγραφή";
+"JR_FILTER_RESET_ALL" = "Επαναφορά";
+"JR_FILTER_RESET" = "Επαναφορά";
 "JR_FILTER_TICKETS_NOT_FOUND" = "Δε βρέθηκαν αποτελέσματα";
 
 "JR_FILTER_EMPTY_ALERT_TITLE" = "Δεν βρέθηκαν εισιτήρια";
@@ -227,7 +227,7 @@
 "JR_TICKET_CREDIT_MONTH_12" = "δεκέμβριος";
 
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Αγορά";
-"JR_TICKET_BUY_BUTTON" = "Αγορά εισιτηρίου";
+"JR_TICKET_BUY_BUTTON" = "Αγορά";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Λήψη δανείου";
 "JR_TICKET_FLIGHT" = "Πτήση";
 "JR_TICKET_TRANSFER" = "Σταση";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "Αναζήτηση...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Δε βρέθηκαν αποτελέσματα. Προσπαθήστε να τροποποιήσετε τις παραμέτρους αναζητήσεων.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Σφάλμα σύνδεσης";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Δυστυχώς, η υπηρεσία Jetradar είναι προσωρινά μη διαθέσιμη";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Συγγνώμη, η υπηρεσία είναι προσωρινά μη διαθέσιμη";

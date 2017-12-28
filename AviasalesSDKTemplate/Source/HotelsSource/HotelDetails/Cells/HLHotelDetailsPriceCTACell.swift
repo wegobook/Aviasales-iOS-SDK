@@ -22,13 +22,13 @@ class HLHotelDetailsPriceCTACell: HLPriceTableViewCell {
 
         bookButton.setTitle(NSLS("HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE"), for: .normal)
         bookButton.titleLabel?.font = UIFont.systemFont(ofSize: 17.0)
-        bookButton.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
+        bookButton.backgroundColor = JRColorScheme.actionColor()
 
         photoButton.setTitle(NSLS("HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE"), for: .normal)
-        photoButton.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: .normal)
+        photoButton.setTitleColor(JRColorScheme.actionColor(), for: .normal)
         photoButton.titleLabel?.font = UIFont.systemFont(ofSize: 17.0)
         photoButton.layer.borderWidth = 1
-        photoButton.layer.borderColor = JRColorScheme.mainButtonBackgroundColor().cgColor
+        photoButton.layer.borderColor = JRColorScheme.actionColor().cgColor
     }
 
     func hidePhotosButton() {

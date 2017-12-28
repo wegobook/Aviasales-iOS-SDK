@@ -1,5 +1,4 @@
 #import "HLActionCardsManager.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import "NSArray+Functional.h"
 
 NSInteger const kMaxVariantsToShowNearbyCitiesSearchCard = 25;
@@ -98,7 +97,7 @@ NSInteger const kMaxVariantsToShowNearbyCitiesSearchCard = 25;
         return NO;
     }
     
-    if (!ticketsEnabled()) {
+    if (![ConfigManager shared].flightsEnabled) {
         return NO;
     }
     

@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "hết";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "trẻ em";
 "HL_LOC_GUEST_KID##{other}" = "trẻ em";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Khách sạn";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Kết quả tìm kiếm";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Tìm khách sạn";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Xem giá";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "TÌM KHÁCH SẠN";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "XEM GIÁ";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Chọn ngày";
@@ -85,11 +86,11 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Lọc";
+"HL_LOC_FILTER_TITLE_LABEL" = "Bộ lọc";
 "HL_LOC_FILTER_DROP_BUTTON" = "Cài đặt lại";
 "HL_LOC_FILTER_APPLY_BUTTON" = "Xong";
 
-"HL_LOC_FILTER_PRICE_CRITERIA" = "Giá vé";
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Giá";
 "HL_LOC_FILTER_RANGE" = "từ %@ đến %@";
 "HL_LOC_FILTER_FROM_STRING" = "từ";
 "HL_LOC_FILTER_TO_STRING" = "đến";
@@ -193,7 +194,7 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Bản đồ";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Lọc";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Bộ lọc";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Phân loại";
 
 "HL_DISCOUNT" = "giảm giá";
@@ -226,12 +227,16 @@
 "HL_LOC_SORT_HEADER_TITLE" = "Phân loại theo:";
 "HL_LOC_SORT_TYPE_POPULARITY" = "Phổ biến";
 "HL_LOC_SORT_TYPE_RATING" = "Xếp hạng";
-"HL_LOC_SORT_TYPE_PRICE" = "Giá vé";
+"HL_LOC_SORT_TYPE_PRICE" = "Giá";
 "HL_LOC_SORT_TYPE_DISTANCE" = "Khoảng cách đến:";
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Giảm giá";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Cài đặt";
+"LOC_SETTINGS_TITLE" = "Thông tin";
+
+"LOC_INFO" = "Thông tin";
+
+"LOC_ABOUT" = "Vui lòng thay thế văn bản này bằng một lời mô tả ngắn về ứng dụng của bạn";
 
 "HL_LOC_ABOUT_CURRENCY" = "Tiền tệ";
 
@@ -391,8 +396,8 @@
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li ưu đãi";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li ưu đãi";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li ưu đãi";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li ưu đãi";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li giao dịch";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li giao dịch";
 
 "HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "Giảm giá %@ trên mức giá thông thường";
 
@@ -404,10 +409,10 @@
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li ưu đãi";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li ưu đãi";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li ưu đãi";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li ưu đãi";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li ưu đãi";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li giao dịch";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li giao dịch";
 
-"HOTEL_RATING_EXCEPTIONAL" = "xuất sắc";
+"HOTEL_RATING_EXCEPTIONAL" = "đặc biệt";
 "HOTEL_RATING_WONDERFUL" = "tuyệt hảo";
 "HOTEL_RATING_EXCELLENT" = "tuyệt vời";
 "HOTEL_RATING_VERY_GOOD" = "rất tốt";
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Không tìm thấy khách sạn nào tại thành phố đã chọn.";
 "HL_NEW_SEARCH_BUTTON" = "Tìm kiếm mới";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Chọn";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Áp dụng";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Khoảng cách đến vị trí hiện tại của bạn:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Khoảng cách từ ";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Để sau";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Đóng";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Phản hồi từ iOS app";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Lỗi";

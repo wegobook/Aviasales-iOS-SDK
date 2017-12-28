@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "utav";
 
@@ -23,13 +24,13 @@
 "HL_LOC_GUEST_KID##{many}" = "barn";
 "HL_LOC_GUEST_KID##{other}" = "barn";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotell";
 
 "HL_SEARCH_FORM_CITY_TITLE" = "Stad eller hotell";
 
-"HL_LOC_SEARCH_KIDS_TITLE" = "Barn";
+"HL_LOC_SEARCH_KIDS_TITLE" = "Spädbarn";
 "HL_LOC_SEARCH_ADULTS_TITLE" = " Vuxna";
 
 "HL_LOC_SEARCH_DATES_LABEL" = "Datum";
@@ -41,8 +42,8 @@
 
 "HL_LOC_NIGHT##{one}" = "natt";
 "HL_LOC_NIGHT##{few}" = "nätter";
-"HL_LOC_NIGHT##{many}" = "nätter";
-"HL_LOC_NIGHT##{other}" = "nätter";
+"HL_LOC_NIGHT##{many}" = "natt";
+"HL_LOC_NIGHT##{other}" = "natt";
 
 "HL_LOC_FOR_NIGHT##{one}" = "per\U00A0%d\U00A0natt";
 "HL_LOC_FOR_NIGHT##{few}" = "per\U00A0%d\U00A0nätter";
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Sökresultat";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Hitta hotell";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Få priser";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "HITTA HOTELL";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "FÅ PRISER";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Välj datum";
@@ -101,13 +102,13 @@
 "HL_LOC_FILTER_STARS_SECTION" = "Stjärnor";
 "HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "Egendomstyp";
 "HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "Dölj resultat";
-"HL_LOC_FILTER_DISTRICTS_SECTION" = "Distrikt";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "District";
 "HL_LOC_FILTER_GATES_SECTION" = "Bokningskontor";
 
 "HL_LOC_FILTER_GATES_SELECTION" = "Bokningskontor";
 "HL_LOC_FILTER_SELECT_GATES" = "Välj agentur";
 "HL_LOC_FILTER_ALL_GATES" = "Alla agenturer";
-"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Distrikt";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "District";
 "HL_LOC_FILTER_SELECT_DISTRICTS" = "Välj distrikt";
 "HL_LOC_FILTER_ALL_DISTRICTS" = "Alla distrikt";
 "HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Avstånd till";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Rabatt";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Inställningar";
+"LOC_SETTINGS_TITLE" = "Information";
+
+"LOC_INFO" = "Information";
+
+"LOC_ABOUT" = "Ersätt den här texten med en kort beskrivning av din app";
 
 "HL_LOC_ABOUT_CURRENCY" = "Valuta";
 
@@ -248,7 +253,7 @@
 "HL_HOTEL_DETAIL_HIDE_ROOMS" = "Dölj";
 
 "HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Alla rum";
-"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Värdering";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Betyg";
 "HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Galleri";
 
 "HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Plats";
@@ -388,9 +393,9 @@
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Vanliga priserna för detta hotell starta från\U00A0%@ for\U00A0%d\U00A0nätter";
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Vanliga priserna för detta hotell starta från\U00A0%@ for\U00A0%d\U00A0nätter";
 
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li erbjudanden";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li erbjudande";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li erbjudande";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li erbjudanden";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li erbjudande";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li erbjudande";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li erbjudande";
 
@@ -403,9 +408,9 @@
 
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li erbjudande";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li erbjudande";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li erbjudanden";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li erbjudande";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li erbjudande";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li erbjudanden";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li erbjudande";
 
 "HOTEL_RATING_EXCEPTIONAL" = "enastående";
 "HOTEL_RATING_WONDERFUL" = "fantastiskt";
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Inga hotell hittades i den valda staden.";
 "HL_NEW_SEARCH_BUTTON" = "Ny sökning";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Använd";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Tillämpa";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Avstånd till din nuvarande plats:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Avstånd från ";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Senare";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Stäng";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback från iOS-app";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Fel";

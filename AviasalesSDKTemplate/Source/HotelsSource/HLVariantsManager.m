@@ -1,6 +1,5 @@
 #import <HotellookSDK/HotellookSDK.h>
 #import <PromiseKit/PromiseKit.h>
-#import "AviasalesSDKTemplate-Swift.h"
 
 #import "HLLocaleInspector.h"
 #import "HLVariantsManager.h"
@@ -151,7 +150,7 @@ NSString * const HL_VARIANTS_MANAGER_DID_LOAD_PRICES = @"hl_variantsManagerDidLo
 
 - (NSString *)marker
 {
-    return kJRPartnerMarker;
+    return [ConfigManager shared].partnerMarker;
 }
 
 - (void)startHotelRoomLoader:(HDKHotel *)hotel

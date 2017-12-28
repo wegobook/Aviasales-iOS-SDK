@@ -38,10 +38,10 @@ class ASTWaitingScreenPresenter: NSObject {
         view.animateProgress(duration: kJRSDKSearchPerformerAverageSearchTime)
         view.startAnimating()
         view.updateInfo(text: NSLS("JR_WAITING_TITLE"), range: NSRange())
-        if ShowAppodealAds() {
+        if !ConfigManager.shared.appodealKey.isEmpty {
             view.showAppodealAdvertisement()
         }
-        if ShowAviasalesAds() {
+        if ConfigManager.shared.aviasalesAds {
             view.showAviasalesAdvertisement(searchInfo: searchInfo)
             requestSearchResultsAviasalesAdvertisement()
         }

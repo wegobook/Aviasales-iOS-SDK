@@ -96,16 +96,18 @@ class HLSearchInfo: HDKSearchInfo {
     }
 
     static func defaultSearchInfo() -> HLSearchInfo {
-        let currency = InteractionManager.shared.currency
+        let currency = CurrencyManager.shared.currency
 
         let allowEnglishOTA = true
         let token = HDKTokenManager.mobileToken()
 
-        let searchInfo = HLSearchInfo(currency: currency, allowEnglishOTA: allowEnglishOTA, token: token, adultsCount: 2)
+        let searchInfo = HLSearchInfo(currency: currency, allowEnglishOTA: allowEnglishOTA, token: token, adultsCount: 1)
+        searchInfo.checkInDate = DateUtil.nextWeekend()
+        searchInfo.checkOutDate = DateUtil.nextDay(for: searchInfo.checkInDate)
+
         searchInfo.updateExpiredDates()
 
-        let city = HLDefaultCitiesFactory.defaultCity()
-        searchInfo.city = city
+        searchInfo.city = HLDefaultCitiesFactory.configCity() ?? HLDefaultCitiesFactory.defaultCity()
 
         return searchInfo
     }

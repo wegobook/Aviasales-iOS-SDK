@@ -44,7 +44,7 @@ class HLHotelDetailsErrorTableCell: UITableViewCell {
     fileprivate func initialize() {
         button.isHidden = hideButton
         button.setTitle(buttonText, for: .normal)
-        button.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
+        button.backgroundColor = JRColorScheme.actionColor()
         titleLabel.text = titleText
     }
 

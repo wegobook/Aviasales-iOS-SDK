@@ -15,7 +15,7 @@ import UIKit
     @IBOutlet var fifthStarImageView: UIImageView!
 
     override var selectedBackgroundColor: UIColor {
-        return JRColorScheme.mainButtonBackgroundColor()
+        return JRColorScheme.actionColor()
     }
 
     var starsImageViews: [UIImageView] {

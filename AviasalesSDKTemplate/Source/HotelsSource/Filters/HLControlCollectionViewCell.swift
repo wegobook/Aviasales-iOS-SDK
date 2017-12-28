@@ -15,7 +15,7 @@ class HLControlCollectionViewCell: UICollectionViewCell {
     func setCustomSelected(_ selected: Bool) {
         if selected {
             textLabel.font = selectedTextFont
-            textLabel.textColor = JRColorScheme.mainButtonBackgroundColor()
+            textLabel.textColor = JRColorScheme.actionColor()
             textLabel.alpha = 1.0
         } else {
             textLabel.font = textFont

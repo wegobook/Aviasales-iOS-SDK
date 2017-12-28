@@ -1,6 +1,5 @@
 #import "HLIphoneMapVC.h"
 #import "HLFilter.h"
-#import "AviasalesSDKTemplate-Swift.h"
 #import "HLSliderCalculatorFactory.h"
 #import "HLSliderCalculator.h"
 
@@ -11,6 +10,7 @@ static CGFloat kFreeSpaceBetweenButtons = 15.0;
 @property (nonatomic, weak) IBOutlet PriceFilterView *priceFilterView;
 @property (nonatomic, weak) IBOutlet UIView *priceFilterViewContainer;
 @property (nonatomic, weak) IBOutlet NSLayoutConstraint *filterButtonWidth;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *locateMeViewBottomLayoutConstraint;
 
 @end
 
@@ -45,6 +45,7 @@ static CGFloat kFreeSpaceBetweenButtons = 15.0;
     [super viewDidLayoutSubviews];
 
     self.filterButtonWidth.constant = (self.view.bounds.size.width - 3 * kFreeSpaceBetweenButtons) / 2.0;
+    self.locateMeViewBottomLayoutConstraint.constant = self.bottomLayoutGuide.length + 10.0;
 }
 
 #pragma mark - Override

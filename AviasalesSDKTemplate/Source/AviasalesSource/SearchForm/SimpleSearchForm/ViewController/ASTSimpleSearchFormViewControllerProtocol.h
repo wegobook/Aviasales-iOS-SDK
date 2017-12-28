@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JRAirportPickerEnums.h"
 #import "JRDatePickerEnums.h"
 
 @class ASTSimpleSearchFormViewModel;
@@ -14,7 +13,7 @@
 @protocol ASTSimpleSearchFormViewControllerProtocol <NSObject>
 
 - (void)updateWithViewModel:(ASTSimpleSearchFormViewModel *)viewModel;
-- (void)showAirportPickerWithMode:(JRAirportPickerMode)mode;
+- (void)showAirportPickerWithType:(ASAirportPickerType)type;
 - (void)showDatePickerWithMode:(JRDatePickerMode)mode borderDate:(NSDate *)borderDate firstDate:(NSDate *)firstDate secondDate:(NSDate *)secondDate;
 - (void)showPassengersPickerWithInfo:(ASTPassengersInfo *)passengersInfo;
 - (void)showErrorWithMessage:(NSString *)message;

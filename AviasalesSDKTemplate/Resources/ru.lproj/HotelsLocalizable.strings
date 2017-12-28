@@ -3,10 +3,10 @@
   AviasalesSDKTemplate
 
   Created by Anton Chebotov on 02/03/2017.
-  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-
 //Универсальные элементы
+
 "HL_LOC_FROM_CONJUCTION" = "из";
 
 "HL_LOC_GUEST##{one}" = "гость";
@@ -31,7 +31,7 @@
 "HL_SEARCH_FORM_CITY_TITLE" = "Отель или город";
 
 "HL_LOC_SEARCH_KIDS_TITLE" = "Детей";
-"HL_LOC_SEARCH_ADULTS_TITLE" = "Взрослых";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Взрослых";
 
 "HL_LOC_SEARCH_DATES_LABEL" = "Заезд и выезд";
 
@@ -56,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "К результатам";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Найти отели";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Найти цены";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "НАЙТИ ОТЕЛИ";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "НАЙТИ ЦЕНЫ";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Выберите даты";
@@ -234,6 +234,10 @@
 // Страница о приложении
 "LOC_SETTINGS_TITLE" = "Настройки";
 
+"LOC_INFO" = "Информация";
+
+"LOC_ABOUT" = "Пожалуйста, замените этот текст на краткое описание вашего приложения";
+
 "HL_LOC_ABOUT_CURRENCY" = "Выбор валюты";
 
 "LOC_RATE_APP_TITLE" = "Оценить приложение";
@@ -402,11 +406,11 @@
 "HL_LOC_CHECKIN_AFTER" = "после";
 "HL_LOC_CHECKOUT_BEFORE" = "до";
 
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li предложений";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li предложения";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li предложение";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li предложения";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li предложений";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li предложений";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li предложения";
 
 "HOTEL_RATING_EXCEPTIONAL" = "великолепно";
 "HOTEL_RATING_WONDERFUL" = "превосходно";

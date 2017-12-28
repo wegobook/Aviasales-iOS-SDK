@@ -6,7 +6,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "JRAirportPickerEnums.h"
 #import "JRDatePickerEnums.h"
 
 typedef NS_ENUM(NSInteger, ASTComplexSearchFormCellSegmentType) {
@@ -26,7 +25,7 @@ typedef NS_ENUM(NSInteger, ASTComplexSearchFormCellSegmentType) {
 - (void)handleAddTravelSegment;
 - (void)handleRemoveTravelSegment;
 - (void)handlePickPassengers;
-- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withMode:(JRAirportPickerMode)mode atIndex:(NSInteger)index;
+- (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withType:(ASAirportPickerType)type atIndex:(NSInteger)index;
 - (void)handleSelectDate:(NSDate *)selectedDate atIndex:(NSInteger)index;
 - (void)handleSelectPassengersInfo:(ASTPassengersInfo *)selectedPassengersInfo;
 - (void)handleSearch;

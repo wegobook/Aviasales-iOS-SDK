@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "จาก";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "เด็ก";
 "HL_LOC_GUEST_KID##{other}" = "เด็ก";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "โรงแรม";
 
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "ส่วนลด";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "การตั้งค่า";
+"LOC_SETTINGS_TITLE" = "ข้อมูล";
+
+"LOC_INFO" = "ข้อมูล";
+
+"LOC_ABOUT" = "โปรดแก้ไขข้อความส่วนนี้ด้วยคำอธิบายสั้น ๆ สำหรับแอปของคุณ";
 
 "HL_LOC_ABOUT_CURRENCY" = "สกุลเงิน";
 
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "ไม่พบโรงแรมที่ต้องการ\nในเมืองที่คุณเลือก";
 "HL_NEW_SEARCH_BUTTON" = "ค้นหาใหม่";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "ใช้งาน";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "ระยะทางจากตำแหน่งปัจจุบันของคุณ:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "ภายหลัง";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "ปิด";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "การตอบรับ จากแอพ";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "ผิดพลาด";

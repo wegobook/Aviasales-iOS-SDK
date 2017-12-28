@@ -1,34 +1,5 @@
 import UIKit
 
-fileprivate func < <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l < r
-  case (nil, _?):
-    return true
-  default:
-    return false
-  }
-}
-
-fileprivate func > <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l > r
-  default:
-    return rhs < lhs
-  }
-}
-
-fileprivate func <= <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
-  switch (lhs, rhs) {
-  case let (l?, r?):
-    return l <= r
-  default:
-    return !(rhs < lhs)
-  }
-}
-
 @objc protocol KidsPickerDelegate: class {
     func kidsSelected()
 }
@@ -86,12 +57,13 @@ fileprivate func <= <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
     }
 
     func updateControls() {
-        cleanButton?.isEnabled = (searchInfo?.kidAgesArray.count > 0)
+        let count = searchInfo?.kidAgesArray.count ?? 0
+        cleanButton?.isEnabled = (count > 0)
         tableView?.reloadData()
     }
 
     private func cellState(_ indexPath: IndexPath) -> HLKidsPickerTableCellState {
-        let kidsCount = searchInfo?.kidAgesArray.count
+        let kidsCount = searchInfo?.kidAgesArray.count ?? 0
         var state = HLKidsPickerTableCellState.disabled
 
         if kidsCount == indexPath.row {
@@ -108,11 +80,10 @@ fileprivate func <= <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
         kidAgePickerView?.delegate = self
         kidAgePickerView?.frame = view.bounds
 
-        let index = tableView.indexPathForSelectedRow?.row
-        if let kidAges = searchInfo?.kidAgesArray, kidAges.count > index {
-            kidAgePickerView?.kidAge = kidAges[index!]
+        if let index = tableView.indexPathForSelectedRow?.row, let kidAges = searchInfo?.kidAgesArray, kidAges.count > index {
+            kidAgePickerView?.kidAge = kidAges[index]
         }
-        kidAgePickerView?.show(view, animated: true)
+        kidAgePickerView?.show(view, animated: true, bottomOffset: bottomLayoutGuide.length)
     }
 
     // MARK: - Needed for cell editing mode!!
@@ -163,26 +134,26 @@ fileprivate func <= <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
             self?.tableView.isEditing = false
         }
         cell.deleteCellHandler = { [weak self] (cell: HLKidsPickerTableCell) -> Void in
-            if let strongSelf = self {
-                if strongSelf.searchInfo?.kidAgesArray.count > (indexPath as NSIndexPath).row {
-                    strongSelf.searchInfo?.kidAgesArray.remove(at: indexPath.row)
+            guard let `self` = self else { return }
+            guard let searchInfo = self.searchInfo else { return }
+            if searchInfo.kidAgesArray.count > indexPath.row {
+                searchInfo.kidAgesArray.remove(at: indexPath.row)
 
-                    strongSelf.view.isUserInteractionEnabled = false
+                self.view.isUserInteractionEnabled = false
 
-                    CATransaction.begin()
-                    CATransaction.setCompletionBlock({ () -> Void in
-                        strongSelf.view.isUserInteractionEnabled = true
-                        strongSelf.updateControls()
-                    })
+                CATransaction.begin()
+                CATransaction.setCompletionBlock({ () -> Void in
+                    self.view.isUserInteractionEnabled = true
+                    self.updateControls()
+                })
 
-                    tableView.beginUpdates()
-                    tableView.deleteRows(at: [indexPath], with: UITableViewRowAnimation.bottom)
-                    let lastIndexPath = IndexPath(row: strongSelf.rowsCount - 1, section: 0)
-                    tableView.insertRows(at: [lastIndexPath], with: UITableViewRowAnimation.bottom)
-                    tableView.endUpdates()
+                tableView.beginUpdates()
+                tableView.deleteRows(at: [indexPath], with: .bottom)
+                let lastIndexPath = IndexPath(row: self.rowsCount - 1, section: 0)
+                tableView.insertRows(at: [lastIndexPath], with: .bottom)
+                tableView.endUpdates()
 
-                    CATransaction.commit()
-                }
+                CATransaction.commit()
             }
         }
 
@@ -198,7 +169,7 @@ fileprivate func <= <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
     // MARK: - UITableViewDelegate methods
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if indexPath.row <= searchInfo?.kidAgesArray.count {
+        if let searchInfo = searchInfo, indexPath.row <= searchInfo.kidAgesArray.count {
             showAgePicker()
         }
     }
@@ -214,11 +185,11 @@ fileprivate func <= <T: Comparable>(lhs: T?, rhs: T?) -> Bool {
     // MARK: - HLKidAgePickerViewDelegate methods
 
     func didSelectAge(_ age: Int) {
-        if let ip = tableView.indexPathForSelectedRow {
-            if searchInfo?.kidAgesArray.count > ip.row {
-                searchInfo?.kidAgesArray[ip.row] = age
+        if let ip = tableView.indexPathForSelectedRow, let searchInfo = searchInfo {
+            if searchInfo.kidAgesArray.count > ip.row {
+                searchInfo.kidAgesArray[ip.row] = age
             } else {
-                searchInfo?.kidAgesArray.append(age)
+                searchInfo.kidAgesArray.append(age)
             }
             updateControls()
         }

@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 16/03/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 import UIKit
@@ -17,12 +17,13 @@ class ASTGroupedSearchVC: ASTBaseSearchTableVC, UISearchBarDelegate, UISearchCon
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         initialCustomPointSelectionLocation = searchInfo?.searchLocation() ?? CLLocation()
 
         tableView.backgroundColor = JRColorScheme.mainBackgroundColor()
 
         searchController = UISearchController(searchResultsController: resultsTableController)
+        searchController.hidesNavigationBarDuringPresentation = false
         searchController.searchResultsUpdater = self
         searchController.searchBar.sizeToFit()
         tableView.tableHeaderView = searchController.searchBar

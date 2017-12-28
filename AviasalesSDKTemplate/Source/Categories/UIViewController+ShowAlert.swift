@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 22/03/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 import Foundation

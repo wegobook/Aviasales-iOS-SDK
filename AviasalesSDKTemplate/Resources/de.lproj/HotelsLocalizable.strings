@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "von";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "Kinder";
 "HL_LOC_GUEST_KID##{other}" = "Kinder";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotels";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Suchresultate";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Hotels finden";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Preise ansehen";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "HOTELS FINDEN";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "PREISE ANSEHEN";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Daten auswählen";
@@ -85,7 +86,7 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Filtern";
+"HL_LOC_FILTER_TITLE_LABEL" = "Filter";
 "HL_LOC_FILTER_DROP_BUTTON" = "Zurücksetzen";
 "HL_LOC_FILTER_APPLY_BUTTON" = "OK";
 
@@ -107,7 +108,7 @@
 "HL_LOC_FILTER_GATES_SELECTION" = "Buchungsagenturen";
 "HL_LOC_FILTER_SELECT_GATES" = "Agenturen auswählen";
 "HL_LOC_FILTER_ALL_GATES" = "Alle Agenturen";
-"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Bezirke";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "Stadtviertel";
 "HL_LOC_FILTER_SELECT_DISTRICTS" = "Bezirke auswählen";
 "HL_LOC_FILTER_ALL_DISTRICTS" = "Alle Bezirke";
 "HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Entfernung vom";
@@ -146,7 +147,7 @@
 "HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Eigenes Bad";
 "HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Safe";
 
-"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Suche";
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Suchen";
 
 "HL_LOC_FILTERS_POINT_POI_TEXT" = "Sehenswürdigkeiten";
 "HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Strände";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Rabatt";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Einstellungen";
+"LOC_SETTINGS_TITLE" = "Informationen";
+
+"LOC_INFO" = "Informationen";
+
+"LOC_ABOUT" = "Bitte ersetzen Sie diesen Text mit einer kurzen Beschreibung Ihrer App";
 
 "HL_LOC_ABOUT_CURRENCY" = "Währung";
 
@@ -388,11 +393,11 @@
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Standardpreise für dieses Hotel beginnen bei\U00A0%@ für\U00A0%d\U00A0Nächte";
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Standardpreise für dieses Hotel beginnen bei\U00A0%@ für\U00A0%d\U00A0Nächte";
 
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li Deals";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li Deal";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li Deals";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li Deals";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li Deals";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li Angebote";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li Angebot";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li Angebote";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li Angebote";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li Angebote";
 
 "HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "%@ Rabatt vom Normalpreis";
 
@@ -402,10 +407,10 @@
 "HL_LOC_CHECKOUT_BEFORE" = "vor";
 
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li Deals";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li Deal";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li Deals";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li Deals";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li Deals";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li Angebot";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li Angebote";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li Angebote";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li Angebote";
 
 "HOTEL_RATING_EXCEPTIONAL" = "außergewöhnlich";
 "HOTEL_RATING_WONDERFUL" = "hervorragend";
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "In der ausgewählten Stadt\nwurden keine Hotels gefunden.";
 "HL_NEW_SEARCH_BUTTON" = "Neue Suche";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Anwenden";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Entfernung zum aktuellen Standort:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Später";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Schließen";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback für die iOS App";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Fehler";

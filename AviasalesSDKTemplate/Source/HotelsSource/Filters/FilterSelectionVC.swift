@@ -37,12 +37,7 @@ class FilterSelectionVC: HLCommonVC, UITableViewDataSource, UITableViewDelegate 
         tableView.hl_registerNib(withName: SelectionFilterCell.hl_reuseIdentifier())
         tableView.reloadData()
 
-        let item = UIBarButtonItem(title: NSLS("HL_LOC_FILTER_DROP_BUTTON"), style: .done, target: self, action: #selector(FilterSelectionVC.reset))
-        if iPad() {
-            navigationItem.leftBarButtonItem = item
-        } else {
-            navigationItem.rightBarButtonItem = item
-        }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: NSLS("HL_LOC_FILTER_DROP_BUTTON"), style: .done, target: self, action: #selector(FilterSelectionVC.reset))
     }
 
     func configure(with items: [[FilterSelectionItem]], title: String, and filter: Filter) {

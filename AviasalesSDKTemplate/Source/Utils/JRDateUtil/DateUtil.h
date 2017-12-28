@@ -36,6 +36,7 @@ typedef NS_ENUM (NSInteger, JRDateUtilDurationStyle) {
 + (BOOL)isSameMonthAndYear:(NSDate *)date1 with:(NSDate *)date2;
 + (BOOL)isTodayDate:(NSDate *)date;
 + (BOOL)isYesterdayDate:(NSDate *)date;
++ (BOOL)isFirstDayOfMonth:(NSDate *)date;
 
 + (NSArray *)dayMonthYearComponentsFromDate:(NSDate *)date;
 + (NSDate *)seasonForDate:(NSDate *)date;
@@ -53,10 +54,12 @@ typedef NS_ENUM (NSInteger, JRDateUtilDurationStyle) {
 + (NSDate *)nextDayForDate:(NSDate *)date;
 + (NSDate *)nextMonthForDate:(NSDate *)date;
 + (NSDate *)nextYearDate:(NSDate *)date;
+
 + (NSDate *)prevDayForDate:(NSDate *)date;
 + (NSDate *)resetTimeForDate:(NSDate *)date;
 + (NSDate *)systemTimeZoneResetTimeForDate:(NSDate *)date;
 + (NSDate *)today;
++ (NSDate *)nextWeekend;
 
 + (NSDateComponents *)componentsFromDate:(NSDate *)date;
 

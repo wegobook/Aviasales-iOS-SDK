@@ -6,7 +6,7 @@ class WaitingCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
 
-        gateLoadedImageView.image = UIImage(named: "gateLoaded")?.imageTinted(with: JRColorScheme.mainButtonBackgroundColor())
+        gateLoadedImageView.image = UIImage(named: "gateLoaded")?.imageTinted(with: JRColorScheme.actionColor())
     }
 
     func gateLoaded(_ loaded: Bool) {

@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "de";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "crianças";
 "HL_LOC_GUEST_KID##{other}" = "crianças";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hóteis";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Resultados de pesquisa";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Encontrar hotéis";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Obter preços";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "ENCONTRAR HOTÉIS";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "OBTER PREÇOS";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Selecionar datas";
@@ -85,7 +86,7 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Filtro";
+"HL_LOC_FILTER_TITLE_LABEL" = "Filtros";
 "HL_LOC_FILTER_DROP_BUTTON" = "Limpar";
 "HL_LOC_FILTER_APPLY_BUTTON" = "OK";
 
@@ -193,7 +194,7 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Mapa";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtro";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtros";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Ordenar";
 
 "HL_DISCOUNT" = "desconto";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Desconto";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Configurações";
+"LOC_SETTINGS_TITLE" = "Informação";
+
+"LOC_INFO" = "Informação";
+
+"LOC_ABOUT" = "Por favor, substitua este texto por uma breve descrição da sua aplicação";
 
 "HL_LOC_ABOUT_CURRENCY" = "Moeda";
 
@@ -341,7 +346,7 @@
 "HL_HOTEL_DETAIL_REVIEWS_ERROR" = "Ocorreu um erro";
 
 "HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Ver mais análises";
-"HL_ALL_REVIEWS_TITLE" = "Análises";
+"HL_ALL_REVIEWS_TITLE" = "Críticas";
 "HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Todas as agências";
 "HL_REVIEWS_FILTER" = "Filtrar por:";
 
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Nenhum hotel encontrado\nna cidade escolhida.";
 "HL_NEW_SEARCH_BUTTON" = "Nova procura";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Aplicar";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Distância até à actual localização:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Mais tarde";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Fechar";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback da app iOS";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Erro";

@@ -28,7 +28,7 @@ class HLKidAgePickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
 
         self.initialize()
     }
-
+    
     override func point(inside point: CGPoint, with event: UIEvent?) -> Bool {
         if pickerHeaderView.frame.contains(point) || agePickerView.frame.contains(point) {
             return super.point(inside: point, with: event)
@@ -40,7 +40,7 @@ class HLKidAgePickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
 
     // MARK: - Internal methods
 
-    func show(_ onView: UIView, animated: Bool) {
+    func show(_ onView: UIView, animated: Bool, bottomOffset: CGFloat) {
         onView.addSubview(self)
 
         self.translatesAutoresizingMaskIntoConstraints = false
@@ -58,7 +58,7 @@ class HLKidAgePickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         let duration = (animated ? 0.4 : 0.0)
         UIView.animate(withDuration: duration, delay: 0.0, options: UIViewAnimationOptions(),
             animations: { [weak self] () -> Void in
-                self?.pickerBottomConstraint.constant = 0.0
+                self?.pickerBottomConstraint.constant = bottomOffset
                 self?.layoutIfNeeded()
             },
             completion: { [weak self] (finished) -> Void in
@@ -92,7 +92,7 @@ class HLKidAgePickerView: UIView, UIPickerViewDataSource, UIPickerViewDelegate {
         agePickerView?.backgroundColor = UIColor.white
         agePickerView?.selectRow(kidAge, inComponent: 0, animated: false)
 
-        let normalColor = JRColorScheme.mainButtonBackgroundColor()
+        let normalColor = JRColorScheme.actionColor()
         applyButton.setTitleColor(normalColor, for: UIControlState())
         cancelButton.setTitleColor(normalColor, for: UIControlState())
         applyButton.titleLabel?.font = UIFont.systemFont(ofSize: 14.0)

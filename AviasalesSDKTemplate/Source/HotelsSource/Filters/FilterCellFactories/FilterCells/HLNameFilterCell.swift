@@ -17,7 +17,7 @@ class HLNameFilterCell: HLDividerCell {
             button.isEnabled = false
         } else {
             titleLabel.text = title
-            titleLabel.textColor = JRColorScheme.mainButtonBackgroundColor()
+            titleLabel.textColor = JRColorScheme.actionColor()
             titleLabel.alpha = 1.0
             button.setImage(UIImage(named: "nameFilterСross"), for: UIControlState())
             button.isEnabled = true

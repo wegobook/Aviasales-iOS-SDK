@@ -47,7 +47,7 @@ class ASTPassengersPickerViewController: UIViewController {
     }
 
     func setupDoneButton() {
-        doneButton.tintColor = JRColorScheme.navigationBarBackgroundColor()
+        doneButton.tintColor = JRColorScheme.mainColor()
     }
 
     // MARK: - Cells

@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "van";
 
@@ -13,17 +14,17 @@
 "HL_LOC_GUEST##{many}" = "gasten";
 "HL_LOC_GUEST##{other}" = "gasten";
 
-"HL_LOC_GUEST_ADULT##{one}" = "volwassene";
-"HL_LOC_GUEST_ADULT##{few}" = "volwassene";
+"HL_LOC_GUEST_ADULT##{one}" = "voksen";
+"HL_LOC_GUEST_ADULT##{few}" = "voksen";
 "HL_LOC_GUEST_ADULT##{many}" = "volwassenen";
 "HL_LOC_GUEST_ADULT##{other}" = "volwassenen";
 
-"HL_LOC_GUEST_KID##{one}" = "kind";
-"HL_LOC_GUEST_KID##{few}" = "kind";
-"HL_LOC_GUEST_KID##{many}" = "kinderen";
-"HL_LOC_GUEST_KID##{other}" = "kinderen";
+"HL_LOC_GUEST_KID##{one}" = "barn";
+"HL_LOC_GUEST_KID##{few}" = "barn";
+"HL_LOC_GUEST_KID##{many}" = "barn";
+"HL_LOC_GUEST_KID##{other}" = "barn";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotels";
 
@@ -49,14 +50,14 @@
 "HL_LOC_FOR_NIGHT##{many}" = "per\U00A0%d\U00A0nachten";
 "HL_LOC_FOR_NIGHT##{other}" = "per\U00A0%d\U00A0nachten";
 
-"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Fout";
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Feil";
 "HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Voer het aantal gasten in";
 "HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Selecteer je bestemming";
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Zoekresultaten";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Zoek hotels";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Prijzen";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "ZOEK HOTELS";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "KRIJG PRIJZEN";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Selecteer data";
@@ -67,7 +68,7 @@
 "HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Zuigelingen";
 "HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Leeftijd";
 "HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Toepassen";
-"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Annuleer";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Avbryt";
 
 "HL_CLEAN_BUTTON_TITLE" = "Wis";
 
@@ -76,7 +77,7 @@
 
 "LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "Steden";
 "LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "Hotels";
-"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Luchthavens";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "Flyplasser";
 "LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "In de buurt";
 
 "HL_LOC_CITY_PLACEHOLDER_TEXT" = "Steden en hotels";
@@ -86,13 +87,13 @@
 // Страница фильтров
 
 "HL_LOC_FILTER_TITLE_LABEL" = "Filters";
-"HL_LOC_FILTER_DROP_BUTTON" = "Resetten";
+"HL_LOC_FILTER_DROP_BUTTON" = "Verwijder";
 "HL_LOC_FILTER_APPLY_BUTTON" = "Klaar";
 
 "HL_LOC_FILTER_PRICE_CRITERIA" = "Prijs";
 "HL_LOC_FILTER_RANGE" = "van %@ tot %@";
 "HL_LOC_FILTER_FROM_STRING" = "vanaf";
-"HL_LOC_FILTER_TO_STRING" = "tot";
+"HL_LOC_FILTER_TO_STRING" = "opptil";
 
 "HL_LOC_FILTER_DISTANCE_CRITERIA" = "Afstand tot:";
 "HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "Centrum";
@@ -106,7 +107,7 @@
 
 "HL_LOC_FILTER_GATES_SELECTION" = "Boekingskantoren";
 "HL_LOC_FILTER_SELECT_GATES" = "Selecteer bureaus";
-"HL_LOC_FILTER_ALL_GATES" = "Alle reisbureaus";
+"HL_LOC_FILTER_ALL_GATES" = "Alle reisebyråer";
 "HL_LOC_FILTER_DISTRICTS_SELECTION" = "Districten";
 "HL_LOC_FILTER_SELECT_DISTRICTS" = "Selecteer districten";
 "HL_LOC_FILTER_ALL_DISTRICTS" = "Alle districten";
@@ -125,7 +126,7 @@
 "HL_LOC_FILTERS_HIDE_DORMITORY" = "Verberg slaapzalen";
 "HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Privé badkamer";
 
-"HL_FILTER_HOTELS_NOT_FOUND" = "Geen resultaten gevonden";
+"HL_FILTER_HOTELS_NOT_FOUND" = "Ingen resultater funnet";
 
 "HL_LOC_FILTER_SIGHT_CRITERIA" = "Prachtig uitzicht";
 "HL_LOC_FILTER_AMENITY_RESTAURANT" = "Restaurant";
@@ -154,7 +155,7 @@
 "HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "Ski-liften";
 "HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "Elke ski-lift";
 "HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "Elk metrostation";
-"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Luchthavens";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "Flyplasser";
 "HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "Treinstations";
 
 "HL_LOC_POINT_ON_MAP_TEXT" = "Punt op de kaart";
@@ -199,16 +200,16 @@
 "HL_DISCOUNT" = "korting";
 "HL_SPECIAL_PRICE_TITLE" = "speciale aanbieding";
 
-"HL_LOC_ADULT##{one}" = "volwassene";
+"HL_LOC_ADULT##{one}" = "voksen";
 "HL_LOC_ADULT##{few}" = "volwassenen";
-"HL_LOC_ADULT##{many}" = "volwassenen";
-"HL_LOC_ADULT##{other}" = "volwassenen";
+"HL_LOC_ADULT##{many}" = "voksne";
+"HL_LOC_ADULT##{other}" = "voksne";
 
 "HL_LOC_KILOMETERS_ABBREVIATION" = "km";
 "HL_LOC_METERS_ABBREVIATION" = "m";
 "HL_LOC_MILES_ABBREVIATION" = "mi";
 
-"HL_NEW_SEARCH_BUTTON" = "Nieuwe zoekopdracht";
+"HL_NEW_SEARCH_BUTTON" = "Nytt søk";
 
 "HL_NO_FILTER_RESULTS_BUTTON" = "Filters resetten";
 
@@ -232,6 +233,10 @@
 
 // Страница о приложении
 "LOC_SETTINGS_TITLE" = "Instellingen";
+
+"LOC_INFO" = "Instellingen";
+
+"LOC_ABOUT" = "Vervang deze tekst met een korte beschrijving van uw app";
 
 "HL_LOC_ABOUT_CURRENCY" = "Valuta";
 
@@ -313,7 +318,7 @@
 "HL_HOTEL_DETAIL_LOADING_TITLE" = "Prijzen bijwerken...";
 "HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Beste aanbieding voor 1 nacht";
 "HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Beste deal voor ";
-"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Probeer opnieuw";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Prøv igjen";
 "HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Wijzig zoekparameters";
 "HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Opnieuw zoeken";
 "HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Uitverkocht";
@@ -342,7 +347,7 @@
 
 "HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "Lees meer reviews";
 "HL_ALL_REVIEWS_TITLE" = "Reviews";
-"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Alle reisbureaus";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "Alle reisebyråer";
 "HL_REVIEWS_FILTER" = "Filter op:";
 
 "HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "100% geverifieerde reviews";
@@ -421,9 +426,9 @@
 
 "HL_NO_RESULTS_TITLE" = "Geen hotels gevonden";
 "HL_NO_RESULTS_DESCRIPTION" = "Geen hotels gevonden\nin de geselecteerde stad.";
-"HL_NEW_SEARCH_BUTTON" = "Nieuwe zoekopdracht";
+"HL_NEW_SEARCH_BUTTON" = "Nytt søk";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Toepassen";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Afstand tot huidige locatie:";
@@ -463,12 +468,12 @@
 "HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Ga naar Instellingen";
 
 "HL_LOC_ALERT_LATER_BUTTON" = "Later";
-"HL_LOC_ALERT_CLOSE_BUTTON" = "Sluiten";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Sluit";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Feedback van iOS app";
-"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Fout";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Feil";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "Configureer de e-mail client op je apparaat.";
 "HL_LOC_MAIL_FEEDBACK_BODY" = "Service-informatie die ons helpt om jouw probleem op te lossen";
 "HL_LOC_MAIL_BOOKING_BUTTON" = "Boek een kamer";

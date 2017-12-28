@@ -58,6 +58,6 @@ class HLHotelDetailsNoPriceCell: HLHotelDetailsTableCell {
 
         noPriceReasonText = ""
         noPriceLabel.font = HLHotelDetailsNoPriceCell.textFont
-        changeButton.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
+        changeButton.backgroundColor = JRColorScheme.actionColor()
     }
 }

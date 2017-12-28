@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "z";
 
@@ -23,14 +24,14 @@
 "HL_LOC_GUEST_KID##{many}" = "dzieci";
 "HL_LOC_GUEST_KID##{other}" = "dzieci";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotele";
 
 "HL_SEARCH_FORM_CITY_TITLE" = "Miasto lub hotel";
 
 "HL_LOC_SEARCH_KIDS_TITLE" = "Dzieci";
-"HL_LOC_SEARCH_ADULTS_TITLE" = "Dorośli";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " Dorośli";
 
 "HL_LOC_SEARCH_DATES_LABEL" = "Daty";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Wyniki wyszukiwania";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Znajdź hotele";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Pobierz ceny";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "ZNAJDŹ HOTELE";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "POBIERZ CENY";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Wybierz daty";
@@ -85,13 +86,13 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Filtr";
+"HL_LOC_FILTER_TITLE_LABEL" = "Filtry";
 "HL_LOC_FILTER_DROP_BUTTON" = "Usuń";
 "HL_LOC_FILTER_APPLY_BUTTON" = "OK";
 
 "HL_LOC_FILTER_PRICE_CRITERIA" = "Cena";
 "HL_LOC_FILTER_RANGE" = "od %@ do %@";
-"HL_LOC_FILTER_FROM_STRING" = "zaczynając od";
+"HL_LOC_FILTER_FROM_STRING" = "z";
 "HL_LOC_FILTER_TO_STRING" = "do";
 
 "HL_LOC_FILTER_DISTANCE_CRITERIA" = "Odległość do:";
@@ -123,7 +124,7 @@
 "HL_LOC_FILTERS_HIDE_HOSTELS" = "Ukryj schroniska i pensjonaty";
 "HL_LOC_FILTERS_HIDE_APARTMENTS" = "Ukryj apartamenty";
 "HL_LOC_FILTERS_HIDE_DORMITORY" = "Ukryj wieloosobowe";
-"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Prywatna łazienka ";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "Prywatna łazienka";
 
 "HL_FILTER_HOTELS_NOT_FOUND" = "Brak wyników";
 
@@ -143,7 +144,7 @@
 "HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "Opieka nad dziećmi";
 
 "HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "Wi-Fi";
-"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Prywatna łazienka ";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Prywatna łazienka";
 "HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Sejf";
 
 "HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Szukaj";
@@ -193,7 +194,7 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Mapa";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtr";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtry";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Sortuj";
 
 "HL_DISCOUNT" = "zniżka";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Zniżka";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Ustawienia";
+"LOC_SETTINGS_TITLE" = "Informacje";
+
+"LOC_INFO" = "Informacje";
+
+"LOC_ABOUT" = "Proszę zastąpić ten tekst krótkim opisem swojej aplikacji";
 
 "HL_LOC_ABOUT_CURRENCY" = "Waluta";
 
@@ -243,8 +248,8 @@
 "LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Szukaj";
 
 // Страница с подробной информацией об отеле
-"HL_HOTEL_DETAIL_FULL_RATING" = "Szczegółowa opinia";
-"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Pokaż więcej %@ ";
+"HL_HOTEL_DETAIL_FULL_RATING" = "Szczegółowa opinia ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "Pokaż więcej %@";
 "HL_HOTEL_DETAIL_HIDE_ROOMS" = "Schowaj";
 
 "HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Wszystkie pokoje";
@@ -264,7 +269,7 @@
 
 "HL_HOTEL_DETAIL_AMENITY_CLEANING" = "Opłata za sprzątanie";
 "HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "Kaucja";
-"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "wymagane";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "Wymagane";
 
 "HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "pary";
 "HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "rodziny";
@@ -279,13 +284,13 @@
 "HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "Bezpłatny parking";
 
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "Hotele";
-"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Apartamenty ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "Apartamenty";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "Hostele";
 
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "Hotel";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "Hotel apartamentowy";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "Bed & Breakfast";
-"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Apartamenty ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "Apartamenty";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "Motel";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "Pensjonat";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "Hostel";
@@ -294,7 +299,7 @@
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "Dom wypoczynkowy";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "Lodge";
 "HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "Willa";
-"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Prywatny pokój ";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "Prywatny pokój";
 
 "HOTEL_DETAIL_YEAR_OPENED" = "Zbudowany w %@";
 "HOTEL_DETAIL_YEAR_RENOVATED" = "Odnowiony w %@";
@@ -306,13 +311,13 @@
 
 "HL_PHOTO_PEEK_BUTTON_TITLE" = "Pokaż zdjęcia";
 "HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Otwórz mapę";
-"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Zarezerwuj teraz";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Zarezerwuj teraz ";
 "HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Rezerwuj";
-"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Więcej ofert";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Więcej ofert ";
 "HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Galeria";
 "HL_HOTEL_DETAIL_LOADING_TITLE" = "Aktualizacja cen...";
 "HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "Najlepsza oferta za 1 noc";
-"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Najlepsza oferta za";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Najlepsza oferta za ";
 "HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Jeszcze raz";
 "HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Zmień";
 "HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Uruchom ponownie wyszukiwanie";
@@ -370,9 +375,9 @@
 "HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "Strona hotelu";
 "HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "Zapłać teraz";
 "HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "Późniejsza płatność";
-"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Karta kredytowa nie jest wymagana ";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "Karta kredytowa nie jest wymagana";
 "HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "Specjalna oferta";
-"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Prywatna łazienka ";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "Prywatna łazienka";
 "HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "Wspólna łazienka";
 "HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "Wi-Fi w pokoju";
 
@@ -382,7 +387,7 @@
 "HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "Pozostało %li pokojów!";
 "HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "Pozostało %li pokojów!";
 
-"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Regularne stawki za ten hotel zaczynają się od \U00A0%@ for\U00A0%d\U00A0 za noc";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "Regularne stawki za ten hotel zaczynają się od \U00A0%@ for\U00A0%d\U00A0 za nocy";
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "Regularne stawki za ten hotel zaczynają się od \U00A0%@ for\U00A0%d\U00A0 za noc";
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "Regularne stawki za ten hotel zaczynają się od \U00A0%@ for\U00A0%d\U00A0 za nocy";
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "Regularne stawki za ten hotel zaczynają się od \U00A0%@ for\U00A0%d\U00A0 za nocy";
@@ -412,7 +417,7 @@
 "HOTEL_RATING_EXCELLENT" = "doskonałe";
 "HOTEL_RATING_VERY_GOOD" = "bardzo dobre";
 "HOTEL_RATING_GOOD" = "dobre";
-"HOTEL_RATING_FAIR" = "punktacja  opinii";
+"HOTEL_RATING_FAIR" = "punktacja opinii";
 
 // Плейсхолдеры
 "HL_NO_FILTER_RESULTS_TITLE" = "Nie znaleziono hoteli";
@@ -423,11 +428,11 @@
 "HL_NO_RESULTS_DESCRIPTION" = "W wybranym mieście\nnie znaleziono hoteli.";
 "HL_NEW_SEARCH_BUTTON" = "Nowe wyszukiwanie";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Zastosuj";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Odległość od bieżącej lokalizacji:";
-"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Odległość od";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Odległość od ";
 "HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "Odległość od punktu wyszukiwania:";
 "HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Odległość od punktu na mapie:";
 "HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "Odległość od %@:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Później";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Zamknij";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Informacje zwrotne z aplikacji iOS";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Błąd";
@@ -528,7 +533,7 @@
 "HL_LOC_DEFAULT_COUNTRIES_HK" = "Hongkong";
 
 "HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "hoteli";
-"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "hotel";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "hotel [singular]\nhotele [plural]";
 "HL_LOC_SEARCH_FORM_HOTEL##{few}" = "hoteli";
 "HL_LOC_SEARCH_FORM_HOTEL##{many}" = "hoteli";
 "HL_LOC_SEARCH_FORM_HOTEL##{other}" = "hoteli";

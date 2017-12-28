@@ -90,9 +90,10 @@
 
 - (void)mapView:(MKMapView *)mapView regionDidChangeAnimated:(BOOL)animated
 {
+    MKMapRect rect = mapView.visibleMapRect;
+    double scale = self.mapView.bounds.size.width / rect.size.width;
+
     [[NSOperationQueue new] addOperationWithBlock:^{
-        MKMapRect rect = mapView.visibleMapRect;
-        double scale = self.mapView.bounds.size.width / rect.size.width;
         NSArray *annotations = [self.coordinateQuadTree clusteredAnnotationsWithinMapRect:rect withZoomScale:scale];
         [self updateMapViewAnnotationsWithAnnotations:annotations];
     }];

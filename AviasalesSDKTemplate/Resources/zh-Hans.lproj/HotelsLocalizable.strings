@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "张，共有";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "儿童";
 "HL_LOC_GUEST_KID##{other}" = "儿童";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "酒店";
 
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "折扣";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "设置";
+"LOC_SETTINGS_TITLE" = "信息";
+
+"LOC_INFO" = "信息";
+
+"LOC_ABOUT" = "请用您应用程序的简短描述来替换此处文本。";
 
 "HL_LOC_ABOUT_CURRENCY" = "货币";
 
@@ -402,10 +407,10 @@
 "HL_LOC_CHECKOUT_BEFORE" = "之前";
 
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li 交易";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li 交易";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li 交易";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li 交易";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li 交易";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li 个报价";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li 个报价";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li 个报价";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li 个报价";
 
 "HOTEL_RATING_EXCEPTIONAL" = "傑出";
 "HOTEL_RATING_WONDERFUL" = "好極了";
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "在选定的城市\n没有找到酒店。";
 "HL_NEW_SEARCH_BUTTON" = "新搜索";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "应用";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "距离您当前位置：";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "稍后";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "关闭";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "反馈来自iOS app";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "错误";

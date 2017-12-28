@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,6 +14,7 @@
                 <outlet property="contentContainerWidth" destination="U5M-Nw-o0g" id="1eM-vN-Zfk"/>
                 <outlet property="contentToFiltersHorizontalSpacing" destination="tpp-Bm-G1k" id="5XI-dD-ngR"/>
                 <outlet property="filtersButton" destination="2vL-Au-DPR" id="Gvg-Lp-uLR"/>
+                <outlet property="filtersButtonContainer" destination="MTg-N2-pw1" id="goh-6m-EHy"/>
                 <outlet property="filtersContainer" destination="eVx-qT-Upd" id="olj-3I-cDK"/>
                 <outlet property="filtersContainerToSuperviewTrailing" destination="FL1-bU-Xe9" id="cAo-cm-wpU"/>
                 <outlet property="filtersContainerWidth" destination="I1e-yM-Sgd" id="lfy-8v-JTQ"/>

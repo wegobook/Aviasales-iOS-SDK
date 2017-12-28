@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "dışında";
 
@@ -23,13 +24,13 @@
 "HL_LOC_GUEST_KID##{many}" = "çocuklar";
 "HL_LOC_GUEST_KID##{other}" = "çocuklar";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Oteller";
 
 "HL_SEARCH_FORM_CITY_TITLE" = "Şehir veya otel";
 
-"HL_LOC_SEARCH_KIDS_TITLE" = "Çocuklar";
+"HL_LOC_SEARCH_KIDS_TITLE" = "Çocuk";
 "HL_LOC_SEARCH_ADULTS_TITLE" = " Yetişkin";
 
 "HL_LOC_SEARCH_DATES_LABEL" = "Tarihler";
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Arama sonuçları";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Otel bul";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Fiyatları gör";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "OTEL BUL";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "FIYATLARI GÖR";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Tarihleri seçin";
@@ -85,13 +86,13 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Filtre";
+"HL_LOC_FILTER_TITLE_LABEL" = "Filtreler";
 "HL_LOC_FILTER_DROP_BUTTON" = "Sıfırla";
 "HL_LOC_FILTER_APPLY_BUTTON" = "Tamam";
 
 "HL_LOC_FILTER_PRICE_CRITERIA" = "Fiyat";
 "HL_LOC_FILTER_RANGE" = "%@'den %@'e";
-"HL_LOC_FILTER_FROM_STRING" = "şu fiyattan";
+"HL_LOC_FILTER_FROM_STRING" = "dan başlıyor";
 "HL_LOC_FILTER_TO_STRING" = "şu güne kadar";
 
 "HL_LOC_FILTER_DISTANCE_CRITERIA" = "Şuraya uzaklık:";
@@ -146,7 +147,7 @@
 "HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "Özel banyo";
 "HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "Kasa";
 
-"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Arama";
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "Ara";
 
 "HL_LOC_FILTERS_POINT_POI_TEXT" = "İlgi alanları";
 "HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "Plajlar";
@@ -193,7 +194,7 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Harita";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtre";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Filtreler";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Sırala";
 
 "HL_DISCOUNT" = "indirim";
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "İndirim";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Ayarlar";
+"LOC_SETTINGS_TITLE" = "Bilgi";
+
+"LOC_INFO" = "Bilgi";
+
+"LOC_ABOUT" = "Lütfen bu metni uygulamanızın kısa açıklamasıyla değiştirin";
 
 "HL_LOC_ABOUT_CURRENCY" = "Kur";
 
@@ -240,7 +245,7 @@
 
 "HL_LOC_MAIL_BAD_RATE_TEXT" = "Bize neyin yanlış olduğunu bildirin:";
 "HL_LOC_ABOUT_VERSION_TITLE" = "Sürüm";
-"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Arama";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Ara";
 
 // Страница с подробной информацией об отеле
 "HL_HOTEL_DETAIL_FULL_RATING" = "Ayrıntılı değerlendirme ";
@@ -306,14 +311,14 @@
 
 "HL_PHOTO_PEEK_BUTTON_TITLE" = "Fotoğrafları göster";
 "HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Haritayı aç";
-"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "için hemen ayırt ";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Için hemen ayırt ";
 "HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Hemen ayırt";
 "HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Daha fazla teklif ";
 "HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Galeri";
 "HL_HOTEL_DETAIL_LOADING_TITLE" = "Fiyat güncelleniyor...";
 "HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "1 gece için en iyi fırsat";
-"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "için en iyi fırsat ";
-"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Yeniden dene";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "Için en iyi fırsat ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "Tekrar dene";
 "HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "Değiştir";
 "HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "Aramayı tekrar başlat";
 "HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "Tükendi";
@@ -389,7 +394,7 @@
 "HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "Bu otel için normal fiyatlar\U00A0%d\U00A0gece\U00A0için%@'dan başlıyor";
 
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li fırsat";
-"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li fırsat";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li kampanya";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li fırsat";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li fırsat";
 "HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li fırsat";
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Seçilen sehirde\notel bulunamadı.";
 "HL_NEW_SEARCH_BUTTON" = "Yeni arama";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Uygulayın";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Uygula";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Şimdiki konumunuza uzaklık:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Şuradan uzaklık ";
@@ -432,7 +437,7 @@
 "HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "Haritadaki noktadan uzaklık:";
 "HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "%@'dan uzaklık:";
 
-"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Fiyat";
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "Ücret";
 
 "HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "Kayak teleferiklerinden uzaklık:";
 "HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "Plaja uzaklık:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "Sonra";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "Kapat";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "iOS uygulamasından geri bildirim";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Hata";

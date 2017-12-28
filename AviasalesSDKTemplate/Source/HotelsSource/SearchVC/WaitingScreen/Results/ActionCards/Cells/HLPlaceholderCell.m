@@ -1,5 +1,4 @@
 #import "HLPlaceholderCell.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 @interface HLPlaceholderCell ()
 

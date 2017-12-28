@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@giờ %@phút";
 "LONG_TIME_FORMAT" = "%@giờ %@ phút";
 
-"JR_ERROR_TITLE" = "LỖI";
+"JR_ERROR_TITLE" = "Lỗi";
 
 "JR_BACK_TITLE" = "Quay lại";
 
@@ -17,16 +17,15 @@
 
 "JR_OK_BUTTON" = "OK";
 
-"JR_DONE_BUTTON" = "XONG";
+"JR_DONE_BUTTON" = "Xong";
 
 "JR_NEW_SEARCH_TITLE" = "Tìm kiếm mới";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Ngày khởi hành";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Ngày về";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Ngày bay";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "Hôm nay";
-"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Tìm kiếm vé";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Tìm vé";
 "JR_SEARCHINFO_BUSINESS" = "Thương\ngia";
 "JR_SEARCHINFO_ECONOMY" = "Phổ\nthông";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Hạng phổ thông đặc biệt";
@@ -52,7 +51,7 @@
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "Một chiều";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Khứ hồi";
 "JR_SEARCH_FORM_TITLE" = "Chuyến bay";
-"JR_SEARCH_FORM_SEARCH_BUTTON" = "TÌM KIẾM VÉ MÁY BAY";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "TÌM VÉ";
 "JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "Số lượng trẻ em đi không ghế không thể vượt số lượng người lớn đi cùng.";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Vui lòng nhập tên sân bay khởi hành";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Vui lòng nhập tên sân bay đến";
@@ -106,11 +105,12 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Không tìm thấy kết quả";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Đang tìm...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Đang tìm kiếm sân bay gần nhất...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "Không tìm thấy kết quả";
 
 "JR_FILTER_BUTTON" = "Lọc";
 
-"JR_FILTER_RESET_ALL" = "Xóa tất cả";
-"JR_FILTER_RESET" = "Xóa";
+"JR_FILTER_RESET_ALL" = "Cài đặt lại";
+"JR_FILTER_RESET" = "Cài đặt lại";
 "JR_FILTER_TICKETS_NOT_FOUND" = "Không tìm thấy kết quả";
 
 "JR_FILTER_EMPTY_ALERT_TITLE" = "Không tìm thấy vé";
@@ -227,7 +227,7 @@
 "JR_TICKET_CREDIT_MONTH_12" = "tháng mười hai";
 
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Mua tại";
-"JR_TICKET_BUY_BUTTON" = "Mua vé";
+"JR_TICKET_BUY_BUTTON" = "Mua";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Vay tiền";
 "JR_TICKET_FLIGHT" = "Chuyến bay";
 "JR_TICKET_TRANSFER" = "Điểm dừng";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "Đang tìm...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "Không tìm thấy kết quả. Thử điều chỉnh thông số tìm kiếm.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Lỗi kết nối";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Xin lỗi, dịch vụ Jetradar tạm thời không khả dụng";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Rất tiếc, dịch vụ tạm thời bị gián đoạn";

@@ -20,13 +20,13 @@ class HLSearchInfoNavBarView: HLAutolayoutView {
     private func createSubviews() {
         cityLabel = UILabel()
         cityLabel.textAlignment = .center
-        cityLabel.textColor = JRColorScheme.navigationBarItemColor()
+        cityLabel.textColor = .white
         cityLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)
         addSubview(cityLabel)
 
         guestsLabel = UILabel()
         guestsLabel.textAlignment = .center
-        guestsLabel.textColor = JRColorScheme.navigationBarItemColor()
+        guestsLabel.textColor = .white
         guestsLabel.font = UIFont.systemFont(ofSize: 12.0)
         addSubview(guestsLabel)
     }

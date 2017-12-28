@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "daripada";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "kanak-kanak";
 "HL_LOC_GUEST_KID##{other}" = "kanak-kanak";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotel";
 
@@ -55,8 +56,8 @@
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Keputusan carian";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Cari hotel";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Dapatkan harga";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "CARI HOTEL";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "DAPATKAN HARGA";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Pilih tarikh";
@@ -89,7 +90,7 @@
 "HL_LOC_FILTER_DROP_BUTTON" = "Set semula";
 "HL_LOC_FILTER_APPLY_BUTTON" = "Selesai";
 
-"HL_LOC_FILTER_PRICE_CRITERIA" = "Tambang";
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Harga";
 "HL_LOC_FILTER_RANGE" = "dari %@ ke %@";
 "HL_LOC_FILTER_FROM_STRING" = "dari";
 "HL_LOC_FILTER_TO_STRING" = "hingga";
@@ -178,7 +179,7 @@
 
 "HL_LOC_FILTER_PAY_LATER_CRITERIA" = "Bayar di hotel";
 
-"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Sembunyi hartanah yang habis dijual";
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "Sembunyi hartanah sudah dijual";
 
 "HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ hotel daripada %@";
 "HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ hotel daripada %@";
@@ -225,13 +226,17 @@
 // Сортировка
 "HL_LOC_SORT_HEADER_TITLE" = "Susun mengikut:";
 "HL_LOC_SORT_TYPE_POPULARITY" = "Kepopularan";
-"HL_LOC_SORT_TYPE_RATING" = "Penilaian";
-"HL_LOC_SORT_TYPE_PRICE" = "Tambang";
+"HL_LOC_SORT_TYPE_RATING" = "Rating";
+"HL_LOC_SORT_TYPE_PRICE" = "Harga";
 "HL_LOC_SORT_TYPE_DISTANCE" = "Jarak ke:";
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Diskaun";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Tetapan";
+"LOC_SETTINGS_TITLE" = "Maklumat";
+
+"LOC_INFO" = "Maklumat";
+
+"LOC_ABOUT" = "Sila gantikan teks ini dengan penerangan singkat tentang aplikasi anda";
 
 "HL_LOC_ABOUT_CURRENCY" = "Matawang";
 
@@ -240,7 +245,7 @@
 
 "HL_LOC_MAIL_BAD_RATE_TEXT" = "Beritahu kami apa masalahnya:";
 "HL_LOC_ABOUT_VERSION_TITLE" = "Versi";
-"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Mencari";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Cari";
 
 // Страница с подробной информацией об отеле
 "HL_HOTEL_DETAIL_FULL_RATING" = "Penilaian Terperinci ";
@@ -248,7 +253,7 @@
 "HL_HOTEL_DETAIL_HIDE_ROOMS" = "Sembunyi";
 
 "HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "Semua bilik";
-"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Penilaian";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "Rating";
 "HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "Galeri";
 
 "HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "Lokasi";
@@ -307,7 +312,7 @@
 "HL_PHOTO_PEEK_BUTTON_TITLE" = "Tunjuk gambar";
 "HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "Buka peta";
 "HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "Tempah sekarang untuk ";
-"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Tempah sekarang";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "Tempah";
 "HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "Lebih banyak tawaran ";
 "HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "Galeri";
 "HL_HOTEL_DETAIL_LOADING_TITLE" = "Kemas kini harga...";
@@ -423,8 +428,8 @@
 "HL_NO_RESULTS_DESCRIPTION" = "Tiada hotel ditemui di bandar terpilih.";
 "HL_NEW_SEARCH_BUTTON" = "Carian baru";
 
-// Карточки в выдаче
-"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Guna";
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Pilih";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Jarak ke lokasi terkini anda:";
 "HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "Jarak dari ";
@@ -463,9 +468,9 @@
 "HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Pergi ke Tetapan";
 
 "HL_LOC_ALERT_LATER_BUTTON" = "Nanti";
-"HL_LOC_ALERT_CLOSE_BUTTON" = "Close";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Tutup";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Maklum balas daripada aplikasi iOS";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Ralat";

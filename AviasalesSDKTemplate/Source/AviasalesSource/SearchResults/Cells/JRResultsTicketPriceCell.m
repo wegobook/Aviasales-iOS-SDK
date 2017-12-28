@@ -32,6 +32,8 @@ static const CGSize kAirlineLogoSize = (CGSize){85, 25};
         kAirlineLogoSize.width * scale,
         kAirlineLogoSize.height *scale
     };
+
+    self.priceLabel.textColor = [JRColorScheme mainColor];
 }
 
 #pragma mark - Getters

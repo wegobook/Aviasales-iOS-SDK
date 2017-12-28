@@ -49,11 +49,15 @@ dispatch_sync(dispatch_get_main_queue(), block); \
 #define HL_URL_SHORTENER_USERNAME @"sapato"
 #define HL_URL_SHORTENER_PASSWORD @"EPhliOk7"
 
+#define NAV_BAR_HEIGHT = 49.0
+
 NS_ASSUME_NONNULL_BEGIN
 
 //------------------------
 // DEFINES
 //------------------------
+
+static const CGFloat kNavBarHeight = 49.0;
 
 NSUserDefaults *JRUserDefaults();
 CGFloat JRPixel();
@@ -70,9 +74,12 @@ BOOL iPhone4Inch();
 BOOL iPhone35Inch();
 BOOL iPhone47Inch();
 BOOL iPhone55Inch();
+BOOL iPhone58Inch();
+
 BOOL iPad();
 
 typedef NS_ENUM(NSInteger, DeviceSizeType) {
+    DeviceSizeTypeIPhone58Inch, // iPhone X
     DeviceSizeTypeIPhone55Inch, // iPhone 6+
     DeviceSizeTypeIPhone47Inch, // iPhone 6
     DeviceSizeTypeIPhone4Inch,  // iPhone 5, 5c, 5s,
@@ -96,8 +103,6 @@ CGFloat maxScreenDimension(void);
 
 BOOL Debug();
 BOOL AppStore();
-BOOL ticketsEnabled();
-BOOL hotelsEnabled();
 
 UIView * _Nullable loadViewFromNibNamed(NSString * _Nonnull nibNamed);
 UIView * _Nullable loadViewFromNib(NSString * _Nonnull nibNamed, id _Nullable owner);
@@ -130,10 +135,3 @@ NS_ASSUME_NONNULL_END
 #define ZERO_HEADER_HEIGHT 0.00001f
 
 #endif
-
-//------------------------
-// CONFIG
-//------------------------
-
-BOOL ShowAppodealAds();
-BOOL ShowAviasalesAds();

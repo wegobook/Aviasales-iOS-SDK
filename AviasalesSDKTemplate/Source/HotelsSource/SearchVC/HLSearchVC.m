@@ -1,4 +1,3 @@
-#import "AviasalesSDKTemplate-Swift.h"
 #import <HotellookSDK/HotellookSDK.h>
 #import "HLSearchVC.h"
 #import "StringUtils.h"
@@ -10,8 +9,9 @@
 @interface HLSearchVC () <HLSearchFormDelegate, HLCityPickerDelegate, HLSearchInfoChangeDelegate, HLCustomPointSelectionDelegate, TicketsSearchDelegate>
 
 @property (nonatomic, weak) IBOutlet UIView *searchFormContainerView;
-@property (nonatomic, weak) IBOutlet NSLayoutConstraint *searchFormContainerViewHeight;
 @property (nonatomic, strong) HLHotelDetailsSearchDecorator *hotelDetailsDecorator;
+
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *containerViewBottomConstraint;
 
 @end
 
@@ -58,7 +58,6 @@
     [self registerForSearchInfoChangesNotifications];
 
     self.searchForm = [[[NSBundle mainBundle] loadNibNamed:@"HLSearchForm" owner:nil options:nil] objectAtIndex:0];
-    self.searchFormContainerViewHeight.constant = deviceSizeTypeValue(360, 420, 420, 420, 420);
     [self.searchFormContainerView addSubview:self.searchForm];
     self.searchForm.delegate = self;
     self.searchForm.searchInfo = self.searchInfo;
@@ -66,6 +65,11 @@
     [self.searchForm autoPinEdgesToSuperviewEdges];
 
     self.view.backgroundColor = [JRColorScheme searchFormBackgroundColor];
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    self.containerViewBottomConstraint.constant = self.bottomLayoutGuide.length;
 }
 
 -(void)viewDidAppear:(BOOL)animated
@@ -135,15 +139,6 @@
         [self updateSearchFormControls];
     }
     [[HLNearbyCitiesDetector shared] detectCurrentCityWithSearchInfo:self.searchInfo];
-}
-
-- (IBAction)showCityOrMapPicker
-{
-    if (self.searchInfo.locationPoint) {
-        [self showMapPicker];
-    } else {
-        [self showCityPicker];
-    }
 }
 
 - (void)showCityPickerWithText:(NSString *)searchText animated:(BOOL)animated
@@ -273,7 +268,7 @@
 
 - (void)onSearch:(HLSearchForm *)searchForm
 {
-    self.searchInfo.currency = [InteractionManager shared].currency;
+    self.searchInfo.currency = [CurrencyManager shared].currency;
     [self tryToStartSearchWithSearchInfo:self.searchInfo];
 }
 

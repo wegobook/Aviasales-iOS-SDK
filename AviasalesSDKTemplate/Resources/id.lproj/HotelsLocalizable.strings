@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "dari";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "anak-anak";
 "HL_LOC_GUEST_KID##{other}" = "anak-anak";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "Hotel";
 
@@ -49,14 +50,14 @@
 "HL_LOC_FOR_NIGHT##{many}" = "per\U00A0%d\U00A0malam";
 "HL_LOC_FOR_NIGHT##{other}" = "per\U00A0%d\U00A0malam";
 
-"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Eror";
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "Kesalahan";
 "HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "Mohon pilih jumlah tamu";
 "HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "Mohon pilih tujuan Anda";
 
 "HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "Hasil pencarian";
 
-"HL_LOC_SEARCH_BUTTON_TITLE" = "Cari hotel";
-"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "Lihat harga";
+"HL_LOC_SEARCH_BUTTON_TITLE" = "CARI HOTEL";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "LIHAT HARGA";
 
 // Календарь
 "HL_LOC_DATE_PICKER_TITLE" = "Pilih tanggal";
@@ -67,7 +68,7 @@
 "HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "Bayi";
 "HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "Umur";
 "HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "Terapkan";
-"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Batal";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "Simpan";
 
 "HL_CLEAN_BUTTON_TITLE" = "Hapus";
 
@@ -85,13 +86,13 @@
 
 // Страница фильтров
 
-"HL_LOC_FILTER_TITLE_LABEL" = "Filter";
+"HL_LOC_FILTER_TITLE_LABEL" = "Saring";
 "HL_LOC_FILTER_DROP_BUTTON" = "Atur ulang";
 "HL_LOC_FILTER_APPLY_BUTTON" = "Selesai";
 
-"HL_LOC_FILTER_PRICE_CRITERIA" = "Biaya";
+"HL_LOC_FILTER_PRICE_CRITERIA" = "Harga";
 "HL_LOC_FILTER_RANGE" = "dari %@ ke %@";
-"HL_LOC_FILTER_FROM_STRING" = "mulai jam";
+"HL_LOC_FILTER_FROM_STRING" = "dari";
 "HL_LOC_FILTER_TO_STRING" = "hingga";
 
 "HL_LOC_FILTER_DISTANCE_CRITERIA" = "Jarak menuju:";
@@ -110,7 +111,7 @@
 "HL_LOC_FILTER_DISTRICTS_SELECTION" = "Distrik";
 "HL_LOC_FILTER_SELECT_DISTRICTS" = "Pilih distrik";
 "HL_LOC_FILTER_ALL_DISTRICTS" = "Semua distrik";
-"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Jarak menuju";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "Jarak ke";
 
 "HL_LOC_FILTER_BREAKFAST_CRITERIA" = "Sarapan";
 "HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "Semua sudah termasuk";
@@ -134,7 +135,7 @@
 "HL_LOC_FILTER_AMENITY_PETS" = "Hewan boleh";
 "HL_LOC_FILTER_AMENITY_TV" = "TV";
 "HL_LOC_FILTER_AMENITY_LAUNDRY" = "Laundry";
-"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "AC";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "Pendingin ruangan";
 
 "HL_LOC_FILTER_AMENITY_INTERNET" = "Internet";
 "HL_LOC_FILTER_AMENITY_POOL" = "Kolam renang";
@@ -193,11 +194,11 @@
 
 // Страница с результатами поиска
 "HL_MAP_BUTTON" = "Peta";
-"HL_FILTER_BUTTON_TITLE_LABEL" = "Filter";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "Saring";
 "HL_SORT_BUTTON_TITLE_LABEL" = "Urutkan";
 
 "HL_DISCOUNT" = "diskon";
-"HL_SPECIAL_PRICE_TITLE" = "penawaran spesial";
+"HL_SPECIAL_PRICE_TITLE" = "penawaran khusus";
 
 "HL_LOC_ADULT##{one}" = "dewasa";
 "HL_LOC_ADULT##{few}" = "dewasa";
@@ -231,16 +232,20 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Diskon";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "Pengaturan";
+"LOC_SETTINGS_TITLE" = "Informasi";
 
-"HL_LOC_ABOUT_CURRENCY" = "Mata Uang";
+"LOC_INFO" = "Informasi";
+
+"LOC_ABOUT" = "Mohon ganti teks ini dengan deskripsi singkat dari aplikasi Anda";
+
+"HL_LOC_ABOUT_CURRENCY" = "Mata uang";
 
 "LOC_RATE_APP_TITLE" = "Nilai aplikasi ini";
 "HL_LOC_ABOUT_EMAIL_TITLE" = "Hubungi kami";
 
 "HL_LOC_MAIL_BAD_RATE_TEXT" = "Beri tahu kami kendala yang Anda alami:";
 "HL_LOC_ABOUT_VERSION_TITLE" = "Versi";
-"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Pencarian";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "Cari";
 
 // Страница с подробной информацией об отеле
 "HL_HOTEL_DETAIL_FULL_RATING" = "Penilaian mendetail ";
@@ -419,11 +424,11 @@
 "HL_NO_FILTER_RESULTS_DESCRIPTION" = "Tidak ditemukan hasil yang sesuai dengan kriteria Anda";
 "HL_NO_FILTER_RESULTS_BUTTON" = "Atur ulang filter";
 
-"HL_NO_RESULTS_TITLE" = "Tidak ditemukan hotel";
+"HL_NO_RESULTS_TITLE" = "Hotel tidak ditemukan";
 "HL_NO_RESULTS_DESCRIPTION" = "Tidak ditemukan hotel\npada kota yang dipilih.";
 "HL_NEW_SEARCH_BUTTON" = "Pencarian baru";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "Terapkan";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "Jarak menuju lokasi Anda:";
@@ -463,9 +468,9 @@
 "HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "Buka Pengaturan";
 
 "HL_LOC_ALERT_LATER_BUTTON" = "Nanti";
-"HL_LOC_ALERT_CLOSE_BUTTON" = "Close";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "Tutup";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "Umpan balik dari aplikasi iOS";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "Eror";

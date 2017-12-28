@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 10/05/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 import UIKit
@@ -18,7 +18,7 @@ class HLIpadFiltersVC: HLFiltersVC {
         super.viewDidLoad()
 
         dropButton.setTitle(NSLS("HL_LOC_FILTER_DROP_BUTTON"), for: .normal)
-        dropButton.setTitleColor(JRColorScheme.mainButtonBackgroundColor(), for: .normal)
+        dropButton.setTitleColor(JRColorScheme.actionColor(), for: .normal)
         hotelsLeftView.layer.cornerRadius = 6
         hotelsLeftView.layer.shadowRadius = 2
         hotelsLeftView.layer.shadowOffset = CGSize.zero

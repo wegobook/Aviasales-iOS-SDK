@@ -192,10 +192,10 @@ class HLPriceTableViewCell: HLHotelDetailsTableCell {
 
     private func priceTextColor(_ room: HDKRoom) -> UIColor {
         if room.hasPrivatePriceHighlight() && canHighlightPrivatePrice {
-            return JRColorScheme.mainButtonBackgroundColor()
+            return JRColorScheme.actionColor()
         }
 
-        return JRColorScheme.mainButtonBackgroundColor()
+        return JRColorScheme.actionColor()
     }
 
 }

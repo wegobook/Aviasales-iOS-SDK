@@ -23,6 +23,7 @@ class BrowserController: HLCommonVC, HLWebBrowserDelegate {
         super.viewWillDisappear(animated)
 
         UIApplication.shared.statusBarStyle = .lightContent
+        UIApplication.shared.isNetworkActivityIndicatorVisible = false
     }
 
     // MARK: - HLWebBrowserDelegate

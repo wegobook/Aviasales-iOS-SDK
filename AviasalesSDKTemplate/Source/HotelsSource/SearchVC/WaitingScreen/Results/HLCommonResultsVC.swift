@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Anton Chebotov on 09/03/2017.
-//  Copyright © 2017 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2017 Go Travel Un Limited. All rights reserved.
 //
 
 import UIKit
@@ -76,8 +76,8 @@ class HLCommonResultsVC: HLCommonVC,
             filtersButton?.setImage(markImage, for: [.selected, .highlighted])
         }
 
-        filtersButton.backgroundColor = JRColorScheme.mainButtonBackgroundColor()
-        filtersButton.setTitleColor(JRColorScheme.mainButtonTitleColor(), for: .normal)
+        filtersButton.backgroundColor = JRColorScheme.actionColor()
+        filtersButton.setTitleColor(.white, for: .normal)
 
         collectionView.collectionViewLayout = collectionLayout
         collectionView.allowsSelection = false

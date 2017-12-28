@@ -3,7 +3,7 @@
 //  AviasalesSDKTemplate
 //
 //  Created by Denis Chaschin on 24.08.16.
-//  Copyright © 2016 Go Travel Un LImited. All rights reserved.
+//  Copyright © 2016 Go Travel Un Limited. All rights reserved.
 //
 
 #import <Appodeal/APDNativeAd.h>

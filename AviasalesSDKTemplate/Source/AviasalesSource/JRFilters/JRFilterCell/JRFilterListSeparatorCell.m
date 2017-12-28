@@ -20,7 +20,7 @@
 - (void)awakeFromNib {
     [super awakeFromNib];
     
-    self.backgroundColor = self.contentView.backgroundColor = [JRColorScheme navigationBarBackgroundColor];
+    self.backgroundColor = self.contentView.backgroundColor = [JRColorScheme mainColor];
 }
 
 - (void)setItem:(JRFilterListSeparatorItem *)item {

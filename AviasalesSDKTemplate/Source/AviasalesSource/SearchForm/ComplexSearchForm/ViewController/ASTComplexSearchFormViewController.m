@@ -15,9 +15,7 @@
 #import "ASTComplexSearchFormFooterView.h"
 #import "ASTSearchFormPassengersView.h"
 
-#import "JRAirportPickerVC.h"
 #import "JRDatePickerVC.h"
-
 
 @interface ASTComplexSearchFormViewController () <ASTComplexSearchFormViewControllerProtocol>
 
@@ -127,8 +125,8 @@
     [self updateFooterView];
 }
 
-- (void)showAirportPickerWithMode:(JRAirportPickerMode)mode forIndex:(NSInteger)index {
-    [self showAirportPickerViewControllerWithMode:mode forIndex:index];
+- (void)showAirportPickerWithType:(ASAirportPickerType)type forIndex:(NSInteger)index {
+    [self showAirportPickerViewControllerWithType:type forIndex:index];
 }
 
 - (void)showDatePickerWithBorderDate:(NSDate *)borderDate selectedDate:(NSDate *)selectedDate forIndex:(NSInteger)index{
@@ -191,13 +189,12 @@
 
 #pragma mark - Navigation
 
-- (void)showAirportPickerViewControllerWithMode:(JRAirportPickerMode)mode forIndex:(NSInteger)index {
+- (void)showAirportPickerViewControllerWithType:(ASAirportPickerType)type forIndex:(NSInteger)index {
     
     __weak typeof(self) weakSelf = self;
-    
-    JRAirportPickerVC *airportPickerViewController = [[JRAirportPickerVC alloc] initWithMode:mode selectionBlock:^(JRSDKAirport *selectedAirport) {
-        [weakSelf.presenter handleSelectAirport:selectedAirport withMode:mode atIndex:index];
-        
+
+    ASAirportPickerViewController *airportPickerViewController = [[ASAirportPickerViewController alloc] initWithType:type selection:^(JRSDKAirport *selectedAirport) {
+        [weakSelf.presenter handleSelectAirport:selectedAirport withType:type atIndex:index];
     }];
     
     [self pushOrPresentBasedOnDeviceTypeWithViewController:airportPickerViewController animated:YES];

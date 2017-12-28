@@ -2,7 +2,6 @@
 #import "HLResultVariant.h"
 #import "HLFilter.h"
 #import "NSArray+Functional.h"
-#import "AviasalesSDKTemplate-Swift.h"
 
 static NSInteger const defaultMaxPivotsCount = 10;
 

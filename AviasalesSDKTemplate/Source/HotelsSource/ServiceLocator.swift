@@ -13,7 +13,14 @@ class ServiceLocator: NSObject {
     override init() {
         searchConfigStore = SearchConfigStore()
         resultsTTLManager = ResultsTTLManager(store: searchConfigStore)
-        let hostName = iPhone() ? "iphone.hotellook.sdk" : "ipad.hotellook.sdk"
+
+        let hostName: String
+        if Bundle.main.bundleIdentifier == "com.travelpayouts.wl" {
+            hostName = iPhone() ? "iphone.hotellook.wl" : "ipad.hotellook.wl"
+        } else {
+            hostName = iPhone() ? "iphone.hotellook.sdk" : "ipad.hotellook.sdk"
+        }
+
         api = HDKResourceFactory(appHostName: hostName, lang: HLLocaleInspector.shared().localeString())
         requestExecutor = HDKRequestExecutor()
         sdkFacade = HDKFacade(api: api, requestExecutor: requestExecutor)

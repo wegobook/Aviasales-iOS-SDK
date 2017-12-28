@@ -3,7 +3,7 @@
 "SHORT_TIME_FORMAT" = "%@h %@m";
 "LONG_TIME_FORMAT" = "%@ h %@ min";
 
-"JR_ERROR_TITLE" = "ERROR";
+"JR_ERROR_TITLE" = "Error";
 
 "JR_BACK_TITLE" = "Back";
 
@@ -17,16 +17,15 @@
 
 "JR_OK_BUTTON" = "OK";
 
-"JR_DONE_BUTTON" = "DONE";
+"JR_DONE_BUTTON" = "Done";
 
 "JR_NEW_SEARCH_TITLE" = "New search";
-
 
 "JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "Departure date";
 "JR_DATE_PICKER_RETURN_DATE_TITLE" = "Return date";
 "JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "Flight dates";
 "JR_DATE_PICKER_TODAY_DATE_TITLE" = "Today";
-"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Search tickets";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "Find tickets";
 "JR_SEARCHINFO_BUSINESS" = "Business";
 "JR_SEARCHINFO_ECONOMY" = "Economy";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
@@ -52,7 +51,7 @@
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "One-way";
 "JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "Round-trip";
 "JR_SEARCH_FORM_TITLE" = "Flights";
-"JR_SEARCH_FORM_SEARCH_BUTTON" = "SEARCH TICKETS";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "FIND TICKETS";
 "JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "The number of infants traveling without a seat can't exceed the number of accompanying adults.";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "Please enter departure airport";
 "JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "Please enter arrival airport";
@@ -106,11 +105,12 @@
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "No results found";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Searching...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Searching for the nearest airports...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "No results found";
 
 "JR_FILTER_BUTTON" = "Filters";
 
-"JR_FILTER_RESET_ALL" = "Clear all";
-"JR_FILTER_RESET" = "Clear";
+"JR_FILTER_RESET_ALL" = "Reset";
+"JR_FILTER_RESET" = "Reset";
 "JR_FILTER_TICKETS_NOT_FOUND" = "No results found";
 
 "JR_FILTER_EMPTY_ALERT_TITLE" = "No tickets found";
@@ -227,7 +227,7 @@
 "JR_TICKET_CREDIT_MONTH_12" = "december";
 
 "JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "Buy at";
-"JR_TICKET_BUY_BUTTON" = "Buy ticket";
+"JR_TICKET_BUY_BUTTON" = "Buy";
 "JR_TICKET_BUY_IN_CREDIT_BUTTON" = "Get a loan";
 "JR_TICKET_FLIGHT" = "Flight";
 "JR_TICKET_TRANSFER" = "Layover";
@@ -239,4 +239,4 @@
 "JR_WAITING_TITLE" = "Searching...";
 "JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "No results found. Try adjusting search parameters.";
 "JR_WAITING_ERROR_CONNECTION_ERROR" = "Connection error";
-"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Sorry, the Jetradar service is temporarily unavailable";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "Sorry, service is temporarily unavailable";

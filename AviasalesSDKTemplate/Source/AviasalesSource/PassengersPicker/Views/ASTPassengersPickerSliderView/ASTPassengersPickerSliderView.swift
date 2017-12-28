@@ -36,7 +36,7 @@ class ASTPassengersPickerSliderView: UIView {
 
         let slider = GCXSteppedSlider.init(frame: bounds, stepValues: steps, initialStep: step)
 
-        slider.tintColor = JRColorScheme.navigationBarBackgroundColor()
+        slider.tintColor = JRColorScheme.mainColor()
         slider.signatureColor = JRColorScheme.sliderBackgroundColor()
         slider.delegate = self
         slider.translatesAutoresizingMaskIntoConstraints = false

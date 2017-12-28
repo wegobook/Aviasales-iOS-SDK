@@ -83,15 +83,15 @@ class HLCityPickerVC: ASTGroupedSearchVC {
     // MARK: - IBActions methods
 
     func textFieldDidChange() {
-        if let text = searchController.searchBar.text, text.characters.count >= minimalSearchStringLength {
-            self.startTimer()
+        if let text = searchController.searchBar.text, text.count >= minimalSearchStringLength {
+            startTimer()
         }
     }
 
     // MARK: - UISearchBarDelegate
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.characters.count >= minimalSearchStringLength {
+        if searchText.count >= minimalSearchStringLength {
             startTimer()
         } else {
             resultsTableController.sections = []
@@ -204,7 +204,7 @@ class HLCityPickerVC: ASTGroupedSearchVC {
         startSearchWorkItem?.cancel()
         startSearchWorkItem = DispatchWorkItem(block: { [weak self] in
             guard let `self` = self else { return }
-            guard let searchText = self.searchController.searchBar.text, searchText.characters.count >= self.minimalSearchStringLength else { return }
+            guard let searchText = self.searchController.searchBar.text, searchText.count >= self.minimalSearchStringLength else { return }
 
             self.cancelToken?.cancel()
             self.cancelToken = CancelToken()
@@ -219,7 +219,7 @@ class HLCityPickerVC: ASTGroupedSearchVC {
     }
 }
 
-extension HLCityPickerVC : HLLocationManagerDelegate {
+extension HLCityPickerVC: HLLocationManagerDelegate {
 
     func locationUpdatedNotification(_ notification: Notification!) {
         if let locationPoint = HLSearchUserLocationPoint.forCurrentLocation() {
@@ -228,5 +228,4 @@ extension HLCityPickerVC : HLLocationManagerDelegate {
             goBack()
         }
     }
-
 }

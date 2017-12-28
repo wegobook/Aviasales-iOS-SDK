@@ -1,10 +1,11 @@
 /* 
   HotelsLocalizable.strings
   AviasalesSDKTemplate
+
   Created by Anton Chebotov on 02/03/2017.
   Copyright © 2017 Go Travel Un Limited. All rights reserved.
 */
-// Универсальные элементы
+//Универсальные элементы
 
 "HL_LOC_FROM_CONJUCTION" = "총";
 
@@ -23,7 +24,7 @@
 "HL_LOC_GUEST_KID##{many}" = "어린이";
 "HL_LOC_GUEST_KID##{other}" = "어린이";
 
-// Страница поиска
+//Страница поиска
 
 "LOC_SEARCH_FORM_TITLE" = "호텔";
 
@@ -231,7 +232,11 @@
 "HL_LOC_SORT_TYPE_DISCOUNT" = "할인율";
 
 // Страница о приложении
-"LOC_SETTINGS_TITLE" = "설정";
+"LOC_SETTINGS_TITLE" = "정보";
+
+"LOC_INFO" = "정보";
+
+"LOC_ABOUT" = "이 텍스트를 지우고 앱에 관한 설명을 짧게 적어 주세요";
 
 "HL_LOC_ABOUT_CURRENCY" = "통화";
 
@@ -423,7 +428,7 @@
 "HL_NO_RESULTS_DESCRIPTION" = "선택된 도시에서\n발견된 호텔 없음.";
 "HL_NEW_SEARCH_BUTTON" = "새로운 검색";
 
-// Карточки в выдаче
+//Карточки в выдаче
 "HL_LOC_ACTION_CARD_APPLY_BUTTON" = "적용";
 
 "HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "현재 위치까지의 거리:";
@@ -465,7 +470,7 @@
 "HL_LOC_ALERT_LATER_BUTTON" = "나중에";
 "HL_LOC_ALERT_CLOSE_BUTTON" = "닫기";
 
-// Feedback в письме
+//Feedback в письме
 
 "HL_LOC_MAIL_FEEDBACK_SUBJECT" = "iOS 앱으로부터의 피드백";
 "HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "오류";

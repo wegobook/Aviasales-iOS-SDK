@@ -30,12 +30,12 @@
 }
 
 - (void)setupNavigationBar {
-    self.navigationBar.barTintColor = [JRColorScheme navigationBarBackgroundColor];
-    self.navigationBar.tintColor = [JRColorScheme navigationBarItemColor];
+    self.navigationBar.barTintColor = [JRColorScheme mainColor];
+    self.navigationBar.tintColor = [UIColor whiteColor];
     self.navigationBar.translucent = NO;
     [self.navigationBar setBackgroundImage:[UIImage new] forBarMetrics:UIBarMetricsDefault];
     self.navigationBar.shadowImage = [UIImage new];
-    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName   : [JRColorScheme navigationBarItemColor],
+    self.navigationBar.titleTextAttributes = @{NSForegroundColorAttributeName   : [UIColor whiteColor],
                                                NSFontAttributeName              : [UIFont systemFontOfSize:15.0 weight:UIFontWeightMedium]};
 }
 

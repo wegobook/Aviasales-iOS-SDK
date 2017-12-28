@@ -1,7 +1,6 @@
 #import "HLFilteringOperation.h"
 #import "HLResultVariant.h"
 #import <HotellookSDK/HotellookSDK.h>
-#import "AviasalesSDKTemplate-Swift.h"
 #import "NSArray+Functional.h"
 
 @implementation HLFilteringOperation

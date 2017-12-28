@@ -17,8 +17,12 @@ class BookBrowserController: BrowserController {
     @IBOutlet weak var gateImageView: UIImageView?
     @IBOutlet weak var waitingViewTitleLabel: UILabel?
 
+    @IBOutlet weak var waitingViewTopConstraint: NSLayoutConstraint!
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
+        waitingViewTopConstraint.constant = UIApplication.shared.statusBarFrame.height + 44
 
         waitingViewTitleLabel?.text = NSLS("HL_LOC_BROWSER_WAITING_VIEW_TITLE")
         loadGateImage()

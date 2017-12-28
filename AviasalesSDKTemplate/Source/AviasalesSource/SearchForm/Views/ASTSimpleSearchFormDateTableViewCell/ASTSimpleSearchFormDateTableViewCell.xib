@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -18,14 +19,14 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="departure_icon" translatesAutoresizingMaskIntoConstraints="NO" id="rrb-yV-2Rl">
-                        <rect key="frame" x="26" y="20" width="24" height="24"/>
+                        <rect key="frame" x="15" y="25" width="24" height="24"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="24" id="Us8-Of-AhA"/>
                             <constraint firstAttribute="height" constant="24" id="zqF-nt-PdM"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFm-tz-Urp">
-                        <rect key="frame" x="76" y="8" width="241" height="15"/>
+                        <rect key="frame" x="54" y="8" width="268" height="15"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="15" id="T4L-WU-qi9"/>
                         </constraints>
@@ -37,7 +38,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N8w-D2-t9m">
-                        <rect key="frame" x="76" y="31" width="241" height="18"/>
+                        <rect key="frame" x="54" y="31" width="268" height="18"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="18" id="fgV-hk-3Uc"/>
                         </constraints>
@@ -49,7 +50,7 @@
                         </userDefinedRuntimeAttributes>
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JNM-IA-I89">
-                        <rect key="frame" x="325" y="17" width="30" height="30"/>
+                        <rect key="frame" x="330" y="17" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="30" id="5eZ-3o-l7e"/>
                             <constraint firstAttribute="width" constant="30" id="qfI-Sp-Gav"/>
@@ -61,7 +62,7 @@
                         </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="return" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d0R-W8-vnQ">
-                        <rect key="frame" x="325" y="49" width="30" height="10"/>
+                        <rect key="frame" x="330" y="49" width="30" height="10"/>
                         <constraints>
                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="30" id="31x-js-LwU"/>
                             <constraint firstAttribute="height" constant="10" id="VPd-zu-WsV"/>
@@ -70,24 +71,23 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                         <userDefinedRuntimeAttributes>
-                            <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="tintColor"/>
                             <userDefinedRuntimeAttribute type="string" keyPath="NSLSKey" value="JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE"/>
                         </userDefinedRuntimeAttributes>
                     </label>
                 </subviews>
                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                 <constraints>
-                    <constraint firstItem="rrb-yV-2Rl" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="IIq-Rv-eIY"/>
-                    <constraint firstItem="FFm-tz-Urp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="76" id="IPw-Ya-Mwa"/>
+                    <constraint firstItem="FFm-tz-Urp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="54" id="IPw-Ya-Mwa"/>
                     <constraint firstItem="FFm-tz-Urp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="JDV-Do-hlu"/>
                     <constraint firstItem="N8w-D2-t9m" firstAttribute="top" secondItem="FFm-tz-Urp" secondAttribute="bottom" constant="8" id="Ob9-zE-4D7"/>
                     <constraint firstItem="JNM-IA-I89" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="T5b-5S-2Xy"/>
-                    <constraint firstItem="N8w-D2-t9m" firstAttribute="leading" secondItem="rrb-yV-2Rl" secondAttribute="trailing" constant="26" id="TjA-F1-8ZT"/>
+                    <constraint firstItem="N8w-D2-t9m" firstAttribute="leading" secondItem="rrb-yV-2Rl" secondAttribute="trailing" constant="15" id="TjA-F1-8ZT"/>
                     <constraint firstItem="JNM-IA-I89" firstAttribute="leading" secondItem="FFm-tz-Urp" secondAttribute="trailing" constant="8" id="ZaM-8f-Fgl"/>
                     <constraint firstItem="JNM-IA-I89" firstAttribute="leading" secondItem="N8w-D2-t9m" secondAttribute="trailing" constant="8" id="aBU-WI-6qm"/>
-                    <constraint firstItem="rrb-yV-2Rl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="pFY-Sv-x54"/>
+                    <constraint firstItem="rrb-yV-2Rl" firstAttribute="bottom" secondItem="N8w-D2-t9m" secondAttribute="bottom" id="nfL-Xo-TgF"/>
+                    <constraint firstItem="rrb-yV-2Rl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="pFY-Sv-x54"/>
                     <constraint firstItem="d0R-W8-vnQ" firstAttribute="centerX" secondItem="JNM-IA-I89" secondAttribute="centerX" id="tzu-Sc-ZgK"/>
-                    <constraint firstAttribute="trailing" secondItem="JNM-IA-I89" secondAttribute="trailing" constant="20" id="y6C-2k-OzA"/>
+                    <constraint firstAttribute="trailing" secondItem="JNM-IA-I89" secondAttribute="trailing" constant="15" id="y6C-2k-OzA"/>
                     <constraint firstItem="d0R-W8-vnQ" firstAttribute="top" secondItem="JNM-IA-I89" secondAttribute="bottom" constant="2" id="ygl-2p-xen"/>
                 </constraints>
                 <userDefinedRuntimeAttributes>

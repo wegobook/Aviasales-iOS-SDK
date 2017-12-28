@@ -15,11 +15,10 @@
 #import "ASTSimpleSearchFormDateTableViewCell.h"
 #import "ASTSearchFormPassengersView.h"
 
-#import "JRAirportPickerVC.h"
 #import "JRDatePickerVC.h"
 
-static CGFloat const separatorLeftInset = 76.0;
-static CGFloat const separatorRightInset = 20.0;
+static CGFloat const separatorLeftInset = 54.0;
+static CGFloat const separatorRightInset = 15.0;
 
 
 @interface ASTSimpleSearchFormViewController () <ASTSimpleSearchFormViewControllerProtocol>
@@ -115,8 +114,8 @@ static CGFloat const separatorRightInset = 20.0;
     [self updatePassengersView];
 }
 
-- (void)showAirportPickerWithMode:(JRAirportPickerMode)mode {
-    [self showAirportPickerViewControllerWithMode:mode];
+- (void)showAirportPickerWithType:(ASAirportPickerType)type {
+    [self showAirportPickerViewControllerWithType:type];
 }
 - (void)showDatePickerWithMode:(JRDatePickerMode)mode borderDate:(NSDate *)borderDate firstDate:(NSDate *)firstDate secondDate:(NSDate *)secondDate {
     [self showDatePickerViewControllerWithMode:mode borderDate:borderDate firstDate:firstDate secondDate:secondDate];
@@ -171,7 +170,7 @@ static CGFloat const separatorRightInset = 20.0;
     separatorView.leftInset = separatorLeftInset;
     separatorView.rightInset = separatorRightInset;
     separatorView.backgroundColor = [JRColorScheme searchFormBackgroundColor];
-    separatorView.separatorColor = [JRColorScheme searchFormSeparatorColor];
+    separatorView.separatorColor = [JRColorScheme searchFormTextColor];
     return separatorView;
 }
 
@@ -228,21 +227,20 @@ static CGFloat const separatorRightInset = 20.0;
     cell.returnButtonAction = ^(UIButton *sender) {
         [weakSelf.presenter handleSwitchReturnCheckbox];
     };
-    
+
     return cell;
 }
 
 #pragma mark - Navigation
 
-- (void)showAirportPickerViewControllerWithMode:(JRAirportPickerMode)mode {
-    
+- (void)showAirportPickerViewControllerWithType:(ASAirportPickerType)type {
+
     __weak typeof(self) weakSelf = self;
-    
-    JRAirportPickerVC *airportPickerViewController = [[JRAirportPickerVC alloc] initWithMode:mode selectionBlock:^(JRSDKAirport *selectedAirport) {
-        [weakSelf.presenter handleSelectAirport:selectedAirport withMode:mode];
-        
+
+    ASAirportPickerViewController *airportPickerViewController = [[ASAirportPickerViewController alloc] initWithType:type selection:^(JRSDKAirport *selectedAirport) {
+        [weakSelf.presenter handleSelectAirport:selectedAirport withType:type];
     }];
-    
+
     [self pushOrPresentBasedOnDeviceTypeWithViewController:airportPickerViewController animated:YES];
 }
 
