@@ -10,12 +10,10 @@ function_body_length:
   error: 100
 colon:
   apply_to_dictionaries: false
-identifier_name:
-  warning: 1
-  error: 1
 disabled_rules:
   - force_cast
   - file_length
   - type_body_length
   - unused_closure_parameter
   - shorthand_operator
+  - identifier_name
