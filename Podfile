@@ -16,7 +16,7 @@ def shared
     pod 'FXBlurView', '~> 1.6'
     pod 'AutoCoding', '~> 2.2'
     pod 'AXRatingView'
-    pod 'HotellookSDK', '~> 1.0.4'
+    pod 'HotellookSDK', '~> 1.0.5'
     pod 'SwiftProtobuf', '~> 1.0.1'
     pod 'PureLayout', '~> 3.0'
     pod 'PromiseKit', '~> 4.0'

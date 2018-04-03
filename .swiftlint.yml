@@ -16,3 +16,4 @@ disabled_rules:
   - type_body_length
   - unused_closure_parameter
   - shorthand_operator
+  - identifier_name
