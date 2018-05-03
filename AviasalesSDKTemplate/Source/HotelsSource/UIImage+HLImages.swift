@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension UIImage {
+@objc extension UIImage {
 
     class var photoPlaceholder: UIImage {
         return UIImage(named: "hotelPhotoPlaceholder") ?? UIImage()

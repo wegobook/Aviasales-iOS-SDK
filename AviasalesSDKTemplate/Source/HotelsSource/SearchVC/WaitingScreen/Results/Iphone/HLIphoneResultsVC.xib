@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HLIphoneResultsVC">
             <connections>
-                <outlet property="buttonsBottomConstraint" destination="GM6-4u-5Bm" id="96G-9A-wJs"/>
+                <outlet property="buttonsBottomConstraint" destination="GM6-4u-5Bm" id="JTd-k0-6HY"/>
                 <outlet property="buttonsView" destination="DBP-9g-zvJ" id="xck-gP-oGo"/>
                 <outlet property="collectionView" destination="1g7-TH-BMx" id="MqS-3W-z9e"/>
                 <outlet property="filtersButton" destination="xVW-cz-NRY" id="tqH-2z-HP2"/>
@@ -96,7 +96,7 @@
                 <constraint firstItem="1g7-TH-BMx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="68i-0r-bsa"/>
                 <constraint firstAttribute="trailing" secondItem="DBP-9g-zvJ" secondAttribute="trailing" id="6nI-C3-h50"/>
                 <constraint firstAttribute="bottom" secondItem="1g7-TH-BMx" secondAttribute="bottom" id="FyB-xH-s4Y"/>
-                <constraint firstAttribute="bottom" secondItem="DBP-9g-zvJ" secondAttribute="bottom" id="GM6-4u-5Bm"/>
+                <constraint firstItem="1g7-TH-BMx" firstAttribute="bottom" secondItem="DBP-9g-zvJ" secondAttribute="bottom" id="GM6-4u-5Bm"/>
                 <constraint firstItem="DBP-9g-zvJ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="idU-7m-Bjx"/>
             </constraints>
             <point key="canvasLocation" x="33.5" y="53.5"/>

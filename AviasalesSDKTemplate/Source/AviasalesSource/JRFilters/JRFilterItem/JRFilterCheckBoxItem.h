@@ -10,7 +10,7 @@
 
 @interface JRFilterCheckBoxItem : NSObject <JRFilterItemProtocol>
 
-@property (nonatomic, copy) void (^filterAction)();
+@property (nonatomic, copy) void (^filterAction)(void);
 
 @property (nonatomic, assign) BOOL selected;
 

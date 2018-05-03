@@ -231,6 +231,8 @@
 "HL_LOC_SORT_TYPE_DISTANCE" = "Afstand til:";
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Rabat";
 
+"HL_HOTEL_PEEK_SHOW_DETAILS_BUTTON_TITLE" = "Vis detaljer";
+
 // Страница о приложении
 "LOC_SETTINGS_TITLE" = "Information";
 

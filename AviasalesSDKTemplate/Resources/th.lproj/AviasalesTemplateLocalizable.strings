@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "หยุด %d แห่ง";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "หยุด %d แห่ง";
 
-"JR_BROWSER_TITLE" = "ซื้อ";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "ปฏิทินราคา";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "ปฏิทินราคา %@ - %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "จาก %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "ราคากลาง";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "บินตรง";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "พร้อมการเปลี่ยนเครื่อง";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "ถูกที่สุด";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "เที่ยวบินตรงเท่านั้น";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "ไม่พบตั๋วสำหรับคุณใช่ไหม";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "คุณสามารถเปลี่ยนวันบินกลับได้";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "เลือกวันที่กลับ";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "ย้อนกลับ";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "ไปข้างหน้า";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "ผิดพลาด";
 
+"BROWSER_LOAD_ERROR" = "มีบางสิ่งผิดพลาด กรุณาลองใหม่อีกครั้ง";
 "BROWSER_CHECK_CONNECTION" = "กรุณาตรวจสอบการเชื่อมต่ออินเทอร์เน็ตของคุณ";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "กำลังโหลด...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "กำลังโหลด...";
 "JR_CLOSE_BUTTON_TITLE" = "ปิด";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "ขออภัย เราไม่สามารถค้นหาเที่ยวบินระหว่างสนามบินเหล่านี้สำหรับเส้นทาง %@ อย่างไรก็ตาม เราสามารถแสดงเที่ยวบินระหว่างเมืองเหล่านี้ได้";

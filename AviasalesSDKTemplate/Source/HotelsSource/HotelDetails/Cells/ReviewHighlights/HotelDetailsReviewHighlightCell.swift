@@ -74,7 +74,7 @@ class HotelDetailsReviewHighlightCell: HLAutolayoutCell {
     }
 
     class func preferredHeight(_ model: HDKReviewHighlight, cellWidth: CGFloat, first: Bool) -> CGFloat {
-        let titleHeight = model.title.hl_height(attributes: [NSFontAttributeName: HotelDetailsReviewHighlightCell.titleFont], width: cellWidth - Consts.leftAndRightMargin)
+        let titleHeight = model.title.hl_height(attributes: [NSAttributedStringKey.font: HotelDetailsReviewHighlightCell.titleFont], width: cellWidth - Consts.leftAndRightMargin)
         let quotesHeight = HotelDetailsQuotesContainerView.preferredHeight(model.quotes, width: cellWidth - Consts.leftAndRightMargin)
         return titleHeight + CGFloat(quotesHeight) + Consts.titleAndQuotesSpacing + (first ? Consts.firstCellTopMargin : Consts.defaultTopMargin)
     }

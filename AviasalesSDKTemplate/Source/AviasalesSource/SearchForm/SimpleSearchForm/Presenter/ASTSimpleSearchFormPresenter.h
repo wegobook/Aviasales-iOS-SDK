@@ -17,7 +17,7 @@
 - (instancetype)initWithViewController:(id <ASTSimpleSearchFormViewControllerProtocol>)viewController;
 - (void)updateSearchInfoWithDestination:(JRSDKAirport *)destination checkIn:(NSDate *)checkIn checkOut:(NSDate *)checkOut passengers:(ASTPassengersInfo *)passengers;
 
-- (void)handleViewDidLoad;
+- (void)handleViewReady;
 - (void)handleSelectCellViewModel:(ASTSimpleSearchFormCellViewModel *)cellViewModel;
 - (void)handlePickPassengers;
 - (void)handleSelectAirport:(JRSDKAirport *)selectedAirport withType:(ASAirportPickerType)type;

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,14 +32,14 @@
                     <color key="trackTintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </progressView>
                 <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="FhN-3N-AVl">
-                    <rect key="frame" x="15" y="15" width="345" height="652"/>
+                    <rect key="frame" x="15" y="3" width="345" height="664"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="506" id="fb9-MH-cgH"/>
                     </constraints>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Q81-en-hpf">
                         <size key="itemSize" width="50" height="50"/>
-                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="headerReferenceSize" width="0.0" height="10"/>
                         <size key="footerReferenceSize" width="0.0" height="0.0"/>
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
@@ -82,7 +82,7 @@
                 <constraint firstItem="tzg-NE-5Ft" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TgF-Pd-rRu"/>
                 <constraint firstAttribute="bottom" secondItem="Ahe-dC-zLa" secondAttribute="bottom" id="Wfc-19-0ib"/>
                 <constraint firstAttribute="trailing" secondItem="Ahe-dC-zLa" secondAttribute="trailing" id="Z58-MT-qAl"/>
-                <constraint firstItem="FhN-3N-AVl" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="bvC-vO-vsK"/>
+                <constraint firstItem="FhN-3N-AVl" firstAttribute="top" secondItem="tzg-NE-5Ft" secondAttribute="bottom" id="bvC-vO-vsK"/>
                 <constraint firstAttribute="trailing" secondItem="FhN-3N-AVl" secondAttribute="trailing" priority="999" constant="15" id="e49-6P-4Sn"/>
                 <constraint firstItem="dz5-Rc-R4O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhO-gY-1EN"/>
                 <constraint firstItem="Ahe-dC-zLa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mEi-aR-z4H"/>

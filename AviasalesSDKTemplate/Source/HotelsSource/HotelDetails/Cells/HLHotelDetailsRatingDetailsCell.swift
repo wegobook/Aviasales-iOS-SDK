@@ -56,7 +56,7 @@ class HLHotelDetailsRatingDetailsCell: HLHotelDetailsColumnBaseCell {
 
         firstScoreLabel.font = UIFont.systemFont(ofSize: 14.0)
         secondScoreLabel.font = UIFont.systemFont(ofSize: 14.0)
-        moreButton.titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: UIFontWeightMedium)
+        moreButton.titleLabel?.font = UIFont.systemFont(ofSize: 15.0, weight: UIFont.Weight.medium)
 
         firstRatingView.layer.cornerRadius = 15.0
         firstRatingView.clipsToBounds = true

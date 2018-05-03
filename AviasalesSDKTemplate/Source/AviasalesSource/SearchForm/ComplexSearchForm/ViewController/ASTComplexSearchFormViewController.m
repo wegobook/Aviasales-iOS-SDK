@@ -102,6 +102,13 @@
     };
 }
 
+- (void)updateTableViewContentOffset {
+    CGFloat tableViewHeight = self.tableView.bounds.size.height;
+    CGFloat tableViewContentHeight = self.tableView.contentSize.height;
+    CGFloat diff = MAX(0.0, tableViewContentHeight - tableViewHeight);
+    [self.tableView setContentOffset:CGPointMake(0.0, diff) animated:YES];
+}
+
 #pragma mark - ASTComplexSearchFormViewControllerProtocol
 
 - (void)updateWithViewModel:(ASTComplexSearchFormViewModel *)viewModel {
@@ -115,6 +122,7 @@
     self.viewModel = viewModel;
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationRight];
+    [self updateTableViewContentOffset];
     [self updateFooterView];
 }
 
@@ -122,6 +130,7 @@
     self.viewModel = viewModel;
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:index inSection:0];
     [self.tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationLeft];
+    [self updateTableViewContentOffset];
     [self updateFooterView];
 }
 
@@ -176,7 +185,7 @@
 - (void)setupCellSegment:(ASTComplexSearchFormTableViewCellSegment *)cellSegment type:(ASTComplexSearchFormCellSegmentType)type atIndex:(NSInteger)index withCellSegmentViewModel:(ASTComplexSearchFormCellSegmentViewModel *)cellSegmentViewModel {
     
     cellSegment.iconImageView.hidden = !cellSegmentViewModel.placeholder;
-    cellSegment.titleLabel.hidden = cellSegment.subtitleLabel.hidden = cellSegmentViewModel.placeholder;
+    cellSegment.titleLabel.hidden = cellSegmentViewModel.placeholder;
     cellSegment.iconImageView.image = [UIImage imageNamed:cellSegmentViewModel.icon];
     cellSegment.titleLabel.text = cellSegmentViewModel.title;
     cellSegment.subtitleLabel.text = cellSegmentViewModel.subtitle;

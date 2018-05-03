@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface HLAlertsFabric : NSObject
 
-+ (void)showOutdatedResultsAlert:(void (^ __nullable)())handler;
-+ (void)showSearchAlertViewWithError:(NSError * _Nullable )error handler:(void (^ __nullable)())handler;
++ (void)showOutdatedResultsAlert:(void (^ __nullable)(UIAlertAction *action))handler;
++ (void)showSearchAlertViewWithError:(NSError * _Nullable )error handler:(void (^ __nullable)(UIAlertAction *action))handler;
 + (void)showEmptySearchFormAlert:(HDKSearchInfo *)searchInfo inController:(UIViewController *)controller;
 + (void)showMailSenderUnavailableAlertInController:(UIViewController *)controller;
 + (void)showLocationAlert;

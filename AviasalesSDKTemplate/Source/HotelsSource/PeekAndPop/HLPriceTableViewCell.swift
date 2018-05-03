@@ -12,7 +12,7 @@ class HLPriceTableViewCell: HLHotelDetailsTableCell {
     fileprivate static let descriptionBottomOffset: CGFloat = 10.0
     fileprivate static let optionLabelHeight: CGFloat = 15.0
     fileprivate static let descriptionLabelFont = UIFont.systemFont(ofSize: 15)
-    fileprivate static let optionFont = UIFont.systemFont(ofSize: 13, weight: UIFontWeightMedium)
+    fileprivate static let optionFont = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.medium)
 
     fileprivate static let logoHeight: CGFloat = 18.0
 
@@ -49,7 +49,7 @@ class HLPriceTableViewCell: HLHotelDetailsTableCell {
         let widthLimit = maxDescriptionLabelWidth(tableWidth)
         let optionsRects = createOptionsRects(room, widthLimit: widthLimit)
 
-        let options = [NSFontAttributeName: descriptionLabelFont]
+        let options = [NSAttributedStringKey.font: descriptionLabelFont]
         var height: CGFloat = logoTopOffset() + logoHeight + logoBottomOffset()
         height += room.name.hl_height(attributes: options, width: widthLimit)
 
@@ -79,7 +79,7 @@ class HLPriceTableViewCell: HLHotelDetailsTableCell {
     private class func createOptionRect(_ text: String, font: UIFont, widthLimit: CGFloat) -> CGRect {
         let height = optionLabelHeight
         let inset: CGFloat = 18.0
-        var width = text.hl_width(attributes: [NSFontAttributeName: font], height: height)
+        var width = text.hl_width(attributes: [NSAttributedStringKey.font: font], height: height)
         width = min(width + inset, widthLimit)
 
         return CGRect(x: 0.0, y: 0.0, width: width, height: height)

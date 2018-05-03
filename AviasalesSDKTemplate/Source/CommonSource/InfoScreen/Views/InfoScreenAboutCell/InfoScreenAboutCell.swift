@@ -22,6 +22,8 @@ class InfoScreenAboutCell: UITableViewCell {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var descriptionLabel: UILabel!
 
+    var iconImageViewFiveTimesTapAction: (() -> Void)?
+
     override func awakeFromNib() {
         super.awakeFromNib()
         selectionStyle = .none
@@ -46,5 +48,9 @@ class InfoScreenAboutCell: UITableViewCell {
         }
         nameLabel.text = cellModel.name
         descriptionLabel.text = cellModel.description
+    }
+
+    @IBAction func iconImageViewFiveTimesTapped(_ sender: UITapGestureRecognizer) {
+        iconImageViewFiveTimesTapAction?()
     }
 }

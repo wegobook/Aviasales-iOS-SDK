@@ -17,11 +17,11 @@ class HLHotelDetailsMapCell: HLHotelDetailsTableCell, MKMapViewDelegate {
         var cellHeight = kMapOnlyCellHeight
 
         let hotelAddress = StringUtils.hotelAddress(for: hotel)
-        let hotelAddressIsEmpty = hotelAddress.characters.count == 0
+        let hotelAddressIsEmpty = hotelAddress.count == 0
 
         if !hotelAddressIsEmpty {
             let font = UIFont.systemFont(ofSize: 13.0)
-            let textHeight = hotelAddress.hl_height(attributes: [NSFontAttributeName: font], width: width - kLabelMarginsLength)
+            let textHeight = hotelAddress.hl_height(attributes: [NSAttributedStringKey.font: font], width: width - kLabelMarginsLength)
             cellHeight += textHeight
         }
 
@@ -33,7 +33,7 @@ class HLHotelDetailsMapCell: HLHotelDetailsTableCell, MKMapViewDelegate {
 
         let address = StringUtils.hotelAddress(for: variant.hotel)
         addressLabel.text = address
-        addressBackground.isHidden = address.characters.count == 0
+        addressBackground.isHidden = address.count == 0
         HLMapViewConfigurator.configure(mapView, toShowVariantAndSearchPoint: variant, filter: filter)
     }
 

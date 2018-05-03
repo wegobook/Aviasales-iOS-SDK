@@ -8,7 +8,8 @@ import UIKit
     func selectCurrentLocation()
 }
 
-@objc class HLSearchForm: UIView {
+@objcMembers
+class HLSearchForm: UIView {
     @IBOutlet weak var kidsButton: UIButton!
 
     @IBOutlet fileprivate weak var humansSelectorView: UIView!

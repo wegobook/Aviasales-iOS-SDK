@@ -1,4 +1,5 @@
-@objc class PoiAnnotation: NSObject, MKAnnotation {
+@objcMembers
+class PoiAnnotation: NSObject, MKAnnotation {
 
     var coordinate: CLLocationCoordinate2D
     var title: String?

@@ -14,16 +14,26 @@ class HLIphoneResultsVC: HLCommonResultsVC {
 
     var sortBottomDrawer: BottomDrawer?
 
+    private let collectionViewBottomInset: CGFloat = 70
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         sortButton.backgroundColor = JRColorScheme.actionColor()
         sortButton.setTitleColor(.white, for: .normal)
+
+        if #available(iOS 11.0, *) {
+            collectionView.contentInsetAdjustmentBehavior = .never
+        } else {
+            automaticallyAdjustsScrollViewInsets = false
+        }
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         buttonsBottomConstraint.constant = bottomLayoutGuide.length
+        collectionView.contentInset.bottom = collectionViewBottomInset + bottomLayoutGuide.length
+        collectionView.scrollIndicatorInsets.bottom = bottomLayoutGuide.length
     }
 
     override func updateContentWithVariants(_ variants: [HLResultVariant], filteredVariants: [HLResultVariant]) {
@@ -44,5 +54,4 @@ class HLIphoneResultsVC: HLCommonResultsVC {
     func moveToNewSearch() {
         _ = navigationController?.popToRootViewController(animated: true)
     }
-
 }

@@ -6,6 +6,7 @@ func == (left: HLCollectionItem, right: HLCollectionItem) -> Bool {
     return left === right
 }
 
+@objcMembers
 class HLCollectionItem: NSObject {
 
     var progress: Float = 0.0
@@ -15,6 +16,7 @@ class HLCollectionItem: NSObject {
     }
 }
 
+@objcMembers
 class HLCityItem: HLCollectionItem {
 
     var city: HDKCity!
@@ -39,6 +41,7 @@ class HLCityItem: HLCollectionItem {
 
 }
 
+@objcMembers
 class HLVariantItem: HLCollectionItem {
 
     var photoIndex: Int = 0

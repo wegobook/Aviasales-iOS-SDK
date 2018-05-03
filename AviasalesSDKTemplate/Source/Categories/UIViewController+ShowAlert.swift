@@ -8,7 +8,7 @@
 
 import Foundation
 
-public extension UIViewController {
+@objc public extension UIViewController {
 
     func showAlert(title: String?, message: String?, cancelButtonTitle: String) {
         let alert = createAlert(title: title, message: message, cancelButtonTitle: cancelButtonTitle)

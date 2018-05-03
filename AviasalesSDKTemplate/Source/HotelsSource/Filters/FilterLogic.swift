@@ -1,8 +1,9 @@
+@objcMembers
 class FilterLogic: NSObject {
 
     static func doesVariantConformNameFilter(_ variant: HLResultVariant, filterString: String?) -> Bool {
         guard let searchString = filterString?.lowercased() else { return true }
-        guard searchString.characters.count > 0 else { return true }
+        guard searchString.count > 0 else { return true }
 
         if let name = variant.hotel.name?.lowercased(), name.range(of: searchString) != nil {
             return true
@@ -61,7 +62,7 @@ class FilterLogic: NSObject {
     }
 
     @objc static func filterRoomsByAirConditioning(_ variant: HLResultVariant) -> [HDKRoom]? {
-        let hotelAmenitiesValues: [String] = variant.hotel.amenitiesShort.flatMap { $0.value.slug }
+        let hotelAmenitiesValues: [String] = variant.hotel.amenitiesShort.compactMap { $0.value.slug }
         if hotelAmenitiesValues.contains(RoomOptionConsts.kHotelAirConditioningOptionKey) {
             return variant.filteredRooms.filter { !$0.hasFan }
         } else {
@@ -72,7 +73,7 @@ class FilterLogic: NSObject {
     }
 
     @objc static func filterRoomsBySharedBathroom(_ variant: HLResultVariant) -> [HDKRoom]? {
-        let hotelAmenitiesValues: [String] = variant.hotel.amenitiesShort.flatMap { $0.value.slug }
+        let hotelAmenitiesValues: [String] = variant.hotel.amenitiesShort.compactMap { $0.value.slug }
         let hotelHasSharedBathroom = hotelAmenitiesValues.contains(RoomOptionConsts.kHotelSharedBathroomKey)
         return variant.filteredRooms.filter { (room) -> Bool in
             if room.hasSharedBathroom {
@@ -92,7 +93,7 @@ class FilterLogic: NSObject {
     }
 
     @objc static func filterRoomsByWifi(_ variant: HLResultVariant) -> [HDKRoom]? {
-        let hotelAmenitiesValues: [String] = variant.hotel.amenitiesShort.flatMap { $0.value.slug }
+        let hotelAmenitiesValues: [String] = variant.hotel.amenitiesShort.compactMap { $0.value.slug }
         if hotelAmenitiesValues.contains(RoomOptionConsts.kHotelWifiInRoomOptionKey) {
             return variant.filteredRooms
         } else {

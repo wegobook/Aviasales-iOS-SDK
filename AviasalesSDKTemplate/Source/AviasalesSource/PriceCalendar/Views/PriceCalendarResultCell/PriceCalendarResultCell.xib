@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PriceCalendarResultCell" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aa0-MN-uLh">
+                        <rect key="frame" x="10" y="10" width="355" height="110"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nYr-nh-cRv">
+                                <rect key="frame" x="0.0" y="0.0" width="355" height="40"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMm-vu-qPd">
+                                        <rect key="frame" x="15" y="10" width="75" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cheapest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T9Z-S9-jhL">
+                                                <rect key="frame" x="10" y="9" width="55" height="15"/>
+                                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="12"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="T9Z-S9-jhL" secondAttribute="bottom" constant="6" id="7xl-7s-rSU"/>
+                                            <constraint firstAttribute="width" relation="lessThanOrEqual" constant="332" id="Fyg-yJ-Gwz"/>
+                                            <constraint firstAttribute="trailing" secondItem="T9Z-S9-jhL" secondAttribute="trailing" constant="10" id="OAt-xp-Qex"/>
+                                            <constraint firstItem="T9Z-S9-jhL" firstAttribute="top" secondItem="BMm-vu-qPd" secondAttribute="top" constant="9" id="bt9-aI-eSZ"/>
+                                            <constraint firstItem="T9Z-S9-jhL" firstAttribute="leading" secondItem="BMm-vu-qPd" secondAttribute="leading" constant="10" id="xXg-hs-Nz3"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="JRCornerRadius">
+                                                <real key="value" value="4"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="priceCalendarResultCellCheapestViewBackgroundColor"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="BMm-vu-qPd" secondAttribute="bottom" id="C3q-Co-X5z"/>
+                                    <constraint firstItem="BMm-vu-qPd" firstAttribute="top" secondItem="nYr-nh-cRv" secondAttribute="top" priority="750" constant="10" id="OBD-uc-ijg"/>
+                                    <constraint firstItem="BMm-vu-qPd" firstAttribute="leading" secondItem="nYr-nh-cRv" secondAttribute="leading" constant="15" id="QR9-HZ-Ca3"/>
+                                    <constraint firstAttribute="height" constant="40" id="chq-lJ-Q86"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="95M-bG-dQ0">
+                                <rect key="frame" x="15" y="50" width="332" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="y1z-Cw-wL7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="mainColor"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dates" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VeP-0d-x20">
+                                <rect key="frame" x="15" y="78" width="332" height="17"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="LjM-sr-U1u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="darkTextColor"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="VeP-0d-x20" firstAttribute="top" secondItem="95M-bG-dQ0" secondAttribute="bottom" constant="8" id="57R-fF-YSj"/>
+                            <constraint firstAttribute="trailing" secondItem="95M-bG-dQ0" secondAttribute="trailing" constant="8" id="93f-eK-anb"/>
+                            <constraint firstItem="nYr-nh-cRv" firstAttribute="leading" secondItem="aa0-MN-uLh" secondAttribute="leading" id="MBQ-WH-W0R"/>
+                            <constraint firstAttribute="bottom" secondItem="VeP-0d-x20" secondAttribute="bottom" constant="15" id="MIs-r0-zQa"/>
+                            <constraint firstAttribute="trailing" secondItem="VeP-0d-x20" secondAttribute="trailing" constant="8" id="Mem-At-CZI"/>
+                            <constraint firstItem="95M-bG-dQ0" firstAttribute="leading" secondItem="aa0-MN-uLh" secondAttribute="leading" constant="15" id="VB7-Ce-nJC"/>
+                            <constraint firstAttribute="trailing" secondItem="nYr-nh-cRv" secondAttribute="trailing" id="afP-U8-HS6"/>
+                            <constraint firstItem="95M-bG-dQ0" firstAttribute="top" secondItem="nYr-nh-cRv" secondAttribute="bottom" constant="10" id="b86-Y0-Rm5"/>
+                            <constraint firstItem="nYr-nh-cRv" firstAttribute="top" secondItem="aa0-MN-uLh" secondAttribute="top" id="dUP-Zx-gZO"/>
+                            <constraint firstItem="VeP-0d-x20" firstAttribute="leading" secondItem="aa0-MN-uLh" secondAttribute="leading" constant="15" id="n5K-nT-dFy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="JRCornerRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="aa0-MN-uLh" secondAttribute="bottom" id="6Ld-bm-qz8"/>
+                    <constraint firstAttribute="trailing" secondItem="aa0-MN-uLh" secondAttribute="trailing" constant="10" id="AcC-0I-uR6"/>
+                    <constraint firstItem="aa0-MN-uLh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Hpq-47-GkX"/>
+                    <constraint firstItem="aa0-MN-uLh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="I3f-el-G0C"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="mainBackgroundColor"/>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cheapestContainerView" destination="nYr-nh-cRv" id="t6T-lx-fRR"/>
+                <outlet property="cheapestContainerViewHeightConstraint" destination="chq-lJ-Q86" id="hJA-zZ-c3E"/>
+                <outlet property="cheapestLabel" destination="T9Z-S9-jhL" id="iNA-Kh-oP6"/>
+                <outlet property="containerView" destination="aa0-MN-uLh" id="lbc-7Y-Lq3"/>
+                <outlet property="datesLabel" destination="VeP-0d-x20" id="dOs-pX-x4j"/>
+                <outlet property="priceLabel" destination="95M-bG-dQ0" id="M7p-vD-E4l"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </tableViewCell>
+    </objects>
+</document>

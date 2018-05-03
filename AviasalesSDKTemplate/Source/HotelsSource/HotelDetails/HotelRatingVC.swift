@@ -15,7 +15,7 @@ class HotelRatingVC: HotelDetailsMoreTableVC, PeekVCProtocol {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        contentTable.backgroundColor = .white
         contentTable?.estimatedRowHeight = 200
         title = NSLS("HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION")
         registerCells()

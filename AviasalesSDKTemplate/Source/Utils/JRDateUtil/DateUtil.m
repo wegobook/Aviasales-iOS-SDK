@@ -139,6 +139,15 @@
     return [formatter stringFromDate:date];
 }
 
++ (NSString *)dayMonthWeekdayStringFromDate:(NSDate *)date {
+    static NSDateFormatter *formatter;
+    if (formatter == nil) {
+        formatter = [NSDateFormatter applicationUIDateFormatter];
+    }
+    [formatter setDateFormat:[NSDateFormatter dateFormatFromTemplate:@"dMMMEEE" options:kNilOptions locale:formatter.locale]];
+    return [formatter stringFromDate:date];
+}
+
 + (NSString *)fullDayMonthYearWeekdayStringFromDate:(NSDate *)date {
     static NSDateFormatter *formatter;
     if (formatter == nil) {

@@ -1,5 +1,6 @@
 import UIKit
 
+@objcMembers
 class HLActionCardsArrayHelper: NSObject {
 
     class func addItem(_ itemToInsert: HLActionCardItem, toArray items: [HLCollectionItem], atIndex index: NSInteger, minVariantsCount: NSInteger) -> [HLCollectionItem] {

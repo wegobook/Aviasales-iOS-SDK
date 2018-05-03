@@ -199,7 +199,7 @@ class HLIpadHotelDetailsVC: HLHotelDetailsVC {
 extension HLIpadHotelDetailsVC {
 
     override func topContentInset() -> CGFloat {
-        return orientation.isPortrait ? HLIpadHotelDetailsVC.portraitHotelInfoHeight : 0.0
+        return orientation.isPortrait ? HLIpadHotelDetailsVC.portraitHotelInfoHeight - kTabBarHeight : 0.0
     }
 
     func footerHeightForContentSize(_ contentSize: CGSize) -> CGFloat {

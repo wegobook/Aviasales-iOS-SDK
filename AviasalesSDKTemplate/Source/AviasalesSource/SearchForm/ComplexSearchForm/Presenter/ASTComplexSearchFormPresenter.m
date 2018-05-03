@@ -5,14 +5,11 @@
 //  This code is distributed under the terms and conditions of the MIT license.
 //
 
-#import <BlocksKit/BlocksKit.h>
 #import "ASTComplexSearchFormPresenter.h"
 #import "ASTComplexSearchFormViewControllerProtocol.h"
 #import "ASTComplexSearchFormViewModel.h"
 #import "JRSearchInfoUtils.h"
 #import "DateUtil.h"
-
-static NSString * const kComplexSearchInfoBuilderStorageKey = @"complexSearchInfoBuilderStorageKey";
 
 static NSInteger const minTravelSegments = 1;
 static NSInteger const maxTravelSegments = 8;
@@ -136,13 +133,10 @@ static NSInteger const maxTravelSegments = 8;
 }
 
 - (NSArray <ASTComplexSearchFormCellViewModel *> *)buildCellViewModels {
-    
     NSMutableArray <ASTComplexSearchFormCellViewModel *> *cellViewModels = [[NSMutableArray alloc] initWithCapacity:self.travelSegmentBuilders.count];
-    
-    __weak typeof(self) weakSelf = self;
-    [self.travelSegmentBuilders bk_each:^(JRSDKTravelSegmentBuilder *travelSegmentBuilder) {
-        [cellViewModels addObject:[weakSelf buildCellViewModelFromTravelSegmentBuilder:travelSegmentBuilder]];
-    }];
+    for (JRSDKTravelSegmentBuilder *travelSegmentBuilder in self.travelSegmentBuilders) {
+        [cellViewModels addObject:[self buildCellViewModelFromTravelSegmentBuilder:travelSegmentBuilder]];
+    }
     return [cellViewModels copy];
 }
 
@@ -164,7 +158,7 @@ static NSInteger const maxTravelSegments = 8;
     cellSegmentViewModel.placeholder = airport == nil;
     cellSegmentViewModel.icon = icon;
     cellSegmentViewModel.title = airport.iata;
-    cellSegmentViewModel.subtitle = airport.city;
+    cellSegmentViewModel.subtitle = airport == nil ? NSLS(@"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC") : airport.city;
 
     return cellSegmentViewModel;
 }
@@ -176,7 +170,7 @@ static NSInteger const maxTravelSegments = 8;
     cellSegmentViewModel.placeholder = date == nil;
     cellSegmentViewModel.icon = icon;
     cellSegmentViewModel.title = [DateUtil dayMonthStringFromDate:date];
-    cellSegmentViewModel.subtitle = [DateUtil dateToYearString:date];
+    cellSegmentViewModel.subtitle = date == nil ? NSLS(@"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC") : [DateUtil dateToYearString:date];
     
     return cellSegmentViewModel;
 }
@@ -206,32 +200,22 @@ static NSInteger const maxTravelSegments = 8;
 #pragma mark - Restore & Create & Save
 
 - (void)restoreSearchInfoBuilder {
-    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:kComplexSearchInfoBuilderStorageKey];
-    JRSDKSearchInfoBuilder *searchInfoBuilder = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    if (!searchInfoBuilder) {
-        searchInfoBuilder = [self createSearchInfoBuilder];
-    }
-    self.searchInfoBuilder = searchInfoBuilder;
-}
-
-- (JRSDKSearchInfoBuilder *)createSearchInfoBuilder {
-    JRSDKSearchInfoBuilder *searchInfoBuilder = [JRSDKSearchInfoBuilder new];
-    searchInfoBuilder.adults = 1;
-    searchInfoBuilder.travelSegments = [JRSDKSearchInfoBuilder buildTravelSegmentsBasedOnConfig];
-    return searchInfoBuilder;
+    self.searchInfoBuilder = [[SearchInfoBuilderStorage shared] complexSearchInfoBuilder];
 }
 
 - (void)createTravelSegmentBuilders {
-    NSOrderedSet <JRSDKTravelSegmentBuilder *> *travelSegmentBuilders = [self.searchInfoBuilder.travelSegments bk_map:^id(JRSDKTravelSegment *travelSegment) {
-        return [[JRSDKTravelSegmentBuilder alloc] initWithTravelSegment:travelSegment];
-    }];
-    self.travelSegmentBuilders = travelSegmentBuilders.count ? [travelSegmentBuilders mutableCopy] : [NSMutableOrderedSet orderedSetWithObjects:[JRSDKTravelSegmentBuilder new], nil];
+    NSMutableOrderedSet <JRSDKTravelSegmentBuilder *> *travelSegmentBuilders = [[NSMutableOrderedSet alloc] initWithCapacity:self.searchInfoBuilder.travelSegments.count];
+    for (JRSDKTravelSegment *travelSegment in self.searchInfoBuilder.travelSegments) {
+        [travelSegmentBuilders addObject:[[JRSDKTravelSegmentBuilder alloc] initWithTravelSegment:travelSegment]];
+    }
+    if (travelSegmentBuilders.count == 0) {
+        [travelSegmentBuilders addObject:[JRSDKTravelSegmentBuilder new]];
+    }
+    self.travelSegmentBuilders = travelSegmentBuilders;
 }
 
 - (void)saveSearchInfoBuilder {
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.searchInfoBuilder];
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:kComplexSearchInfoBuilderStorageKey];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    [[SearchInfoBuilderStorage shared] setComplexSearchInfoBuilder:self.searchInfoBuilder];
 }
 
 #pragma mark - Logic
@@ -304,9 +288,11 @@ static NSInteger const maxTravelSegments = 8;
 }
 
 - (void)buildTravelSegments {
-    self.searchInfoBuilder.travelSegments = [self.travelSegmentBuilders bk_map:^id(JRSDKTravelSegmentBuilder *travelSegmentBuilder) {
-        return [travelSegmentBuilder build];
-    }];
+    NSMutableArray <JRSDKTravelSegment *> *travelSegments = [[NSMutableArray alloc] initWithCapacity:self.travelSegmentBuilders.count];
+    for (JRSDKTravelSegmentBuilder *travelSegmentBuilder in self.travelSegmentBuilders) {
+        [travelSegments addObject:[travelSegmentBuilder build]];
+    }
+    self.searchInfoBuilder.travelSegments = [[NSOrderedSet alloc] initWithArray:travelSegments];
 }
 
 - (JRSDKSearchInfo *)buildSearchInfo {

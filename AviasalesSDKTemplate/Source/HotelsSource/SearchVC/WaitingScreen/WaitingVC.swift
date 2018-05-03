@@ -1,3 +1,4 @@
+@objcMembers
 class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtocol,
     UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, HLDeceleratingProgressAnimatorDelegate {
 
@@ -195,7 +196,7 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
 
     private func onSearchError(_ error: Error) {
         hl_dispatch_main_sync_safe {
-            HLAlertsFabric.showSearchAlertViewWithError(error, handler: {
+            HLAlertsFabric.showSearchAlertViewWithError(error, handler: { _ in
                 self.goBack()
             })
         }

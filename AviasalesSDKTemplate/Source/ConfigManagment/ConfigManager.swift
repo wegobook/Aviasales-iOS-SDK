@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objcMembers
 class ConfigManager: NSObject {
 
     static let shared = ConfigManager()

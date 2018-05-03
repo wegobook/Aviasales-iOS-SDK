@@ -72,7 +72,7 @@ class HLHotelDetailsBadgesCell: HLHotelDetailsTableCell {
         let widthLimit = self.containerView.bounds.width
         let label = HLBadgeLabel(frame: CGRect.zero)
         label.insets = UIEdgeInsets(top: 0.0, left: 10.0, bottom: 0.0, right: 10.0)
-        label.font = UIFont.systemFont(ofSize: 14, weight: UIFontWeightMedium)
+        label.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.medium)
         label.backgroundColor = badge.color
         label.lineBreakMode = .byTruncatingTail
         label.numberOfLines = 1

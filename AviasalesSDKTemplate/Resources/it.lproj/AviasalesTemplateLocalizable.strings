@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d scali";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d scali";
 
-"JR_BROWSER_TITLE" = "Acquisto";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Calendario prezzi";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Calendario prezzi %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "da %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Prezzo medio";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "diretto";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "con scali";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Più conveniente";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Solo voli diretti";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Non hai trovato il tuo biglietto?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Puoi cambiare la data del volo di ritorno.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Seleziona data di ritorno";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Indietro";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Avanti";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Errore";
 
+"BROWSER_LOAD_ERROR" = "Qualcosa non ha funzionato. Riprova più tardi.";
 "BROWSER_CHECK_CONNECTION" = "Verifica la connessione Internet.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Caricamento...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Caricamento...";
 "JR_CLOSE_BUTTON_TITLE" = "Chiudi";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Siamo spiacenti, impossibile trovare i voli operati tra questi aeroporti per il percorso di volo %@. Possiamo, tuttavia, mostrarti i voli disponibili tra queste città.";

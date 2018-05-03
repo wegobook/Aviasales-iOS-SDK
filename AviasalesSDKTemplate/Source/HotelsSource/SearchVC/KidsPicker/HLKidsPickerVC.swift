@@ -4,7 +4,8 @@ import UIKit
     func kidsSelected()
 }
 
-@objc class HLKidsPickerVC: HLCommonVC, UITableViewDataSource, UITableViewDelegate, HLKidAgePickerViewDelegate {
+@objcMembers
+class HLKidsPickerVC: HLCommonVC, UITableViewDataSource, UITableViewDelegate, HLKidAgePickerViewDelegate {
 
     var searchInfo: HLSearchInfo? {
         didSet {

@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d stopper";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d stopper";
 
-"JR_BROWSER_TITLE" = "Kjøp";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Priskalender";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Priskalender %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "fra %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Gjennomsnittspris";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "direkte";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "med mellomlanding";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Billigst";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Kun direktefly";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Fant du billetten din?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Du kan endre dato for hjemreise";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Velg returdato";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Tilbake";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Neste";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Feil";
 
+"BROWSER_LOAD_ERROR" = "Noe gikk galt. Vennligst prøv igjen.";
 "BROWSER_CHECK_CONNECTION" = "Vennligst kontroller internettforbindelsen din.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Laster inn...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Laster inn...";
 "JR_CLOSE_BUTTON_TITLE" = "Lukk";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Beklager, vi kunne ikke finne flyvninger mellom valgte flyplasser for ruten %@. Vi kan imidlertid vise deg andre flyvninger mellom disse byene.";

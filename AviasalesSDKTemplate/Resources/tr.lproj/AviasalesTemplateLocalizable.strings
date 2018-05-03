@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d aktarma";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d aktarma";
 
-"JR_BROWSER_TITLE" = "Satın al";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Fiyat takvimi";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Fiyat takvimi %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "%@'ten";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Ortalama fiyat";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "aktarmasız";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "aktarma ile";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "En ucuz";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Sadece aktarmasız uçuşlar";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Biletinizi bulamadınız mı?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Dönüş uçağının tarihini değiştirebilirsiniz.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Dönüş tarihi seçin";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Geri";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Ileri";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Hata";
 
+"BROWSER_LOAD_ERROR" = "Bir şey ters gitti. Lütfen tekrar deneyin.";
 "BROWSER_CHECK_CONNECTION" = "Lütfen İnternet bağlantınızı kontrol ediniz.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Yükleniyor...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Yükleniyor...";
 "JR_CLOSE_BUTTON_TITLE" = "Kapat";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Üzgünüz, %@ rotasındaki havayolları arasında uçuş bulamadık. Ancak size bu şehirler arasındaki uçuşları gösterebiliriz.";

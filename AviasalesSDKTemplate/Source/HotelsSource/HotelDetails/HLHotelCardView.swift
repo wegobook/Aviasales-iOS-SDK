@@ -1,11 +1,11 @@
-import GPUImage
 
 class HLHotelCardView: UIView {
+
     @IBOutlet fileprivate weak var hotelInfoView: HLHotelInfoView!
 
-    @IBOutlet fileprivate(set) weak var overlayView: GPUImageView!
     @IBOutlet fileprivate(set) weak var photoScrollView: HLPhotoScrollView!
     @IBOutlet fileprivate(set) weak var bottomGradientView: UIView!
+
     @IBOutlet weak var badgesContainerView: UIView!
 
     let infoViewLogic = HotelInfoViewLogic()
@@ -59,12 +59,6 @@ class HLHotelCardView: UIView {
             if let cell = self.photoScrollView.visibleCell {
                 cell.layer.transform = self.contentTransform
             }
-        }
-    }
-
-    var overlayViewOpacity: CGFloat = 0.0 {
-        didSet {
-            self.updateOverlayView()
         }
     }
 
@@ -142,7 +136,6 @@ class HLHotelCardView: UIView {
         }
         photoScrollView.backgroundColor = JRColorScheme.hotelBackgroundColor()
         photoScrollView.placeholderImage = UIImage.photoPlaceholder
-        overlayView.backgroundColor = JRColorScheme.actionColor()
     }
 
     fileprivate func updatePhotosContent() {
@@ -151,50 +144,11 @@ class HLHotelCardView: UIView {
         self.photoScrollView.scrollToPhotoIndex(self.currentPhotoIndex, animated: false)
     }
 
-    fileprivate func updateOverlayView() {
-        self.overlayView.alpha = self.overlayViewOpacity
-        self.overlayView.isUserInteractionEnabled = (self.overlayViewOpacity == 0.0)
-
-        if !self.bottomGradientView.isHidden {
-            self.bottomGradientView.alpha = 1.0 - self.overlayViewOpacity
-        }
-    }
-
     @objc fileprivate func showControlsAfterTimeout() {
         self.showControlsTimer?.invalidate()
         self.showControlsTimer = nil
 
         self.hotelInfoView.showInfoControls(animated: true)
-    }
-
-}
-
-extension HLHotelCardView {
-
-    fileprivate func processGPUPlaceholder(_ image: UIImage?) {
-        if let img = image {
-            let size = self.overlayView.bounds.size
-            let bounds = CGRect(x: 0.0, y: 0.0, width: size.width, height: size.height)
-
-            UIGraphicsBeginImageContext(bounds.size)
-            let context = UIGraphicsGetCurrentContext()
-            context?.translateBy(x: 0, y: size.height)
-            context?.scaleBy(x: 1.0, y: -1.0)
-            context?.draw(img.cgImage!, in: bounds)
-
-            let gpuImage = GPUImagePicture(image: UIGraphicsGetImageFromCurrentImageContext())
-
-            UIGraphicsEndImageContext()
-
-            let blurFilter: GPUImageGaussianBlurFilter = GPUImageGaussianBlurFilter()
-            blurFilter.blurRadiusInPixels = 10.0
-            blurFilter.texelSpacingMultiplier = 1.0
-
-            gpuImage?.addTarget(blurFilter)
-            blurFilter.addTarget(self.overlayView)
-
-            gpuImage?.processImage()
-        }
     }
 
 }

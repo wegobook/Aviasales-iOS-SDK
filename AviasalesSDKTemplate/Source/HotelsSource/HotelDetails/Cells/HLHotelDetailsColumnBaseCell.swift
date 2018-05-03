@@ -34,7 +34,7 @@ class HLHotelDetailsColumnBaseCell: HLHotelDetailsTableCell {
             return false
         }
 
-        let attributes = [NSFontAttributeName : labelFont]
+        let attributes = [NSAttributedStringKey.font : labelFont]
         let textWidth = text.hl_width(attributes: attributes, height: (label?.frame.size.height)!)
 
         return textWidth < label!.frame.size.width

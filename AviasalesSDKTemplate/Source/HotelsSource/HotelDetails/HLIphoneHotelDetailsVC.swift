@@ -14,7 +14,6 @@ class HLIphoneHotelDetailsVC: HLHotelDetailsVC, HLPhotoScrollVCDelegate, UIViewC
         photosViewHeightConstraint.constant = HLPhotoScrollView.preferredHeight()
         hotelView.setNeedsLayout()
         hotelView.layoutIfNeeded()
-        hotelView.overlayView.backgroundColor = UIColor.clear
 
         hideControls(animated: false)
 
@@ -259,16 +258,13 @@ extension HLIphoneHotelDetailsVC {
 
         var transform = CATransform3DIdentity
 
-        let overlayChangeProgress: CGFloat
         let newOffset: CGFloat
         let offset = scrollView.contentOffset.y + scrollView.contentInset.top
 
         if offset <= 0 {
-            overlayChangeProgress = 0
             newOffset = 0
         } else {
             let lim = photoScrollHeight
-            overlayChangeProgress = abs(photosViewTopConstraint.constant / lim)
             newOffset = min(max(0.0, offset), lim)
         }
 
@@ -277,7 +273,6 @@ extension HLIphoneHotelDetailsVC {
             photosViewHeightConstraint.constant = photoScrollHeight
 
             hotelView.isUserInteractionEnabled = false
-            hotelView.overlayViewOpacity = overlayChangeProgress
         } else {
             let scale = min(1.0 + -offset / photoScrollHeight, 1.7)
 
@@ -287,7 +282,6 @@ extension HLIphoneHotelDetailsVC {
             photosViewHeightConstraint.constant = photoScrollHeight - offset
 
             hotelView.isUserInteractionEnabled = true
-            hotelView.overlayViewOpacity = 0.0
         }
 
         hotelView.setNeedsUpdateConstraints()

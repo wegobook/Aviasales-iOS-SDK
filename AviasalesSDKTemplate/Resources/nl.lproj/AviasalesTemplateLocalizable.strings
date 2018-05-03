@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d stops";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d stops";
 
-"JR_BROWSER_TITLE" = "Koop";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Prijzenkalender";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Prijskalender %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "vanaf %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Gemiddelde prijs";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "direkte";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "met overstap";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Goedkoopst";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Alleen directe vluchten";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Heb je je ticket niet gevonden?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "U kunt de datum van uw retourvlucht veranderen.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Selecteer retourdatum";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Terug";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Vooruit";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Fout";
 
+"BROWSER_LOAD_ERROR" = "Er is iets mis. Probeer het later opnieuw.";
 "BROWSER_CHECK_CONNECTION" = "Controleer je internetverbinding.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Laden...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Laster inn...";
 "JR_CLOSE_BUTTON_TITLE" = "Sluiten";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Sorry, we konden geen vluchten vinden tussen de geselecteerde luchthavens voor de route %@. We kunnen je wel andere vluchten tussen deze steden laten zien.";

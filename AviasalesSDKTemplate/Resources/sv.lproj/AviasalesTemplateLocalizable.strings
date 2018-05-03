@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d stops";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d stops";
 
-"JR_BROWSER_TITLE" = "Köp";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Priskalender";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Priskalender %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "från %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Genomsnittligt pris";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "dirket";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "med mellanlandning";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Billigaste";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Endast direktflyg";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Hittade du inte din biljett?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Du kan ändra datum för returresan.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Välj returdatum";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Tillbaka";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Framåt";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Fel";
 
+"BROWSER_LOAD_ERROR" = "Något gick snett. Var god försök igen.";
 "BROWSER_CHECK_CONNECTION" = "Kontrollera din Internetanslutning.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Laddar...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Laddar...";
 "JR_CLOSE_BUTTON_TITLE" = "Stäng";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Ursäkta, vi kunde hittade inga flyg mellan de valda flygplatserna och rutten %@. Istället kan vi visa dig andra flyg mellan städerna.";

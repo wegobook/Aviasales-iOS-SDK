@@ -1,5 +1,6 @@
 import Foundation
 
+@objcMembers
 class ServiceLocator: NSObject {
 
     static let shared = ServiceLocator()

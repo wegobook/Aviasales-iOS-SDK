@@ -1,4 +1,4 @@
-@objc protocol HLHotelDetailsTabCellDelegate: NSObjectProtocol, ReviewCellDelegate, BookRoomDelegate {
+@objc protocol HLHotelDetailsTabCellDelegate: ReviewCellDelegate, BookRoomDelegate {
     func minTopOffset() -> CGFloat
     func topContentInset() -> CGFloat
     func reloadHotelDetails()

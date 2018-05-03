@@ -15,27 +15,20 @@
 #import "JRTicketVC.h"
 
 #import "JRSearchResultsList.h"
-#import "JRAdvertisementManager.h"
 #import "JRTableManagerUnion.h"
-#import "JRAdvertisementTableManager.h"
 #import "JRSearchInfoUtils.h"
 #import "JRSearchResultsFlightSegmentCellLayoutParameters.h"
-#import "JRHotelCardView.h"
 
-static const NSInteger kJRAviasalesAdIndex = 0;
-static const NSInteger kHotelCardIndex = 5;
-
-@interface JRSearchResultsVC () <JRSearchResultsListDelegate, JRFilterDelegate>
+@interface JRSearchResultsVC () <JRSearchResultsListDelegate, SearchResultsCardListActionHandler, JRFilterDelegate>
 
 @property (strong, nonatomic) JRSearchResultsList *resultsList;
-@property (strong, nonatomic) JRAdvertisementTableManager *ads;
+@property (strong, nonatomic) SearchResultsCardList *cardList;
 @property (strong, nonatomic) JRTableManagerUnion *tableManager;
+
 @property (strong, nonatomic) JRSDKSearchInfo *searchInfo;
 @property (strong, nonatomic) JRSDKSearchResult *response;
 
 @property (nonatomic, strong) JRFilter *filter;
-
-@property (nonatomic, strong) NSMutableIndexSet *adsIndexSet;
 
 @property (nonatomic, assign) BOOL shouldShowMetropolitanResultsInfoAlert;
 
@@ -80,67 +73,16 @@ static const NSInteger kHotelCardIndex = 5;
     return  _resultsList;
 }
 
-- (NSMutableIndexSet *)adsIndexSet {
-    if (!_adsIndexSet) {
-        _adsIndexSet = [[NSMutableIndexSet alloc] init];
+- (SearchResultsCardList *)cardList {
+    if (!_cardList) {
+        _cardList = [[SearchResultsCardList alloc] initWithSearchInfo:self.searchInfo delegate:self];
     }
-    return _adsIndexSet;
-}
-
-- (JRAdvertisementTableManager *)ads {
-    if (!_ads) {
-        _ads = [[JRAdvertisementTableManager alloc] init];
-        _ads.aviasalesAd = [JRAdvertisementManager sharedInstance].cachedAviasalesAdView;
-        _ads.hotelCard = [self createHotelCardIfNeeded];
-
-        if (_ads.aviasalesAd) {
-            [self.adsIndexSet addIndex:kJRAviasalesAdIndex];
-        }
-        if (_ads.hotelCard) {
-            [self.adsIndexSet addIndex:kHotelCardIndex];
-        }
-    }
-    return _ads;
-}
-
-- (JRHotelCardView *)createHotelCardIfNeeded {
-
-    JRHotelCardView *hotelCardView = nil;
-
-    if ([InteractionManager shared].isCityReadyForSearchHotels && [ConfigManager shared].hotelsEnabled && [JRSDKModelUtils isSimpleSearch:self.searchInfo]) {
-
-        hotelCardView = [JRHotelCardView loadFromNib];
-
-        __weak typeof(self) weakSelf = self;
-
-        hotelCardView.buttonAction = ^{
-            
-            [[InteractionManager shared] applySearchHotelsInfo];
-
-            [weakSelf.adsIndexSet removeIndex:kHotelCardIndex];
-            weakSelf.tableManager.secondManagerPositions = weakSelf.adsIndexSet;
-
-            NSIndexPath *selectedIndexPath = [weakSelf.tableView indexPathForSelectedRow];
-
-            if (selectedIndexPath.section >= kHotelCardIndex && selectedIndexPath.section > 0) {
-                selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:selectedIndexPath.section - 1];
-            }
-
-            [weakSelf.tableView reloadData];
-
-            if (iPad() && selectedIndexPath) {
-                [weakSelf.tableView selectRowAtIndexPath:selectedIndexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
-                [weakSelf.tableManager tableView:weakSelf.tableView didSelectRowAtIndexPath:selectedIndexPath];
-            }
-        };
-    }
-    
-    return hotelCardView;
+    return _cardList;
 }
 
 - (JRTableManagerUnion *)tableManager {
     if (!_tableManager) {
-        _tableManager = [[JRTableManagerUnion alloc] initWithFirstManager:self.resultsList secondManager:self.ads secondManagerPositions:[self.adsIndexSet copy]];
+        _tableManager = [[JRTableManagerUnion alloc] initWithFirstManager:self.resultsList secondManager:self.cardList secondManagerPositions:[self.cardList.indexes copy]];
     }
     return _tableManager;
 }
@@ -273,6 +215,42 @@ static const NSInteger kHotelCardIndex = 5;
         if (self.selectionBlock) {
             self.selectionBlock(ticket);
         }
+    }
+}
+
+#pragma mark - <SearchResultsCardListActionHandler>
+
+- (void)showPriceCalendarActionDidTrigger {
+    PriceCalendarViewController *priceCalendarViewController = [[PriceCalendarViewController alloc] initWithSearchInfo:self.searchInfo];
+    if (iPad()) {
+        __weak typeof(self) weakSelf = self;
+        priceCalendarViewController.dismissCallback = ^(JRSDKSearchInfo *searchInfo){
+            ASTWaitingScreenViewController *waitingScreenViewController = [[ASTWaitingScreenViewController alloc] initWithSearchInfo:searchInfo];
+            [weakSelf.navigationController setViewControllersWithRootAndViewController:waitingScreenViewController];
+        };
+    }
+    [self pushOrPresentBasedOnDeviceTypeWithViewController:priceCalendarViewController animated:YES];
+}
+
+- (void)findHotelsActionDidTriggerAtIndex:(NSInteger)index {
+
+    [[InteractionManager shared] applySearchHotelsInfo];
+
+    [self.cardList removeHotellookCardItem];
+
+    self.tableManager.secondManagerPositions = [self.cardList.indexes copy];
+
+    NSIndexPath *selectedIndexPath = [self.tableView indexPathForSelectedRow];
+
+    if (selectedIndexPath.section >= index && selectedIndexPath.section > 0) {
+        selectedIndexPath = [NSIndexPath indexPathForRow:0 inSection:selectedIndexPath.section - 1];
+    }
+
+    [self.tableView reloadData];
+
+    if (iPad() && selectedIndexPath) {
+        [self.tableView selectRowAtIndexPath:selectedIndexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+        [self.tableManager tableView:self.tableView didSelectRowAtIndexPath:selectedIndexPath];
     }
 }
 

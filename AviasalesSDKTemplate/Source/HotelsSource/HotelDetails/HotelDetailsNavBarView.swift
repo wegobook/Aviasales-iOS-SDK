@@ -21,7 +21,7 @@ class HotelDetailsNavBarView: UIView {
         nameLabel.textAlignment = .center
         addSubview(nameLabel)
         nameLabel.textColor = .white
-        nameLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)
+        nameLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
         nameLabel.text = variant.hotel.name
 
         addSubview(starsView)

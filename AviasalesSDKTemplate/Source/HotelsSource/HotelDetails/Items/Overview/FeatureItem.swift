@@ -15,7 +15,7 @@ class FeatureItem: NamedHotelDetailsItem {
         if self.badges.count > 0 {
             return HLHotelDetailsBadgesCell.estimatedHeight(badges, width: tableWidth, first: first, last: last)
         } else {
-            let hasDescription = descriptionString?.characters.count ?? 0 > 0
+            let hasDescription = descriptionString?.count ?? 0 > 0
             return HLHotelDetailsFeaturesCell.estimatedHeight(first, last: last, hasDescription: hasDescription)
         }
     }

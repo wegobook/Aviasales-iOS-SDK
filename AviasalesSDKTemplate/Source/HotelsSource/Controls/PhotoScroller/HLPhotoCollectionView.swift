@@ -7,6 +7,7 @@ import UIKit
     @objc optional func photoCollectionViewPlacegolderContentMode() -> UIViewContentMode
 }
 
+@objcMembers
 class HLPhotoCollectionView: UIView {
 
     fileprivate(set) var collectionView: UICollectionView!

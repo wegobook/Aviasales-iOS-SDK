@@ -4,6 +4,7 @@ import UIKit
     func didSelectCustomSearchLocationPoint(_ searchLocationPoint: HDKSearchLocationPoint)
 }
 
+@objcMembers
 class HLCustomPointSelectionVC: HLCommonVC, MKMapViewDelegate, HLLocateMeMapViewDelegate {
 
     @IBOutlet weak var mapView: MKMapView!
@@ -44,7 +45,7 @@ class HLCustomPointSelectionVC: HLCommonVC, MKMapViewDelegate, HLLocateMeMapView
         }
     }
 
-    func selectSearchLocationPoint() {
+    @objc func selectSearchLocationPoint() {
         let coordinate = mapView.convert(pinBottomShadowImageView.center, toCoordinateFrom: view)
         let location = CLLocation(latitude: coordinate.latitude, longitude: coordinate.longitude)
         goBack()

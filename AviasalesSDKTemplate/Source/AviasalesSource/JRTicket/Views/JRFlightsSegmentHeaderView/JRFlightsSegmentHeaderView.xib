@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="gbN-Sp-VON" customClass="JRFlightsSegmentHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iHF-7o-ILw">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin - departure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdL-Sx-DWu">
+                            <rect key="frame" x="20" y="28" width="285" height="18"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="darkTextColor"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-Cm-BFG">
+                            <rect key="frame" x="20" y="46" width="285" height="18"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                            <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="darkTextColor"/>
+                            </userDefinedRuntimeAttributes>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="4Ps-Cm-BFG" firstAttribute="leading" secondItem="iHF-7o-ILw" secondAttribute="leading" constant="20" id="4hz-3u-otF"/>
+                        <constraint firstAttribute="bottom" secondItem="4Ps-Cm-BFG" secondAttribute="bottom" constant="8" id="asW-uM-USY"/>
+                        <constraint firstItem="4Ps-Cm-BFG" firstAttribute="top" secondItem="gdL-Sx-DWu" secondAttribute="bottom" id="kF4-7e-xzK"/>
+                        <constraint firstItem="gdL-Sx-DWu" firstAttribute="leading" secondItem="iHF-7o-ILw" secondAttribute="leading" constant="20" id="o0T-Ia-E8j"/>
+                        <constraint firstAttribute="trailing" secondItem="gdL-Sx-DWu" secondAttribute="trailing" constant="15" id="oPN-vz-jXH"/>
+                        <constraint firstAttribute="trailing" secondItem="4Ps-Cm-BFG" secondAttribute="trailing" constant="15" id="qUe-O4-dqN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iHF-7o-ILw" secondAttribute="trailing" id="9Rl-iP-auI"/>
+                <constraint firstAttribute="bottom" secondItem="iHF-7o-ILw" secondAttribute="bottom" id="Tq0-5z-0p0"/>
+                <constraint firstItem="iHF-7o-ILw" firstAttribute="top" secondItem="gbN-Sp-VON" secondAttribute="top" id="maE-kr-L3O"/>
+                <constraint firstItem="iHF-7o-ILw" firstAttribute="leading" secondItem="gbN-Sp-VON" secondAttribute="leading" id="ye3-AX-mtu"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="string" keyPath="JRBackgroundColorKey" value="mainBackgroundColor"/>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="durationLabel" destination="4Ps-Cm-BFG" id="zbL-b9-KNc"/>
+                <outlet property="nameLabel" destination="gdL-Sx-DWu" id="l2t-l2-fWp"/>
+            </connections>
+            <point key="canvasLocation" x="586" y="-1"/>
+        </view>
+    </objects>
+</document>

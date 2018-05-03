@@ -225,14 +225,14 @@ static NSString *formattedDate(NSDate *date, BOOL includeMonth, BOOL includeYear
 static NSString *formattedDate(NSDate *date, BOOL includeMonth, BOOL includeYear, BOOL numberRepresentation) {
     NSString *format;
     if (numberRepresentation) {
-        format = @"dd.MM";
+        format = @"d.MM";
     } else {
         if (includeMonth && includeYear) {
-            format = @"dd MMM yyyy";
+            format = @"d MMM yyyy";
         } else if (includeMonth) {
-            format = @"dd MMM";
+            format = @"d MMM";
         } else {
-            format = @"dd";
+            format = @"d";
         }
     }
 

@@ -76,7 +76,7 @@ class RootFilterViewCell: UIControl {
         }
     }
 
-    func filterViewPressed(_ sender: RootFilterViewCell) {
+    @objc func filterViewPressed(_ sender: RootFilterViewCell) {
         delegate?.filterViewCellPressed(filterViewCell: self)
     }
 

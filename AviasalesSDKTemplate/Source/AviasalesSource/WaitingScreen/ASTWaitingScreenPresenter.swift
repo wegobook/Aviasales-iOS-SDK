@@ -46,6 +46,7 @@ class ASTWaitingScreenPresenter: NSObject {
             requestSearchResultsAviasalesAdvertisement()
         }
         performSearch()
+        PriceCalendarManager.shared.prepareLoader(with: searchInfo)
     }
 
     func handleUnload() {
@@ -57,10 +58,10 @@ class ASTWaitingScreenPresenter: NSObject {
     }
 }
 
-fileprivate extension ASTWaitingScreenPresenter {
+private extension ASTWaitingScreenPresenter {
 
     func performSearch() {
-
+        AviasalesSDK.sharedInstance().updateCurrencyCode(CurrencyManager.shared.currency.code.lowercased())
         searchPerformer.delegate = self
         searchPerformer.performSearch(with: searchInfo, includeResultsInEnglish: true)
     }
@@ -114,6 +115,7 @@ extension ASTWaitingScreenPresenter: JRSDKSearchPerformerDelegate {
         }
 
         let searchResult = result.tickets.count == 0 ? metropolitanResult : result
+
         view?.showSearchResults(searchResult: searchResult, searchInfo: searchInfo)
     }
 

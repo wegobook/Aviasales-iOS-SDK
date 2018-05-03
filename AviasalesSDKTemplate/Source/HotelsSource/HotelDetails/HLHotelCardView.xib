@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -13,7 +14,6 @@
                 <outlet property="badgesContainerView" destination="ymX-AC-GOX" id="fGq-lv-4u7"/>
                 <outlet property="bottomGradientView" destination="qCk-RA-eGq" id="JaG-1C-jVA"/>
                 <outlet property="hotelInfoView" destination="5o3-Kf-MEE" id="mZf-hQ-98Z"/>
-                <outlet property="overlayView" destination="VNn-Tp-PdH" id="5hl-ks-buL"/>
                 <outlet property="photoScrollView" destination="uHE-s1-6yf" id="sqq-mf-rm4"/>
             </connections>
         </placeholder>
@@ -40,29 +40,21 @@
                         <constraint firstAttribute="height" constant="64" id="jHa-hc-9i9"/>
                     </constraints>
                 </view>
-                <view userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VNn-Tp-PdH" userLabel="overlayView" customClass="GPUImageView">
-                    <rect key="frame" x="0.0" y="0.0" width="541" height="324"/>
-                    <color key="backgroundColor" red="0.4431372549" green="0.76470588240000004" blue="0.2901960784" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                </view>
             </subviews>
             <color key="backgroundColor" red="0.21199023723602295" green="0.21522575616836548" blue="0.21864497661590576" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="ymX-AC-GOX" secondAttribute="bottom" id="3GC-yZ-eip"/>
                 <constraint firstAttribute="bottom" secondItem="uHE-s1-6yf" secondAttribute="bottom" id="4Yt-6n-QlJ"/>
                 <constraint firstAttribute="trailing" secondItem="uHE-s1-6yf" secondAttribute="trailing" id="5bu-D5-UiY"/>
-                <constraint firstItem="VNn-Tp-PdH" firstAttribute="top" secondItem="Y3w-9R-PgV" secondAttribute="top" id="G1D-GZ-KSB"/>
                 <constraint firstAttribute="trailing" secondItem="5o3-Kf-MEE" secondAttribute="trailing" id="LIF-n2-MY9"/>
                 <constraint firstAttribute="trailing" secondItem="qCk-RA-eGq" secondAttribute="trailing" id="Nsm-e7-zb7"/>
                 <constraint firstItem="qCk-RA-eGq" firstAttribute="leading" secondItem="Y3w-9R-PgV" secondAttribute="leading" id="VD7-63-SCr"/>
-                <constraint firstAttribute="bottom" secondItem="VNn-Tp-PdH" secondAttribute="bottom" id="ZKu-aL-BVj"/>
                 <constraint firstItem="ymX-AC-GOX" firstAttribute="leading" secondItem="Y3w-9R-PgV" secondAttribute="leading" id="b1c-ur-vT0"/>
-                <constraint firstItem="VNn-Tp-PdH" firstAttribute="leading" secondItem="Y3w-9R-PgV" secondAttribute="leading" id="dJj-7Q-veu"/>
                 <constraint firstAttribute="bottom" secondItem="qCk-RA-eGq" secondAttribute="bottom" id="dxS-f5-ZQ9"/>
                 <constraint firstItem="ymX-AC-GOX" firstAttribute="top" secondItem="Y3w-9R-PgV" secondAttribute="top" id="e6o-TV-5tp"/>
                 <constraint firstAttribute="bottom" secondItem="5o3-Kf-MEE" secondAttribute="bottom" id="rCQ-XE-DqS"/>
                 <constraint firstItem="uHE-s1-6yf" firstAttribute="top" secondItem="Y3w-9R-PgV" secondAttribute="top" id="tL6-Me-FIr"/>
                 <constraint firstItem="5o3-Kf-MEE" firstAttribute="leading" secondItem="Y3w-9R-PgV" secondAttribute="leading" id="x65-h4-1PP"/>
-                <constraint firstAttribute="trailing" secondItem="VNn-Tp-PdH" secondAttribute="trailing" id="xFh-aj-dkY"/>
                 <constraint firstAttribute="trailing" secondItem="ymX-AC-GOX" secondAttribute="trailing" id="xMm-dT-P66"/>
                 <constraint firstItem="uHE-s1-6yf" firstAttribute="leading" secondItem="Y3w-9R-PgV" secondAttribute="leading" id="y4o-69-5WL"/>
             </constraints>

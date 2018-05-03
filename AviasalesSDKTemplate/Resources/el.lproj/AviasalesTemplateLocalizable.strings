@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d στάσεις";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d στάσεις";
 
-"JR_BROWSER_TITLE" = "Αγορά";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Ημερολ. Τιμων";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Ημερολόγιο τιμών %@ - %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "από %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Μέση τιμή";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "Απευθείας";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "με στάσεις";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Φτηνότερο";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Απευθείας πτήσεις μόνο";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Δεν βρήκατε το εισητήριό σας;";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Μπορείτε να αλλάξετε την ημερομηνία της πτήσης επιστροφής.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Ημερομηνια επιστροφης";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Πίσω";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Προώθηση";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Σφάλμα";
 
+"BROWSER_LOAD_ERROR" = "Κάτι πήγε στραβά! Θα πρέπει να ξαναπροσπαθήσεις.";
 "BROWSER_CHECK_CONNECTION" = "Ελέγξτε την διαδικτυακή σας σύνδεση.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Φόρτωση...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Φόρτωση...";
 "JR_CLOSE_BUTTON_TITLE" = "Κλείσιμο";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Δυστυχώς, δε μπορούσαμε να βρούμε πτήσεις μεταξύ των επιλεγμένων αεροδρομίων για την διαδρομή %@. Ωστόσο, μπορούμε να σας εμφανίσουμε εναλλακτικές πτήσεις μεταξύ αυτών των πόλεων.";

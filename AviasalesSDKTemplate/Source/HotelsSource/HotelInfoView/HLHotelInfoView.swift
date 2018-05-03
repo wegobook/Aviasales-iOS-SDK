@@ -4,6 +4,7 @@
     case small
 }
 
+@objcMembers
 @IBDesignable class HLHotelInfoView: UIView {
 
     @IBOutlet fileprivate weak var starsView: UIView!
@@ -157,7 +158,7 @@
     }
 
     fileprivate func updateHotelName() {
-        if let name = hotel?.name, name.characters.count > 0 {
+        if let name = hotel?.name, name.count > 0 {
             self.hotelNameLabel.text = name.capitalized
             self.hotelNameLabel.isHidden = false
         } else {

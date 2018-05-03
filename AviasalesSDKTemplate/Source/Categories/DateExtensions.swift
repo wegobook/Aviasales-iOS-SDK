@@ -1,4 +1,4 @@
-extension NSDate {
+@objc extension NSDate {
 
     func hour() -> Int {
         let calendar = HDKDateUtil.sharedCalendar

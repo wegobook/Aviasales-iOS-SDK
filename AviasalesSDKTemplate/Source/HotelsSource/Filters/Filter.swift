@@ -12,7 +12,8 @@ struct AmenityShortConst {
     static let childrenActivities = "15|16"
 }
 
-@objc class Filter: HLFilter {
+@objcMembers
+class Filter: HLFilter {
 
     var availablePropertyTypes: Set<HLHotelPropertyType> = []
     var stars: Set<Int> = []

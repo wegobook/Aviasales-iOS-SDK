@@ -70,7 +70,7 @@ class HotelDetailsMoreTableVC: HotelDetailsMoreVC, UITableViewDelegate, UITableV
     }
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
-        let views = self.sectionFooterNib.instantiate(withOwner: nil, options: nil).flatMap { $0 as? UIView }
+        let views = self.sectionFooterNib.instantiate(withOwner: nil, options: nil).compactMap { $0 as? UIView }
         let footer = views.first
         if let groupedHeader = footer as? HLGroupedTableHeaderView {
             groupedHeader.title = ""

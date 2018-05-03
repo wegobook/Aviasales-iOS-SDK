@@ -37,11 +37,11 @@ class ReviewCell: UITableViewCell {
     private func createSubviews() {
         contentView.addSubview(ratingView)
 
-        authorLabel.font = UIFont.systemFont(ofSize: 13, weight: UIFontWeightMedium)
+        authorLabel.font = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.medium)
         authorLabel.textColor = JRColorScheme.darkTextColor()
         contentView.addSubview(authorLabel)
 
-        dateLabel.font = UIFont.systemFont(ofSize: 13, weight: UIFontWeightMedium)
+        dateLabel.font = UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.medium)
         dateLabel.textColor = JRColorScheme.darkTextColor()
         contentView.addSubview(dateLabel)
         contentView.addSubview(gateLogo)
@@ -74,7 +74,7 @@ class ReviewCell: UITableViewCell {
         reviewTextsView.autoPinEdge(toSuperviewEdge: .trailing, withInset: 15)
         reviewTextsView.autoPinEdge(.top, to: .bottom, of: dateLabel, withOffset: 15)
 
-        NSLayoutConstraint.autoSetPriority(900) {
+        NSLayoutConstraint.autoSetPriority(UILayoutPriority(rawValue: 900)) {
             self.reviewTextsView.autoPinEdge(toSuperviewEdge: .bottom, withInset: 20)
         }
     }
@@ -91,7 +91,7 @@ class ReviewCell: UITableViewCell {
         separatorView.isHidden = shouldHideSeparator
     }
 
-    func gateLogoClicked() {
+    @objc func gateLogoClicked() {
         guard let review = review else { return }
         delegate?.gateLogoClicked(review: review)
     }

@@ -33,7 +33,7 @@ class HLHotelDetailsUsefullInfoCell: HLHotelDetailsTableCell {
         let textWidth = width - 60.0
         let string: NSString = text as NSString
 
-        var height = string.hl_height(attributes: [NSFontAttributeName : font], width: textWidth)
+        var height = string.hl_height(attributes: [NSAttributedStringKey.font : font], width: textWidth)
         let kTopMargin: CGFloat = 6.0
         height += kTopMargin
         height += last ? 22.0 : 6.0

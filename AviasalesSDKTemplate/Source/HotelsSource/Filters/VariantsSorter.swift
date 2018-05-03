@@ -2,6 +2,7 @@ import Foundation
 
 typealias ComparisonFunc = (HLResultVariant, HLResultVariant) -> ComparisonResult
 
+@objcMembers
 class VariantsSorter: NSObject {
 
     class func sortVariants(_ variants: [HLResultVariant], withType type: SortType, searchInfo: HLSearchInfo) -> [HLResultVariant] {

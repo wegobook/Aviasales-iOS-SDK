@@ -84,8 +84,8 @@ class WaitingLongSearchCell: HLAutolayoutCollectionViewCell {
 
     class func preferredHeight(containerWidth: CGFloat) -> CGFloat {
         let maxTextWidth = containerWidth - Consts.leftOffset - Consts.rightOffset
-        let titleHeight = titleText().hl_height(attributes: [NSFontAttributeName: titleFont()], width: maxTextWidth)
-        let subtitleHeight = subtitleText().hl_height(attributes: [NSFontAttributeName: subtitleFont()], width: maxTextWidth)
+        let titleHeight = titleText().hl_height(attributes: [NSAttributedStringKey.font: titleFont()], width: maxTextWidth)
+        let subtitleHeight = subtitleText().hl_height(attributes: [NSAttributedStringKey.font: subtitleFont()], width: maxTextWidth)
 
         return titleHeight + subtitleHeight +
             Consts.clockTopOffset + Consts.clockImageHeight +

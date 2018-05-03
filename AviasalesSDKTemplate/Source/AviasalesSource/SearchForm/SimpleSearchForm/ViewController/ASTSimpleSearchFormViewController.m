@@ -56,12 +56,16 @@ static CGFloat const separatorRightInset = 15.0;
     [self.presenter updateSearchInfoWithDestination:destination checkIn:checkIn checkOut:checkOut passengers:passengers];
 }
 
+- (void)update {
+    [self.presenter handleViewReady];
+}
+
 #pragma mark - Lifecycle
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self setupViewController];
-    [self.presenter handleViewDidLoad];
+    [self.presenter handleViewReady];
 }
 
 #pragma mark - Setup

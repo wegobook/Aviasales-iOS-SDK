@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIViewController {
+@objc extension UIViewController {
 
     func pushOrPresentBasedOnDeviceType(viewController: UIViewController, animated: Bool) {
         if iPhone() {
@@ -20,7 +20,7 @@ extension UIViewController {
         }
     }
 
-    func dismissViewController() {
+    @objc func dismissViewController() {
         dismiss(animated: true, completion: nil)
     }
 

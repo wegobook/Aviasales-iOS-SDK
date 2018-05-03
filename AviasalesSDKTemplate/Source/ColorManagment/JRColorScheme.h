@@ -20,12 +20,20 @@
 + (UIColor *)searchFormBackgroundColor;
 + (UIColor *)searchFormTextColor;
 
-//Background
+// Background
 + (UIColor *)mainBackgroundColor;
 + (UIColor *)lightBackgroundColor;
 + (UIColor *)darkBackgroundColor;
 + (UIColor *)itemsBackgroundColor;
 + (UIColor *)itemsSelectedBackgroundColor;
+
+// PriceCalendar
++ (UIColor *)priceCalendarBarColor;
++ (UIColor *)priceCalendarSelectedBarColor;
++ (UIColor *)priceCalendarMinBarColor;
++ (UIColor *)priceCalendarSelectedMinBarColor;
++ (UIColor *)priceCalendarMinPriceLevelColor;
++ (UIColor *)priceCalendarResultCellCheapestViewBackgroundColor;
 
 // Slider
 + (UIColor *)sliderBackgroundColor;

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="9bi-6c-Lib" customClass="PriceCalendarChartView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="235"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="vIv-bU-6xx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="215"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BWH-Cy-3vl">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Апрель" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p5l-Cn-7t2">
+                    <rect key="frame" x="168.5" y="215" width="38.5" height="12"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="10"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="centerX" secondItem="p5l-Cn-7t2" secondAttribute="centerX" id="1Bp-Ze-atw"/>
+                <constraint firstItem="vIv-bU-6xx" firstAttribute="leading" secondItem="9bi-6c-Lib" secondAttribute="leading" id="7WW-rt-MaP"/>
+                <constraint firstItem="vIv-bU-6xx" firstAttribute="top" secondItem="9bi-6c-Lib" secondAttribute="top" id="U2Y-6a-Ix2"/>
+                <constraint firstItem="p5l-Cn-7t2" firstAttribute="top" secondItem="vIv-bU-6xx" secondAttribute="bottom" id="chz-eX-TY7"/>
+                <constraint firstAttribute="bottom" secondItem="p5l-Cn-7t2" secondAttribute="bottom" constant="8" id="tT1-XX-TcC"/>
+                <constraint firstAttribute="trailing" secondItem="vIv-bU-6xx" secondAttribute="trailing" id="zcn-Ll-8mw"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="vIv-bU-6xx" id="Gi4-8C-fhw"/>
+                <outlet property="monthLabel" destination="p5l-Cn-7t2" id="3LT-Hl-gfb"/>
+            </connections>
+            <point key="canvasLocation" x="471" y="351"/>
+        </view>
+    </objects>
+</document>

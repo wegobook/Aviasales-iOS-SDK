@@ -27,8 +27,8 @@ class HLHotelDetailsRatingSummaryCell: HLHotelDetailsTableCell {
 
         reviewsCountLabel.text = StringUtils.reviewsCountDescription(with: trustyou.reviewsCount)
 
-        if let description = trustyou.summaryDescription, description.characters.count > 0 {
-            let lastSymbol = description.characters.last
+        if let description = trustyou.summaryDescription, description.count > 0 {
+            let lastSymbol = description.last
             descriptionLabel.text = (lastSymbol != ".") ? description + "." : description
         } else {
             descriptionLabel.text = ""

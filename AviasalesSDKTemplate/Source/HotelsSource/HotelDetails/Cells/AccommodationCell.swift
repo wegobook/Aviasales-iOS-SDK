@@ -76,7 +76,7 @@ class AccommodationCell: HLAutolayoutCell {
         valueLabel.autoPinEdge(.bottom, to: .bottom, of: titleLabel)
         valueLabel.autoPinEdge(toSuperviewEdge: .trailing, withInset: Consts.right)
 
-        NSLayoutConstraint.autoSetPriority(UILayoutPriorityDefaultLow + 1) {
+        NSLayoutConstraint.autoSetPriority(UILayoutPriority.defaultLow + 1) {
             titleLabel.autoSetContentHuggingPriority(for: .horizontal)
         }
     }
@@ -103,8 +103,8 @@ class AccommodationCell: HLAutolayoutCell {
     }
 
     class func canFill(_ title: String, text: String, cellWidth: CGFloat) -> Bool {
-        let titleWidth = title.hl_width(attributes: [NSFontAttributeName: titleFont()], height: 17)
-        let textWidth = text.hl_width(attributes: [NSFontAttributeName: titleFont()], height: 17)
+        let titleWidth = title.hl_width(attributes: [NSAttributedStringKey.font: titleFont()], height: 17)
+        let textWidth = text.hl_width(attributes: [NSAttributedStringKey.font: titleFont()], height: 17)
 
         let availableWidth = cellWidth - Consts.left - Consts.between - Consts.right
         return availableWidth > titleWidth + textWidth

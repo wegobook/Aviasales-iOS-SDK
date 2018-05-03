@@ -1,5 +1,6 @@
 import Foundation
 
+@objcMembers
 class RoomsSorter: NSObject {
 
     class func sortRoomsByPrice(_ rooms: [HDKRoom], gatesSortOrder: [String]?) -> [HDKRoom] {

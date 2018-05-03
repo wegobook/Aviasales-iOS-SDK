@@ -14,7 +14,7 @@
 
 @property (strong, nonatomic, readonly) JRSDKTravelSegment *travelSegment;
 
-@property (nonatomic, copy) void (^filterAction)();
+@property (nonatomic, copy) void (^filterAction)(void);
 
 - (instancetype)initWithTravelSegment:(JRSDKTravelSegment *)travelSegment;
 

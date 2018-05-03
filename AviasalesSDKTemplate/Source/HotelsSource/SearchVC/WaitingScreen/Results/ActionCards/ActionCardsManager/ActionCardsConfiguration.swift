@@ -1,3 +1,4 @@
+@objcMembers
 class ActionCardsConfiguration: NSObject {
 
     var searchInfo: HLSearchInfo

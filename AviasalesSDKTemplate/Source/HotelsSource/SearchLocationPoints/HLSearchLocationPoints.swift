@@ -24,6 +24,7 @@ class HLCustomSearchLocationPoint: HDKSearchLocationPoint {
     }
 }
 
+@objcMembers
 class HLSearchUserLocationPoint: HDKSearchLocationPoint {
     init(location: CLLocation, nearbyCities: [HDKCity]) {
         super.init(location: location, title: NSLS("HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT"))
@@ -43,6 +44,7 @@ class HLSearchUserLocationPoint: HDKSearchLocationPoint {
     }
 }
 
+@objcMembers
 class HLSearchAirportLocationPoint: HDKSearchLocationPoint {
     let airport: HDKAirport
 

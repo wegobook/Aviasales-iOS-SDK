@@ -1,3 +1,4 @@
+@objcMembers
 class PeekTableVC: HLCommonVC, UITableViewDataSource, UITableViewDelegate, PeekVCProtocol {
 
     var commitBlock: (() -> Void)?

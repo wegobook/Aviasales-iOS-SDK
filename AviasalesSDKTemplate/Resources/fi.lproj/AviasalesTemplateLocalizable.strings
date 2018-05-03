@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d pysähdystä";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d pysähdystä";
 
-"JR_BROWSER_TITLE" = "Osta";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Hintakalenteri";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Hintakalenteri %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "alkaen %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Keskihinta";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "suora";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "sis. pysähdyksen";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Edullisin";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Vain suorat lennot";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Etkö löytänyt lippuasi?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Voit vaihtaa paluulennon päivämäärän.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Valitse paluupäivä";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Takaisin";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Jatka";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Virhe";
 
+"BROWSER_LOAD_ERROR" = "Jokin meni vikaan. Yritä uudelleen.";
 "BROWSER_CHECK_CONNECTION" = "Tarkista internetyhteytesi.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Ladataan...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Ladataan...";
 "JR_CLOSE_BUTTON_TITLE" = "Sulje";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Emme löytäneet lentoja valittujen lentokenttien välillä reitille %@. Voimme kuitenkin näyttää muut lennot näiden kaupunkien välillä.";

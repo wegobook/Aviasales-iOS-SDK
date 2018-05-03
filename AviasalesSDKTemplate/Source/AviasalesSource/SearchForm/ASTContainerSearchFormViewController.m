@@ -40,6 +40,7 @@ NS_ENUM(NSInteger, ASTContainerSearchFormSearchType) {
 
     [InteractionManager shared].ticketsSearchForm = self;
     [self setupViewController];
+    [self setSearchInfoBuilderStorageCallback];
     [self showChildViewController:self.simpleSearchFormViewController];
 }
 
@@ -81,6 +82,21 @@ NS_ENUM(NSInteger, ASTContainerSearchFormSearchType) {
 - (void)setupChildViewControllers {
     self.simpleSearchFormViewController = [[ASTSimpleSearchFormViewController alloc] init];
     self.complexSearchFormViewController = [[ASTComplexSearchFormViewController alloc] init];
+}
+
+- (void)setSearchInfoBuilderStorageCallback {
+    __weak typeof (self) weakSelf = self;
+    [SearchInfoBuilderStorage shared].updateCallback = ^{
+        [weakSelf updateSimpleSearchForm];
+    };
+}
+
+#pragma mark - Upadte
+
+- (void)updateSimpleSearchForm {
+    [self showSimpleSearchForm];
+    [self.searchFormTypeSegmentedControl setSelectedSegmentIndex:ASTContainerSearchFormSearchTypeSimple];
+    [self.simpleSearchFormViewController update];
 }
 
 #pragma mark - Container Managment
@@ -126,10 +142,6 @@ NS_ENUM(NSInteger, ASTContainerSearchFormSearchType) {
 }
 
 - (IBAction)searchButtonTapped:(UIButton *)sender {
-    NSString *currencyCode = [[CurrencyManager shared].currency.code lowercaseString];
-    if (![currencyCode isEqualToString:[AviasalesSDK sharedInstance].currencyCode]) {
-        [[AviasalesSDK sharedInstance] updateCurrencyCode:currencyCode];
-    }
     [self.currentChildViewController performSearch];
 }
 

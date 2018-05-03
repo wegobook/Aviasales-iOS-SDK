@@ -47,7 +47,7 @@ class HotelDetailsReviewHighlightQuoteView: HLAutolayoutView {
 
     class func preferredHeight(_ quote: String, width: CGFloat) -> CGFloat {
         let leftMargin = Consts.imageWidth + Consts.imageAndTextSpacing
-        return quote.hl_height(attributes: [NSFontAttributeName: HotelDetailsReviewHighlightQuoteView.textFont], width: width - leftMargin)
+        return quote.hl_height(attributes: [NSAttributedStringKey.font: HotelDetailsReviewHighlightQuoteView.textFont], width: width - leftMargin)
     }
 
     class func labelWidth(_ viewWidth: CGFloat) -> CGFloat {

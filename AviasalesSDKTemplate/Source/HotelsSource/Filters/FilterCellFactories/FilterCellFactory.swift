@@ -65,7 +65,7 @@ class FilterCellFactory: NSObject {
                         RoomAmenityFilterItem(filterString: RoomOptionConsts.kPayNowOptionKey, text: NSLS("HL_LOC_FILTER_PAY_NOW_CRITERIA")),
                         RoomAmenityFilterItem(filterString: RoomOptionConsts.kPayLaterOptionKey, text: NSLS("HL_LOC_FILTER_PAY_LATER_CRITERIA"))]
 
-        let allInclusiveCount = Int(filter.searchResult.counters.hotelsCountAccordingToOptions[RoomOptionConsts.kAllInclusiveOptionKey] ?? 0)
+        let allInclusiveCount = Int(truncating: filter.searchResult.counters.hotelsCountAccordingToOptions[RoomOptionConsts.kAllInclusiveOptionKey] ?? 0)
         if allInclusiveCount > 3 {
             let text = NSLS("HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA") + " (" + String(allInclusiveCount) + " " + NSLSP("HL_LOC_SEARCH_FORM_HOTEL", Float(allInclusiveCount)) + ")"
             let item = RoomAmenityFilterItem(filterString: RoomOptionConsts.kAllInclusiveOptionKey, text: text)
@@ -227,7 +227,7 @@ class FilterCellFactory: NSObject {
     }
 
     func shouldAdd(_ item: CancelableFilterItem) -> Bool {
-        return item.allItems(for: filter).flatMap({$0}).count > 0
+        return item.allItems(for: filter).compactMap({$0}).count > 0
     }
 
     // MARK: - Utils

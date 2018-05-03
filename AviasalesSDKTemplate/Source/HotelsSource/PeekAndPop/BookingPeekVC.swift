@@ -51,16 +51,16 @@ class BookingPeekVC: PeekTableVC {
         let bookTitleWithPrice = bookStringWithPrice.string
         let bookTitleWithoutPrice = NSLS("HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE")
 
-        let bookTitle = bookTitleWithPrice.characters.count <= 35 ? bookTitleWithPrice : bookTitleWithoutPrice
+        let bookTitle = bookTitleWithPrice.count <= 35 ? bookTitleWithPrice : bookTitleWithoutPrice
 
         let bookAction = UIPreviewAction(title: bookTitle, style: .default) { [weak self]  (action, viewController) -> Void in
             guard let `self` = self else { return }
 
-            let browser = BookBrowserController(nibName: "BookBrowserController", bundle: nil)
-            browser.room = room
-            browser.providesPresentationContextTransitionStyle = true
-            browser.definesPresentationContext = true
-            self.viewControllerToShowBrowser?.present(browser, animated: true, completion: nil)
+            let bookBrowserPresenter = BookBrowserViewPresenter(room: room)
+            let browserViewController = BrowserViewController(presenter: bookBrowserPresenter)
+            let navigationController = JRNavigationController(rootViewController: browserViewController)
+
+            self.viewControllerToShowBrowser?.present(navigationController, animated: true, completion: nil)
         }
 
         return bookAction
