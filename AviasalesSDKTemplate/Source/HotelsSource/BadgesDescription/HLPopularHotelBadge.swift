@@ -1,5 +1,6 @@
 import UIKit
 
+@objcMembers
 class HLPopularHotelBadge: NSObject {
     var name: String?
     var systemName: String?

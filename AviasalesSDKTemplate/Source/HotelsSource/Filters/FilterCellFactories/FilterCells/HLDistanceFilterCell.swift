@@ -59,7 +59,7 @@ class HLDistanceFilterCell: HLSliderFilterCell {
         super.updateConstraints()
     }
 
-    override func sliderValueChanged(_ sender: AnyObject, event: UIEvent) {
+    @objc override func sliderValueChanged(_ sender: AnyObject, event: UIEvent) {
         let value = sliderExpValue(slider.value)
         updateValueLabel(value)
 

@@ -1,5 +1,6 @@
 import Foundation
 
+@objcMembers
 @objc class SearchResult: NSObject {
     let variants: [HLResultVariant]
     let nearbyCities: [HDKCity]

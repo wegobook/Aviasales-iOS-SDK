@@ -1,6 +1,7 @@
 import UIKit
 
-@objc class VariantsCounters: NSObject {
+@objcMembers
+class VariantsCounters: NSObject {
     let hotelsCountAccordingToOptions: [String: NSNumber]
     let hotelsCountAccordingToGates: [String: NSNumber]
 

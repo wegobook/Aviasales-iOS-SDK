@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d điểm dừng";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d điểm dừng";
 
-"JR_BROWSER_TITLE" = "Mua";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Biểu lịch giá";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Biểu lịch giá %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "từ %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Giá vé trung bình";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "thẳng";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "có điểm dừng";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Rẻ nhất";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Chỉ có chuyến bay thẳng";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Không tìm được vé cho bạn?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Bạn có thể đổi ngày bay trở về.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Chọn ngày về";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Quay lại";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Chuyển tiếp";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Lỗi";
 
+"BROWSER_LOAD_ERROR" = "Đã xảy ra sự cố. Vui lòng thử lại.";
 "BROWSER_CHECK_CONNECTION" = "Vui lòng kiểm tra kết nối mạng của bạn.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Đang tải...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Đang tải...";
 "JR_CLOSE_BUTTON_TITLE" = "Đóng";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Xin lỗi, chúng tôi không thể tìm thấy chuyến bay ở những sân bay đó cho hành trình %@. Tuy nhiên, chúng tôi có thể hiển thị cho bạn những chuyến bay ở những thành phố này.";

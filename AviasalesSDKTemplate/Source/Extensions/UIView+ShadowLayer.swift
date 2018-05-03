@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIView {
+@objc extension UIView {
 
     func applyShadowLayer() {
         let cornerRadius: CGFloat = 6

@@ -4,6 +4,7 @@ import UIKit
     func locateMeMapView(_ locateMeMapView: HLLocateMeMapView, shouldShowUserLocation userLocation: CLLocation?)
 }
 
+@objcMembers
 @IBDesignable class HLLocateMeMapView: UIView, HLLocationManagerDelegate {
 
     var shouldNotifyDelegateOnLocationUpdate = false

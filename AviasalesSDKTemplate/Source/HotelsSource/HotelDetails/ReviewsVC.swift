@@ -103,7 +103,7 @@ class ReviewsVC: HLCommonVC, UITableViewDataSource, UITableViewDelegate, ReviewC
             self.applyFilter(gate: nil)
         })
 
-        let gatesPopoverItems: [PopoverItem] = gates.flatMap { gate -> PopoverItem? in
+        let gatesPopoverItems: [PopoverItem] = gates.compactMap { gate -> PopoverItem? in
             guard gate.name != nil else { return nil }
             return PopoverItem(title: titleForGate(gate: gate), selected: gate == selectedGate, action: {
                 self.applyFilter(gate: gate)

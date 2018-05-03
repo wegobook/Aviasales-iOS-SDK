@@ -15,7 +15,7 @@
 
 @property (nonatomic, assign) CGFloat currentValue;
 
-@property (nonatomic, copy) void (^filterAction)();
+@property (nonatomic, copy) void (^filterAction)(void);
 
 - (instancetype)initWithMinValue:(CGFloat)minValue maxValue:(CGFloat)maxValue currentValue:(CGFloat)currentValue;
 

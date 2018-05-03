@@ -4,6 +4,7 @@ import UIKit
     func filterApplied()
 }
 
+@objcMembers
 @IBDesignable class PriceFilterView: UIView, HLRangeSliderDelegate {
 
     @IBOutlet weak var slider: HLRangeSlider!
@@ -73,7 +74,7 @@ import UIKit
         updateRangeValueLabel(filter!)
     }
 
-    func sliderEditingDidEnd() {
+    @objc func sliderEditingDidEnd() {
         delegate?.filterApplied()
     }
 

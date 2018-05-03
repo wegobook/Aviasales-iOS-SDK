@@ -32,7 +32,7 @@ class HLNameFilterVC: ASTGroupedSearchVC, HLFilterDelegate {
 
     override func goBack() {
         if let string = privateFilter.keyString {
-            if string.characters.count > 0 {
+            if string.count > 0 {
                 HDKDefaultsSaver.addRecentSelectedNameFilter(self.privateFilter.keyString)
             }
         }
@@ -79,7 +79,7 @@ class HLNameFilterVC: ASTGroupedSearchVC, HLFilterDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
 
-        if searchText.characters.count > 0 {
+        if searchText.count > 0 {
             privateFilter.keyString = searchText
             privateFilter.filter()
         }

@@ -1,6 +1,7 @@
 import Foundation
 import HotellookSDK
 
+@objcMembers
 class RoomOptionConsts: NSObject {
     static let kBreakfastOptionKey = "breakfast"
     static let kAllInclusiveOptionKey = "allInclusive"
@@ -24,7 +25,7 @@ class RoomOptionConsts: NSObject {
     static let kHotelWifiInRoomOptionKey = "wi-fi in room"
 }
 
-extension HDKRoom {
+@objc extension HDKRoom {
 
     static let kDiscountLowCutoff = -3
     static let kDiscountHighCutoff = -75

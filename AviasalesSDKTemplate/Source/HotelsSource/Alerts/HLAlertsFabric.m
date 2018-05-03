@@ -46,7 +46,7 @@
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
-+ (void)showSearchAlertViewWithError:(NSError * _Nullable )error handler:(void (^ __nullable)())handler
++ (void)showSearchAlertViewWithError:(NSError * _Nullable )error handler:(void (^ __nullable)(UIAlertAction *action))handler
 {
     if (error.code == NSURLErrorNotConnectedToInternet) {
         [HLAlertsFabric showNoInternetConnectionAlert:handler];
@@ -75,7 +75,7 @@
     [[UIApplication sharedApplication].keyWindow.rootViewController presentViewController:alertController animated:YES completion:nil];
 }
 
-+ (void)showOutdatedResultsAlert:(void (^ __nullable)())handler
++ (void)showOutdatedResultsAlert:(void (^ __nullable)(UIAlertAction *action))handler
 {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:NSLS(@"HL_ALERT_OUTDATED_RESULTS_TITLE")
                                                                              message:NSLS(@"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION")

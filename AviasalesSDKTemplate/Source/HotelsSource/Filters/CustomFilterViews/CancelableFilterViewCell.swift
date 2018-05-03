@@ -37,7 +37,7 @@ import UIKit
 
     override class func rect(for item: StringFilterItem) -> CGRect {
         var result = CGRect(x: 0, y: 0, width: 47, height: 34)
-        if let textRectWidth = item.text?.hl_width(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 15.0)], height : 18) {
+        if let textRectWidth = item.text?.hl_width(attributes: [NSAttributedStringKey.font: UIFont.systemFont(ofSize: 15.0)], height : 18) {
             result.size.width += textRectWidth
         }
 

@@ -15,6 +15,18 @@
 		072714DE1D7980EC00545E63 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072714DD1D7980EC00545E63 /* MobileCoreServices.framework */; };
 		072714E01D7980F400545E63 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 072714DF1D7980F400545E63 /* SystemConfiguration.framework */; };
 		320A0BEC1FBF2A7600DEF6AD /* JRAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 320A0BEB1FBF2A7600DEF6AD /* JRAppDelegate.m */; };
+		321210C320654AC7006BE460 /* JRResultsFlightSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 321210B120654AC6006BE460 /* JRResultsFlightSegmentCell.m */; };
+		321210C520654AC7006BE460 /* JRResultsFlightSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321210B320654AC6006BE460 /* JRResultsFlightSegmentCell.xib */; };
+		321210C720654AC7006BE460 /* SearchResultsPriceCalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 321210B520654AC6006BE460 /* SearchResultsPriceCalendarView.swift */; };
+		321210C920654AC7006BE460 /* SearchResultsPriceCalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321210B620654AC6006BE460 /* SearchResultsPriceCalendarView.xib */; };
+		321210CB20654AC7006BE460 /* JRHotelCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321210B920654AC6006BE460 /* JRHotelCardView.xib */; };
+		321210CD20654AC7006BE460 /* JRHotelCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 321210BA20654AC6006BE460 /* JRHotelCardView.m */; };
+		321210CF20654AC7006BE460 /* JRResultsTicketPriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 321210BD20654AC6006BE460 /* JRResultsTicketPriceCell.m */; };
+		321210D120654AC7006BE460 /* JRResultsTicketPriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321210BE20654AC6006BE460 /* JRResultsTicketPriceCell.xib */; };
+		321210D320654AC7006BE460 /* JRResultsTicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 321210C020654AC6006BE460 /* JRResultsTicketCell.m */; };
+		321210D520654AC7006BE460 /* JRResultsTicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321210C220654AC6006BE460 /* JRResultsTicketCell.xib */; };
+		321210DD20654B20006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 321210DB20654B1F006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.m */; };
+		32127ADB20331FC800F1D53D /* InfoScreenIconImageViewFiveTimesTapHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32127ADA20331FC800F1D53D /* InfoScreenIconImageViewFiveTimesTapHandler.swift */; };
 		321849EB1FC5E1BF001CCE92 /* AVSLaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 321849EA1FC5E1BF001CCE92 /* AVSLaunchScreen.xib */; };
 		32245A3A1E76AEF1008FF7EF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 32245A381E76AEF1008FF7EF /* main.m */; };
 		322959C71FE18390006B25C0 /* JRDatePickerStateObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 322959B31FE18390006B25C0 /* JRDatePickerStateObject.m */; };
@@ -26,6 +38,16 @@
 		322959D31FE18390006B25C0 /* JRDatePickerMonthHeaderReusableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 322959C11FE18390006B25C0 /* JRDatePickerMonthHeaderReusableView.m */; };
 		322959D51FE18390006B25C0 /* JRDatePickerMonthHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322959C21FE18390006B25C0 /* JRDatePickerMonthHeaderReusableView.xib */; };
 		322959D71FE18390006B25C0 /* JRDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322959C61FE18390006B25C0 /* JRDatePickerDayCell.m */; };
+		322C0934206A8C970014D584 /* GateBrowserViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322C0933206A8C970014D584 /* GateBrowserViewPresenter.swift */; };
+		32460B492035C79600F937F1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32460B312035C79400F937F1 /* StringUtils.swift */; };
+		32460B4B2035C79600F937F1 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B332035C79400F937F1 /* StringUtils.m */; };
+		32460B4D2035C79600F937F1 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B352035C79400F937F1 /* DateUtil.m */; };
+		32460B4F2035C79600F937F1 /* JRSearchInfoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B392035C79400F937F1 /* JRSearchInfoUtils.m */; };
+		32460B512035C79600F937F1 /* JRTicketUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B3B2035C79400F937F1 /* JRTicketUtils.m */; };
+		32460B552035C79600F937F1 /* JRPriceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B422035C79400F937F1 /* JRPriceUtils.m */; };
+		32460B572035C79600F937F1 /* JRStringsWidthComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B452035C79400F937F1 /* JRStringsWidthComputer.m */; };
+		32460B592035C79600F937F1 /* JRSearchedAirportsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B482035C79400F937F1 /* JRSearchedAirportsManager.m */; };
+		32479300206A9A73000DEE5F /* BookBrowserViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 324792FF206A9A73000DEE5F /* BookBrowserViewPresenter.swift */; };
 		32499E671FC5DF0D005EEA03 /* HotelsLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32499A021FC5DF0C005EEA03 /* HotelsLocalizable.strings */; };
 		32499E691FC5DF0D005EEA03 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32499A041FC5DF0C005EEA03 /* InfoPlist.strings */; };
 		32499E6B1FC5DF0D005EEA03 /* AviasalesTemplateLocalizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 32499A061FC5DF0C005EEA03 /* AviasalesTemplateLocalizable.strings */; };
@@ -87,18 +109,6 @@
 		32499EE51FC5DF0D005EEA03 /* ASTWaitingScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499AA91FC5DF0C005EEA03 /* ASTWaitingScreenPresenter.swift */; };
 		32499EE71FC5DF0D005EEA03 /* ASTWaitingScreenPlaneSceneView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499AAC1FC5DF0C005EEA03 /* ASTWaitingScreenPlaneSceneView.swift */; };
 		32499EE91FC5DF0D005EEA03 /* ASTWaitingScreenPlaneSceneView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499AAD1FC5DF0C005EEA03 /* ASTWaitingScreenPlaneSceneView.xib */; };
-		32499EEB1FC5DF0D005EEA03 /* JRSearchResultsFlightSegmentCellLayoutParameters.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499AB21FC5DF0C005EEA03 /* JRSearchResultsFlightSegmentCellLayoutParameters.m */; };
-		32499EED1FC5DF0D005EEA03 /* JRResultsTicketCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499AB31FC5DF0C005EEA03 /* JRResultsTicketCell.m */; };
-		32499EEF1FC5DF0D005EEA03 /* JRResultsFlightSegmentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499AB41FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.m */; };
-		32499EF11FC5DF0D005EEA03 /* JRResultsTicketPriceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499AB71FC5DF0C005EEA03 /* JRResultsTicketPriceCell.m */; };
-		32499EF31FC5DF0D005EEA03 /* JRResultsFlightSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499AB91FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.xib */; };
-		32499EF51FC5DF0D005EEA03 /* JRResultsTicketPriceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499ABA1FC5DF0C005EEA03 /* JRResultsTicketPriceCell.xib */; };
-		32499EF71FC5DF0D005EEA03 /* JRResultsTicketCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499ABB1FC5DF0C005EEA03 /* JRResultsTicketCell.xib */; };
-		32499EF91FC5DF0D005EEA03 /* ASTSearchResultsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499ABC1FC5DF0C005EEA03 /* ASTSearchResultsSceneViewController.swift */; };
-		32499EFB1FC5DF0D005EEA03 /* JRSearchResultsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499ABD1FC5DF0C005EEA03 /* JRSearchResultsList.m */; };
-		32499EFD1FC5DF0D005EEA03 /* JRSearchResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499ABE1FC5DF0C005EEA03 /* JRSearchResultsVC.m */; };
-		32499EFF1FC5DF0D005EEA03 /* ASTSearchResultsSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499ABF1FC5DF0C005EEA03 /* ASTSearchResultsSceneViewController.xib */; };
-		32499F011FC5DF0D005EEA03 /* JRSearchResultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499AC01FC5DF0C005EEA03 /* JRSearchResultsVC.xib */; };
 		32499F151FC5DF0D005EEA03 /* ASTSearchFormSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499AD41FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.xib */; };
 		32499F171FC5DF0D005EEA03 /* ASTContainerSearchFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499AD51FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.m */; };
 		32499F191FC5DF0D005EEA03 /* ASTSearchFormSceneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499AD71FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.m */; };
@@ -135,9 +145,6 @@
 		32499F571FC5DF0D005EEA03 /* ASTPassengersPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499B1D1FC5DF0C005EEA03 /* ASTPassengersPickerTableViewCell.swift */; };
 		32499F591FC5DF0D005EEA03 /* ASTPassengersPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B1E1FC5DF0C005EEA03 /* ASTPassengersPickerViewController.xib */; };
 		32499F5B1FC5DF0D005EEA03 /* ASTPassengersPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499B1F1FC5DF0C005EEA03 /* ASTPassengersPickerViewModel.swift */; };
-		32499F5D1FC5DF0D005EEA03 /* ASTGateBrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B211FC5DF0C005EEA03 /* ASTGateBrowserViewController.xib */; };
-		32499F5F1FC5DF0D005EEA03 /* ASTGateBrowserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499B221FC5DF0C005EEA03 /* ASTGateBrowserPresenter.swift */; };
-		32499F611FC5DF0D005EEA03 /* ASTGateBrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499B231FC5DF0C005EEA03 /* ASTGateBrowserViewController.swift */; };
 		32499F631FC5DF0D005EEA03 /* JRFilterTravelSegmentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B261FC5DF0C005EEA03 /* JRFilterTravelSegmentCell.xib */; };
 		32499F651FC5DF0D005EEA03 /* JRFilterCellWithOneThumbSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B271FC5DF0C005EEA03 /* JRFilterCellWithOneThumbSlider.m */; };
 		32499F671FC5DF0D005EEA03 /* JRFilterCellWithTwoThumbsSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B281FC5DF0C005EEA03 /* JRFilterCellWithTwoThumbsSlider.m */; };
@@ -178,14 +185,6 @@
 		32499FAD1FC5DF0D005EEA03 /* ASAirportPickerDataCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499B681FC5DF0C005EEA03 /* ASAirportPickerDataCellModel.swift */; };
 		32499FAF1FC5DF0D005EEA03 /* ASAirportPickerDataCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B691FC5DF0C005EEA03 /* ASAirportPickerDataCell.xib */; };
 		32499FB11FC5DF0D005EEA03 /* JRTicketVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B6B1FC5DF0C005EEA03 /* JRTicketVC.m */; };
-		32499FB31FC5DF0D005EEA03 /* JRInfoPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B6C1FC5DF0C005EEA03 /* JRInfoPanelView.xib */; };
-		32499FB51FC5DF0D005EEA03 /* JRFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B6E1FC5DF0C005EEA03 /* JRFlightCell.xib */; };
-		32499FB71FC5DF0D005EEA03 /* JRTransferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B721FC5DF0C005EEA03 /* JRTransferCell.xib */; };
-		32499FB91FC5DF0D005EEA03 /* JRTransferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B741FC5DF0C005EEA03 /* JRTransferCell.m */; };
-		32499FBB1FC5DF0D005EEA03 /* JRFlightsSegmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B751FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.xib */; };
-		32499FBD1FC5DF0D005EEA03 /* JRFlightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B761FC5DF0C005EEA03 /* JRFlightCell.m */; };
-		32499FBF1FC5DF0D005EEA03 /* JRFlightsSegmentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B771FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.m */; };
-		32499FC11FC5DF0D005EEA03 /* JRInfoPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B781FC5DF0C005EEA03 /* JRInfoPanelView.m */; };
 		32499FC31FC5DF0D005EEA03 /* JRTicketVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B791FC5DF0C005EEA03 /* JRTicketVC.xib */; };
 		32499FC51FC5DF0D005EEA03 /* FilterSelectionVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499B7E1FC5DF0C005EEA03 /* FilterSelectionVC.xib */; };
 		32499FC71FC5DF0D005EEA03 /* HLDistanceCalculator.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499B801FC5DF0C005EEA03 /* HLDistanceCalculator.m */; };
@@ -301,7 +300,6 @@
 		3249A0A31FC5DF0D005EEA03 /* HLIconBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499C071FC5DF0C005EEA03 /* HLIconBadge.swift */; };
 		3249A0A51FC5DF0D005EEA03 /* HLUrlShortener.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499C091FC5DF0C005EEA03 /* HLUrlShortener.m */; };
 		3249A0A71FC5DF0D005EEA03 /* SharingURLActivityItemProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499C0B1FC5DF0C005EEA03 /* SharingURLActivityItemProvider.swift */; };
-		3249A0A91FC5DF0D005EEA03 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499C0D1FC5DF0C005EEA03 /* UIColor+Hex.m */; };
 		3249A0AB1FC5DF0D005EEA03 /* ServiceLocator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499C0F1FC5DF0C005EEA03 /* ServiceLocator.swift */; };
 		3249A0AD1FC5DF0D005EEA03 /* NSObject+Notifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499C101FC5DF0C005EEA03 /* NSObject+Notifications.m */; };
 		3249A0AF1FC5DF0D005EEA03 /* HLDistanceSortCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499C121FC5DF0C005EEA03 /* HLDistanceSortCell.xib */; };
@@ -578,12 +576,6 @@
 		3249A2CD1FC5DF0E005EEA03 /* PagesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499D7E1FC5DF0C005EEA03 /* PagesView.swift */; };
 		3249A2CF1FC5DF0E005EEA03 /* PopoverItemPickerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499D7F1FC5DF0C005EEA03 /* PopoverItemPickerCell.swift */; };
 		3249A2D11FC5DF0E005EEA03 /* HLSpinnerProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499D801FC5DF0C005EEA03 /* HLSpinnerProgressView.xib */; };
-		3249A2D31FC5DF0E005EEA03 /* HLWebBrowser~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499D821FC5DF0C005EEA03 /* HLWebBrowser~ipad.xib */; };
-		3249A2D51FC5DF0E005EEA03 /* HLWebBrowser~iphone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499D831FC5DF0C005EEA03 /* HLWebBrowser~iphone.xib */; };
-		3249A2D71FC5DF0E005EEA03 /* BrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499D851FC5DF0C005EEA03 /* BrowserController.swift */; };
-		3249A2D91FC5DF0E005EEA03 /* BookBrowserController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499D861FC5DF0C005EEA03 /* BookBrowserController.swift */; };
-		3249A2DB1FC5DF0E005EEA03 /* HLWebBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499D871FC5DF0C005EEA03 /* HLWebBrowser.m */; };
-		3249A2DD1FC5DF0E005EEA03 /* BookBrowserController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499D881FC5DF0C005EEA03 /* BookBrowserController.xib */; };
 		3249A2DF1FC5DF0E005EEA03 /* HLIphoneMapVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499D8C1FC5DF0C005EEA03 /* HLIphoneMapVC.xib */; };
 		3249A2E11FC5DF0E005EEA03 /* RouteHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499D8D1FC5DF0C005EEA03 /* RouteHelper.swift */; };
 		3249A2E31FC5DF0E005EEA03 /* SingleHotelMapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499D8E1FC5DF0C005EEA03 /* SingleHotelMapVC.swift */; };
@@ -645,14 +637,6 @@
 		3249A3531FC5DF0F005EEA03 /* HLGroupedTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499DEB1FC5DF0C005EEA03 /* HLGroupedTableHeaderView.xib */; };
 		3249A3551FC5DF0F005EEA03 /* HLSearchLocationPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499DED1FC5DF0C005EEA03 /* HLSearchLocationPoints.swift */; };
 		3249A3571FC5DF0F005EEA03 /* HLVariantsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499DEE1FC5DF0C005EEA03 /* HLVariantsManager.m */; };
-		3249A3591FC5DF0F005EEA03 /* DateUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499DF31FC5DF0C005EEA03 /* DateUtil.m */; };
-		3249A35B1FC5DF0F005EEA03 /* JRTicketUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499DF51FC5DF0C005EEA03 /* JRTicketUtils.m */; };
-		3249A35D1FC5DF0F005EEA03 /* JRSearchInfoUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499DF81FC5DF0C005EEA03 /* JRSearchInfoUtils.m */; };
-		3249A35F1FC5DF0F005EEA03 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499DF91FC5DF0C005EEA03 /* StringUtils.swift */; };
-		3249A3611FC5DF0F005EEA03 /* JRSearchedAirportsManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499DFD1FC5DF0C005EEA03 /* JRSearchedAirportsManager.m */; };
-		3249A3631FC5DF0F005EEA03 /* JRStringsWidthComputer.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499DFE1FC5DF0C005EEA03 /* JRStringsWidthComputer.m */; };
-		3249A3651FC5DF0F005EEA03 /* JRPriceUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E001FC5DF0C005EEA03 /* JRPriceUtils.m */; };
-		3249A3671FC5DF0F005EEA03 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E011FC5DF0C005EEA03 /* StringUtils.m */; };
 		3249A3691FC5DF0F005EEA03 /* JRSDKSearchInfoBuilder+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E041FC5DF0C005EEA03 /* JRSDKSearchInfoBuilder+Config.swift */; };
 		3249A36B1FC5DF0F005EEA03 /* UITableViewCell+Identifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E051FC5DF0C005EEA03 /* UITableViewCell+Identifier.swift */; };
 		3249A36D1FC5DF0F005EEA03 /* UIView+ShadowLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E061FC5DF0C005EEA03 /* UIView+ShadowLayer.swift */; };
@@ -660,11 +644,8 @@
 		3249A3711FC5DF0F005EEA03 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E081FC5DF0C005EEA03 /* UIViewController+Navigation.swift */; };
 		3249A3731FC5DF0F005EEA03 /* HLDefaultCitiesFactory+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E091FC5DF0C005EEA03 /* HLDefaultCitiesFactory+Config.swift */; };
 		3249A3751FC5DF0F005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E0A1FC5DF0C005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift */; };
-		3249A3791FC5DF0F005EEA03 /* JRAdvertisementTableManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E0D1FC5DF0C005EEA03 /* JRAdvertisementTableManager.m */; };
 		3249A37B1FC5DF0F005EEA03 /* JRNewsFeedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499E111FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.xib */; };
 		3249A37D1FC5DF0F005EEA03 /* JRNewsFeedNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E131FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.m */; };
-		3249A37F1FC5DF0F005EEA03 /* JRHotelCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499E141FC5DF0C005EEA03 /* JRHotelCardView.xib */; };
-		3249A3811FC5DF0F005EEA03 /* JRHotelCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E161FC5DF0D005EEA03 /* JRHotelCardView.m */; };
 		3249A3831FC5DF0F005EEA03 /* JRAdvertisementManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E171FC5DF0D005EEA03 /* JRAdvertisementManager.m */; };
 		3249A3851FC5DF0F005EEA03 /* JRAviasalesAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E191FC5DF0D005EEA03 /* JRAviasalesAdLoader.m */; };
 		3249A3871FC5DF0F005EEA03 /* JRNativeAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E1D1FC5DF0D005EEA03 /* JRNativeAdLoader.m */; };
@@ -702,8 +683,56 @@
 		3249A3C71FC5DF0F005EEA03 /* NSArray+HLContentComparison.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E5F1FC5DF0D005EEA03 /* NSArray+HLContentComparison.m */; };
 		3249A3C91FC5DF0F005EEA03 /* UIImage+JRUIImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E621FC5DF0D005EEA03 /* UIImage+JRUIImage.m */; };
 		3249A3CB1FC5DF0F005EEA03 /* NSLayoutConstraint+JRConstraintMake.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E661FC5DF0D005EEA03 /* NSLayoutConstraint+JRConstraintMake.m */; };
+		325AB02920626ED1008AB6BE /* JRInfoPanelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AB01920626ED1008AB6BE /* JRInfoPanelView.xib */; };
+		325AB02B20626ED1008AB6BE /* JRInfoPanelView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AB01A20626ED1008AB6BE /* JRInfoPanelView.m */; };
+		325AB02D20626ED1008AB6BE /* JRTransferCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AB01E20626ED1008AB6BE /* JRTransferCell.xib */; };
+		325AB02F20626ED1008AB6BE /* JRTransferCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AB01F20626ED1008AB6BE /* JRTransferCell.m */; };
+		325AB03120626ED1008AB6BE /* JRFlightCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AB02120626ED1008AB6BE /* JRFlightCell.xib */; };
+		325AB03320626ED1008AB6BE /* JRFlightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AB02320626ED1008AB6BE /* JRFlightCell.m */; };
+		325AB03520626ED1008AB6BE /* JRFlightsSegmentHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 325AB02720626ED1008AB6BE /* JRFlightsSegmentHeaderView.xib */; };
+		325AB03720626ED1008AB6BE /* JRFlightsSegmentHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 325AB02820626ED1008AB6BE /* JRFlightsSegmentHeaderView.m */; };
 		326703F41FC70F10003DB047 /* AppIcon.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 326703F31FC70F10003DB047 /* AppIcon.xcassets */; };
+		3280AF60206CEF85002EEA96 /* BrowserViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3280AF5F206CEF85002EEA96 /* BrowserViewPresenter.swift */; };
+		3287A5F82059BC2100A9BF8B /* PriceCalendarPriceLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5DE2059BC2100A9BF8B /* PriceCalendarPriceLevelView.swift */; };
+		3287A5FA2059BC2100A9BF8B /* PriceCalendarChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5DF2059BC2100A9BF8B /* PriceCalendarChartView.swift */; };
+		3287A5FC2059BC2100A9BF8B /* PriceCalendarChartBarCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5E02059BC2100A9BF8B /* PriceCalendarChartBarCell.xib */; };
+		3287A5FE2059BC2100A9BF8B /* PriceCalendarChartBarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5E12059BC2100A9BF8B /* PriceCalendarChartBarCell.swift */; };
+		3287A6002059BC2100A9BF8B /* PriceCalendarChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5E22059BC2100A9BF8B /* PriceCalendarChartView.xib */; };
+		3287A6022059BC2100A9BF8B /* PriceCalendarPriceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5E32059BC2100A9BF8B /* PriceCalendarPriceView.swift */; };
+		3287A6042059BC2100A9BF8B /* PriceCalendarPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5E42059BC2100A9BF8B /* PriceCalendarPresenter.swift */; };
+		3287A6062059BC2100A9BF8B /* PriceCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5E52059BC2100A9BF8B /* PriceCalendarViewController.swift */; };
+		3287A6082059BC2100A9BF8B /* PriceCalendarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5E62059BC2100A9BF8B /* PriceCalendarViewController.xib */; };
+		3287A60A2059BC2100A9BF8B /* PriceCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5E72059BC2100A9BF8B /* PriceCalendarManager.swift */; };
+		3287A60C2059BC2100A9BF8B /* PriceCalendarChartHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5EA2059BC2100A9BF8B /* PriceCalendarChartHeader.xib */; };
+		3287A60E2059BC2100A9BF8B /* PriceCalendarChartHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5EB2059BC2100A9BF8B /* PriceCalendarChartHeader.swift */; };
+		3287A6102059BC2100A9BF8B /* PriceCalendarDirectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5ED2059BC2100A9BF8B /* PriceCalendarDirectCell.xib */; };
+		3287A6122059BC2100A9BF8B /* PriceCalendarDirectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5EE2059BC2100A9BF8B /* PriceCalendarDirectCell.swift */; };
+		3287A6142059BC2100A9BF8B /* PriceCalendarAverageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5F02059BC2100A9BF8B /* PriceCalendarAverageCell.xib */; };
+		3287A6162059BC2100A9BF8B /* PriceCalendarAverageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5F12059BC2100A9BF8B /* PriceCalendarAverageCell.swift */; };
+		3287A6182059BC2100A9BF8B /* PriceCalendarCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5F32059BC2100A9BF8B /* PriceCalendarCardCell.swift */; };
+		3287A61A2059BC2100A9BF8B /* PriceCalendarCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5F42059BC2100A9BF8B /* PriceCalendarCardCell.xib */; };
+		3287A61C2059BC2100A9BF8B /* PriceCalendarResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A5F62059BC2100A9BF8B /* PriceCalendarResultCell.swift */; };
+		3287A61E2059BC2100A9BF8B /* PriceCalendarResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A5F72059BC2100A9BF8B /* PriceCalendarResultCell.xib */; };
+		3287A6232059BC5C00A9BF8B /* ActionCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3287A6212059BC5C00A9BF8B /* ActionCardView.swift */; };
+		3287A6252059BC5C00A9BF8B /* ActionCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3287A6222059BC5C00A9BF8B /* ActionCardView.xib */; };
 		328BA9651FC460C00026EA31 /* default_config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 328BA9641FC460C00026EA31 /* default_config.plist */; };
+		328DA65A2069079E00180732 /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 328DA6582069079E00180732 /* UIColor+Hex.m */; };
+		32A2BF4B20247C6900B9EC1B /* DateFormatter+Format.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A2BF4A20247C6900B9EC1B /* DateFormatter+Format.swift */; };
+		32C5F079203ECDB300DE4AFD /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C5F078203ECDB000DE4AFD /* LoadingView.swift */; };
+		32C5F07C203ECDC100DE4AFD /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C5F07B203ECDC100DE4AFD /* LoadingView.xib */; };
+		32C61D852059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61D692059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.swift */; };
+		32C61D872059BE1D00CF4AEC /* SearchResultsCardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61D6A2059BE1D00CF4AEC /* SearchResultsCardList.swift */; };
+		32C61D892059BE1D00CF4AEC /* JRSearchResultsList.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C61D6B2059BE1D00CF4AEC /* JRSearchResultsList.m */; };
+		32C61D8B2059BE1D00CF4AEC /* SearchResultsCardItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61D6C2059BE1D00CF4AEC /* SearchResultsCardItem.swift */; };
+		32C61D8D2059BE1D00CF4AEC /* JRSearchResultsVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C61D6D2059BE1D00CF4AEC /* JRSearchResultsVC.m */; };
+		32C61DA52059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C61D822059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.xib */; };
+		32C61DA72059BE1D00CF4AEC /* JRSearchResultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C61D832059BE1D00CF4AEC /* JRSearchResultsVC.xib */; };
+		32C61DAA2059BE5200CF4AEC /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61DA92059BE5100CF4AEC /* AppearanceSettings.swift */; };
+		32C61DAD2059BE7700CF4AEC /* NumberUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61DAC2059BE7700CF4AEC /* NumberUtils.swift */; };
+		32C61DB02059BEA400CF4AEC /* SearchInfoBuilderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61DAF2059BEA400CF4AEC /* SearchInfoBuilderStorage.swift */; };
+		32F697BD206BED3700528741 /* WKWebView+Scripts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32F697BC206BED3700528741 /* WKWebView+Scripts.swift */; };
+		32FA17AF20694DA200D49EA0 /* BrowserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32FA17AD20694DA200D49EA0 /* BrowserViewController.xib */; };
+		32FA17B120694DA200D49EA0 /* BrowserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FA17AE20694DA200D49EA0 /* BrowserViewController.swift */; };
 		6C109F8147E325CC81D10BA3 /* Pods_AviasalesSDKTemplate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DBA878007CDA2EA98FC18F1 /* Pods_AviasalesSDKTemplate.framework */; };
 		C60EC83B17E848DA00C5D52E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83A17E848DA00C5D52E /* Foundation.framework */; };
 		C60EC83D17E848DA00C5D52E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */; };
@@ -712,6 +741,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03F9C653B39BD530042EC9DB /* Pods-WhiteLabel.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteLabel.release.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteLabel/Pods-WhiteLabel.release.xcconfig"; sourceTree = "<group>"; };
 		072714D31D79801E00545E63 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		072714D51D79804C00545E63 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
 		072714D71D79808A00545E63 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
@@ -722,6 +752,23 @@
 		07BB679B1D462B7800D31F24 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		320A0BEA1FBF2A7500DEF6AD /* JRAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAppDelegate.h; sourceTree = "<group>"; };
 		320A0BEB1FBF2A7600DEF6AD /* JRAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAppDelegate.m; sourceTree = "<group>"; };
+		321210B120654AC6006BE460 /* JRResultsFlightSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRResultsFlightSegmentCell.m; sourceTree = "<group>"; };
+		321210B220654AC6006BE460 /* JRResultsFlightSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRResultsFlightSegmentCell.h; sourceTree = "<group>"; };
+		321210B320654AC6006BE460 /* JRResultsFlightSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRResultsFlightSegmentCell.xib; sourceTree = "<group>"; };
+		321210B520654AC6006BE460 /* SearchResultsPriceCalendarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsPriceCalendarView.swift; sourceTree = "<group>"; };
+		321210B620654AC6006BE460 /* SearchResultsPriceCalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SearchResultsPriceCalendarView.xib; sourceTree = "<group>"; };
+		321210B820654AC6006BE460 /* JRHotelCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRHotelCardView.h; sourceTree = "<group>"; };
+		321210B920654AC6006BE460 /* JRHotelCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRHotelCardView.xib; sourceTree = "<group>"; };
+		321210BA20654AC6006BE460 /* JRHotelCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRHotelCardView.m; sourceTree = "<group>"; };
+		321210BC20654AC6006BE460 /* JRResultsTicketPriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRResultsTicketPriceCell.h; sourceTree = "<group>"; };
+		321210BD20654AC6006BE460 /* JRResultsTicketPriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRResultsTicketPriceCell.m; sourceTree = "<group>"; };
+		321210BE20654AC6006BE460 /* JRResultsTicketPriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRResultsTicketPriceCell.xib; sourceTree = "<group>"; };
+		321210C020654AC6006BE460 /* JRResultsTicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRResultsTicketCell.m; sourceTree = "<group>"; };
+		321210C120654AC6006BE460 /* JRResultsTicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRResultsTicketCell.h; sourceTree = "<group>"; };
+		321210C220654AC6006BE460 /* JRResultsTicketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRResultsTicketCell.xib; sourceTree = "<group>"; };
+		321210DB20654B1F006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchResultsFlightSegmentCellLayoutParameters.m; sourceTree = "<group>"; };
+		321210DC20654B1F006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchResultsFlightSegmentCellLayoutParameters.h; sourceTree = "<group>"; };
+		32127ADA20331FC800F1D53D /* InfoScreenIconImageViewFiveTimesTapHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoScreenIconImageViewFiveTimesTapHandler.swift; sourceTree = "<group>"; };
 		321849EA1FC5E1BF001CCE92 /* AVSLaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AVSLaunchScreen.xib; sourceTree = "<group>"; };
 		32245A371E76AEF1008FF7EF /* AviasalesSDKTemplate-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplate-Prefix.pch"; sourceTree = SOURCE_ROOT; };
 		32245A381E76AEF1008FF7EF /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = SOURCE_ROOT; };
@@ -741,6 +788,23 @@
 		322959C31FE18390006B25C0 /* JRDatePickerMonthHeaderReusableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDatePickerMonthHeaderReusableView.h; sourceTree = "<group>"; };
 		322959C51FE18390006B25C0 /* JRDatePickerDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDatePickerDayCell.h; sourceTree = "<group>"; };
 		322959C61FE18390006B25C0 /* JRDatePickerDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDatePickerDayCell.m; sourceTree = "<group>"; };
+		322C0933206A8C970014D584 /* GateBrowserViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GateBrowserViewPresenter.swift; sourceTree = "<group>"; };
+		32460B312035C79400F937F1 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
+		32460B322035C79400F937F1 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		32460B332035C79400F937F1 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
+		32460B352035C79400F937F1 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
+		32460B362035C79400F937F1 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
+		32460B382035C79400F937F1 /* JRSearchInfoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchInfoUtils.h; sourceTree = "<group>"; };
+		32460B392035C79400F937F1 /* JRSearchInfoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchInfoUtils.m; sourceTree = "<group>"; };
+		32460B3B2035C79400F937F1 /* JRTicketUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTicketUtils.m; sourceTree = "<group>"; };
+		32460B3C2035C79400F937F1 /* JRTicketUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTicketUtils.h; sourceTree = "<group>"; };
+		32460B412035C79400F937F1 /* JRPriceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPriceUtils.h; sourceTree = "<group>"; };
+		32460B422035C79400F937F1 /* JRPriceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPriceUtils.m; sourceTree = "<group>"; };
+		32460B442035C79400F937F1 /* JRStringsWidthComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRStringsWidthComputer.h; sourceTree = "<group>"; };
+		32460B452035C79400F937F1 /* JRStringsWidthComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRStringsWidthComputer.m; sourceTree = "<group>"; };
+		32460B472035C79400F937F1 /* JRSearchedAirportsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchedAirportsManager.h; sourceTree = "<group>"; };
+		32460B482035C79400F937F1 /* JRSearchedAirportsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchedAirportsManager.m; sourceTree = "<group>"; };
+		324792FF206A9A73000DEE5F /* BookBrowserViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookBrowserViewPresenter.swift; sourceTree = "<group>"; };
 		32499A031FC5DF0C005EEA03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/HotelsLocalizable.strings; sourceTree = "<group>"; };
 		32499A051FC5DF0C005EEA03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		32499A071FC5DF0C005EEA03 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
@@ -878,24 +942,6 @@
 		32499AA91FC5DF0C005EEA03 /* ASTWaitingScreenPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTWaitingScreenPresenter.swift; sourceTree = "<group>"; };
 		32499AAC1FC5DF0C005EEA03 /* ASTWaitingScreenPlaneSceneView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTWaitingScreenPlaneSceneView.swift; sourceTree = "<group>"; };
 		32499AAD1FC5DF0C005EEA03 /* ASTWaitingScreenPlaneSceneView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTWaitingScreenPlaneSceneView.xib; sourceTree = "<group>"; };
-		32499AAF1FC5DF0C005EEA03 /* JRSearchResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchResultsVC.h; sourceTree = "<group>"; };
-		32499AB11FC5DF0C005EEA03 /* JRResultsTicketPriceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRResultsTicketPriceCell.h; sourceTree = "<group>"; };
-		32499AB21FC5DF0C005EEA03 /* JRSearchResultsFlightSegmentCellLayoutParameters.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchResultsFlightSegmentCellLayoutParameters.m; sourceTree = "<group>"; };
-		32499AB31FC5DF0C005EEA03 /* JRResultsTicketCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRResultsTicketCell.m; sourceTree = "<group>"; };
-		32499AB41FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRResultsFlightSegmentCell.m; sourceTree = "<group>"; };
-		32499AB51FC5DF0C005EEA03 /* JRResultsTicketCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRResultsTicketCell.h; sourceTree = "<group>"; };
-		32499AB61FC5DF0C005EEA03 /* JRSearchResultsFlightSegmentCellLayoutParameters.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchResultsFlightSegmentCellLayoutParameters.h; sourceTree = "<group>"; };
-		32499AB71FC5DF0C005EEA03 /* JRResultsTicketPriceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRResultsTicketPriceCell.m; sourceTree = "<group>"; };
-		32499AB81FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRResultsFlightSegmentCell.h; sourceTree = "<group>"; };
-		32499AB91FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRResultsFlightSegmentCell.xib; sourceTree = "<group>"; };
-		32499ABA1FC5DF0C005EEA03 /* JRResultsTicketPriceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRResultsTicketPriceCell.xib; sourceTree = "<group>"; };
-		32499ABB1FC5DF0C005EEA03 /* JRResultsTicketCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRResultsTicketCell.xib; sourceTree = "<group>"; };
-		32499ABC1FC5DF0C005EEA03 /* ASTSearchResultsSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTSearchResultsSceneViewController.swift; sourceTree = "<group>"; };
-		32499ABD1FC5DF0C005EEA03 /* JRSearchResultsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchResultsList.m; sourceTree = "<group>"; };
-		32499ABE1FC5DF0C005EEA03 /* JRSearchResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchResultsVC.m; sourceTree = "<group>"; };
-		32499ABF1FC5DF0C005EEA03 /* ASTSearchResultsSceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchResultsSceneViewController.xib; sourceTree = "<group>"; };
-		32499AC01FC5DF0C005EEA03 /* JRSearchResultsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRSearchResultsVC.xib; sourceTree = "<group>"; };
-		32499AC11FC5DF0C005EEA03 /* JRSearchResultsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchResultsList.h; sourceTree = "<group>"; };
 		32499AD41FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchFormSceneViewController.xib; sourceTree = "<group>"; };
 		32499AD51FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASTContainerSearchFormViewController.m; sourceTree = "<group>"; };
 		32499AD61FC5DF0C005EEA03 /* ASTContainerSearchFormChildViewControllerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASTContainerSearchFormChildViewControllerProtocol.h; sourceTree = "<group>"; };
@@ -951,9 +997,6 @@
 		32499B1D1FC5DF0C005EEA03 /* ASTPassengersPickerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTPassengersPickerTableViewCell.swift; sourceTree = "<group>"; };
 		32499B1E1FC5DF0C005EEA03 /* ASTPassengersPickerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTPassengersPickerViewController.xib; sourceTree = "<group>"; };
 		32499B1F1FC5DF0C005EEA03 /* ASTPassengersPickerViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTPassengersPickerViewModel.swift; sourceTree = "<group>"; };
-		32499B211FC5DF0C005EEA03 /* ASTGateBrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTGateBrowserViewController.xib; sourceTree = "<group>"; };
-		32499B221FC5DF0C005EEA03 /* ASTGateBrowserPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTGateBrowserPresenter.swift; sourceTree = "<group>"; };
-		32499B231FC5DF0C005EEA03 /* ASTGateBrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTGateBrowserViewController.swift; sourceTree = "<group>"; };
 		32499B261FC5DF0C005EEA03 /* JRFilterTravelSegmentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRFilterTravelSegmentCell.xib; sourceTree = "<group>"; };
 		32499B271FC5DF0C005EEA03 /* JRFilterCellWithOneThumbSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFilterCellWithOneThumbSlider.m; sourceTree = "<group>"; };
 		32499B281FC5DF0C005EEA03 /* JRFilterCellWithTwoThumbsSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFilterCellWithTwoThumbsSlider.m; sourceTree = "<group>"; };
@@ -1015,21 +1058,8 @@
 		32499B681FC5DF0C005EEA03 /* ASAirportPickerDataCellModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASAirportPickerDataCellModel.swift; sourceTree = "<group>"; };
 		32499B691FC5DF0C005EEA03 /* ASAirportPickerDataCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASAirportPickerDataCell.xib; sourceTree = "<group>"; };
 		32499B6B1FC5DF0C005EEA03 /* JRTicketVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTicketVC.m; sourceTree = "<group>"; };
-		32499B6C1FC5DF0C005EEA03 /* JRInfoPanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRInfoPanelView.xib; sourceTree = "<group>"; };
-		32499B6E1FC5DF0C005EEA03 /* JRFlightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRFlightCell.xib; sourceTree = "<group>"; };
-		32499B6F1FC5DF0C005EEA03 /* JRTransferCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTransferCell.h; sourceTree = "<group>"; };
-		32499B701FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFlightsSegmentHeaderView.h; sourceTree = "<group>"; };
-		32499B711FC5DF0C005EEA03 /* JRFlightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFlightCell.h; sourceTree = "<group>"; };
-		32499B721FC5DF0C005EEA03 /* JRTransferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRTransferCell.xib; sourceTree = "<group>"; };
-		32499B731FC5DF0C005EEA03 /* JRTicketCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTicketCellProtocol.h; sourceTree = "<group>"; };
-		32499B741FC5DF0C005EEA03 /* JRTransferCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTransferCell.m; sourceTree = "<group>"; };
-		32499B751FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRFlightsSegmentHeaderView.xib; sourceTree = "<group>"; };
-		32499B761FC5DF0C005EEA03 /* JRFlightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFlightCell.m; sourceTree = "<group>"; };
-		32499B771FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFlightsSegmentHeaderView.m; sourceTree = "<group>"; };
-		32499B781FC5DF0C005EEA03 /* JRInfoPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRInfoPanelView.m; sourceTree = "<group>"; };
 		32499B791FC5DF0C005EEA03 /* JRTicketVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRTicketVC.xib; sourceTree = "<group>"; };
 		32499B7A1FC5DF0C005EEA03 /* JRTicketVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTicketVC.h; sourceTree = "<group>"; };
-		32499B7B1FC5DF0C005EEA03 /* JRInfoPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRInfoPanelView.h; sourceTree = "<group>"; };
 		32499B7E1FC5DF0C005EEA03 /* FilterSelectionVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FilterSelectionVC.xib; sourceTree = "<group>"; };
 		32499B7F1FC5DF0C005EEA03 /* HLFilteringOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLFilteringOperation.h; sourceTree = "<group>"; };
 		32499B801FC5DF0C005EEA03 /* HLDistanceCalculator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLDistanceCalculator.m; sourceTree = "<group>"; };
@@ -1155,8 +1185,6 @@
 		32499C091FC5DF0C005EEA03 /* HLUrlShortener.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLUrlShortener.m; sourceTree = "<group>"; };
 		32499C0A1FC5DF0C005EEA03 /* HLUrlShortener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLUrlShortener.h; sourceTree = "<group>"; };
 		32499C0B1FC5DF0C005EEA03 /* SharingURLActivityItemProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SharingURLActivityItemProvider.swift; sourceTree = "<group>"; };
-		32499C0D1FC5DF0C005EEA03 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
-		32499C0E1FC5DF0C005EEA03 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		32499C0F1FC5DF0C005EEA03 /* ServiceLocator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServiceLocator.swift; sourceTree = "<group>"; };
 		32499C101FC5DF0C005EEA03 /* NSObject+Notifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Notifications.m"; sourceTree = "<group>"; };
 		32499C121FC5DF0C005EEA03 /* HLDistanceSortCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLDistanceSortCell.xib; sourceTree = "<group>"; };
@@ -1480,13 +1508,6 @@
 		32499D7E1FC5DF0C005EEA03 /* PagesView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagesView.swift; sourceTree = "<group>"; };
 		32499D7F1FC5DF0C005EEA03 /* PopoverItemPickerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopoverItemPickerCell.swift; sourceTree = "<group>"; };
 		32499D801FC5DF0C005EEA03 /* HLSpinnerProgressView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLSpinnerProgressView.xib; sourceTree = "<group>"; };
-		32499D821FC5DF0C005EEA03 /* HLWebBrowser~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HLWebBrowser~ipad.xib"; sourceTree = "<group>"; };
-		32499D831FC5DF0C005EEA03 /* HLWebBrowser~iphone.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "HLWebBrowser~iphone.xib"; sourceTree = "<group>"; };
-		32499D841FC5DF0C005EEA03 /* HLWebBrowser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLWebBrowser.h; sourceTree = "<group>"; };
-		32499D851FC5DF0C005EEA03 /* BrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserController.swift; sourceTree = "<group>"; };
-		32499D861FC5DF0C005EEA03 /* BookBrowserController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookBrowserController.swift; sourceTree = "<group>"; };
-		32499D871FC5DF0C005EEA03 /* HLWebBrowser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLWebBrowser.m; sourceTree = "<group>"; };
-		32499D881FC5DF0C005EEA03 /* BookBrowserController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BookBrowserController.xib; sourceTree = "<group>"; };
 		32499D891FC5DF0C005EEA03 /* HLLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLLocationManager.h; sourceTree = "<group>"; };
 		32499D8A1FC5DF0C005EEA03 /* HLHotelsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HLHotelsManager.h; sourceTree = "<group>"; };
 		32499D8C1FC5DF0C005EEA03 /* HLIphoneMapVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLIphoneMapVC.xib; sourceTree = "<group>"; };
@@ -1575,21 +1596,6 @@
 		32499DEB1FC5DF0C005EEA03 /* HLGroupedTableHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HLGroupedTableHeaderView.xib; sourceTree = "<group>"; };
 		32499DED1FC5DF0C005EEA03 /* HLSearchLocationPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HLSearchLocationPoints.swift; sourceTree = "<group>"; };
 		32499DEE1FC5DF0C005EEA03 /* HLVariantsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HLVariantsManager.m; sourceTree = "<group>"; };
-		32499DF01FC5DF0C005EEA03 /* JRStringsWidthComputer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRStringsWidthComputer.h; sourceTree = "<group>"; };
-		32499DF11FC5DF0C005EEA03 /* JRPriceUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRPriceUtils.h; sourceTree = "<group>"; };
-		32499DF31FC5DF0C005EEA03 /* DateUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateUtil.m; sourceTree = "<group>"; };
-		32499DF41FC5DF0C005EEA03 /* DateUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateUtil.h; sourceTree = "<group>"; };
-		32499DF51FC5DF0C005EEA03 /* JRTicketUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTicketUtils.m; sourceTree = "<group>"; };
-		32499DF71FC5DF0C005EEA03 /* JRSearchInfoUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchInfoUtils.h; sourceTree = "<group>"; };
-		32499DF81FC5DF0C005EEA03 /* JRSearchInfoUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchInfoUtils.m; sourceTree = "<group>"; };
-		32499DF91FC5DF0C005EEA03 /* StringUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringUtils.swift; sourceTree = "<group>"; };
-		32499DFA1FC5DF0C005EEA03 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
-		32499DFC1FC5DF0C005EEA03 /* JRSearchedAirportsManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchedAirportsManager.h; sourceTree = "<group>"; };
-		32499DFD1FC5DF0C005EEA03 /* JRSearchedAirportsManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchedAirportsManager.m; sourceTree = "<group>"; };
-		32499DFE1FC5DF0C005EEA03 /* JRStringsWidthComputer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRStringsWidthComputer.m; sourceTree = "<group>"; };
-		32499DFF1FC5DF0C005EEA03 /* JRTicketUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTicketUtils.h; sourceTree = "<group>"; };
-		32499E001FC5DF0C005EEA03 /* JRPriceUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRPriceUtils.m; sourceTree = "<group>"; };
-		32499E011FC5DF0C005EEA03 /* StringUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StringUtils.m; sourceTree = "<group>"; };
 		32499E021FC5DF0C005EEA03 /* JRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDefines.h; sourceTree = "<group>"; };
 		32499E041FC5DF0C005EEA03 /* JRSDKSearchInfoBuilder+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "JRSDKSearchInfoBuilder+Config.swift"; sourceTree = "<group>"; };
 		32499E051FC5DF0C005EEA03 /* UITableViewCell+Identifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Identifier.swift"; sourceTree = "<group>"; };
@@ -1598,15 +1604,10 @@
 		32499E081FC5DF0C005EEA03 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		32499E091FC5DF0C005EEA03 /* HLDefaultCitiesFactory+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HLDefaultCitiesFactory+Config.swift"; sourceTree = "<group>"; };
 		32499E0A1FC5DF0C005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+BackBarButtonItem.swift"; sourceTree = "<group>"; };
-		32499E0D1FC5DF0C005EEA03 /* JRAdvertisementTableManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAdvertisementTableManager.m; sourceTree = "<group>"; };
 		32499E0E1FC5DF0C005EEA03 /* JRAdvertisementManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAdvertisementManager.h; sourceTree = "<group>"; };
-		32499E0F1FC5DF0C005EEA03 /* JRAdvertisementTableManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAdvertisementTableManager.h; sourceTree = "<group>"; };
 		32499E111FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRNewsFeedNativeAdView.xib; sourceTree = "<group>"; };
-		32499E121FC5DF0C005EEA03 /* JRHotelCardView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRHotelCardView.h; sourceTree = "<group>"; };
 		32499E131FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRNewsFeedNativeAdView.m; sourceTree = "<group>"; };
-		32499E141FC5DF0C005EEA03 /* JRHotelCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRHotelCardView.xib; sourceTree = "<group>"; };
 		32499E151FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRNewsFeedNativeAdView.h; sourceTree = "<group>"; };
-		32499E161FC5DF0D005EEA03 /* JRHotelCardView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRHotelCardView.m; sourceTree = "<group>"; };
 		32499E171FC5DF0D005EEA03 /* JRAdvertisementManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAdvertisementManager.m; sourceTree = "<group>"; };
 		32499E191FC5DF0D005EEA03 /* JRAviasalesAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAviasalesAdLoader.m; sourceTree = "<group>"; };
 		32499E1A1FC5DF0D005EEA03 /* JRNativeAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRNativeAdLoader.h; sourceTree = "<group>"; };
@@ -1669,12 +1670,70 @@
 		32499E631FC5DF0D005EEA03 /* UIImage+JRUIImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+JRUIImage.h"; sourceTree = "<group>"; };
 		32499E651FC5DF0D005EEA03 /* NSLayoutConstraint+JRConstraintMake.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+JRConstraintMake.h"; sourceTree = "<group>"; };
 		32499E661FC5DF0D005EEA03 /* NSLayoutConstraint+JRConstraintMake.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+JRConstraintMake.m"; sourceTree = "<group>"; };
+		325AB01920626ED1008AB6BE /* JRInfoPanelView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRInfoPanelView.xib; sourceTree = "<group>"; };
+		325AB01A20626ED1008AB6BE /* JRInfoPanelView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRInfoPanelView.m; sourceTree = "<group>"; };
+		325AB01B20626ED1008AB6BE /* JRInfoPanelView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRInfoPanelView.h; sourceTree = "<group>"; };
+		325AB01D20626ED1008AB6BE /* JRTransferCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTransferCell.h; sourceTree = "<group>"; };
+		325AB01E20626ED1008AB6BE /* JRTransferCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRTransferCell.xib; sourceTree = "<group>"; };
+		325AB01F20626ED1008AB6BE /* JRTransferCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRTransferCell.m; sourceTree = "<group>"; };
+		325AB02120626ED1008AB6BE /* JRFlightCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRFlightCell.xib; sourceTree = "<group>"; };
+		325AB02220626ED1008AB6BE /* JRFlightCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFlightCell.h; sourceTree = "<group>"; };
+		325AB02320626ED1008AB6BE /* JRFlightCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFlightCell.m; sourceTree = "<group>"; };
+		325AB02420626ED1008AB6BE /* JRTicketCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRTicketCellProtocol.h; sourceTree = "<group>"; };
+		325AB02620626ED1008AB6BE /* JRFlightsSegmentHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRFlightsSegmentHeaderView.h; sourceTree = "<group>"; };
+		325AB02720626ED1008AB6BE /* JRFlightsSegmentHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRFlightsSegmentHeaderView.xib; sourceTree = "<group>"; };
+		325AB02820626ED1008AB6BE /* JRFlightsSegmentHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRFlightsSegmentHeaderView.m; sourceTree = "<group>"; };
 		326703F31FC70F10003DB047 /* AppIcon.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppIcon.xcassets; sourceTree = "<group>"; };
+		3280AF5F206CEF85002EEA96 /* BrowserViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowserViewPresenter.swift; sourceTree = "<group>"; };
+		3287A5DE2059BC2100A9BF8B /* PriceCalendarPriceLevelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarPriceLevelView.swift; sourceTree = "<group>"; };
+		3287A5DF2059BC2100A9BF8B /* PriceCalendarChartView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarChartView.swift; sourceTree = "<group>"; };
+		3287A5E02059BC2100A9BF8B /* PriceCalendarChartBarCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarChartBarCell.xib; sourceTree = "<group>"; };
+		3287A5E12059BC2100A9BF8B /* PriceCalendarChartBarCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarChartBarCell.swift; sourceTree = "<group>"; };
+		3287A5E22059BC2100A9BF8B /* PriceCalendarChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarChartView.xib; sourceTree = "<group>"; };
+		3287A5E32059BC2100A9BF8B /* PriceCalendarPriceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarPriceView.swift; sourceTree = "<group>"; };
+		3287A5E42059BC2100A9BF8B /* PriceCalendarPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarPresenter.swift; sourceTree = "<group>"; };
+		3287A5E52059BC2100A9BF8B /* PriceCalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarViewController.swift; sourceTree = "<group>"; };
+		3287A5E62059BC2100A9BF8B /* PriceCalendarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarViewController.xib; sourceTree = "<group>"; };
+		3287A5E72059BC2100A9BF8B /* PriceCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarManager.swift; sourceTree = "<group>"; };
+		3287A5EA2059BC2100A9BF8B /* PriceCalendarChartHeader.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarChartHeader.xib; sourceTree = "<group>"; };
+		3287A5EB2059BC2100A9BF8B /* PriceCalendarChartHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarChartHeader.swift; sourceTree = "<group>"; };
+		3287A5ED2059BC2100A9BF8B /* PriceCalendarDirectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarDirectCell.xib; sourceTree = "<group>"; };
+		3287A5EE2059BC2100A9BF8B /* PriceCalendarDirectCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarDirectCell.swift; sourceTree = "<group>"; };
+		3287A5F02059BC2100A9BF8B /* PriceCalendarAverageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarAverageCell.xib; sourceTree = "<group>"; };
+		3287A5F12059BC2100A9BF8B /* PriceCalendarAverageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarAverageCell.swift; sourceTree = "<group>"; };
+		3287A5F32059BC2100A9BF8B /* PriceCalendarCardCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarCardCell.swift; sourceTree = "<group>"; };
+		3287A5F42059BC2100A9BF8B /* PriceCalendarCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarCardCell.xib; sourceTree = "<group>"; };
+		3287A5F62059BC2100A9BF8B /* PriceCalendarResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceCalendarResultCell.swift; sourceTree = "<group>"; };
+		3287A5F72059BC2100A9BF8B /* PriceCalendarResultCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PriceCalendarResultCell.xib; sourceTree = "<group>"; };
+		3287A6212059BC5C00A9BF8B /* ActionCardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActionCardView.swift; sourceTree = "<group>"; };
+		3287A6222059BC5C00A9BF8B /* ActionCardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActionCardView.xib; sourceTree = "<group>"; };
 		328BA9641FC460C00026EA31 /* default_config.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = default_config.plist; sourceTree = "<group>"; };
+		328DA6582069079E00180732 /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
+		328DA6592069079E00180732 /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
 		329A5A141E76B18D008A7EA2 /* AviasalesSDKTemplate-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AviasalesSDKTemplate-Info.plist"; sourceTree = SOURCE_ROOT; };
+		32A2BF4A20247C6900B9EC1B /* DateFormatter+Format.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Format.swift"; sourceTree = "<group>"; };
+		32C5F078203ECDB000DE4AFD /* LoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		32C5F07B203ECDC100DE4AFD /* LoadingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		32C61D682059BE1D00CF4AEC /* JRSearchResultsVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchResultsVC.h; sourceTree = "<group>"; };
+		32C61D692059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ASTSearchResultsSceneViewController.swift; sourceTree = "<group>"; };
+		32C61D6A2059BE1D00CF4AEC /* SearchResultsCardList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsCardList.swift; sourceTree = "<group>"; };
+		32C61D6B2059BE1D00CF4AEC /* JRSearchResultsList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchResultsList.m; sourceTree = "<group>"; };
+		32C61D6C2059BE1D00CF4AEC /* SearchResultsCardItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchResultsCardItem.swift; sourceTree = "<group>"; };
+		32C61D6D2059BE1D00CF4AEC /* JRSearchResultsVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRSearchResultsVC.m; sourceTree = "<group>"; };
+		32C61D822059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ASTSearchResultsSceneViewController.xib; sourceTree = "<group>"; };
+		32C61D832059BE1D00CF4AEC /* JRSearchResultsVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRSearchResultsVC.xib; sourceTree = "<group>"; };
+		32C61D842059BE1D00CF4AEC /* JRSearchResultsList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRSearchResultsList.h; sourceTree = "<group>"; };
+		32C61DA92059BE5100CF4AEC /* AppearanceSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
+		32C61DAC2059BE7700CF4AEC /* NumberUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberUtils.swift; sourceTree = "<group>"; };
+		32C61DAF2059BEA400CF4AEC /* SearchInfoBuilderStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInfoBuilderStorage.swift; sourceTree = "<group>"; };
 		32C9AA771FC452D300CF3B5E /* AviasalesSDKTemplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
+		32F697BC206BED3700528741 /* WKWebView+Scripts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Scripts.swift"; sourceTree = "<group>"; };
+		32FA17AD20694DA200D49EA0 /* BrowserViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BrowserViewController.xib; sourceTree = "<group>"; };
+		32FA17AE20694DA200D49EA0 /* BrowserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BrowserViewController.swift; sourceTree = "<group>"; };
+		545A010CF511856428308A12 /* Pods-WhiteLabel.release appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteLabel.release appstore.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteLabel/Pods-WhiteLabel.release appstore.xcconfig"; sourceTree = "<group>"; };
 		6DBA878007CDA2EA98FC18F1 /* Pods_AviasalesSDKTemplate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AviasalesSDKTemplate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80DC6BF14CEC2741BBC9B13A /* Pods-AviasalesSDKTemplate.release appstore.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release appstore.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release appstore.xcconfig"; sourceTree = "<group>"; };
+		86BE68A01244124781FB0B20 /* Pods_WhiteLabel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WhiteLabel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60EC83717E848DA00C5D52E /* AviasalesSDKTemplate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AviasalesSDKTemplate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C60EC83A17E848DA00C5D52E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C60EC83C17E848DA00C5D52E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -1683,6 +1742,7 @@
 		C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		D857DB3BB9A6C7C0254EDC3C /* Pods-AviasalesSDKTemplate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.release.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.release.xcconfig"; sourceTree = "<group>"; };
 		D9E35EAEF225DD040D60E1D2 /* Pods-AviasalesSDKTemplate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AviasalesSDKTemplate.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate.debug.xcconfig"; sourceTree = "<group>"; };
+		FAB41CC0C24AE3B05BBCB237 /* Pods-WhiteLabel.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WhiteLabel.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WhiteLabel/Pods-WhiteLabel.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1708,6 +1768,69 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		321210AF20654AC6006BE460 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				321210DC20654B1F006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.h */,
+				321210DB20654B1F006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.m */,
+				321210B020654AC6006BE460 /* JRResultsFlightSegmentCell */,
+				321210B420654AC6006BE460 /* SearchResultsPriceCalendarView */,
+				321210B720654AC6006BE460 /* HotelCardView */,
+				321210BB20654AC6006BE460 /* JRResultsTicketPriceCell */,
+				321210BF20654AC6006BE460 /* JRResultsTicketCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		321210B020654AC6006BE460 /* JRResultsFlightSegmentCell */ = {
+			isa = PBXGroup;
+			children = (
+				321210B120654AC6006BE460 /* JRResultsFlightSegmentCell.m */,
+				321210B220654AC6006BE460 /* JRResultsFlightSegmentCell.h */,
+				321210B320654AC6006BE460 /* JRResultsFlightSegmentCell.xib */,
+			);
+			path = JRResultsFlightSegmentCell;
+			sourceTree = "<group>";
+		};
+		321210B420654AC6006BE460 /* SearchResultsPriceCalendarView */ = {
+			isa = PBXGroup;
+			children = (
+				321210B520654AC6006BE460 /* SearchResultsPriceCalendarView.swift */,
+				321210B620654AC6006BE460 /* SearchResultsPriceCalendarView.xib */,
+			);
+			path = SearchResultsPriceCalendarView;
+			sourceTree = "<group>";
+		};
+		321210B720654AC6006BE460 /* HotelCardView */ = {
+			isa = PBXGroup;
+			children = (
+				321210B820654AC6006BE460 /* JRHotelCardView.h */,
+				321210B920654AC6006BE460 /* JRHotelCardView.xib */,
+				321210BA20654AC6006BE460 /* JRHotelCardView.m */,
+			);
+			path = HotelCardView;
+			sourceTree = "<group>";
+		};
+		321210BB20654AC6006BE460 /* JRResultsTicketPriceCell */ = {
+			isa = PBXGroup;
+			children = (
+				321210BC20654AC6006BE460 /* JRResultsTicketPriceCell.h */,
+				321210BD20654AC6006BE460 /* JRResultsTicketPriceCell.m */,
+				321210BE20654AC6006BE460 /* JRResultsTicketPriceCell.xib */,
+			);
+			path = JRResultsTicketPriceCell;
+			sourceTree = "<group>";
+		};
+		321210BF20654AC6006BE460 /* JRResultsTicketCell */ = {
+			isa = PBXGroup;
+			children = (
+				321210C120654AC6006BE460 /* JRResultsTicketCell.h */,
+				321210C020654AC6006BE460 /* JRResultsTicketCell.m */,
+				321210C220654AC6006BE460 /* JRResultsTicketCell.xib */,
+			);
+			path = JRResultsTicketCell;
+			sourceTree = "<group>";
+		};
 		322959B21FE18390006B25C0 /* JRDatePicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -1763,6 +1886,85 @@
 			path = JRDatePickerDateCell;
 			sourceTree = "<group>";
 		};
+		32460B2F2035C79400F937F1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				32C61DAC2059BE7700CF4AEC /* NumberUtils.swift */,
+				32460B302035C79400F937F1 /* StringUtils */,
+				32460B342035C79400F937F1 /* JRDateUtil */,
+				32460B372035C79400F937F1 /* JRSearchInfoUtils */,
+				32460B3A2035C79400F937F1 /* JRTicketUtils */,
+				32460B402035C79400F937F1 /* JRPriceUtils */,
+				32460B432035C79400F937F1 /* JRStringsWidthComputer */,
+				32460B462035C79400F937F1 /* JRSearchedAirportsManager */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		32460B302035C79400F937F1 /* StringUtils */ = {
+			isa = PBXGroup;
+			children = (
+				32460B312035C79400F937F1 /* StringUtils.swift */,
+				32460B322035C79400F937F1 /* StringUtils.h */,
+				32460B332035C79400F937F1 /* StringUtils.m */,
+			);
+			path = StringUtils;
+			sourceTree = "<group>";
+		};
+		32460B342035C79400F937F1 /* JRDateUtil */ = {
+			isa = PBXGroup;
+			children = (
+				32460B352035C79400F937F1 /* DateUtil.m */,
+				32460B362035C79400F937F1 /* DateUtil.h */,
+			);
+			path = JRDateUtil;
+			sourceTree = "<group>";
+		};
+		32460B372035C79400F937F1 /* JRSearchInfoUtils */ = {
+			isa = PBXGroup;
+			children = (
+				32460B382035C79400F937F1 /* JRSearchInfoUtils.h */,
+				32460B392035C79400F937F1 /* JRSearchInfoUtils.m */,
+			);
+			path = JRSearchInfoUtils;
+			sourceTree = "<group>";
+		};
+		32460B3A2035C79400F937F1 /* JRTicketUtils */ = {
+			isa = PBXGroup;
+			children = (
+				32460B3B2035C79400F937F1 /* JRTicketUtils.m */,
+				32460B3C2035C79400F937F1 /* JRTicketUtils.h */,
+			);
+			path = JRTicketUtils;
+			sourceTree = "<group>";
+		};
+		32460B402035C79400F937F1 /* JRPriceUtils */ = {
+			isa = PBXGroup;
+			children = (
+				32460B412035C79400F937F1 /* JRPriceUtils.h */,
+				32460B422035C79400F937F1 /* JRPriceUtils.m */,
+			);
+			path = JRPriceUtils;
+			sourceTree = "<group>";
+		};
+		32460B432035C79400F937F1 /* JRStringsWidthComputer */ = {
+			isa = PBXGroup;
+			children = (
+				32460B442035C79400F937F1 /* JRStringsWidthComputer.h */,
+				32460B452035C79400F937F1 /* JRStringsWidthComputer.m */,
+			);
+			path = JRStringsWidthComputer;
+			sourceTree = "<group>";
+		};
+		32460B462035C79400F937F1 /* JRSearchedAirportsManager */ = {
+			isa = PBXGroup;
+			children = (
+				32460B472035C79400F937F1 /* JRSearchedAirportsManager.h */,
+				32460B482035C79400F937F1 /* JRSearchedAirportsManager.m */,
+			);
+			path = JRSearchedAirportsManager;
+			sourceTree = "<group>";
+		};
 		32499A011FC5DF0C005EEA03 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -1797,6 +1999,8 @@
 			isa = PBXGroup;
 			children = (
 				32499E211FC5DF0D005EEA03 /* AppConfigurator.swift */,
+				32C61DA92059BE5100CF4AEC /* AppearanceSettings.swift */,
+				32C61DAF2059BEA400CF4AEC /* SearchInfoBuilderStorage.swift */,
 				32499A681FC5DF0C005EEA03 /* ConfigManagment */,
 				32499A5C1FC5DF0C005EEA03 /* ColorManagment */,
 				32499E0C1FC5DF0C005EEA03 /* Advertisement */,
@@ -1805,7 +2009,7 @@
 				32499B7C1FC5DF0C005EEA03 /* HotelsSource */,
 				32499E031FC5DF0C005EEA03 /* Extensions */,
 				32499E231FC5DF0D005EEA03 /* Categories */,
-				32499DEF1FC5DF0C005EEA03 /* Utils */,
+				32460B2F2035C79400F937F1 /* Utils */,
 				32499A671FC5DF0C005EEA03 /* Header.h */,
 				32499E021FC5DF0C005EEA03 /* JRDefines.h */,
 				32499E221FC5DF0D005EEA03 /* JRDefines.m */,
@@ -1850,6 +2054,7 @@
 			isa = PBXGroup;
 			children = (
 				32499A6D1FC5DF0C005EEA03 /* TabMenuVC.swift */,
+				3287A6202059BC5C00A9BF8B /* ActionCardView */,
 				32499A6E1FC5DF0C005EEA03 /* CurrencyPicker */,
 				32499A791FC5DF0C005EEA03 /* InteractionManager */,
 				32499A7C1FC5DF0C005EEA03 /* JRViewController */,
@@ -1857,7 +2062,9 @@
 				32499A961FC5DF0C005EEA03 /* JRTableViewCell */,
 				32499A991FC5DF0C005EEA03 /* JRNavigationController */,
 				32499A9C1FC5DF0C005EEA03 /* JRTableManager */,
+				32C5F077203ECDB000DE4AFD /* LoadingView */,
 				32499AA31FC5DF0C005EEA03 /* ProgressView */,
+				32FA17AC20694DA200D49EA0 /* BrowserViewController */,
 				32499A7F1FC5DF0C005EEA03 /* CurrencyManager.swift */,
 			);
 			path = CommonSource;
@@ -1921,10 +2128,11 @@
 		32499A801FC5DF0C005EEA03 /* InfoScreen */ = {
 			isa = PBXGroup;
 			children = (
-				32499A811FC5DF0C005EEA03 /* ViewModels */,
+				32127ADA20331FC800F1D53D /* InfoScreenIconImageViewFiveTimesTapHandler.swift */,
 				32499A891FC5DF0C005EEA03 /* InfoScreenViewController.swift */,
-				32499A8A1FC5DF0C005EEA03 /* InfoScreenPresenter.swift */,
 				32499A8B1FC5DF0C005EEA03 /* InfoScreenViewController.xib */,
+				32499A8A1FC5DF0C005EEA03 /* InfoScreenPresenter.swift */,
+				32499A811FC5DF0C005EEA03 /* ViewModels */,
 				32499A8C1FC5DF0C005EEA03 /* Views */,
 			);
 			path = InfoScreen;
@@ -2020,14 +2228,14 @@
 		32499AA51FC5DF0C005EEA03 /* AviasalesSource */ = {
 			isa = PBXGroup;
 			children = (
-				32499AA61FC5DF0C005EEA03 /* WaitingScreen */,
-				32499AAE1FC5DF0C005EEA03 /* SearchResults */,
 				32499AD31FC5DF0C005EEA03 /* SearchForm */,
-				32499B131FC5DF0C005EEA03 /* PassengersPicker */,
-				32499B201FC5DF0C005EEA03 /* GateBrowser */,
-				32499B241FC5DF0C005EEA03 /* JRFilters */,
-				322959B21FE18390006B25C0 /* JRDatePicker */,
 				32499B591FC5DF0C005EEA03 /* AirportPicker */,
+				322959B21FE18390006B25C0 /* JRDatePicker */,
+				32499B131FC5DF0C005EEA03 /* PassengersPicker */,
+				32499AA61FC5DF0C005EEA03 /* WaitingScreen */,
+				32C61D672059BE1D00CF4AEC /* SearchResults */,
+				3287A5DC2059BC2100A9BF8B /* PriceCalendar */,
+				32499B241FC5DF0C005EEA03 /* JRFilters */,
 				32499B6A1FC5DF0C005EEA03 /* JRTicket */,
 			);
 			path = AviasalesSource;
@@ -2061,52 +2269,19 @@
 			path = ASTWaitingScreenPlaneSceneView;
 			sourceTree = "<group>";
 		};
-		32499AAE1FC5DF0C005EEA03 /* SearchResults */ = {
-			isa = PBXGroup;
-			children = (
-				32499AAF1FC5DF0C005EEA03 /* JRSearchResultsVC.h */,
-				32499AB01FC5DF0C005EEA03 /* Cells */,
-				32499ABC1FC5DF0C005EEA03 /* ASTSearchResultsSceneViewController.swift */,
-				32499ABD1FC5DF0C005EEA03 /* JRSearchResultsList.m */,
-				32499ABE1FC5DF0C005EEA03 /* JRSearchResultsVC.m */,
-				32499ABF1FC5DF0C005EEA03 /* ASTSearchResultsSceneViewController.xib */,
-				32499AC01FC5DF0C005EEA03 /* JRSearchResultsVC.xib */,
-				32499AC11FC5DF0C005EEA03 /* JRSearchResultsList.h */,
-			);
-			path = SearchResults;
-			sourceTree = "<group>";
-		};
-		32499AB01FC5DF0C005EEA03 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-				32499AB11FC5DF0C005EEA03 /* JRResultsTicketPriceCell.h */,
-				32499AB21FC5DF0C005EEA03 /* JRSearchResultsFlightSegmentCellLayoutParameters.m */,
-				32499AB31FC5DF0C005EEA03 /* JRResultsTicketCell.m */,
-				32499AB41FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.m */,
-				32499AB51FC5DF0C005EEA03 /* JRResultsTicketCell.h */,
-				32499AB61FC5DF0C005EEA03 /* JRSearchResultsFlightSegmentCellLayoutParameters.h */,
-				32499AB71FC5DF0C005EEA03 /* JRResultsTicketPriceCell.m */,
-				32499AB81FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.h */,
-				32499AB91FC5DF0C005EEA03 /* JRResultsFlightSegmentCell.xib */,
-				32499ABA1FC5DF0C005EEA03 /* JRResultsTicketPriceCell.xib */,
-				32499ABB1FC5DF0C005EEA03 /* JRResultsTicketCell.xib */,
-			);
-			path = Cells;
-			sourceTree = "<group>";
-		};
 		32499AD31FC5DF0C005EEA03 /* SearchForm */ = {
 			isa = PBXGroup;
 			children = (
-				32499AD41FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.xib */,
-				32499AD51FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.m */,
-				32499AD61FC5DF0C005EEA03 /* ASTContainerSearchFormChildViewControllerProtocol.h */,
+				32499AF11FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.h */,
 				32499AD71FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.m */,
+				32499AD41FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.xib */,
+				32499AF01FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.h */,
+				32499AD51FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.m */,
+				32499B121FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.xib */,
+				32499AD61FC5DF0C005EEA03 /* ASTContainerSearchFormChildViewControllerProtocol.h */,
 				32499AD81FC5DF0C005EEA03 /* SimpleSearchForm */,
 				32499AE41FC5DF0C005EEA03 /* ComplexSearchForm */,
-				32499AF01FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.h */,
-				32499AF11FC5DF0C005EEA03 /* ASTSearchFormSceneViewController.h */,
 				32499AF21FC5DF0C005EEA03 /* Views */,
-				32499B121FC5DF0C005EEA03 /* ASTContainerSearchFormViewController.xib */,
 			);
 			path = SearchForm;
 			sourceTree = "<group>";
@@ -2114,9 +2289,9 @@
 		32499AD81FC5DF0C005EEA03 /* SimpleSearchForm */ = {
 			isa = PBXGroup;
 			children = (
-				32499AD91FC5DF0C005EEA03 /* ViewModel */,
-				32499ADC1FC5DF0C005EEA03 /* Presenter */,
 				32499ADF1FC5DF0C005EEA03 /* ViewController */,
+				32499ADC1FC5DF0C005EEA03 /* Presenter */,
+				32499AD91FC5DF0C005EEA03 /* ViewModel */,
 			);
 			path = SimpleSearchForm;
 			sourceTree = "<group>";
@@ -2142,10 +2317,10 @@
 		32499ADF1FC5DF0C005EEA03 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				32499AE31FC5DF0C005EEA03 /* ASTSimpleSearchFormViewControllerProtocol.h */,
+				32499AE21FC5DF0C005EEA03 /* ASTSimpleSearchFormViewController.h */,
 				32499AE01FC5DF0C005EEA03 /* ASTSimpleSearchFormViewController.m */,
 				32499AE11FC5DF0C005EEA03 /* ASTSimpleSearchFormViewController.xib */,
-				32499AE21FC5DF0C005EEA03 /* ASTSimpleSearchFormViewController.h */,
-				32499AE31FC5DF0C005EEA03 /* ASTSimpleSearchFormViewControllerProtocol.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2153,9 +2328,9 @@
 		32499AE41FC5DF0C005EEA03 /* ComplexSearchForm */ = {
 			isa = PBXGroup;
 			children = (
-				32499AE51FC5DF0C005EEA03 /* ViewModel */,
-				32499AE81FC5DF0C005EEA03 /* Presenter */,
 				32499AEB1FC5DF0C005EEA03 /* ViewController */,
+				32499AE81FC5DF0C005EEA03 /* Presenter */,
+				32499AE51FC5DF0C005EEA03 /* ViewModel */,
 			);
 			path = ComplexSearchForm;
 			sourceTree = "<group>";
@@ -2182,9 +2357,9 @@
 			isa = PBXGroup;
 			children = (
 				32499AEC1FC5DF0C005EEA03 /* ASTComplexSearchFormViewControllerProtocol.h */,
+				32499AEF1FC5DF0C005EEA03 /* ASTComplexSearchFormViewController.h */,
 				32499AED1FC5DF0C005EEA03 /* ASTComplexSearchFormViewController.m */,
 				32499AEE1FC5DF0C005EEA03 /* ASTComplexSearchFormViewController.xib */,
-				32499AEF1FC5DF0C005EEA03 /* ASTComplexSearchFormViewController.h */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -2207,9 +2382,9 @@
 		32499AF31FC5DF0C005EEA03 /* ASTSearchFormPassengersView */ = {
 			isa = PBXGroup;
 			children = (
-				32499AF41FC5DF0C005EEA03 /* ASTSearchFormPassengersView.xib */,
-				32499AF51FC5DF0C005EEA03 /* ASTSearchFormPassengersView.m */,
 				32499AF61FC5DF0C005EEA03 /* ASTSearchFormPassengersView.h */,
+				32499AF51FC5DF0C005EEA03 /* ASTSearchFormPassengersView.m */,
+				32499AF41FC5DF0C005EEA03 /* ASTSearchFormPassengersView.xib */,
 			);
 			path = ASTSearchFormPassengersView;
 			sourceTree = "<group>";
@@ -2321,16 +2496,6 @@
 				32499B1D1FC5DF0C005EEA03 /* ASTPassengersPickerTableViewCell.swift */,
 			);
 			path = ASTPassengersPickerTableViewCell;
-			sourceTree = "<group>";
-		};
-		32499B201FC5DF0C005EEA03 /* GateBrowser */ = {
-			isa = PBXGroup;
-			children = (
-				32499B211FC5DF0C005EEA03 /* ASTGateBrowserViewController.xib */,
-				32499B221FC5DF0C005EEA03 /* ASTGateBrowserPresenter.swift */,
-				32499B231FC5DF0C005EEA03 /* ASTGateBrowserViewController.swift */,
-			);
-			path = GateBrowser;
 			sourceTree = "<group>";
 		};
 		32499B241FC5DF0C005EEA03 /* JRFilters */ = {
@@ -2474,32 +2639,12 @@
 		32499B6A1FC5DF0C005EEA03 /* JRTicket */ = {
 			isa = PBXGroup;
 			children = (
-				32499B6B1FC5DF0C005EEA03 /* JRTicketVC.m */,
-				32499B6C1FC5DF0C005EEA03 /* JRInfoPanelView.xib */,
-				32499B6D1FC5DF0C005EEA03 /* TableCells */,
-				32499B781FC5DF0C005EEA03 /* JRInfoPanelView.m */,
-				32499B791FC5DF0C005EEA03 /* JRTicketVC.xib */,
 				32499B7A1FC5DF0C005EEA03 /* JRTicketVC.h */,
-				32499B7B1FC5DF0C005EEA03 /* JRInfoPanelView.h */,
+				32499B6B1FC5DF0C005EEA03 /* JRTicketVC.m */,
+				32499B791FC5DF0C005EEA03 /* JRTicketVC.xib */,
+				325AB01720626ED1008AB6BE /* Views */,
 			);
 			path = JRTicket;
-			sourceTree = "<group>";
-		};
-		32499B6D1FC5DF0C005EEA03 /* TableCells */ = {
-			isa = PBXGroup;
-			children = (
-				32499B6E1FC5DF0C005EEA03 /* JRFlightCell.xib */,
-				32499B6F1FC5DF0C005EEA03 /* JRTransferCell.h */,
-				32499B701FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.h */,
-				32499B711FC5DF0C005EEA03 /* JRFlightCell.h */,
-				32499B721FC5DF0C005EEA03 /* JRTransferCell.xib */,
-				32499B731FC5DF0C005EEA03 /* JRTicketCellProtocol.h */,
-				32499B741FC5DF0C005EEA03 /* JRTransferCell.m */,
-				32499B751FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.xib */,
-				32499B761FC5DF0C005EEA03 /* JRFlightCell.m */,
-				32499B771FC5DF0C005EEA03 /* JRFlightsSegmentHeaderView.m */,
-			);
-			path = TableCells;
 			sourceTree = "<group>";
 		};
 		32499B7C1FC5DF0C005EEA03 /* HotelsSource */ = {
@@ -2515,7 +2660,6 @@
 				32499C001FC5DF0C005EEA03 /* RoomsSorter.swift */,
 				32499C011FC5DF0C005EEA03 /* BadgesDescription */,
 				32499C081FC5DF0C005EEA03 /* Sharing */,
-				32499C0C1FC5DF0C005EEA03 /* UIColor */,
 				32499C0F1FC5DF0C005EEA03 /* ServiceLocator.swift */,
 				32499C101FC5DF0C005EEA03 /* NSObject+Notifications.m */,
 				32499C111FC5DF0C005EEA03 /* Sort */,
@@ -2536,7 +2680,6 @@
 				32499D5E1FC5DF0C005EEA03 /* Alerts */,
 				32499D611FC5DF0C005EEA03 /* ResultsTTLManager.swift */,
 				32499D621FC5DF0C005EEA03 /* Controls */,
-				32499D811FC5DF0C005EEA03 /* Browser */,
 				32499D891FC5DF0C005EEA03 /* HLLocationManager.h */,
 				32499D8A1FC5DF0C005EEA03 /* HLHotelsManager.h */,
 				32499D8B1FC5DF0C005EEA03 /* Map */,
@@ -2814,15 +2957,6 @@
 				32499C0B1FC5DF0C005EEA03 /* SharingURLActivityItemProvider.swift */,
 			);
 			path = Sharing;
-			sourceTree = "<group>";
-		};
-		32499C0C1FC5DF0C005EEA03 /* UIColor */ = {
-			isa = PBXGroup;
-			children = (
-				32499C0D1FC5DF0C005EEA03 /* UIColor+Hex.m */,
-				32499C0E1FC5DF0C005EEA03 /* UIColor+Hex.h */,
-			);
-			path = UIColor;
 			sourceTree = "<group>";
 		};
 		32499C111FC5DF0C005EEA03 /* Sort */ = {
@@ -3504,20 +3638,6 @@
 			path = PhotoScroller;
 			sourceTree = "<group>";
 		};
-		32499D811FC5DF0C005EEA03 /* Browser */ = {
-			isa = PBXGroup;
-			children = (
-				32499D821FC5DF0C005EEA03 /* HLWebBrowser~ipad.xib */,
-				32499D831FC5DF0C005EEA03 /* HLWebBrowser~iphone.xib */,
-				32499D841FC5DF0C005EEA03 /* HLWebBrowser.h */,
-				32499D851FC5DF0C005EEA03 /* BrowserController.swift */,
-				32499D861FC5DF0C005EEA03 /* BookBrowserController.swift */,
-				32499D871FC5DF0C005EEA03 /* HLWebBrowser.m */,
-				32499D881FC5DF0C005EEA03 /* BookBrowserController.xib */,
-			);
-			path = Browser;
-			sourceTree = "<group>";
-		};
 		32499D8B1FC5DF0C005EEA03 /* Map */ = {
 			isa = PBXGroup;
 			children = (
@@ -3702,52 +3822,6 @@
 			path = SearchLocationPoints;
 			sourceTree = "<group>";
 		};
-		32499DEF1FC5DF0C005EEA03 /* Utils */ = {
-			isa = PBXGroup;
-			children = (
-				32499DF01FC5DF0C005EEA03 /* JRStringsWidthComputer.h */,
-				32499DF11FC5DF0C005EEA03 /* JRPriceUtils.h */,
-				32499DF21FC5DF0C005EEA03 /* JRDateUtil */,
-				32499DF51FC5DF0C005EEA03 /* JRTicketUtils.m */,
-				32499DF61FC5DF0C005EEA03 /* JRSearchInfoUtils */,
-				32499DF91FC5DF0C005EEA03 /* StringUtils.swift */,
-				32499DFA1FC5DF0C005EEA03 /* StringUtils.h */,
-				32499DFB1FC5DF0C005EEA03 /* JRSearchedAirportsManager */,
-				32499DFE1FC5DF0C005EEA03 /* JRStringsWidthComputer.m */,
-				32499DFF1FC5DF0C005EEA03 /* JRTicketUtils.h */,
-				32499E001FC5DF0C005EEA03 /* JRPriceUtils.m */,
-				32499E011FC5DF0C005EEA03 /* StringUtils.m */,
-			);
-			path = Utils;
-			sourceTree = "<group>";
-		};
-		32499DF21FC5DF0C005EEA03 /* JRDateUtil */ = {
-			isa = PBXGroup;
-			children = (
-				32499DF31FC5DF0C005EEA03 /* DateUtil.m */,
-				32499DF41FC5DF0C005EEA03 /* DateUtil.h */,
-			);
-			path = JRDateUtil;
-			sourceTree = "<group>";
-		};
-		32499DF61FC5DF0C005EEA03 /* JRSearchInfoUtils */ = {
-			isa = PBXGroup;
-			children = (
-				32499DF71FC5DF0C005EEA03 /* JRSearchInfoUtils.h */,
-				32499DF81FC5DF0C005EEA03 /* JRSearchInfoUtils.m */,
-			);
-			path = JRSearchInfoUtils;
-			sourceTree = "<group>";
-		};
-		32499DFB1FC5DF0C005EEA03 /* JRSearchedAirportsManager */ = {
-			isa = PBXGroup;
-			children = (
-				32499DFC1FC5DF0C005EEA03 /* JRSearchedAirportsManager.h */,
-				32499DFD1FC5DF0C005EEA03 /* JRSearchedAirportsManager.m */,
-			);
-			path = JRSearchedAirportsManager;
-			sourceTree = "<group>";
-		};
 		32499E031FC5DF0C005EEA03 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -3758,6 +3832,8 @@
 				32499E081FC5DF0C005EEA03 /* UIViewController+Navigation.swift */,
 				32499E091FC5DF0C005EEA03 /* HLDefaultCitiesFactory+Config.swift */,
 				32499E0A1FC5DF0C005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift */,
+				32A2BF4A20247C6900B9EC1B /* DateFormatter+Format.swift */,
+				32F697BC206BED3700528741 /* WKWebView+Scripts.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -3765,11 +3841,9 @@
 		32499E0C1FC5DF0C005EEA03 /* Advertisement */ = {
 			isa = PBXGroup;
 			children = (
-				32499E0D1FC5DF0C005EEA03 /* JRAdvertisementTableManager.m */,
 				32499E0E1FC5DF0C005EEA03 /* JRAdvertisementManager.h */,
-				32499E0F1FC5DF0C005EEA03 /* JRAdvertisementTableManager.h */,
-				32499E101FC5DF0C005EEA03 /* Views */,
 				32499E171FC5DF0D005EEA03 /* JRAdvertisementManager.m */,
+				32499E101FC5DF0C005EEA03 /* Views */,
 				32499E181FC5DF0D005EEA03 /* AdLoading */,
 			);
 			path = Advertisement;
@@ -3779,11 +3853,8 @@
 			isa = PBXGroup;
 			children = (
 				32499E111FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.xib */,
-				32499E121FC5DF0C005EEA03 /* JRHotelCardView.h */,
 				32499E131FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.m */,
-				32499E141FC5DF0C005EEA03 /* JRHotelCardView.xib */,
 				32499E151FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.h */,
-				32499E161FC5DF0D005EEA03 /* JRHotelCardView.m */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -3806,6 +3877,7 @@
 		32499E231FC5DF0D005EEA03 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				328DA6572069079E00180732 /* UIColor */,
 				32499E241FC5DF0D005EEA03 /* EmptyOptionalExtension.swift */,
 				32499E251FC5DF0D005EEA03 /* ReuseIdentifiers */,
 				32499E2A1FC5DF0D005EEA03 /* UIViewController+ShowAlert.swift */,
@@ -3989,12 +4061,206 @@
 			path = "NSLayoutConstraint+JRConstraintMake";
 			sourceTree = "<group>";
 		};
+		325AB01720626ED1008AB6BE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				325AB02420626ED1008AB6BE /* JRTicketCellProtocol.h */,
+				325AB01820626ED1008AB6BE /* JRInfoPanelView */,
+				325AB01C20626ED1008AB6BE /* JRTransferCell */,
+				325AB02020626ED1008AB6BE /* JRFlightCell */,
+				325AB02520626ED1008AB6BE /* JRFlightsSegmentHeaderView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		325AB01820626ED1008AB6BE /* JRInfoPanelView */ = {
+			isa = PBXGroup;
+			children = (
+				325AB01920626ED1008AB6BE /* JRInfoPanelView.xib */,
+				325AB01A20626ED1008AB6BE /* JRInfoPanelView.m */,
+				325AB01B20626ED1008AB6BE /* JRInfoPanelView.h */,
+			);
+			path = JRInfoPanelView;
+			sourceTree = "<group>";
+		};
+		325AB01C20626ED1008AB6BE /* JRTransferCell */ = {
+			isa = PBXGroup;
+			children = (
+				325AB01D20626ED1008AB6BE /* JRTransferCell.h */,
+				325AB01F20626ED1008AB6BE /* JRTransferCell.m */,
+				325AB01E20626ED1008AB6BE /* JRTransferCell.xib */,
+			);
+			path = JRTransferCell;
+			sourceTree = "<group>";
+		};
+		325AB02020626ED1008AB6BE /* JRFlightCell */ = {
+			isa = PBXGroup;
+			children = (
+				325AB02220626ED1008AB6BE /* JRFlightCell.h */,
+				325AB02320626ED1008AB6BE /* JRFlightCell.m */,
+				325AB02120626ED1008AB6BE /* JRFlightCell.xib */,
+			);
+			path = JRFlightCell;
+			sourceTree = "<group>";
+		};
+		325AB02520626ED1008AB6BE /* JRFlightsSegmentHeaderView */ = {
+			isa = PBXGroup;
+			children = (
+				325AB02620626ED1008AB6BE /* JRFlightsSegmentHeaderView.h */,
+				325AB02820626ED1008AB6BE /* JRFlightsSegmentHeaderView.m */,
+				325AB02720626ED1008AB6BE /* JRFlightsSegmentHeaderView.xib */,
+			);
+			path = JRFlightsSegmentHeaderView;
+			sourceTree = "<group>";
+		};
+		3287A5DC2059BC2100A9BF8B /* PriceCalendar */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5DD2059BC2100A9BF8B /* PriceCalendarChart */,
+				3287A5E42059BC2100A9BF8B /* PriceCalendarPresenter.swift */,
+				3287A5E52059BC2100A9BF8B /* PriceCalendarViewController.swift */,
+				3287A5E62059BC2100A9BF8B /* PriceCalendarViewController.xib */,
+				3287A5E72059BC2100A9BF8B /* PriceCalendarManager.swift */,
+				3287A5E82059BC2100A9BF8B /* Views */,
+			);
+			path = PriceCalendar;
+			sourceTree = "<group>";
+		};
+		3287A5DD2059BC2100A9BF8B /* PriceCalendarChart */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5DE2059BC2100A9BF8B /* PriceCalendarPriceLevelView.swift */,
+				3287A5DF2059BC2100A9BF8B /* PriceCalendarChartView.swift */,
+				3287A5E22059BC2100A9BF8B /* PriceCalendarChartView.xib */,
+				3287A5E12059BC2100A9BF8B /* PriceCalendarChartBarCell.swift */,
+				3287A5E02059BC2100A9BF8B /* PriceCalendarChartBarCell.xib */,
+				3287A5E32059BC2100A9BF8B /* PriceCalendarPriceView.swift */,
+			);
+			path = PriceCalendarChart;
+			sourceTree = "<group>";
+		};
+		3287A5E82059BC2100A9BF8B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5E92059BC2100A9BF8B /* PriceCalendarChartHeader */,
+				3287A5EC2059BC2100A9BF8B /* PriceCalendarDirectCell */,
+				3287A5EF2059BC2100A9BF8B /* PriceCalendarAverageCell */,
+				3287A5F22059BC2100A9BF8B /* PriceCalendarCardCell */,
+				3287A5F52059BC2100A9BF8B /* PriceCalendarResultCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3287A5E92059BC2100A9BF8B /* PriceCalendarChartHeader */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5EA2059BC2100A9BF8B /* PriceCalendarChartHeader.xib */,
+				3287A5EB2059BC2100A9BF8B /* PriceCalendarChartHeader.swift */,
+			);
+			path = PriceCalendarChartHeader;
+			sourceTree = "<group>";
+		};
+		3287A5EC2059BC2100A9BF8B /* PriceCalendarDirectCell */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5ED2059BC2100A9BF8B /* PriceCalendarDirectCell.xib */,
+				3287A5EE2059BC2100A9BF8B /* PriceCalendarDirectCell.swift */,
+			);
+			path = PriceCalendarDirectCell;
+			sourceTree = "<group>";
+		};
+		3287A5EF2059BC2100A9BF8B /* PriceCalendarAverageCell */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5F02059BC2100A9BF8B /* PriceCalendarAverageCell.xib */,
+				3287A5F12059BC2100A9BF8B /* PriceCalendarAverageCell.swift */,
+			);
+			path = PriceCalendarAverageCell;
+			sourceTree = "<group>";
+		};
+		3287A5F22059BC2100A9BF8B /* PriceCalendarCardCell */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5F32059BC2100A9BF8B /* PriceCalendarCardCell.swift */,
+				3287A5F42059BC2100A9BF8B /* PriceCalendarCardCell.xib */,
+			);
+			path = PriceCalendarCardCell;
+			sourceTree = "<group>";
+		};
+		3287A5F52059BC2100A9BF8B /* PriceCalendarResultCell */ = {
+			isa = PBXGroup;
+			children = (
+				3287A5F62059BC2100A9BF8B /* PriceCalendarResultCell.swift */,
+				3287A5F72059BC2100A9BF8B /* PriceCalendarResultCell.xib */,
+			);
+			path = PriceCalendarResultCell;
+			sourceTree = "<group>";
+		};
+		3287A6202059BC5C00A9BF8B /* ActionCardView */ = {
+			isa = PBXGroup;
+			children = (
+				3287A6212059BC5C00A9BF8B /* ActionCardView.swift */,
+				3287A6222059BC5C00A9BF8B /* ActionCardView.xib */,
+			);
+			path = ActionCardView;
+			sourceTree = "<group>";
+		};
+		328DA6572069079E00180732 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				328DA6582069079E00180732 /* UIColor+Hex.m */,
+				328DA6592069079E00180732 /* UIColor+Hex.h */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		32C5F077203ECDB000DE4AFD /* LoadingView */ = {
+			isa = PBXGroup;
+			children = (
+				32C5F078203ECDB000DE4AFD /* LoadingView.swift */,
+				32C5F07B203ECDC100DE4AFD /* LoadingView.xib */,
+			);
+			path = LoadingView;
+			sourceTree = "<group>";
+		};
+		32C61D672059BE1D00CF4AEC /* SearchResults */ = {
+			isa = PBXGroup;
+			children = (
+				32C61D692059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.swift */,
+				32C61D822059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.xib */,
+				32C61D682059BE1D00CF4AEC /* JRSearchResultsVC.h */,
+				32C61D6D2059BE1D00CF4AEC /* JRSearchResultsVC.m */,
+				32C61D832059BE1D00CF4AEC /* JRSearchResultsVC.xib */,
+				32C61D6B2059BE1D00CF4AEC /* JRSearchResultsList.m */,
+				32C61D842059BE1D00CF4AEC /* JRSearchResultsList.h */,
+				32C61D6A2059BE1D00CF4AEC /* SearchResultsCardList.swift */,
+				32C61D6C2059BE1D00CF4AEC /* SearchResultsCardItem.swift */,
+				321210AF20654AC6006BE460 /* Views */,
+			);
+			path = SearchResults;
+			sourceTree = "<group>";
+		};
+		32FA17AC20694DA200D49EA0 /* BrowserViewController */ = {
+			isa = PBXGroup;
+			children = (
+				32FA17AE20694DA200D49EA0 /* BrowserViewController.swift */,
+				32FA17AD20694DA200D49EA0 /* BrowserViewController.xib */,
+				3280AF5F206CEF85002EEA96 /* BrowserViewPresenter.swift */,
+				322C0933206A8C970014D584 /* GateBrowserViewPresenter.swift */,
+				324792FF206A9A73000DEE5F /* BookBrowserViewPresenter.swift */,
+			);
+			path = BrowserViewController;
+			sourceTree = "<group>";
+		};
 		7FBE5DC51251B1B805CFFBAD /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				D9E35EAEF225DD040D60E1D2 /* Pods-AviasalesSDKTemplate.debug.xcconfig */,
 				D857DB3BB9A6C7C0254EDC3C /* Pods-AviasalesSDKTemplate.release.xcconfig */,
 				80DC6BF14CEC2741BBC9B13A /* Pods-AviasalesSDKTemplate.release appstore.xcconfig */,
+				FAB41CC0C24AE3B05BBCB237 /* Pods-WhiteLabel.debug.xcconfig */,
+				03F9C653B39BD530042EC9DB /* Pods-WhiteLabel.release.xcconfig */,
+				545A010CF511856428308A12 /* Pods-WhiteLabel.release appstore.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -4034,6 +4300,7 @@
 				C60EC83E17E848DA00C5D52E /* UIKit.framework */,
 				C6B751E018240B5400FEF5B9 /* CoreFoundation.framework */,
 				6DBA878007CDA2EA98FC18F1 /* Pods_AviasalesSDKTemplate.framework */,
+				86BE68A01244124781FB0B20 /* Pods_WhiteLabel.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -4097,8 +4364,8 @@
 			attributes = {
 				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0830;
-				ORGANIZATIONNAME = "Go Travel Un LImited";
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Go Travel Un Limited";
 				TargetAttributes = {
 					C60EC83617E848DA00C5D52E = {
 						DevelopmentTeam = C92M3ZV55X;
@@ -4171,7 +4438,7 @@
 				3249A21D1FC5DF0E005EEA03 /* HLShowMorePricesCell.xib in Resources */,
 				3249A1CF1FC5DF0E005EEA03 /* HLHotelDetailsRatingDetailsCell.xib in Resources */,
 				32499F511FC5DF0D005EEA03 /* ASTPassengersPickerSliderView.xib in Resources */,
-				3249A37F1FC5DF0F005EEA03 /* JRHotelCardView.xib in Resources */,
+				3287A6002059BC2100A9BF8B /* PriceCalendarChartView.xib in Resources */,
 				3249A31B1FC5DF0F005EEA03 /* HLHotelInfoView.xib in Resources */,
 				3249A0ED1FC5DF0E005EEA03 /* HLNoSearchResultsPlaceholderView.xib in Resources */,
 				32499E751FC5DF0D005EEA03 /* slider-default7-handle@2x.png in Resources */,
@@ -4189,6 +4456,7 @@
 				3249A0BD1FC5DF0E005EEA03 /* HLSortCell.xib in Resources */,
 				32499F551FC5DF0D005EEA03 /* ASTPassengersPickerTableViewCell.xib in Resources */,
 				3249A0BB1FC5DF0E005EEA03 /* HLSortVC.xib in Resources */,
+				3287A61A2059BC2100A9BF8B /* PriceCalendarCardCell.xib in Resources */,
 				3249A1651FC5DF0E005EEA03 /* HLKidsPickerTableCell.xib in Resources */,
 				3249A1731FC5DF0E005EEA03 /* HLSearchForm.xib in Resources */,
 				3249A29D1FC5DF0E005EEA03 /* HLIpadHotelDetailsVC.xib in Resources */,
@@ -4198,7 +4466,6 @@
 				32499EE31FC5DF0D005EEA03 /* ASTWaitingScreenViewController.xib in Resources */,
 				3249A1071FC5DF0E005EEA03 /* HLPriceFilterCardCell.xib in Resources */,
 				32499E671FC5DF0D005EEA03 /* HotelsLocalizable.strings in Resources */,
-				32499EFF1FC5DF0D005EEA03 /* ASTSearchResultsSceneViewController.xib in Resources */,
 				3249A21B1FC5DF0E005EEA03 /* HLHotelDetailsNoPriceCell.xib in Resources */,
 				32499EE91FC5DF0D005EEA03 /* ASTWaitingScreenPlaneSceneView.xib in Resources */,
 				32499FD11FC5DF0D005EEA03 /* HLUserLocationTableCell.xib in Resources */,
@@ -4208,22 +4475,21 @@
 				3249A10F1FC5DF0E005EEA03 /* HLPlaceholderCell.xib in Resources */,
 				3249A0211FC5DF0D005EEA03 /* StarFilterCell.xib in Resources */,
 				3249A1EB1FC5DF0E005EEA03 /* HLHotelDetailsMapCell.xib in Resources */,
-				32499FB51FC5DF0D005EEA03 /* JRFlightCell.xib in Resources */,
+				32C61DA72059BE1D00CF4AEC /* JRSearchResultsVC.xib in Resources */,
+				3287A6082059BC2100A9BF8B /* PriceCalendarViewController.xib in Resources */,
 				3249A1111FC5DF0E005EEA03 /* HLNearbyCitiesSearchCardCell.xib in Resources */,
 				3249A1571FC5DF0E005EEA03 /* HLIpadGroupedTableVC.xib in Resources */,
 				3249A2371FC5DF0E005EEA03 /* HotelGalleryVC.xib in Resources */,
 				32499E851FC5DF0D005EEA03 /* App.xcassets in Resources */,
 				32499FA91FC5DF0D005EEA03 /* ASAirportPickerSectionView.xib in Resources */,
-				32499F5D1FC5DF0D005EEA03 /* ASTGateBrowserViewController.xib in Resources */,
 				3249A1A91FC5DF0E005EEA03 /* HLPhotoScrollVC.xib in Resources */,
 				32499E6D1FC5DF0D005EEA03 /* Hotel.xcassets in Resources */,
 				32499E691FC5DF0D005EEA03 /* InfoPlist.strings in Resources */,
-				32499EF51FC5DF0D005EEA03 /* JRResultsTicketPriceCell.xib in Resources */,
+				321210D520654AC7006BE460 /* JRResultsTicketCell.xib in Resources */,
 				3249A25D1FC5DF0E005EEA03 /* ScoreView.xib in Resources */,
 				3249A1F31FC5DF0E005EEA03 /* HLHotelDetailsActivityIndicatorTableCell.xib in Resources */,
 				32499F431FC5DF0D005EEA03 /* ASTSimpleSearchFormDateTableViewCell.xib in Resources */,
 				32499FE71FC5DF0D005EEA03 /* HLIpadFiltersVC.xib in Resources */,
-				3249A2D31FC5DF0E005EEA03 /* HLWebBrowser~ipad.xib in Resources */,
 				3249A05B1FC5DF0D005EEA03 /* HLPriceTableHeaderView.xib in Resources */,
 				3249A3391FC5DF0F005EEA03 /* HLBadgeIconView.xib in Resources */,
 				3249A0F11FC5DF0E005EEA03 /* HLNoFilterResultsPlaceholderView~ipad.xib in Resources */,
@@ -4239,43 +4505,48 @@
 				3249A06F1FC5DF0D005EEA03 /* PeekHotelMapCell.xib in Resources */,
 				32499F591FC5DF0D005EEA03 /* ASTPassengersPickerViewController.xib in Resources */,
 				3249A0591FC5DF0D005EEA03 /* CancelableFilterViewCell.xib in Resources */,
+				3287A6252059BC5C00A9BF8B /* ActionCardView.xib in Resources */,
 				3249A02B1FC5DF0D005EEA03 /* SelectionFilterCell.xib in Resources */,
 				3249A2171FC5DF0E005EEA03 /* HLHotelDetailsTableRatingCell.xib in Resources */,
 				32499F351FC5DF0D005EEA03 /* ASTComplexSearchFormTableViewCell.xib in Resources */,
 				32499EC91FC5DF0D005EEA03 /* InfoScreenAboutCell.xib in Resources */,
 				3249A07D1FC5DF0D005EEA03 /* PeekHotelRatingCell.xib in Resources */,
 				3249A2991FC5DF0E005EEA03 /* HLIphoneHotelDetailsVC.xib in Resources */,
+				321210CB20654AC7006BE460 /* JRHotelCardView.xib in Resources */,
 				3249A0731FC5DF0D005EEA03 /* PeekHotelPriceCell.xib in Resources */,
-				32499EF31FC5DF0D005EEA03 /* JRResultsFlightSegmentCell.xib in Resources */,
+				32C61DA52059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.xib in Resources */,
 				322959CF1FE18390006B25C0 /* JRDatePickerDayView.xib in Resources */,
 				3249A20F1FC5DF0E005EEA03 /* HLHotelDetailsRatingHeaderView.xib in Resources */,
 				32499F9B1FC5DF0D005EEA03 /* ASAirportPickerViewController.xib in Resources */,
 				322959C91FE18390006B25C0 /* JRDatePickerVC.xib in Resources */,
 				3249A06D1FC5DF0D005EEA03 /* PeekPhotoCell.xib in Resources */,
+				3287A60C2059BC2100A9BF8B /* PriceCalendarChartHeader.xib in Resources */,
+				325AB02920626ED1008AB6BE /* JRInfoPanelView.xib in Resources */,
 				32499F411FC5DF0D005EEA03 /* ASTComplexSearchFormHeaderView.xib in Resources */,
 				3249A30F1FC5DF0F005EEA03 /* HLIpadMapVC.xib in Resources */,
+				3287A6102059BC2100A9BF8B /* PriceCalendarDirectCell.xib in Resources */,
 				3249A16F1FC5DF0E005EEA03 /* HLSearchVC.xib in Resources */,
 				32499EC71FC5DF0D005EEA03 /* InfoScreenViewController.xib in Resources */,
 				32499E731FC5DF0D005EEA03 /* slider-default7-trackCrossedOver.png in Resources */,
 				32499F691FC5DF0D005EEA03 /* JRFilterCellWithOneThumbSlider.xib in Resources */,
-				32499F011FC5DF0D005EEA03 /* JRSearchResultsVC.xib in Resources */,
 				3249A23B1FC5DF0E005EEA03 /* HLHotelCardView.xib in Resources */,
-				3249A2DD1FC5DF0E005EEA03 /* BookBrowserController.xib in Resources */,
 				32499F711FC5DF0D005EEA03 /* JRFilterCheckboxCell.xib in Resources */,
 				3249A0D91FC5DF0E005EEA03 /* WaitingOtherGatesCell.xib in Resources */,
 				3249A15F1FC5DF0E005EEA03 /* HLKidsPickerVC.xib in Resources */,
 				32499EA31FC5DF0D005EEA03 /* CurrencyPickerViewController.xib in Resources */,
-				32499FB31FC5DF0D005EEA03 /* JRInfoPanelView.xib in Resources */,
 				3249A1671FC5DF0E005EEA03 /* HLIpadKidsPickerVC.xib in Resources */,
 				3249A2A91FC5DF0E005EEA03 /* HLToastView.xib in Resources */,
 				3249A0F51FC5DF0E005EEA03 /* HLNoFilterResultsPlaceholderView~iphone.xib in Resources */,
 				3249A22F1FC5DF0E005EEA03 /* HotelDetailsMoreTableVC.xib in Resources */,
 				3249A0051FC5DF0D005EEA03 /* HLRatingFilterCell.xib in Resources */,
 				3249A0B31FC5DF0E005EEA03 /* BottomDrawer.xib in Resources */,
+				325AB03520626ED1008AB6BE /* JRFlightsSegmentHeaderView.xib in Resources */,
 				3249A20D1FC5DF0E005EEA03 /* HLHotelDetailsImportantPoiCell.xib in Resources */,
+				325AB03120626ED1008AB6BE /* JRFlightCell.xib in Resources */,
 				3249A2C71FC5DF0E005EEA03 /* HLRestartableProgressView.xib in Resources */,
 				32499E6F1FC5DF0D005EEA03 /* available_currency_codes.json in Resources */,
 				3249A1D11FC5DF0E005EEA03 /* AccommodationSummaryCell.xib in Resources */,
+				321210D120654AC7006BE460 /* JRResultsTicketPriceCell.xib in Resources */,
 				3249A1EF1FC5DF0E005EEA03 /* HLHotelDetailsPriceCTACell.xib in Resources */,
 				3249A3411FC5DF0F005EEA03 /* HLGroupedTableCell.xib in Resources */,
 				3249A37B1FC5DF0F005EEA03 /* JRNewsFeedNativeAdView.xib in Resources */,
@@ -4284,7 +4555,6 @@
 				32499E791FC5DF0D005EEA03 /* slider-default7-track@2x.png in Resources */,
 				3249A1DB1FC5DF0E005EEA03 /* HLHotelDetailsUsefullInfoCell.xib in Resources */,
 				3249A0251FC5DF0D005EEA03 /* HLPriceFilterCell.xib in Resources */,
-				32499FB71FC5DF0D005EEA03 /* JRTransferCell.xib in Resources */,
 				3249A3531FC5DF0F005EEA03 /* HLGroupedTableHeaderView.xib in Resources */,
 				32499ED11FC5DF0D005EEA03 /* InfoScreenVersionCell.xib in Resources */,
 				32499F911FC5DF0D005EEA03 /* JRFilterVC.xib in Resources */,
@@ -4296,8 +4566,8 @@
 				3249A3091FC5DF0F005EEA03 /* HLLocateMeMapView.xib in Resources */,
 				3249A0AF1FC5DF0D005EEA03 /* HLDistanceSortCell.xib in Resources */,
 				32499FC51FC5DF0D005EEA03 /* FilterSelectionVC.xib in Resources */,
+				3287A61E2059BC2100A9BF8B /* PriceCalendarResultCell.xib in Resources */,
 				32499F631FC5DF0D005EEA03 /* JRFilterTravelSegmentCell.xib in Resources */,
-				32499FBB1FC5DF0D005EEA03 /* JRFlightsSegmentHeaderView.xib in Resources */,
 				3249A0FD1FC5DF0E005EEA03 /* HLDistanceFilterCardCell.xib in Resources */,
 				3249A0451FC5DF0D005EEA03 /* StarsFilterView.xib in Resources */,
 				328BA9651FC460C00026EA31 /* default_config.plist in Resources */,
@@ -4311,27 +4581,32 @@
 				32499F3D1FC5DF0D005EEA03 /* ASTComplexSearchFormTableViewCellSegment.xib in Resources */,
 				3249A2ED1FC5DF0E005EEA03 /* SingleHotelMapVC.xib in Resources */,
 				3249A0391FC5DF0D005EEA03 /* CancelableFilterView.xib in Resources */,
+				32FA17AF20694DA200D49EA0 /* BrowserViewController.xib in Resources */,
 				3249A0CD1FC5DF0E005EEA03 /* HLMapGroupDetailsVC.xib in Resources */,
+				321210C920654AC7006BE460 /* SearchResultsPriceCalendarView.xib in Resources */,
 				32499FCB1FC5DF0D005EEA03 /* HLControlCollectionViewCell.xib in Resources */,
 				32499F211FC5DF0D005EEA03 /* ASTSimpleSearchFormViewController.xib in Resources */,
 				3249A00B1FC5DF0D005EEA03 /* HLNameFilterCell.xib in Resources */,
+				325AB02D20626ED1008AB6BE /* JRTransferCell.xib in Resources */,
 				32499E6B1FC5DF0D005EEA03 /* AviasalesTemplateLocalizable.strings in Resources */,
 				32499F6F1FC5DF0D005EEA03 /* JRFilterCellWithTwoThumbsSlider.xib in Resources */,
+				321210C520654AC7006BE460 /* JRResultsFlightSegmentCell.xib in Resources */,
 				32499F2B1FC5DF0D005EEA03 /* ASTSearchFormPassengersView.xib in Resources */,
 				3249A1D51FC5DF0E005EEA03 /* HLHotelDetailsPriceTableCell.xib in Resources */,
 				32499F491FC5DF0D005EEA03 /* ASTContainerSearchFormViewController.xib in Resources */,
 				3249A2DF1FC5DF0E005EEA03 /* HLIphoneMapVC.xib in Resources */,
+				3287A5FC2059BC2100A9BF8B /* PriceCalendarChartBarCell.xib in Resources */,
 				3249A07F1FC5DF0D005EEA03 /* MapPeekVC.xib in Resources */,
 				3249A04B1FC5DF0D005EEA03 /* PriceFilterView.xib in Resources */,
 				3249A1F51FC5DF0E005EEA03 /* HLHotelDetailsBadgesCell.xib in Resources */,
-				32499EF71FC5DF0D005EEA03 /* JRResultsTicketCell.xib in Resources */,
+				3287A6142059BC2100A9BF8B /* PriceCalendarAverageCell.xib in Resources */,
 				32499F7B1FC5DF0D005EEA03 /* JRFilterListHeaderCell.xib in Resources */,
 				3249A1D71FC5DF0E005EEA03 /* HLHotelDetailsLocationHeaderView.xib in Resources */,
 				3249A1771FC5DF0E005EEA03 /* HLDatePickerVC.xib in Resources */,
 				3249A0191FC5DF0D005EEA03 /* HLDistanceFilterCell.xib in Resources */,
 				32499FA11FC5DF0D005EEA03 /* ASAirportPickerInfoCell.xib in Resources */,
+				32C5F07C203ECDC100DE4AFD /* LoadingView.xib in Resources */,
 				3249A0DF1FC5DF0E005EEA03 /* WaitingVC.xib in Resources */,
-				3249A2D51FC5DF0E005EEA03 /* HLWebBrowser~iphone.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -4459,10 +4734,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AutoCoding/AutoCoding.framework",
 				"${BUILT_PRODUCTS_DIR}/BZipCompression/BZipCompression.framework",
-				"${BUILT_PRODUCTS_DIR}/BlocksKit/BlocksKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FXBlurView/FXBlurView.framework",
 				"${BUILT_PRODUCTS_DIR}/GCXSteppedSlider/GCXSteppedSlider.framework",
-				"${BUILT_PRODUCTS_DIR}/GPUImage/GPUImage.framework",
 				"${PODS_ROOT}/HotellookSDK/Library/HotellookSDK.framework",
 				"${BUILT_PRODUCTS_DIR}/KeychainSwift/KeychainSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/NMRangeSlider/NMRangeSlider.framework",
@@ -4480,10 +4752,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AutoCoding.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BZipCompression.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BlocksKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FXBlurView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GCXSteppedSlider.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GPUImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HotellookSDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KeychainSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NMRangeSlider.framework",
@@ -4513,20 +4782,19 @@
 				3249A04F1FC5DF0D005EEA03 /* CancelableFilterViewCell.swift in Sources */,
 				3249A2CB1FC5DF0E005EEA03 /* HLExtendedAreaSlider.m in Sources */,
 				3249A0311FC5DF0D005EEA03 /* HLUserLocationTableCell.swift in Sources */,
+				3287A5F82059BC2100A9BF8B /* PriceCalendarPriceLevelView.swift in Sources */,
 				3249A1A71FC5DF0E005EEA03 /* HLPoiManager.m in Sources */,
 				32499ECB1FC5DF0D005EEA03 /* InfoScreenAboutCell.swift in Sources */,
 				3249A0EF1FC5DF0E005EEA03 /* HLNoSearchResultsPlaceholderView.m in Sources */,
 				3249A3AD1FC5DF0F005EEA03 /* JRInspectableAttributes.m in Sources */,
+				3287A6042059BC2100A9BF8B /* PriceCalendarPresenter.swift in Sources */,
 				3249A22B1FC5DF0E005EEA03 /* HLCollectionViewFlowLayoutCenterItem.m in Sources */,
 				32499FED1FC5DF0D005EEA03 /* FilterCellFactory.swift in Sources */,
-				32499EFD1FC5DF0D005EEA03 /* JRSearchResultsVC.m in Sources */,
 				3249A0871FC5DF0D005EEA03 /* ZoomKeepingPeekVC.swift in Sources */,
 				3249A1391FC5DF0E005EEA03 /* HLIpadResultsVC.swift in Sources */,
 				3249A1411FC5DF0E005EEA03 /* HLZoomablePhotoView.swift in Sources */,
 				3249A3C71FC5DF0F005EEA03 /* NSArray+HLContentComparison.m in Sources */,
 				3249A29F1FC5DF0E005EEA03 /* HLAlertsFabric.m in Sources */,
-				32499EF91FC5DF0D005EEA03 /* ASTSearchResultsSceneViewController.swift in Sources */,
-				3249A35D1FC5DF0F005EEA03 /* JRSearchInfoUtils.m in Sources */,
 				3249A1AF1FC5DF0E005EEA03 /* HLHotelDetailPhotosTabCell.swift in Sources */,
 				3249A09D1FC5DF0D005EEA03 /* HLRatingBadge.swift in Sources */,
 				320A0BEC1FBF2A7600DEF6AD /* JRAppDelegate.m in Sources */,
@@ -4548,7 +4816,6 @@
 				3249A33B1FC5DF0F005EEA03 /* HLBadgeParser.m in Sources */,
 				3249A1551FC5DF0E005EEA03 /* HLCityPickerVC.swift in Sources */,
 				3249A0DD1FC5DF0E005EEA03 /* WaitingLongSearchCell.swift in Sources */,
-				32499FBD1FC5DF0D005EEA03 /* JRFlightCell.m in Sources */,
 				3249A3A11FC5DF0F005EEA03 /* MKMapView+Zoom.m in Sources */,
 				32499F891FC5DF0D005EEA03 /* JRFilterTravelSegmentItem.m in Sources */,
 				3249A3A31FC5DF0F005EEA03 /* SwiftComparison.swift in Sources */,
@@ -4580,12 +4847,15 @@
 				32499E951FC5DF0D005EEA03 /* CustomColorScheme.swift in Sources */,
 				3249A3B51FC5DF0F005EEA03 /* MKMapView+Refresh.m in Sources */,
 				3249A1E91FC5DF0E005EEA03 /* HLHotelDetailsColumnBaseCell.swift in Sources */,
+				32460B592035C79600F937F1 /* JRSearchedAirportsManager.m in Sources */,
 				3249A1211FC5DF0E005EEA03 /* HLPlaceholderCardItem.swift in Sources */,
 				3249A2191FC5DF0E005EEA03 /* ExpandCell.swift in Sources */,
 				3249A1131FC5DF0E005EEA03 /* HLActionCardsManager.m in Sources */,
 				3249A3971FC5DF0F005EEA03 /* UIViewController+ShowAlert.swift in Sources */,
+				325AB03320626ED1008AB6BE /* JRFlightCell.m in Sources */,
 				32499F7F1FC5DF0D005EEA03 /* JRFilterBoundsBuilder.m in Sources */,
 				3249A1331FC5DF0E005EEA03 /* HLVariantPhotoCell.m in Sources */,
+				32C61D872059BE1D00CF4AEC /* SearchResultsCardList.swift in Sources */,
 				3249A09B1FC5DF0D005EEA03 /* HLDiscountHotelBadge.swift in Sources */,
 				3249A3191FC5DF0F005EEA03 /* HotelInfoViewLogic.swift in Sources */,
 				3249A2691FC5DF0E005EEA03 /* ReviewsActivityItem.swift in Sources */,
@@ -4597,7 +4867,6 @@
 				3249A0931FC5DF0D005EEA03 /* ImportantPointsPeekVC.swift in Sources */,
 				3249A0C91FC5DF0E005EEA03 /* HotellookSortItemsFactory.swift in Sources */,
 				3249A39F1FC5DF0F005EEA03 /* UIViewController+UIScrollView.m in Sources */,
-				3249A2D91FC5DF0E005EEA03 /* BookBrowserController.swift in Sources */,
 				3249A2CF1FC5DF0E005EEA03 /* PopoverItemPickerCell.swift in Sources */,
 				32499F311FC5DF0D005EEA03 /* ASTSimpleSearchFormAirportTableViewCell.m in Sources */,
 				3249A31F1FC5DF0F005EEA03 /* HLAutolayoutView.m in Sources */,
@@ -4608,9 +4877,9 @@
 				32499FE91FC5DF0D005EEA03 /* HLFilteringOperation.m in Sources */,
 				3249A25F1FC5DF0E005EEA03 /* HotelDetailsNavBarView.swift in Sources */,
 				3249A1031FC5DF0E005EEA03 /* HLRatingCardCell.m in Sources */,
-				32499EF11FC5DF0D005EEA03 /* JRResultsTicketPriceCell.m in Sources */,
 				3249A05F1FC5DF0D005EEA03 /* BaseSection.swift in Sources */,
 				3249A16D1FC5DF0E005EEA03 /* HLSearchForm.swift in Sources */,
+				32460B552035C79600F937F1 /* JRPriceUtils.m in Sources */,
 				3249A12D1FC5DF0E005EEA03 /* HLVariantScrollablePhotoCell.m in Sources */,
 				3249A24B1FC5DF0E005EEA03 /* ReviewsVC.swift in Sources */,
 				3249A23D1FC5DF0E005EEA03 /* SeparatorView.swift in Sources */,
@@ -4628,25 +4897,23 @@
 				3249A1ED1FC5DF0E005EEA03 /* HLHotelDetailsActivityIndicatorTableCell.swift in Sources */,
 				3249A04D1FC5DF0D005EEA03 /* PriceFilterView.swift in Sources */,
 				3249A0031FC5DF0D005EEA03 /* SelectionFilterCell.swift in Sources */,
-				32499EEF1FC5DF0D005EEA03 /* JRResultsFlightSegmentCell.m in Sources */,
 				32499F1D1FC5DF0D005EEA03 /* ASTSimpleSearchFormPresenter.m in Sources */,
-				3249A3671FC5DF0F005EEA03 /* StringUtils.m in Sources */,
 				32499FEF1FC5DF0D005EEA03 /* FiltersNavBarView.swift in Sources */,
 				3249A2111FC5DF0E005EEA03 /* HLHotelDetailsTableCell.swift in Sources */,
+				32C61D852059BE1D00CF4AEC /* ASTSearchResultsSceneViewController.swift in Sources */,
 				32499FA31FC5DF0D005EEA03 /* ASAirportPickerInfoCellModel.swift in Sources */,
 				3249A22D1FC5DF0E005EEA03 /* PoweredByBookingItem.swift in Sources */,
 				3249A0231FC5DF0D005EEA03 /* HLNameFilterCell.swift in Sources */,
 				3249A27B1FC5DF0E005EEA03 /* RoomItem.swift in Sources */,
 				3249A09F1FC5DF0D005EEA03 /* HLDistanceBadge.swift in Sources */,
 				3249A0991FC5DF0D005EEA03 /* HLPopularHotelBadge.swift in Sources */,
+				32C61DAD2059BE7700CF4AEC /* NumberUtils.swift in Sources */,
 				3249A1931FC5DF0E005EEA03 /* HLUrlUtils.m in Sources */,
-				32499FBF1FC5DF0D005EEA03 /* JRFlightsSegmentHeaderView.m in Sources */,
 				32499EA71FC5DF0D005EEA03 /* CurrencyPickerViewController.swift in Sources */,
 				3249A14B1FC5DF0E005EEA03 /* WaitingItems.swift in Sources */,
-				3249A2D71FC5DF0E005EEA03 /* BrowserController.swift in Sources */,
 				3249A2411FC5DF0E005EEA03 /* PoweredByBookingCell.swift in Sources */,
 				3249A3AB1FC5DF0F005EEA03 /* UIViewController+JRAddChildViewController.m in Sources */,
-				32499FC11FC5DF0D005EEA03 /* JRInfoPanelView.m in Sources */,
+				321210C320654AC7006BE460 /* JRResultsFlightSegmentCell.m in Sources */,
 				3249A26F1FC5DF0E005EEA03 /* GoodToKnowItem.swift in Sources */,
 				3249A25B1FC5DF0E005EEA03 /* ScoreView.swift in Sources */,
 				32499E911FC5DF0D005EEA03 /* BlackColorScheme.swift in Sources */,
@@ -4660,22 +4927,22 @@
 				3249A0771FC5DF0D005EEA03 /* PeekHotelRatingCell.swift in Sources */,
 				32499F6B1FC5DF0D005EEA03 /* JRFilterCellsFactory.m in Sources */,
 				3249A2391FC5DF0E005EEA03 /* HotelPricesVC.swift in Sources */,
+				32479300206A9A73000DEE5F /* BookBrowserViewPresenter.swift in Sources */,
 				3249A0CB1FC5DF0E005EEA03 /* HLMapGroupDetailsCell.m in Sources */,
 				3249A3691FC5DF0F005EEA03 /* JRSDKSearchInfoBuilder+Config.swift in Sources */,
 				3249A3AF1FC5DF0F005EEA03 /* UIImageView+RemoteCache.swift in Sources */,
 				3249A3891FC5DF0F005EEA03 /* JRNewsFeedAdLoader.m in Sources */,
 				3249A32D1FC5DF0F005EEA03 /* NSDictionary+Parsing.m in Sources */,
 				3249A2271FC5DF0E005EEA03 /* ActivitySection.swift in Sources */,
-				3249A3791FC5DF0F005EEA03 /* JRAdvertisementTableManager.m in Sources */,
 				3249A2031FC5DF0E005EEA03 /* ReviewCell.swift in Sources */,
 				32499FF51FC5DF0D005EEA03 /* FilterPriceItem.swift in Sources */,
 				3249A1951FC5DF0E005EEA03 /* NSError+HLCustomErrors.m in Sources */,
 				3249A1CB1FC5DF0E005EEA03 /* HLHotelDetailsRatingDetailsCell.swift in Sources */,
 				3249A0831FC5DF0D005EEA03 /* PeekTableVC.swift in Sources */,
+				321210DD20654B20006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.m in Sources */,
 				3249A2BF1FC5DF0E005EEA03 /* HLRestartableProgressView.m in Sources */,
 				32499FF11FC5DF0D005EEA03 /* FilterStarItem.swift in Sources */,
 				32499F931FC5DF0D005EEA03 /* JRFilterTask.m in Sources */,
-				3249A3631FC5DF0F005EEA03 /* JRStringsWidthComputer.m in Sources */,
 				32499EBD1FC5DF0D005EEA03 /* InfoScreenExtrnalCellModel.swift in Sources */,
 				3249A3C51FC5DF0F005EEA03 /* UIButton+States.m in Sources */,
 				3249A3011FC5DF0F005EEA03 /* HLIphoneMapVC.m in Sources */,
@@ -4692,6 +4959,7 @@
 				3249A1091FC5DF0E005EEA03 /* HLPriceFilterCardCell.m in Sources */,
 				32499FCD1FC5DF0D005EEA03 /* HLIpadFiltersVC.swift in Sources */,
 				3249A2FF1FC5DF0F005EEA03 /* ImportantPointsMapVC.swift in Sources */,
+				3287A6182059BC2100A9BF8B /* PriceCalendarCardCell.swift in Sources */,
 				3249A1191FC5DF0E005EEA03 /* HLNearbyCitiesSearchCardItem.swift in Sources */,
 				3249A2331FC5DF0E005EEA03 /* HLHotelCardView.swift in Sources */,
 				322959D11FE18390006B25C0 /* JRDatePickerDayView.m in Sources */,
@@ -4707,12 +4975,12 @@
 				3249A33D1FC5DF0F005EEA03 /* HLGroupedTableHeaderView.swift in Sources */,
 				3249A0511FC5DF0D005EEA03 /* PackagingFilterView.swift in Sources */,
 				32499F191FC5DF0D005EEA03 /* ASTSearchFormSceneViewController.m in Sources */,
+				3287A6062059BC2100A9BF8B /* PriceCalendarViewController.swift in Sources */,
 				3249A3B11FC5DF0F005EEA03 /* UINavigationItem+JRCustomBarItems.m in Sources */,
 				3249A2931FC5DF0E005EEA03 /* AccommodationSummaryItem.swift in Sources */,
 				3249A2EB1FC5DF0E005EEA03 /* HLIpadMapVC.swift in Sources */,
 				32499F991FC5DF0D005EEA03 /* ASAirportPickerPresenter.swift in Sources */,
 				3249A0B11FC5DF0D005EEA03 /* HLDistanceSortCell.swift in Sources */,
-				3249A35B1FC5DF0F005EEA03 /* JRTicketUtils.m in Sources */,
 				3249A34B1FC5DF0F005EEA03 /* ASTGroupedSearchVC.swift in Sources */,
 				3249A0E91FC5DF0E005EEA03 /* HLVariantCollectionViewCell.m in Sources */,
 				3249A2971FC5DF0E005EEA03 /* HLFixedHeaderPositionLayout.m in Sources */,
@@ -4731,13 +4999,14 @@
 				3249A0131FC5DF0D005EEA03 /* StringFilterItem.swift in Sources */,
 				32499EAD1FC5DF0D005EEA03 /* InteractionManager.swift in Sources */,
 				3249A1CD1FC5DF0E005EEA03 /* HLHotelDetailsErrorTableCell.swift in Sources */,
-				3249A3811FC5DF0F005EEA03 /* JRHotelCardView.m in Sources */,
 				3249A21F1FC5DF0E005EEA03 /* HLHotelDetailsBadgesCell.swift in Sources */,
 				32499ECD1FC5DF0D005EEA03 /* InfoScreenRateCell.swift in Sources */,
+				32FA17B120694DA200D49EA0 /* BrowserViewController.swift in Sources */,
 				32499F851FC5DF0D005EEA03 /* JRFilterItemsFactory.m in Sources */,
 				3249A0491FC5DF0D005EEA03 /* StarsFilterView.swift in Sources */,
 				3249A0E31FC5DF0E005EEA03 /* WaitingCellFactory.swift in Sources */,
 				3249A1C91FC5DF0E005EEA03 /* HLHotelDetailsUsefullInfoCell.swift in Sources */,
+				32460B492035C79600F937F1 /* StringUtils.swift in Sources */,
 				3249A10D1FC5DF0E005EEA03 /* HLSearchTicketsCardCell.m in Sources */,
 				3249A2A71FC5DF0E005EEA03 /* PopoverItemPickerVC.swift in Sources */,
 				32499F531FC5DF0D005EEA03 /* ASTPassengersPickerSliderView.swift in Sources */,
@@ -4746,9 +5015,11 @@
 				32499E871FC5DF0D005EEA03 /* JRColorScheme.m in Sources */,
 				3249A3C31FC5DF0F005EEA03 /* UIView+NSLS.m in Sources */,
 				3249A2B11FC5DF0E005EEA03 /* HLPhotoScrollCollectionCell.swift in Sources */,
+				3287A60E2059BC2100A9BF8B /* PriceCalendarChartHeader.swift in Sources */,
 				32499FD51FC5DF0D005EEA03 /* HLFilter.m in Sources */,
 				3249A01F1FC5DF0D005EEA03 /* HLDistanceFilterCell.swift in Sources */,
 				32499F571FC5DF0D005EEA03 /* ASTPassengersPickerTableViewCell.swift in Sources */,
+				32C5F079203ECDB300DE4AFD /* LoadingView.swift in Sources */,
 				3249A0611FC5DF0D005EEA03 /* Section.swift in Sources */,
 				32499F371FC5DF0D005EEA03 /* ASTComplexSearchFormFooterView.m in Sources */,
 				3249A3A51FC5DF0F005EEA03 /* UILabel+Truncate.swift in Sources */,
@@ -4762,12 +5033,15 @@
 				3249A0951FC5DF0D005EEA03 /* HDKDefaultsSaver+Hotellook.m in Sources */,
 				3249A1751FC5DF0E005EEA03 /* HotelPropertyTypeUtils.swift in Sources */,
 				32499F331FC5DF0D005EEA03 /* ASTComplexSearchFormTableViewCell.m in Sources */,
+				3287A6162059BC2100A9BF8B /* PriceCalendarAverageCell.swift in Sources */,
+				32460B4B2035C79600F937F1 /* StringUtils.m in Sources */,
 				32499FFD1FC5DF0D005EEA03 /* FilterMultiAmenitiesItem.swift in Sources */,
 				3249A1DD1FC5DF0E005EEA03 /* HLHotelDetailsRatingSummaryCell.swift in Sources */,
 				3249A1C31FC5DF0E005EEA03 /* HotelDetailsReviewHighlightCell.swift in Sources */,
-				3249A3591FC5DF0F005EEA03 /* DateUtil.m in Sources */,
 				32499EC11FC5DF0D005EEA03 /* InfoScreenRateCellModel.swift in Sources */,
+				3287A60A2059BC2100A9BF8B /* PriceCalendarManager.swift in Sources */,
 				3249A26B1FC5DF0E005EEA03 /* TableRatingItem.swift in Sources */,
+				32C61DB02059BEA400CF4AEC /* SearchInfoBuilderStorage.swift in Sources */,
 				3249A20B1FC5DF0E005EEA03 /* HLHotelDetailsMapCell.swift in Sources */,
 				32499FE31FC5DF0D005EEA03 /* HLPriceSliderCalculator.swift in Sources */,
 				3249A3331FC5DF0F005EEA03 /* HLBadgeLabel.swift in Sources */,
@@ -4776,7 +5050,6 @@
 				3249A2231FC5DF0E005EEA03 /* RatingSection.swift in Sources */,
 				3249A1F71FC5DF0E005EEA03 /* HLHotelDetailsPriceCTACell.swift in Sources */,
 				3249A1F11FC5DF0E005EEA03 /* HLHotelDetailsNoPriceCell.swift in Sources */,
-				32499F5F1FC5DF0D005EEA03 /* ASTGateBrowserPresenter.swift in Sources */,
 				322959C71FE18390006B25C0 /* JRDatePickerStateObject.m in Sources */,
 				3249A0E11FC5DF0E005EEA03 /* WaitingVC.swift in Sources */,
 				3249A3831FC5DF0F005EEA03 /* JRAdvertisementManager.m in Sources */,
@@ -4786,12 +5059,14 @@
 				3249A0271FC5DF0D005EEA03 /* HLRatingFilterCell.swift in Sources */,
 				3249A1971FC5DF0E005EEA03 /* HLDefaultCitiesFactory.m in Sources */,
 				3249A0D31FC5DF0E005EEA03 /* Resource+Promise.swift in Sources */,
-				3249A3611FC5DF0F005EEA03 /* JRSearchedAirportsManager.m in Sources */,
 				3249A2A11FC5DF0E005EEA03 /* ResultsTTLManager.swift in Sources */,
+				328DA65A2069079E00180732 /* UIColor+Hex.m in Sources */,
 				3249A3211FC5DF0F005EEA03 /* HLAutolayoutCollectionReusableView.m in Sources */,
 				3249A0AB1FC5DF0D005EEA03 /* ServiceLocator.swift in Sources */,
 				3249A2251FC5DF0E005EEA03 /* PriceSection.swift in Sources */,
 				32499EB91FC5DF0D005EEA03 /* InfoScreenVersionCellModel.swift in Sources */,
+				32460B512035C79600F937F1 /* JRTicketUtils.m in Sources */,
+				3287A6122059BC2100A9BF8B /* PriceCalendarDirectCell.swift in Sources */,
 				32499FB11FC5DF0D005EEA03 /* JRTicketVC.m in Sources */,
 				3249A19B1FC5DF0E005EEA03 /* HLCommonVC.m in Sources */,
 				32499F8D1FC5DF0D005EEA03 /* JRFilterListSeparatorItem.m in Sources */,
@@ -4807,16 +5082,19 @@
 				32499F951FC5DF0D005EEA03 /* JRFilter.m in Sources */,
 				32499F731FC5DF0D005EEA03 /* JRFilterTravelSegmentCell.m in Sources */,
 				3249A3451FC5DF0F005EEA03 /* ASTBaseSearchTableVC.swift in Sources */,
+				321210CD20654AC7006BE460 /* JRHotelCardView.m in Sources */,
 				3249A17B1FC5DF0E005EEA03 /* HLDatePickerStateObject.m in Sources */,
 				3249A3931FC5DF0F005EEA03 /* UIViewCell+ReuseIdentifier.m in Sources */,
 				3249A39B1FC5DF0F005EEA03 /* UIScrollView+ScrollableArea.m in Sources */,
 				3249A0B51FC5DF0E005EEA03 /* BottomDrawer+Objc.swift in Sources */,
 				3249A30D1FC5DF0F005EEA03 /* HLMapView.m in Sources */,
+				32127ADB20331FC800F1D53D /* InfoScreenIconImageViewFiveTimesTapHandler.swift in Sources */,
 				3249A2811FC5DF0E005EEA03 /* MapItem.swift in Sources */,
 				3249A2571FC5DF0E005EEA03 /* HLHotelDetailsSearchDecorator.swift in Sources */,
 				3249A3B91FC5DF0F005EEA03 /* UIView+Nib.m in Sources */,
 				32499EB51FC5DF0D005EEA03 /* InfoScreenDetailCellModel.swift in Sources */,
 				32499F871FC5DF0D005EEA03 /* JRFilterOneThumbSliderItem.m in Sources */,
+				3280AF60206CEF85002EEA96 /* BrowserViewPresenter.swift in Sources */,
 				3249A11D1FC5DF0E005EEA03 /* HLRatingFilterCardItem.swift in Sources */,
 				3249A2871FC5DF0E005EEA03 /* ActivityItem.swift in Sources */,
 				3249A1A11FC5DF0E005EEA03 /* HLLocaleInspector.m in Sources */,
@@ -4824,8 +5102,8 @@
 				3249A2AD1FC5DF0E005EEA03 /* HLPanGestureRecognizer.m in Sources */,
 				3249A02F1FC5DF0D005EEA03 /* HLControlCollectionViewCell.swift in Sources */,
 				3249A1FF1FC5DF0E005EEA03 /* ReviewRatingView.swift in Sources */,
-				32499EFB1FC5DF0D005EEA03 /* JRSearchResultsList.m in Sources */,
 				3249A2B51FC5DF0E005EEA03 /* HLPhotoGridView.swift in Sources */,
+				32460B4D2035C79600F937F1 /* DateUtil.m in Sources */,
 				3249A1151FC5DF0E005EEA03 /* ActionCardsConfiguration.swift in Sources */,
 				3249A2351FC5DF0E005EEA03 /* CellSeparatorView.swift in Sources */,
 				3249A2651FC5DF0E005EEA03 /* RatingDetailItem.swift in Sources */,
@@ -4852,7 +5130,7 @@
 				3249A1711FC5DF0E005EEA03 /* HLIpadSearchVC.m in Sources */,
 				32499EC51FC5DF0D005EEA03 /* InfoScreenPresenter.swift in Sources */,
 				3249A0691FC5DF0D005EEA03 /* PeekFullInfoCell.swift in Sources */,
-				3249A2DB1FC5DF0E005EEA03 /* HLWebBrowser.m in Sources */,
+				3287A6232059BC5C00A9BF8B /* ActionCardView.swift in Sources */,
 				3249A3171FC5DF0F005EEA03 /* HLHotelInfoView.swift in Sources */,
 				3249A1251FC5DF0E005EEA03 /* HLActionCardsArrayHelper.swift in Sources */,
 				3249A3711FC5DF0F005EEA03 /* UIViewController+Navigation.swift in Sources */,
@@ -4873,14 +5151,18 @@
 				3249A0B71FC5DF0E005EEA03 /* UIViewController+BottomDrawer.swift in Sources */,
 				3249A2471FC5DF0E005EEA03 /* HLHotelDetailsDecorator.swift in Sources */,
 				3249A13F1FC5DF0E005EEA03 /* HLPhotoCollectionView+UpdateDataSource.swift in Sources */,
+				321210CF20654AC7006BE460 /* JRResultsTicketPriceCell.m in Sources */,
 				3249A2CD1FC5DF0E005EEA03 /* PagesView.swift in Sources */,
+				32460B4F2035C79600F937F1 /* JRSearchInfoUtils.m in Sources */,
 				3249A0F31FC5DF0E005EEA03 /* HLNoFilterResultsPlaceholderView.m in Sources */,
+				32460B572035C79600F937F1 /* JRStringsWidthComputer.m in Sources */,
 				32499EBF1FC5DF0D005EEA03 /* InfoScreenAboutCellModel.swift in Sources */,
 				3249A2771FC5DF0E005EEA03 /* NamedHotelDetailsItem.swift in Sources */,
 				32499FD91FC5DF0D005EEA03 /* IpadPointSelectionVC.swift in Sources */,
 				32499FDF1FC5DF0D005EEA03 /* HLSliderCalculator.m in Sources */,
 				3249A1BF1FC5DF0E005EEA03 /* HotelDetailsReviewHighlightQuoteView.swift in Sources */,
 				3249A03B1FC5DF0D005EEA03 /* CommonAmenityFilterView.swift in Sources */,
+				321210C720654AC7006BE460 /* SearchResultsPriceCalendarView.swift in Sources */,
 				3249A1891FC5DF0E005EEA03 /* HLApiCoordinate.m in Sources */,
 				3249A2A31FC5DF0E005EEA03 /* HLRangeSlider.m in Sources */,
 				32499F8B1FC5DF0D005EEA03 /* JRFilterCheckBoxItem.m in Sources */,
@@ -4888,10 +5170,12 @@
 				3249A1B11FC5DF0E005EEA03 /* HLHotelDetailsTabCell.swift in Sources */,
 				3249A1851FC5DF0E005EEA03 /* HLResultVariant.m in Sources */,
 				32499FE11FC5DF0D005EEA03 /* HLSliderCalculatorFactory.m in Sources */,
+				32C61D892059BE1D00CF4AEC /* JRSearchResultsList.m in Sources */,
 				3249A0D71FC5DF0E005EEA03 /* WaitingGateCell.swift in Sources */,
 				3249A38D1FC5DF0F005EEA03 /* AppConfigurator.swift in Sources */,
 				3249A2291FC5DF0E005EEA03 /* HotelGalleryVC.swift in Sources */,
 				3249A0751FC5DF0D005EEA03 /* PeekPhotoCell.swift in Sources */,
+				32C61D8D2059BE1D00CF4AEC /* JRSearchResultsVC.m in Sources */,
 				3249A11B1FC5DF0E005EEA03 /* HLSearchTicketsCardItem.swift in Sources */,
 				3249A2851FC5DF0E005EEA03 /* AccommodationItem.swift in Sources */,
 				32499E8D1FC5DF0D005EEA03 /* ColorScheme.swift in Sources */,
@@ -4904,14 +5188,17 @@
 				3249A13D1FC5DF0E005EEA03 /* HLPhotoView.swift in Sources */,
 				32499F2D1FC5DF0D005EEA03 /* ASTSearchFormPassengersView.m in Sources */,
 				3249A0AD1FC5DF0D005EEA03 /* NSObject+Notifications.m in Sources */,
+				321210D320654AC7006BE460 /* JRResultsTicketCell.m in Sources */,
 				3249A3231FC5DF0F005EEA03 /* HLAutolayoutCollectionViewCell.m in Sources */,
+				32C61D8B2059BE1D00CF4AEC /* SearchResultsCardItem.swift in Sources */,
 				3249A2AB1FC5DF0E005EEA03 /* HLScrollableSegmentedControl.swift in Sources */,
 				3249A3071FC5DF0F005EEA03 /* HLLocateMeMapView.swift in Sources */,
+				3287A5FE2059BC2100A9BF8B /* PriceCalendarChartBarCell.swift in Sources */,
 				32499EB11FC5DF0D005EEA03 /* JRViewController.m in Sources */,
 				3249A2051FC5DF0E005EEA03 /* ReviewTextCell.swift in Sources */,
 				3249A19F1FC5DF0E005EEA03 /* HLParseUtils.m in Sources */,
-				3249A35F1FC5DF0F005EEA03 /* StringUtils.swift in Sources */,
 				3249A0A71FC5DF0D005EEA03 /* SharingURLActivityItemProvider.swift in Sources */,
+				32A2BF4B20247C6900B9EC1B /* DateFormatter+Format.swift in Sources */,
 				3249A1A31FC5DF0E005EEA03 /* HLEmailSender.m in Sources */,
 				3249A1FB1FC5DF0E005EEA03 /* ReviewContentView.swift in Sources */,
 				32499FA51FC5DF0D005EEA03 /* ASAirportPickerSectionViewModel.swift in Sources */,
@@ -4923,20 +5210,21 @@
 				32499F671FC5DF0D005EEA03 /* JRFilterCellWithTwoThumbsSlider.m in Sources */,
 				32499F3F1FC5DF0D005EEA03 /* ASTComplexSearchFormHeaderView.m in Sources */,
 				3249A1A51FC5DF0E005EEA03 /* HLMailComposeVC.m in Sources */,
-				32499F611FC5DF0D005EEA03 /* ASTGateBrowserViewController.swift in Sources */,
+				3287A6022059BC2100A9BF8B /* PriceCalendarPriceView.swift in Sources */,
 				3249A2951FC5DF0E005EEA03 /* DistanceItem.swift in Sources */,
 				32499F471FC5DF0D005EEA03 /* ASTSimpleSearchFormSeparatorView.m in Sources */,
 				3249A1911FC5DF0E005EEA03 /* HLGate+Hotellook.swift in Sources */,
 				32499EE51FC5DF0D005EEA03 /* ASTWaitingScreenPresenter.swift in Sources */,
-				3249A0A91FC5DF0D005EEA03 /* UIColor+Hex.m in Sources */,
 				3249A0371FC5DF0D005EEA03 /* CustomFilterViewTableItem.swift in Sources */,
 				3249A06B1FC5DF0D005EEA03 /* PeekHotelMapCell.swift in Sources */,
 				32499EC31FC5DF0D005EEA03 /* InfoScreenViewController.swift in Sources */,
 				32499E931FC5DF0D005EEA03 /* PurpleColorScheme.swift in Sources */,
 				3249A0CF1FC5DF0E005EEA03 /* HLMapGroupDetailsVC.m in Sources */,
 				3249A15D1FC5DF0E005EEA03 /* HLIpadKidsPickerVC.swift in Sources */,
+				32F697BD206BED3700528741 /* WKWebView+Scripts.swift in Sources */,
 				32499F171FC5DF0D005EEA03 /* ASTContainerSearchFormViewController.m in Sources */,
 				3249A2BB1FC5DF0E005EEA03 /* HLPhotoGridCollectionCell.swift in Sources */,
+				322C0934206A8C970014D584 /* GateBrowserViewPresenter.swift in Sources */,
 				3249A2071FC5DF0E005EEA03 /* HLHotelDetailsTableRatingCell.swift in Sources */,
 				3249A3B71FC5DF0F005EEA03 /* NSString+HLCapitalization.m in Sources */,
 				32499EDF1FC5DF0D005EEA03 /* ProgressView.swift in Sources */,
@@ -4951,13 +5239,11 @@
 				3249A1B31FC5DF0E005EEA03 /* HLTwoColumnCellsDataSource.swift in Sources */,
 				32499FA71FC5DF0D005EEA03 /* ASAirportPickerSectionView.swift in Sources */,
 				3249A0011FC5DF0D005EEA03 /* FilterRatingItem.swift in Sources */,
-				3249A3651FC5DF0F005EEA03 /* JRPriceUtils.m in Sources */,
 				322959CB1FE18390006B25C0 /* JRDatePickerVC.m in Sources */,
 				3249A1051FC5DF0E005EEA03 /* HLDistanceFilterCardCell.m in Sources */,
 				3249A1811FC5DF0E005EEA03 /* HLTrustyou+Hotellook.m in Sources */,
 				32499F791FC5DF0D005EEA03 /* JRFilterListHeaderCell.m in Sources */,
 				3249A1E71FC5DF0E005EEA03 /* DiscountInfoView.swift in Sources */,
-				32499EEB1FC5DF0D005EEA03 /* JRSearchResultsFlightSegmentCellLayoutParameters.m in Sources */,
 				3249A1831FC5DF0E005EEA03 /* HDKRoom+Hotellook.swift in Sources */,
 				3249A1FD1FC5DF0E005EEA03 /* ReviewTextsContainerView.swift in Sources */,
 				32499F451FC5DF0D005EEA03 /* ASTSimpleSearchFormDateTableViewCell.m in Sources */,
@@ -4968,11 +5254,12 @@
 				3249A1B71FC5DF0E005EEA03 /* TableSection.swift in Sources */,
 				3249A0FF1FC5DF0E005EEA03 /* HLResultCardCell.m in Sources */,
 				3249A2831FC5DF0E005EEA03 /* MultipleLinesFeatureItem.swift in Sources */,
-				32499EED1FC5DF0D005EEA03 /* JRResultsTicketCell.m in Sources */,
 				3249A0E71FC5DF0E005EEA03 /* HLCollectionItem.swift in Sources */,
+				32C61DAA2059BE5200CF4AEC /* AppearanceSettings.swift in Sources */,
 				32499FC71FC5DF0D005EEA03 /* HLDistanceCalculator.m in Sources */,
 				322959CD1FE18390006B25C0 /* JRDatePickerMonthItem.m in Sources */,
 				3249A13B1FC5DF0E005EEA03 /* HLPhotoManager.swift in Sources */,
+				325AB03720626ED1008AB6BE /* JRFlightsSegmentHeaderView.m in Sources */,
 				3249A36F1FC5DF0F005EEA03 /* JRSDKPaymentMethod+LocalizedName.swift in Sources */,
 				3249A2631FC5DF0E005EEA03 /* RatingItem.swift in Sources */,
 				3249A2FD1FC5DF0F005EEA03 /* TBClusterAnnotationView.m in Sources */,
@@ -4980,14 +5267,18 @@
 				3249A3311FC5DF0F005EEA03 /* HLBadgeIconView.swift in Sources */,
 				3249A3751FC5DF0F005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */,
 				3249A29B1FC5DF0E005EEA03 /* HLIpadHotelDetailsVC.swift in Sources */,
+				3287A61C2059BC2100A9BF8B /* PriceCalendarResultCell.swift in Sources */,
 				3249A1F91FC5DF0E005EEA03 /* AccommodationSummaryCell.swift in Sources */,
 				3249A11F1FC5DF0E005EEA03 /* HLActionCardItem.swift in Sources */,
 				3249A0971FC5DF0D005EEA03 /* RoomsSorter.swift in Sources */,
 				3249A2AF1FC5DF0E005EEA03 /* HLZoomablePhotoScrollCollectionCell.swift in Sources */,
 				3249A2731FC5DF0E005EEA03 /* MoreRatingDetailsItem.swift in Sources */,
 				32499EE11FC5DF0D005EEA03 /* ASTWaitingScreenViewController.swift in Sources */,
+				325AB02F20626ED1008AB6BE /* JRTransferCell.m in Sources */,
+				3287A5FA2059BC2100A9BF8B /* PriceCalendarChartView.swift in Sources */,
 				32499FFB1FC5DF0D005EEA03 /* FilterNameItem.swift in Sources */,
 				32499F5B1FC5DF0D005EEA03 /* ASTPassengersPickerViewModel.swift in Sources */,
+				325AB02B20626ED1008AB6BE /* JRInfoPanelView.m in Sources */,
 				3249A1231FC5DF0E005EEA03 /* HLPriceFilterCardItem.swift in Sources */,
 				3249A0631FC5DF0D005EEA03 /* TableItem.swift in Sources */,
 				3249A2491FC5DF0E005EEA03 /* HLTableViewCell.swift in Sources */,
@@ -5011,7 +5302,6 @@
 				3249A0651FC5DF0D005EEA03 /* HLLocationManager.m in Sources */,
 				32499FF31FC5DF0D005EEA03 /* FilterSliderItem.swift in Sources */,
 				3249A2431FC5DF0E005EEA03 /* HLHotelDetailsVC.swift in Sources */,
-				32499FB91FC5DF0D005EEA03 /* JRTransferCell.m in Sources */,
 				3249A2FB1FC5DF0F005EEA03 /* TBQuadTree.m in Sources */,
 				3249A3151FC5DF0F005EEA03 /* HLCitiesByPointDetector.swift in Sources */,
 				3249A2671FC5DF0E005EEA03 /* ReviewHighlightItem.swift in Sources */,
@@ -5133,14 +5423,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -5162,6 +5460,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -5175,14 +5474,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -5212,7 +5519,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5235,10 +5546,11 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
 				SWIFT_OBJC_BRIDGING_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -5250,7 +5562,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5270,10 +5586,11 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
 				STRIP_STYLE = all;
 				SWIFT_OBJC_BRIDGING_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -5288,14 +5605,22 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -5325,7 +5650,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				CODE_SIGN_STYLE = Manual;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -5348,10 +5677,11 @@
 				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = NO;
 				STRIP_STYLE = all;
 				SWIFT_OBJC_BRIDGING_HEADER = "AviasalesSDKTemplate/AviasalesSDKTemplate-Bridging-Header.h";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};

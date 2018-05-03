@@ -1,6 +1,7 @@
 import UIKit
 import Foundation
 
+@objcMembers
 class HLToastView: UIView {
 
     var presented: Bool = false
@@ -78,7 +79,7 @@ class HLToastView: UIView {
 		self.dismiss(0.3)
 	}
 
-    func onTimer() {
+    @objc func onTimer() {
         self.timeredDismiss()
     }
 

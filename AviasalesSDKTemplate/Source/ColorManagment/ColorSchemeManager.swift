@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objcMembers
 class ColorSchemeManager: NSObject {
     
     static let shared = ColorSchemeManager()

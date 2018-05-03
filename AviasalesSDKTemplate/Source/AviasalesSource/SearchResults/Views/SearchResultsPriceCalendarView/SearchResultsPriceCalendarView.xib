@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="SearchResultsPriceCalendarView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gWk-hy-uuO">
+                    <rect key="frame" x="10" y="0.0" width="355" height="150"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price calendar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="As8-dW-u1C">
+                            <rect key="frame" x="132" y="10" width="91" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5m-TH-hag">
+                            <rect key="frame" x="0.0" y="36" width="355" height="114"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8eB-wN-SJx">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="150"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <gestureRecognizers/>
+                            <connections>
+                                <outletCollection property="gestureRecognizers" destination="opI-NO-Kne" appends="YES" id="xpe-Iz-O7u"/>
+                            </connections>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="8eB-wN-SJx" secondAttribute="bottom" id="2mF-sr-ztJ"/>
+                        <constraint firstItem="U5m-TH-hag" firstAttribute="leading" secondItem="gWk-hy-uuO" secondAttribute="leading" id="3AO-gb-xzk"/>
+                        <constraint firstAttribute="trailing" secondItem="8eB-wN-SJx" secondAttribute="trailing" id="6Z2-3X-1re"/>
+                        <constraint firstItem="8eB-wN-SJx" firstAttribute="top" secondItem="gWk-hy-uuO" secondAttribute="top" id="Ooi-CT-hrz"/>
+                        <constraint firstAttribute="bottom" secondItem="U5m-TH-hag" secondAttribute="bottom" id="OsH-Vh-B5d"/>
+                        <constraint firstItem="As8-dW-u1C" firstAttribute="top" secondItem="gWk-hy-uuO" secondAttribute="top" constant="10" id="QJy-bi-6wM"/>
+                        <constraint firstItem="8eB-wN-SJx" firstAttribute="leading" secondItem="gWk-hy-uuO" secondAttribute="leading" id="dKz-tl-glW"/>
+                        <constraint firstAttribute="trailing" secondItem="U5m-TH-hag" secondAttribute="trailing" id="gDb-58-BHC"/>
+                        <constraint firstItem="U5m-TH-hag" firstAttribute="top" secondItem="As8-dW-u1C" secondAttribute="bottom" constant="10" id="oO8-ej-C60"/>
+                        <constraint firstItem="As8-dW-u1C" firstAttribute="centerX" secondItem="gWk-hy-uuO" secondAttribute="centerX" id="pcG-To-4xE"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gWk-hy-uuO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="B8R-i7-Hqq"/>
+                <constraint firstAttribute="trailing" secondItem="gWk-hy-uuO" secondAttribute="trailing" constant="10" id="Koi-Aw-xA9"/>
+                <constraint firstAttribute="bottom" secondItem="gWk-hy-uuO" secondAttribute="bottom" id="Nzd-q7-HkA"/>
+                <constraint firstItem="gWk-hy-uuO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="O7o-9Y-jcU"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="chartContainerView" destination="U5m-TH-hag" id="AGU-2K-0E8"/>
+                <outlet property="containerView" destination="gWk-hy-uuO" id="29V-Q1-Hg1"/>
+                <outlet property="overlayView" destination="8eB-wN-SJx" id="NiJ-Ex-aC8"/>
+                <outlet property="titleLabel" destination="As8-dW-u1C" id="VBz-gw-bgH"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="54"/>
+        </view>
+        <tapGestureRecognizer id="opI-NO-Kne">
+            <connections>
+                <action selector="overlayTapped:" destination="iN0-l3-epB" id="Tm2-ww-gC8"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

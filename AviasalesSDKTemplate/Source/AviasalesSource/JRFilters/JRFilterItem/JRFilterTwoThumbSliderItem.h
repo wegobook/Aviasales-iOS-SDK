@@ -17,7 +17,7 @@
 @property (nonatomic, assign) NSTimeInterval currentMinValue;
 @property (nonatomic, assign) NSTimeInterval currentMaxValue;
 
-@property (nonatomic, copy) void (^filterAction)();
+@property (nonatomic, copy) void (^filterAction)(void);
 
 - (instancetype)initWithMinValue:(NSTimeInterval)minValue maxValue:(NSTimeInterval)maxValue currentMinValue:(NSTimeInterval)currentMinValue currentMaxValue:(NSTimeInterval)currentMaxValue;
 

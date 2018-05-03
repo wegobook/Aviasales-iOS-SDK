@@ -12,4 +12,6 @@
 
 - (void)updateSearchInfoWithDestination:(JRSDKAirport *)destination checkIn:(NSDate *)checkIn checkOut:(NSDate *)checkOut passengers:(ASTPassengersInfo *)passengers;
 
+- (void)update;
+
 @end

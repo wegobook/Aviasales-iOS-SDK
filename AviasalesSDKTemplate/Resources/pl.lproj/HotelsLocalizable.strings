@@ -231,6 +231,8 @@
 "HL_LOC_SORT_TYPE_DISTANCE" = "Odległość do:";
 "HL_LOC_SORT_TYPE_DISCOUNT" = "Zniżka";
 
+"HL_HOTEL_PEEK_SHOW_DETAILS_BUTTON_TITLE" = "Pokaż szczegóły";
+
 // Страница о приложении
 "LOC_SETTINGS_TITLE" = "Informacje";
 

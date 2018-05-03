@@ -1,3 +1,4 @@
+@objcMembers
 class RatingView: UIView {
 
     let ratingLabel = UILabel()
@@ -16,7 +17,7 @@ class RatingView: UIView {
         layer.cornerRadius = 1.0
         backgroundColor = JRColorScheme.ratingColor(hotel.rating)
         ratingLabel.textColor = UIColor.white
-        ratingLabel.font = UIFont.systemFont(ofSize: 14, weight: UIFontWeightMedium)
+        ratingLabel.font = UIFont.systemFont(ofSize: 14, weight: UIFont.Weight.medium)
         ratingLabel.text = StringUtils.shortRatingString(hotel.rating)
         addSubview(ratingLabel)
         ratingLabel.autoCenterInSuperview()

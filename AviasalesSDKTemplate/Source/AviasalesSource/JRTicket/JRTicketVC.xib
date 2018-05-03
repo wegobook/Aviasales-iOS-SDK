@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -22,8 +22,8 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-6E-JJg">
-                    <rect key="frame" x="0.0" y="150" width="375" height="509"/>
+                <tableView opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" bouncesZoom="NO" style="grouped" separatorStyle="none" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" translatesAutoresizingMaskIntoConstraints="NO" id="MGo-6E-JJg">
+                    <rect key="frame" x="0.0" y="150" width="375" height="517"/>
                     <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="sectionIndexBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     <color key="sectionIndexTrackingBackgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
@@ -44,7 +44,7 @@
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="MGo-6E-JJg" secondAttribute="trailing" id="0Dw-V7-pkf"/>
                 <constraint firstAttribute="trailing" secondItem="A3x-bZ-pKv" secondAttribute="trailing" id="Cqt-gP-Ref"/>
-                <constraint firstAttribute="bottomMargin" secondItem="MGo-6E-JJg" secondAttribute="bottom" id="IAv-uN-oHj"/>
+                <constraint firstAttribute="bottom" secondItem="MGo-6E-JJg" secondAttribute="bottom" id="IAv-uN-oHj"/>
                 <constraint firstItem="MGo-6E-JJg" firstAttribute="top" secondItem="A3x-bZ-pKv" secondAttribute="bottom" id="RTk-mV-KQb"/>
                 <constraint firstItem="A3x-bZ-pKv" firstAttribute="top" secondItem="1" secondAttribute="top" id="aYd-Gn-bpb"/>
                 <constraint firstItem="MGo-6E-JJg" firstAttribute="leading" secondItem="1" secondAttribute="leading" id="tc3-4z-o4T"/>
@@ -53,9 +53,4 @@
             <point key="canvasLocation" x="331.5" y="-336.5"/>
         </view>
     </objects>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
-    </simulatedMetricsContainer>
 </document>

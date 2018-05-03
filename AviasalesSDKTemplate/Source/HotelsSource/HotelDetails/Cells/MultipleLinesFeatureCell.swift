@@ -91,7 +91,7 @@ class MultipleLinesFeatureCell: HLAutolayoutCell {
 
     class func preferredHeight(text: String, width: CGFloat, isFirst: Bool, isLast: Bool) -> CGFloat {
         let labelWidth = width - Consts.left - Consts.iconSize - Consts.beetwen - Consts.right
-        let textHeight = text.hl_height(attributes: [NSFontAttributeName: titleFont()], width:labelWidth)
+        let textHeight = text.hl_height(attributes: [NSAttributedStringKey.font: titleFont()], width:labelWidth)
         let additionalHeightToMimicFeatureCell: CGFloat = 3
 
         return textHeight + topMargin(isFirst) + bottomMargin(isLast) + additionalHeightToMimicFeatureCell

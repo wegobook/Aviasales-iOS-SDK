@@ -121,7 +121,7 @@ NSInteger const kMaxVariantsToShowNearbyCitiesSearchCard = 25;
                                                                             delegate:config.delegate];
 
     if ([self shouldAddItem:item]) {
-        return [HLActionCardsArrayHelper addItem:item toArray:items atIndex:3 minVariantsCount:0 canAppend:NO];
+        return [HLActionCardsArrayHelper addItem:item toArray:items atIndex:1 minVariantsCount:0 canAppend:NO];
     }
     
     return items;

@@ -14,7 +14,7 @@ class HotelGalleryVC: HotelDetailsMoreVC, HLPhotoCollectionViewDelegate, HLPhoto
     override func viewDidLoad() {
         super.viewDidLoad()
         title = NSLS("HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION")
-        photoGridView.collectionView.backgroundColor = UIColor.white
+        photoGridView.collectionView.backgroundColor = JRColorScheme.mainBackgroundColor()
         photoGridView.delegate = self
 
         let thumbSize = HLPhotoManager.calculateThumbSizeForColumnsCount(3, containerWidth: view.bounds.width)

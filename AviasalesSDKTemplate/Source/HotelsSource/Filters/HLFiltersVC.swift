@@ -1,5 +1,6 @@
 import UIKit
 
+@objcMembers
 class HLFiltersVC: HLCommonVC, HLFilterDelegate, UITableViewDelegate, UITableViewDataSource, PointSelectionDelegate, ChooseSelectionDelegate, CancelableFilterViewDelegate {
     @IBOutlet private weak var applyButton: UIButton?
     @IBOutlet weak var tableView: UITableView!

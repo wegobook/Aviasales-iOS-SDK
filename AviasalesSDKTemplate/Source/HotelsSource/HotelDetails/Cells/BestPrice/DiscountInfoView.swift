@@ -36,7 +36,7 @@ class DiscountInfoView: HLAutolayoutView {
     }
 
     fileprivate class func titleFont() -> UIFont {
-        return UIFont.systemFont(ofSize: 13, weight: UIFontWeightMedium)
+        return UIFont.systemFont(ofSize: 13, weight: UIFont.Weight.medium)
     }
 
     fileprivate class func subtitleFont() -> UIFont {
@@ -80,8 +80,8 @@ class DiscountInfoView: HLAutolayoutView {
     class func preferredHeight(containerWidth: CGFloat, room: HDKRoom, currency: HDKCurrency, duration: Int) -> CGFloat {
         let textWidth = containerWidth - Consts.backgroundHorizontalMargin * 2 - Consts.textHorizontalMargin * 2
 
-        let titleHeight = titleText(room: room).hl_height(attributes: [NSFontAttributeName: titleFont()], width: textWidth)
-        let attr = [NSFontAttributeName: subtitleFont()]
+        let titleHeight = titleText(room: room).hl_height(attributes: [NSAttributedStringKey.font: titleFont()], width: textWidth)
+        let attr = [NSAttributedStringKey.font: subtitleFont()]
         let subtitle = subtitleText(room: room, currency: currency, duration: duration)
         let subtitleHeight = subtitle.hl_height(attributes: attr, width: textWidth)
 

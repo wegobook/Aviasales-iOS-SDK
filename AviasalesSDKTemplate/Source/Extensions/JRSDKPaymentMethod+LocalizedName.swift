@@ -7,7 +7,7 @@
 
 import Foundation
 
-extension JRSDKPaymentMethod {
+@objc extension JRSDKPaymentMethod {
 
     var localizedName: String {
 

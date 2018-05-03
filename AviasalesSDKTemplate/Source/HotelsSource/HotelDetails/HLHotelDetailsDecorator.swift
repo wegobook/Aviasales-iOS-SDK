@@ -9,6 +9,7 @@
     @objc optional func hotelInfoDidLoad(withError error: NSError?)
 }
 
+@objcMembers
 class HLHotelDetailsDecorator: NSObject, HLHotelDetailsDecoratorProtocol {
 
     fileprivate(set) var detailsVC: HLHotelDetailsVC!

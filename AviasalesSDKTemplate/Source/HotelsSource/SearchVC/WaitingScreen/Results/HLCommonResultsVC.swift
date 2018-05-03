@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objcMembers
 class HLCommonResultsVC: HLCommonVC,
     HLPlaceholderViewDelegate,
     HLFilterDelegate,
@@ -166,7 +167,7 @@ class HLCommonResultsVC: HLCommonVC,
         needUpdateContent = false
     }
 
-    func showMap() {
+    @objc func showMap() {
         let mapVC = createMapVC()
         mapVC.searchInfo = searchInfo
         mapVC.filter = filter

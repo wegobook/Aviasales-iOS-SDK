@@ -59,8 +59,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 static const CGFloat kNavBarHeight = 49.0;
 
-NSUserDefaults *JRUserDefaults();
-CGFloat JRPixel();
+NSUserDefaults *JRUserDefaults(void);
+CGFloat JRPixel(void);
 
 #define HL_DEFAULTS_SEARCH_INFO_KEY @"hotelsSearchInfoKey"
 
@@ -68,15 +68,15 @@ CGFloat JRPixel();
 // TARGETS & CONFIGURATIONS
 //------------------------
 
-BOOL Simulator();
-BOOL iPhone();
-BOOL iPhone4Inch();
-BOOL iPhone35Inch();
-BOOL iPhone47Inch();
-BOOL iPhone55Inch();
-BOOL iPhone58Inch();
+BOOL Simulator(void);
+BOOL iPhone(void);
+BOOL iPhone4Inch(void);
+BOOL iPhone35Inch(void);
+BOOL iPhone47Inch(void);
+BOOL iPhone55Inch(void);
+BOOL iPhone58Inch(void);
 
-BOOL iPad();
+BOOL iPad(void);
 
 typedef NS_ENUM(NSInteger, DeviceSizeType) {
     DeviceSizeTypeIPhone58Inch, // iPhone X
@@ -87,7 +87,7 @@ typedef NS_ENUM(NSInteger, DeviceSizeType) {
     DeviceSizeTypeIPad          // For all iPads
 };
 
-DeviceSizeType CurrentDeviceSizeType() __attribute__((const));
+DeviceSizeType CurrentDeviceSizeType(void) __attribute__((const));
 
 BOOL iOSVersionEqualTo(NSString *version);
 BOOL iOSVersionGreaterThan(NSString *version);
@@ -101,8 +101,8 @@ CGFloat deviceSizeTypeValue(CGFloat deviceSizeTypeIPhone35Inch, CGFloat deviceSi
 CGFloat minScreenDimension(void);
 CGFloat maxScreenDimension(void);
 
-BOOL Debug();
-BOOL AppStore();
+BOOL Debug(void);
+BOOL AppStore(void);
 
 UIView * _Nullable loadViewFromNibNamed(NSString * _Nonnull nibNamed);
 UIView * _Nullable loadViewFromNib(NSString * _Nonnull nibNamed, id _Nullable owner);

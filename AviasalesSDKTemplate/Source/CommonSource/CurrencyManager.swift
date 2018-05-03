@@ -8,6 +8,7 @@
 
 private let currencyKey = "currencyKey"
 
+@objcMembers
 class CurrencyManager: NSObject {
 
     static let shared = CurrencyManager()

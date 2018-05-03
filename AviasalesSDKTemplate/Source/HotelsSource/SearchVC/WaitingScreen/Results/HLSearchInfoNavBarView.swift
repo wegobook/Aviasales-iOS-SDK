@@ -1,7 +1,7 @@
 import Foundation
 
-@IBDesignable
-class HLSearchInfoNavBarView: HLAutolayoutView {
+@objcMembers
+@IBDesignable class HLSearchInfoNavBarView: HLAutolayoutView {
 
     var cityLabel: UILabel!
     var guestsLabel: UILabel!
@@ -21,7 +21,7 @@ class HLSearchInfoNavBarView: HLAutolayoutView {
         cityLabel = UILabel()
         cityLabel.textAlignment = .center
         cityLabel.textColor = .white
-        cityLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFontWeightMedium)
+        cityLabel.font = UIFont.systemFont(ofSize: 15, weight: UIFont.Weight.medium)
         addSubview(cityLabel)
 
         guestsLabel = UILabel()

@@ -1,5 +1,6 @@
 import SDWebImage
 
+@objcMembers
 class HLPhotoManager: NSObject {
 
     typealias ProgressBlock = (_ progress: CGFloat) -> Void

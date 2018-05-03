@@ -13,7 +13,7 @@ class HLGroupedTableHeaderView: UITableViewHeaderFooterView {
 
         titleLabel.text = title
         titleLabel.textColor = JRColorScheme.darkTextColor()
-        titleLabel.font = UIFont.systemFont(ofSize: 17.0, weight: UIFontWeightBold)
+        titleLabel.font = UIFont.systemFont(ofSize: 17.0, weight: UIFont.Weight.bold)
     }
 
     class func preferredHeight(_ hasTitle: Bool) -> CGFloat {

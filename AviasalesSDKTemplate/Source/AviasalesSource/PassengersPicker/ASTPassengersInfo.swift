@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objcMembers
 class ASTPassengersInfo: NSObject {
 
     let adults: Int

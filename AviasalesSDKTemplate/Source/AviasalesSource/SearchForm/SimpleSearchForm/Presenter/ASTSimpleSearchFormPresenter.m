@@ -11,8 +11,6 @@
 #import "JRSearchInfoUtils.h"
 #import "DateUtil.h"
 
-static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoBuilderStorageKey";
-
 @interface ASTSimpleSearchFormPresenter ()
 
 @property (nonatomic, weak) id <ASTSimpleSearchFormViewControllerProtocol> viewController;
@@ -48,7 +46,8 @@ static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoB
     [self.viewController updateWithViewModel:[self buildViewModel]];
 }
 
-- (void)handleViewDidLoad {
+- (void)handleViewReady {
+    self.returnDate = nil;
     [self restoreSearchInfoBuilder];
     [self createDirectTravelSegmentBuilder];
     [self updateExpiredDepartureDate];
@@ -225,19 +224,7 @@ static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoB
 #pragma mark - Restore & Create & Save
 
 - (void)restoreSearchInfoBuilder {
-    NSData *data = [[NSUserDefaults standardUserDefaults] objectForKey:kSimpleSearchInfoBuilderStorageKey];
-    JRSDKSearchInfoBuilder *searchInfoBuilder = [NSKeyedUnarchiver unarchiveObjectWithData:data];
-    if (!searchInfoBuilder) {
-        searchInfoBuilder = [self createSearchInfoBuilder];
-    }
-    self.searchInfoBuilder = searchInfoBuilder;
-}
-
-- (JRSDKSearchInfoBuilder *)createSearchInfoBuilder {
-    JRSDKSearchInfoBuilder *searchInfoBuilder = [JRSDKSearchInfoBuilder new];
-    searchInfoBuilder.adults = 1;
-    searchInfoBuilder.travelSegments = [JRSDKSearchInfoBuilder buildTravelSegmentsBasedOnConfig];
-    return searchInfoBuilder;
+    self.searchInfoBuilder = [[SearchInfoBuilderStorage shared] simpleSearchInfoBuilder];
 }
 
 - (void)createDirectTravelSegmentBuilder {
@@ -258,9 +245,7 @@ static NSString * const kSimpleSearchInfoBuilderStorageKey = @"simpleSearchInfoB
 }
 
 - (void)saveSearchInfoBuilder {
-    NSData *data = [NSKeyedArchiver archivedDataWithRootObject:self.searchInfoBuilder];
-    [[NSUserDefaults standardUserDefaults] setObject:data forKey:kSimpleSearchInfoBuilderStorageKey];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    [[SearchInfoBuilderStorage shared] setSimpleSearchInfoBuilder:self.searchInfoBuilder];
 }
 
 #pragma mark - Logic

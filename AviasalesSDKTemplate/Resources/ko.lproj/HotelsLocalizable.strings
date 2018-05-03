@@ -231,6 +231,8 @@
 "HL_LOC_SORT_TYPE_DISTANCE" = "다음 위치까지의 거리:";
 "HL_LOC_SORT_TYPE_DISCOUNT" = "할인율";
 
+"HL_HOTEL_PEEK_SHOW_DETAILS_BUTTON_TITLE" = "상세정보 보기";
+
 // Страница о приложении
 "LOC_SETTINGS_TITLE" = "정보";
 

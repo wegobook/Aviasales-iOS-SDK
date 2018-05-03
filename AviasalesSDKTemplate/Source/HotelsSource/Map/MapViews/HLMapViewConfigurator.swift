@@ -1,3 +1,4 @@
+@objcMembers
 class HLMapViewConfigurator: NSObject {
 
     static let kMapRegionMultiplier: Double = 1.2

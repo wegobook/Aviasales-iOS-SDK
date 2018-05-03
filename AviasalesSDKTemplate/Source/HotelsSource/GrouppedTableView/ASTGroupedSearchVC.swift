@@ -8,6 +8,7 @@
 
 import UIKit
 
+@objcMembers
 class ASTGroupedSearchVC: ASTBaseSearchTableVC, UISearchBarDelegate, UISearchControllerDelegate, UISearchResultsUpdating, HLCustomPointSelectionDelegate {
 
     var searchInfo: HLSearchInfo?

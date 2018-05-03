@@ -36,7 +36,7 @@ class BottomDrawerView: UIView {
 
 public class BottomDrawer: UIViewController, UINavigationControllerDelegate {
     
-    static var defaultTitleStyleAttributes: [String: AnyObject] = createDefaultStyleAttributes()
+    static var defaultTitleStyleAttributes: [NSAttributedStringKey: Any] = createDefaultStyleAttributes()
     static var defaultActionButtonStyle: ActionButtonStyle = ActionButtonStyle(
         height: kActionButtonHeight,
         backgroundColor: UIColor.white,
@@ -106,7 +106,7 @@ public class BottomDrawer: UIViewController, UINavigationControllerDelegate {
         var height: CGFloat
         var backgroundColor: UIColor
         var selectedBackgroundColor: UIColor
-        var titleAttributes: [String: AnyObject]
+        var titleAttributes: [NSAttributedStringKey: Any]
     }
 
     public var actionButtonStyle = BottomDrawer.defaultActionButtonStyle {
@@ -449,17 +449,17 @@ private extension UIViewController {
     }
 }
 
-private func createDefaultStyleAttributes() -> [String: AnyObject] {
+private func createDefaultStyleAttributes() -> [NSAttributedStringKey: Any] {
     return [
-        NSFontAttributeName : UIFont.systemFont(ofSize: 16),
-        NSForegroundColorAttributeName: UIColor(hue: 0, saturation: 0, brightness: 0.36, alpha: 1),
-        NSKernAttributeName: 1.0 as AnyObject
+        NSAttributedStringKey.font : UIFont.systemFont(ofSize: 16),
+        NSAttributedStringKey.foregroundColor : UIColor(hue: 0, saturation: 0, brightness: 0.36, alpha: 1),
+        NSAttributedStringKey.kern : 1.0 as AnyObject
     ]
 }
-private func createActionButtonTitleAttributes() -> [String: AnyObject] {
+private func createActionButtonTitleAttributes() -> [NSAttributedStringKey: Any] {
     return [
-        NSFontAttributeName : UIFont.systemFont(ofSize: 16),
-        NSForegroundColorAttributeName: UIColor(hue: 0, saturation: 0, brightness: 0.5, alpha: 1),
-        NSKernAttributeName: 1.0 as AnyObject
+        NSAttributedStringKey.font : UIFont.systemFont(ofSize: 16),
+        NSAttributedStringKey.foregroundColor: UIColor(hue: 0, saturation: 0, brightness: 0.5, alpha: 1),
+        NSAttributedStringKey.kern: 1.0 as AnyObject
     ]
 }

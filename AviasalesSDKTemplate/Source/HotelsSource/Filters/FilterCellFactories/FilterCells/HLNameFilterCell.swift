@@ -9,7 +9,7 @@ class HLNameFilterCell: HLDividerCell {
     weak var delegate: NameFilterDelegate?
 
     func setTitle(_ title: String) {
-        if title.characters.count == 0 {
+        if title.count == 0 {
             titleLabel.text = NSLS("HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER")
             titleLabel.textColor = JRColorScheme.darkTextColor()
             titleLabel.alpha = 0.5

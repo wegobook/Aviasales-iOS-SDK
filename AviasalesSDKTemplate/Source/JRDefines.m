@@ -15,11 +15,11 @@ NSString * const kHotelsStringsTable = @"HotelsLocalizable";
 // DEFINES
 //------------------------
 
-NSUserDefaults *JRUserDefaults() {
+NSUserDefaults *JRUserDefaults(void) {
     return [NSUserDefaults standardUserDefaults];
 }
 
-CGFloat JRPixel() {
+CGFloat JRPixel(void) {
     return 1.0f / [UIScreen mainScreen].scale;
 }
 
@@ -27,11 +27,11 @@ CGFloat JRPixel() {
 // TARGETS & CONFIGURATIONS
 //------------------------
 
-BOOL Simulator() {
+BOOL Simulator(void) {
     return [[[UIDevice currentDevice] model] isEqualToString:@"iPhone Simulator"];
 }
 
-BOOL iPhone() {
+BOOL iPhone(void) {
     return (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone);
 }
 
@@ -40,23 +40,23 @@ BOOL iPhoneWithHeight(CGFloat height) {
     return iPhone() && (fabs( ( double ) MAX(screneSize.width, screneSize.height) - ( double )height ) < DBL_EPSILON );
 }
 
-BOOL iPhone4Inch() {
+BOOL iPhone4Inch(void) {
     return iPhoneWithHeight(568);
 }
-BOOL iPhone35Inch() {
+BOOL iPhone35Inch(void) {
     return iPhoneWithHeight(480);
 }
-BOOL iPhone47Inch() {
+BOOL iPhone47Inch(void) {
     return iPhoneWithHeight(667);
 }
-BOOL iPhone55Inch() {
+BOOL iPhone55Inch(void) {
     return iPhoneWithHeight(736);
 }
-BOOL iPhone58Inch() {
+BOOL iPhone58Inch(void) {
     return iPhoneWithHeight(812);
 }
 
-BOOL iPad() {
+BOOL iPad(void) {
     return (UI_USER_INTERFACE_IDIOM()== UIUserInterfaceIdiomPad);
 }
 
@@ -138,7 +138,7 @@ CGFloat maxScreenDimension(void)
     return MAX(screenSize.width, screenSize.height);
 }
 
-BOOL Debug() {
+BOOL Debug(void) {
 #if DEBUG
     return YES;
 #else
@@ -146,7 +146,7 @@ BOOL Debug() {
 #endif
 }
 
-BOOL AppStore() {
+BOOL AppStore(void) {
 #if APPSTORE
     return YES;
 #else

@@ -7,7 +7,7 @@
 
 import UIKit
 
-extension UIBarButtonItem {
+@objc extension UIBarButtonItem {
 
     static func backBarButtonItem() -> UIBarButtonItem {
         return UIBarButtonItem(title: String(), style: .plain, target: nil, action: nil)

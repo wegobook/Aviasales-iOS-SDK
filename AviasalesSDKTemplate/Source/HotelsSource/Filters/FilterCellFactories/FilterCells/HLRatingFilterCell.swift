@@ -26,11 +26,11 @@ class HLRatingFilterCell: HLSliderFilterCell {
 
         titleLabel.text = NSLS("HL_LOC_FILTER_RATING_CRITERIA")
     }
-
-    override func sliderValueChanged(_ sender: AnyObject, event: UIEvent) {
+    
+    @objc override func sliderValueChanged(_ sender: AnyObject, event: UIEvent) {
         let value = ratingForSliderValue(slider.value)
         updateValueLabel(value)
-
+        
         super.sliderValueChanged(sender, event: event)
     }
 

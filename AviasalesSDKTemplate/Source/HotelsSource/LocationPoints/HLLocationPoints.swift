@@ -122,6 +122,7 @@ class HLGenericCategoryLocationPoint: HDKLocationPoint {
     }
 }
 
+@objcMembers
 class HLCityLocationPoint: HDKLocationPoint {
     let cityName: String?
 

@@ -130,6 +130,30 @@ static inline UIColor *colorFromConstant(NSString *constant) {
     return self.layer.cornerRadius;
 }
 
+- (void)setJRBorderWidth:(CGFloat)width {
+    self.layer.borderWidth = width;
+}
+
+- (CGFloat)JRBorderWidth {
+    return self.layer.borderWidth;
+}
+
+- (void)setJRBorderColor:(UIColor *)color {
+    self.layer.borderColor = color.CGColor;
+}
+
+- (UIColor *)JRBorderColor {
+    return [UIColor colorWithCGColor:self.layer.borderColor];
+}
+
+- (void)setJRBorderColorKey:(NSString *)key {
+    [self setJRBorderColor:colorFromConstant(key)];
+}
+
+- (NSString *)JRBorderColorKey {
+    return nil;
+}
+
 - (void)setJRShouldRasterize:(BOOL)JRShouldRasterize {
     if (JRShouldRasterize) {
         self.layer.rasterizationScale = [UIScreen mainScreen].scale;

@@ -1,3 +1,4 @@
+@objcMembers
 class HLDiscountHotelBadge: HLPopularHotelBadge {
 
     init(discount: Int) {

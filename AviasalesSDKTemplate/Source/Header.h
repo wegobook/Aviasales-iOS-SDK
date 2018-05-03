@@ -57,6 +57,8 @@
 #import "ASTContainerSearchFormViewController.h"
 #import "ASTSearchFormSceneViewController.h"
 
+#import "JRDatePickerVC.h"
+
 #import "JRSearchResultsVC.h"
 #import "UINavigationController+Additions.h"
 #import "JRFilter.h"
@@ -65,6 +67,8 @@
 #import "JRTicketVC.h"
 
 #import "JRAdvertisementManager.h"
+#import "JRTableManager.h"
+#import "JRHotelCardView.h"
 
 #import "JRPriceUtils.h"
 #import "JRSearchInfoUtils.h"
@@ -86,7 +90,6 @@
 #import "HLShowMorePricesCell.h"
 #import "HLAlertsFabric.h"
 
-#import "HLWebBrowser.h"
 #import "HLUrlShortener.h"
 
 #import "MKMapView+Zoom.h"

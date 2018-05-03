@@ -9,12 +9,14 @@
 import UIKit
 import SafariServices
 
-class InfoScreenViewController: UIViewController {
+class InfoScreenViewController: UIViewController, InfoScreenIconImageViewFiveTimesTapHandler {
 
-    let presenter = InfoScreenPresenter()
+    private let presenter = InfoScreenPresenter()
 
     @IBOutlet weak var containerView: UIView!
     @IBOutlet weak var tableView: UITableView!
+
+    private let sender = HLEmailSender()
 
     var cellModels = [InfoScreenCellModelProtocol]()
 
@@ -35,6 +37,7 @@ class InfoScreenViewController: UIViewController {
     }
 
     func setupTableView() {
+        tableView.backgroundColor = .white
         tableView.rowHeight = UITableViewAutomaticDimension
         tableView.estimatedRowHeight = 44
         tableView.tableFooterView = UIView(frame: .zero)
@@ -57,7 +60,6 @@ class InfoScreenViewController: UIViewController {
     }
 
     func openEmailSender(address: String) {
-        let sender = HLEmailSender()
         sender.sendFeedbackEmail(to: address)
         present(sender.mailer, animated: true, completion: nil)
     }
@@ -72,6 +74,9 @@ private extension InfoScreenViewController {
         cell.setup(cellModel: cellModel as InfoScreenAboutCellProtocol)
         let left: CGFloat = cellModel.separator ? tableView.separatorInset.left : view.bounds.width
         cell.separatorInset = UIEdgeInsets(top: 0, left: left, bottom: 0, right: 0)
+        cell.iconImageViewFiveTimesTapAction = { [weak self] in
+            self?.handleFiveTimesTap()
+        }
         return cell
     }
 

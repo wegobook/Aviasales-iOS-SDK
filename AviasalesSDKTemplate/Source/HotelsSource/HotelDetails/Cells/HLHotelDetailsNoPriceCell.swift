@@ -37,9 +37,9 @@ class HLHotelDetailsNoPriceCell: HLHotelDetailsTableCell {
 
         let topMargin: CGFloat = 5.0
         var textHeight: CGFloat = 0.0
-        if text?.characters.count > 0 {
+        if text?.count > 0 {
             let horizontalMargin: CGFloat = 15.0
-            textHeight = text!.hl_height(attributes: [NSFontAttributeName: HLHotelDetailsNoPriceCell.textFont], width: width - 2 * horizontalMargin)
+            textHeight = text!.hl_height(attributes: [NSAttributedStringKey.font: HLHotelDetailsNoPriceCell.textFont], width: width - 2 * horizontalMargin)
         }
 
         let spaceBetweenButtonAndText: CGFloat = 15.0

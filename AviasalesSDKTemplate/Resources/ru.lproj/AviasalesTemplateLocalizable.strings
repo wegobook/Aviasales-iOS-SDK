@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d пересадок";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d пересадок";
 
-"JR_BROWSER_TITLE" = "Покупка билета";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Календарь цен";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Календарь цен %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "от %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Средняя цена за месяц";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "Прямые рейсы";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "С пересадками";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Самый дешёвый";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Только прямые рейсы";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Ничего не подошло?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Вы можете выбрать дату возвращения самостоятельно.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Выбрать дату возвращения";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Назад";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Вперед";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Ошибка";
 
+"BROWSER_LOAD_ERROR" = "Что-то пошло не так. Проверьте соединение с интернетом или попробуйте перейти к покупке позже";
 "BROWSER_CHECK_CONNECTION" = "Не удалось загрузить сайт";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Загрузка...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Загрузка...";
 "JR_CLOSE_BUTTON_TITLE" = "Закрыть";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Вы искали рейс, следующий по маршруту %@. К\U00A0сожалению, нам не удалось найти перелётов конкретно между этими аэропортами, поэтому мы показываем все возможные перелеты между этими городами.";

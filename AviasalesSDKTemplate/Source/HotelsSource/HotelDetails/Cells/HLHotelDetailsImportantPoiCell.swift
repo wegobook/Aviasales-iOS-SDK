@@ -15,7 +15,7 @@ class HLHotelDetailsImportantPoiCell: HLHotelDetailsTableCell {
         let textWidth = width - 60.0
         let string: NSString = "Text"
 
-        var height = string.hl_height(attributes: [NSFontAttributeName : font], width: textWidth)
+        var height = string.hl_height(attributes: [NSAttributedStringKey.font : font], width: textWidth)
         height += first ? 16.0 : 5.0
         height += last ? 20.0 : 7.0
         return height

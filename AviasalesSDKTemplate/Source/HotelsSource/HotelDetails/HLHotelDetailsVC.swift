@@ -55,7 +55,6 @@ class HLHotelDetailsCollectionView: UICollectionView {
     UICollectionViewDelegateFlowLayout,
     UIActionSheetDelegate,
     HLHotelsManagerDelegate,
-    MFMessageComposeViewControllerDelegate,
     ReviewsVCDelegate {
 
     private let kMaxReviewsLimit = 300
@@ -113,8 +112,6 @@ class HLHotelDetailsCollectionView: UICollectionView {
         super.viewDidLoad()
 
         addNameAndStarsView()
-
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(HLHotelDetailsVC.share))
 
         configureContentCollectionView()
         registerCells()
@@ -433,7 +430,7 @@ class HLHotelDetailsCollectionView: UICollectionView {
 
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let nib = UINib(nibName: "HLGroupedTableHeaderView", bundle: nil)
-        let views = nib.instantiate(withOwner: nil, options: nil).flatMap { $0 as? UIView }
+        let views = nib.instantiate(withOwner: nil, options: nil).compactMap { $0 as? UIView }
         let footer = views.first
         if let groupedHeader = footer as? HLGroupedTableHeaderView {
             groupedHeader.title = ""
@@ -526,52 +523,6 @@ class HLHotelDetailsCollectionView: UICollectionView {
         contentTableView.reloadData()
     }
 
-    @objc private func share() {
-        showWaitingView()
-        prepareSharingData { [weak self] in
-            guard let `self` = self else { return }
-            DispatchQueue.main.async {
-                self.hideWaitingView(nil)
-                self.shareUrl(withShortString:self.urlShortener.shortenedUrl(), longString:self.urlShortener.longUrlString)
-            }
-        }
-    }
-
-    func prepareSharingData(onCompletion completionBlock: @escaping () -> Void) {
-        urlShortener.shortenUrl(for: variant) {
-            completionBlock()
-        }
-    }
-
-    func showWaitingView() {
-        if self.progressView == nil {
-            self.progressView = Bundle.main.loadNibNamed("HLSpinnerProgressView", owner: nil, options: nil)?.first as? HLSpinnerProgressView
-        }
-        self.progressView!.show(self.view, animated:false)
-    }
-
-    func hideWaitingView(_ completion: (() -> Void)?) {
-        self.progressView!.dismiss(0.3, delay:0.0, completion:completion)
-    }
-
-    func shareUrl(withShortString sharingUrlString: String, longString: String) {
-        showActivityViewController(sharingUrlString)
-    }
-
-    func messageComposeViewController(_ controller: MFMessageComposeViewController, didFinishWith result: MessageComposeResult) {
-        dismiss(animated: true, completion: nil)
-    }
-
-    func showActivityViewController(_ sharingUrlString: String) {
-        let sharingUrl = URL(string: sharingUrlString)!
-        let urlProvider = SharingURLActivityItemProvider(url: sharingUrl)
-        let shareController = UIActivityViewController(activityItems: [urlProvider], applicationActivities: nil)
-        if iPad() {
-            shareController.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
-        }
-        present(shareController, animated: true, completion: nil)
-    }
-
     func retryLoadReviews() {
         startLoadingReviewsIfNeeded()
     }
@@ -626,7 +577,7 @@ extension HLHotelDetailsVC: HLHotelDetailsTabCellDelegate {
         self.decoratorDelegate?.hotelInfoDidLoad?(withError: error)
     }
 
-    func hotelDetailsDidLoad(_ hotel: HDKHotel) {
+    @objc func hotelDetailsDidLoad(_ hotel: HDKHotel) {
         if !(hotelView.hotel?.isValid() ?? false) && hotel.isValid() {
             variant.searchInfo.hotel = hotel
             variant.searchInfo.city = hotel.city
@@ -703,22 +654,23 @@ extension HLHotelDetailsVC: HLHotelDetailsTabCellDelegate {
 
     func bookRoom(_ room: HDKRoom, fromViewController viewController: UIViewController) {
         guard !variant.isGateOutdated(room.gate) else {
-            HLAlertsFabric.showOutdatedResultsAlert({
+            HLAlertsFabric.showOutdatedResultsAlert({ _ in
                 self.dismiss(animated: true, completion: nil)
                 self.navigationController?.popToRootViewController(animated: true)
             })
             return
         }
-        let browser = BookBrowserController(nibName: "BookBrowserController", bundle: nil)
-        browser.room = room
-        browser.providesPresentationContextTransitionStyle = true
-        browser.definesPresentationContext = true
+
+        let bookBrowserPresenter = BookBrowserViewPresenter(room: room)
+        let browserViewController = BrowserViewController(presenter: bookBrowserPresenter)
+        let navigationController = JRNavigationController(rootViewController: browserViewController)
+
         if viewController.presentedViewController != nil {
             viewController.dismiss(animated: true, completion: {
-                viewController.present(browser, animated: true, completion: nil)
+                viewController.present(navigationController, animated: true)
             })
         } else {
-            viewController.present(browser, animated: true, completion: nil)
+            viewController.present(navigationController, animated: true)
         }
     }
 

@@ -19,10 +19,12 @@
 #import "NSLayoutConstraint+JRConstraintMake.h"
 
 static const CGFloat kFlightCellHeight = 180.0;
-static const CGFloat kTransforCellHeight = 56.0;
-static const CGFloat kFlightsSegmentHeaderHeight = 94.0;
+static const CGFloat kTransforCellHeight = 50.0;
 
-static const CGFloat kOffsetLimit = 50.0;
+static const CGFloat kFlightsSegmentFirstHeaderHeight = 52.0;
+static const CGFloat kFlightsSegmentHeaderHeight = 72.0;
+
+static const CGFloat kOffsetLimit = 65.0;
 static const CGFloat kInfoPanelViewMaxHeightConstraint = 150.0;
 
 static const NSTimeInterval kSearchResultsTTL = 15 * 60;
@@ -72,6 +74,11 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
     [self updateContent];
 }
 
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [self setupTableViewInsets];
+}
+
 #pragma mark - Properties
 
 - (void)setTicket:(JRSDKTicket *)ticket {
@@ -82,6 +89,13 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
 #pragma mark - Setup
 
 - (void)setupViewController {
+
+    if (@available(iOS 11.0, *)) {
+        self.tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+    } else {
+        self.automaticallyAdjustsScrollViewInsets = NO;
+    }
+
     [self setupTableView];
     [self setupNavigationItems];
     [self setupInfoPanelView];
@@ -106,6 +120,15 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
     self.infoPanelView.translatesAutoresizingMaskIntoConstraints = NO;
     [self.infoPanelContainerView addSubview:self.infoPanelView];
     [self.infoPanelContainerView addConstraints:JRConstraintsMakeScaleToFill(self.infoPanelView, self.infoPanelContainerView)];    
+}
+
+- (void)setupTableViewInsets {
+
+    UIEdgeInsets tableViewInsets = self.tableView.contentInset;
+    UIEdgeInsets insets = UIEdgeInsetsMake(tableViewInsets.top, tableViewInsets.left, self.bottomLayoutGuide.length, tableViewInsets.right);
+
+    self.tableView.contentInset = insets;
+    self.tableView.scrollIndicatorInsets = insets;
 }
 
 #pragma mark - Update
@@ -178,7 +201,11 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-    return kFlightsSegmentHeaderHeight;
+    if (section == 0) {
+        return kFlightsSegmentFirstHeaderHeight;
+    } else {
+        return kFlightsSegmentHeaderHeight;
+    }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section {
@@ -266,11 +293,11 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
 
 - (void)showGateBrowserWithProposal:(JRSDKProposal *)proposal {
 
-    ASTGateBrowserViewController *gateBrowserViewController = [[ASTGateBrowserViewController alloc] initWithTicketProposal:proposal searchID:self.searchId];
+    GateBrowserViewPresenter *gateBrowserPresenter = [[GateBrowserViewPresenter alloc] initWithTicketProposal:proposal searchID:self.searchId];
+    BrowserViewController *browserViewController = [[BrowserViewController alloc] initWithPresenter: gateBrowserPresenter];
+    JRNavigationController *navigationController = [[JRNavigationController alloc] initWithRootViewController:browserViewController];
 
-    JRNavigationController *naviagtionController = [[JRNavigationController alloc] initWithRootViewController:gateBrowserViewController];
-
-    [self presentViewController:naviagtionController animated:YES completion:nil];
+    [self presentViewController:navigationController animated:YES completion:nil];
 }
 
 - (void)buyTicketWithProposal:(JRSDKProposal *)proposal {

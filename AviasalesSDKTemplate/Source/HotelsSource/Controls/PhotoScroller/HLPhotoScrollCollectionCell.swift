@@ -3,6 +3,7 @@ protocol HLPhotoScrollCollectionCellProtocol: class {
     func cellDidHighlight(_ cell: HLPhotoScrollCollectionCell)
 }
 
+@objcMembers
 class HLPhotoScrollCollectionCell: UICollectionViewCell {
 
     lazy var photoView: HLPhotoView = self.createPhotoView()

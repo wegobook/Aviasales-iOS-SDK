@@ -10,5 +10,6 @@
 @interface UINavigationController(Additions)
 
 - (void)replaceTopViewControllerWith:(UIViewController *)viewController;
+- (void)setViewControllersWithRootAndViewController:(UIViewController *)viewController;
 
 @end

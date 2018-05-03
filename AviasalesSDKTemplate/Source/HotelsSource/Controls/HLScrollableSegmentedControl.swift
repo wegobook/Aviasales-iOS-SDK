@@ -160,7 +160,7 @@ protocol HLScrollableSegmentedControlDelegate: class, NSObjectProtocol {
     fileprivate func calculateCellSizes() -> [CGSize] {
         var sizes: [CGSize] = []
         for title in items {
-            let attributes = [NSFontAttributeName: selectedTextFont]
+            let attributes = [NSAttributedStringKey.font: selectedTextFont]
             let width = title.hl_width(attributes: attributes, height: bounds.height) + cellInset * 2.0
             let size = CGSize(width: width, height: bounds.height)
             sizes.append(size)
@@ -208,7 +208,7 @@ protocol HLScrollableSegmentedControlDelegate: class, NSObjectProtocol {
         guard index < items.count else { return }
 
         let duration = animated ? 0.2 : 0.0
-        let attributes = [NSFontAttributeName: selectedTextFont]
+        let attributes = [NSAttributedStringKey.font: selectedTextFont]
         let title = items[index]
         let width = title.hl_width(attributes: attributes, height: bounds.height) + cellInset * 2.0
         let indexPath = IndexPath(item: index, section: 0)

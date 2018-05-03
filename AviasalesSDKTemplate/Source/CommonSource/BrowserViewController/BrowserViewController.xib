@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowserViewController" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+            <connections>
+                <outlet property="closeBarButtonItem" destination="fy5-bl-pmq" id="9cb-rW-Ec3"/>
+                <outlet property="goBackBarButtonItem" destination="YXT-NQ-IjG" id="IOU-D5-4BW"/>
+                <outlet property="goForwardBarButtonItem" destination="SJf-XG-TT3" id="gaa-UV-UHX"/>
+                <outlet property="loadingView" destination="ONf-jR-J5V" id="VK2-ss-eE0"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webViewContainer" destination="Xg8-Ws-bbL" id="DK8-5v-HEh"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xg8-Ws-bbL">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONf-jR-J5V" customClass="LoadingView" customModule="AviasalesSDKTemplate" customModuleProvider="target">
+                    <rect key="frame" x="127" y="273" width="120" height="120"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="aj4-te-ncf"/>
+                        <constraint firstAttribute="width" constant="120" id="z9E-jJ-AHW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Xg8-Ws-bbL" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="4fF-ge-ebh"/>
+                <constraint firstItem="Xg8-Ws-bbL" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="PSj-dx-Ypl"/>
+                <constraint firstItem="ONf-jR-J5V" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Paw-IJ-f9Z"/>
+                <constraint firstAttribute="bottom" secondItem="Xg8-Ws-bbL" secondAttribute="bottom" id="gs3-dF-O6G"/>
+                <constraint firstItem="ONf-jR-J5V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="kAS-Me-beK"/>
+                <constraint firstAttribute="trailing" secondItem="Xg8-Ws-bbL" secondAttribute="trailing" id="lw8-ni-aL0"/>
+            </constraints>
+        </view>
+        <barButtonItem image="filtersCrossButton" id="fy5-bl-pmq">
+            <connections>
+                <action selector="closeBarButtonItemTapped:" destination="-1" id="Kk6-Xt-mfd"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem image="browser_back_icon" id="YXT-NQ-IjG">
+            <connections>
+                <action selector="goBackBarButtonItemTapped:" destination="-1" id="eZA-Vt-zbj"/>
+            </connections>
+        </barButtonItem>
+        <barButtonItem image="browser_forward_icon" id="SJf-XG-TT3">
+            <connections>
+                <action selector="goForwardBarButtonItemTapped:" destination="-1" id="7Sa-HL-eN3"/>
+            </connections>
+        </barButtonItem>
+    </objects>
+    <resources>
+        <image name="browser_back_icon" width="8" height="12"/>
+        <image name="browser_forward_icon" width="8" height="12"/>
+        <image name="filtersCrossButton" width="16" height="16"/>
+    </resources>
+</document>

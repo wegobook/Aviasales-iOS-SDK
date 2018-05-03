@@ -8,6 +8,7 @@
 
 import Foundation
 
+@objcMembers
 class AppConfigurator: NSObject {
 
     static func configure() {

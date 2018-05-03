@@ -1,5 +1,6 @@
 import Foundation
 
+@objcMembers
 class SearchConfigStore: NSObject {
 
     private let kResultsTTLKey = "kResultsTTLKey"

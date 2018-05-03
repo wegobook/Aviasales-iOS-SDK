@@ -59,7 +59,7 @@ class FilterSelectionVC: HLCommonVC, UITableViewDataSource, UITableViewDelegate 
         return contentHeight
     }
 
-    func reset() {
+    @objc func reset() {
         self.iterateFilterItems { item in
             deactivateItem(item: item)
             return false

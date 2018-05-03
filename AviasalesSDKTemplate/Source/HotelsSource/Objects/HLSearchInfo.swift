@@ -10,6 +10,7 @@ import HotellookSDK
     case customLocation
 }
 
+@objcMembers
 class HLSearchInfo: HDKSearchInfo {
 
     private let kSearchDatesInPastLifetime: TimeInterval = 3 * 60 * 60

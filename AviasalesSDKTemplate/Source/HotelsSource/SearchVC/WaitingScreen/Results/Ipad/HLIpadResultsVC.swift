@@ -146,7 +146,7 @@ class HLIpadResultsVC: HLCommonResultsVC {
 
     // MARK: - HLFiltersDismissDelegate Methods
 
-    func dismissFilters() {
+    @objc func dismissFilters() {
         view.setNeedsUpdateConstraints()
         UIView.animate(withDuration: filtersAppearanceDuration, animations: {
             self.setInitialFiltersStateForOrientation(UIApplication.shared.statusBarOrientation)

@@ -1,5 +1,6 @@
 import SDWebImage
 
+@objcMembers
 class HLPhotoView: UIView, CAAnimationDelegate {
 
     let overlayAnimationDuration: TimeInterval = 0.1

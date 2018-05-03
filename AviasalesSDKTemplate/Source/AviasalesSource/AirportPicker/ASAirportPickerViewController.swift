@@ -13,6 +13,7 @@ import UIKit
     case destination
 }
 
+@objcMembers
 class ASAirportPickerViewController: UIViewController {
 
     let presenter: ASAirportPickerPresenter

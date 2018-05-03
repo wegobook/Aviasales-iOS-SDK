@@ -7,6 +7,7 @@
 
 import UIKit
 
+@objcMembers
 class ASTWaitingScreenViewController: UIViewController {
 
     let presenter: ASTWaitingScreenPresenter
@@ -45,7 +46,7 @@ class ASTWaitingScreenViewController: UIViewController {
         super.viewDidLayoutSubviews()
         aviasalesAdvertisementBottomConstraint.constant = bottomLayoutGuide.length
     }
-
+    
     // MARK: - Setup
 
     func setupViewController() {
@@ -58,7 +59,7 @@ class ASTWaitingScreenViewController: UIViewController {
 
     func updateInfoLabel(text: String, range: NSRange) {
         let attributedText = NSMutableAttributedString(string: text)
-        attributedText.addAttribute(NSForegroundColorAttributeName, value: JRColorScheme.mainColor(), range: range)
+        attributedText.addAttribute(NSAttributedStringKey.foregroundColor, value: JRColorScheme.mainColor(), range: range)
         infoLabel.attributedText = attributedText
     }
 
@@ -111,7 +112,7 @@ extension ASTWaitingScreenViewController: ASTWaitingScreenViewProtocol {
     }
 
     func showAviasalesAdvertisement(searchInfo: JRSDKSearchInfo) {
-        AviasalesSDK.sharedInstance().adsManager.loadAdsViewForWaitingScreen(with: searchInfo) { [weak self] (adsView, error) in
+        AviasalesSDK.sharedInstance().adsManager.loadAdsViewForSearchResults(with: searchInfo) { [weak self] (adsView, error) in
             if let adsView = adsView {
                 adsView.place(into: self?.aviasalesAdvertisementView)
                 self?.aviasalesAdvertisementViewHeightConstraint.constant = 90

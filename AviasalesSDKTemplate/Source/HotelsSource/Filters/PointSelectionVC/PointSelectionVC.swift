@@ -157,7 +157,7 @@ class PointSelectionVC: ASTGroupedSearchVC {
     // MARK: - UISearchBarDelegate
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        if searchText.characters.count > 1 {
+        if searchText.count > 1 {
             if let points = points {
                 sections = []
                 let filteredPois = searchPois(points, searchString: searchText)

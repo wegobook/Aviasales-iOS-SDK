@@ -18,7 +18,7 @@ class RatingItem: NamedHotelDetailsItem {
             let bottomDescriptionMargin: CGFloat = 2
             let descriptionWidth = tableWidth - leftDescriptionMargin - rightDescriptionMargin
 
-            let descriptionHeight = description.hl_height(attributes: [NSFontAttributeName: HLHotelDetailsRatingSummaryCell.descriptionLabelFont], width: descriptionWidth)
+            let descriptionHeight = description.hl_height(attributes: [NSAttributedStringKey.font: HLHotelDetailsRatingSummaryCell.descriptionLabelFont], width: descriptionWidth)
 
             return max(topDescriptionMargin + descriptionHeight + bottomDescriptionMargin, minHeight)
         } else {

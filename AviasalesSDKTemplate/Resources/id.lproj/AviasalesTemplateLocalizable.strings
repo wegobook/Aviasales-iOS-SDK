@@ -178,14 +178,26 @@
 "JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d berhenti";
 "JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d berhenti";
 
-"JR_BROWSER_TITLE" = "Pembelian";
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "Kalender biaya";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "Kalender harga %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "mulai %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "Harga rata-rata";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "langsung";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "dengan transit";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "Termurah";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "Hanya penerbangan langsung";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "Tidak menemukan tiket Anda?";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "Anda dapat mengubah tanggal penerbangan kembali.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "Pilih tanggal pulang";
 
 "JR_BROWSER_BACK_BTN_TITLE" = "Kembali";
 "JR_BROWSER_FORWARD_BTN_TITLE" = "Forward";
 "JR_BROWSER_ERROR_ALERT_TITLE" = "Eror";
 
+"BROWSER_LOAD_ERROR" = "Ada kesalahan. Silakan coba lagi.";
 "BROWSER_CHECK_CONNECTION" = "Mohon cek koneksi internet Anda.";
-"BROWSER_OVERLAY_DEFAULT_TEXT" = "Memuat...";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "Memuat...";
 "JR_CLOSE_BUTTON_TITLE" = "Close";
 
 "JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "Maaf, kami tidak dapat menemukan penerbangan antar bandara dengan rute %@. Namun, kami dapat menunjukkan Anda penerbangan antar kota tersebut.";

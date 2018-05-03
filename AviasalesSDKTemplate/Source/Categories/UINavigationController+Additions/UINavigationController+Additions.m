@@ -16,4 +16,9 @@
     [self setViewControllers:viewControllers animated:YES];
 }
 
+- (void)setViewControllersWithRootAndViewController:(UIViewController *)viewController {
+    NSArray <UIViewController *> *viewControllers = @[self.viewControllers.firstObject, viewController];
+    [self setViewControllers:viewControllers animated:YES];
+}
+
 @end

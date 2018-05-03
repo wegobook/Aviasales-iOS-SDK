@@ -7,6 +7,7 @@ import UIKit
     func cityPicker(_ picker: HLCityPickerVC, didSelectLocationPoint: HDKSearchLocationPoint)
 }
 
+@objcMembers
 class HLCityPickerVC: ASTGroupedSearchVC {
 
     let minimalSearchStringLength = 2

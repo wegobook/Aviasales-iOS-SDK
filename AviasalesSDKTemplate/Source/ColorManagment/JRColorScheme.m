@@ -68,6 +68,32 @@
     return COLOR_WITH_RED(236, 239, 241);
 }
 
+#pragma mark - PriceCalendar
+
++ (UIColor *)priceCalendarBarColor {
+    return COLOR_WITH_ALPHA(115, 135, 174, 0.2);
+}
+
++ (UIColor *)priceCalendarSelectedBarColor {
+    return COLOR_WITH_ALPHA(115, 135, 174, 0.6);
+}
+
++ (UIColor *)priceCalendarMinBarColor {
+    return COLOR_WITH_ALPHA(110, 211, 33, 0.2);
+}
+
++ (UIColor *)priceCalendarSelectedMinBarColor {
+    return COLOR_WITH_ALPHA(110, 211, 33, 0.6);
+}
+
++ (UIColor *)priceCalendarMinPriceLevelColor {
+    return [self priceCalendarMinBarColor];
+}
+
++ (UIColor *)priceCalendarResultCellCheapestViewBackgroundColor {
+    return [UIColor colorWithCSS: @"#3BD17A"];
+}
+
 #pragma mark - Background
 
 + (UIColor *)mainBackgroundColor {

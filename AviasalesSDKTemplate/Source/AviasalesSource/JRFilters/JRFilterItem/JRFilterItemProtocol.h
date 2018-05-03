@@ -15,7 +15,7 @@
 
 @optional
 
-@property (nonatomic, copy) void (^filterAction)();
+@property (nonatomic, copy) void (^filterAction)(void);
 
 - (NSString *)detailsTitle;
 - (NSAttributedString *)attributedStringValue;

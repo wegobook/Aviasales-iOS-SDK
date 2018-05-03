@@ -1,3 +1,4 @@
+@objcMembers
 class ResultsTTLManager: NSObject {
     private let store: SearchConfigStore
 

@@ -19,8 +19,7 @@
 #endif
 
     [AppConfigurator configure];
-
-    [UINavigationBar appearance].barStyle = UIBarStyleBlack;
+    [AppearanceSettings setup];
 
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
 

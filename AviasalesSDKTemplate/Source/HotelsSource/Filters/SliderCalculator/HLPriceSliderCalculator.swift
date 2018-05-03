@@ -10,6 +10,7 @@ struct SliderRange {
     let maxPoint: SliderPoint
 }
 
+@objcMembers
 class HLPriceSliderCalculator: NSObject {
 
     fileprivate (set) var pivots: [Double] = []

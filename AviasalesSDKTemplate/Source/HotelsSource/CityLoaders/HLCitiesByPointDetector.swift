@@ -3,6 +3,7 @@ import CoreLocation
 import HotellookSDK
 import PromiseKit
 
+@objcMembers
 class HLCitiesByPointDetector: NSObject {
 
     fileprivate var completionBlock: (([HDKCity]) -> Void)?

@@ -142,7 +142,7 @@ extension UIView {
 
 // MARK: - Draw stars
 
-extension UIView {
+@objc extension UIView {
 
     func drawYellowStars(_ count: Int, fromPoint: CGPoint, offset: CGFloat) {
         drawStars(count, fromPoint: fromPoint, fullImage: UIImage.yellowStar, emptyImage: UIImage.yellowStarEmpty, offset: offset)
@@ -200,7 +200,7 @@ extension UIView {
 
 // MARK: - Draw Badges
 
-extension UIView {
+@objc extension UIView {
 
     func removeTextBadges() {
         for view in self.subviews {
@@ -239,7 +239,7 @@ extension UIView {
     private func badgeLabel(widthLimit: CGFloat) -> HLBadgeLabel {
         let label = HLBadgeLabel(frame: CGRect.zero)
         label.insets = UIEdgeInsets(top: 0.0, left: 5.0, bottom: 0.0, right: 5.0)
-        label.font = UIFont.systemFont(ofSize: 15.0, weight: UIFontWeightMedium)
+        label.font = UIFont.systemFont(ofSize: 15.0, weight: UIFont.Weight.medium)
         label.lineBreakMode = .byTruncatingTail
         label.numberOfLines = 1
         label.layer.cornerRadius = 4.0

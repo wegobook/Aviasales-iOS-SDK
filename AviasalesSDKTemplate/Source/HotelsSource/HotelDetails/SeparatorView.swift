@@ -1,5 +1,6 @@
 import PureLayout
 
+@objcMembers
 class SeparatorView: UIView {
 
     override init(frame: CGRect) {

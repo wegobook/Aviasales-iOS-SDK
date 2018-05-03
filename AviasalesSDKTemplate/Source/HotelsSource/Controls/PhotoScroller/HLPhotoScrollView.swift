@@ -5,6 +5,7 @@
     @objc optional func photoScrollDidEndDragging()
 }
 
+@objcMembers
 class HLPhotoScrollView: HLPhotoCollectionView {
 
     static func preferredHeight() -> CGFloat {
