@@ -1,0 +1,218 @@
+PODS:
+  - Alamofire (4.7.2)
+  - Appodeal (2.1.10):
+    - Appodeal/Full (= 2.1.10)
+  - Appodeal/AdColonyAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/AmazonAdsAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/AppLovinAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/Banner (2.1.10):
+    - Appodeal/AmazonAdsAdapter
+    - Appodeal/AppLovinAdapter
+    - Appodeal/FacebookAudienceAdapter
+    - Appodeal/GoogleAdMobAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/MyTargetAdapter
+    - Appodeal/StartAppAdapter
+    - Appodeal/TwitterMoPubAdapter
+    - Appodeal/YandexAdapter
+  - Appodeal/ChartboostAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/Core (2.1.10)
+  - Appodeal/FacebookAudienceAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/FlurryAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/Full (2.1.10):
+    - Appodeal/Banner
+    - Appodeal/Core
+    - Appodeal/Interstitial
+    - Appodeal/Native
+    - Appodeal/Video
+  - Appodeal/GoogleAdMobAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/InMobiAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/Interstitial (2.1.10):
+    - Appodeal/AmazonAdsAdapter
+    - Appodeal/FacebookAudienceAdapter
+    - Appodeal/GoogleAdMobAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/Video
+    - Appodeal/YandexAdapter
+  - Appodeal/IronSource (2.1.10):
+    - Appodeal/Core
+  - Appodeal/MobvistaAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/MyTargetAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/Native (2.1.10):
+    - Appodeal/AppLovinAdapter
+    - Appodeal/FacebookAudienceAdapter
+    - Appodeal/FlurryAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/MyTargetAdapter
+    - Appodeal/PubnativeAdapter
+    - Appodeal/StartAppAdapter
+    - Appodeal/TwitterMoPubAdapter
+  - Appodeal/PubnativeAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/StartAppAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/TapjoyAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/TwitterMoPubAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/UnityAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/Video (2.1.10):
+    - Appodeal/AdColonyAdapter
+    - Appodeal/AppLovinAdapter
+    - Appodeal/ChartboostAdapter
+    - Appodeal/InMobiAdapter
+    - Appodeal/IronSource
+    - Appodeal/MobvistaAdapter
+    - Appodeal/MyTargetAdapter
+    - Appodeal/StartAppAdapter
+    - Appodeal/TapjoyAdapter
+    - Appodeal/TwitterMoPubAdapter
+    - Appodeal/UnityAdapter
+    - Appodeal/VungleAdapter
+  - Appodeal/VungleAdapter (2.1.10):
+    - Appodeal/Core
+  - Appodeal/YandexAdapter (2.1.10):
+    - Appodeal/Core
+  - AutoCoding (2.2.3)
+  - AviasalesSDK (3.1.2)
+  - AXRatingView (1.0.6)
+  - BZipCompression (1.0.2)
+  - Crashlytics (3.10.3):
+    - Fabric (~> 1.7.8)
+  - Fabric (1.7.8)
+  - HotellookSDK (1.0.5):
+    - Alamofire (~> 4.4)
+    - KeychainSwift (~> 8.0)
+    - SwiftProtobuf (~> 1.0.1)
+  - KeychainSwift (8.0.3)
+  - libextobjc (0.4.1):
+    - libextobjc/EXTADT (= 0.4.1)
+    - libextobjc/EXTConcreteProtocol (= 0.4.1)
+    - libextobjc/EXTKeyPathCoding (= 0.4.1)
+    - libextobjc/EXTNil (= 0.4.1)
+    - libextobjc/EXTSafeCategory (= 0.4.1)
+    - libextobjc/EXTScope (= 0.4.1)
+    - libextobjc/EXTSelectorChecking (= 0.4.1)
+    - libextobjc/EXTSynthesize (= 0.4.1)
+    - "libextobjc/NSInvocation+EXT (= 0.4.1)"
+    - "libextobjc/NSMethodSignature+EXT (= 0.4.1)"
+    - libextobjc/RuntimeExtensions (= 0.4.1)
+    - libextobjc/UmbrellaHeader (= 0.4.1)
+  - libextobjc/EXTADT (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTConcreteProtocol (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTKeyPathCoding (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTNil (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSafeCategory (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTScope (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSelectorChecking (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - libextobjc/EXTSynthesize (0.4.1):
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSInvocation+EXT (0.4.1)":
+    - libextobjc/RuntimeExtensions
+  - "libextobjc/NSMethodSignature+EXT (0.4.1)":
+    - libextobjc/RuntimeExtensions
+  - libextobjc/RuntimeExtensions (0.4.1)
+  - libextobjc/UmbrellaHeader (0.4.1)
+  - NMRangeSlider (1.2.1)
+  - ObjectMapper (3.3.0)
+  - PromiseKit (4.5.2):
+    - PromiseKit/Foundation (= 4.5.2)
+    - PromiseKit/QuartzCore (= 4.5.2)
+    - PromiseKit/UIKit (= 4.5.2)
+  - PromiseKit/CorePromise (4.5.2)
+  - PromiseKit/Foundation (4.5.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/QuartzCore (4.5.2):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (4.5.2):
+    - PromiseKit/CorePromise
+  - PureLayout (3.0.2)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - Smartling.i18n (1.0.14)
+  - SwiftLint (0.26.0)
+  - SwiftProtobuf (1.0.3)
+
+DEPENDENCIES:
+  - Appodeal (~> 2.0)
+  - AutoCoding (~> 2.2)
+  - AviasalesSDK (~> 3.1.2)
+  - AXRatingView
+  - BZipCompression
+  - Crashlytics
+  - Fabric
+  - HotellookSDK (~> 1.0.5)
+  - libextobjc (~> 0.4)
+  - NMRangeSlider
+  - ObjectMapper
+  - PromiseKit (~> 4.0)
+  - PureLayout (~> 3.0)
+  - SDWebImage (~> 3.7)
+  - Smartling.i18n (~> 1.0)
+  - SwiftLint
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - Appodeal
+    - AutoCoding
+    - AviasalesSDK
+    - AXRatingView
+    - BZipCompression
+    - Crashlytics
+    - Fabric
+    - HotellookSDK
+    - KeychainSwift
+    - libextobjc
+    - NMRangeSlider
+    - ObjectMapper
+    - PromiseKit
+    - PureLayout
+    - SDWebImage
+    - Smartling.i18n
+    - SwiftLint
+    - SwiftProtobuf
+
+SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  Appodeal: 11189f1fcc76084707f6d9c5e2a2cb4e6768bdd5
+  AutoCoding: 90ca3cbc0d77a37cfff75167d705b44148c5fc51
+  AviasalesSDK: 25d1e3691e00c0682bbf3f8d30fec9c888dd3e08
+  AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
+  BZipCompression: e0f96508e60eb93b5f5d4c7de1eb3dd0ac4f9ae9
+  Crashlytics: 2aea305161a2122492698c75af27f2b98aa49a25
+  Fabric: fba4684a95df789565b0b27fc5b6e68f1755af32
+  HotellookSDK: 35a415db90c4b6e2e266f7710740d58bd47b51c8
+  KeychainSwift: be9554c0e5f4b1686c775930dc5c6bd9396992ed
+  libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
+  NMRangeSlider: 317ded652431eb90501c8421d9cddc3930d891e6
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
+  PromiseKit: 743e497a5f505a470d3bbbf4ce0663c1268af0a4
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  Smartling.i18n: 0d508b89a2a12f0e070e6369e4dcdcf46ae2d59f
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
+  SwiftProtobuf: 5ccc0e4054e37c75800e5744acb2aa80bb72b39c
+
+PODFILE CHECKSUM: 3a33d3facdf556c5e56d3212f7c03b76260a9238
+
+COCOAPODS: 1.5.3
