@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,7 +22,7 @@
                         <rect key="frame" x="22" y="10" width="276" height="25"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="price" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c2d-na-Eeq">
-                                <rect key="frame" x="0.0" y="0.0" width="183" height="25"/>
+                                <rect key="frame" x="0.0" y="0.0" width="42" height="25"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -36,7 +37,7 @@
                         <constraints>
                             <constraint firstItem="c2d-na-Eeq" firstAttribute="top" secondItem="WRX-yi-gfg" secondAttribute="top" id="98n-wO-egI"/>
                             <constraint firstItem="2Ua-jJ-yei" firstAttribute="centerY" secondItem="WRX-yi-gfg" secondAttribute="centerY" id="CEA-GB-0gB"/>
-                            <constraint firstItem="2Ua-jJ-yei" firstAttribute="leading" secondItem="c2d-na-Eeq" secondAttribute="trailing" constant="8" id="HuK-SM-8XM"/>
+                            <constraint firstItem="2Ua-jJ-yei" firstAttribute="leading" secondItem="c2d-na-Eeq" secondAttribute="trailing" priority="250" constant="8" id="HuK-SM-8XM"/>
                             <constraint firstAttribute="height" constant="25" id="K8Z-8w-E1A"/>
                             <constraint firstItem="c2d-na-Eeq" firstAttribute="leading" secondItem="WRX-yi-gfg" secondAttribute="leading" id="NQH-at-9Oi"/>
                             <constraint firstAttribute="width" relation="lessThanOrEqual" constant="560" id="QXl-FJ-DGb"/>

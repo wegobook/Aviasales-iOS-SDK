@@ -1,5 +1,7 @@
 "LANGUAGE" = "ms";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@j %@m";
 "LONG_TIME_FORMAT" = "%@ j %@ min";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Ekonomi";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Ekonomi Premium";
 "JR_SEARCHINFO_FIRST" = "Kelas Pertama";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d penumpang";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d penumpang";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d penumpang";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d penumpang";
 "JR_SEARCH_FORM_PASSENGERS" = "Penumpang";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Kelas";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Bandar ketibaan";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Minat";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Laluan berdasarkan minat";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Kembali";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Carian terdahulu:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Carian terdahulu";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Tiada hasil ditemui";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Sedang mencari...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Mencari lapangan terbang berdekatan...";

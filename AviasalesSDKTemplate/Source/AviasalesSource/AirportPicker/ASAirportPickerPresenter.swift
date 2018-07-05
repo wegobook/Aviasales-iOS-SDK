@@ -151,20 +151,13 @@ private extension ASAirportPickerPresenter {
             return [ASAirportPickerDataCellModel]()
         }
 
-        return airports.map({ (airport) -> ASAirportPickerDataCellModel in
-            ASAirportPickerDataCellModel(city: airport.city, airport: airportAndCountryString(for: airport), iata: airport.iata, model: airport)
-        })
+        return airports.map {
+            ASAirportPickerDataCellModel(city: $0.city, airport: airportAndCountryString(for: $0), iata: $0.iata, model: $0)
+        }
     }
 
-    func airportAndCountryString(for airport: JRSDKAirport) -> String? {
-
-        var name = airportString(for: airport)
-
-        if let country = airport.countryName {
-            name?.append(", \(country)")
-        }
-
-        return name
+    func airportAndCountryString(for airport: JRSDKAirport) -> String {
+        return [airportString(for: airport), airport.countryName].compactMap({ $0 }).joined(separator: NSLS("COMMA_AND_WHITESPACE"))
     }
 
     func airportString(for airport: JRSDKAirport) -> String? {

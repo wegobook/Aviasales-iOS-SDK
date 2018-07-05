@@ -22,8 +22,7 @@ def shared
     pod 'Fabric'
     pod 'Crashlytics'
     pod 'SwiftLint'
-    pod 'GCXSteppedSlider'
-    pod 'BZipCompression', '~> 1.0'
+    pod 'BZipCompression'
     pod 'ObjectMapper'
     
 end

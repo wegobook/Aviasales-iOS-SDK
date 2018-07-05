@@ -14,19 +14,19 @@
 
 
 static const NSInteger kDateViewTagOffset = 1000;
-static const NSInteger kNumberOfDaysInWeek = 7;
 
 
 @interface JRDatePickerDayCell ()
 
 @property (strong, nonatomic) NSArray *dates;
 @property (strong, nonatomic) JRDatePickerMonthItem *datePickerItem;
-@property (strong, nonatomic) UIView *layoutAttributeView;
 
 @property (strong, nonatomic) UIColor *dateTextColor;
 @property (strong, nonatomic) UIColor *dateSelectedColor;
 @property (strong, nonatomic) UIColor *dateDisabledColor;
 @property (strong, nonatomic) UIColor *dateHighlightedColor;
+
+@property (strong, nonatomic) UIStackView *stackView;
 
 @end
 
@@ -34,94 +34,87 @@ static const NSInteger kNumberOfDaysInWeek = 7;
 @implementation JRDatePickerDayCell
 
 - (void)initialSetup {
-	[self setSelectionStyle:UITableViewCellSelectionStyleNone];
-	[self setBackgroundColor:[UIColor clearColor]];
+    [self setSelectionStyle:UITableViewCellSelectionStyleNone];
+    [self setBackgroundColor:[UIColor clearColor]];
 
-	[self disableClipForViewSubviews:self];
+    [self disableClipForViewSubviews:self];
     
-	self.dateTextColor = [JRColorScheme darkTextColor];
-	self.dateSelectedColor = [JRColorScheme actionColor];
+    self.dateTextColor = [JRColorScheme darkTextColor];
+    self.dateSelectedColor = [JRColorScheme actionColor];
     self.dateDisabledColor = [JRColorScheme inactiveLightTextColor];
     self.dateHighlightedColor = [JRColorScheme actionColor];
 }
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier {
-	self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
-	if (self) {
-		[self initialSetup];
-	}
-	return self;
+    self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
+    if (self) {
+        [self initialSetup];
+    }
+    return self;
 }
 
-- (JRDatePickerDayView *)createDateViewWithTag:(NSInteger)dateViewTag
-                             dateViewSuperview:(UIView *)dateViewSuperview
-                                   indexOfDate:(NSUInteger)indexOfDate {
-	JRDatePickerDayView *dateView = LOAD_VIEW_FROM_NIB_NAMED(@"JRDatePickerDayView");
-    
-	[dateView setTranslatesAutoresizingMaskIntoConstraints:NO];
-	[dateView setTag:dateViewTag];
-    
-	[dateViewSuperview addSubview:dateView];
-    
-    CGFloat fraction = 1.0f / kNumberOfDaysInWeek;
-    CGFloat leftToRightMultiplier = fraction * indexOfDate;
-    
-    NSLayoutAttribute secondLeftToRightAttribute = NSLayoutAttributeRight;
-    if (leftToRightMultiplier == 0.0f) {
-        secondLeftToRightAttribute = NSLayoutAttributeLeft;
-        leftToRightMultiplier = 1.0f;
-    }
-    
-	[dateViewSuperview addConstraint:JRConstraintMake(dateView, NSLayoutAttributeLeft, NSLayoutRelationEqual, dateViewSuperview, secondLeftToRightAttribute, leftToRightMultiplier, 0)];
-	[dateViewSuperview addConstraint:JRConstraintMake(dateView, NSLayoutAttributeWidth, NSLayoutRelationEqual, dateViewSuperview, NSLayoutAttributeWidth, fraction, 0)];
-	[dateViewSuperview addConstraint:JRConstraintMake(dateView, NSLayoutAttributeHeight, NSLayoutRelationEqual, dateView, NSLayoutAttributeWidth, 1, 0)];
-	[dateViewSuperview addConstraint:JRConstraintMake(dateView, NSLayoutAttributeTop, NSLayoutRelationEqual, dateViewSuperview, NSLayoutAttributeTop, 1, 0)];
+- (void)prepareForReuse {
+    [super prepareForReuse];
+    self.stackView = nil;
+}
 
-	return dateView;
+- (UIStackView *)stackView {
+    if (!_stackView) {
+        _stackView = [[UIStackView alloc] initWithFrame:CGRectZero];
+        _stackView.axis = UILayoutConstraintAxisHorizontal;
+        _stackView.distribution = UIStackViewDistributionFillEqually;
+
+        [self.contentView addSubview:_stackView];
+
+        _stackView.translatesAutoresizingMaskIntoConstraints = NO;
+        [_stackView.leadingAnchor constraintEqualToAnchor:self.contentView.leadingAnchor].active = YES;
+        [_stackView.topAnchor constraintEqualToAnchor:self.contentView.topAnchor].active = YES;
+        [_stackView.trailingAnchor constraintEqualToAnchor:self.contentView.trailingAnchor].active = YES;
+        [_stackView.bottomAnchor constraintEqualToAnchor:self.contentView.bottomAnchor].active = YES;
+    }
+    return _stackView;
 }
 
 - (JRDatePickerDayView *)dateViewForDate:(NSDate *)date
 {
-	BOOL shouldHideCell = [_datePickerItem.prevDates containsObject:date] ||
+    BOOL shouldHideCell = [_datePickerItem.prevDates containsObject:date] ||
     [_datePickerItem.futureDates containsObject:date];
     
-	NSUInteger indexOfDate = [_dates indexOfObject:date];
-	NSInteger dateViewTag = indexOfDate + kDateViewTagOffset;
+    NSUInteger indexOfDate = [_dates indexOfObject:date];
+    NSInteger dateViewTag = indexOfDate + kDateViewTagOffset;
     
-	UIView *dateViewSuperview = self.contentView;
+    UIView *dateViewSuperview = self.contentView;
     
-	id viewWithTag = [dateViewSuperview viewWithTag:dateViewTag];
-	JRDatePickerDayView *dateView = viewWithTag;
+    id viewWithTag = [dateViewSuperview viewWithTag:dateViewTag];
+    JRDatePickerDayView *dateView = viewWithTag;
     
-	if (!dateView && !shouldHideCell) {
-		dateView = [self createDateViewWithTag:dateViewTag
-                             dateViewSuperview:dateViewSuperview
-                                   indexOfDate:indexOfDate];
-        
-	}
+    if (!dateView && !shouldHideCell) {
+        dateView =  LOAD_VIEW_FROM_NIB_NAMED(@"JRDatePickerDayView");
+        dateView.tag = dateViewTag;
+    }
     
-	[dateView setTodayLabelHidden:YES];
-	[dateView setHidden:shouldHideCell];
+    [dateView setTodayLabelHidden:YES];
+    [dateView setHidden:shouldHideCell];
     
-	if (shouldHideCell) {
+    if (shouldHideCell) {
         dateView.backgroundImageViewHidden = YES;
 
-		return nil;
-	} else {
-		return dateView;
-	}
+        return nil;
+    } else {
+        return dateView;
+    }
 }
 
 - (void)setupDateView:(JRDatePickerDayView *)dateView date:(NSDate *)date {
     [dateView setDate:date monthItem:_datePickerItem];
-	[dateView addTarget:self action:@selector(dateViewAction:) forControlEvents:UIControlEventTouchUpInside];
+    [dateView addTarget:self action:@selector(dateViewAction:) forControlEvents:UIControlEventTouchUpInside];
     
-	BOOL isSelectedDate = [_datePickerItem.stateObject.firstSelectedDate isEqualToDate:date] || [_datePickerItem.stateObject.secondSelectedDate isEqualToDate:date];
-	[dateView setSelected:isSelectedDate];
+    BOOL isSelectedDate = [_datePickerItem.stateObject.firstSelectedDate isEqualToDate:date] || [_datePickerItem.stateObject.secondSelectedDate isEqualToDate:date];
+    [dateView setSelected:isSelectedDate];
     dateView.backgroundImageViewHidden = !isSelectedDate;
 
     BOOL enabled = [_datePickerItem.stateObject.disabledDates containsObject:date] &&
-     [date compare:_datePickerItem.stateObject.lastAvalibleForSearchDate] == NSOrderedAscending;
+    [date compare:_datePickerItem.stateObject.lastAvalibleForSearchDate] == NSOrderedAscending;
     BOOL selected = [_datePickerItem.stateObject.selectedDates containsObject:date];
 
     if (!enabled) {
@@ -136,7 +129,7 @@ static const NSInteger kNumberOfDaysInWeek = 7;
 
     dateView.enabled = enabled;
 
-	[dateView setTodayLabelHidden:date != _datePickerItem.stateObject.today];
+    [dateView setTodayLabelHidden:date != _datePickerItem.stateObject.today];
 }
 
 - (void)updateCell {
@@ -146,36 +139,40 @@ static const NSInteger kNumberOfDaysInWeek = 7;
             [button setSelected:NO];
         }
     }
-	for (NSDate *date in _dates) {
-		JRDatePickerDayView *dateView = [self dateViewForDate:date];
-		if (dateView) {
+
+    for (NSDate *date in _dates) {
+        JRDatePickerDayView *dateView = [self dateViewForDate:date];
+        if (dateView) {
+            [self.stackView addArrangedSubview:dateView];
             dateView.backgroundImageViewHidden = YES;
-			[self setupDateView:dateView date:date];
-		}
-	}
+            [self setupDateView:dateView date:date];
+        } else {
+            [self.stackView addArrangedSubview:[[UIView alloc] initWithFrame:CGRectZero]];
+        }
+    }
 }
 
 - (void)dateViewAction:(JRDatePickerDayView *)dateViewAction {
-	[_datePickerItem.stateObject.delegate dateWasSelected:dateViewAction.date];
+    [_datePickerItem.stateObject.delegate dateWasSelected:dateViewAction.date];
 }
 
 - (void)setDatePickerItem:(JRDatePickerMonthItem *)datePickerItem dates:(NSArray *)dates {
-	_dates = dates;
-	_datePickerItem = datePickerItem;
+    _dates = dates;
+    _datePickerItem = datePickerItem;
     
-	[self updateCell];
+    [self updateCell];
     
-	[self disableClipForViewSubviews:self];
+    [self disableClipForViewSubviews:self];
 }
 
 - (void)disableClipForViewSubviews:(UIView *)superview {
-	[superview setClipsToBounds:NO];
-	[superview setOpaque:YES];
-	[superview setBackgroundColor:[UIColor clearColor]];
+    [superview setClipsToBounds:NO];
+    [superview setOpaque:YES];
+    [superview setBackgroundColor:[UIColor clearColor]];
     
-	for (UIView *view in superview.subviews) {
-		[self disableClipForViewSubviews:view];
-	}
+    for (UIView *view in superview.subviews) {
+        [self disableClipForViewSubviews:view];
+    }
 }
 
 @end

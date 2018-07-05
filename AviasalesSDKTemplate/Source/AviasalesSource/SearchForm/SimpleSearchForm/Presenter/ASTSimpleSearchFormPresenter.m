@@ -212,7 +212,7 @@
     cellViewModel.type = type;
     BOOL isDeparture = type == ASTSimpleSearchFormCellViewModelTypeDeparture;
     NSString *placeholder = isDeparture ? @"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" : @"JR_DATE_PICKER_RETURN_DATE_TITLE";
-    cellViewModel.date = date ? [DateUtil dayMonthYearWeekdayStringFromDate:date] : NSLS(placeholder);
+    cellViewModel.date = date ? [[DateUtil dayMonthYearWeekdayStringFromDate:date] arabicDigits] : NSLS(placeholder);
     cellViewModel.icon = isDeparture ? @"departure_icon" : @"arrival_icon";
     cellViewModel.hint = isDeparture ? NSLS(@"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE") : NSLS(@"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE");
     cellViewModel.shouldHideReturnCheckbox = isDeparture;

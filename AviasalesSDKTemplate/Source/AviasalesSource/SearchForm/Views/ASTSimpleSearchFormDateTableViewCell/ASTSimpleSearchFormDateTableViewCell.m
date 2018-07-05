@@ -11,6 +11,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [self.iconImageView transformRTL];
     self.iconImageView.tintColor = [JRColorScheme searchFormTintColor];
     self.returnButton.tintColor = [JRColorScheme searchFormTintColor];
     self.returnLabel.textColor = [JRColorScheme searchFormTintColor];

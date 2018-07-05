@@ -1,5 +1,7 @@
 "LANGUAGE" = "tr";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@s %@d";
 "LONG_TIME_FORMAT" = "%@ s %@ dk";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Ekonomi";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Ekonomi";
 "JR_SEARCHINFO_FIRST" = "First Class";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d yolcu";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d yolcu";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d yolcu";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d yolcu";
 "JR_SEARCH_FORM_PASSENGERS" = "Yolcular";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Sınıf";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Varılacak şehir";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "İlgi Alanları";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "İlgi alanlarına göre güzergâhlar";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Geri";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Önceki aramalarınız:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Önceki aramalarınız";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Hiçbir sonuç bulunmadı";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Arıyor...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "En yakındaki havaalanlarını arıyor...";

@@ -1,5 +1,7 @@
 "LANGUAGE" = "es";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@h %@m";
 "LONG_TIME_FORMAT" = "%@ h %@ min";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Clase\necon.";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Econ.\nPrem.";
 "JR_SEARCHINFO_FIRST" = "Primera";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d pasajero";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d pasajeros";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d pasajeros";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d pasajeros";
 "JR_SEARCH_FORM_PASSENGERS" = "Pasajeros";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Clase";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Ciudad de llegada";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Intereses";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Rutas por intereses";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Volver";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Búsquedas anteriores:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Búsquedas anteriores";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "No se han encontrado resultados";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Buscando...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Buscando aeropuertos cercanos...";

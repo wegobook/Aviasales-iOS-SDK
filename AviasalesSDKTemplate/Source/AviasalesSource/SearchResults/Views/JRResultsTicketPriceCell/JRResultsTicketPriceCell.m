@@ -50,7 +50,7 @@ static const CGSize kAirlineLogoSize = (CGSize){85, 25};
 
 - (void)setPrice:(JRSDKPrice *)price {
     _price = price;
-    self.priceLabel.text = [AviasalesNumberUtil formatPrice:[price priceInUserCurrency]];
+    self.priceLabel.text = [price formattedPriceinUserCurrency];
 }
 
 - (void)setAirline:(JRSDKAirline *)airline {

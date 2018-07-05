@@ -187,8 +187,8 @@
     cellSegment.iconImageView.hidden = !cellSegmentViewModel.placeholder;
     cellSegment.titleLabel.hidden = cellSegmentViewModel.placeholder;
     cellSegment.iconImageView.image = [UIImage imageNamed:cellSegmentViewModel.icon];
-    cellSegment.titleLabel.text = cellSegmentViewModel.title;
-    cellSegment.subtitleLabel.text = cellSegmentViewModel.subtitle;
+    cellSegment.titleLabel.text = [cellSegmentViewModel.title arabicDigits];
+    cellSegment.subtitleLabel.text = [cellSegmentViewModel.subtitle arabicDigits];
     
     __weak typeof(self) weakSelf = self;
     cellSegment.tapAction = ^(UIView *sender) {

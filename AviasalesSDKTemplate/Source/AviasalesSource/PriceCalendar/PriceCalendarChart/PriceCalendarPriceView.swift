@@ -75,7 +75,7 @@ extension PriceCalendarPriceView {
 
         if let value = departure.minPrice() {
             let format = NSLS("PRICE_CALENDAR_PRICE_VIEW_TEXT")
-            let price = NumberUtils.formattedPrice(currency: PriceCalendarManager.shared.currency.code, rubValue: value) ?? noPriceText
+            let price = JRSDKPrice.price(currency: RUB_CURRENCY, value: value.floatValue)?.formattedPriceinUserCurrency() ?? noPriceText
             textLabel.text = String(format: format, price)
         } else {
             textLabel.text = noPriceText

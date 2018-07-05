@@ -1,5 +1,7 @@
 "LANGUAGE" = "nb";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@ t %@ m";
 "LONG_TIME_FORMAT" = "%@ t %@ min";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Økonomi";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium økonomi";
 "JR_SEARCHINFO_FIRST" = "Første klasse";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d passasjer";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d passasjerer";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d passasjerer";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d passasjerer";
 "JR_SEARCH_FORM_PASSENGERS" = "Passasjerer";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Klasse";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Ankomstby";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Interesser";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Ruter etter interesser";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Tilbake";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Tidligere søk:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Tidligere søk";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Ingen resultater funnet";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Søker...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Søker etter de nærmeste flyplassene...";

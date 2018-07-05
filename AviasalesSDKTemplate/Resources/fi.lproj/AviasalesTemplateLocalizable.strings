@@ -1,5 +1,7 @@
 "LANGUAGE" = "fi";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@ h %@ m";
 "LONG_TIME_FORMAT" = "%@ h %@ min";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Economy";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
 "JR_SEARCHINFO_FIRST" = "First";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d matkustaja";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d matkustajaa";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d matkustajaa";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d matkustajaa";
 "JR_SEARCH_FORM_PASSENGERS" = "Matkustajat";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Luokka";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Saapumiskaupunki";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Kiinnostuksen kohteet";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Reitit kiinnostuksen kohteiden perusteella";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Takaisin";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Aikaisemmat haut:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Aikaisemmat haut";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Ei tuloksia";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Etsitään...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Etsitään lähimpiä lentokenttiä...";

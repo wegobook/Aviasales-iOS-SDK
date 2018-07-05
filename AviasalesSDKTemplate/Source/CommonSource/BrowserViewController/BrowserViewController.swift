@@ -25,25 +25,35 @@ import WebKit
     func showError(message: String)
 }
 
-@objcMembers
 class BrowserViewController: UIViewController {
 
-    fileprivate struct Keys {
+    private struct Keys {
         static let url = "URL"
     }
 
-    fileprivate let presenter: BrowserViewPresenter
+    private let presenter: BrowserViewPresenter
 
-    @IBOutlet var closeBarButtonItem: UIBarButtonItem!
-    @IBOutlet var goBackBarButtonItem: UIBarButtonItem!
-    @IBOutlet var goForwardBarButtonItem: UIBarButtonItem!
+    private lazy var closeBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "filtersCrossButton"),
+                                                          style: .plain,
+                                                          target: self,
+                                                          action: #selector(closeBarButtonItemTapped(_:)))
+
+    private lazy var goBackBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "browser_back_icon").imageFlippedForRightToLeftLayoutDirection(),
+                                                           style: .plain,
+                                                           target: self,
+                                                           action: #selector(goBackBarButtonItemTapped(_:)))
+
+    private lazy var goForwardBarButtonItem = UIBarButtonItem(image: #imageLiteral(resourceName: "browser_forward_icon").imageFlippedForRightToLeftLayoutDirection(),
+                                                              style: .plain,
+                                                              target: self,
+                                                              action: #selector(goForwardBarButtonItemTapped(_:)))
 
     @IBOutlet weak var webViewContainer: UIView!
     @IBOutlet weak var loadingView: LoadingView!
 
-    fileprivate var webView: WKWebView?
+    private var webView: WKWebView?
 
-    init(presenter: BrowserViewPresenter) {
+    @objc required init(presenter: BrowserViewPresenter) {
         self.presenter = presenter
         super.init(nibName: nil, bundle: nil)
     }
@@ -77,8 +87,8 @@ class BrowserViewController: UIViewController {
     }
 
     func setupNavigationItems() {
+        navigationItem.rightBarButtonItems =  [goForwardBarButtonItem, goBackBarButtonItem]
         navigationItem.leftBarButtonItem = closeBarButtonItem
-        navigationItem.rightBarButtonItems = [goForwardBarButtonItem, goBackBarButtonItem]
     }
 
     // MARK: - Error
@@ -94,15 +104,15 @@ class BrowserViewController: UIViewController {
 
     // MARK: - Actions
 
-    @IBAction func closeBarButtonItemTapped(_ sender: UIBarButtonItem) {
+    @objc func closeBarButtonItemTapped(_ sender: UIBarButtonItem) {
         presenter.handleClose()
     }
 
-    @IBAction func goBackBarButtonItemTapped(_ sender: UIBarButtonItem) {
+    @objc func goBackBarButtonItemTapped(_ sender: UIBarButtonItem) {
         presenter.handleGoBack()
     }
 
-    @IBAction func goForwardBarButtonItemTapped(_ sender: UIBarButtonItem) {
+    @objc func goForwardBarButtonItemTapped(_ sender: UIBarButtonItem) {
         presenter.handleGoForward()
     }
 }
@@ -115,6 +125,7 @@ private extension BrowserViewController {
         webView.translatesAutoresizingMaskIntoConstraints = false
         view.addConstraints(JRConstraintsMakeScaleToFill(webView, webViewContainer))
         webView.navigationDelegate = self
+        webView.uiDelegate = self
         webView.addObserver(self, forKeyPath: Keys.url, options: [.new, .old], context: nil)
         return webView
     }
@@ -178,6 +189,16 @@ extension BrowserViewController: BrowserViewProtocol {
         showErrorAlert(message: message) { [weak self] in
             self?.presenter.handleError()
         }
+    }
+}
+
+extension BrowserViewController: WKUIDelegate {
+
+    func webView(_ webView: WKWebView, createWebViewWith configuration: WKWebViewConfiguration, for navigationAction: WKNavigationAction, windowFeatures: WKWindowFeatures) -> WKWebView? {
+        if !(navigationAction.targetFrame?.isMainFrame ?? false) {
+            webView.load(navigationAction.request)
+        }
+        return nil
     }
 }
 

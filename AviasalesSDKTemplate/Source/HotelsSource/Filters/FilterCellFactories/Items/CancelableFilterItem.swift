@@ -88,7 +88,7 @@ class CancelableFilterItem: CustomFilterViewTableItem, DummyCancelableFilterView
 
     func cancellableOrDummyItems(for filter: Filter) -> [StringFilterItem] {
         let cancelableItems = self.cancelableItems(for: filter)
-        let allItemsCount = self.allItems(for: filter).compactMap({ $0 }).count
+        let allItemsCount = self.allItems(for: filter).flatMap({ $0 }).count
 
         if cancelableItems.count > 0 && cancelableItems.count < allItemsCount {
             return cancelableItems

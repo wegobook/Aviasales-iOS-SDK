@@ -13,6 +13,8 @@ class CurrencyManager: NSObject {
 
     static let shared = CurrencyManager()
 
+    static private let locale = NSLocale.applicationUI() ?? NSLocale.current
+
     static let availableCurrencies = availableCurrencyCodes().sorted().map { buildCurrency(from: $0) }
 
     var currency: HDKCurrency = CurrencyManager.restoreCurrency() ?? CurrencyManager.defaultCurrency() {
@@ -20,6 +22,7 @@ class CurrencyManager: NSObject {
             saveCurrency()
         }
     }
+
 
     fileprivate static let shouldHandleBYN: Bool = {
         if #available(iOS 11, *) {
@@ -58,11 +61,11 @@ private extension CurrencyManager {
     static func buildCurrency(from code: String) -> HDKCurrency {
 
         if code == "BYN" && shouldHandleBYN {
-            let name = Locale.current.localizedString(forCurrencyCode: "BYR") ?? String()
+            let name = locale.localizedString(forCurrencyCode: "BYR") ?? String()
             return HDKCurrency(code: code, symbol: "BYN", text: name)
         } else {
-            let symbol = (Locale.current as NSLocale).displayName(forKey: .currencySymbol, value: code) ?? String()
-            let name = Locale.current.localizedString(forCurrencyCode: code) ?? String()
+            let symbol = (locale as NSLocale).displayName(forKey: .currencySymbol, value: code) ?? String()
+            let name = locale.localizedString(forCurrencyCode: code) ?? String()
             return HDKCurrency(code: code, symbol: symbol, text: name)
         }
     }

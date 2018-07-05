@@ -202,7 +202,7 @@ private extension PriceCalendarPresenter {
         guard let firstTravelSegment = PriceCalendarManager.shared.loader?.searchInfo.travelSegments.firstObject as? JRSDKTravelSegment else {
             return NSLS("SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE")
         }
-        return String(format: NSLS("PRICE_CALENDAR_TITLE_FORMAT"), firstTravelSegment.originAirport.iata, firstTravelSegment.destinationAirport.iata)
+        return String(format: NSLS("PRICE_CALENDAR_TITLE_FORMAT").formatAccordingToTextDirection(), firstTravelSegment.originAirport.iata, firstTravelSegment.destinationAirport.iata)
     }
 
     func handleStartLoading() {
@@ -244,8 +244,12 @@ private extension PriceCalendarPresenter {
         return PriceCalendarAverageCellModel(text: text, notDirectPriceInfo: notDirectPriceInfo, directPriceInfo: directPriceInfo)
     }
 
-    func formatPriceValue(_ value: NSNumber?) -> String? {
-        return NumberUtils.formattedPrice(currency: PriceCalendarManager.shared.currency.code, rubValue: value) ?? "-"
+    func formatPriceValue(_ value: NSNumber?) -> String {
+        let noPriceString = "-"
+        guard let floatValue = value?.floatValue else {
+            return noPriceString
+        }
+        return JRSDKPrice.price(currency: RUB_CURRENCY, value: floatValue)?.formattedPriceinUserCurrency() ?? noPriceString
     }
 
     func buildResultCellModels() -> [PriceCalendarCellModelProtocol] {
@@ -262,7 +266,7 @@ private extension PriceCalendarPresenter {
         let cheapest = first ? NSLS("PRICE_CALENDAR_RESULT_CELL_CHEAPEST") : nil
 
         let format = NSLS("PRICE_CALENDAR_PRICE_VIEW_TEXT")
-        let price = NumberUtils.formattedPrice(currency: PriceCalendarManager.shared.currency.code, rubValue: value) ?? ""
+        let price = JRSDKPrice.price(currency: RUB_CURRENCY, value: value.floatValue)?.formattedPriceinUserCurrency() ?? ""
 
         let departureDate = departure.date()
         let returnDate = searchInfo.travelSegments.count > 1 ? JRSDKPriceCalendarLoader.date(fromKey: key) : nil

@@ -23,6 +23,8 @@
 
 #define AVIASALES_CURRENCIES [NSArray arrayWithObjects:@"eur", @"usd", @"gbp", @"aud", @"cad", @"nzd", @"thb", @"pln", @"brl", @"cny", @"hkd", @"twd", @"sgd", @"krw", @"myr", @"vnd", @"jpy", @"try", @"rub", @"idr", @"dkk", @"nok", @"sek", @"mop", @"php", nil]
 
+#define RUB_CURRENCY @"rub"
+#define USD_CURRENCY @"usd"
 
 //------------------------
 // MACRO
@@ -115,6 +117,8 @@ NSString * platformName(void);
 
 NSString *NSLS(NSString *key);
 NSString *NSLSP(NSString *key, float pluralValue);
+
+BOOL isRTLDirectionByLocale(void);
 
 //------------------------
 // DISPATCH

@@ -39,7 +39,7 @@ class PriceCalendarResultCell: UITableViewCell {
         cheapestContainerView.isHidden = cellModel.cheapest == nil
         cheapestLabel.text = cellModel.cheapest?.uppercased()
         priceLabel.text = cellModel.price
-        datesLabel.text = cellModel.dates
+        datesLabel.text = cellModel.dates?.arabicDigits()
     }
 }
 

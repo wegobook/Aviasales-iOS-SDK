@@ -31,6 +31,7 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    [self.iconImageView transformRTL];
     self.iconImageView.tintColor = [JRColorScheme searchFormTintColor];
 }
 

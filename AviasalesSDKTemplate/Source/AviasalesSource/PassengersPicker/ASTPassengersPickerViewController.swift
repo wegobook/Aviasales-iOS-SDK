@@ -40,11 +40,16 @@ class ASTPassengersPickerViewController: UIViewController {
 
     func setupViewController() {
         setupConstraints()
+        setupTableView()
         setupDoneButton()
     }
 
     func setupConstraints() {
         separatorViewHeightConstraint.constant = JRPixel()
+    }
+
+    func setupTableView() {
+        tableView.backgroundColor = .white
     }
 
     func setupDoneButton() {

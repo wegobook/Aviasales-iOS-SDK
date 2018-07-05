@@ -49,7 +49,10 @@ extension BookBrowserViewPresenter: BrowserViewPresenter {
     func handleFail(error: Error) {
         view?.hideLoading()
         view?.hideActivity()
-        view?.showError(message: error.localizedDescription)
+
+        if !error.isCancelledError {
+            view?.showError(message: error.localizedDescription)
+        }
     }
 
     func handleFailedURL() {

@@ -1,5 +1,7 @@
 "LANGUAGE" = "nl";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@u %@m";
 "LONG_TIME_FORMAT" = "%@ u %@ min";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Economy";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
 "JR_SEARCHINFO_FIRST" = "Eerste Klasse";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d reiziger";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d reizigers";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d reizigers";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d reizigers";
 "JR_SEARCH_FORM_PASSENGERS" = "Reizigers";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Klasse";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Aankomststad";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Interesses";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Routes op interesses";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Terug";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Vorige zoekopdrachten:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Tidligere søk";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Geen resultaten gevonden";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Zoeken...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Zoeken naar de dichtstbijzijnde luchthavens...";

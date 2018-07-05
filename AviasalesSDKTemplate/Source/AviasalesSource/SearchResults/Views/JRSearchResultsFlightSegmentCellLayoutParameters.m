@@ -30,6 +30,7 @@
 
 + (instancetype)parametersWithTickets:(NSArray<JRSDKTicket *> *)tickets
                                  font:(UIFont *)font {
+    
     CGFloat departureDateWidth = 0;
     CGFloat departureLabelWidth = 0;
     CGFloat arrivalLabelWidth = 0;
@@ -42,9 +43,9 @@
             JRSDKFlight *const firstFlight = flightSegment.flights.firstObject;
             JRSDKFlight *const lastFlight = flightSegment.flights.lastObject;
 
-            NSString *const departureDate = [DateUtil dateToDateString:firstFlight.departureDate];
-            NSString *const departureTime = [DateUtil dateToTimeString:firstFlight.departureDate];
-            NSString *const arrivalTime = [DateUtil dateToTimeString:lastFlight.arrivalDate];
+            NSString *const departureDate = [[DateUtil dateToDateString:firstFlight.departureDate] arabicDigits];
+            NSString *const departureTime = [[DateUtil dateToTimeString:firstFlight.departureDate] arabicDigits];
+            NSString *const arrivalTime = [[DateUtil dateToTimeString:lastFlight.arrivalDate] arabicDigits];
 
             JRSDKIATA const departureIATA = firstFlight.originAirport.iata;
             JRSDKIATA const arrivalIATA = lastFlight.destinationAirport.iata;

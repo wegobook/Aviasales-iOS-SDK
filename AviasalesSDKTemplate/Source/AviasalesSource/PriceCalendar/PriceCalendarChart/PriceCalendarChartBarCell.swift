@@ -58,7 +58,8 @@ class PriceCalendarChartBarCell: UICollectionViewCell {
     func setDeparture(_ departure: JRSDKPriceCalendarDeparture?, animated: Bool = false) {
         self.departure = departure
         if let departure = departure {
-            dateLabel.text =  DateFormatter(format: "dd, eee").string(from: departure.date())
+            let separator = NSLS("COMMA_AND_WHITESPACE")
+            dateLabel.text =  DateFormatter(format: "dd\(separator) eee").string(from: departure.date()).arabicDigits()
         }
         setState()
         setLevels(animated: animated)
@@ -119,11 +120,11 @@ class PriceCalendarChartBarCell: UICollectionViewCell {
         guard let maximumDeparturePrice = PriceCalendarManager.shared.loader?.maximumDeparturePrice?.floatValue else {
             return 0
         }
-
-        let availableHeight = bounds.height - barPadding
+        let minimumBarHeight: CGFloat = 10
+        let availableHeight = bounds.height - barPadding - minimumBarHeight
         let multiplier = Double(availableHeight) / Double(maximumDeparturePrice)
         let height = CGFloat(Double(price) * multiplier)
 
-        return height + cornerRadius
+        return height + cornerRadius + minimumBarHeight
     }
 }

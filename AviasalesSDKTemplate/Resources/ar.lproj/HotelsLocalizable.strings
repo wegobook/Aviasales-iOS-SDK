@@ -1,0 +1,541 @@
+/* 
+  HotelsLocalizable.strings
+  AviasalesSDKTemplate
+
+  Created by Anton Chebotov on 02/03/2017.
+  Copyright © 2017 Go Travel Un Limited. All rights reserved.
+*/
+//Универсальные элементы
+
+"HL_LOC_FROM_CONJUCTION" = "من";
+
+"HL_LOC_GUEST##{one}" = "ضيف";
+"HL_LOC_GUEST##{few}" = "ضيفان";
+"HL_LOC_GUEST##{many}" = "ضيفان";
+"HL_LOC_GUEST##{other}" = "ضيفان";
+
+"HL_LOC_GUEST_ADULT##{one}" = "بالغ";
+"HL_LOC_GUEST_ADULT##{few}" = "بالغ";
+"HL_LOC_GUEST_ADULT##{many}" = "بالغان";
+"HL_LOC_GUEST_ADULT##{other}" = "بالغان";
+
+"HL_LOC_GUEST_KID##{one}" = "طفل";
+"HL_LOC_GUEST_KID##{few}" = "طفل";
+"HL_LOC_GUEST_KID##{many}" = "طفلان";
+"HL_LOC_GUEST_KID##{other}" = "طفلان";
+
+//Страница поиска
+
+"LOC_SEARCH_FORM_TITLE" = "فنادق";
+
+"HL_SEARCH_FORM_CITY_TITLE" = "مدينة أو فندق";
+
+"HL_LOC_SEARCH_KIDS_TITLE" = "أطفال";
+"HL_LOC_SEARCH_ADULTS_TITLE" = " بالغين";
+
+"HL_LOC_SEARCH_DATES_LABEL" = "تواريخ";
+
+"HL_LOC_YEAR##{one}" = "سنة";
+"HL_LOC_YEAR##{few}" = "سنوات";
+"HL_LOC_YEAR##{many}" = "سنوات";
+"HL_LOC_YEAR##{other}" = "سنوات";
+
+"HL_LOC_NIGHT##{one}" = "ليلة";
+"HL_LOC_NIGHT##{few}" = "ليالي";
+"HL_LOC_NIGHT##{many}" = "ليالي";
+"HL_LOC_NIGHT##{other}" = "ليالي";
+
+"HL_LOC_FOR_NIGHT##{one}" = "في\U00A0%d\U00A0الليلة";
+"HL_LOC_FOR_NIGHT##{few}" = "في\U00A0%d\U00A0الليالي";
+"HL_LOC_FOR_NIGHT##{many}" = "في\U00A0%d\U00A0الليالي";
+"HL_LOC_FOR_NIGHT##{other}" = "في\U00A0%d\U00A0الليالي";
+
+"HL_LOC_SEARCH_FORM_EMPTY_ALERT_TITLE" = "خطأ";
+"HL_LOC_SEARCH_FORM_EMPTY_ADULTS_MESSAGE" = "يرجى اختيار عدد الضيوف";
+"HL_LOC_SEARCH_FORM_EMPTY_CITY_MESSAGE" = "يرجى اختيار وجهتك";
+
+"HL_LOC_TO_RESULTS_SEARCH_BUTTON_TITLE" = "نتائج البحث";
+
+"HL_LOC_SEARCH_BUTTON_TITLE" = "البحث عن فنادق";
+"HL_LOC_SEARCH_BUTTON_TITLE_PRICES" = "الحصول على الأسعار";
+
+// Календарь
+"HL_LOC_DATE_PICKER_TITLE" = "اختر التواريخ";
+"HL_LOC_DATE_PICKER_LENGTH_RESTRICTION_TITLE" = "عفواً، لكن الحد الأقصى للحجز الفندقي هو 30 يوم";
+
+// Выбор возрастов детей
+"HL_KIDS_PICKER_TITLE" = "أطفال";
+"HL_KIDS_PICKER_LESS_THAN_ONE_YEAR_TITLE" = "رضع";
+"HL_KIDS_PICKER_CELL_SELECT_AGE_TITLE" = "العمر";
+"HL_KIDS_PICKER_APPLY_BUTTON_TITLE" = "تطبيق";
+"HL_KIDS_PICKER_CANCEL_BUTTON_TITLE" = "إلغاء";
+
+"HL_CLEAN_BUTTON_TITLE" = "مسح";
+
+// Выбор города
+"LOC_SEARCH_HEADER_TITLE_RECENT" = "عمليات البحث السابقة";
+
+"LOC_CITY_PICKER_HEADER_TITLE_CITIES" = "مدن";
+"LOC_CITY_PICKER_HEADER_TITLE_HOTELS" = "فنادق";
+"LOC_CITY_PICKER_HEADER_TITLE_AIRPORTS" = "مطارات";
+"LOC_CITY_PICKER_HEADER_TITLE_NEARBY" = "بالقرب منك";
+
+"HL_LOC_CITY_PLACEHOLDER_TEXT" = "مدن وفنادق";
+
+"HL_LOC_NO_CITY_PICKER_RESULTS" = "لم يُعثر على شيء";
+
+// Страница фильтров
+
+"HL_LOC_FILTER_TITLE_LABEL" = "فلاتر";
+"HL_LOC_FILTER_DROP_BUTTON" = "إعادة تعيين";
+"HL_LOC_FILTER_APPLY_BUTTON" = "تم";
+
+"HL_LOC_FILTER_PRICE_CRITERIA" = "السعر";
+"HL_LOC_FILTER_RANGE" = "من %@ إلى %@";
+"HL_LOC_FILTER_FROM_STRING" = "من";
+"HL_LOC_FILTER_TO_STRING" = "حتى";
+
+"HL_LOC_FILTER_DISTANCE_CRITERIA" = "المسافة إلى:";
+"HL_LOC_FILTER_DISTANCE_CRITERIA_CENTER" = "الوسط";
+
+"HL_LOC_FILTER_FOOD_PAYMENT_SECTION" = "الوجبات وخيارات الدفع";
+"HL_LOC_FILTER_STARS_SECTION" = "عدد النجوم";
+"HL_LOC_FILTER_PROPERTY_TYPE_SECTION" = "نوع المنشأة";
+"HL_LOC_FILTER_UNWANTED_VARIANTS_SECTION" = "إخفاء النتائج";
+"HL_LOC_FILTER_DISTRICTS_SECTION" = "المناطق";
+"HL_LOC_FILTER_GATES_SECTION" = "وكالات الحجز";
+
+"HL_LOC_FILTER_GATES_SELECTION" = "وكالات الحجز";
+"HL_LOC_FILTER_SELECT_GATES" = "إختيار وكلاء الحجز";
+"HL_LOC_FILTER_ALL_GATES" = "جميع الوكالات";
+"HL_LOC_FILTER_DISTRICTS_SELECTION" = "المناطق";
+"HL_LOC_FILTER_SELECT_DISTRICTS" = "إختر المناطق";
+"HL_LOC_FILTER_ALL_DISTRICTS" = "جميع المناطق";
+"HL_LOC_FILTER_ORIGIN_POINT_SELECTION" = "المسافة إلى";
+
+"HL_LOC_FILTER_BREAKFAST_CRITERIA" = "فطور";
+"HL_LOC_FILTER_ALL_INCLUSIVE_CRITERIA" = "شاملة كل شيء";
+"HL_LOC_FILTER_REFUNDABLE_CRITERIA" = "إلغاء مجاني";
+"HL_LOC_FILTER_PAY_NOW_CRITERIA" = "الدفع الآن";
+
+"HL_LOC_FILTERS_WHOLE_PROPERTY" = "بيوت كاملة";
+"HL_LOC_FILTERS_ROOM_PROPERTY" = "غرف";
+
+"HL_LOC_FILTERS_HIDE_HOSTELS" = "إخفاء بيوت الشباب والشقق";
+"HL_LOC_FILTERS_HIDE_APARTMENTS" = "إخفاء الشقق";
+"HL_LOC_FILTERS_HIDE_DORMITORY" = "إخفاء بيوت الشباب";
+"HL_LOC_FILTERS_HIDE_SHARED_BATHROOM" = "حمام مستقل";
+
+"HL_FILTER_HOTELS_NOT_FOUND" = "لا توجد نتائج";
+
+"HL_LOC_FILTER_SIGHT_CRITERIA" = "منظر جميل";
+"HL_LOC_FILTER_AMENITY_RESTAURANT" = "مطعم";
+"HL_LOC_FILTER_AMENITY_PARKING" = "موقف";
+"HL_LOC_FILTER_AMENITY_SMOKING" = "مسموح التدخين";
+"HL_LOC_FILTER_AMENITY_PETS" = "مسموح اصطحاب الحيوانات الأليفة";
+"HL_LOC_FILTER_AMENITY_TV" = "تلفزيون";
+"HL_LOC_FILTER_AMENITY_LAUNDRY" = "غسيل الملابس";
+"HL_LOC_FILTER_AMENITY_AIR_CONDITIONING" = "مكيف";
+
+"HL_LOC_FILTER_AMENITY_INTERNET" = "انترنت";
+"HL_LOC_FILTER_AMENITY_POOL" = "مسبح";
+"HL_LOC_FILTER_AMENITY_FITNESS" = "صالة لياقة";
+"HL_LOC_FILTER_AMENITY_HAIRDRYER" = "مجفف شعر";
+"HL_LOC_FILTER_AMENITY_CHILDREN_CARE" = "حضانة اطفال";
+
+"HL_HOTEL_DETAIL_AMENITY_ROOMS_WIFI" = "واي فاي";
+"HL_HOTEL_DETAIL_AMENITY_PRIVATE_BATHROOM" = "حمام مستقل";
+"HL_HOTEL_DETAIL_AMENITY_SAFE_BOX" = "خزنة";
+
+"HL_LOC_FILTERS_POINT_PLACEHOLDER_TEXT" = "البحث";
+
+"HL_LOC_FILTERS_POINT_POI_TEXT" = "نقاط اهتمام";
+"HL_LOC_FILTERS_POINT_BEACHES_TEXT" = "بحر";
+"HL_LOC_FILTERS_POINT_ANY_BEACH_TEXT" = "أي بحر";
+"HL_LOC_FILTERS_POINT_SKILIFTS_TEXT" = "مصاعد التزلج";
+"HL_LOC_FILTERS_POINT_ANY_SKILIFT_TEXT" = "أي مصعد للتزلج";
+"HL_LOC_FILTERS_POINT_ANY_METRO_TEXT" = "أي محطة قطار";
+"HL_LOC_FILTERS_POINT_AIRPORTS_TEXT" = "مطارات";
+"HL_LOC_FILTERS_POINT_TRAIN_STATIONS_TEXT" = "محطات قطار";
+
+"HL_LOC_POINT_ON_MAP_TEXT" = "نقطة على الخريطة";
+"HL_LOC_SEARCH_POINT_TEXT" = "إبحث عن النقاط";
+"HL_LOC_NEARBY_CITIES_SEARCH_DESTINATION_TEXT" = "%@ والقريبة";
+
+"HL_LOC_SELECT_POINT_ON_MAP_TEXT" = "تم";
+"HL_LOC_SELECT_POINT_ON_MAP_TITLE" = "نقطة على الخريطة";
+
+"HL_LOC_FILTERS_POINT_MY_LOCATION_TEXT" = "الموقع الحالي";
+"HL_LOC_FILTERS_POINT_CITY_CENTER_TEXT" = "وسط المدينة";
+"HL_LOC_FILTERS_GIVE_LOCATION_ACCESS" = "الموقع الحالي";
+
+"HL_FILTERS_NAME_SEARCH_RESULTS" = "نتائج البحث";
+
+"HL_LOC_ALLOW_ENGLISH_OTA_TITLE" = "تفعيل الوكالات المتحدثة بالإنجليزية";
+
+"HL_LOC_FILTER_ROOM_AMENITIES_SECTION" = "مرافق الغرفة";
+"HL_LOC_FILTER_HOTEL_AMENITIES_SECTION" = "مرافق الفندق";
+"HL_LOC_FILTER_HOTEL_NAME_SECTION" = "اسم الفندق";
+
+"HL_LOC_FILTER_PAY_LATER_CRITERIA" = "الدفع في الفندق";
+
+"HL_LOC_FILTERS_HIDE_NO_ROOMS" = "إخفاء الفنادق التي لا تحتوي على شغور";
+
+"HL_LOC_FILTER_HOTELS_FOUND##{zero}" = "%@ فنادق من %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{one}" = "%@ فندق من %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{few}" = "%@ فنادق من %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{many}" = "%@ فنادق من %@";
+"HL_LOC_FILTER_HOTELS_FOUND##{other}" = "%@ فنادق من %@";
+"HL_LOC_FILTER_RATING_CRITERIA" = "تقييم";
+"HL_LOC_FILTER_MAIN_HEADER_LABEL" = "التصفية حسب إسم الفندق";
+"HL_LOC_HOTELS_NEARBY_TEXT" = "الفنادق القريبة";
+"HL_FILTERS_NAME_TEXTFIELD_PLACEHOLDER" = "التصفية حسب إسم الفندق";
+"HL_LOC_FILTER_HOTEL_WEBSITE" = "المواقع الإلكتروانية للفندق";
+
+// Страница с результатами поиска
+"HL_MAP_BUTTON" = "الخريطة";
+"HL_FILTER_BUTTON_TITLE_LABEL" = "فلاتر";
+"HL_SORT_BUTTON_TITLE_LABEL" = "ترتيب";
+
+"HL_DISCOUNT" = "خصم";
+"HL_SPECIAL_PRICE_TITLE" = "عرض خاص";
+
+"HL_LOC_ADULT##{one}" = "بالغ";
+"HL_LOC_ADULT##{few}" = "بالغان";
+"HL_LOC_ADULT##{many}" = "بالغان";
+"HL_LOC_ADULT##{other}" = "بالغان";
+
+"HL_LOC_KILOMETERS_ABBREVIATION" = "كم";
+"HL_LOC_METERS_ABBREVIATION" = "متر";
+"HL_LOC_MILES_ABBREVIATION" = "مايل";
+
+"HL_NEW_SEARCH_BUTTON" = "بحث جديد";
+
+"HL_NO_FILTER_RESULTS_BUTTON" = "إعادة تعيين الفلاتر";
+
+"HL_LOC_NO_ROOMS" = "لا يوجد غرف";
+"HL_LOC_NO_ROOMS_SUBTITLE" = "لهذه التواريخ";
+"HL_LOC_ROOMS_OUTDATED" = "غير محدّث";
+"HL_LOC_ROOMS_OUTDATED_SUBTITLE" = "يرجى إعادة البحث";
+"HL_LOC_ROOMS_SOLD" = "لا يوجد شغور";
+"HL_LOC_ROOMS_SOLD_SUBTITLE" = "لهذه التواريخ";
+
+"HL_LOC_MAP_GROUP_DESCRIPTION_LONG" = "يتوفر اكثر من فندق في هذا الموقع، لقد جمعناهم سوياً.";
+"HL_LOC_MAP_GROUP_DESCRIPTION_SHORT" = "يتوفر اكثر من فندق في هذا الموقع.";
+
+// Сортировка
+"HL_LOC_SORT_HEADER_TITLE" = "ترتيب بواسطة:";
+"HL_LOC_SORT_TYPE_POPULARITY" = "الشعبية";
+"HL_LOC_SORT_TYPE_RATING" = "تقييم";
+"HL_LOC_SORT_TYPE_PRICE" = "السعر";
+"HL_LOC_SORT_TYPE_DISTANCE" = "المسافة إلى:";
+"HL_LOC_SORT_TYPE_DISCOUNT" = "خصم";
+
+"HL_HOTEL_PEEK_SHOW_DETAILS_BUTTON_TITLE" = "عرض التفاصيل";
+
+// Страница о приложении
+"LOC_SETTINGS_TITLE" = "المعلومات";
+
+"LOC_INFO" = "المعلومات";
+
+"LOC_ABOUT" = "Please replace this text with the short description of your app";
+
+"HL_LOC_ABOUT_CURRENCY" = "العملة";
+
+"LOC_RATE_APP_TITLE" = "تقييم هذا التطبيق";
+"HL_LOC_ABOUT_EMAIL_TITLE" = "الإتصال بنا";
+
+"HL_LOC_MAIL_BAD_RATE_TEXT" = "هل حصلت أي مشكلة:";
+"HL_LOC_ABOUT_VERSION_TITLE" = "الإصدار";
+"LOC_CURRENCY_SEARCH_PLACEHOLDER" = "البحث";
+
+// Страница с подробной информацией об отеле
+"HL_HOTEL_DETAIL_FULL_RATING" = "التقييم المفصّل ";
+"HL_HOTEL_DETAIL_SHOW_MORE_ROOMS" = "عرض%@ المزيد";
+"HL_HOTEL_DETAIL_HIDE_ROOMS" = "إخفاء";
+
+"HL_HOTEL_DETAIL_SEGMENTED_ALLPRICES_SECTION" = "كل الغرف";
+"HL_HOTEL_DETAIL_SEGMENTED_RATING_SECTION" = "تقييم";
+"HL_HOTEL_DETAIL_SEGMENTED_PHOTOS_SECTION" = "معرض";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOCATION_SECTION" = "موقع";
+"HL_HOTEL_DETAIL_INFORMATION_ACCOMMODATION_SECTION" = "تفاصيل السكن";
+"HL_HOTEL_DETAIL_INFORMATION_GOODTOKNOW_SECTION" = "معلومات مفيدة";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_ROOM_SECTION" = "مرافق الغرفة";
+"HL_HOTEL_DETAIL_INFORMATION_ABOUT_SECTION" = "تفاصيل المنشأة";
+"HL_HOTEL_DETAIL_INFORMATION_AMENITIES_IN_HOTEL_SECTION" = "مرافق الفندق";
+
+"HL_HOTEL_DETAIL_INFORMATION_GUESTS" = "ضيوف";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKIN" = "تسجيل الدخول";
+"HL_HOTEL_DETAIL_INFORMATION_CHECKOUT" = "تسجيل الخروج";
+
+"HL_HOTEL_DETAIL_AMENITY_CLEANING" = "رسوم التنظيف";
+"HL_HOTEL_DETAIL_AMENITY_DEPOSIT" = "مبلغ التأمين";
+"HL_HOTEL_DETAIL_PAID_AMENITY_UNKNOWN_PRICE" = "مطلوب";
+
+"HL_HOTEL_DETAIL_TRIPTYPE_COUPLE" = "أزواج";
+"HL_HOTEL_DETAIL_TRIPTYPE_FAMILY" = "عائلات";
+"HL_HOTEL_DETAIL_TRIPTYPE_SOLO" = "منفرد";
+"HL_HOTEL_DETAIL_TRIPTYPE_BUSINESS" = "عمل";
+
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{one}" = "الطاقم يتحدث: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{few}" = "الطاقم يتحدث: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{many}" = "الطاقم يتحدث: %@";
+"HL_HOTEL_DETAIL_STAFF_LANGUAGES##{other}" = "الطاقم يتحدث: %@";
+
+"HL_HOTEL_DETAIL_FEATURES_FREE_PARKING_TITLE" = "موقف مجاني";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL_FILTER" = "فنادق";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT_FILTER" = "شقق";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL_FILTER" = "بيوت شباب";
+
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOTEL" = "فندق";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APART_HOTEL" = "شقق فندقية";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_BED_AND_BREAKFAST" = "بيوت وإفطار";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_APARTMENT" = "شقق";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_MOTEL" = "موتيل";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_GUESTHOUSE" = "بيت للضيوف";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_HOSTEL" = "بيت شباب";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_RESORT" = "منتجع";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_FARM" = "مزرعة";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VACATION" = "منزل عطلة";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_LODGE" = "نزل";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_VILLA" = "فيلا";
+"HOTEL_DETAILS_HOTEL_PROPERTY_TYPE_ROOM" = "غرفة خاصة";
+
+"HOTEL_DETAIL_YEAR_OPENED" = "مبني في عام %@";
+"HOTEL_DETAIL_YEAR_RENOVATED" = "مجدد في عام %@";
+
+"HOTEL_DETAIL_ROOMS_COUNT##{one}" = "%@ غرفة";
+"HOTEL_DETAIL_ROOMS_COUNT##{few}" = "%@ غرف";
+"HOTEL_DETAIL_ROOMS_COUNT##{many}" = "%@ غرف";
+"HOTEL_DETAIL_ROOMS_COUNT##{other}" = "%@ غرف";
+
+"HL_PHOTO_PEEK_BUTTON_TITLE" = "إظهار الصور";
+"HL_DISTANCE_PEEK_SHOW_FULL_MAP" = "إظهار الخريطة";
+"HL_HOTEL_PEEK_BOOK_BUTTON_TITLE" = "إحجز الآن حتى ";
+"HL_HOTEL_DETAIL_BOOK_BUTTON_TITLE" = "إحجز الآن";
+"HL_HOTEL_DETAIL_ALL_PRICES_TITLE" = "صفقات أكثر ";
+"HL_HOTEL_DETAIL_PHOTOS_BUTTON_TITLE" = "معرض";
+"HL_HOTEL_DETAIL_LOADING_TITLE" = "جارى تحديث الأسعار...";
+"HL_HOTEL_DETAIL_BEST_PRICE_PER_NIGHT" = "أفضل عرض لليلة واحدة";
+"HL_HOTEL_DETAIL_CTA_HEADER_TITLE" = "أفضل عرض ل ";
+"HL_HOTEL_DETAIL_TRY_AGAIN_BUTTON_TITLE" = "اعد المحاولة";
+"HL_HOTEL_DETAIL_CHANGE_SEARCHINFO_BUTTON_TITLE" = "تغيير معايير البحث";
+"HL_HOTEL_DETAIL_RESTART_OUTDATED_SEARCH_TITLE" = "إعادة البحث";
+"HL_HOTEL_DETAIL_NO_ROOMS_TITLE" = "لا يوجد شغور";
+
+"HL_HOTEL_DETAIL_INFORMATION_LOADING_ERROR_TITLE" = "عفواً، لم نتلقى أي معلومات مفصّلة";
+"HL_HOTEL_DETAIL_OUTDATE_VARIANT_ERROR_TITLE" = "الأسعار قديمة";
+"HL_HOTEL_DETAIL_NO_ROOMS_ERROR_TITLE" = "لا يوجد غرف للتواريخ التي اخترتها";
+
+"HL_HOTEL_DETAIL_NO_DATES_SELECTED_TITLE" = "يرجى إختيار التواريخ وعدد الضيوف";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{zero}" = "%@ مراجعات";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{one}" = "%@ مراجعة";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{few}" = "%@ مراجعات";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{many}" = "%@ مراجعات";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_BASED##{other}" = "%@ مراجعات";
+
+"HL_HOTEL_DETAIL_RATING_DETAILS_MORE" = "%i إكثر";
+
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RATING_SUMMARY" = "خلاصة التقييم";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_RECOMMENDATIONS" = "تفاصيل التقييم";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_REVIEWS" = "مراجعات الضيوف";
+"HL_HOTEL_DETAIL_HEADER_TITLE_RATING_TRIPTYPES" = "الضيوف المتكررين";
+"HL_HOTEL_DETAIL_HEADER_TITLE_REVIEW_HIGHLIGHTS" = "أفضل المراجعات";
+
+"HL_HOTEL_DETAIL_REVIEWS_ERROR" = "حدث خطأ";
+
+"HL_HOTEL_DETAIL_READ_ALL_REVIEWS" = "مشاهدة المزيد من المراجعات";
+"HL_ALL_REVIEWS_TITLE" = "المراجعات";
+"HL_REVIEWS_ALL_AGENCIES_FILTER_TITLE" = "جميع الوكالات";
+"HL_REVIEWS_FILTER" = "تصفية حسب:";
+
+"HL_REVIEWS_POWERED_BY_BOOKING_TITLE" = "100% مراجعات معتمدة";
+"HL_REVIEWS_POWERED_BY_BOOKING_SUBTITLE" = "ضيوف حقيقيين، آراء حقيقية";
+
+"HL_ALL_REVIEWS_SECTION_HEADER##{zero}" = "%d مراجعات الضيف";
+"HL_ALL_REVIEWS_SECTION_HEADER##{one}" = "%d مراجعات الضيف";
+"HL_ALL_REVIEWS_SECTION_HEADER##{few}" = "%d مراجعات الضيف";
+"HL_ALL_REVIEWS_SECTION_HEADER##{many}" = "%d مراجعات الضيف";
+"HL_ALL_REVIEWS_SECTION_HEADER##{other}" = "%d مراجعات الضيف";
+
+"HL_NO_HOTEL_REVIEWS" = "لا يوجد مراجعات";
+
+"HL_HOTEL_DETAIL_SEARCH_PROGRESS_TITLE" = "البحث عن غرف...";
+"HL_HOTEL_DETAIL_CHANGE_DATES_TITLE" = "تعديل";
+"HL_HOTEL_DETAIL_DATES_AND_GUESTS_TITLE" = "التواريخ والضيوف";
+
+"HL_HOTEL_DETAIL_BREAKFAST_OPTION_TITLE" = "الفطور مشمول";
+"HL_HOTEL_DETAIL_NO_BREAKFAST_OPTION_TITLE" = "الفطور غير مشمول";
+"HL_HOTEL_DETAIL_ALL_INCLUSIVE_OPTION_TITLE" = "شاملة كل شيء";
+"HL_HOTEL_DETAIL_REFUNDABLE_OPTION_TITLE" = "إلغاء مجاني";
+"HL_HOTEL_DETAIL_SMOKING_OPTION_TITLE" = "مسموح التدخين";
+"HL_HOTEL_DETAIL_CHEAPEST_OPTION_TITLE" = "الأرخص";
+"HL_HOTEL_DETAIL_DISCOUNT_OPTION_TITLE" = "خصم";
+"HL_HOTEL_DETAIL_HOTEL_SITE_OPTION_TITLE" = "موقع الفندق الالكتروني";
+"HL_HOTEL_DETAIL_DEPOSIT_TRUE_OPTION_TITLE" = "الدفع الآن";
+"HL_HOTEL_DETAIL_DEPOSIT_FALSE_OPTION_TITLE" = "الدفع لاحقاً";
+"HL_HOTEL_DETAIL_CARD_REQUIRED_FALSE_OPTION_TITLE" = "بطاقة الإئتمان غير ضرورية";
+"HL_HOTEL_DETAIL_PRIVATE_PRICE_OPTION_TITLE" = "عرض خاص";
+"HL_HOTEL_DETAIL_PRIVATE_BATHROOM_OPTION" = "حمام مستقل";
+"HL_HOTEL_DETAIL_SHARED_BATHROOM_OPTION" = "حمام مشترك";
+"HL_HOTEL_DETAIL_FREEWIFI_OPTION_TITLE" = "واي فاي في الغرفة";
+
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{zero}" = "%li غرف متبقية!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{one}" = "%li غرفة المتبقية!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{few}" = "%li غرف متبقية!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{many}" = "%li غرف متبقية!";
+"HL_HOTEL_DETAIL_AVAILABLE_ROOMS_COUNT_OPTION_BASED##{other}" = "%li غرف متبقية!";
+
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{zero}" = "تبدأ الأسعار العادية لهذا الفندق من\U00A0%@ إلى\U00A0%d\U00A0ليالي";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{one}" = "تبدأ الأسعار العادية لهذا الفندق من\U00A0%@ إلى\U00A0%d\U00Aليلة";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{few}" = "تبدأ الأسعار العادية لهذا الفندق من\U00A0%@ إلى\U00A0%d\U00A0ليالي";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{many}" = "تبدأ الأسعار العادية لهذا الفندق من\U00A0%@ إلى\U00A0%d\U00A0ليالي";
+"HL_HOTEL_DETAIL_DISCOUNT_OLD_PRICE##{other}" = "تبدأ الأسعار العادية لهذا الفندق من\U00A0%@ إلى\U00A0%d\U00A0ليالي";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li صفقات";
+
+"HL_HOTEL_DETAIL_DISCOUNT_PERCENT" = "%@ حسم من التعرفة العادية";
+
+"HL_LOC_DEFAULT_ROOM_TYPE" = "غرف آخرى";
+
+"HL_LOC_CHECKIN_AFTER" = "بعد";
+"HL_LOC_CHECKOUT_BEFORE" = "قبل";
+
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{zero}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{one}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{few}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{many}" = "%li صفقات";
+"HL_HOTEL_DETAIL_OFFERS_COUNT##{other}" = "%li صفقات";
+
+"HOTEL_RATING_EXCEPTIONAL" = "إستثتائي";
+"HOTEL_RATING_WONDERFUL" = "ممتاز";
+"HOTEL_RATING_EXCELLENT" = "رائع";
+"HOTEL_RATING_VERY_GOOD" = "جيد جداً";
+"HOTEL_RATING_GOOD" = "جيد";
+"HOTEL_RATING_FAIR" = "نقاط التعليقات";
+
+// Плейсхолдеры
+"HL_NO_FILTER_RESULTS_TITLE" = "لم نجد أي فندق";
+"HL_NO_FILTER_RESULTS_DESCRIPTION" = "لا توجد نتائج تناسب اختياراتك";
+"HL_NO_FILTER_RESULTS_BUTTON" = "إعادة تعيين الفلاتر";
+
+"HL_NO_RESULTS_TITLE" = "لم نجد أي فندق";
+"HL_NO_RESULTS_DESCRIPTION" = "لم نجد أي فنادق في هذه المنطقة.";
+"HL_NEW_SEARCH_BUTTON" = "بحث جديد";
+
+//Карточки в выдаче
+"HL_LOC_ACTION_CARD_APPLY_BUTTON" = "تطبيق";
+
+"HL_LOC_ACTION_CARD_DISTANCE_USER_TITLE" = "المسافة من موقعك الحالي:";
+"HL_LOC_ACTION_CARD_DISTANCE_FROM_TITLE" = "المسافة من ";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_SEARCH_POINT_TITLE" = "المسافة من نقطة البحث:";
+"HL_LOC_ACTION_CARD_DISTANCE_CUSTOM_POINT_ON_MAP_TITLE" = "المسافة من النقطة على الخارطة:";
+"HL_LOC_ACTION_CARD_DISTANCE_CITY_AND_NEARBY" = "المسافة من %@:";
+
+"HL_LOC_ACTION_CARD_PRICE_TITLE" = "السعر";
+
+"HL_LOC_ACTION_CARD_DISTANCE_SKILIFT_TITLE" = "المسافة للوصول إلى مصعد التزلج:";
+"HL_LOC_ACTION_CARD_DISTANCE_BEACH_TITLE" = "المسافة للبحر:";
+"HL_LOC_ACTION_CARD_DISTANCE_CENTER_TITLE" = "المسافة لوسط المدينة:";
+
+"HL_NEARBY_CITIES_SEARCH_CELL_FEW_DESCRIPTION" = "لم تجد ما تبحث عنه؟ \nراجع العروض القريبة!";
+"HL_NEARBY_CITIES_SEARCH_CELL_NOTHING_DESCRIPTION" = "لم تجد شيء. حاول البحث في المدن القريبة.";
+"HL_NEARBY_CITIES_SEARCH_CELL_BUTTON" = "أظهر الفنادق القريبة";
+
+"HL_TICKETS_SEARCH_CELL_TITLE" = "رائع! كيف يمكنني الوصول إلى هناك؟";
+"HL_TICKETS_SEARCH_CELL_BUTTON" = "العثور على تذاكر";
+
+// Алерты
+"CHANGE_CURRENCY_ALERT_TITLE" = "العملة المختارة";
+"CHANGE_CURRENCY_ALERT_DESCRIPTION" = "سيتم تغيير العملة عند بدء البحث التالي";
+
+"HL_ALERT_NO_INTERNET_CONNECTION_TITLE" = "لا يوجد إتصال";
+"HL_ALERT_NO_INTERNET_CONNECTION_DESCRIPTION" = "يرجى التحقق من الإتصال بالإنترنت";
+
+"HL_ALERT_SEARCH_ERROR_TITLE" = "خطأ في الخادم";
+"HL_ALERT_SEARCH_ERROR_DESCRIPTION" = "حصل خطأ في الخادم. يرجى البحث مرة آخرى.";
+
+"HL_ALERT_OUTDATED_RESULTS_TITLE" = "النتائج قديمة";
+"HL_ALERT_OUTDATED_RESULTS_DESCRIPTION" = "للحصول على أحدث الأسعار، يرجى إعادة البحث.";
+
+"HL_LOC_NO_CURRENT_CITY_SCREEN_TITLE" = "لم نستطع تحديد موقعك";
+"HL_LOC_NO_CURRENT_CITY_SCREEN_DESCRIPTION" = "إسمح لنا بمعرفة موقعك لتحسين عملية البحث عن فندق.";
+"HL_LOC_NO_CURRENT_CITY_SETTINGS_BUTTON" = "الذهاب إلى الإعدادات";
+
+"HL_LOC_ALERT_LATER_BUTTON" = "لاحقاً";
+"HL_LOC_ALERT_CLOSE_BUTTON" = "غلق";
+
+//Feedback в письме
+
+"HL_LOC_MAIL_FEEDBACK_SUBJECT" = "آراء من تطبيق الاي او اس";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_TITLE" = "خطأ";
+"HL_LOC_EMAIL_SENDER_UNAVALIBLE_MESSAGE" = "يجب ضبط عميل البريد الإلكتروني على جهازك.";
+"HL_LOC_MAIL_FEEDBACK_BODY" = "معلومات تساعدنا على حلّ مشكلتك";
+"HL_LOC_MAIL_BOOKING_BUTTON" = "إحجز غرفة";
+
+// Экран ожидания результатов поиска
+"HL_WAITING_SCREEN_OTHERWEBSITES" = "وكالات آخرى";
+"HL_WAITING_LONG_SEARCH_TITLE" = "جاري البحث عن أفضل الصفقات";
+"HL_WAITING_LONG_SEARCH_SUBTITLE" = "قد يتطلب ذلك بعض الوقت.\nيرجى الإنتظار.";
+
+// Страница браузера
+"HL_LOC_BROWSER_WAITING_VIEW_TITLE" = "لقد وجدت صفقة مناسبة!\nيمكنك الآن إتمام الحجز.";
+
+// Default Cities
+"HL_LOC_DEFAULT_CITIES_MOSCOW" = "موسكو";
+"HL_LOC_DEFAULT_CITIES_NEWYORK" = "نيو يورك";
+"HL_LOC_DEFAULT_CITIES_SYDNEY" = "سيدني";
+"HL_LOC_DEFAULT_CITIES_LONDON" = "لندن";
+"HL_LOC_DEFAULT_CITIES_OTTAWA" = "اوتاوا";
+"HL_LOC_DEFAULT_CITIES_LISBON" = "لشبونة";
+"HL_LOC_DEFAULT_CITIES_BANGKOK" = "بانكوك";
+"HL_LOC_DEFAULT_CITIES_BEIJING" = "بكين";
+"HL_LOC_DEFAULT_CITIES_PARIS" = "باريس";
+"HL_LOC_DEFAULT_CITIES_BERLIN" = "برلين";
+"HL_LOC_DEFAULT_CITIES_ROME" = "روما";
+"HL_LOC_DEFAULT_CITIES_MADRID" = "مدريد";
+"HL_LOC_DEFAULT_CITIES_KIEV" = "كييف";
+"HL_LOC_DEFAULT_CITIES_ASTANA" = "استانا";
+"HL_LOC_DEFAULT_CITIES_MINSK" = "منسك";
+"HL_LOC_DEFAULT_CITIES_TOKYO" = "طوكيو";
+"HL_LOC_DEFAULT_CITIES_SEOUL" = "سيول";
+"HL_LOC_DEFAULT_CITIES_BRASILIA" = "برازيليا";
+"HL_LOC_DEFAULT_CITIES_TAIPEI" = "تايبي";
+"HL_LOC_DEFAULT_CITIES_HK" = "هونج كونج";
+"HL_LOC_DEFAULT_CITIES_DUBAI" = "دبي";
+
+// Countries
+"HL_LOC_DEFAULT_COUNTRIES_RUSSIA" = "روسيا";
+"HL_LOC_DEFAULT_COUNTRIES_USA" = "الولايات المتحدة";
+"HL_LOC_DEFAULT_COUNTRIES_AUSTRALIA" = "استراليا";
+"HL_LOC_DEFAULT_COUNTRIES_UK" = "المملكة المتحدة";
+"HL_LOC_DEFAULT_COUNTRIES_CANADA" = "كندا";
+"HL_LOC_DEFAULT_COUNTRIES_PORTUGAL" = "البرتغال";
+"HL_LOC_DEFAULT_COUNTRIES_THAILAND" = "تايلاند";
+"HL_LOC_DEFAULT_COUNTRIES_CHINA" = "الصين";
+"HL_LOC_DEFAULT_COUNTRIES_FRANCE" = "فرنسا";
+"HL_LOC_DEFAULT_COUNTRIES_GERMANY" = "المانيا";
+"HL_LOC_DEFAULT_COUNTRIES_ITALY" = "ايطاليا";
+"HL_LOC_DEFAULT_COUNTRIES_SPAIN" = "اسبانيا";
+"HL_LOC_DEFAULT_COUNTRIES_UKRAINE" = "اوكرانيا";
+"HL_LOC_DEFAULT_COUNTRIES_KAZAKHSTAN" = "كازاخستان";
+"HL_LOC_DEFAULT_COUNTRIES_BELARUS" = "روسيا البيضاء";
+"HL_LOC_DEFAULT_COUNTRIES_UAE" = "الإمارات العربية المتحدة";
+"HL_LOC_DEFAULT_COUNTRIES_JAPAN" = "اليابان";
+"HL_LOC_DEFAULT_COUNTRIES_SOUTH_KOREA" = "كوريا الجنوبية";
+"HL_LOC_DEFAULT_COUNTRIES_BRAZIL" = "البرازيل";
+"HL_LOC_DEFAULT_COUNTRIES_TAIWAN" = "تايوان";
+"HL_LOC_DEFAULT_COUNTRIES_HK" = "هونج كونج";
+
+"HL_LOC_SEARCH_FORM_HOTEL##{zero}" = "فنادق";
+"HL_LOC_SEARCH_FORM_HOTEL##{one}" = "فندق";
+"HL_LOC_SEARCH_FORM_HOTEL##{few}" = "فنادق";
+"HL_LOC_SEARCH_FORM_HOTEL##{many}" = "فنادق";
+"HL_LOC_SEARCH_FORM_HOTEL##{other}" = "فنادق";

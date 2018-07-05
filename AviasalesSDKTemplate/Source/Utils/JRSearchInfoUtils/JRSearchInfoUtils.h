@@ -28,6 +28,5 @@
 + (NSString *)formattedDatesExcludeYearComponentForSearchInfo:(JRSDKSearchInfo *)searchInfo;
 + (NSString *)formattedIatasAndDatesForSearchInfo:(JRSDKSearchInfo *)searchInfo;
 + (NSString *)formattedIatasAndDatesExcludeYearComponentForSearchInfo:(JRSDKSearchInfo *)searchInfo;
-+ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(JRSDKSearchInfo *)searchInfo;
 
 @end

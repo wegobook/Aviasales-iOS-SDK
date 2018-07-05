@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BrowserViewController" customModule="AviasalesSDKTemplate" customModuleProvider="target">
             <connections>
-                <outlet property="closeBarButtonItem" destination="fy5-bl-pmq" id="9cb-rW-Ec3"/>
-                <outlet property="goBackBarButtonItem" destination="YXT-NQ-IjG" id="IOU-D5-4BW"/>
-                <outlet property="goForwardBarButtonItem" destination="SJf-XG-TT3" id="gaa-UV-UHX"/>
                 <outlet property="loadingView" destination="ONf-jR-J5V" id="VK2-ss-eE0"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="webViewContainer" destination="Xg8-Ws-bbL" id="DK8-5v-HEh"/>
@@ -47,25 +44,5 @@
                 <constraint firstAttribute="trailing" secondItem="Xg8-Ws-bbL" secondAttribute="trailing" id="lw8-ni-aL0"/>
             </constraints>
         </view>
-        <barButtonItem image="filtersCrossButton" id="fy5-bl-pmq">
-            <connections>
-                <action selector="closeBarButtonItemTapped:" destination="-1" id="Kk6-Xt-mfd"/>
-            </connections>
-        </barButtonItem>
-        <barButtonItem image="browser_back_icon" id="YXT-NQ-IjG">
-            <connections>
-                <action selector="goBackBarButtonItemTapped:" destination="-1" id="eZA-Vt-zbj"/>
-            </connections>
-        </barButtonItem>
-        <barButtonItem image="browser_forward_icon" id="SJf-XG-TT3">
-            <connections>
-                <action selector="goForwardBarButtonItemTapped:" destination="-1" id="7Sa-HL-eN3"/>
-            </connections>
-        </barButtonItem>
     </objects>
-    <resources>
-        <image name="browser_back_icon" width="8" height="12"/>
-        <image name="browser_forward_icon" width="8" height="12"/>
-        <image name="filtersCrossButton" width="16" height="16"/>
-    </resources>
 </document>

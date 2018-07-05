@@ -18,7 +18,7 @@ class TabMenuVC: UITabBarController {
             results.append(flightsVC)
         }
 
-        if ConfigManager.shared.hotelsEnabled {
+        if ConfigManager.shared.hotelsEnabled && !isRTLDirectionByLocale() {
             let hotelsVC = createHotelsVC()
             hotelsVC.tabBarItem = UITabBarItem(title: NSLS("LOC_SEARCH_FORM_TITLE"), image: #imageLiteral(resourceName: "bed_icon"), tag: 0)
             results.append(hotelsVC)

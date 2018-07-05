@@ -193,6 +193,10 @@ NSString *NSLSP(NSString *key, float pluralValue) {
 
 }
 
+BOOL isRTLDirectionByLocale(void) {
+    return [NSLocale characterDirectionForLanguage:[[NSLocale currentLocale] objectForKey:NSLocaleLanguageCode]] == NSLocaleLanguageDirectionRightToLeft;
+}
+
 //------------------------
 // DISPATCH
 //------------------------

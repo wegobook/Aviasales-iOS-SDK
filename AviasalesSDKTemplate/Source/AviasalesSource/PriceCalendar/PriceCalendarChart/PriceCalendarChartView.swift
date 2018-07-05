@@ -13,8 +13,8 @@ protocol PriceCalendarChartViewDelegate: NSObjectProtocol {
     func monthDidChangeInPriceCalendarChartView(_ chartView: PriceCalendarChartView)
 }
 
-private let barWidth: CGFloat = 55.0
-private let kBarSpacing: CGFloat = 5
+private let barWidth: CGFloat = 58
+private let kBarSpacing: CGFloat = 4
 private let kPriceCalendarChartBarCellId = "PriceCalendarChartBarCell"
 private let kInsetHeaderId = "insetHeader"
 private let kInsetFooterId = "insetFooter"
@@ -312,18 +312,19 @@ extension PriceCalendarChartView: UIScrollViewDelegate {
     }
 
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        let deceleratingCellCount = Int(ceil(velocity.x))*3
+        let velocityX = isRTL ? -velocity.x : velocity.x
+        let deceleratingCellCount = Int(ceil(velocityX))*3
         var targetX: CGFloat = 0
         var targetRow = 0
 
-        if velocity.x == 0 {
+        if velocityX == 0 {
             targetRow = currentCenterCellRow
-        } else if velocity.x > 0 {
+        } else if velocityX > 0 {
             targetRow = currentCenterCellRow + deceleratingCellCount + 1
             if targetRow >= collectionView.numberOfItems(inSection: 0) {
                 targetRow = collectionView.numberOfItems(inSection: 0) - 1
             }
-        } else if velocity.x < 0 {
+        } else if velocityX < 0 {
             targetRow = currentCenterCellRow + deceleratingCellCount - 1
             if targetRow < 0 {
                 targetRow = 0

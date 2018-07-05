@@ -1,5 +1,7 @@
 "LANGUAGE" = "ru";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@ч %@м";
 "LONG_TIME_FORMAT" = "%@ ч %@ мин";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Эконом";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Премиум эконом";
 "JR_SEARCHINFO_FIRST" = "Первый";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d пассажир";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d пассажира";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d пассажиров";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d пассажиров";
 "JR_SEARCH_FORM_PASSENGERS" = "Пассажиры";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Класс";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Город прибытия";

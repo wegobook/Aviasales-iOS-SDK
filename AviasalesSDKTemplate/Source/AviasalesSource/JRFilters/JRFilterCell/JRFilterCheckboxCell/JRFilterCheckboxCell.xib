@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JRFilterCheckboxCell" id="KGk-i7-Jjw" customClass="JRFilterCheckboxCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="749" text="1 пересадка 1 пересадка 1 пересадка 1 пересадка 1 пересадка" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Wl6-h5-8k0">
+                        <rect key="frame" x="44" y="13" width="211" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="50 000" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="OHV-jl-zXx">
+                        <rect key="frame" x="263" y="15" width="42" height="15"/>
+                        <accessibility key="accessibilityConfiguration">
+                            <bool key="isElement" value="NO"/>
+                        </accessibility>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.53333333329999999" green="0.83137254900000002" blue="0.90588235289999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iZ7-Gw-ZGO">
+                        <rect key="frame" x="12" y="12" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="0L4-6M-X9Z"/>
+                            <constraint firstAttribute="height" constant="20" id="o87-QI-GLA"/>
+                        </constraints>
+                        <state key="normal" image="checkbox_deselected"/>
+                        <state key="selected" image="checkbox_selected"/>
+                        <connections>
+                            <action selector="onSelectIndicator:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3I9-cI-DA0"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerY" secondItem="iZ7-Gw-ZGO" secondAttribute="centerY" constant="-0.5" id="Gql-V0-Odt"/>
+                    <constraint firstItem="iZ7-Gw-ZGO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="ILF-U7-xeY"/>
+                    <constraint firstAttribute="centerY" secondItem="Wl6-h5-8k0" secondAttribute="centerY" id="KlQ-9m-C4Y"/>
+                    <constraint firstItem="OHV-jl-zXx" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="Wl6-h5-8k0" secondAttribute="trailing" constant="8" id="ONO-r2-dnt"/>
+                    <constraint firstAttribute="trailing" secondItem="OHV-jl-zXx" secondAttribute="trailing" constant="15" id="bBg-dg-qBB"/>
+                    <constraint firstAttribute="centerY" secondItem="OHV-jl-zXx" secondAttribute="centerY" constant="-0.5" id="hUv-Qg-qz9"/>
+                    <constraint firstItem="Wl6-h5-8k0" firstAttribute="leading" secondItem="iZ7-Gw-ZGO" secondAttribute="trailing" constant="12" id="xUN-b8-J1I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="listItemDetailLabel" destination="OHV-jl-zXx" id="z5L-FO-nit"/>
+                <outlet property="listItemLabel" destination="Wl6-h5-8k0" id="ccX-Ow-XVd"/>
+                <outlet property="selectedIndicator" destination="iZ7-Gw-ZGO" id="Ob2-6P-eMv"/>
+            </connections>
+            <point key="canvasLocation" x="240" y="172"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="checkbox_deselected" width="30" height="30"/>
+        <image name="checkbox_selected" width="30" height="30"/>
+    </resources>
+</document>
