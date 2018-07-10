@@ -25,6 +25,8 @@ Framework supports iOS 9.0 and higher
 If you want to remove flights or hotels search tab, change values of ```flights_enabled``` and ```hotels_enabled``` to NO in Project settings. Settings tab can't be removed.
 ### 🇺🇸🇷🇺 Localization
 Text localizations can be added with NSLSKey in "Attributes Inspector" section of xib-files.
+### ✍🏻 RTL support
+Travel SDK template app supports RTL languages. Note, that _hotel_ section becomes unavailable when you select RTL language in settings.
 ### 🔧🌻 Color customization
 You can choose color scheme in ```ColorSchemeManager.swift``` file. Just add to ```current``` variable one of these values: BlackColorScheme() / BlueColorScheme() / PurpleColorScheme(). Or set CustomColorScheme() value and set up any color scheme you need in ```CustomColorScheme.swift``` file.
 You can also customize the appearance and colors of elements in xib files. Check the available for editing fields in the "Attributes Inspector" section. You can use any values from ```JRColorScheme.h``` as color keys.
