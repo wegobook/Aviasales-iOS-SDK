@@ -1,5 +1,7 @@
 "LANGUAGE" = "sv";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@h %@m";
 "LONG_TIME_FORMAT" = "%@ h %@ min";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Ekonomi";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
 "JR_SEARCHINFO_FIRST" = "Första Klass";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d passagerare";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d passagerare";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d passagerare";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d passagerare";
 "JR_SEARCH_FORM_PASSENGERS" = "Passagerare";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Klass";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Ankomststad";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Intressen";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Rutter efter intressen";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Tillbaka";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Tidigare sökningar:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Tidigare sökningar";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Inga resultat hittades";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Söker...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Söker efter närliggande flygplatser...";

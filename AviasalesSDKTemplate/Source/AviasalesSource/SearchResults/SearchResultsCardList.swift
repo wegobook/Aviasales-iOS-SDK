@@ -106,7 +106,7 @@ private extension SearchResultsCardList {
 
     func buildHotellookCardItem() -> SearchResultsCardItem? {
 
-        let allowToShowCard = InteractionManager.shared.isCityReadyForSearchHotels && ConfigManager.shared.hotelsEnabled && JRSDKModelUtils.isSimpleSearch(searchInfo)
+        let allowToShowCard = InteractionManager.shared.isCityReadyForSearchHotels && ConfigManager.shared.hotelsEnabled && JRSDKModelUtils.isSimpleSearch(searchInfo) && !isRTLDirectionByLocale()
 
         guard allowToShowCard, let hotelCardView = JRHotelCardView.loadFromNib() else {
             return nil

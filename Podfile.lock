@@ -88,10 +88,9 @@ PODS:
   - AviasalesSDK (3.1.2)
   - AXRatingView (1.0.6)
   - BZipCompression (1.0.2)
-  - Crashlytics (3.10.1):
-    - Fabric (~> 1.7.5)
-  - Fabric (1.7.6)
-  - GCXSteppedSlider (0.1.0)
+  - Crashlytics (3.10.3):
+    - Fabric (~> 1.7.8)
+  - Fabric (1.7.8)
   - HotellookSDK (1.0.5):
     - Alamofire (~> 4.4)
     - KeychainSwift (~> 8.0)
@@ -133,7 +132,7 @@ PODS:
   - libextobjc/RuntimeExtensions (0.4.1)
   - libextobjc/UmbrellaHeader (0.4.1)
   - NMRangeSlider (1.2.1)
-  - ObjectMapper (3.1.0)
+  - ObjectMapper (3.3.0)
   - PromiseKit (4.5.2):
     - PromiseKit/Foundation (= 4.5.2)
     - PromiseKit/QuartzCore (= 4.5.2)
@@ -150,7 +149,7 @@ PODS:
     - SDWebImage/Core (= 3.8.2)
   - SDWebImage/Core (3.8.2)
   - Smartling.i18n (1.0.14)
-  - SwiftLint (0.25.1)
+  - SwiftLint (0.26.0)
   - SwiftProtobuf (1.0.3)
 
 DEPENDENCIES:
@@ -158,10 +157,9 @@ DEPENDENCIES:
   - AutoCoding (~> 2.2)
   - AviasalesSDK (~> 3.1.2)
   - AXRatingView
-  - BZipCompression (~> 1.0)
+  - BZipCompression
   - Crashlytics
   - Fabric
-  - GCXSteppedSlider
   - HotellookSDK (~> 1.0.5)
   - libextobjc (~> 0.4)
   - NMRangeSlider
@@ -173,7 +171,7 @@ DEPENDENCIES:
   - SwiftLint
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  https://github.com/cocoapods/specs.git:
     - Alamofire
     - Appodeal
     - AutoCoding
@@ -182,7 +180,6 @@ SPEC REPOS:
     - BZipCompression
     - Crashlytics
     - Fabric
-    - GCXSteppedSlider
     - HotellookSDK
     - KeychainSwift
     - libextobjc
@@ -202,21 +199,20 @@ SPEC CHECKSUMS:
   AviasalesSDK: 25d1e3691e00c0682bbf3f8d30fec9c888dd3e08
   AXRatingView: b975cd1a11c6c2e76c8999c166e089ed26f54133
   BZipCompression: e0f96508e60eb93b5f5d4c7de1eb3dd0ac4f9ae9
-  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
-  Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
-  GCXSteppedSlider: c41ed88eb30e34963738a5ef77c2f8a855eb73c6
+  Crashlytics: 2aea305161a2122492698c75af27f2b98aa49a25
+  Fabric: fba4684a95df789565b0b27fc5b6e68f1755af32
   HotellookSDK: 35a415db90c4b6e2e266f7710740d58bd47b51c8
   KeychainSwift: be9554c0e5f4b1686c775930dc5c6bd9396992ed
   libextobjc: a650fc1bf489a3d3a9bc2e621efa3e1006fc5471
   NMRangeSlider: 317ded652431eb90501c8421d9cddc3930d891e6
-  ObjectMapper: 20505058f54e5c3ca69e1d6de9897d152a5369a6
+  ObjectMapper: b612bf8c8e99c4dc0bb6013a51f7c27966ed5da9
   PromiseKit: 743e497a5f505a470d3bbbf4ce0663c1268af0a4
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
   Smartling.i18n: 0d508b89a2a12f0e070e6369e4dcdcf46ae2d59f
-  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
+  SwiftLint: f6b83e8d95ee1e91e11932d843af4fdcbf3fc764
   SwiftProtobuf: 5ccc0e4054e37c75800e5744acb2aa80bb72b39c
 
-PODFILE CHECKSUM: d8e323752a85fc955e1ca2aaeebfeba7e3a4e76d
+PODFILE CHECKSUM: 3a33d3facdf556c5e56d3212f7c03b76260a9238
 
-COCOAPODS: 1.5.0
+COCOAPODS: 1.5.3

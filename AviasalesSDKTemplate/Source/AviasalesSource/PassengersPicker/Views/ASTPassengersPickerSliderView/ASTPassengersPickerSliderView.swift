@@ -6,7 +6,6 @@
 //
 
 import UIKit
-import GCXSteppedSlider
 
 class ASTPassengersPickerSliderView: UIView {
 
@@ -34,32 +33,30 @@ class ASTPassengersPickerSliderView: UIView {
 
     private func create(steps: [Int], step: Int) {
 
-        let slider = GCXSteppedSlider.init(frame: bounds, stepValues: steps, initialStep: step)
+        let slider = GCXSteppedSlider(frame: bounds, stepValues: steps, initialStep: step)
 
         slider.tintColor = JRColorScheme.mainColor()
         slider.signatureColor = JRColorScheme.sliderBackgroundColor()
         slider.delegate = self
-        slider.translatesAutoresizingMaskIntoConstraints = false
-        sliderView .addSubview(slider)
 
-        let views = ["slider" : slider]
-        sliderView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "V:|-[slider]-|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
-        let horizontalMetrics = ["left" : 15, "right" : 15]
-        sliderView.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-(left)-[slider]-(right)-|", options: NSLayoutFormatOptions(), metrics: horizontalMetrics, views: views))
+        sliderView.addSubview(slider)
+
+        slider.translatesAutoresizingMaskIntoConstraints = false
+
+        slider.leadingAnchor.constraint(equalTo: sliderView.leadingAnchor, constant: 15).isActive = true
+        slider.topAnchor.constraint(equalTo: sliderView.topAnchor, constant: 0).isActive = true
+        slider.trailingAnchor.constraint(equalTo: sliderView.trailingAnchor, constant: -15).isActive = true
+        slider.bottomAnchor.constraint(equalTo: sliderView.bottomAnchor, constant: 0).isActive = true
     }
 }
 
 extension ASTPassengersPickerSliderView: GCXSteppedSliderDelegate {
 
     func steppedSlider(_ slider: GCXSteppedSlider, valueChanged selectedValue: Any?) {
-
-        guard let selectedValue = selectedValue else {
+        guard let intValue = selectedValue as? Int else {
             return
         }
-
-        if let intValue = selectedValue as? Int {
-            valueChanged?(intValue)
-        }
+        valueChanged?(intValue)
     }
 
     func steppedSlider(_ slider: GCXSteppedSlider, stepImageForValue stepValue: Any?) -> UIImage? {

@@ -1,0 +1,272 @@
+"LANGUAGE" = "ar";
+
+"COMMA_AND_WHITESPACE" = "، ";
+
+"SHORT_TIME_FORMAT" = "%@س %@د";
+"LONG_TIME_FORMAT" = "%@ س %@ د";
+
+"JR_ERROR_TITLE" = "خطأ";
+
+"JR_BACK_TITLE" = "العودة";
+
+"JR_TRY_AGAIN_TITLE" = "اعد المحاولة";
+
+"JR_CANCEL_TITLE" = "إلغاء";
+
+"CURRENCY" = "العملة";
+
+"JR_ANY_AIRPORT" = "أي مطار";
+
+"JR_OK_BUTTON" = "حسناً";
+
+"JR_DONE_BUTTON" = "تم";
+
+"JR_NEW_SEARCH_TITLE" = "بحث جديد";
+
+"JR_DATE_PICKER_DEPARTURE_DATE_TITLE" = "تاريخ المغادرة";
+"JR_DATE_PICKER_RETURN_DATE_TITLE" = "تاريخ العودة";
+"JR_DATE_PICKER_TRAVEL_DATES_TITLE" = "تواريخ الرحلة";
+"JR_DATE_PICKER_TODAY_DATE_TITLE" = "اليوم";
+"JR_DATE_PICKER_SEARCH_TICKETS_BUTTON" = "العثور على تذاكر";
+"JR_SEARCHINFO_BUSINESS" = "رجال الأعمال";
+"JR_SEARCHINFO_ECONOMY" = "الدرجة الاقتصادية";
+"JR_SEARCHINFO_PREMIUM_ECONOMY" = "الدرجة السياحية الممتازة";
+"JR_SEARCHINFO_FIRST" = "درجة أولى";
+"JR_SEARCH_FORM_PASSENGERS" = "مسافرين";
+"JR_SEARCH_FORM_TRAVEL_CLASS" = "الدرجة";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "مدينة الوصول";
+"JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_ORIGIN" = "مدينة المغادرة";
+"JR_SEARCH_FORM_COMPLEX_DATE" = "التاريخ";
+"JR_SEARCH_FORM_COMPLEX_DESTINATION" = "إلى";
+"JR_SEARCH_FORM_COMPLEX_ORIGIN" = "من";
+"JR_SEARCH_FORM_COMPLEX_SEARCH_SEGMENT_TITLE" = "مدن متعددة";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_DIRECT" = "المغادرة";
+"JR_SEARCH_FORM_DATE_CELL_EMPTY_RETURN" = "العودة";
+"JR_SEARCH_FORM_DATE_CELL_RETURN_BUTTON_TITLE" = "العودة";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_SEGMENT_TITLE" = "أساسي";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_DEPARTURE_DATE" = "المغادرة";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_RETURN_DATE" = "العودة";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ONE_WAY_SEGMENT_TITLE" = "ذهاب فقط";
+"JR_SEARCH_FORM_SIMPLE_SEARCH_ROUND_TRIP_SEGMENT_TITLE" = "ذهاب وعودة";
+"JR_SEARCH_FORM_TITLE" = "رحلات";
+"JR_SEARCH_FORM_SEARCH_BUTTON" = "البحث عن تذاكر";
+"JR_SEARCH_FORM_EXCEEDED_THE_ALLOWABLE_NUMBER_OF_INFANTS" = "عدد الرضع المسافرين بدون مقعد لا يمكن أن يتجاوز عدد البالغين المرافقين.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_ORIGIN_ERROR" = "يرجى إدخال مطار المغادرة";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DESTINATION_ERROR" = "يرجى إدخال مطار الوصول";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_SAME_CITY_ERROR" = "لا يمكن أن تكون مطارات الذهاب والعودة هي نفسها.";
+"JR_SEARCH_FORM_AIRPORT_EMPTY_DEPARTURE_DATE" = "يرجى إدخال تاريخ المغادرة";
+"JR_SEARCH_FORM_COMPLEX_PLACEHOLDER_AIRPORT_CELL_ACC" = "اختر";
+
+"JR_SEARCH_FORM_ADD_TRAVEL_SEGMENT" = "إضافة";
+"JR_SEARCH_FORM_DELETE_TRAVEL_SEGMENT" = "حذف";
+"JR_PASSENGERS_PICKER_PASSENGERS_TRAVEL_CLASS" = "المسافرين والدرجة";
+"JR_PASSENGERS_PICKER_ADULTS_TITLE" = "بالغين";
+"JR_PASSENGERS_PICKER_ADULTS_DESCRIPTION" = "أكثر من 16 عامًا";
+"JR_PASSENGERS_PICKER_CHILDREN_TITLE" = "أطفال";
+"JR_PASSENGERS_PICKER_CHILDREN_DESCRIPTION" = "بين 2-15 عام";
+"JR_PASSENGERS_PICKER_INFANTS_TITLE" = "رضع";
+"JR_PASSENGERS_PICKER_INFANTS_DESCRIPTION" = "من عمر سنتين وأقل";
+
+
+"JR_SEARCH_FORM_PASSENGERS_DECREASE_BTN_TITLE_ACC" = "تقليل عدد المسافرين %@";
+"JR_SEARCH_FORM_PASSENGERS_INCREASE_BTN_TITLE_ACC" = "زيادة عدد المسافرين %@";
+"JR_SEARCH_FORM_PASSENGERS_COUNT_ACC" = "%@ مسافرين %@";
+"JR_SEARCH_FORM_PASSENGERS_OLDER_THEN_12" = "12+";
+"JR_SEARCH_FORM_PASSENGERS_FROM_2_TO_12_YEARS" = "أقل من 12";
+"JR_SEARCH_FORM_PASSENGERS_UP_TO_2_YEARS" = "أقل من 2";
+
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{zero}" = "بالغان";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{one}" = "بالغ";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{two}" = "بالغان";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{few}" = "بالغان";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{many}" = "بالغان";
+"JR_SEARCH_FORM_PASSENGERS_ADULTS##{other}" = "بالغان";
+
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{zero}" = "طفلان";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{one}" = "طفل";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{two}" = "طفلان";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{few}" = "طفلان";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{many}" = "طفلان";
+"JR_SEARCH_FORM_PASSENGERS_CHILDREN##{other}" = "طفلان";
+
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{zero}" = "رضيعان";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{one}" = "رضيع";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{two}" = "رضيعان";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{few}" = "رضيعان";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{other}" = "رضيعان";
+"JR_SEARCH_FORM_PASSENGERS_INFANTS##{many}" = "رضيعان";
+
+"JR_AIRPORT_PICKER_DESTINATION_MODE_TITLE" = "الوجهة";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS" = "أقرب المطارات";
+"JR_AIRPORT_PICKER_NEAREST_AIRPORTS_READING_ERROR" = "خدمة تحديد الموقع الجغرافي غير متاحة مؤقتاً";
+
+"JR_AIRPORT_PICKER_ORIGIN_MODE_TITLE" = "الإنطلاق من";
+"JR_AIRPORT_PICKER_NO_NEAREST_AIRPORTS" = "لا يوجد مطارات بالقرب منك";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT" = "أدخل المدينة أو المطار";
+"JR_AIRPORT_PICKER_PLACEHOLDER_TEXT_SHORT" = "البحث";
+"JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "الإهتمامات";
+"JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "المسارات حسب إهتماماتك";
+"JR_AIRPORT_PICKER_BACK_BUTTON" = "العودة";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "عمليات البحث السابقة";
+"JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "لا توجد نتائج";
+"JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "جاري البحث...";
+"JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "جاري البحث عن أقرب المطارات...";
+"JR_AIRPORT_PICKER_NOT_FOUND" = "لا توجد نتائج";
+
+"JR_FILTER_BUTTON" = "فلاتر";
+
+"JR_FILTER_RESET_ALL" = "إعادة تعيين";
+"JR_FILTER_RESET" = "إعادة تعيين";
+"JR_FILTER_TICKETS_NOT_FOUND" = "لا توجد نتائج";
+
+"JR_FILTER_EMPTY_ALERT_TITLE" = "لم يُعثر على تذاكر";
+"JR_FILTER_EMPTY_ALERT_DESCRIPTION" = "يُرجى تغيير إعدادات التصفية.";
+
+"JR_FILTER_STOPOVER_OVERNIGHT" = "توقف أثناء الليل";
+"JR_FILTER_PRICE_FILTER" = "السعر";
+"JR_FILTER_TOTAL_DURATION" = "وقت الرحلة";
+"JR_FILTER_DELAY_DURATION" = "مدة التوقف";
+"JR_FILTER_TOTAL_TIME_FROM" = "من";
+"JR_FILTER_TOTAL_DURATION_FROM" = "من";
+"JR_FILTER_TOTAL_DURATION_PRIOR_TO" = "إلى";
+"JR_FILTER_TOTAL_DURATION_PRIOR_UP_TO" = "حتى";
+
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{zero}" = "%d رحلة يبدأ سعرها من %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{one}" = "%d رحلة يبدأ سعرها من %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{two}" = "%d رحلة يبدأ سعرها من %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{few}" = "%d رحلة يبدأ سعرها من %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{many}" = "%d رحلة يبدأ سعرها من %@";
+"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE##{other}" = "%d رحلة يبدأ سعرها من %@";
+
+"JR_FILTER_RETURN_DEPARTURE_TIME" = "وقت المغادرة للعودة";
+"JR_FILTER_DEPARTURE_TIME" = "موعد إنطلاق رحلة الذهاب";
+"JR_FILTER_ARRIVAL_TIME" = "موعد وصول رحلة الذهاب";
+"JR_FILTER_RETURN_ARRIVAL_TIME" = "وقت الوصول للعودة";
+
+"JR_FILTER_AIRPORTS_ORIGIN" = "من";
+"JR_FILTER_AIRPORTS_STOPOVER" = "التوقفات";
+"JR_FILTER_AIRPORTS_DESTINATION" = "إلى";
+
+"JR_FILTER_DAY_TIME_MORNING" = "صباحاً";
+"JR_FILTER_DAY_TIME_DAY" = "بعد الظهر";
+"JR_FILTER_DAY_TIME_EVENING" = "مساءً";
+
+"JR_FILTER_GATES" = "وكالات";
+"JR_FILTER_GATES_ALL" = "جميع الوكالات";
+
+"JR_FILTER_PAYMENT_METHODS" = "طرق الدفع";
+"JR_FILTER_PAYMENT_METHODS_ALL" = "جميع طرق الدفع";
+
+"JR_FILTER_PAYMENT_METHOD_EXP" = "خدمة البريد السريع";
+"JR_FILTER_PAYMENT_METHOD_EUROSET" = "Euroset";
+"JR_FILTER_PAYMENT_METHOD_CASH" = "نقداً";
+"JR_FILTER_PAYMENT_METHOD_CARD" = "بطاقة إئتمان";
+"JR_FILTER_PAYMENT_METHOD_YANDEX_MONEY" = "Yandex.Money";
+"JR_FILTER_PAYMENT_METHOD_WEBMONEY" = "WebMoney ";
+"JR_FILTER_PAYMENT_METHOD_TERMINAL" = "وحدة الدفع";
+"JR_FILTER_PAYMENT_METHOD_SVYAZNOY" = "Svyaznoy";
+"JR_FILTER_PAYMENT_METHOD_ELEXNET" = "Elexnet";
+"JR_FILTER_PAYMENT_METHOD_BANK" = "تحويل بنكي";
+"JR_FILTER_PAYMENT_METHOD_CONTACT" = "إتصال ";
+"JR_FILTER_PAYMENT_METHOD_CREDIT" = "الحصول على قرض";
+
+"JR_FILTER_AIRLINES" = "الخطوط الجوية";
+"JR_FILTER_AIRLINES_ALL" = "جميع الخطوط الجوية";
+
+"JR_FILTER_ALLIANCES" = "التحالفات";
+"JR_FILTER_OTHER_ALLIANCES" = "خطوط جوية بدون أي تحالفات";
+"JR_FILTER_ALLIANCES_ALL" = "جميع التحالفات";
+
+"JR_FILTER_AIRPORTS" = "مطارات";
+"JR_FILTER_AIRPORTS_ALL" = "جميع المطارات";
+
+"JR_SEARCH_RESULTS_TRANSFERS##{zero}" = "مباشر";
+"JR_SEARCH_RESULTS_TRANSFERS##{one}" = "%d توقف";
+"JR_SEARCH_RESULTS_TRANSFERS##{two}" = "%d توقفان";
+"JR_SEARCH_RESULTS_TRANSFERS##{few}" = "%d توقفان";
+"JR_SEARCH_RESULTS_TRANSFERS##{many}" = "%d توقفان";
+"JR_SEARCH_RESULTS_TRANSFERS##{other}" = "%d توقفان";
+
+"SEARCH_RESULTS_PRICE_CALENDAR_VIEW_TITLE" = "تقويم الأسعار";
+
+"PRICE_CALENDAR_TITLE_FORMAT" = "تقويم الأسعار %@ – %@";
+"PRICE_CALENDAR_PRICE_VIEW_TEXT" = "من %@";
+"PRICE_CALENDAR_AVERAGE_CELL_TEXT" = "معدل السعر";
+"PRICE_CALENDAR_AVERAGE_CELL_DIRECT_TEXT" = "مباشرة";
+"PRICE_CALENDAR_AVERAGE_CELL_NOT_DIRECT_TEXT" = "مع توقفات";
+"PRICE_CALENDAR_RESULT_CELL_CHEAPEST" = "الأرخص";
+"PRICE_CALENDAR_DIRECT_CELL_TEXT" = "رحلات مباشرة فقط";
+"PRICE_CALENDAR_ACTION_CARD_TITLE" = "لم تجد تذكرتك؟";
+"PRICE_CALENDAR_ACTION_CARD_TEXT" = "يمكنك تعديل تاريخ العودة.";
+"PRICE_CALENDAR_ACTION_CARD_BUTTON" = "اختر تاريخ العودة";
+
+"JR_BROWSER_BACK_BTN_TITLE" = "العودة";
+"JR_BROWSER_FORWARD_BTN_TITLE" = "تقدم";
+"JR_BROWSER_ERROR_ALERT_TITLE" = "خطأ";
+
+"BROWSER_LOAD_ERROR" = "حصل خطأ ما. يرجى المحاولة مرة آخرى.";
+"BROWSER_CHECK_CONNECTION" = "يرجى التحقق من الإتصال بالإنترنت.";
+"COMMON_LOADING_VIEW_DEFAULT_TEXT" = "جاري التحميل...";
+"JR_CLOSE_BUTTON_TITLE" = "غلق";
+
+"JR_SEARCH_RESULTS_NON_STRICT_MATCHED_ALERT_MESSAGE" = "عذراً، لم نتمكن من العثور على رحلات بين المطارات المحددة للمسار %@. مع ذلك، فيمكننا عرض رحلات أخرى بين هذه المدن.";
+
+"JR_SEARCH_RESULTS_TICKET_IN_THE" = "على";
+
+"JR_SEARCH_RESULTS_HOTEL_CARD_TITLE" = "هل أنت بحاجة إلى فندم؟";
+"JR_SEARCH_RESULTS_HOTEL_CARD_SUBTITLE" = "بينما أنت تبحث عن تذاكر طيران، فإننا سنقوم بمساعدتك في اختيار الفندق المناسب لك.";
+"JR_SEARCH_RESULTS_HOTEL_CARD_BUTTON_TITLE" = "قم بإيجاد فنادق";
+
+"JR_TICKET_CREDIT_ALERT_BUY_BUTTON" = "شراء";
+"JR_TICKET_CREDIT_ALERT_CONDITIONS" = "الشروط والأحكام";
+
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{few}" = "دفعتان";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{one}" = "دفع";
+
+"JR_TICKET_CREDIT_ALERT_CANCEL_BUTTON" = "إلغاء";
+
+"JR_TICKET_CREDIT_ALERT_DAYS##{zero}" = "يومان";
+"JR_TICKET_CREDIT_ALERT_DAYS##{one}" = "يوم";
+"JR_TICKET_CREDIT_ALERT_DAYS##{two}" = "يومان";
+"JR_TICKET_CREDIT_ALERT_DAYS##{few}" = "يومان";
+"JR_TICKET_CREDIT_ALERT_DAYS##{many}" = "يومان";
+"JR_TICKET_CREDIT_ALERT_DAYS##{other}" = "يومان";
+
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{other}" = "دفعتان";
+"JR_TICKET_CREDIT_ALERT_PAYMENTS##{many}" = "دفعتان";
+
+"JR_TICKET_CREDIT_ALERT_MONTH" = "شهر";
+
+"JR_TICKET_CREDIT_ALERT_TILL" = "حتى";
+
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT" = "دفعة زائدة";
+"JR_TICKET_CREDIT_ALERT_DURATION" = "مدة القرض";
+"JR_TICKET_CREDIT_ALERT_OVERPAYMENT_SUFFIX" = "من السعر";
+"JR_TICKET_CREDIT_ALERT_GRACE_PERIOD" = "فترة السماح";
+"JR_TICKET_CREDIT_MONTH_2" = "فبراير";
+"JR_TICKET_CREDIT_MONTH_1" = "يناير";
+"JR_TICKET_CREDIT_MONTH_3" = "مارس";
+"JR_TICKET_CREDIT_MONTH_6" = "يونيو";
+"JR_TICKET_CREDIT_MONTH_4" = "أبريل";
+"JR_TICKET_CREDIT_MONTH_7" = "يوليو";
+"JR_TICKET_CREDIT_MONTH_5" = "مايو";
+"JR_TICKET_CREDIT_MONTH_8" = "أغسطس";
+"JR_TICKET_CREDIT_MONTH_9" = "سبتمبر";
+"JR_TICKET_CREDIT_MONTH_10" = "أكتوبر";
+"JR_TICKET_CREDIT_MONTH_11" = "نوفمبر";
+"JR_TICKET_CREDIT_MONTH_12" = "ديسمبر";
+
+"JR_TICKET_BUY_IN_THE_AGENCY_BUTTON" = "شراء من";
+"JR_TICKET_BUY_BUTTON" = "شراء";
+"JR_TICKET_BUY_IN_CREDIT_BUTTON" = "الحصول على قرض";
+"JR_TICKET_FLIGHT" = "رحلة";
+"JR_TICKET_TRANSFER" = "توقف";
+"JR_TICKET_OTHER_BUTTON" = "صفقات أكثر";
+"JR_TICKET_DURATION" = "مدة الرحلة";
+
+"JR_TICKET_EXPIRED" = "نتائج البحث قديمة";
+
+"JR_WAITING_TITLE" = "جاري البحث";
+"JR_WAITING_ERROR_NOT_FOUND_MESSAGE" = "لا توجد نتائج. حاول تعديل معايير البحث.";
+"JR_WAITING_ERROR_CONNECTION_ERROR" = "خطأ في الإتصال";
+"JR_WAITING_ERROR_NOT_AVALIBLE_MESSAGE" = "عفواً، الخدمة غير متوفرة حالياً";

@@ -53,6 +53,9 @@
 #import "HLIphoneMapVC.h"
 #import "HLCommonVC.h"
 #import "HLAutolayoutCell.h"
+#import "NSString+Direction.h"
+#import "GCXSteppedSlider.h"
+#import "NSLocale+UILocale.h"
 
 #import "ASTContainerSearchFormViewController.h"
 #import "ASTSearchFormSceneViewController.h"
@@ -70,7 +73,6 @@
 #import "JRTableManager.h"
 #import "JRHotelCardView.h"
 
-#import "JRPriceUtils.h"
 #import "JRSearchInfoUtils.h"
 
 #import "JRSearchedAirportsManager.h"

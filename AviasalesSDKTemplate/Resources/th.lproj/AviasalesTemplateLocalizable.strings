@@ -1,5 +1,7 @@
 "LANGUAGE" = "th";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@ชม. %@น.";
 "LONG_TIME_FORMAT" = "%@ ชม. %@ นาที";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "ประหยัด";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "ชั้นประหยัดพรีเมี่ยม";
 "JR_SEARCHINFO_FIRST" = "ชั้นหนึ่ง";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "ผู้โดยสาร %d คน";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "ผู้โดยสาร %d คน";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "ผู้โดยสาร %d คน";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "ผู้โดยสาร %d คน";
 "JR_SEARCH_FORM_PASSENGERS" = "ผู้โดยสาร";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "ระดับ";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "เมืองปลายทาง";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "ความสนใจ";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "เส้นทางตามความสนใจ";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "ย้อนกลับ";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "การค้นหาก่อนหน้า";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Previous searches";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "ไม่พบผลลัพธ์";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "กำลังค้นหา...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "กำลังค้นหาสนามบินที่ใกล้ที่สุด...";

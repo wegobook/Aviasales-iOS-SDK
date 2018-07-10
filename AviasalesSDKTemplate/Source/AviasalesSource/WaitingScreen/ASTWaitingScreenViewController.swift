@@ -53,6 +53,7 @@ class ASTWaitingScreenViewController: UIViewController {
         view.backgroundColor = JRColorScheme.mainBackgroundColor()
         progressView.backgroundColor = JRColorScheme.mainBackgroundColor()
         progressView.progressColor = JRColorScheme.actionColor()
+        progressView.transformRTL()
     }
 
     // MARK: - Update

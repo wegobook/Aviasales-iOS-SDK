@@ -1,5 +1,7 @@
 "LANGUAGE" = "vi";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@giờ %@phút";
 "LONG_TIME_FORMAT" = "%@giờ %@ phút";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Phổ\nthông";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Hạng phổ thông đặc biệt";
 "JR_SEARCHINFO_FIRST" = "Hạng Nhất";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d hành khách";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d hành khách";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d hành khách";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d hành khách";
 "JR_SEARCH_FORM_PASSENGERS" = "Hành khách";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Hạng";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Thành phố đến";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Sở thích";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Đường bay ưa thích";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Quay lại";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Các tra cứu trước:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Các tra cứu trước";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Không tìm thấy kết quả";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Đang tìm...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Đang tìm kiếm sân bay gần nhất...";

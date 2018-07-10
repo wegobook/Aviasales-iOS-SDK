@@ -78,8 +78,8 @@ private extension ASTWaitingScreenPresenter {
 
         let count = searchResult.tickets.count
         let format = NSLSP("JR_FILTER_FLIGHTS_FOUND_MIN_PRICE", Float(count))
-        let price = JRPriceUtils.formattedPrice(inUserCurrency: bestPrice).trimmingCharacters(in: .whitespaces)
-        let string = String(format: format, count, price).trimmingCharacters(in: .whitespaces)
+        let price = bestPrice.formattedPriceinUserCurrency()
+        let string = String(format: format, count, price)
         let range = (string as NSString).localizedStandardRange(of: price)
 
         view?.updateInfo(text: string, range: range)

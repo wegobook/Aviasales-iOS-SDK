@@ -22,7 +22,6 @@
 
 #import "JRColorScheme.h"
 #import "JRSearchInfoUtils.h"
-#import "JRPriceUtils.h"
 
 #import "NSLayoutConstraint+JRConstraintMake.h"
 
@@ -138,7 +137,7 @@
     } else {
         NSInteger ticketsCount =  self.filter.filteredTickets.count;
         UIFont *numbersFont = [UIFont systemFontOfSize:18.0 weight: UIFontWeightSemibold];
-        NSString *minPriceString = [JRPriceUtils formattedPriceInUserCurrency:self.filter.minFilteredPrice];
+        NSString *minPriceString = [self.filter.minFilteredPrice formattedPriceinUserCurrency];
         NSString *foundTicketsCountString = @(self.filter.filteredTickets.count).stringValue;
         NSString *format = NSLSP(@"JR_FILTER_FLIGHTS_FOUND_MIN_PRICE", ticketsCount);
         NSString *text = [NSString stringWithFormat:format, ticketsCount, minPriceString];
@@ -157,9 +156,9 @@
     if (self.filterMode == JRFilterTravelSegmentMode) {
         self.title = [NSString stringWithFormat:@"%@ – %@", self.selectedTravelSegment.originAirport.iata, self.selectedTravelSegment.destinationAirport.iata];
     } else {
-        SEL closeSelector = @selector(closeButtonAction:);
-        UIBarButtonItem *closeItem = iPad() ? [[UIBarButtonItem alloc] initWithTitle:NSLS(@"JR_CLOSE_BUTTON_TITLE") style:UIBarButtonItemStylePlain target:self action:closeSelector] : [UINavigationItem barItemWithImageName:@"filtersCrossButton" target:self action:closeSelector];
-        self.navigationItem.leftBarButtonItem = closeItem;
+        self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone
+                                                                                              target:self
+                                                                                              action:@selector(doneButtonAction:)];
         self.title = NSLS(@"JR_FILTER_BUTTON");
     }
     self.navigationItem.backBarButtonItem = [UIBarButtonItem backBarButtonItem];
@@ -245,7 +244,7 @@
 
 #pragma mark - Actions
 
-- (void)closeButtonAction:(id)sender {
+- (void)doneButtonAction:(id)sender {
     if (self.filter.filteredTickets.count == 0) {
         [self showAlertWithTitle:NSLS(@"JR_FILTER_EMPTY_ALERT_TITLE") message:NSLS(@"JR_FILTER_EMPTY_ALERT_DESCRIPTION") cancelButtonTitle:NSLS(@"JR_OK_BUTTON")];
     } else  {

@@ -148,11 +148,9 @@ static NSString * const kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonth
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
-	JRDatePickerMonthHeaderReusableView *sectionHeaderView = [tableView
-	                                                          dequeueReusableHeaderFooterViewWithIdentifier:kMonthReusableHeaderViewIdentifier];
+	JRDatePickerMonthHeaderReusableView *sectionHeaderView = [tableView dequeueReusableHeaderFooterViewWithIdentifier:kMonthReusableHeaderViewIdentifier];
 	[sectionHeaderView setMonthItem:(_stateObject.monthItems)[section]];
 	return sectionHeaderView;
-    
 }
 
 - (CGFloat) tableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section
@@ -162,7 +160,7 @@ static NSString * const kMonthReusableHeaderViewIdentifier = @"JRDatePickerMonth
 
 - (UIView *) tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
-    return [UIView new];
+    return [[UIView alloc] initWithFrame:CGRectZero];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath

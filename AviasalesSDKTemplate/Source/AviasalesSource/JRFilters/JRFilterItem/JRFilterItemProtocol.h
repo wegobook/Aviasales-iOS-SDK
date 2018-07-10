@@ -11,7 +11,7 @@
 
 @protocol JRFilterItemProtocol <NSObject>
 
-- (NSString *)tilte;
+- (NSString *)title;
 
 @optional
 

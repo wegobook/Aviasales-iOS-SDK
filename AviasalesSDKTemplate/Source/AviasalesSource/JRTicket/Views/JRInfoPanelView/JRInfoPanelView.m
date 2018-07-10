@@ -6,7 +6,6 @@
 //
 
 #import "JRInfoPanelView.h"
-#import "JRTicketUtils.h"
 
 static const CGFloat kBuyButtonMaxTopConstraint = 75.0;
 static const CGFloat kBuyButtonMinTopConstraint = 25.0;
@@ -108,7 +107,9 @@ static const CGFloat kBuyButtonMinHeightConstraint = 35.0;
         self.agencyInfoLabel.text = @"";
     }
 
-    self.priceLabel.text = [JRTicketUtils formattedTicketMinPriceInUserCurrency:self.ticket];
+    JRSDKProposal *proposal = [JRSDKModelUtils ticketMinimalPriceProposal:self.ticket];
+
+    self.priceLabel.text = [proposal.price formattedPriceinUserCurrency];
     
     NSUInteger proposalsCount = self.ticket.proposals.count;
     BOOL showOtherButton =  proposalsCount > 1;

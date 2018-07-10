@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,7 +19,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Origin - departure" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdL-Sx-DWu">
-                            <rect key="frame" x="20" y="28" width="285" height="18"/>
+                            <rect key="frame" x="20" y="28" width="132.5" height="18"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
@@ -28,7 +28,7 @@
                             </userDefinedRuntimeAttributes>
                         </label>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="750" verticalHuggingPriority="251" text="Duration" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ps-Cm-BFG">
-                            <rect key="frame" x="20" y="46" width="285" height="18"/>
+                            <rect key="frame" x="20" y="46" width="60.5" height="18"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
                             <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <nil key="highlightedColor"/>
@@ -43,8 +43,6 @@
                         <constraint firstAttribute="bottom" secondItem="4Ps-Cm-BFG" secondAttribute="bottom" constant="8" id="asW-uM-USY"/>
                         <constraint firstItem="4Ps-Cm-BFG" firstAttribute="top" secondItem="gdL-Sx-DWu" secondAttribute="bottom" id="kF4-7e-xzK"/>
                         <constraint firstItem="gdL-Sx-DWu" firstAttribute="leading" secondItem="iHF-7o-ILw" secondAttribute="leading" constant="20" id="o0T-Ia-E8j"/>
-                        <constraint firstAttribute="trailing" secondItem="gdL-Sx-DWu" secondAttribute="trailing" constant="15" id="oPN-vz-jXH"/>
-                        <constraint firstAttribute="trailing" secondItem="4Ps-Cm-BFG" secondAttribute="trailing" constant="15" id="qUe-O4-dqN"/>
                     </constraints>
                 </view>
             </subviews>

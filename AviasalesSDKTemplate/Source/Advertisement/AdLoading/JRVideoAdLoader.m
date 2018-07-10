@@ -48,7 +48,6 @@
 
         if (sSelf.rootViewController != nil) {
             result = [[APDMediaView alloc] initWithFrame:CGRectZero];
-            result.type = APDMediaViewTypeMainImage;
             [result setNativeAd:ad rootViewController:sSelf.rootViewController];
         }
 

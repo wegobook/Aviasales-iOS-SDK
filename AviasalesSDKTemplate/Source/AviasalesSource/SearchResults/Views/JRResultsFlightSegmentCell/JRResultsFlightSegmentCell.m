@@ -79,9 +79,9 @@ static const CGFloat kFlightDurationTrailing = 19;
     JRSDKFlight *const firstFlight = flightSegment.flights.firstObject;
     JRSDKFlight *const lastFlight = flightSegment.flights.lastObject;
 
-    self.departureDateLabel.text = [DateUtil dateToDateString:firstFlight.departureDate];
-    NSString *const departureTime = [DateUtil dateToTimeString:firstFlight.departureDate];
-    NSString *const arrivalTime = [DateUtil dateToTimeString:lastFlight.arrivalDate];
+    self.departureDateLabel.text = [[DateUtil dateToDateString:firstFlight.departureDate] arabicDigits];
+    NSString *const departureTime = [[DateUtil dateToTimeString:firstFlight.departureDate] arabicDigits];
+    NSString *const arrivalTime = [[DateUtil dateToTimeString:lastFlight.arrivalDate] arabicDigits];
     JRSDKIATA const departureIATA = firstFlight.originAirport.iata;
     JRSDKIATA const arrivalIATA = lastFlight.destinationAirport.iata;
 

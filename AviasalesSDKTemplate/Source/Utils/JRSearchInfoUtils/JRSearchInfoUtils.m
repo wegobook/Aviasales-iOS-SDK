@@ -106,11 +106,6 @@ static NSString *formattedDate(NSDate *date, BOOL includeMonth, BOOL includeYear
 	return datesString;
 }
 
-+ (NSString *)passengersCountAndTravelClassStringWithSearchInfo:(JRSDKSearchInfo *)searchInfo {
-    NSString *passengersCountStringWithSearchInfo = [JRSearchInfoUtils passengersCountStringWithSearchInfo:searchInfo];
-    return [NSString stringWithFormat:@"%@, %@", passengersCountStringWithSearchInfo, [JRSearchInfoUtils travelClassStringWithSearchInfo:searchInfo].lowercaseString];
-}
-
 + (NSString *)passengersCountStringWithSearchInfo:(JRSDKSearchInfo *)searchInfo {
 	NSInteger passengers = searchInfo.adults + searchInfo.children  + searchInfo.infants;
     NSString *format = NSLSP(@"JR_SEARCHINFO_PASSENGERS", passengers);
@@ -147,13 +142,8 @@ static NSString *formattedDate(NSDate *date, BOOL includeMonth, BOOL includeYear
     if (![iatas[0] isEqualToString:lastIata]) {
         [iatas addObject:lastIata];
     }
-    NSString *result;
-    if (iatas.count > 2) {
-        result = [NSString stringWithFormat:@"%@ – … –  %@", iatas[0], iatas[iatas.count - 1]];
-    } else {
-        result = [NSString stringWithFormat:@"%@ — %@", iatas[0], iatas[iatas.count - 1]];
-    }
-    return result;
+    NSString *format = iatas.count > 2 ? @"%@ – … –  %@" : @"%@ — %@";
+    return [[NSString stringWithFormat:[format formatAccordingToTextDirection], iatas.firstObject, iatas.lastObject] rtlStringIfNeeded];
 }
 
 + (NSString *)formattedDatesForSearchInfo:(JRSDKSearchInfo *)searchInfo {
@@ -211,13 +201,13 @@ static NSString *formattedDate(NSDate *date, BOOL includeMonth, BOOL includeYear
 + (NSString *)formattedIatasAndDatesForSearchInfo:(JRSDKSearchInfo *)searchInfo {
     NSString *formattedIatas = [self formattedIatasForSearchInfo:searchInfo];
     NSString *formattedDates = [self formattedDatesForSearchInfo:searchInfo];
-    return [NSString stringWithFormat:@"%@, %@", formattedIatas, formattedDates];
+    return [NSString stringWithFormat:@"%@%@%@", formattedIatas, NSLS(@"COMMA_AND_WHITESPACE"), formattedDates];
 }
 
 + (NSString *)formattedIatasAndDatesExcludeYearComponentForSearchInfo:(JRSDKSearchInfo *)searchInfo {
     NSString *formattedIatas = [self formattedIatasForSearchInfo:searchInfo];
     NSString *formattedDates = [self formattedDatesExcludeYearComponentForSearchInfo:searchInfo];
-    return [NSString stringWithFormat:@"%@, %@", formattedIatas, formattedDates];
+    return [NSString stringWithFormat:@"%@%@%@", formattedIatas, NSLS(@"COMMA_AND_WHITESPACE"), formattedDates];
 }
 
 @end
@@ -238,5 +228,5 @@ static NSString *formattedDate(NSDate *date, BOOL includeMonth, BOOL includeYear
 
     NSDateFormatter *const formatter = [NSDateFormatter applicationUIDateFormatter];
     formatter.dateFormat = [NSDateFormatter dateFormatFromTemplate:format options:kNilOptions locale:formatter.locale];
-    return [formatter stringFromDate:date];
+    return [[[formatter stringFromDate:date] arabicDigits] rtlStringIfNeeded];
 }

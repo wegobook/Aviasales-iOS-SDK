@@ -72,6 +72,7 @@ typedef NS_ENUM (NSInteger, JRDateUtilDurationStyle) {
 + (NSString *)dateToYearString:(NSDate *)date;
 + (NSString *)dayFromDate:(NSDate *)date;
 + (NSString *)dayFullMonthStringFromDate:(NSDate *)date;
++ (NSString *)fullMonthYearStringFromDate:(NSDate *)date;
 + (NSString *)dayFullMonthYearStringFromDate:(NSDate *)date;
 + (NSString *)shortDayMonthYearStringFromDate:(NSDate *)date;
 + (NSString *)dayMonthStringFromDate:(NSDate *)date;

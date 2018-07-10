@@ -1,5 +1,7 @@
 "LANGUAGE" = "el";
 
+"COMMA_AND_WHITESPACE" = ", ";
+
 "SHORT_TIME_FORMAT" = "%@ω%@λ";
 "LONG_TIME_FORMAT" = "%@ ω %@ λεπ";
 
@@ -30,10 +32,6 @@
 "JR_SEARCHINFO_ECONOMY" = "Economy";
 "JR_SEARCHINFO_PREMIUM_ECONOMY" = "Premium Economy";
 "JR_SEARCHINFO_FIRST" = "First Class";
-"JR_SEARCHINFO_PASSENGERS##{one}" = "%d επιβάτης";
-"JR_SEARCHINFO_PASSENGERS##{few}" = "%d επιβάτες";
-"JR_SEARCHINFO_PASSENGERS##{many}" = "%d επιβάτες";
-"JR_SEARCHINFO_PASSENGERS##{other}" = "%d επιβάτες";
 "JR_SEARCH_FORM_PASSENGERS" = "Επιβάτες";
 "JR_SEARCH_FORM_TRAVEL_CLASS" = "Κατηγορία";
 "JR_SEARCH_FORM_AIRPORT_CELL_EMPTY_DESTINATION" = "Πολη αφιξης";
@@ -101,7 +99,7 @@
 "JR_AIRPORT_PICKER_POPULAR_CATEGORY_MODE_TITLE" = "Ενδιαφέροντα";
 "JR_AIRPORT_PICKER_POPULAR_DESTINATIONS" = "Διαδρομές ανά ενδιαφέροντα";
 "JR_AIRPORT_PICKER_BACK_BUTTON" = "Πίσω";
-"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Προηγουμενες αναζητησεις:";
+"JR_AIRPORT_PICKER_SEARCHED_AIRPORTS" = "Προηγουμενες αναζητησεις";
 "JR_AIRPORT_PICKER_NOTHING_IS_FOUND" = "Δε βρέθηκαν αποτελέσματα";
 "JR_AIRPORT_PICKER_SEARCHING_ON_SERVER_TEXT" = "Αναζήτηση...";
 "JR_AIRPORT_PICKER_UPDATING_NEAREST_AIRPORTS" = "Αναζήτηση για πλησιέστερα αεροδρόμια...";

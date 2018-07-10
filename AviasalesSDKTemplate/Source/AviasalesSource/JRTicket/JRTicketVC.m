@@ -14,7 +14,6 @@
 #import "JRSearchInfoUtils.h"
 
 #import "JRInfoPanelView.h"
-#import "JRPriceUtils.h"
 
 #import "NSLayoutConstraint+JRConstraintMake.h"
 
@@ -236,7 +235,7 @@ static const NSTimeInterval kSearchResultsTTL = 15 * 60;
     
     for (JRSDKProposal *proposal in self.ticket.proposals) {
         
-        NSString *title = [NSString stringWithFormat:@"%@ — %@", proposal.gate.label, [JRPriceUtils formattedPriceInUserCurrency:proposal.price]];
+        NSString *title = [[NSString stringWithFormat:@"%@ — %@", proposal.gate.label, [proposal.price formattedPriceinUserCurrency]] rtlStringIfNeeded];
         
         UIAlertAction *buyAction = [UIAlertAction actionWithTitle:title style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
             [weakSelf buyTicketWithProposal:proposal];

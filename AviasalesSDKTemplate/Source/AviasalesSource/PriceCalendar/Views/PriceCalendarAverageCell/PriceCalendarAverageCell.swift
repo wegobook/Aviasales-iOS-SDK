@@ -23,7 +23,8 @@ class PriceCalendarAverageCell: UITableViewCell {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        separatorViewHorizontalCenterConstraint.constant = shouldShowSeparator ? 0 : bounds.width / 2
+        let multiplier: CGFloat = isRTL ? -1 : 1
+        separatorViewHorizontalCenterConstraint.constant = shouldShowSeparator ? 0 : (multiplier * bounds.width / 2)
     }
 
     override func awakeFromNib() {

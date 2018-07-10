@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -21,8 +21,9 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z8t-3S-WI4">
                         <rect key="frame" x="10" y="0.0" width="300" height="204"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:50" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJx-Ok-3hS">
-                                <rect key="frame" x="10" y="28" width="94.5" height="41"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08:50" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DJx-Ok-3hS">
+                                <rect key="frame" x="10" y="28" width="91" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
                                 <color key="textColor" red="0.36470588235294116" green="0.36470588235294116" blue="0.36470588235294116" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -38,8 +39,9 @@
                                     <constraint firstAttribute="width" constant="85" id="cBV-MD-whc"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-1J-fdg">
-                                <rect key="frame" x="10" y="134" width="78.5" height="41"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11:45" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z1I-1J-fdg">
+                                <rect key="frame" x="10" y="134" width="91" height="41"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" weight="light" pointSize="34"/>
                                 <color key="textColor" red="0.36470588240000001" green="0.36470588240000001" blue="0.36470588240000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -48,9 +50,9 @@
                                 </userDefinedRuntimeAttributes>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yHq-73-hQN">
-                                <rect key="frame" x="114.5" y="139" width="69.5" height="31"/>
+                                <rect key="frame" x="117" y="139" width="69.5" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 сен, Сб" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YK-tl-4QJ">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 сен, Сб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7YK-tl-4QJ">
                                         <rect key="frame" x="0.0" y="0.0" width="69.5" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -59,7 +61,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="lightTextColor"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London LHR" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-Yj-Zk2">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="London LHR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PR3-Yj-Zk2">
                                         <rect key="frame" x="0.0" y="16" width="69.5" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -81,9 +83,9 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DKL-Ew-8EF">
-                                <rect key="frame" x="114.5" y="33" width="68" height="31"/>
+                                <rect key="frame" x="117" y="33" width="68" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 сен, Сб" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIH-GW-YE5">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21 сен, Сб" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIH-GW-YE5">
                                         <rect key="frame" x="0.0" y="0.0" width="68" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,7 +94,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="lightTextColor"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цюрих ZRH" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtE-Kx-lnB">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Цюрих ZRH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jtE-Kx-lnB">
                                         <rect key="frame" x="0.0" y="16" width="68" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -116,7 +118,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XVY-u3-ll8">
                                 <rect key="frame" x="10" y="86" width="104" height="31"/>
                                 <subviews>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перелёт: 03ч 15м" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOM-A6-G57">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перелёт: 03ч 15м" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOM-A6-G57">
                                         <rect key="frame" x="0.0" y="0.0" width="104" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -125,7 +127,7 @@
                                             <userDefinedRuntimeAttribute type="string" keyPath="JRTextColorKey" value="lightTextColor"/>
                                         </userDefinedRuntimeAttributes>
                                     </label>
-                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейс ВВ-222" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-aS-gq8">
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Рейс ВВ-222" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fyg-aS-gq8">
                                         <rect key="frame" x="0.0" y="16" width="104" height="15"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                         <color key="textColor" red="0.67450980390000004" green="0.67450980390000004" blue="0.67450980390000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,7 +137,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="KOM-A6-G57" firstAttribute="leading" secondItem="XVY-u3-ll8" secondAttribute="leading" id="6Tg-nk-a9o"/>
                                     <constraint firstAttribute="trailing" secondItem="KOM-A6-G57" secondAttribute="trailing" id="EqB-4U-dNz"/>
@@ -154,17 +156,17 @@
                             <constraint firstItem="YiN-pF-1yP" firstAttribute="centerY" secondItem="Z8t-3S-WI4" secondAttribute="centerY" id="181-Uu-9cN"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="DKL-Ew-8EF" secondAttribute="trailing" constant="10" id="56H-28-fqG"/>
                             <constraint firstItem="XVY-u3-ll8" firstAttribute="centerY" secondItem="Z8t-3S-WI4" secondAttribute="centerY" id="6qB-wi-79s"/>
-                            <constraint firstItem="DKL-Ew-8EF" firstAttribute="leading" secondItem="DJx-Ok-3hS" secondAttribute="trailing" priority="750" constant="10" id="8mY-6M-Gxr"/>
+                            <constraint firstItem="DJx-Ok-3hS" firstAttribute="width" secondItem="Z1I-1J-fdg" secondAttribute="width" id="Dt7-sF-qe4"/>
+                            <constraint firstItem="yHq-73-hQN" firstAttribute="leading" secondItem="Z1I-1J-fdg" secondAttribute="trailing" constant="16" id="JGK-td-KhJ"/>
                             <constraint firstItem="Z1I-1J-fdg" firstAttribute="centerY" secondItem="yHq-73-hQN" secondAttribute="centerY" id="Je0-QG-aFg"/>
                             <constraint firstItem="Z1I-1J-fdg" firstAttribute="top" secondItem="YiN-pF-1yP" secondAttribute="bottom" constant="20" id="P6H-XM-J8D"/>
                             <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yHq-73-hQN" secondAttribute="trailing" constant="10" id="TuV-6M-mjH"/>
+                            <constraint firstItem="DKL-Ew-8EF" firstAttribute="leading" secondItem="DJx-Ok-3hS" secondAttribute="trailing" constant="16" id="a41-aP-iF3"/>
                             <constraint firstAttribute="trailing" secondItem="YiN-pF-1yP" secondAttribute="trailing" constant="10" id="cEs-ik-0EV"/>
                             <constraint firstItem="XVY-u3-ll8" firstAttribute="leading" secondItem="Z8t-3S-WI4" secondAttribute="leading" constant="10" id="cpV-qH-u3i"/>
                             <constraint firstItem="YiN-pF-1yP" firstAttribute="top" secondItem="DJx-Ok-3hS" secondAttribute="bottom" constant="20" id="fr6-5X-SFr"/>
-                            <constraint firstItem="DKL-Ew-8EF" firstAttribute="leading" secondItem="yHq-73-hQN" secondAttribute="leading" id="irx-vw-H2w"/>
                             <constraint firstItem="YiN-pF-1yP" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="XVY-u3-ll8" secondAttribute="trailing" constant="10" id="r6n-Jd-OBa"/>
                             <constraint firstItem="DJx-Ok-3hS" firstAttribute="centerY" secondItem="DKL-Ew-8EF" secondAttribute="centerY" id="rki-m7-Q1j"/>
-                            <constraint firstItem="yHq-73-hQN" firstAttribute="leading" secondItem="Z1I-1J-fdg" secondAttribute="trailing" priority="750" constant="26" id="u2A-ow-bpz"/>
                             <constraint firstItem="DJx-Ok-3hS" firstAttribute="leading" secondItem="Z8t-3S-WI4" secondAttribute="leading" constant="10" id="vW9-cS-XmO"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>

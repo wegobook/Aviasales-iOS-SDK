@@ -9,7 +9,7 @@
 #import "UIImage+JRUIImage.h"
 #import "DateUtil.h"
 #import "JRColorScheme.h"
-#import "ALView+PureLayout.h"
+
 
 @interface JRDatePickerDayView ()
 
@@ -18,17 +18,18 @@
 
 @end
 
+
 @implementation JRDatePickerDayView
 
 - (void)setTodayLabelHidden:(BOOL)todayLabelHidden
 {
 	_todayLabelHidden = todayLabelHidden;
+
 	if (!_todayLabelHidden && !_todayLabel) {
 		self.todayLabel = [UILabel new];
 		self.todayLabel.text = NSLS(@"JR_DATE_PICKER_TODAY_DATE_TITLE").lowercaseString;
 		self.todayLabel.font = [UIFont systemFontOfSize:9];
 		self.todayLabel.textColor = [JRColorScheme darkTextColor];
-		self.todayLabel.translatesAutoresizingMaskIntoConstraints = NO;
 		self.todayLabel.textAlignment = NSTextAlignmentCenter;
 		self.todayLabel.adjustsFontSizeToFitWidth = YES;
 		self.todayLabel.minimumScaleFactor = 0;
@@ -36,9 +37,13 @@
 		UIView *labelSuperView = self;
         
 		[labelSuperView addSubview:_todayLabel];
-        [self.todayLabel autoAlignAxis:ALAxisHorizontal toSameAxisOfView:self withOffset:14.0];
-        [self.todayLabel autoAlignAxisToSuperviewAxis:ALAxisVertical];
+
+        self.todayLabel.translatesAutoresizingMaskIntoConstraints = NO;
+
+        [self.todayLabel.centerXAnchor constraintEqualToAnchor:self.centerXAnchor].active = YES;
+        [self.todayLabel.centerYAnchor constraintEqualToAnchor:self.centerYAnchor constant:14.0].active = YES;
 	}
+
 	[self updateTodayLabel];
 }
 
@@ -79,7 +84,7 @@
 
 - (void)setDate:(NSDate *)date monthItem:(JRDatePickerMonthItem *)monthItem {
 	_date = date;
-	NSString *title = monthItem.stateObject.weeksStrings[date];
+	NSString *title = [monthItem.stateObject.weeksStrings[date] arabicDigits];
 	[self setTitle:title forState:UIControlStateNormal];
 }
 

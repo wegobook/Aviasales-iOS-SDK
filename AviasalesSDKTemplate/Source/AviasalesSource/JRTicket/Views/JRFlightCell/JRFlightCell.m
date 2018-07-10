@@ -17,30 +17,6 @@
 
 @implementation JRFlightCell
 
-+ (NSNumberFormatter *)flightNumberFormatter {
-    static NSNumberFormatter *flightNumberFormatter;
-    static dispatch_once_t onceToken;
-    
-    dispatch_once(&onceToken, ^{
-        flightNumberFormatter = [NSNumberFormatter new];
-        flightNumberFormatter.groupingSize = 0;
-    });
-    
-    return flightNumberFormatter;
-}
-
-+ (NSDateFormatter *)dateFormatter {
-    static NSDateFormatter *dateFormatter;
-    static dispatch_once_t onceToken;
-    
-    dispatch_once(&onceToken, ^{
-        dateFormatter = [NSDateFormatter applicationUIDateFormatter];
-        dateFormatter.dateFormat = [NSDateFormatter dateFormatFromTemplate:@"d MMM, EE" options:kNilOptions locale:dateFormatter.locale];
-    });
-    
-    return dateFormatter;
-}
-
 - (void)layoutSubviews {
     [super layoutSubviews];
 
@@ -63,20 +39,22 @@
 #pragma mark JRTicketCellProtocol methods
 
 - (void)applyFlight:(JRSDKFlight *)flight {
+
     self.durationLabel.text = [NSString stringWithFormat:@"%@: %@", AVIASALES_(@"JR_TICKET_DURATION"),
                                [DateUtil duration:flight.duration.integerValue durationStyle:JRDateUtilDurationShortStyle]];
     
-    self.departureTimeLabel.text = [DateUtil dateToTimeString:flight.departureDate];
-    self.arrivalTimeLabel.text = [DateUtil dateToTimeString:flight.arrivalDate];
-    self.departureDateLabel.text = [[JRFlightCell dateFormatter] stringFromDate:flight.departureDate];
-    self.arrivalDateLabel.text = [[JRFlightCell dateFormatter] stringFromDate:flight.arrivalDate];
+    self.departureTimeLabel.text = [[DateUtil dateToTimeString:flight.departureDate] arabicDigits];
+    self.arrivalTimeLabel.text = [[DateUtil dateToTimeString:flight.arrivalDate] arabicDigits];
+    self.departureDateLabel.text = [[DateUtil dayMonthWeekdayStringFromDate:flight.departureDate] arabicDigits];
+    self.arrivalDateLabel.text = [[DateUtil dayMonthWeekdayStringFromDate:flight.arrivalDate] arabicDigits];
     
     self.originLabel.attributedText = [self attributedStringWithCity:flight.originAirport.city andIATA:flight.originAirport.iata];
     self.destinationLabel.attributedText = [self attributedStringWithCity:flight.destinationAirport.city andIATA:flight.destinationAirport.iata];
 
-    NSNumber *const flightNumber = [[JRFlightCell flightNumberFormatter] numberFromString:flight.number];
-    self.flightNumberLabel.text = [NSString localizedStringWithFormat:@"%@ %@-%@", AVIASALES_(@"JR_TICKET_FLIGHT"), flight.airline.iata, [[JRFlightCell flightNumberFormatter] stringFromNumber:flightNumber]];
-    
+    NSString *flightString = [NSString stringWithFormat:@"%@-%@", flight.airline.iata, flight.number];
+
+    self.flightNumberLabel.text = [NSString localizedStringWithFormat:[@"%@ %@" formatAccordingToTextDirection], AVIASALES_(@"JR_TICKET_FLIGHT"), flightString];
+
     [self downloadAndSetupImageForImageView:self.logoIcon forAirline:flight.airline];
 }
 

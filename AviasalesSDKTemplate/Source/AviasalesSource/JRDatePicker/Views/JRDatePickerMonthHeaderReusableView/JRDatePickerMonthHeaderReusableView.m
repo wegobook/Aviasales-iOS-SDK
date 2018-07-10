@@ -20,7 +20,7 @@ static const NSInteger kWeekDayLabelTagOffset = 1000;
 @implementation JRDatePickerMonthHeaderReusableView
 
 - (void)awakeFromNib {
-	[super awakeFromNib];
+    [super awakeFromNib];
 
     self.monthYearLabel.textColor = [JRColorScheme darkTextColor];
     for (NSInteger i = 0; i < 7; i++) {
@@ -29,36 +29,34 @@ static const NSInteger kWeekDayLabelTagOffset = 1000;
         weekdayLabel.textColor = [JRColorScheme lightTextColor];
     }
     
-	[self updateView];
+    [self updateView];
 }
 
 - (void)setMonthItem:(JRDatePickerMonthItem *)monthItem {
-	_monthItem = monthItem;
-	[self updateView];
+    _monthItem = monthItem;
+    [self updateView];
 }
 
 - (NSString *)getMonthYearString {
-	NSDate *date = _monthItem.firstDayOfMonth;
-	NSString *monthYearString = nil;
-	if (date) {
-		NSString *monthName = [DateUtil monthName:date];
-		NSString *year = [DateUtil dayMonthYearComponentsFromDate:date][2];
-		monthYearString = [[NSString stringWithFormat:@"%@ %@", monthName, year] uppercaseString];
-	}
-	return monthYearString;
+    NSDate *date = _monthItem.firstDayOfMonth;
+    NSString *monthYearString = nil;
+    if (date) {
+        monthYearString = [[DateUtil fullMonthYearStringFromDate:date] arabicDigits];
+    }
+    return [monthYearString uppercaseString];
 }
 
 - (void)updateView {
-	NSString *monthYearString;
-	monthYearString = [self getMonthYearString];
-	[_monthYearLabel setText:monthYearString];
+    NSString *monthYearString;
+    monthYearString = [self getMonthYearString];
+    [_monthYearLabel setText:monthYearString];
     
     
-	for (NSString *weekday in _monthItem.weekdays) {
-		NSUInteger labelTag = [_monthItem.weekdays indexOfObject:weekday] + kWeekDayLabelTagOffset;
-		UILabel *weekdayLabel = (UILabel *)[self viewWithTag:labelTag];
-		[weekdayLabel setText:[weekday lowercaseString]];
-	}
+    for (NSString *weekday in _monthItem.weekdays) {
+        NSUInteger labelTag = [_monthItem.weekdays indexOfObject:weekday] + kWeekDayLabelTagOffset;
+        UILabel *weekdayLabel = (UILabel *)[self viewWithTag:labelTag];
+        [weekdayLabel setText:[weekday lowercaseString]];
+    }
 }
 
 @end
