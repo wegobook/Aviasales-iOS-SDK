@@ -13,8 +13,7 @@ protocol ASTWaitingScreenViewProtocol: NSObjectProtocol {
     func animateProgress(duration: TimeInterval)
     func update(title: String)
     func updateInfo(text: String, range: NSRange)
-    func showAppodealAdvertisement()
-    func showAviasalesAdvertisement(searchInfo: JRSDKSearchInfo)
+    func showAdvertisement()
     func showSearchResults(searchResult: JRSDKSearchResult, searchInfo: JRSDKSearchInfo)
     func showError(title: String, message: String, cancel: String)
     func pop()
@@ -24,8 +23,18 @@ class ASTWaitingScreenPresenter: NSObject {
 
     weak var view: ASTWaitingScreenViewProtocol?
 
-    let searchInfo: JRSDKSearchInfo
-    let searchPerformer = AviasalesSDK.sharedInstance().createSearchPerformer()
+    private let searchInfo: JRSDKSearchInfo
+    private let searchPerformer = AviasalesSDK.sharedInstance().createSearchPerformer()
+
+    private var showErrorAction: (() -> Void)?
+    private var canShowError = true {
+        didSet {
+            if canShowError {
+                showErrorAction?()
+                showErrorAction = nil
+            }
+        }
+    }
 
     init(searchInfo: JRSDKSearchInfo) {
         self.searchInfo = searchInfo
@@ -34,19 +43,22 @@ class ASTWaitingScreenPresenter: NSObject {
 
     func handleLoad(view: ASTWaitingScreenViewProtocol) {
         self.view = view
+        view.showAdvertisement()
         view.update(title: JRSearchInfoUtils.formattedIatasAndDatesExcludeYearComponent(for: searchInfo))
         view.animateProgress(duration: kJRSDKSearchPerformerAverageSearchTime)
         view.startAnimating()
         view.updateInfo(text: NSLS("JR_WAITING_TITLE"), range: NSRange())
-        if !ConfigManager.shared.appodealKey.isEmpty {
-            view.showAppodealAdvertisement()
-        }
-        if ConfigManager.shared.aviasalesAds {
-            view.showAviasalesAdvertisement(searchInfo: searchInfo)
-            requestSearchResultsAviasalesAdvertisement()
-        }
         performSearch()
+        AviasalesAdManager.shared.loadAdView(for: searchInfo)
         PriceCalendarManager.shared.prepareLoader(with: searchInfo)
+    }
+
+    func handleShowAdvertisement() {
+        canShowError = false
+    }
+
+    func handleHideAdvertisement() {
+        canShowError = true
     }
 
     func handleUnload() {
@@ -66,23 +78,43 @@ private extension ASTWaitingScreenPresenter {
         searchPerformer.performSearch(with: searchInfo, includeResultsInEnglish: true)
     }
 
-    func requestSearchResultsAviasalesAdvertisement() {
-        JRAdvertisementManager.sharedInstance().loadAndCacheAviasalesAdView(with: searchInfo)
-    }
+    func handle(_ temporaryResult: JRSDKSearchResult) {
 
-    func updateInfo(searchResult: JRSDKSearchResult) {
-
-        guard let bestPrice = searchResult.bestPrice else {
+        guard let bestPrice = temporaryResult.bestPrice else {
             return
         }
 
-        let count = searchResult.tickets.count
+        let count = temporaryResult.tickets.count
         let format = NSLSP("JR_FILTER_FLIGHTS_FOUND_MIN_PRICE", Float(count))
         let price = bestPrice.formattedPriceinUserCurrency()
         let string = String(format: format, count, price)
         let range = (string as NSString).localizedStandardRange(of: price)
 
         view?.updateInfo(text: string, range: range)
+    }
+
+    func filter(searchResult: JRSDKSearchResult, by avialableAirlines: [String]) -> JRSDKSearchResult? {
+
+        if avialableAirlines.count == 0 {
+            return searchResult
+        }
+
+       let tickets = NSOrderedSetSequence<JRSDKTicket>(orderedSet: searchResult.tickets).filter { (ticket) -> Bool in
+            let segments = NSOrderedSetSequence<JRSDKFlightSegment>(orderedSet: ticket.flightSegments)
+            return segments.count == segments.filter({ (segment) -> Bool in
+                let flights = NSOrderedSetSequence<JRSDKFlight>(orderedSet: segment.flights)
+                return flights.count == flights.filter({ (flight) -> Bool in
+                    return avialableAirlines.contains(flight.airline.iata)
+                }).count
+            }).count
+        }
+
+        let searchResultBuilder = JRSDKSearchResultBuilder()
+        searchResultBuilder.searchResultInfo = searchResult.searchResultInfo
+        searchResultBuilder.tickets = NSOrderedSet(array: tickets)
+        searchResultBuilder.bestPrice = searchResult.bestPrice
+
+        return searchResultBuilder.build()
     }
 
     func description(from error: NSError) -> String {
@@ -100,12 +132,27 @@ private extension ASTWaitingScreenPresenter {
 
         return result
     }
+
+    func show(errorMessage: String) {
+
+        let showErrorAction: (() -> Void)? = { [weak self] in
+            self?.view?.showError(title: NSLS("JR_ERROR_TITLE"), message: errorMessage, cancel: NSLS("JR_OK_BUTTON"))
+        }
+
+        if canShowError {
+            showErrorAction?()
+        } else {
+            self.showErrorAction = showErrorAction
+        }
+    }
 }
 
 extension ASTWaitingScreenPresenter: JRSDKSearchPerformerDelegate {
 
     func searchPerformer(_ searchPerformer: JRSDKSearchPerformer!, didFindSomeTickets newTickets: JRSDKSearchResultsChunk!, in searchInfo: JRSDKSearchInfo!, temporaryResult: JRSDKSearchResult!, temporaryMetropolitanResult: JRSDKSearchResult!) {
-        updateInfo(searchResult: temporaryResult)
+        if ConfigManager.shared.availableAirlines.count == 0 {
+            handle(temporaryResult)
+        }
     }
 
     func searchPerformer(_ searchPerformer: JRSDKSearchPerformer!, didFinishRegularSearch searchInfo: JRSDKSearchInfo!, with result: JRSDKSearchResult!, andMetropolitanResult metropolitanResult: JRSDKSearchResult!) {
@@ -116,7 +163,11 @@ extension ASTWaitingScreenPresenter: JRSDKSearchPerformerDelegate {
 
         let searchResult = result.tickets.count == 0 ? metropolitanResult : result
 
-        view?.showSearchResults(searchResult: searchResult, searchInfo: searchInfo)
+        if let filteredSearchResult = filter(searchResult: searchResult, by: ConfigManager.shared.availableAirlines), filteredSearchResult.tickets.count > 0 {
+            view?.showSearchResults(searchResult: filteredSearchResult, searchInfo: searchInfo)
+        } else {
+            show(errorMessage: NSLS("JR_WAITING_ERROR_NOT_FOUND_MESSAGE"))
+        }
     }
 
     func searchPerformer(_ searchPerformer: JRSDKSearchPerformer!, didFinalizeSearchWith searchInfo: JRSDKSearchInfo!, error: Error!) {
@@ -124,6 +175,6 @@ extension ASTWaitingScreenPresenter: JRSDKSearchPerformerDelegate {
     }
 
     func searchPerformer(_ searchPerformer: JRSDKSearchPerformer!, didFailSearchWithError error: Error!) {
-        view?.showError(title: NSLS("JR_ERROR_TITLE"), message: description(from: error as NSError), cancel: NSLS("JR_OK_BUTTON"))
+        show(errorMessage: description(from: error as NSError))
     }
 }

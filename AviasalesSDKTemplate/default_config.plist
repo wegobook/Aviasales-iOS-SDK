@@ -33,6 +33,29 @@
 		<string>BOS</string>
 		<key>flights_destination</key>
 		<string>NYC</string>
+		<key>available_airlines</key>
+		<array/>
+		<key>hotels_city</key>
+		<dict>
+			<key>id</key>
+			<string></string>
+			<key>selectable</key>
+			<true/>
+			<key>names</key>
+			<dict>
+				<key>en</key>
+				<string></string>
+				<key>ru</key>
+				<string></string>
+			</dict>
+			<key>headers</key>
+			<dict>
+				<key>en</key>
+				<string></string>
+				<key>ru</key>
+				<string></string>
+			</dict>
+		</dict>
 	</dict>
 	<key>external_links</key>
 	<dict>

@@ -1,12 +1,12 @@
+import Appodeal
+
 @objcMembers
 class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtocol,
-    UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, HLDeceleratingProgressAnimatorDelegate {
+    UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, HLDeceleratingProgressAnimatorDelegate, AppodealInterstitialDelegate {
 
     @IBOutlet var collectionView: UICollectionView!
     @IBOutlet var waitingActivityIndicator: UIActivityIndicatorView!
     @IBOutlet var progressView: UIProgressView!
-    @IBOutlet weak var appodealAdContainerView: UIView!
-    @IBOutlet weak var appodealContainerViewBottomLayoutConstraint: NSLayoutConstraint!
 
     let kAverageSearchDuration: TimeInterval = 10.0
     let kCollectionViewFadeDuration: TimeInterval = 0.5
@@ -24,6 +24,16 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
 
     let progressAnimator = HLDeceleratingProgressAnimator()
 
+    private var showErrorAction: (() -> Void)?
+    private var canShowError = true {
+        didSet {
+            if canShowError {
+                showErrorAction?()
+                showErrorAction = nil
+            }
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,7 +42,7 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
         collectionView.backgroundColor = JRColorScheme.mainBackgroundColor()
         cellFactory.registerNibs(collectionView)
         var insets = collectionView.contentInset
-        insets.bottom += 10.0 + appodealAdContainerView.frame.height + kNavBarHeight
+        insets.bottom += 10.0 + kNavBarHeight
         if iPad() {
             insets.bottom += 30.0
         }
@@ -44,9 +54,8 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
 
         addSearchInfoView(searchInfo)
 
-        if !ConfigManager.shared.appodealKey.isEmpty {
-            JRAdvertisementManager.sharedInstance().presentVideoAd(inViewIfNeeded: appodealAdContainerView, rootViewController: self)
-        }
+        Appodeal.setInterstitialDelegate(self)
+        Appodeal.showAd(.interstitial, rootViewController: self.navigationController ?? self)
 
         progressView.trackTintColor = UIColor.clear
         progressView.progressTintColor = JRColorScheme.actionColor()
@@ -56,11 +65,6 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
 
     override func goBack() {
         navigationController?.popViewController(animated: true)
-    }
-
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        appodealContainerViewBottomLayoutConstraint.constant = bottomLayoutGuide.length
     }
 
     private func addLongSearchSection() {
@@ -88,6 +92,16 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
                     self?.onSearchError(error)
             })
         }
+    }
+
+    // MARK: - AppodealInterstitialDelegate
+
+    func interstitialWillPresent() {
+        canShowError = false
+    }
+
+    func interstitialDidDismiss() {
+        canShowError = true
     }
 
     // MARK: - UICollectionViewDataSource
@@ -195,10 +209,19 @@ class WaitingVC: HLCommonVC, HLVariantsManagerDelegate, HLCityInfoLoadingProtoco
     // MARK: - Private methods
 
     private func onSearchError(_ error: Error) {
-        hl_dispatch_main_sync_safe {
-            HLAlertsFabric.showSearchAlertViewWithError(error, handler: { _ in
-                self.goBack()
-            })
+
+        let showErrorAction: (() -> Void)? = {
+            hl_dispatch_main_sync_safe {
+                HLAlertsFabric.showSearchAlertViewWithError(error, handler: { _ in
+                    self.goBack()
+                })
+            }
+        }
+
+        if canShowError {
+            showErrorAction?()
+        } else {
+            self.showErrorAction = showErrorAction
         }
     }
 

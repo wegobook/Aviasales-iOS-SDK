@@ -35,7 +35,11 @@
 - (HLSearchInfo *)searchInfo
 {
     if (!_searchInfo) {
-        _searchInfo =  [HDKDefaultsSaver loadObjectWithKey:HL_DEFAULTS_SEARCH_INFO_KEY] ?: [HLSearchInfo defaultSearchInfo];
+        if (ConfigManager.shared.hotelsCitySelectable) {
+            _searchInfo = [HDKDefaultsSaver loadObjectWithKey:HL_DEFAULTS_SEARCH_INFO_KEY] ?: [HLSearchInfo defaultSearchInfo];
+        } else {
+            _searchInfo = [HLSearchInfo defaultSearchInfo];
+        }
     }
     return _searchInfo;
 }

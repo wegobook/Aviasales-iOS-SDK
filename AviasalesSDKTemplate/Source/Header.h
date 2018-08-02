@@ -69,7 +69,6 @@
 
 #import "JRTicketVC.h"
 
-#import "JRAdvertisementManager.h"
 #import "JRTableManager.h"
 #import "JRHotelCardView.h"
 
@@ -99,7 +98,6 @@
 
 #import "NSLayoutConstraint+JRConstraintMake.h"
 #import "HLLocaleInspector.h"
-#import "JRAdvertisementManager.h"
 #import "HLDeceleratingProgressAnimator.h"
 
 #import "HLEmailSender.h"

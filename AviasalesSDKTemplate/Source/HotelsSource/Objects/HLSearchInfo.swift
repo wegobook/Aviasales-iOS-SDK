@@ -158,16 +158,16 @@ class HLSearchInfo: HDKSearchInfo {
 
     var cityByCurrentSearchType: HDKCity? {
         switch searchInfoType {
-            case .hotel:
-                return hotel?.city
-            case .city:
-                return city
-            case .cityCenterLocation:
-                return locationPoint?.city
-            case .userLocation, .customLocation, .airport:
-                return locationPoint?.nearbyCities.first
-            case .unknown:
-                return nil
+        case .hotel:
+            return hotel?.city
+        case .city:
+            return city
+        case .cityCenterLocation:
+            return locationPoint?.city
+        case .userLocation, .customLocation, .airport:
+            return locationPoint?.nearbyCities.first
+        case .unknown:
+            return nil
         }
     }
 
@@ -178,16 +178,16 @@ class HLSearchInfo: HDKSearchInfo {
 
     func searchLocation() -> CLLocation? {
         switch searchInfoType {
-            case .customLocation, .userLocation, .cityCenterLocation, .airport:
-                return locationPoint?.location
-            case .city:
-                guard let lat = city?.latitude, let lon = city?.longitude else { return nil }
-                return CLLocation(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
-            case .hotel:
-                guard let lat = hotel?.latitude, let lon = hotel?.longitude else { return nil }
-                return CLLocation(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
-            case .unknown:
-                return nil
+        case .customLocation, .userLocation, .cityCenterLocation, .airport:
+            return locationPoint?.location
+        case .city:
+            guard let lat = city?.latitude, let lon = city?.longitude else { return nil }
+            return CLLocation(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
+        case .hotel:
+            guard let lat = hotel?.latitude, let lon = hotel?.longitude else { return nil }
+            return CLLocation(latitude: CLLocationDegrees(lat), longitude: CLLocationDegrees(lon))
+        case .unknown:
+            return nil
         }
     }
 

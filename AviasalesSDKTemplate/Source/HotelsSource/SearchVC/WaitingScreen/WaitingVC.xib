@@ -1,18 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WaitingVC" customModule="AviasalesSDKTemplate" customModuleProvider="target">
             <connections>
-                <outlet property="appodealAdContainerView" destination="Ahe-dC-zLa" id="0tn-et-x8Y"/>
-                <outlet property="appodealContainerViewBottomLayoutConstraint" destination="Wfc-19-0ib" id="huS-5I-Fja"/>
                 <outlet property="collectionView" destination="FhN-3N-AVl" id="BPz-CJ-tpG"/>
                 <outlet property="progressView" destination="tzg-NE-5Ft" id="t7u-Y9-LG1"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -51,28 +49,6 @@
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="dz5-Rc-R4O">
                     <rect key="frame" x="177.5" y="323.5" width="20" height="20"/>
                 </activityIndicatorView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ahe-dC-zLa" userLabel="Appodeal Ad View Container">
-                    <rect key="frame" x="0.0" y="517" width="375" height="150"/>
-                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="150" id="X6h-Cy-ccl">
-                            <userDefinedRuntimeAttributes>
-                                <userDefinedRuntimeAttribute type="number" keyPath="iphone4Constant">
-                                    <real key="value" value="150"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="number" keyPath="iphone6PlusConstant">
-                                    <real key="value" value="180"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="number" keyPath="iphone6Constant">
-                                    <real key="value" value="160"/>
-                                </userDefinedRuntimeAttribute>
-                                <userDefinedRuntimeAttribute type="number" keyPath="ipadConstant">
-                                    <real key="value" value="180"/>
-                                </userDefinedRuntimeAttribute>
-                            </userDefinedRuntimeAttributes>
-                        </constraint>
-                    </constraints>
-                </view>
             </subviews>
             <color key="backgroundColor" red="0.44313725490196076" green="0.76470588235294112" blue="0.29019607843137252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -80,12 +56,9 @@
                 <constraint firstItem="tzg-NE-5Ft" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="JbV-0K-bDV"/>
                 <constraint firstItem="FhN-3N-AVl" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" priority="999" constant="15" id="KCe-49-z3x"/>
                 <constraint firstItem="tzg-NE-5Ft" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="TgF-Pd-rRu"/>
-                <constraint firstAttribute="bottom" secondItem="Ahe-dC-zLa" secondAttribute="bottom" id="Wfc-19-0ib"/>
-                <constraint firstAttribute="trailing" secondItem="Ahe-dC-zLa" secondAttribute="trailing" id="Z58-MT-qAl"/>
                 <constraint firstItem="FhN-3N-AVl" firstAttribute="top" secondItem="tzg-NE-5Ft" secondAttribute="bottom" id="bvC-vO-vsK"/>
                 <constraint firstAttribute="trailing" secondItem="FhN-3N-AVl" secondAttribute="trailing" priority="999" constant="15" id="e49-6P-4Sn"/>
                 <constraint firstItem="dz5-Rc-R4O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hhO-gY-1EN"/>
-                <constraint firstItem="Ahe-dC-zLa" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mEi-aR-z4H"/>
                 <constraint firstItem="FhN-3N-AVl" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="mX6-Qy-3to"/>
                 <constraint firstItem="dz5-Rc-R4O" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="oQs-mr-7sV"/>
                 <constraint firstAttribute="trailing" secondItem="tzg-NE-5Ft" secondAttribute="trailing" id="uHh-RI-4ex"/>

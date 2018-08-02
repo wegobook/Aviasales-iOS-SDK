@@ -10,7 +10,7 @@ def shared
 
     pod 'AviasalesSDK', '~> 3.1.2'
     pod 'SDWebImage', '~> 3.7'
-    pod 'Appodeal', '~> 2.0'
+    pod 'Appodeal/Interstitial', '2.4.4.3-Beta'
     pod 'NMRangeSlider'
     pod 'Smartling.i18n', '~> 1.0'
     pod 'AXRatingView'

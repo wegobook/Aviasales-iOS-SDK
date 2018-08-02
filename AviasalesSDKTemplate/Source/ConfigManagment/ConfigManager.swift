@@ -20,7 +20,6 @@ class ConfigManager: NSObject {
     lazy var partnerMarker: String = self.config?.partnerMarker ?? String()
     lazy var apiToken: String = self.config?.apiToken ?? String()
     lazy var appodealKey: String = self.config?.appodealKey ?? String()
-    lazy var aviasalesAds: Bool =  self.config?.aviasalesAds ?? true
     lazy var flightsEnabled: Bool = self.config?.flightsEnabled ?? true
     lazy var hotelsEnabled: Bool = self.config?.hotelsEnabled ?? true
     lazy var appLogo: String? = self.config?.appLogo
@@ -30,11 +29,14 @@ class ConfigManager: NSObject {
     lazy var itunesLink: String = self.config?.itunesLink ?? String()
     lazy var externalLinks: [ExternalLink]? = self.localized(self.config?.externalLinks)
     lazy var colorParams: ColorParams? = self.config?.colorParams
+    lazy var availableAirlines: [String] = self.config?.searchParams?.availableAirlines ?? [String]()
     lazy var defaultCurrency: String? = self.config?.searchParams?.defaultCurrency
     lazy var flightsOrigin: String? = self.config?.searchParams?.flightsOrigin
     lazy var flightsDestination: String? = self.config?.searchParams?.flightsDestination
+    lazy var hotelsCitySelectable: Bool = self.config?.searchParams?.hotelsCity?.selectable ?? true
     lazy var hotelsCityID: String? = self.config?.searchParams?.hotelsCity?.identifier
     lazy var hotelsCityName: String? = self.localized(self.config?.searchParams?.hotelsCity?.names)
+    lazy var hotelsCityHeader: String? = self.localized(self.config?.searchParams?.hotelsCity?.headers)
     lazy var defaultLocale: String = self.config?.defaultLocale ?? "en"
 }
 

@@ -60,6 +60,7 @@
 		322959D51FE18390006B25C0 /* JRDatePickerMonthHeaderReusableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 322959C21FE18390006B25C0 /* JRDatePickerMonthHeaderReusableView.xib */; };
 		322959D71FE18390006B25C0 /* JRDatePickerDayCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 322959C61FE18390006B25C0 /* JRDatePickerDayCell.m */; };
 		322C0934206A8C970014D584 /* GateBrowserViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322C0933206A8C970014D584 /* GateBrowserViewPresenter.swift */; };
+		322D029B2107336F00C7ABAB /* AviasalesAdManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322D029A2107336F00C7ABAB /* AviasalesAdManager.swift */; };
 		323DA2BC20D15CBB00096101 /* GCXSteppedSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DA2BA20D15CBB00096101 /* GCXSteppedSlider.m */; };
 		32460B492035C79600F937F1 /* StringUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32460B312035C79400F937F1 /* StringUtils.swift */; };
 		32460B4B2035C79600F937F1 /* StringUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 32460B332035C79400F937F1 /* StringUtils.m */; };
@@ -644,13 +645,6 @@
 		3249A3711FC5DF0F005EEA03 /* UIViewController+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E081FC5DF0C005EEA03 /* UIViewController+Navigation.swift */; };
 		3249A3731FC5DF0F005EEA03 /* HLDefaultCitiesFactory+Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E091FC5DF0C005EEA03 /* HLDefaultCitiesFactory+Config.swift */; };
 		3249A3751FC5DF0F005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E0A1FC5DF0C005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift */; };
-		3249A37B1FC5DF0F005EEA03 /* JRNewsFeedNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32499E111FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.xib */; };
-		3249A37D1FC5DF0F005EEA03 /* JRNewsFeedNativeAdView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E131FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.m */; };
-		3249A3831FC5DF0F005EEA03 /* JRAdvertisementManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E171FC5DF0D005EEA03 /* JRAdvertisementManager.m */; };
-		3249A3851FC5DF0F005EEA03 /* JRAviasalesAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E191FC5DF0D005EEA03 /* JRAviasalesAdLoader.m */; };
-		3249A3871FC5DF0F005EEA03 /* JRNativeAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E1D1FC5DF0D005EEA03 /* JRNativeAdLoader.m */; };
-		3249A3891FC5DF0F005EEA03 /* JRNewsFeedAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E1F1FC5DF0D005EEA03 /* JRNewsFeedAdLoader.m */; };
-		3249A38B1FC5DF0F005EEA03 /* JRVideoAdLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E201FC5DF0D005EEA03 /* JRVideoAdLoader.m */; };
 		3249A38D1FC5DF0F005EEA03 /* AppConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E211FC5DF0D005EEA03 /* AppConfigurator.swift */; };
 		3249A38F1FC5DF0F005EEA03 /* JRDefines.m in Sources */ = {isa = PBXBuildFile; fileRef = 32499E221FC5DF0D005EEA03 /* JRDefines.m */; };
 		3249A3911FC5DF0F005EEA03 /* EmptyOptionalExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32499E241FC5DF0D005EEA03 /* EmptyOptionalExtension.swift */; };
@@ -730,6 +724,9 @@
 		32C61DA72059BE1D00CF4AEC /* JRSearchResultsVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32C61D832059BE1D00CF4AEC /* JRSearchResultsVC.xib */; };
 		32C61DAA2059BE5200CF4AEC /* AppearanceSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61DA92059BE5100CF4AEC /* AppearanceSettings.swift */; };
 		32C61DB02059BEA400CF4AEC /* SearchInfoBuilderStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32C61DAF2059BEA400CF4AEC /* SearchInfoBuilderStorage.swift */; };
+		32CA9BD520EB903F0060D0EF /* NSOrderedSetSequence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32CA9BD420EB903F0060D0EF /* NSOrderedSetSequence.swift */; };
+		32D6069F2111EB350069B84A /* AdContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D6069E2111EB340069B84A /* AdContainerView.swift */; };
+		32D606A22111EB440069B84A /* AdContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 32D606A12111EB440069B84A /* AdContainerView.xib */; };
 		32D9093020A5C93D008187EB /* UIView+RTL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32D9092F20A5C93D008187EB /* UIView+RTL.swift */; };
 		32E8953B20E4FA030097F165 /* NSLocale+UILocale.m in Sources */ = {isa = PBXBuildFile; fileRef = 32E8953920E4FA030097F165 /* NSLocale+UILocale.m */; };
 		32F4ACF820C7E2CD00D72EBC /* NSString+Direction.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F4ACF620C7E2CC00D72EBC /* NSString+Direction.m */; };
@@ -829,6 +826,7 @@
 		322959C51FE18390006B25C0 /* JRDatePickerDayCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRDatePickerDayCell.h; sourceTree = "<group>"; };
 		322959C61FE18390006B25C0 /* JRDatePickerDayCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDatePickerDayCell.m; sourceTree = "<group>"; };
 		322C0933206A8C970014D584 /* GateBrowserViewPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GateBrowserViewPresenter.swift; sourceTree = "<group>"; };
+		322D029A2107336F00C7ABAB /* AviasalesAdManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AviasalesAdManager.swift; sourceTree = "<group>"; };
 		323559E020A0669E00ACCD7C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/HotelsLocalizable.strings; sourceTree = "<group>"; };
 		323559E120A0669E00ACCD7C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		323559E220A0669E00ACCD7C /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/AviasalesTemplateLocalizable.strings; sourceTree = "<group>"; };
@@ -1610,19 +1608,6 @@
 		32499E081FC5DF0C005EEA03 /* UIViewController+Navigation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Navigation.swift"; sourceTree = "<group>"; };
 		32499E091FC5DF0C005EEA03 /* HLDefaultCitiesFactory+Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HLDefaultCitiesFactory+Config.swift"; sourceTree = "<group>"; };
 		32499E0A1FC5DF0C005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+BackBarButtonItem.swift"; sourceTree = "<group>"; };
-		32499E0E1FC5DF0C005EEA03 /* JRAdvertisementManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAdvertisementManager.h; sourceTree = "<group>"; };
-		32499E111FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JRNewsFeedNativeAdView.xib; sourceTree = "<group>"; };
-		32499E131FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRNewsFeedNativeAdView.m; sourceTree = "<group>"; };
-		32499E151FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRNewsFeedNativeAdView.h; sourceTree = "<group>"; };
-		32499E171FC5DF0D005EEA03 /* JRAdvertisementManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAdvertisementManager.m; sourceTree = "<group>"; };
-		32499E191FC5DF0D005EEA03 /* JRAviasalesAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRAviasalesAdLoader.m; sourceTree = "<group>"; };
-		32499E1A1FC5DF0D005EEA03 /* JRNativeAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRNativeAdLoader.h; sourceTree = "<group>"; };
-		32499E1B1FC5DF0D005EEA03 /* JRNewsFeedAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRNewsFeedAdLoader.h; sourceTree = "<group>"; };
-		32499E1C1FC5DF0D005EEA03 /* JRVideoAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRVideoAdLoader.h; sourceTree = "<group>"; };
-		32499E1D1FC5DF0D005EEA03 /* JRNativeAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRNativeAdLoader.m; sourceTree = "<group>"; };
-		32499E1E1FC5DF0D005EEA03 /* JRAviasalesAdLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JRAviasalesAdLoader.h; sourceTree = "<group>"; };
-		32499E1F1FC5DF0D005EEA03 /* JRNewsFeedAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRNewsFeedAdLoader.m; sourceTree = "<group>"; };
-		32499E201FC5DF0D005EEA03 /* JRVideoAdLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRVideoAdLoader.m; sourceTree = "<group>"; };
 		32499E211FC5DF0D005EEA03 /* AppConfigurator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppConfigurator.swift; sourceTree = "<group>"; };
 		32499E221FC5DF0D005EEA03 /* JRDefines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JRDefines.m; sourceTree = "<group>"; };
 		32499E241FC5DF0D005EEA03 /* EmptyOptionalExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmptyOptionalExtension.swift; sourceTree = "<group>"; };
@@ -1733,6 +1718,9 @@
 		32C61DA92059BE5100CF4AEC /* AppearanceSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppearanceSettings.swift; sourceTree = "<group>"; };
 		32C61DAF2059BEA400CF4AEC /* SearchInfoBuilderStorage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchInfoBuilderStorage.swift; sourceTree = "<group>"; };
 		32C9AA771FC452D300CF3B5E /* AviasalesSDKTemplate-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AviasalesSDKTemplate-Bridging-Header.h"; sourceTree = "<group>"; };
+		32CA9BD420EB903F0060D0EF /* NSOrderedSetSequence.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSOrderedSetSequence.swift; sourceTree = "<group>"; };
+		32D6069E2111EB340069B84A /* AdContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdContainerView.swift; sourceTree = "<group>"; };
+		32D606A12111EB440069B84A /* AdContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AdContainerView.xib; sourceTree = "<group>"; };
 		32D9092F20A5C93D008187EB /* UIView+RTL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RTL.swift"; sourceTree = "<group>"; };
 		32E8953920E4FA030097F165 /* NSLocale+UILocale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLocale+UILocale.m"; sourceTree = "<group>"; };
 		32E8953A20E4FA030097F165 /* NSLocale+UILocale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLocale+UILocale.h"; sourceTree = "<group>"; };
@@ -1787,6 +1775,7 @@
 				321210DB20654B1F006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.m */,
 				321210B020654AC6006BE460 /* JRResultsFlightSegmentCell */,
 				321210B420654AC6006BE460 /* SearchResultsPriceCalendarView */,
+				32D6069D2111EB340069B84A /* AdContainerView */,
 				321210B720654AC6006BE460 /* HotelCardView */,
 				321210BB20654AC6006BE460 /* JRResultsTicketPriceCell */,
 				321210BF20654AC6006BE460 /* JRResultsTicketCell */,
@@ -2165,6 +2154,7 @@
 				32499B7C1FC5DF0C005EEA03 /* HotelsSource */,
 				32499E031FC5DF0C005EEA03 /* Extensions */,
 				32499E231FC5DF0D005EEA03 /* Categories */,
+				32CA9BD320EB903F0060D0EF /* SwiftAdditions */,
 				32460B2F2035C79400F937F1 /* Utils */,
 				32499A671FC5DF0C005EEA03 /* Header.h */,
 				32499E021FC5DF0C005EEA03 /* JRDefines.h */,
@@ -3952,37 +3942,9 @@
 		32499E0C1FC5DF0C005EEA03 /* Advertisement */ = {
 			isa = PBXGroup;
 			children = (
-				32499E0E1FC5DF0C005EEA03 /* JRAdvertisementManager.h */,
-				32499E171FC5DF0D005EEA03 /* JRAdvertisementManager.m */,
-				32499E101FC5DF0C005EEA03 /* Views */,
-				32499E181FC5DF0D005EEA03 /* AdLoading */,
+				322D029A2107336F00C7ABAB /* AviasalesAdManager.swift */,
 			);
 			path = Advertisement;
-			sourceTree = "<group>";
-		};
-		32499E101FC5DF0C005EEA03 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				32499E111FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.xib */,
-				32499E131FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.m */,
-				32499E151FC5DF0C005EEA03 /* JRNewsFeedNativeAdView.h */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		32499E181FC5DF0D005EEA03 /* AdLoading */ = {
-			isa = PBXGroup;
-			children = (
-				32499E191FC5DF0D005EEA03 /* JRAviasalesAdLoader.m */,
-				32499E1A1FC5DF0D005EEA03 /* JRNativeAdLoader.h */,
-				32499E1B1FC5DF0D005EEA03 /* JRNewsFeedAdLoader.h */,
-				32499E1C1FC5DF0D005EEA03 /* JRVideoAdLoader.h */,
-				32499E1D1FC5DF0D005EEA03 /* JRNativeAdLoader.m */,
-				32499E1E1FC5DF0D005EEA03 /* JRAviasalesAdLoader.h */,
-				32499E1F1FC5DF0D005EEA03 /* JRNewsFeedAdLoader.m */,
-				32499E201FC5DF0D005EEA03 /* JRVideoAdLoader.m */,
-			);
-			path = AdLoading;
 			sourceTree = "<group>";
 		};
 		32499E231FC5DF0D005EEA03 /* Categories */ = {
@@ -4353,6 +4315,23 @@
 			path = SearchResults;
 			sourceTree = "<group>";
 		};
+		32CA9BD320EB903F0060D0EF /* SwiftAdditions */ = {
+			isa = PBXGroup;
+			children = (
+				32CA9BD420EB903F0060D0EF /* NSOrderedSetSequence.swift */,
+			);
+			path = SwiftAdditions;
+			sourceTree = "<group>";
+		};
+		32D6069D2111EB340069B84A /* AdContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				32D6069E2111EB340069B84A /* AdContainerView.swift */,
+				32D606A12111EB440069B84A /* AdContainerView.xib */,
+			);
+			path = AdContainerView;
+			sourceTree = "<group>";
+		};
 		32E8953820E4FA030097F165 /* NSLocale+UILocale */ = {
 			isa = PBXGroup;
 			children = (
@@ -4499,6 +4478,7 @@
 				ORGANIZATIONNAME = "Go Travel Un Limited";
 				TargetAttributes = {
 					C60EC83617E848DA00C5D52E = {
+						DevelopmentTeam = C92M3ZV55X;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Manual;
 						SystemCapabilities = {
@@ -4667,6 +4647,7 @@
 				3249A15F1FC5DF0E005EEA03 /* HLKidsPickerVC.xib in Resources */,
 				32499EA31FC5DF0D005EEA03 /* CurrencyPickerViewController.xib in Resources */,
 				3249A1671FC5DF0E005EEA03 /* HLIpadKidsPickerVC.xib in Resources */,
+				32D606A22111EB440069B84A /* AdContainerView.xib in Resources */,
 				3249A2A91FC5DF0E005EEA03 /* HLToastView.xib in Resources */,
 				3249A0F51FC5DF0E005EEA03 /* HLNoFilterResultsPlaceholderView~iphone.xib in Resources */,
 				3249A22F1FC5DF0E005EEA03 /* HotelDetailsMoreTableVC.xib in Resources */,
@@ -4683,7 +4664,6 @@
 				3249A1EF1FC5DF0E005EEA03 /* HLHotelDetailsPriceCTACell.xib in Resources */,
 				3217F8B020AC853D007D3890 /* JRFilterTravelSegmentCell.xib in Resources */,
 				3249A3411FC5DF0F005EEA03 /* HLGroupedTableCell.xib in Resources */,
-				3249A37B1FC5DF0F005EEA03 /* JRNewsFeedNativeAdView.xib in Resources */,
 				3249A2591FC5DF0E005EEA03 /* ReviewsVC.xib in Resources */,
 				3249A00D1FC5DF0D005EEA03 /* HLGateFilterCell.xib in Resources */,
 				32499E791FC5DF0D005EEA03 /* slider-default7-track@2x.png in Resources */,
@@ -4751,7 +4731,6 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-AviasalesSDKTemplate/Pods-AviasalesSDKTemplate-resources.sh",
-				"${PODS_ROOT}/Appodeal/Appodeal.bundle",
 				"${PODS_ROOT}/Appodeal/APDStartAppAdapter.embeddedframework/Resources/StartApp.bundle",
 				"${PODS_ROOT}/Appodeal/APDTapjoyAdapter.embeddedframework/Resources/TapjoyResources.bundle",
 				"${PODS_ROOT}/Appodeal/APDTwitterMoPubAdapter.embeddedframework/Resources/MPAdBrowserController.xib",
@@ -4778,7 +4757,6 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/Appodeal.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/StartApp.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/TapjoyResources.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MPAdBrowserController.nib",
@@ -5020,7 +4998,6 @@
 				3249A0891FC5DF0D005EEA03 /* PeekItems.swift in Sources */,
 				3249A2F31FC5DF0E005EEA03 /* HLPoiIconSelector.m in Sources */,
 				3249A0C71FC5DF0E005EEA03 /* ApartmentsSortItemsFactory.swift in Sources */,
-				3249A38B1FC5DF0F005EEA03 /* JRVideoAdLoader.m in Sources */,
 				3249A2E51FC5DF0E005EEA03 /* HLSingleAnnotationView.m in Sources */,
 				3249A1ED1FC5DF0E005EEA03 /* HLHotelDetailsActivityIndicatorTableCell.swift in Sources */,
 				3249A04D1FC5DF0D005EEA03 /* PriceFilterView.swift in Sources */,
@@ -5057,13 +5034,13 @@
 				3249A0CB1FC5DF0E005EEA03 /* HLMapGroupDetailsCell.m in Sources */,
 				3249A3691FC5DF0F005EEA03 /* JRSDKSearchInfoBuilder+Config.swift in Sources */,
 				3249A3AF1FC5DF0F005EEA03 /* UIImageView+RemoteCache.swift in Sources */,
-				3249A3891FC5DF0F005EEA03 /* JRNewsFeedAdLoader.m in Sources */,
 				3249A32D1FC5DF0F005EEA03 /* NSDictionary+Parsing.m in Sources */,
 				3249A2271FC5DF0E005EEA03 /* ActivitySection.swift in Sources */,
 				3249A2031FC5DF0E005EEA03 /* ReviewCell.swift in Sources */,
 				32499FF51FC5DF0D005EEA03 /* FilterPriceItem.swift in Sources */,
 				3249A1951FC5DF0E005EEA03 /* NSError+HLCustomErrors.m in Sources */,
 				3249A1CB1FC5DF0E005EEA03 /* HLHotelDetailsRatingDetailsCell.swift in Sources */,
+				32D6069F2111EB350069B84A /* AdContainerView.swift in Sources */,
 				3249A0831FC5DF0D005EEA03 /* PeekTableVC.swift in Sources */,
 				321210DD20654B20006BE460 /* JRSearchResultsFlightSegmentCellLayoutParameters.m in Sources */,
 				3249A2BF1FC5DF0E005EEA03 /* HLRestartableProgressView.m in Sources */,
@@ -5121,7 +5098,6 @@
 				3249A3491FC5DF0F005EEA03 /* GroupedTableItem.swift in Sources */,
 				3249A0EB1FC5DF0E005EEA03 /* HLPlaceholderView.m in Sources */,
 				3249A2751FC5DF0E005EEA03 /* ReviewItem.swift in Sources */,
-				3249A3851FC5DF0F005EEA03 /* JRAviasalesAdLoader.m in Sources */,
 				3249A0291FC5DF0D005EEA03 /* MultiAmenityFilterCell.swift in Sources */,
 				3249A0131FC5DF0D005EEA03 /* StringFilterItem.swift in Sources */,
 				32499EAD1FC5DF0D005EEA03 /* InteractionManager.swift in Sources */,
@@ -5182,7 +5158,6 @@
 				3249A1F11FC5DF0E005EEA03 /* HLHotelDetailsNoPriceCell.swift in Sources */,
 				322959C71FE18390006B25C0 /* JRDatePickerStateObject.m in Sources */,
 				3249A0E11FC5DF0E005EEA03 /* WaitingVC.swift in Sources */,
-				3249A3831FC5DF0F005EEA03 /* JRAdvertisementManager.m in Sources */,
 				3249A1D91FC5DF0E005EEA03 /* HLHotelDetailsFeaturesCell.swift in Sources */,
 				32499FFF1FC5DF0D005EEA03 /* FilterSelectionItem.swift in Sources */,
 				3249A31D1FC5DF0F005EEA03 /* HLAutolayoutCell.m in Sources */,
@@ -5284,6 +5259,7 @@
 				32460B4F2035C79600F937F1 /* JRSearchInfoUtils.m in Sources */,
 				3249A0F31FC5DF0E005EEA03 /* HLNoFilterResultsPlaceholderView.m in Sources */,
 				32460B572035C79600F937F1 /* JRStringsWidthComputer.m in Sources */,
+				32CA9BD520EB903F0060D0EF /* NSOrderedSetSequence.swift in Sources */,
 				32499EBF1FC5DF0D005EEA03 /* InfoScreenAboutCellModel.swift in Sources */,
 				3249A2771FC5DF0E005EEA03 /* NamedHotelDetailsItem.swift in Sources */,
 				32499FD91FC5DF0D005EEA03 /* IpadPointSelectionVC.swift in Sources */,
@@ -5310,10 +5286,10 @@
 				32499E8D1FC5DF0D005EEA03 /* ColorScheme.swift in Sources */,
 				3249A1471FC5DF0E005EEA03 /* WaitingCell.swift in Sources */,
 				3249A32B1FC5DF0F005EEA03 /* NSArray+Functional.m in Sources */,
-				3249A3871FC5DF0F005EEA03 /* JRNativeAdLoader.m in Sources */,
 				32499F3B1FC5DF0D005EEA03 /* ASTComplexSearchFormTableViewCellSegment.m in Sources */,
 				32499ED71FC5DF0D005EEA03 /* JRNavigationController.m in Sources */,
 				3249A2131FC5DF0E005EEA03 /* HLHotelDetailsPriceTableCell.swift in Sources */,
+				322D029B2107336F00C7ABAB /* AviasalesAdManager.swift in Sources */,
 				3249A13D1FC5DF0E005EEA03 /* HLPhotoView.swift in Sources */,
 				32499F2D1FC5DF0D005EEA03 /* ASTSearchFormPassengersView.m in Sources */,
 				3249A0AD1FC5DF0D005EEA03 /* NSObject+Notifications.m in Sources */,
@@ -5394,7 +5370,6 @@
 				3249A36F1FC5DF0F005EEA03 /* JRSDKPaymentMethod+LocalizedName.swift in Sources */,
 				3249A2631FC5DF0E005EEA03 /* RatingItem.swift in Sources */,
 				3249A2FD1FC5DF0F005EEA03 /* TBClusterAnnotationView.m in Sources */,
-				3249A37D1FC5DF0F005EEA03 /* JRNewsFeedNativeAdView.m in Sources */,
 				3249A3311FC5DF0F005EEA03 /* HLBadgeIconView.swift in Sources */,
 				3249A3751FC5DF0F005EEA03 /* UIBarButtonItem+BackBarButtonItem.swift in Sources */,
 				3249A29B1FC5DF0E005EEA03 /* HLIpadHotelDetailsVC.swift in Sources */,
@@ -5682,7 +5657,6 @@
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.aviasales.sdkexample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				STRIP_STYLE = all;
