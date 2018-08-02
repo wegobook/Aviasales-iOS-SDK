@@ -10,7 +10,7 @@ extension HLDefaultCitiesFactory {
 
     static func configCity() -> HDKCity? {
 
-        guard let id = ConfigManager.shared.hotelsCityID, let name = ConfigManager.shared.hotelsCityName else {
+        guard let id = ConfigManager.shared.hotelsCityID, let name = ConfigManager.shared.hotelsCityName, !id.isEmpty, !name.isEmpty else {
             return nil
         }
 
