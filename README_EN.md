@@ -23,6 +23,8 @@ Framework supports iOS 9.0 and higher
 **Do not forget to replace app icons** (Template project includes simple white icons by default). To do this you will need to replace icons in ```AviasalesSDKTemplate/Resources/App.xcassets/AppIcon.appiconset``` folder (20.png, 29.png, 40.png etc) with your own icons with same names.
 ### ✈️🏨 Tab selection
 If you want to remove flights or hotels search tab, change values of ```flights_enabled``` and ```hotels_enabled``` to NO in Project settings. Settings tab can't be removed.
+### 🔧 Predefined filters
+If you want to limit search results by one or several airlines, add IATA's of these airlines to the config file with the ```available_airlines``` key as array elements. You can limit the cities for the hotel searching as well. To do this, set the ```selectable``` parameter to NO in the config file and fill the placeholder text for the search form header (```headers``` parameter in localization keys). Do not forget to specify search city id and title.
 ### 🇺🇸🇷🇺 Localization
 Text localizations can be added with NSLSKey in "Attributes Inspector" section of xib-files.
 ### ✍🏻 RTL support

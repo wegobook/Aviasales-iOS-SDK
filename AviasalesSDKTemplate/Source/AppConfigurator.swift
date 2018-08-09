@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import Appodeal
 
 @objcMembers
 class AppConfigurator: NSObject {
 
     static func configure() {
         configureAviasalesSDK()
-        configureAdvertisementManager()
+        configureAppodeal()
     }
 }
 
@@ -30,10 +31,7 @@ private extension AppConfigurator {
         AviasalesSDK.setup(with: configuration)
     }
 
-    static func configureAdvertisementManager() {
-
-        if !ConfigManager.shared.appodealKey.isEmpty {
-            JRAdvertisementManager.sharedInstance().initializeAppodeal(withAPIKey: ConfigManager.shared.appodealKey, testingEnabled: true)
-        }
+    static func configureAppodeal() {
+        Appodeal.initialize(withApiKey: ConfigManager.shared.appodealKey, types: .interstitial)
     }
 }

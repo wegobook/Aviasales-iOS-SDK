@@ -70,8 +70,11 @@ typedef NSDictionary<NSString *, NSArray <HDKLocationPoint *> *>     HLPointsMap
                     [loadedHotels addObject:hotel];
                 }
             }
-
-            [self notifyDelegateWithHotels:loadedHotels cities:loadedCities];
+            if (loadedCities.count > 0) {
+                [self notifyDelegateWithHotels:loadedHotels cities:loadedCities];
+            } else {
+                [self notifyDelegateWithError:[NSError errorWithCode:HLEmptyResultsNonCriticalError]];
+            }
         };
 
         BOOL priceless = (cities.count == 1) && (cities.firstObject.hotelsCount < 100);

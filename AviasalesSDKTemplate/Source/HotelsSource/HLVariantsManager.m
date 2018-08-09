@@ -305,9 +305,9 @@ NSString * const HL_VARIANTS_MANAGER_DID_LOAD_PRICES = @"hl_variantsManagerDidLo
             citiesIdsAreCorrect = [self.searchInfo.city.cityId isEqualToString:loadedCity.cityId];
             if (citiesIdsAreCorrect) {
                 self.searchInfo.city = loadedCity;
-                self.hotels = hotels;
-                [self tryCollectingVariants];
             }
+            self.hotels = hotels;
+            [self tryCollectingVariants];
         } break;
         case HLSearchInfoTypeUserLocation:
         case HLSearchInfoTypeCustomLocation:

@@ -25,6 +25,8 @@ class HLSearchForm: UIView {
     @IBOutlet fileprivate weak var currentCityButton: UIButton!
     @IBOutlet fileprivate weak var currentCityActivityIndicator: UIActivityIndicatorView!
 
+    @IBOutlet fileprivate weak var headerTextLabel: UILabel!
+
     @IBOutlet fileprivate weak var cityTitleLabel: UILabel!
     @IBOutlet fileprivate weak var cityValueLabel: UILabel!
 
@@ -36,6 +38,9 @@ class HLSearchForm: UIView {
     @IBOutlet fileprivate weak var threeAdultsButton: UIButton!
     @IBOutlet fileprivate weak var fourAdultsButton: UIButton!
 
+    @IBOutlet fileprivate weak var cityDatesDividerView: UIView!
+
+    @IBOutlet fileprivate weak var headerCellHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var cityCellHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var datesCellHeightConstraint: NSLayoutConstraint!
     @IBOutlet fileprivate weak var guestsCellHeightConstraint: NSLayoutConstraint!
@@ -89,6 +94,8 @@ class HLSearchForm: UIView {
         setupSearchButton()
         setupAdultsButtons()
         setupIconsTint()
+        setupConstraints()
+
         currentCityButton.tintColor = UIColor.white
 
         cityTitleLabel.text = NSLS("HL_SEARCH_FORM_CITY_TITLE")
@@ -96,9 +103,9 @@ class HLSearchForm: UIView {
         adultsTitleLabel.text = NSLS("HL_LOC_SEARCH_ADULTS_TITLE")
         kidsTitleLabel.text = NSLS("HL_LOC_SEARCH_KIDS_TITLE")
 
-        cityCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 98.0, 98.0, 98.0, 98.0)
-        datesCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 98.0, 98.0, 98.0, 98.0)
-        guestsCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 125.0, 125.0, 125.0, 125.0)
+        headerTextLabel.text = ConfigManager.shared.hotelsCityHeader
+
+        cityDatesDividerView.isHidden = !ConfigManager.shared.hotelsCitySelectable
     }
 
     private func setupSearchButton() {
@@ -108,10 +115,11 @@ class HLSearchForm: UIView {
     }
 
     private func setTitlesColors() {
+        headerTextLabel.textColor = JRColorScheme.searchFormTextColor()
+        cityTitleLabel.textColor = JRColorScheme.searchFormTextColor()
         datesTitleLabel.textColor = JRColorScheme.searchFormTextColor()
         adultsTitleLabel.textColor = JRColorScheme.searchFormTextColor()
         kidsTitleLabel.textColor = JRColorScheme.searchFormTextColor()
-        cityTitleLabel.textColor = JRColorScheme.searchFormTextColor()
 
         datesValueLabel.textColor = JRColorScheme.searchFormTextColor()
         cityValueLabel.textColor = JRColorScheme.searchFormTextColor()
@@ -135,6 +143,15 @@ class HLSearchForm: UIView {
         originIcon.tintColor = JRColorScheme.searchFormTintColor()
         datesIcon.tintColor = JRColorScheme.searchFormTintColor()
         guestsIcon.tintColor = JRColorScheme.searchFormTintColor()
+    }
+
+    private func setupConstraints() {
+        let selectable = ConfigManager.shared.hotelsCitySelectable
+
+        headerCellHeightConstraint.constant = selectable ? 0 : deviceSizeTypeValue(78.0, 98.0, 98.0, 98.0, 98.0)
+        cityCellHeightConstraint.constant = selectable ? deviceSizeTypeValue(78.0, 98.0, 98.0, 98.0, 98.0) : 0
+        datesCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 98.0, 98.0, 98.0, 98.0)
+        guestsCellHeightConstraint.constant = deviceSizeTypeValue(78.0, 125.0, 125.0, 125.0, 125.0)
     }
 
     func updateControls() {

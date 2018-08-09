@@ -47,11 +47,11 @@ class SearchResultsCardList: NSObject, JRTableManager {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let item = items[indexPath.section]
+        let view = items[indexPath.section].view
         let cell = UITableViewCell(style: .default, reuseIdentifier: nil)
-        item.view.frame = cell.contentView.bounds
-        item.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        cell.contentView.addSubview(item.view)
+        cell.contentView.addSubview(view)
+        view.translatesAutoresizingMaskIntoConstraints = false
+        cell.contentView.addConstraints(JRConstraintsMakeScaleToFill(view, cell.contentView))
         cell.setNeedsLayout()
         cell.layoutIfNeeded()
         return cell
@@ -81,10 +81,11 @@ private extension SearchResultsCardList {
     }
 
     func buildAviasalesAdItem() -> SearchResultsCardItem? {
-        guard let aviasalesAdView = JRAdvertisementManager.sharedInstance().cachedAviasalesAdView else {
+        guard let aviasalesAdView = AviasalesAdManager.shared.cachedAdView, let adContainerView = AdContainerView.loadFromNib() else {
             return nil
         }
-        return SearchResultsCardItem(index: aviasalesAdIndex, view: aviasalesAdView, height: 130)
+        aviasalesAdView.place(into: adContainerView.containerView)
+        return SearchResultsCardItem(index: aviasalesAdIndex, view: adContainerView, height: 130)
     }
 
     func buildPriceCalendarItem() -> SearchResultsCardItem? {
@@ -92,8 +93,9 @@ private extension SearchResultsCardList {
         let departureDate = (searchInfo.travelSegments.firstObject as? JRSDKTravelSegment)?.departureDate
         let hasMinimumPricesAroundTheDepartureDate = PriceCalendarManager.shared.loader?.hasPricesAroundDate(departureDate, radius: 4) ?? false
         let searchInfoIsValidForPriceCalendar = JRSDKPriceCalendarLoader.searchInfoIsValid(forPriceCalendar: searchInfo)
+        let hasAirlinesFilter = ConfigManager.shared.availableAirlines.count > 0
 
-        guard let priceCalendarView = SearchResultsPriceCalendarView.loadFromNib(), hasMinimumPricesAroundTheDepartureDate && searchInfoIsValidForPriceCalendar else {
+        guard let priceCalendarView = SearchResultsPriceCalendarView.loadFromNib(), hasMinimumPricesAroundTheDepartureDate && searchInfoIsValidForPriceCalendar && !hasAirlinesFilter else {
             return nil
         }
 
@@ -106,7 +108,7 @@ private extension SearchResultsCardList {
 
     func buildHotellookCardItem() -> SearchResultsCardItem? {
 
-        let allowToShowCard = InteractionManager.shared.isCityReadyForSearchHotels && ConfigManager.shared.hotelsEnabled && JRSDKModelUtils.isSimpleSearch(searchInfo) && !isRTLDirectionByLocale()
+        let allowToShowCard = InteractionManager.shared.isCityReadyForSearchHotels && ConfigManager.shared.hotelsEnabled && JRSDKModelUtils.isSimpleSearch(searchInfo) && !isRTLDirectionByLocale() && ConfigManager.shared.hotelsCitySelectable
 
         guard allowToShowCard, let hotelCardView = JRHotelCardView.loadFromNib() else {
             return nil

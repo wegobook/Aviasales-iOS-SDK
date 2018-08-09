@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Appodeal
 
 @objcMembers
 class ASTWaitingScreenViewController: UIViewController {
@@ -15,11 +16,6 @@ class ASTWaitingScreenViewController: UIViewController {
     @IBOutlet weak var progressView: ProgressView!
     @IBOutlet weak var planeScene: ASTWaitingScreenPlaneSceneView!
     @IBOutlet weak var infoLabel: UILabel!
-    @IBOutlet weak var appodealAdvertisementView: UIView!
-    @IBOutlet weak var aviasalesAdvertisementView: UIView!
-
-    @IBOutlet weak var aviasalesAdvertisementViewHeightConstraint: NSLayoutConstraint!
-    @IBOutlet weak var aviasalesAdvertisementBottomConstraint: NSLayoutConstraint!
 
     init(searchInfo: JRSDKSearchInfo) {
         presenter = ASTWaitingScreenPresenter(searchInfo: searchInfo)
@@ -42,11 +38,6 @@ class ASTWaitingScreenViewController: UIViewController {
         presenter.handleLoad(view: self)
     }
 
-    override func viewDidLayoutSubviews() {
-        super.viewDidLayoutSubviews()
-        aviasalesAdvertisementBottomConstraint.constant = bottomLayoutGuide.length
-    }
-    
     // MARK: - Setup
 
     func setupViewController() {
@@ -54,6 +45,7 @@ class ASTWaitingScreenViewController: UIViewController {
         progressView.backgroundColor = JRColorScheme.mainBackgroundColor()
         progressView.progressColor = JRColorScheme.actionColor()
         progressView.transformRTL()
+        Appodeal.setInterstitialDelegate(self)
     }
 
     // MARK: - Update
@@ -90,6 +82,17 @@ class ASTWaitingScreenViewController: UIViewController {
     }
 }
 
+extension ASTWaitingScreenViewController: AppodealInterstitialDelegate {
+
+    func interstitialWillPresent() {
+        presenter.handleShowAdvertisement()
+    }
+
+    func interstitialDidDismiss() {
+        presenter.handleHideAdvertisement()
+    }
+}
+
 extension ASTWaitingScreenViewController: ASTWaitingScreenViewProtocol {
 
     func startAnimating() {
@@ -108,17 +111,8 @@ extension ASTWaitingScreenViewController: ASTWaitingScreenViewProtocol {
         updateInfoLabel(text: text, range: range)
     }
 
-    func showAppodealAdvertisement() {
-        JRAdvertisementManager.sharedInstance().presentVideoAd(inViewIfNeeded: appodealAdvertisementView, rootViewController: self)
-    }
-
-    func showAviasalesAdvertisement(searchInfo: JRSDKSearchInfo) {
-        AviasalesSDK.sharedInstance().adsManager.loadAdsViewForSearchResults(with: searchInfo) { [weak self] (adsView, error) in
-            if let adsView = adsView {
-                adsView.place(into: self?.aviasalesAdvertisementView)
-                self?.aviasalesAdvertisementViewHeightConstraint.constant = 90
-            }
-        }
+    func showAdvertisement() {
+        Appodeal.showAd(.interstitial, rootViewController: self.navigationController ?? self)
     }
 
     func showSearchResults(searchResult: JRSDKSearchResult, searchInfo: JRSDKSearchInfo) {

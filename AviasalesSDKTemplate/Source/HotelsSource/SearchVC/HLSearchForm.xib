@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -19,8 +19,26 @@
                     <rect key="frame" x="0.0" y="0.0" width="320" height="347"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                 </view>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XE2-Jm-eeA">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Лучшие цены на отели тут" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ie5-pV-991">
+                            <rect key="frame" x="39" y="39.5" width="242" height="21.5"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="Ie5-pV-991" firstAttribute="centerY" secondItem="XE2-Jm-eeA" secondAttribute="centerY" id="7RW-I8-zdv"/>
+                        <constraint firstItem="Ie5-pV-991" firstAttribute="leading" secondItem="XE2-Jm-eeA" secondAttribute="leading" constant="39" id="Ngq-Oh-M0Z"/>
+                        <constraint firstAttribute="trailing" secondItem="Ie5-pV-991" secondAttribute="trailing" constant="39" id="bWT-DE-yrv"/>
+                        <constraint firstAttribute="height" constant="100" id="d8G-kH-XPK"/>
+                    </constraints>
+                </view>
                 <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="79I-cx-mXi" userLabel="citySelectorView">
-                    <rect key="frame" x="0.0" y="0.0" width="320" height="98"/>
+                    <rect key="frame" x="0.0" y="100" width="320" height="98"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="If2-FO-MmW">
                             <rect key="frame" x="39" y="30" width="281" height="38"/>
@@ -100,7 +118,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jmg-Vh-O8c" userLabel="datesSelectorView">
-                    <rect key="frame" x="0.0" y="99" width="320" height="98"/>
+                    <rect key="frame" x="0.0" y="199" width="320" height="98"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CZ8-op-2YC">
                             <rect key="frame" x="39" y="30" width="281" height="38"/>
@@ -162,7 +180,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jh-e6-89V" userLabel="humansSelectorView">
-                    <rect key="frame" x="0.0" y="198" width="320" height="125"/>
+                    <rect key="frame" x="0.0" y="298" width="320" height="125"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Количество взрослых" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPJ-cv-Meq">
                             <rect key="frame" x="39" y="30" width="132" height="15"/>
@@ -334,7 +352,7 @@
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="gTm-WK-FAs" userLabel="Divider">
-                    <rect key="frame" x="39" y="98" width="281" height="1"/>
+                    <rect key="frame" x="39" y="198" width="281" height="1"/>
                     <color key="backgroundColor" red="0.81176470588235294" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="e2F-1G-Pnj"/>
@@ -344,7 +362,7 @@
                     </userDefinedRuntimeAttributes>
                 </view>
                 <view contentMode="scaleToFill" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" translatesAutoresizingMaskIntoConstraints="NO" id="aEY-iA-VY8" userLabel="Divider">
-                    <rect key="frame" x="39" y="197" width="281" height="1"/>
+                    <rect key="frame" x="39" y="297" width="281" height="1"/>
                     <color key="backgroundColor" red="0.81176470588235294" green="0.84705882352941175" blue="0.86274509803921573" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="1" id="mFK-VY-eGN"/>
@@ -362,16 +380,19 @@
                 <constraint firstItem="79I-cx-mXi" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8Rx-1k-txc"/>
                 <constraint firstItem="aEY-iA-VY8" firstAttribute="leading" secondItem="CZ8-op-2YC" secondAttribute="leading" id="Ab1-yP-xqZ"/>
                 <constraint firstAttribute="trailing" secondItem="79I-cx-mXi" secondAttribute="trailing" id="CMc-PV-Mis"/>
-                <constraint firstItem="79I-cx-mXi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="GtF-7b-TF3"/>
                 <constraint firstItem="e90-2q-sZh" firstAttribute="top" secondItem="umi-hV-qg4" secondAttribute="bottom" id="HM5-Ci-np7"/>
                 <constraint firstItem="aEY-iA-VY8" firstAttribute="top" secondItem="jmg-Vh-O8c" secondAttribute="bottom" id="JU0-XC-z05"/>
                 <constraint firstAttribute="trailing" secondItem="gTm-WK-FAs" secondAttribute="trailing" id="NEJ-A9-tf6"/>
                 <constraint firstItem="umi-hV-qg4" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="PR7-j6-A3c"/>
                 <constraint firstItem="gTm-WK-FAs" firstAttribute="top" secondItem="79I-cx-mXi" secondAttribute="bottom" id="SRJ-uz-1C6"/>
                 <constraint firstItem="e90-2q-sZh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Uae-RL-RqX"/>
+                <constraint firstAttribute="trailing" secondItem="XE2-Jm-eeA" secondAttribute="trailing" id="ZJ4-PS-YvU"/>
                 <constraint firstItem="umi-hV-qg4" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bAz-s0-XMW"/>
+                <constraint firstItem="XE2-Jm-eeA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="bUM-KU-FS5"/>
                 <constraint firstAttribute="trailing" secondItem="8Jh-e6-89V" secondAttribute="trailing" id="cWj-8k-Ehx"/>
                 <constraint firstItem="8Jh-e6-89V" firstAttribute="top" secondItem="aEY-iA-VY8" secondAttribute="bottom" id="dXE-Is-804"/>
+                <constraint firstItem="79I-cx-mXi" firstAttribute="top" secondItem="XE2-Jm-eeA" secondAttribute="bottom" id="eMm-ne-y67"/>
+                <constraint firstItem="XE2-Jm-eeA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="iuX-3H-Doe"/>
                 <constraint firstItem="jmg-Vh-O8c" firstAttribute="top" secondItem="gTm-WK-FAs" secondAttribute="bottom" id="m1u-v0-5SM"/>
                 <constraint firstAttribute="trailing" secondItem="aEY-iA-VY8" secondAttribute="trailing" id="ock-47-OQ0"/>
                 <constraint firstAttribute="trailing" secondItem="jmg-Vh-O8c" secondAttribute="trailing" id="s8M-Bj-v6g"/>
@@ -386,6 +407,7 @@
             <connections>
                 <outlet property="adultsTitleLabel" destination="UPJ-cv-Meq" id="ASA-44-9gd"/>
                 <outlet property="cityCellHeightConstraint" destination="SZg-Ee-Hww" id="1hx-sG-oWU"/>
+                <outlet property="cityDatesDividerView" destination="gTm-WK-FAs" id="dUG-pg-Xd5"/>
                 <outlet property="citySelectorButton" destination="QIz-eQ-OBM" id="8i5-Pc-nCl"/>
                 <outlet property="cityTitleLabel" destination="kT8-Lt-3xZ" id="JUA-bV-yCd"/>
                 <outlet property="cityValueLabel" destination="U5q-vy-s6t" id="VNO-uq-u9u"/>
@@ -399,6 +421,8 @@
                 <outlet property="fourAdultsButton" destination="ObH-fw-ppy" id="EEL-eA-u3s"/>
                 <outlet property="guestsCellHeightConstraint" destination="uqg-w9-H7o" id="bGk-hC-KkU"/>
                 <outlet property="guestsIcon" destination="BoV-J8-cIV" id="JOo-if-yo1"/>
+                <outlet property="headerCellHeightConstraint" destination="d8G-kH-XPK" id="899-af-YbE"/>
+                <outlet property="headerTextLabel" destination="Ie5-pV-991" id="r3q-GV-mvk"/>
                 <outlet property="humansSelectorView" destination="8Jh-e6-89V" id="aS6-Mu-66X"/>
                 <outlet property="kidsButton" destination="0Hi-Ze-Y5h" id="Wkg-B4-phS"/>
                 <outlet property="kidsTitleLabel" destination="JKu-i8-Cuq" id="l1u-9Z-yHy"/>

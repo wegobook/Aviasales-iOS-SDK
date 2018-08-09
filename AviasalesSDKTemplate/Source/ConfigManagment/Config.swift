@@ -13,7 +13,6 @@ struct Config: Mappable {
     var partnerMarker: String?
     var apiToken: String?
     var appodealKey: String?
-    var aviasalesAds: Bool?
     var flightsEnabled: Bool?
     var hotelsEnabled: Bool?
     var appLogo: String?
@@ -34,7 +33,6 @@ struct Config: Mappable {
         partnerMarker <- map["partner_marker"]
         apiToken <- map["api_token"]
         appodealKey <- map["appodeal_key"]
-        aviasalesAds <- map["aviasales_ads"]
         flightsEnabled <- map["flights_enabled"]
         hotelsEnabled <- map["hotels_enabled"]
         appLogo <- map["app_logo"]
@@ -90,6 +88,7 @@ struct SearchParams: Mappable {
     var defaultCurrency: String?
     var flightsOrigin: String?
     var flightsDestination: String?
+    var availableAirlines: [String]?
     var hotelsCity: SearchCity?
 
     init?(map: Map) {
@@ -100,6 +99,7 @@ struct SearchParams: Mappable {
         defaultCurrency <- map["default_currency"]
         flightsOrigin <- map["flights_origin"]
         flightsDestination <- map["flights_destination"]
+        availableAirlines <- map["available_airlines"]
         hotelsCity <- map["hotels_city"]
     }
 }
@@ -107,7 +107,9 @@ struct SearchParams: Mappable {
 struct SearchCity: Mappable {
 
     var identifier: String?
+    var selectable: Bool?
     var names: [String : String]?
+    var headers: [String : String]?
 
     init?(map: Map) {
 
@@ -115,6 +117,8 @@ struct SearchCity: Mappable {
 
     mutating func mapping(map: Map) {
         identifier <- map["id"]
+        selectable <- map["selectable"]
         names <- map["names"]
+        headers <- map["headers"]
     }
 }
