@@ -30,9 +30,9 @@
 		<key>default_currency</key>
 		<string>USD</string>
 		<key>flights_origin</key>
-		<string>BOS</string>
+		<string>DXB</string>
 		<key>flights_destination</key>
-		<string>NYC</string>
+		<string>LCY</string>
 		<key>available_airlines</key>
 		<array/>
 		<key>hotels_city</key>
